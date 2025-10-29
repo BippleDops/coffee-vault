@@ -1,0 +1,81 @@
+{
+  "name": "Analytics & Analysis Layout",
+  "description": "Optimized for data analysis and insights exploration",
+  "version": "5.0.0",
+  "layout": {
+    "main": {
+      "type": "split",
+      "direction": "horizontal",
+      "children": [
+        {
+          "type": "tabs",
+          "children": [
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Analytics/1-Monthly-Analytics-Dashboard.md",
+                "mode": "preview"
+              }
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Analytics/2-Brewing-Optimization-Engine.md",
+                "mode": "preview"
+              }
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Analytics/10-Supply-Chain-Transparency-Dashboard.md",
+                "mode": "preview"
+              }
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Analytics/11-Learning-Development-Dashboard.md",
+                "mode": "preview"
+              }
+            }
+          ]
+        },
+        {
+          "type": "leaf",
+          "state": {
+            "type": "markdown",
+            "file": "Views/Advanced-Analytics-Base.md",
+            "mode": "preview"
+          },
+          "width": 500
+        }
+      ]
+    },
+    "right": {
+      "type": "tabs",
+      "children": [
+        {
+          "type": "leaf",
+          "state": {
+            "type": "graph",
+            "pinned": true
+          }
+        },
+        {
+          "type": "leaf",
+          "state": {
+            "type": "outline"
+          }
+        }
+      ],
+      "width": 350
+    }
+  },
+  "purpose": "Deep data analysis with multiple analytics dashboards and advanced queries",
+  "ideal-for": "Weekly review, monthly analysis, pattern discovery, optimization"
+}
+

@@ -1,0 +1,82 @@
+{
+  "name": "Supply Chain & Transparency Layout",
+  "description": "Optimized for supply chain research and ethical sourcing",
+  "version": "5.0.0",
+  "layout": {
+    "main": {
+      "type": "split",
+      "direction": "horizontal",
+      "children": [
+        {
+          "type": "tabs",
+          "children": [
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Analytics/10-Supply-Chain-Transparency-Dashboard.md",
+                "mode": "preview"
+              }
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Views/Supply-Chain-Visualization-Base.md",
+                "mode": "preview"
+              }
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "direction": "vertical",
+          "children": [
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Producers/Kochere-Cooperative.md",
+                "mode": "preview"
+              },
+              "height": 500
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Templates/Producer Profile.md",
+                "mode": "source"
+              },
+              "height": 500
+            }
+          ],
+          "width": 450
+        }
+      ]
+    },
+    "right": {
+      "type": "split",
+      "children": [
+        {
+          "type": "leaf",
+          "state": {
+            "type": "markdown",
+            "file": "Plugin Configurations/Kanban/Supply-Chain-Transparency-Board.md",
+            "mode": "preview"
+          }
+        },
+        {
+          "type": "leaf",
+          "state": {
+            "type": "backlink"
+          }
+        }
+      ],
+      "width": 350
+    }
+  },
+  "purpose": "Research and document supply chains with transparency tracking",
+  "ideal-for": "Ethical sourcing research, producer documentation, certification tracking"
+}
+

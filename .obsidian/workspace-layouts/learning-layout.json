@@ -1,0 +1,90 @@
+{
+  "name": "Learning & Education Layout",
+  "description": "Optimized for reading scientific references and learning coffee science",
+  "version": "5.0.0",
+  "layout": {
+    "main": {
+      "type": "split",
+      "direction": "horizontal",
+      "children": [
+        {
+          "type": "leaf",
+          "state": {
+            "type": "file-explorer"
+          },
+          "width": 250
+        },
+        {
+          "type": "split",
+          "direction": "vertical",
+          "children": [
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Scientific References/00-Scientific Content Index.md",
+                "mode": "preview"
+              },
+              "height": 200
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Scientific References/Extraction Science/Coffee Brewing Control Chart.md",
+                "mode": "preview"
+              },
+              "height": 800
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "direction": "vertical",
+          "children": [
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Analytics/11-Learning-Development-Dashboard.md",
+                "mode": "preview"
+              },
+              "height": 400
+            },
+            {
+              "type": "leaf",
+              "state": {
+                "type": "markdown",
+                "file": "Coffee Goals/Master-V60-Technique.md",
+                "mode": "source"
+              },
+              "height": 600
+            }
+          ],
+          "width": 400
+        }
+      ]
+    },
+    "right": {
+      "type": "tabs",
+      "children": [
+        {
+          "type": "leaf",
+          "state": {
+            "type": "backlink"
+          }
+        },
+        {
+          "type": "leaf",
+          "state": {
+            "type": "outline"
+          }
+        }
+      ],
+      "width": 300
+    }
+  },
+  "purpose": "Reading and learning with progress tracking",
+  "ideal-for": "Weekend learning sessions, deep dives into coffee science, goal tracking"
+}
+
