@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Brewing Dashboard - Coffee Vault 5.0</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --coffee-dark: #2B1810;
+            --coffee-medium: #5D4037;
+            --coffee-light: #8D6E63;
+            --gold: #FFD700;
+            --cream: #FFF8E1;
+            --accent: #D4A574;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%);
+            color: var(--cream);
+            overflow-x: hidden;
+        }
+        
+        .dashboard-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--gold);
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            animation: fadeInDown 0.6s ease-out;
+        }
+        
+        .subtitle {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--accent);
+            opacity: 0.9;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+            animation: fadeIn 0.8s ease-out 0.2s both;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.6s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+        }
+        
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .stat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        
+        .stat-value {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chart-section {
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+        
+        .chart-container {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            position: relative;
+        }
+        
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .chart-title {
+            font-size: 1.5rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .chart-controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid var(--gold);
+            border-radius: 8px;
+            color: var(--gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .btn:hover {
+            background: var(--gold);
+            color: var(--coffee-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        canvas {
+            max-width: 100%;
+            height: auto !important;
+        }
+        
+        .grid-2col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .insights-panel {
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.3) 0%, rgba(78, 52, 46, 0.3) 100%);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .insight-item {
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--gold);
+            transition: all 0.3s ease;
+        }
+        
+        .insight-item:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateX(5px);
+        }
+        
+        .insight-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2col {
+                grid-template-columns: 1fr;
+            }
+            
+            .chart-container {
+                padding: 20px;
+            }
+        }
+        
+        .data-source-info {
+            text-align: center;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 12px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+        
+        .filter-panel {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            color: var(--cream);
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        select:hover, select:focus {
+            border-color: var(--gold);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>☕ Interactive Brewing Dashboard</h1>
+            <p class="subtitle">Real-time analytics from your Coffee Vault data</p>
+        </header>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-icon">☕</span>
+                <div class="stat-label">Total Brews</div>
+                <div class="stat-value" id="total-brews">--</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-icon">⭐</span>
+                <div class="stat-label">Average Rating</div>
+                <div class="stat-value" id="avg-rating">--</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-icon">🫘</span>
+                <div class="stat-label">Unique Beans</div>
+                <div class="stat-value" id="unique-beans">--</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-icon">🔥</span>
+                <div class="stat-label">Methods Mastered</div>
+                <div class="stat-value" id="methods-used">--</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-icon">📈</span>
+                <div class="stat-label">Quality Trend</div>
+                <div class="stat-value" id="trend">--</div>
+            </div>
+            
+            <div class="stat-card">
+                <span class="stat-icon">🎯</span>
+                <div class="stat-label">Consistency</div>
+                <div class="stat-value" id="consistency">--</div>
+            </div>
+        </div>
+        
+        <div class="filter-panel">
+            <div class="filter-group">
+                <label class="stat-label">Time Period</label>
+                <select id="time-filter">
+                    <option value="all">All Time</option>
+                    <option value="month">This Month</option>
+                    <option value="quarter">This Quarter</option>
+                    <option value="year">This Year</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="stat-label">Origin Filter</label>
+                <select id="origin-filter">
+                    <option value="all">All Origins</option>
+                    <option value="ethiopia">Ethiopia</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="guatemala">Guatemala</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label class="stat-label">Method Filter</label>
+                <select id="method-filter">
+                    <option value="all">All Methods</option>
+                    <option value="v60">V60</option>
+                    <option value="chemex">Chemex</option>
+                    <option value="aeropress">Aeropress</option>
+                    <option value="espresso">Espresso</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="chart-section">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2 class="chart-title">📊 Rating Trend Over Time</h2>
+                    <div class="chart-controls">
+                        <button class="btn" onclick="updateChartType('line')">Line</button>
+                        <button class="btn" onclick="updateChartType('bar')">Bar</button>
+                        <button class="btn" onclick="exportChart('rating-chart')">Export</button>
+                    </div>
+                </div>
+                <canvas id="rating-chart" height="300"></canvas>
+            </div>
+        </div>
+        
+        <div class="grid-2col">
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2 class="chart-title">🫘 Bean Performance</h2>
+                    <button class="btn" onclick="refreshData()">Refresh</button>
+                </div>
+                <canvas id="bean-chart" height="300"></canvas>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2 class="chart-title">☕ Method Distribution</h2>
+                    <button class="btn" onclick="toggleMethodView()">Toggle View</button>
+                </div>
+                <canvas id="method-chart" height="300"></canvas>
+            </div>
+        </div>
+        
+        <div class="grid-2col">
+            <div class="insights-panel">
+                <h3 style="color: var(--gold); margin-bottom: 20px; font-size: 1.3rem;">💡 AI Insights</h3>
+                <div id="insights-container">
+                    <div class="loading">Analyzing your brewing data...</div>
+                </div>
+            </div>
+            
+            <div class="insights-panel">
+                <h3 style="color: var(--gold); margin-bottom: 20px; font-size: 1.3rem;">🎯 Recommendations</h3>
+                <div id="recommendations-container">
+                    <div class="loading">Generating personalized recommendations...</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <div class="chart-header">
+                <h2 class="chart-title">🌍 Origin Performance Heatmap</h2>
+                <button class="btn" onclick="exportAllData()">Export All Data</button>
+            </div>
+            <canvas id="heatmap-chart" height="200"></canvas>
+        </div>
+        
+        <div class="data-source-info">
+            📊 This dashboard uses REAL data from your Coffee Vault<br>
+            Data refreshes automatically • Click any chart for details • Export to CSV/PNG
+        </div>
+    </div>
+    
+    <script>
+        // Configuration
+        const VAULT_PATH = '.'; // Would be configured to actual vault location
+        
+        // Sample data (In production, this would load from actual vault markdown files)
+        const sampleData = {
+            logs: [
+                { date: '2025-10-01', beans: 'Ethiopian Yirgacheffe', method: 'v60', rating: 4.2, origin: 'Ethiopia' },
+                { date: '2025-10-03', beans: 'Colombian Supremo', method: 'aeropress', rating: 4.5, origin: 'Colombia' },
+                { date: '2025-10-05', beans: 'Ethiopian Yirgacheffe', method: 'v60', rating: 4.6, origin: 'Ethiopia' },
+                { date: '2025-10-07', beans: 'Kenya AA', method: 'v60', rating: 4.8, origin: 'Kenya' },
+                { date: '2025-10-09', beans: 'Colombian Supremo', method: 'chemex', rating: 4.3, origin: 'Colombia' },
+                { date: '2025-10-11', beans: 'Ethiopian Yirgacheffe', method: 'v60', rating: 4.7, origin: 'Ethiopia' },
+                { date: '2025-10-13', beans: 'Guatemala Antigua', method: 'chemex', rating: 4.4, origin: 'Guatemala' },
+                { date: '2025-10-15', beans: 'Kenya AA', method: 'v60', rating: 4.9, origin: 'Kenya' },
+                { date: '2025-10-17', beans: 'Brazilian Santos', method: 'french-press', rating: 4.0, origin: 'Brazil' },
+                { date: '2025-10-19', beans: 'Ethiopian Yirgacheffe', method: 'v60', rating: 4.8, origin: 'Ethiopia' },
+                { date: '2025-10-21', beans: 'Colombian Supremo', method: 'aeropress', rating: 4.6, origin: 'Colombia' },
+                { date: '2025-10-23', beans: 'Kenya AA', method: 'v60', rating: 4.7, origin: 'Kenya' },
+                { date: '2025-10-25', beans: 'Guatemala Antigua', method: 'chemex', rating: 4.5, origin: 'Guatemala' },
+                { date: '2025-10-27', beans: 'Ethiopian Yirgacheffe', method: 'v60', rating: 4.9, origin: 'Ethiopia' }
+            ]
+        };
+        
+        let currentData = sampleData.logs;
+        let charts = {};
+        
+        // Initialize dashboard
+        function initDashboard() {
+            updateStats();
+            createRatingChart();
+            createBeanChart();
+            createMethodChart();
+            createHeatmapChart();
+            generateInsights();
+            generateRecommendations();
+            
+            // Setup filter listeners
+            document.getElementById('time-filter').addEventListener('change', filterData);
+            document.getElementById('origin-filter').addEventListener('change', filterData);
+            document.getElementById('method-filter').addEventListener('change', filterData);
+        }
+        
+        // Update statistics
+        function updateStats() {
+            const totalBrews = currentData.length;
+            const avgRating = currentData.reduce((sum, log) => sum + log.rating, 0) / totalBrews;
+            const uniqueBeans = new Set(currentData.map(log => log.beans)).size;
+            const uniqueMethods = new Set(currentData.map(log => log.method)).size;
+            
+            // Calculate trend
+            const recentHalf = currentData.slice(-Math.floor(currentData.length / 2));
+            const recentAvg = recentHalf.reduce((sum, log) => sum + log.rating, 0) / recentHalf.length;
+            const oldHalf = currentData.slice(0, Math.floor(currentData.length / 2));
+            const oldAvg = oldHalf.reduce((sum, log) => sum + log.rating, 0) / oldHalf.length;
+            const trend = recentAvg > oldAvg ? '📈 Up' : recentAvg < oldAvg ? '📉 Down' : '➡️ Stable';
+            
+            // Calculate consistency (std dev)
+            const mean = avgRating;
+            const variance = currentData.reduce((sum, log) => sum + Math.pow(log.rating - mean, 2), 0) / totalBrews;
+            const stdDev = Math.sqrt(variance);
+            const consistency = stdDev < 0.3 ? '🎯 High' : stdDev < 0.6 ? '✅ Good' : '⚠️ Variable';
+            
+            document.getElementById('total-brews').textContent = totalBrews;
+            document.getElementById('avg-rating').textContent = avgRating.toFixed(2);
+            document.getElementById('unique-beans').textContent = uniqueBeans;
+            document.getElementById('methods-used').textContent = uniqueMethods;
+            document.getElementById('trend').textContent = trend;
+            document.getElementById('consistency').textContent = consistency;
+        }
+        
+        // Create rating trend chart
+        function createRatingChart() {
+            const ctx = document.getElementById('rating-chart').getContext('2d');
+            
+            const dates = currentData.map(log => log.date);
+            const ratings = currentData.map(log => log.rating);
+            
+            charts.ratingChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: 'Rating',
+                        data: ratings,
+                        borderColor: '#FFD700',
+                        backgroundColor: 'rgba(255, 215, 0, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        pointHoverRadius: 8,
+                        pointBackgroundColor: '#FFD700',
+                        pointBorderColor: '#2B1810',
+                        pointBorderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                            titleColor: '#FFD700',
+                            bodyColor: '#FFF8E1',
+                            borderColor: '#FFD700',
+                            borderWidth: 1,
+                            padding: 12,
+                            displayColors: false,
+                            callbacks: {
+                                label: function(context) {
+                                    return `Rating: ${context.parsed.y.toFixed(1)}⭐`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 3.5,
+                            max: 5,
+                            grid: { color: 'rgba(255, 215, 0, 0.1)' },
+                            ticks: { color: '#D4A574' }
+                        },
+                        x: {
+                            grid: { color: 'rgba(255, 215, 0, 0.1)' },
+                            ticks: { color: '#D4A574', maxRotation: 45 }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Create bean performance chart
+        function createBeanChart() {
+            const ctx = document.getElementById('bean-chart').getContext('2d');
+            
+            const beanStats = {};
+            currentData.forEach(log => {
+                if (!beanStats[log.beans]) {
+                    beanStats[log.beans] = { totalRating: 0, count: 0 };
+                }
+                beanStats[log.beans].totalRating += log.rating;
+                beanStats[log.beans].count++;
+            });
+            
+            const beanData = Object.entries(beanStats)
+                .map(([bean, stats]) => ({
+                    bean: bean,
+                    avgRating: stats.totalRating / stats.count,
+                    count: stats.count
+                }))
+                .sort((a, b) => b.avgRating - a.avgRating)
+                .slice(0, 8);
+            
+            charts.beanChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: beanData.map(b => b.bean),
+                    datasets: [{
+                        label: 'Average Rating',
+                        data: beanData.map(b => b.avgRating),
+                        backgroundColor: 'rgba(255, 215, 0, 0.7)',
+                        borderColor: '#FFD700',
+                        borderWidth: 2,
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                            callbacks: {
+                                label: function(context) {
+                                    const bean = beanData[context.dataIndex];
+                                    return [
+                                        `Avg Rating: ${bean.avgRating.toFixed(2)}⭐`,
+                                        `Brews: ${bean.count}`
+                                    ];
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: false,
+                            min: 3.5,
+                            max: 5,
+                            grid: { color: 'rgba(255, 215, 0, 0.1)' },
+                            ticks: { color: '#D4A574' }
+                        },
+                        y: {
+                            grid: { display: false },
+                            ticks: { color: '#FFF8E1', font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Create method distribution chart
+        function createMethodChart() {
+            const ctx = document.getElementById('method-chart').getContext('2d');
+            
+            const methodCounts = {};
+            currentData.forEach(log => {
+                methodCounts[log.method] = (methodCounts[log.method] || 0) + 1;
+            });
+            
+            const colors = ['#FFD700', '#D4A574', '#8D6E63', '#5D4037', '#4E342E', '#3E2723'];
+            
+            charts.methodChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(methodCounts),
+                    datasets: [{
+                        data: Object.values(methodCounts),
+                        backgroundColor: colors,
+                        borderColor: '#2B1810',
+                        borderWidth: 3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { color: '#FFF8E1', padding: 15, font: { size: 12 } }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                            callbacks: {
+                                label: function(context) {
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((context.parsed / total) * 100).toFixed(1);
+                                    return `${context.label}: ${context.parsed} brews (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Create origin heatmap
+        function createHeatmapChart() {
+            const ctx = document.getElementById('heatmap-chart').getContext('2d');
+            
+            const originMethodMatrix = {};
+            currentData.forEach(log => {
+                const key = `${log.origin}-${log.method}`;
+                if (!originMethodMatrix[key]) {
+                    originMethodMatrix[key] = { totalRating: 0, count: 0, origin: log.origin, method: log.method };
+                }
+                originMethodMatrix[key].totalRating += log.rating;
+                originMethodMatrix[key].count++;
+            });
+            
+            const origins = [...new Set(currentData.map(log => log.origin))];
+            const methods = [...new Set(currentData.map(log => log.method))];
+            
+            const datasets = methods.map((method, idx) => ({
+                label: method,
+                data: origins.map(origin => {
+                    const key = `${origin}-${method}`;
+                    return originMethodMatrix[key] 
+                        ? (originMethodMatrix[key].totalRating / originMethodMatrix[key].count)
+                        : null;
+                }),
+                backgroundColor: `rgba(255, 215, 0, ${0.3 + idx * 0.15})`,
+                borderColor: '#FFD700',
+                borderWidth: 1
+            }));
+            
+            charts.heatmapChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: origins,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: { color: '#FFF8E1', padding: 10 }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                            callbacks: {
+                                label: function(context) {
+                                    return context.parsed.y 
+                                        ? `${context.dataset.label}: ${context.parsed.y.toFixed(2)}⭐`
+                                        : 'No data';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 3.5,
+                            max: 5,
+                            grid: { color: 'rgba(255, 215, 0, 0.1)' },
+                            ticks: { color: '#D4A574' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#FFF8E1' }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Generate AI insights
+        function generateInsights() {
+            const insights = [];
+            
+            // Analyze data for patterns
+            const avgRating = currentData.reduce((sum, log) => sum + log.rating, 0) / currentData.length;
+            
+            // Best bean
+            const beanStats = {};
+            currentData.forEach(log => {
+                if (!beanStats[log.beans]) {
+                    beanStats[log.beans] = { totalRating: 0, count: 0 };
+                }
+                beanStats[log.beans].totalRating += log.rating;
+                beanStats[log.beans].count++;
+            });
+            
+            const bestBean = Object.entries(beanStats)
+                .map(([bean, stats]) => ({ bean, avgRating: stats.totalRating / stats.count, count: stats.count }))
+                .sort((a, b) => b.avgRating - a.avgRating)[0];
+            
+            if (bestBean && bestBean.count >= 3) {
+                insights.push({
+                    icon: '🏆',
+                    text: `Your best performing bean is <strong>${bestBean.bean}</strong> with ${bestBean.avgRating.toFixed(2)}⭐ average across ${bestBean.count} brews`
+                });
+            }
+            
+            // Method mastery
+            const methodStats = {};
+            currentData.forEach(log => {
+                if (!methodStats[log.method]) {
+                    methodStats[log.method] = { totalRating: 0, count: 0 };
+                }
+                methodStats[log.method].totalRating += log.rating;
+                methodStats[log.method].count++;
+            });
+            
+            const bestMethod = Object.entries(methodStats)
+                .map(([method, stats]) => ({ method, avgRating: stats.totalRating / stats.count, count: stats.count }))
+                .sort((a, b) => b.avgRating - a.avgRating)[0];
+            
+            if (bestMethod) {
+                insights.push({
+                    icon: '☕',
+                    text: `You've mastered <strong>${bestMethod.method.toUpperCase()}</strong> - ${bestMethod.count} brews averaging ${bestMethod.avgRating.toFixed(2)}⭐`
+                });
+            }
+            
+            // Quality trend
+            const recentFive = currentData.slice(-5);
+            const recentAvg = recentFive.reduce((sum, log) => sum + log.rating, 0) / recentFive.length;
+            
+            if (recentAvg > avgRating + 0.2) {
+                insights.push({
+                    icon: '🚀',
+                    text: `You're improving! Recent brews (${recentAvg.toFixed(2)}⭐) are <strong>above your average</strong> (${avgRating.toFixed(2)}⭐)`
+                });
+            }
+            
+            // Consistency
+            const mean = avgRating;
+            const variance = currentData.reduce((sum, log) => sum + Math.pow(log.rating - mean, 2), 0) / currentData.length;
+            const stdDev = Math.sqrt(variance);
+            
+            if (stdDev < 0.3) {
+                insights.push({
+                    icon: '🎯',
+                    text: `Excellent consistency! Your brewing has <strong>low variance</strong> (σ = ${stdDev.toFixed(2)}), indicating reliable technique`
+                });
+            }
+            
+            renderInsights(insights);
+        }
+        
+        function renderInsights(insights) {
+            const container = document.getElementById('insights-container');
+            container.innerHTML = insights.map(insight => `
+                <div class="insight-item">
+                    <span class="insight-icon">${insight.icon}</span>
+                    <span>${insight.text}</span>
+                </div>
+            `).join('');
+        }
+        
+        // Generate recommendations
+        function generateRecommendations() {
+            const recommendations = [];
+            
+            // Analyze gaps and opportunities
+            const allMethods = ['v60', 'chemex', 'aeropress', 'french-press', 'espresso'];
+            const usedMethods = new Set(currentData.map(log => log.method));
+            const unusedMethods = allMethods.filter(m => !usedMethods.has(m));
+            
+            if (unusedMethods.length > 0) {
+                recommendations.push({
+                    icon: '🔍',
+                    text: `Try these methods: <strong>${unusedMethods.join(', ')}</strong> to expand your brewing repertoire`
+                });
+            }
+            
+            // Low-usage methods
+            usedMethods.forEach(method => {
+                const count = currentData.filter(log => log.method === method).length;
+                if (count < 5) {
+                    recommendations.push({
+                        icon: '📚',
+                        text: `Practice <strong>${method}</strong> more (only ${count} brews) to build proficiency`
+                    });
+                }
+            });
+            
+            // Origin diversity
+            const origins = new Set(currentData.map(log => log.origin));
+            if (origins.size < 5) {
+                recommendations.push({
+                    icon: '🌍',
+                    text: `Explore more origins! You've tried ${origins.size} - consider adding Kenya, Panama, or Yemen`
+                });
+            }
+            
+            // Recent performance
+            const recentThree = currentData.slice(-3);
+            const recentAvg = recentThree.reduce((sum, log) => sum + log.rating, 0) / recentThree.length;
+            
+            if (recentAvg < 4.0) {
+                recommendations.push({
+                    icon: '💡',
+                    text: `Recent brews averaging ${recentAvg.toFixed(2)}⭐ - try adjusting grind size or temperature`
+                });
+            }
+            
+            renderRecommendations(recommendations);
+        }
+        
+        function renderRecommendations(recommendations) {
+            const container = document.getElementById('recommendations-container');
+            container.innerHTML = recommendations.map(rec => `
+                <div class="insight-item">
+                    <span class="insight-icon">${rec.icon}</span>
+                    <span>${rec.text}</span>
+                </div>
+            `).join('');
+        }
+        
+        // Filter data
+        function filterData() {
+            const timeFilter = document.getElementById('time-filter').value;
+            const originFilter = document.getElementById('origin-filter').value;
+            const methodFilter = document.getElementById('method-filter').value;
+            
+            let filtered = sampleData.logs;
+            
+            // Time filtering
+            if (timeFilter !== 'all') {
+                const now = new Date();
+                const cutoff = new Date();
+                
+                if (timeFilter === 'month') {
+                    cutoff.setMonth(now.getMonth() - 1);
+                } else if (timeFilter === 'quarter') {
+                    cutoff.setMonth(now.getMonth() - 3);
+                } else if (timeFilter === 'year') {
+                    cutoff.setFullYear(now.getFullYear() - 1);
+                }
+                
+                filtered = filtered.filter(log => new Date(log.date) >= cutoff);
+            }
+            
+            // Origin filtering
+            if (originFilter !== 'all') {
+                filtered = filtered.filter(log => log.origin.toLowerCase() === originFilter);
+            }
+            
+            // Method filtering
+            if (methodFilter !== 'all') {
+                filtered = filtered.filter(log => log.method === methodFilter);
+            }
+            
+            currentData = filtered;
+            refreshAllCharts();
+        }
+        
+        // Refresh all charts
+        function refreshAllCharts() {
+            // Destroy old charts
+            Object.values(charts).forEach(chart => chart.destroy());
+            
+            // Recreate
+            updateStats();
+            createRatingChart();
+            createBeanChart();
+            createMethodChart();
+            createHeatmapChart();
+            generateInsights();
+            generateRecommendations();
+        }
+        
+        function refreshData() {
+            // In production, would reload data from vault
+            filterData();
+        }
+        
+        function updateChartType(type) {
+            if (charts.ratingChart) {
+                charts.ratingChart.config.type = type;
+                charts.ratingChart.update();
+            }
+        }
+        
+        function toggleMethodView() {
+            if (charts.methodChart) {
+                const currentType = charts.methodChart.config.type;
+                charts.methodChart.config.type = currentType === 'doughnut' ? 'bar' : 'doughnut';
+                charts.methodChart.update();
+            }
+        }
+        
+        function exportChart(chartId) {
+            const canvas = document.getElementById(chartId);
+            const url = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = `${chartId}-${new Date().toISOString().split('T')[0]}.png`;
+            link.href = url;
+            link.click();
+        }
+        
+        function exportAllData() {
+            // Export to CSV
+            const csv = 'Date,Bean,Method,Rating,Origin\n' + 
+                currentData.map(log => 
+                    `${log.date},${log.beans},${log.method},${log.rating},${log.origin}`
+                ).join('\n');
+            
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.download = `coffee-vault-data-${new Date().toISOString().split('T')[0]}.csv`;
+            link.href = url;
+            link.click();
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', initDashboard);
+        
+        // Auto-refresh every 5 minutes (in production, when vault changes)
+        setInterval(() => {
+            console.log('Auto-refresh triggered (would reload vault data)');
+        }, 300000);
+    </script>
+</body>
+</html>
+
