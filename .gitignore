@@ -12,18 +12,16 @@
 .DS_Store
 **/.DS_Store
 
-# Node modules (if any)
+# Node modules
 node_modules/
 package-lock.json
 
-# Personal/Private (if any sensitive data)
-# Uncomment if you have private notes:
-# Private/
-# Personal/
+# Archive (historical progress reports)
+Archive/
 
-# Logs might contain personal data - decide if you want to include
+# Personal data (optional - uncomment if desired)
 # Coffee Logs/
-
-# Daily Notes might be personal - decide if you want to include
 # Daily Notes/
-
+# Cupping Sessions/
+# Coffee Events/
+# Coffee Goals/
