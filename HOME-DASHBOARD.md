@@ -141,13 +141,16 @@ dv.list([
 
 ## 🎨 Interactive Visualizations
 
-**[[Views/Interactive-Visualizations-Dashboard|🖼️ View All 17 Visualizations]]**
+**🌟 [[Visualizations/VISUALIZATION-HUB.html|🎨 VISUALIZATION HUB - Launch Central Dashboard]]** ⭐ NEW
 
-Quick Access:
-- **[[Visualizations/flavor-compass.html|🧭 Flavor Compass]]** - 4-axis flavor profiling
+Professional webapp with all 18 tools organized and accessible:
+- **[[Visualizations/interactive-brewing-dashboard.html|📊 Interactive Dashboard]]** - Chart.js analytics
 - **[[Visualizations/brewing-triangle.html|📐 Brewing Triangle]]** - Extraction science
-- **[[Visualizations/grind-size-calculator.html|⚙️ Grind Calculator]]** - Multi-grinder tool
-- **[[Visualizations/coffee-journey-timeline.html|📅 Journey Timeline]]** - Your progression
+- **[[Visualizations/flavor-compass.html|🧭 Flavor Compass]]** - 4-axis profiling
+- **[[Visualizations/3d-flavor-space.html|🌌 3D Flavor Space]]** - WebGL exploration
+- **[[Visualizations/supply-chain-map.html|🌱 Supply Chain Map]]** - Transparency tracking
+
+**Complete Index**: [[Views/Interactive-Visualizations-Dashboard|📋 All 18 Tools]]
 
 ---
 
