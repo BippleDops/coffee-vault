@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Universe 3D - Coffee Vault 5.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #000000;
+            color: #FFF8E1;
+            overflow: hidden;
+        }
+        #container { width: 100vw; height: 100vh; position: relative; }
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 25px;
+            border-radius: 16px;
+            border: 2px solid #FFD700;
+            z-index: 100;
+            max-width: 320px;
+        }
+        h1 {
+            font-size: 22px;
+            color: #FFD700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        .control-group {
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #D4A574;
+            font-weight: 600;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            color: #FFF8E1;
+            font-size: 14px;
+        }
+        input[type="range"] {
+            -webkit-appearance: none;
+            height: 8px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 5px;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #FFD700;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, #FFD700, #DAA520);
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
+        }
+        .btn:active { transform: translateY(0); }
+        .info-panel {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            z-index: 100;
+            max-width: 300px;
+        }
+        .legend {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            z-index: 100;
+        }
+        .legend-title {
+            color: #FFD700;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 13px;
+        }
+        .color-sphere {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid #333;
+        }
+        .value-display {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.2);
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-left: 8px;
+            color: #FFD700;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <div class="controls">
+        <h1>🌌 Coffee Universe</h1>
+        
+        <div class="control-group">
+            <label>Rotation Speed</label>
+            <input type="range" id="rotation-speed" min="0" max="100" value="0">
+            <span class="value-display" id="speed-value">0 (Off)</span>
+        </div>
+        
+        <div class="control-group">
+            <label>View Angle</label>
+            <select id="view-preset">
+                <option value="diagonal">Diagonal View</option>
+                <option value="top">Top View</option>
+                <option value="side">Side View</option>
+                <option value="front">Front View</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label>Point Size</label>
+            <input type="range" id="point-size" min="3" max="15" value="8">
+            <span class="value-display" id="size-value">8</span>
+        </div>
+        
+        <div class="control-group">
+            <label>Show Connections</label>
+            <input type="checkbox" id="show-connections" style="width: auto; margin-right: 8px;">
+            <label for="show-connections" style="display: inline; cursor: pointer;">Draw similarity lines</label>
+        </div>
+        
+        <button class="btn" onclick="resetCamera()">Reset View</button>
+        <button class="btn" onclick="takeScreenshot()">Save Screenshot</button>
+    </div>
+    
+    <div class="legend">
+        <div class="legend-title">Origin Colors</div>
+        <div class="legend-item">
+            <div class="color-sphere" style="background: #ff6b6b;"></div>
+            <span>Ethiopia</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-sphere" style="background: #4ecdc4;"></div>
+            <span>Colombia</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-sphere" style="background: #ffe66d;"></div>
+            <span>Kenya</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-sphere" style="background: #a8e6cf;"></div>
+            <span>Guatemala</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-sphere" style="background: #ff8b94;"></div>
+            <span>Brazil</span>
+        </div>
+        <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255, 215, 0, 0.3);">
+            <div style="font-size: 11px; color: #888; margin-bottom: 8px;">Controls:</div>
+            <div style="font-size: 11px; line-height: 1.6;">
+                • Drag to rotate<br>
+                • Scroll to zoom<br>
+                • Hover for details<br>
+                • Use sliders to control
+            </div>
+        </div>
+    </div>
+    
+    <div class="info-panel" id="info-panel" style="display: none;">
+        <div style="color: #FFD700; font-size: 16px; font-weight: 700; margin-bottom: 10px;" id="bean-name">Bean Name</div>
+        <div style="font-size: 13px; line-height: 1.8;">
+            <strong>Origin:</strong> <span id="bean-origin"></span><br>
+            <strong>Rating:</strong> <span id="bean-rating"></span><br>
+            <strong>Acidity:</strong> <span id="bean-acidity"></span><br>
+            <strong>Body:</strong> <span id="bean-body"></span><br>
+            <strong>Sweetness:</strong> <span id="bean-sweetness"></span>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const beans = [
+            { name: 'Ethiopian Yirgacheffe', origin: 'Ethiopia', rating: 4.7, acidity: 9, body: 4, sweetness: 8, complexity: 9 },
+            { name: 'Colombian Supremo', origin: 'Colombia', rating: 4.3, acidity: 6, body: 7, sweetness: 7, complexity: 6 },
+            { name: 'Kenya AA', origin: 'Kenya', rating: 4.8, acidity: 10, body: 8, sweetness: 8, complexity: 9 },
+            { name: 'Guatemala Antigua', origin: 'Guatemala', rating: 4.5, acidity: 7, body: 8, sweetness: 7, complexity: 7 },
+            { name: 'Brazilian Santos', origin: 'Brazil', rating: 4.0, acidity: 4, body: 9, sweetness: 6, complexity: 5 },
+            { name: 'Ethiopian Natural', origin: 'Ethiopia', rating: 4.6, acidity: 7, body: 6, sweetness: 9, complexity: 8 },
+            { name: 'Colombian Pink Bourbon', origin: 'Colombia', rating: 4.9, acidity: 8, body: 6, sweetness: 9, complexity: 9 },
+            { name: 'Kenyan SL-28', origin: 'Kenya', rating: 4.7, acidity: 9, body: 7, sweetness: 8, complexity: 8 }
+        ];
+        
+        const originColors = {
+            'Ethiopia': 0xff6b6b,
+            'Colombia': 0x4ecdc4,
+            'Kenya': 0xffe66d,
+            'Guatemala': 0xa8e6cf,
+            'Brazil': 0xff8b94
+        };
+        
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x000000);
+        scene.fog = new THREE.FogExp2(0x000000, 0.015);
+        
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(25, 25, 25);
+        camera.lookAt(0, 0, 0);
+        
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('container').appendChild(renderer.domElement);
+        
+        // Enhanced lighting
+        const ambientLight = new THREE.AmbientLight(0x404040, 1.5);
+        scene.add(ambientLight);
+        
+        const light1 = new THREE.DirectionalLight(0xFFD700, 1);
+        light1.position.set(20, 20, 20);
+        scene.add(light1);
+        
+        const light2 = new THREE.DirectionalLight(0xD4A574, 0.5);
+        light2.position.set(-20, -20, -20);
+        scene.add(light2);
+        
+        // Enhanced grid with labels
+        const gridSize = 40;
+        const gridDivisions = 20;
+        const grid = new THREE.GridHelper(gridSize, gridDivisions, 0x666666, 0x333333);
+        scene.add(grid);
+        
+        // Axes
+        const axes = new THREE.AxesHelper(22);
+        scene.add(axes);
+        
+        // Create axis labels on the grid
+        function createGridLabel(text, color = 0xFFD700) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 512;
+            canvas.height = 128;
+            
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+            ctx.fillRect(0, 0, 512, 128);
+            ctx.strokeStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.strokeRect(2, 2, 508, 124);
+            
+            ctx.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.font = 'Bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(text, 256, 80);
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture }));
+            sprite.scale.set(8, 2, 1);
+            return sprite;
+        }
+        
+        const xLabel = createGridLabel('ACIDITY →', 0xFF6B35);
+        xLabel.position.set(22, -1, 0);
+        scene.add(xLabel);
+        
+        const yLabel = createGridLabel('RATING ↑', 0x4ECDC4);
+        yLabel.position.set(0, 22, 0);
+        scene.add(yLabel);
+        
+        const zLabel = createGridLabel('BODY →', 0xA8E6CF);
+        zLabel.position.set(0, -1, 22);
+        scene.add(zLabel);
+        
+        // Plot beans
+        const spheres = [];
+        beans.forEach(bean => {
+            const x = (bean.acidity - 5) * 3;
+            const y = (bean.rating - 4) * 15;
+            const z = (bean.body - 5) * 3;
+            
+            const geometry = new THREE.SphereGeometry(0.8, 24, 24);
+            const color = originColors[bean.origin] || 0xFFD700;
+            const material = new THREE.MeshPhongMaterial({
+                color: color,
+                emissive: color,
+                emissiveIntensity: 0.4,
+                shininess: 100
+            });
+            
+            const sphere = new THREE.Mesh(geometry, material);
+            sphere.position.set(x, y, z);
+            sphere.userData = bean;
+            
+            scene.add(sphere);
+            spheres.push(sphere);
+            
+            // Add subtle glow
+            const glowGeometry = new THREE.SphereGeometry(1.2, 16, 16);
+            const glowMaterial = new THREE.MeshBasicMaterial({
+                color: color,
+                transparent: true,
+                opacity: 0.2
+            });
+            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+            glow.position.copy(sphere.position);
+            scene.add(glow);
+        });
+        
+        // Raycaster for interaction
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        
+        renderer.domElement.addEventListener('mousemove', (e) => {
+            mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+            
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(spheres);
+            
+            if (intersects.length > 0) {
+                const bean = intersects[0].object.userData;
+                const panel = document.getElementById('info-panel');
+                panel.style.display = 'block';
+                document.getElementById('bean-name').textContent = bean.name;
+                document.getElementById('bean-origin').textContent = bean.origin;
+                document.getElementById('bean-rating').textContent = `${bean.rating}⭐`;
+                document.getElementById('bean-acidity').textContent = `${bean.acidity}/10`;
+                document.getElementById('bean-body').textContent = `${bean.body}/10`;
+                document.getElementById('bean-sweetness').textContent = `${bean.sweetness}/10`;
+            } else {
+                document.getElementById('info-panel').style.display = 'none';
+            }
+        });
+        
+        // Controlled rotation
+        let rotationEnabled = false;
+        let rotationSpeed = 0;
+        let isDragging = false;
+        let previousMouse = { x: 0, y: 0 };
+        let cameraAngle = { horizontal: 0, vertical: Math.PI / 4 };
+        const cameraDistance = 35;
+        
+        // Rotation speed control
+        document.getElementById('rotation-speed').addEventListener('input', (e) => {
+            rotationSpeed = parseFloat(e.target.value) / 10000;
+            rotationEnabled = rotationSpeed > 0;
+            document.getElementById('speed-value').textContent = 
+                rotationSpeed === 0 ? '0 (Off)' : `${e.target.value}%`;
+        });
+        
+        // View preset
+        document.getElementById('view-preset').addEventListener('change', (e) => {
+            const preset = e.target.value;
+            switch(preset) {
+                case 'top':
+                    cameraAngle = { horizontal: 0, vertical: Math.PI / 2 - 0.1 };
+                    break;
+                case 'side':
+                    cameraAngle = { horizontal: Math.PI / 2, vertical: Math.PI / 4 };
+                    break;
+                case 'front':
+                    cameraAngle = { horizontal: 0, vertical: Math.PI / 4 };
+                    break;
+                default:
+                    cameraAngle = { horizontal: Math.PI / 4, vertical: Math.PI / 4 };
+            }
+            updateCamera();
+        });
+        
+        // Point size control
+        document.getElementById('point-size').addEventListener('input', (e) => {
+            const size = parseFloat(e.target.value) / 10;
+            spheres.forEach(sphere => {
+                sphere.scale.set(size, size, size);
+            });
+            document.getElementById('size-value').textContent = e.target.value;
+        });
+        
+        // Mouse drag
+        renderer.domElement.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            previousMouse = { x: e.clientX, y: e.clientY };
+        });
+        
+        renderer.domElement.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const deltaX = e.clientX - previousMouse.x;
+                const deltaY = e.clientY - previousMouse.y;
+                
+                cameraAngle.horizontal += deltaX * 0.005;
+                cameraAngle.vertical = Math.max(0.1, Math.min(Math.PI - 0.1, cameraAngle.vertical - deltaY * 0.005));
+                
+                previousMouse = { x: e.clientX, y: e.clientY };
+                updateCamera();
+            }
+        });
+        
+        renderer.domElement.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+        
+        // Zoom
+        renderer.domElement.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const zoomFactor = e.deltaY > 0 ? 1.1 : 0.9;
+            const currentDist = Math.sqrt(
+                camera.position.x ** 2 + 
+                camera.position.y ** 2 + 
+                camera.position.z ** 2
+            );
+            const newDist = Math.max(15, Math.min(60, currentDist * zoomFactor));
+            const scale = newDist / currentDist;
+            camera.position.multiplyScalar(scale);
+        });
+        
+        function updateCamera() {
+            const h = cameraAngle.horizontal;
+            const v = cameraAngle.vertical;
+            
+            camera.position.x = cameraDistance * Math.sin(v) * Math.cos(h);
+            camera.position.y = cameraDistance * Math.cos(v);
+            camera.position.z = cameraDistance * Math.sin(v) * Math.sin(h);
+            camera.lookAt(0, 0, 0);
+        }
+        
+        function resetCamera() {
+            cameraAngle = { horizontal: Math.PI / 4, vertical: Math.PI / 4 };
+            updateCamera();
+            document.getElementById('rotation-speed').value = 0;
+            rotationSpeed = 0;
+            rotationEnabled = false;
+            document.getElementById('speed-value').textContent = '0 (Off)';
+        }
+        
+        function takeScreenshot() {
+            renderer.render(scene, camera);
+            const dataURL = renderer.domElement.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = `coffee-universe-${Date.now()}.png`;
+            link.href = dataURL;
+            link.click();
+        }
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            if (rotationEnabled && !isDragging) {
+                cameraAngle.horizontal += rotationSpeed;
+                updateCamera();
+            }
+            
+            // Gentle floating animation for spheres
+            const time = Date.now() * 0.0005;
+            spheres.forEach((sphere, i) => {
+                sphere.position.y += Math.sin(time + i) * 0.005;
+            });
+            
+            renderer.render(scene, camera);
+        }
+        
+        animate();
+        
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>
+
