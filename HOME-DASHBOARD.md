@@ -141,7 +141,7 @@ dv.list([
 
 ## 🎨 Interactive Visualizations
 
-**🌟 [[Visualizations/VISUALIZATION-HUB.html|🎨 VISUALIZATION HUB - Launch Central Dashboard]]** ⭐ NEW
+**🌟 [[VISUALIZATION-HUB.html|🎨 VISUALIZATION HUB - Launch Central Dashboard]]** ⭐ NEW
 
 Professional webapp with all 18 tools organized and accessible:
 - **[[Visualizations/interactive-brewing-dashboard.html|📊 Interactive Dashboard]]** - Chart.js analytics

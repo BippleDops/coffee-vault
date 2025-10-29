@@ -19,7 +19,7 @@ tags: [reference, quick-guide, cheatsheet]
 
 1. **[[HOME-DASHBOARD]]** - Your daily command center (bookmark this!)
 2. **[[START-HERE]]** - Comprehensive guide (when lost)
-3. **[[Visualizations/VISUALIZATION-HUB.html|Visualization Hub]]** - All tools (web app)
+3. **[[VISUALIZATION-HUB.html|Visualization Hub]]** - All tools (web app)
 
 **Hotkey to HOME**: Set Cmd/Ctrl+H in Obsidian settings
 
