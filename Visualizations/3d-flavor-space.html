@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Flavor Space - Coffee Vault 5.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e8e8e8;
+            overflow: hidden;
+        }
+        
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 69, 19, 0.3);
+            z-index: 10;
+            max-width: 300px;
+        }
+        
+        h1 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #d4a574;
+        }
+        
+        .control-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 5px;
+            color: #b8b8b8;
+        }
+        
+        select, input {
+            width: 100%;
+            padding: 8px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #e8e8e8;
+            font-size: 13px;
+        }
+        
+        #legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 69, 19, 0.3);
+            z-index: 10;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        
+        .color-box {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+        
+        #info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 69, 19, 0.3);
+            z-index: 10;
+            max-width: 250px;
+            font-size: 13px;
+            display: none;
+        }
+        
+        #info h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #d4a574;
+        }
+        
+        #info p {
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <div id="controls">
+        <h1>☕ 3D Flavor Space</h1>
+        
+        <div class="control-group">
+            <label>X-Axis</label>
+            <select id="x-axis">
+                <option value="acidity">Acidity</option>
+                <option value="body">Body</option>
+                <option value="sweetness">Sweetness</option>
+                <option value="complexity">Complexity</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label>Y-Axis</label>
+            <select id="y-axis">
+                <option value="body">Body</option>
+                <option value="acidity">Acidity</option>
+                <option value="sweetness">Sweetness</option>
+                <option value="complexity">Complexity</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label>Z-Axis</label>
+            <select id="z-axis">
+                <option value="sweetness" selected>Sweetness</option>
+                <option value="acidity">Acidity</option>
+                <option value="body">Body</option>
+                <option value="complexity">Complexity</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label>Color By</label>
+            <select id="color-by">
+                <option value="origin">Origin</option>
+                <option value="roast">Roast Level</option>
+                <option value="processing">Processing</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label>Filter</label>
+            <select id="filter">
+                <option value="all">All Beans</option>
+                <option value="favorites">Favorites Only</option>
+                <option value="high-rated">High Rated (4.5+)</option>
+                <option value="recent">Recent Purchases</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="legend">
+        <div class="legend-item">
+            <div class="color-box" style="background: #ff6b6b;"></div>
+            <span>Ethiopia</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #4ecdc4;"></div>
+            <span>Colombia</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #ffe66d;"></div>
+            <span>Kenya</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #a8e6cf;"></div>
+            <span>Guatemala</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background: #ff8b94;"></div>
+            <span>Brazil</span>
+        </div>
+    </div>
+    
+    <div id="info">
+        <h3 id="info-name">Bean Name</h3>
+        <p><strong>Origin:</strong> <span id="info-origin"></span></p>
+        <p><strong>Processing:</strong> <span id="info-processing"></span></p>
+        <p><strong>Roast:</strong> <span id="info-roast"></span></p>
+        <p><strong>Rating:</strong> <span id="info-rating"></span></p>
+        <p><strong>Flavors:</strong> <span id="info-flavors"></span></p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Sample data (would be loaded from vault)
+        const sampleBeans = [
+            { name: 'Ethiopian Yirgacheffe', origin: 'Ethiopia', processing: 'washed', roast: 'light', rating: 4.7, acidity: 9, body: 4, sweetness: 8, complexity: 9, flavors: ['floral', 'bergamot', 'jasmine'] },
+            { name: 'Colombian Supremo', origin: 'Colombia', processing: 'washed', roast: 'medium', rating: 4.3, acidity: 6, body: 7, sweetness: 7, complexity: 6, flavors: ['chocolate', 'caramel', 'nutty'] },
+            { name: 'Kenya AA', origin: 'Kenya', processing: 'washed', roast: 'light', rating: 4.8, acidity: 10, body: 8, sweetness: 8, complexity: 9, flavors: ['blackcurrant', 'grapefruit', 'wine'] },
+            { name: 'Guatemala Antigua', origin: 'Guatemala', processing: 'washed', roast: 'medium', rating: 4.5, acidity: 7, body: 8, sweetness: 7, complexity: 7, flavors: ['chocolate', 'apple', 'caramel'] },
+            { name: 'Brazilian Santos', origin: 'Brazil', processing: 'natural', roast: 'medium-dark', rating: 4.0, acidity: 4, body: 9, sweetness: 6, complexity: 5, flavors: ['chocolate', 'nutty', 'peanut'] },
+            { name: 'Ethiopian Natural', origin: 'Ethiopia', processing: 'natural', roast: 'light', rating: 4.6, acidity: 7, body: 6, sweetness: 9, complexity: 8, flavors: ['blueberry', 'strawberry', 'wine'] }
+        ];
+        
+        // Color palettes
+        const originColors = {
+            'Ethiopia': 0xff6b6b,
+            'Colombia': 0x4ecdc4,
+            'Kenya': 0xffe66d,
+            'Guatemala': 0xa8e6cf,
+            'Brazil': 0xff8b94
+        };
+        
+        const roastColors = {
+            'light': 0xd4a574,
+            'medium': 0x8b5a3c,
+            'medium-dark': 0x5c3d2e,
+            'dark': 0x3a2418
+        };
+        
+        // Scene setup
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x1a1a1a);
+        
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(15, 15, 15);
+        camera.lookAt(0, 0, 0);
+        
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('container').appendChild(renderer.domElement);
+        
+        // Add grid
+        const gridHelper = new THREE.GridHelper(20, 20, 0x444444, 0x222222);
+        scene.add(gridHelper);
+        
+        // Add axes
+        const axesHelper = new THREE.AxesHelper(10);
+        scene.add(axesHelper);
+        
+        // Add axis labels
+        function createTextSprite(message, color = 0xffffff) {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.width = 256;
+            canvas.height = 64;
+            context.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
+            context.font = 'Bold 40px Arial';
+            context.fillText(message, 10, 45);
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            const material = new THREE.SpriteMaterial({ map: texture });
+            const sprite = new THREE.Sprite(material);
+            sprite.scale.set(4, 1, 1);
+            return sprite;
+        }
+        
+        // Create data points
+        const points = [];
+        const pointMeshes = [];
+        
+        function createScene(data) {
+            // Clear existing points
+            pointMeshes.forEach(mesh => scene.remove(mesh));
+            pointMeshes.length = 0;
+            
+            const xAxis = document.getElementById('x-axis').value;
+            const yAxis = document.getElementById('y-axis').value;
+            const zAxis = document.getElementById('z-axis').value;
+            const colorBy = document.getElementById('color-by').value;
+            
+            data.forEach(bean => {
+                const x = (bean[xAxis] - 5) * 2;
+                const y = (bean[yAxis] - 5) * 2;
+                const z = (bean[zAxis] - 5) * 2;
+                
+                const geometry = new THREE.SphereGeometry(0.5, 16, 16);
+                const color = colorBy === 'origin' ? originColors[bean.origin] :
+                             colorBy === 'roast' ? roastColors[bean.roast] :
+                             0xd4a574;
+                
+                const material = new THREE.MeshPhongMaterial({ 
+                    color: color,
+                    emissive: color,
+                    emissiveIntensity: 0.3
+                });
+                
+                const sphere = new THREE.Mesh(geometry, material);
+                sphere.position.set(x, y, z);
+                sphere.userData = bean;
+                
+                scene.add(sphere);
+                pointMeshes.push(sphere);
+            });
+        }
+        
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0x404040, 2);
+        scene.add(ambientLight);
+        
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        directionalLight.position.set(10, 10, 10);
+        scene.add(directionalLight);
+        
+        // Mouse interaction
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        
+        renderer.domElement.addEventListener('mousemove', onMouseMove);
+        renderer.domElement.addEventListener('click', onClick);
+        
+        function onMouseMove(event) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(pointMeshes);
+            
+            if (intersects.length > 0) {
+                const bean = intersects[0].object.userData;
+                showInfo(bean);
+                document.body.style.cursor = 'pointer';
+            } else {
+                hideInfo();
+                document.body.style.cursor = 'default';
+            }
+        }
+        
+        function onClick(event) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(pointMeshes);
+            
+            if (intersects.length > 0) {
+                const bean = intersects[0].object.userData;
+                console.log('Selected bean:', bean);
+            }
+        }
+        
+        function showInfo(bean) {
+            const info = document.getElementById('info');
+            info.style.display = 'block';
+            
+            document.getElementById('info-name').textContent = bean.name;
+            document.getElementById('info-origin').textContent = bean.origin;
+            document.getElementById('info-processing').textContent = bean.processing;
+            document.getElementById('info-roast').textContent = bean.roast;
+            document.getElementById('info-rating').textContent = `${bean.rating}⭐`;
+            document.getElementById('info-flavors').textContent = bean.flavors.join(', ');
+        }
+        
+        function hideInfo() {
+            document.getElementById('info').style.display = 'none';
+        }
+        
+        // Camera rotation
+        let autoRotate = true;
+        let rotationSpeed = 0.002;
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            if (autoRotate) {
+                camera.position.x = Math.cos(Date.now() * rotationSpeed) * 15;
+                camera.position.z = Math.sin(Date.now() * rotationSpeed) * 15;
+                camera.lookAt(0, 0, 0);
+            }
+            
+            renderer.render(scene, camera);
+        }
+        
+        // Controls listeners
+        document.getElementById('x-axis').addEventListener('change', () => createScene(sampleBeans));
+        document.getElementById('y-axis').addEventListener('change', () => createScene(sampleBeans));
+        document.getElementById('z-axis').addEventListener('change', () => createScene(sampleBeans));
+        document.getElementById('color-by').addEventListener('change', () => createScene(sampleBeans));
+        
+        // Initialize
+        createScene(sampleBeans);
+        animate();
+        
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        // Keyboard controls
+        document.addEventListener('keydown', (e) => {
+            if (e.key === ' ') {
+                autoRotate = !autoRotate;
+            }
+        });
+    </script>
+</body>
+</html>
+

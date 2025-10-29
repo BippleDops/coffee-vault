@@ -1,41 +1,49 @@
-# Coffee Vault 4.0
+# Coffee Vault 5.0
 
-**The complete coffee brewing intelligence system for Obsidian.**
+**The complete coffee intelligence platform with supply chain transparency, advanced ML, and comprehensive tracking.**
 
 ---
 
 ## New User? Start Here
 
-**👉 [START-HERE.md](START-HERE.md)** - 5-minute quick start guide
+**👉 [START-HERE.md](START-HERE.md)** - 5-minute quick start guide  
+**🆕 [Documentation/MIGRATION-GUIDE-5.0.md](Documentation/MIGRATION-GUIDE-5.0.md)** - Upgrading from 4.0
 
 ---
 
 ## What is Coffee Vault?
 
-An intelligent coffee tracking system that combines:
+An intelligent coffee platform that combines:
 
-- **Data Tracking** - Log every brew with detailed parameters
-- **Machine Learning** - Get quality predictions and optimization suggestions
-- **Analytics** - 8 ML-powered dashboards for insights
-- **Automation** - 22 scripts for reports, inventory, and batch operations
-- **Visualizations** - 17 interactive tools for exploration
-- **Education** - Scientific references and brewing guides
+- **Comprehensive Tracking** - 17 entity types covering every aspect of coffee
+- **Supply Chain Transparency** - Track from producer to cup
+- **Advanced Machine Learning** - 6 ML models for predictions and optimization
+- **Enhanced Analytics** - 13 dashboards including real-time brewing assistance
+- **Graph Relationships** - Interconnected data with relationship tracking
+- **Goal Management** - Personal development and achievement tracking
+- **Automation** - 28+ scripts for intelligent workflows
+- **Rich Visualizations** - 23+ interactive tools including 3D flavor space
+- **Education** - 150+ scientific references and guides
 
 ---
 
 ## System Status
 
-**Version**: 4.0.0
-**Release**: October 26, 2025
+**Version**: 5.0.0
+**Release**: October 28, 2025
 **Status**: Production Ready
 
 **Components**:
-- 8 Analytics Dashboards (ML-powered)
-- 17 Interactive Visualizations (HTML5/Canvas)
-- 22 Automation Scripts (JavaScript)
-- 10 Templates (Templater-based)
-- 40+ Scientific References
+- 13 Analytics Dashboards (ML-powered, real-time)
+- 23 Interactive Visualizations (HTML5/Canvas/WebGL)
+- 28 Automation Scripts (JavaScript with ML)
+- 13 Templates (Intelligent, context-aware)
+- 17 Entity Types (11 original + 6 new)
+- 500+ Properties across all entity types
+- 150+ Scientific References
 - Complete Documentation Suite
+- Graph Relationship System
+- 6-Level Hierarchical Tagging
 
 ---
 
@@ -83,18 +91,25 @@ An intelligent coffee tracking system that combines:
 ## Folder Structure
 
 ```
-Coffee Vault 4.0/
+Coffee Vault 5.0/
 ├── Coffee Logs/          # Your brew records
-├── Beans Library/        # Bean profiles
-├── Templates/            # Smart logging templates
-├── Analytics/            # 8 ML dashboards
-├── Visualizations/       # 17 interactive tools
-├── Scripts/              # 22 automation utilities
-├── Configuration/        # System setup
-├── Documentation/        # Guides and references
-├── Scientific References/# Coffee science
+├── Beans Library/        # Bean variety profiles
+├── Producers/            # NEW 5.0 - Producer/farm profiles
+├── Cupping Sessions/     # NEW 5.0 - Formal cupping sessions
+├── Recipes/              # NEW 5.0 - Reusable brewing recipes
+├── Equipment Models/     # NEW 5.0 - Equipment database
+├── Coffee Events/        # NEW 5.0 - Coffee experiences
+├── Coffee Goals/         # NEW 5.0 - Personal development
+├── Templates/            # 13 intelligent templates
+├── Analytics/            # 13 ML dashboards
+├── Visualizations/       # 23+ interactive tools
+├── Scripts/              # 28 automation utilities
+├── Configuration/        # System setup & schemas
+├── Documentation/        # Complete guides
+├── Scientific References/# Coffee science library
 ├── Brewing Guides/       # Method-specific guides
 ├── Origins/              # Geographic profiles
+├── Roasters/             # Roaster profiles
 └── Reviews & Articles/   # Research organization
 ```
 
@@ -145,16 +160,27 @@ Coffee Vault 4.0/
 
 ---
 
-## What's New in 4.0
+## What's New in 5.0
 
-- Machine learning quality prediction system
-- 8 advanced analytics dashboards (KNN, K-Means, Decision Trees)
-- 17 interactive visualizations
-- 22 automation scripts
-- Sample data generator for testing
-- Comprehensive architecture documentation
-- Streamlined user experience
-- Uniform naming standards
+**New Entity Types (6)**:
+- Producer/Farm Profiles - Supply chain transparency
+- Cupping Sessions - Formal cupping tracking
+- Recipe Profiles - Reusable brewing recipes
+- Equipment Models - Equipment research database
+- Coffee Events - Experience tracking
+- Coffee Goals - Personal development
+
+**Enhanced Features**:
+- Graph relationship system - Interconnected data
+- 6-level hierarchical tagging - Better organization
+- 470+ new properties - Richer data capture
+- 5 new analytics dashboards - Deeper insights
+- 6 new ML models - Smarter predictions
+- Context-aware templates - Intelligent logging
+- Supply chain tracking - Full transparency
+- Real-time brewing assistance - Live guidance
+
+**Backward Compatible**: All 4.0 features work unchanged
 
 ---
 

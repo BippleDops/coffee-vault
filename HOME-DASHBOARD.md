@@ -5,9 +5,11 @@ cssclass: home-dashboard
 pin: true
 ---
 
-# ☕ Coffee Vault 4.0 - Home
+# ☕ Coffee Vault 5.0 - Home
 
-**Welcome to your complete coffee intelligence system**
+**Welcome to your complete coffee intelligence platform**
+
+> **New in 5.0**: Supply chain transparency • Personal development goals • Enhanced ML • Real-time brewing assistance
 
 ---
 
@@ -120,7 +122,7 @@ dv.list([
 - **[[PLUGIN-INSTALLATION-GUIDE|🔌 Plugin Guide]]** - Installation instructions
 - **[[Configuration/Template-Framework-Standards|📐 Template Standards]]** - Development guide
 
-### Analytics Dashboards (All 8)
+### Analytics Dashboards (All 13)
 1. **[[Analytics/1-Monthly-Analytics-Dashboard|📊 Monthly Analytics]]**
 2. **[[Analytics/2-Brewing-Optimization-Engine|🎯 Brewing Optimizer]]**
 3. **[[Analytics/3-Cost-Intelligence-System|💰 Cost Intelligence]]**
@@ -129,6 +131,11 @@ dv.list([
 6. **[[Analytics/6-Correlation-Discovery-Engine|🔗 Correlations]]**
 7. **[[Analytics/7-Anomaly-Detection-System|🚨 Anomaly Detector]]**
 8. **[[Analytics/8-Multi-Variable-Recommendation-Engine|🤖 Recommendations]]**
+9. **[[Analytics/9-Real-Time-Brewing-Assistant|⚡ Real-Time Assistant]]** - NEW 5.0
+10. **[[Analytics/10-Supply-Chain-Transparency-Dashboard|🌱 Supply Chain]]** - NEW 5.0
+11. **[[Analytics/11-Learning-Development-Dashboard|🎓 Learning Path]]** - NEW 5.0
+12. **[[Analytics/12-Community-Comparison-Dashboard|👥 Community]]** - NEW 5.0
+13. **[[Analytics/13-Equipment-Maintenance-Dashboard|🔧 Maintenance]]** - NEW 5.0
 
 ---
 
@@ -279,8 +286,8 @@ dv.paragraph("**Scripts**: 22 automation modules operational ✅");
 
 ---
 
-**Coffee Vault 4.0** - Your complete coffee intelligence system  
-*Tracking → Analytics → Optimization → Mastery*
+**Coffee Vault 5.0** - Your complete coffee intelligence platform  
+*Producer → Roaster → Brew → Optimize → Master*
 
 ---
 
@@ -291,23 +298,28 @@ dv.paragraph("**Scripts**: 22 automation modules operational ✅");
 **Data Collection**
 - Coffee Logs
 - Bean Library
-- Daily Notes
+- Producers (NEW 5.0)
+- Recipes (NEW 5.0)
+- Events (NEW 5.0)
+- Goals (NEW 5.0)
 
 **Analytics**
-- Monthly Dashboard
-- Cost Intelligence
-- Quality Predictor
-- Palate Tracker
+- 13 ML Dashboards
+- Real-Time Assistant
+- Supply Chain Tracking
+- Learning Development
+- Community Comparison
 
 **Knowledge**
 - Scientific References
 - Brewing Guides
 - Origin Profiles
+- Roaster Profiles
 
 **Tools**
-- Visualizations
-- Automation Scripts
-- Templates
+- 23+ Visualizations
+- 28 Automation Scripts
+- 13 Smart Templates
 
 </div>
 

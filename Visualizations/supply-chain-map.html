@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Map - Coffee Vault 5.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e8e8e8;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #d4a574;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        
+        .chain-selector {
+            background: rgba(20, 20, 20, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(139, 69, 19, 0.3);
+        }
+        
+        select {
+            width: 100%;
+            padding: 12px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: #e8e8e8;
+            font-size: 15px;
+        }
+        
+        .chain-flow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .chain-node {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            border: 2px solid #d4a574;
+            border-radius: 12px;
+            padding: 20px;
+            width: 180px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .chain-node.verified {
+            border-color: #4ecdc4;
+            box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+        }
+        
+        .chain-node.unverified {
+            border-color: #666;
+            opacity: 0.6;
+        }
+        
+        .node-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .node-title {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        
+        .node-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e8e8e8;
+            margin-bottom: 8px;
+        }
+        
+        .node-details {
+            font-size: 11px;
+            color: #888;
+        }
+        
+        .chain-arrow {
+            flex-grow: 1;
+            height: 2px;
+            background: linear-gradient(90deg, #d4a574 0%, transparent 100%);
+            position: relative;
+            margin: 0 10px;
+        }
+        
+        .chain-arrow::after {
+            content: '→';
+            position: absolute;
+            right: -8px;
+            top: -10px;
+            font-size: 20px;
+            color: #d4a574;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: rgba(20, 20, 20, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 69, 19, 0.3);
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .stat-value {
+            font-size: 28px;
+            font-weight: 600;
+            color: #d4a574;
+        }
+        
+        .transparency-bar {
+            width: 100%;
+            height: 30px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+            position: relative;
+        }
+        
+        .transparency-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #d4a574 0%, #4ecdc4 100%);
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .cert-badge {
+            background: rgba(78, 205, 196, 0.2);
+            border: 1px solid #4ecdc4;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: #4ecdc4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗺️ Supply Chain Map</h1>
+        <p class="subtitle">Complete transparency from farm to cup</p>
+        
+        <div class="chain-selector">
+            <label class="stat-label">Select Bean</label>
+            <select id="bean-select">
+                <option value="0">Ethiopian Yirgacheffe</option>
+                <option value="1">Colombian Supremo</option>
+                <option value="2">Kenya AA</option>
+            </select>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Transparency Score</div>
+                <div class="stat-value" id="transparency-score">8/10</div>
+                <div class="transparency-bar">
+                    <div class="transparency-fill" id="transparency-fill" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">Supply Chain Status</div>
+                <div class="stat-value" id="chain-status">Verified</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">Price Premium</div>
+                <div class="stat-value" id="price-premium">+350%</div>
+                <div class="stat-label" style="margin-top: 5px;">above commodity</div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-label">Certifications</div>
+                <div class="certifications" id="certifications">
+                    <span class="cert-badge">Organic</span>
+                    <span class="cert-badge">Fair Trade</span>
+                    <span class="cert-badge">Direct Trade</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chain-flow">
+            <div class="chain-node verified">
+                <div class="node-icon">🌱</div>
+                <div class="node-title">Producer</div>
+                <div class="node-name" id="producer-name">Kochere Cooperative</div>
+                <div class="node-details">
+                    Yirgacheffe, Ethiopia<br>
+                    1,850m altitude
+                </div>
+            </div>
+            
+            <div class="chain-arrow"></div>
+            
+            <div class="chain-node verified">
+                <div class="node-icon">🏭</div>
+                <div class="node-title">Processing</div>
+                <div class="node-name" id="washing-station">Kochere Station</div>
+                <div class="node-details">
+                    Washed process<br>
+                    Grade 1
+                </div>
+            </div>
+            
+            <div class="chain-arrow"></div>
+            
+            <div class="chain-node verified">
+                <div class="node-icon">🚢</div>
+                <div class="node-title">Exporter</div>
+                <div class="node-name" id="exporter">Moplaco</div>
+                <div class="node-details">
+                    Addis Ababa<br>
+                    Est. 1973
+                </div>
+            </div>
+            
+            <div class="chain-arrow"></div>
+            
+            <div class="chain-node verified">
+                <div class="node-icon">📦</div>
+                <div class="node-title">Importer</div>
+                <div class="node-name" id="importer">Ally Coffee</div>
+                <div class="node-details">
+                    USA<br>
+                    Quality focused
+                </div>
+            </div>
+            
+            <div class="chain-arrow"></div>
+            
+            <div class="chain-node verified">
+                <div class="node-icon">🔥</div>
+                <div class="node-title">Roaster</div>
+                <div class="node-name" id="roaster">Onyx Coffee Lab</div>
+                <div class="node-details">
+                    Bentonville, AR<br>
+                    Light roast
+                </div>
+            </div>
+            
+            <div class="chain-arrow"></div>
+            
+            <div class="chain-node verified">
+                <div class="node-icon">☕</div>
+                <div class="node-title">You</div>
+                <div class="node-name">Coffee Enthusiast</div>
+                <div class="node-details">
+                    Home brewed<br>
+                    Excellence focused
+                </div>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-label">Supply Chain Journey</div>
+            <p style="margin-top: 10px; line-height: 1.6;">
+                This coffee traveled <strong>8,500 miles</strong> from Yirgacheffe, Ethiopia to your cup.
+                The journey took approximately <strong>45 days</strong> from harvest to roast.
+                The producer received <strong>$8.50/kg</strong>, which is <strong>350% above</strong> the commodity price,
+                ensuring sustainable wages and long-term relationship building.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // Sample supply chain data
+        const supplyChains = [
+            {
+                bean: 'Ethiopian Yirgacheffe',
+                producer: 'Kochere Cooperative',
+                producerLocation: 'Yirgacheffe, Ethiopia',
+                washingStation: 'Kochere Washing Station',
+                processing: 'Washed',
+                exporter: 'Moplaco',
+                importer: 'Ally Coffee',
+                roaster: 'Onyx Coffee Lab',
+                transparency: 9,
+                verified: true,
+                certifications: ['Organic', 'Fair Trade', 'Direct Trade'],
+                pricePremium: 350,
+                distance: 8500,
+                duration: 45
+            },
+            {
+                bean: 'Colombian Supremo',
+                producer: 'Finca El Paraiso',
+                producerLocation: 'Cauca, Colombia',
+                washingStation: 'On-farm processing',
+                processing: 'Washed',
+                exporter: 'COCLA',
+                importer: 'Royal Coffee',
+                roaster: 'Counter Culture',
+                transparency: 8,
+                verified: true,
+                certifications: ['Organic', 'Rainforest Alliance'],
+                pricePremium: 280,
+                distance: 3200,
+                duration: 30
+            },
+            {
+                bean: 'Kenya AA',
+                producer: 'Gichatha-ini Factory',
+                producerLocation: 'Kirinyaga, Kenya',
+                washingStation: 'Gichatha-ini',
+                processing: 'Washed',
+                exporter: 'Gichatha-ini Co-op',
+                importer: 'Sustainable Harvest',
+                roaster: 'Sweet Maria\'s',
+                transparency: 10,
+                verified: true,
+                certifications: ['Organic', 'Fair Trade', 'Direct Trade', 'Rainforest Alliance'],
+                pricePremium: 420,
+                distance: 7800,
+                duration: 42
+            }
+        ];
+        
+        const select = document.getElementById('bean-select');
+        
+        select.addEventListener('change', function() {
+            const index = parseInt(this.value);
+            updateChainDisplay(supplyChains[index]);
+        });
+        
+        function updateChainDisplay(chain) {
+            // Update stats
+            document.getElementById('transparency-score').textContent = `${chain.transparency}/10`;
+            document.getElementById('transparency-fill').style.width = `${chain.transparency * 10}%`;
+            document.getElementById('transparency-fill').textContent = `${chain.transparency * 10}%`;
+            document.getElementById('chain-status').textContent = chain.verified ? 'Verified ✓' : 'Unverified';
+            document.getElementById('price-premium').textContent = `+${chain.pricePremium}%`;
+            
+            // Update certifications
+            const certsDiv = document.getElementById('certifications');
+            certsDiv.innerHTML = chain.certifications.map(cert => 
+                `<span class="cert-badge">${cert}</span>`
+            ).join('');
+            
+            // Update chain nodes
+            document.getElementById('producer-name').textContent = chain.producer;
+            document.getElementById('washing-station').textContent = chain.washingStation;
+            document.getElementById('exporter').textContent = chain.exporter;
+            document.getElementById('importer').textContent = chain.importer;
+            document.getElementById('roaster').textContent = chain.roaster;
+        }
+        
+        // Initialize with first chain
+        updateChainDisplay(supplyChains[0]);
+    </script>
+</body>
+</html>
+
