@@ -1,226 +1,148 @@
-# Coffee Vault 4.0 - Start Here
-
-**Welcome!** This is your complete coffee tracking and optimization system.
-
+---
+title: Coffee Vault 5.0 - Start Here
+type: getting-started
+version: 5.0.0
+tags: [start, guide, quickstart]
 ---
 
-## What is Coffee Vault?
+# Coffee Vault 5.0 - Complete Start Guide
 
-Coffee Vault 4.0 transforms Obsidian into an intelligent brewing companion that:
+Welcome to the **ultimate coffee intelligence platform**!
 
-- **Tracks every brew** with detailed parameters
-- **Learns your preferences** and suggests optimal settings
-- **Analyzes your data** using machine learning
-- **Visualizes your journey** with interactive charts
-- **Educates** with scientific coffee references
-
-**From beginner to expert** - the system grows with you.
+Version: 5.0.0 | From producer to cup, from data to mastery
 
 ---
 
 ## Quick Start (5 Minutes)
 
-### Step 1: Install Required Plugins
+### New to Coffee Vault?
 
-Open Obsidian → Settings → Community Plugins → Browse
+**1. Install Required Plugins**:
+- Open Settings → Community Plugins
+- Install: **Datacore** (query engine) ✅
+- Install: **Templater** (smart templates) ✅
+- Install: **Calendar** (optional) ⭐
 
-**Required**:
-- Datacore - Powers all analytics and queries
-- Templater - Enables smart templates
+**2. Open Your Command Center**:
+- Click: [[HOME-DASHBOARD]] 
+- Bookmark it - daily starting point
 
-**Recommended**:
-- Calendar - Visual date navigation
-- Tasks - Brewing reminders
+**3. Log Your First Coffee**:
+- Template: `Templates/Coffee-Log-v5.md` (NEW)
+- Or quick: `Templates/Quick Coffee Capture.md`
 
-### Step 2: Log Your First Coffee
-
-1. Press `Cmd/Ctrl + P` → "Templater: Create new note from template"
-2. Select `Coffee-Log-v3.md`
-3. Fill in:
-   - Bean name (e.g., "Ethiopian Yirgacheffe")
-   - Dose: 18g
-   - Water: 300g
-   - Method: v60
-   - Rating: 4.0/5.0
-
-4. The template auto-calculates brew ratio and other metrics
-5. Save - you're tracking coffee!
-
-### Step 3: Explore Your Vault
-
-After logging 5+ brews, check out:
-
-**Analytics Dashboards**:
-- `Analytics/1-Monthly-Analytics-Dashboard.md` - Overall statistics
-- `Analytics/2-Brewing-Optimization-Engine.md` - ML recommendations
-- `Analytics/3-Cost-Intelligence-System.md` - Financial tracking
-
-**Interactive Visualizations**:
-- `Visualizations/flavor-compass.html` - 4-axis flavor profiling
-- `Visualizations/brewing-triangle.html` - Extraction science
-- `Visualizations/grind-size-calculator.html` - Multi-grinder tool
-
-**Configuration**:
-- `Configuration/Property-Schema.md` - All available properties
-- `Configuration/User-Configuration-Guide.md` - Detailed setup
+**4. Explore**:
+- Brewing: [[Brewing Guides/]]
+- Science: [[Scientific References/]]
+- Goals: [[Coffee Goals/]] (NEW 5.0)
 
 ---
 
-## What's Included
+## What's New in 5.0?
 
-### Core Folders
+**6 New Entity Types**:
+- Producer/Farm Profiles - Supply chain tracking
+- Cupping Sessions - Formal cupping
+- Recipe Profiles - Reusable recipes
+- Equipment Models - Research database
+- Coffee Events - Experiences
+- Coffee Goals - Development tracking
 
-| Folder | Purpose |
-|--------|---------|
-| **Coffee Logs/** | Your brew records |
-| **Beans Library/** | Bean profiles and tracking |
-| **Templates/** | Smart templates for quick logging |
-| **Analytics/** | 8 ML-powered dashboards |
-| **Visualizations/** | 17 interactive HTML tools |
-| **Scripts/** | 22 automation utilities |
-| **Configuration/** | System setup and standards |
-| **Scientific References/** | Coffee science education |
-| **Documentation/** | Guides and references |
+**Enhanced**: Supply chain transparency, graph relationships, context-aware ML, real-time guidance, 500+ properties
 
-### Key Features
-
-**Machine Learning**:
-- Quality prediction (KNN algorithm)
-- Pattern discovery (K-Means clustering)
-- Parameter optimization recommendations
-- Anomaly detection for outlier brews
-
-**Statistical Analysis**:
-- 25+ functions (mean, correlation, regression)
-- Trend detection and forecasting
-- Multi-variable relationship analysis
-
-**Automation**:
-- Weekly/monthly report generation
-- Inventory management with alerts
-- Batch operations on historical data
-- Data export (CSV/JSON/PDF)
-
-**Progressive Disclosure**:
-- **Beginner** (1-20 logs): Basic tracking, consistency
-- **Intermediate** (20-50 logs): Correlations, trends
-- **Advanced** (50+ logs): ML predictions, clustering
+**100% Backward Compatible** with 4.0
 
 ---
 
-## Your First Week
+## What's Inside
 
-**Day 1**: Install plugins, log first 2-3 brews
-**Day 2-3**: Continue logging, try different beans or methods
-**Day 4**: Review your first analytics dashboard
-**Day 5**: Experiment with flavor compass visualization
-**Day 6-7**: Log 2-3 more brews, total goal: 10 logs
-
-**After 10 logs**: The system has enough data to start showing patterns and making suggestions!
+**Content**: 100 beans, 65 origins, 51 brewing guides, 156 scientific references, 70 roasters  
+**Tools**: 13 analytics dashboards, 23+ visualizations, 28 automation scripts  
+**Total**: 647 files, 570,000+ words
 
 ---
 
-## Common Tasks
+## Getting Started by Goal
 
-### Find Your Best Bean
+### Better Coffee
+1. [[Brewing Guides/Pour-Over-V60-Guide]]
+2. Log with `Templates/Coffee-Log-v5.md`
+3. [[Analytics/9-Real-Time-Brewing-Assistant]]
 
-Add this query to any note:
+### Understand Coffee
+1. [[Documentation/Coffee-History-Origins-and-Spread]]
+2. [[Scientific References/Extraction Science/]]
+3. [[Analytics/11-Learning-Development-Dashboard]]
 
-```dataviewjs
-const logs = dv.pages('"Coffee Logs"')
-  .where(p => p.type === "coffee-log")
-  .groupBy(p => p.beans);
+### Ethical Sourcing
+1. [[Analytics/10-Supply-Chain-Transparency-Dashboard]]
+2. Create producer profiles
+3. Track certifications
 
-const avgRatings = logs.map(g => ({
-  bean: g.key,
-  avg: g.rows.map(r => r.rating).reduce((a,b) => a+b, 0) / g.rows.length,
-  count: g.rows.length
-})).sort((a,b) => b.avg - a.avg);
+### Track Development
+1. Set goals: `Templates/Coffee Goal.md`
+2. [[Views/Goals-Dashboard-View]]
+3. Monitor progress automatically
 
-dv.table(["Bean", "Avg Rating", "Brews"],
-  avgRatings.slice(0, 5).map(b => [b.bean, b.avg.toFixed(2), b.count])
-);
-```
+---
 
-### Generate Test Data
+## Essential Templates
 
-Want to explore features without waiting? Generate 50 realistic sample brews:
+**Daily**: `Coffee-Log-v5.md` (context-aware)  
+**Quick**: `Quick Coffee Capture.md`  
+**Beans**: `Bean Profile.md`  
+**Producers**: `Producer Profile.md` (NEW)  
+**Recipes**: `Recipe Profile.md` (NEW)  
+**Goals**: `Coffee Goal.md` (NEW)
 
-```bash
-node -e "const gen = require('./Scripts/sample-data-generator.js'); gen.saveSampleVault('./TEST-VAULT', 50);"
-```
+---
 
-### Run Automation
+## Key Dashboards
 
-```javascript
-// Weekly summary
-const weekly = require('./Scripts/weekly-summary-generator.js');
-weekly.generateWeeklySummary();
+**Daily**: [[HOME-DASHBOARD]]  
+**Stats**: [[Analytics/1-Monthly-Analytics-Dashboard]]  
+**Live**: [[Analytics/9-Real-Time-Brewing-Assistant]]  
+**Supply Chain**: [[Analytics/10-Supply-Chain-Transparency-Dashboard]]  
+**Learning**: [[Analytics/11-Learning-Development-Dashboard]]
 
-// Brewing optimizer (needs 20+ logs)
-const optimizer = require('./Scripts/brewing-optimizer.js');
-optimizer.optimizeForBean('Ethiopian Yirgacheffe');
+---
 
-// Inventory check
-const inventory = require('./Scripts/inventory-manager.js');
-inventory.checkLowStock();
-```
+## Learning Path
+
+**Beginner** (0-20 brews): Master one method, log consistently  
+**Intermediate** (20-50): Expand methods, track extraction  
+**Advanced** (50-100): Optimize, formal cupping  
+**Master** (100+): Perfect technique, compete
 
 ---
 
 ## Troubleshooting
 
-**Templates don't work**:
-- Install Templater plugin
-- Set template folder to "Templates" in settings
-- Restart Obsidian
-
-**Queries show nothing**:
-- Install Datacore plugin
-- Ensure coffee logs have `type: coffee-log` in frontmatter
-- Property names use `kebab-case`: `brew-method` not `brewMethod`
-
-**ML predictions inaccurate**:
-- Need minimum 20 logs
-- Optimal: 50+ logs across varied beans/methods
-- Check confidence score (below 50% = insufficient data)
-
-**Visualizations won't load**:
-- Open HTML files in web browser, not Obsidian
-- Enable JavaScript in browser
-- Check browser console for errors
+**Queries not working?** Install Datacore plugin  
+**Templates not working?** Configure Templater folder to "Templates"  
+**Need help?** See [[Configuration/User-Configuration-Guide]]
 
 ---
 
-## Next Steps
+## First Week Plan
 
-1. Log 10 brews this week
-2. Review monthly analytics dashboard
-3. Try 2-3 visualizations
-4. Read scientific references (optional)
-5. Set up automation scripts (optional)
-6. Customize property schema (optional)
+**Day 1**: Setup, first log  
+**Day 2-3**: Log 2-3 brews  
+**Day 4-5**: Explore dashboards  
+**Day 6-7**: Set first goal
 
 ---
 
-## Documentation
+## Full Documentation
 
-- **This file** - Quick start for new users
-- `Configuration/User-Configuration-Guide.md` - Detailed configuration
-- `Configuration/Property-Schema.md` - All available properties
-- `Documentation/COFFEE-VAULT-4.0-COMPLETE-DELIVERY.md` - Complete feature documentation
-- `Documentation/VAULT-ARCHITECTURE-REFERENCE.md` - Technical reference for developers
+**Complete Guide**: [[COFFEE-VAULT-5.0-COMPLETE-OVERVIEW]]  
+**Migration**: [[Documentation/MIGRATION-GUIDE-5.0]]  
+**All Guides**: [[Documentation/]]
 
 ---
 
-## Version Info
+**Start**: [[HOME-DASHBOARD]]
 
-**Version**: 4.0.0
-**Release**: October 26, 2025
-**Status**: Production Ready
+**Coffee Vault 5.0** - Your coffee journey begins now
 
----
-
-**Happy brewing! Your coffee journey starts now.**
-
-*The vault learns with every brew you log - start tracking today to unlock insights tomorrow.*
+Version: 5.0.0 | Production Ready | MIT License
