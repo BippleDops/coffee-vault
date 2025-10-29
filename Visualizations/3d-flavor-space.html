@@ -247,26 +247,74 @@
         const gridHelper = new THREE.GridHelper(20, 20, 0x444444, 0x222222);
         scene.add(gridHelper);
         
-        // Add axes
-        const axesHelper = new THREE.AxesHelper(10);
+        // Add axes with enhanced visibility
+        const axesHelper = new THREE.AxesHelper(12);
         scene.add(axesHelper);
         
-        // Add axis labels
-        function createTextSprite(message, color = 0xffffff) {
+        // Add axis labels with improved visibility
+        function createTextSprite(message, color = 0xFFD700, size = 40) {
             const canvas = document.createElement('canvas');
             const context = canvas.getContext('2d');
-            canvas.width = 256;
-            canvas.height = 64;
+            canvas.width = 512;
+            canvas.height = 128;
+            
+            // Background for better readability
+            context.fillStyle = 'rgba(0, 0, 0, 0.7)';
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Text
             context.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
-            context.font = 'Bold 40px Arial';
-            context.fillText(message, 10, 45);
+            context.font = `Bold ${size}px Arial`;
+            context.textAlign = 'center';
+            context.fillText(message, canvas.width / 2, canvas.height / 2 + size / 3);
             
             const texture = new THREE.CanvasTexture(canvas);
             const material = new THREE.SpriteMaterial({ map: texture });
             const sprite = new THREE.Sprite(material);
-            sprite.scale.set(4, 1, 1);
+            sprite.scale.set(6, 1.5, 1);
             return sprite;
         }
+        
+        // Add axis labels (will be positioned dynamically)
+        let axisLabels = {
+            xPositive: createTextSprite('Acidity →', 0xFF8F00),
+            xNegative: createTextSprite('← Low Acidity', 0xFF8F00),
+            yPositive: createTextSprite('Body →', 0x8D6E63),
+            yNegative: createTextSprite('← Light Body', 0x8D6E63),
+            zPositive: createTextSprite('Sweetness →', 0xD4A574),
+            zNegative: createTextSprite('← Low Sweet', 0xD4A574)
+        };
+        
+        function updateAxisLabels() {
+            const xAxis = document.getElementById('x-axis').value;
+            const yAxis = document.getElementById('y-axis').value;
+            const zAxis = document.getElementById('z-axis').value;
+            
+            // Remove old labels
+            Object.values(axisLabels).forEach(label => scene.remove(label));
+            
+            // Create new labels with current axis names
+            axisLabels.xPositive = createTextSprite(`High ${xAxis.charAt(0).toUpperCase() + xAxis.slice(1)} →`, 0xFF8F00);
+            axisLabels.xNegative = createTextSprite(`← Low ${xAxis.charAt(0).toUpperCase() + xAxis.slice(1)}`, 0xFF8F00);
+            axisLabels.yPositive = createTextSprite(`High ${yAxis.charAt(0).toUpperCase() + yAxis.slice(1)} →`, 0x8D6E63);
+            axisLabels.yNegative = createTextSprite(`← Low ${yAxis.charAt(0).toUpperCase() + yAxis.slice(1)}`, 0x8D6E63);
+            axisLabels.zPositive = createTextSprite(`High ${zAxis.charAt(0).toUpperCase() + zAxis.slice(1)} →`, 0xD4A574);
+            axisLabels.zNegative = createTextSprite(`← Low ${zAxis.charAt(0).toUpperCase() + zAxis.slice(1)}`, 0xD4A574);
+            
+            // Position labels
+            axisLabels.xPositive.position.set(12, 0, 0);
+            axisLabels.xNegative.position.set(-12, 0, 0);
+            axisLabels.yPositive.position.set(0, 12, 0);
+            axisLabels.yNegative.position.set(0, -12, 0);
+            axisLabels.zPositive.position.set(0, 0, 12);
+            axisLabels.zNegative.position.set(0, 0, -12);
+            
+            // Add to scene
+            Object.values(axisLabels).forEach(label => scene.add(label));
+        }
+        
+        // Initialize axis labels
+        updateAxisLabels();
         
         // Create data points
         const points = [];
@@ -368,9 +416,12 @@
             document.getElementById('info').style.display = 'none';
         }
         
-        // Camera rotation
-        let autoRotate = true;
-        let rotationSpeed = 0.002;
+        // Camera rotation - configurable
+        let autoRotate = false; // DEFAULT: OFF (user can enable)
+        let rotationSpeed = 0.001;
+        let manualRotation = { x: 0, y: 0 };
+        let isDragging = false;
+        let previousMouse = { x: 0, y: 0 };
         
         function animate() {
             requestAnimationFrame(animate);
@@ -379,15 +430,122 @@
                 camera.position.x = Math.cos(Date.now() * rotationSpeed) * 15;
                 camera.position.z = Math.sin(Date.now() * rotationSpeed) * 15;
                 camera.lookAt(0, 0, 0);
+            } else if (manualRotation.x !== 0 || manualRotation.y !== 0) {
+                // Manual rotation from mouse drag
+                const angle = manualRotation.x;
+                const currentX = camera.position.x;
+                const currentZ = camera.position.z;
+                const radius = Math.sqrt(currentX * currentX + currentZ * currentZ);
+                
+                camera.position.x = radius * Math.cos(angle);
+                camera.position.z = radius * Math.sin(angle);
+                camera.position.y += manualRotation.y * 0.1;
+                camera.lookAt(0, 0, 0);
             }
             
             renderer.render(scene, camera);
         }
         
-        // Controls listeners
-        document.getElementById('x-axis').addEventListener('change', () => createScene(sampleBeans));
-        document.getElementById('y-axis').addEventListener('change', () => createScene(sampleBeans));
-        document.getElementById('z-axis').addEventListener('change', () => createScene(sampleBeans));
+        // Mouse drag controls for manual rotation
+        renderer.domElement.addEventListener('mousedown', (e) => {
+            if (e.button === 0) { // Left mouse button
+                isDragging = true;
+                previousMouse = { x: e.clientX, y: e.clientY };
+            }
+        });
+        
+        renderer.domElement.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const deltaX = e.clientX - previousMouse.x;
+                const deltaY = e.clientY - previousMouse.y;
+                
+                manualRotation.x += deltaX * 0.01;
+                manualRotation.y += deltaY * 0.01;
+                
+                previousMouse = { x: e.clientX, y: e.clientY };
+            }
+        });
+        
+        renderer.domElement.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+        
+        // Mouse wheel for zoom
+        renderer.domElement.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const zoomSpeed = 0.5;
+            const distance = Math.sqrt(
+                camera.position.x ** 2 + 
+                camera.position.y ** 2 + 
+                camera.position.z ** 2
+            );
+            
+            const newDistance = distance + (e.deltaY > 0 ? zoomSpeed : -zoomSpeed);
+            const clampedDistance = Math.max(10, Math.min(30, newDistance));
+            
+            const scale = clampedDistance / distance;
+            camera.position.multiplyScalar(scale);
+        });
+        
+        // Auto-rotate toggle button
+        const autoRotateBtn = document.createElement('button');
+        autoRotateBtn.textContent = autoRotate ? 'Disable Auto-Rotate' : 'Enable Auto-Rotate';
+        autoRotateBtn.style.cssText = `
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid #FFD700;
+            border-radius: 8px;
+            color: #FFD700;
+            cursor: pointer;
+            font-size: 14px;
+            z-index: 20;
+        `;
+        autoRotateBtn.addEventListener('click', () => {
+            autoRotate = !autoRotate;
+            autoRotateBtn.textContent = autoRotate ? 'Disable Auto-Rotate' : 'Enable Auto-Rotate';
+            autoRotateBtn.style.background = autoRotate ? 'rgba(255, 215, 0, 0.4)' : 'rgba(255, 215, 0, 0.2)';
+        });
+        document.body.appendChild(autoRotateBtn);
+        
+        // Help text
+        const helpText = document.createElement('div');
+        helpText.style.cssText = `
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            color: #D4A574;
+            font-size: 12px;
+            z-index: 20;
+            max-width: 250px;
+        `;
+        helpText.innerHTML = `
+            <strong style="color: #FFD700;">Controls:</strong><br>
+            • Drag to rotate<br>
+            • Scroll to zoom<br>
+            • Space bar: Toggle auto-rotate<br>
+            • Hover over points for details
+        `;
+        document.body.appendChild(helpText);
+        
+        // Controls listeners with axis label updates
+        document.getElementById('x-axis').addEventListener('change', () => {
+            createScene(sampleBeans);
+            updateAxisLabels();
+        });
+        document.getElementById('y-axis').addEventListener('change', () => {
+            createScene(sampleBeans);
+            updateAxisLabels();
+        });
+        document.getElementById('z-axis').addEventListener('change', () => {
+            createScene(sampleBeans);
+            updateAxisLabels();
+        });
         document.getElementById('color-by').addEventListener('change', () => createScene(sampleBeans));
         
         // Initialize
@@ -405,7 +563,15 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === ' ') {
                 autoRotate = !autoRotate;
+                autoRotateBtn.textContent = autoRotate ? 'Disable Auto-Rotate' : 'Enable Auto-Rotate';
+                autoRotateBtn.style.background = autoRotate ? 'rgba(255, 215, 0, 0.4)' : 'rgba(255, 215, 0, 0.2)';
             }
+            
+            // Arrow keys for manual rotation
+            if (e.key === 'ArrowLeft') manualRotation.x -= 0.1;
+            if (e.key === 'ArrowRight') manualRotation.x += 0.1;
+            if (e.key === 'ArrowUp') manualRotation.y += 0.1;
+            if (e.key === 'ArrowDown') manualRotation.y -= 0.1;
         });
     </script>
 </body>
