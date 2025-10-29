@@ -1,0 +1,57 @@
+{
+  "type": "base",
+  "source": {
+    "type": "query",
+    "query": "FROM \"Coffee Logs\" WHERE rating >= 4.5 SORT rating DESC"
+  },
+  "columns": [
+    {
+      "id": "rating",
+      "label": "⭐ Rating",
+      "type": "number",
+      "width": 100,
+      "visible": true
+    },
+    {
+      "id": "beans",
+      "label": "☕ Beans",
+      "type": "text",
+      "width": 200,
+      "visible": true
+    },
+    {
+      "id": "roaster",
+      "label": "Roaster",
+      "type": "text",
+      "width": 150,
+      "visible": true
+    },
+    {
+      "id": "brew-method",
+      "label": "Method",
+      "type": "text",
+      "width": 130,
+      "visible": true
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "date",
+      "width": 120,
+      "visible": true
+    },
+    {
+      "id": "flavor-notes",
+      "label": "Flavor Notes",
+      "type": "list",
+      "width": 250,
+      "visible": true
+    }
+  ],
+  "sort": {
+    "column": "rating",
+    "direction": "desc"
+  },
+  "groupBy": null
+}
+

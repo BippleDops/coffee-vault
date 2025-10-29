@@ -1,0 +1,494 @@
+/* ================================================
+   COFFEE TRACKING VAULT - CUSTOM THEME
+   A warm, inviting theme optimized for coffee tracking
+   ================================================ */
+
+/* Color Palette - Coffee Inspired */
+:root {
+  /* Coffee Browns */
+  --coffee-dark: #3E2723;
+  --coffee-medium: #5D4037;
+  --coffee-light: #8D6E63;
+  --coffee-cream: #D7CCC8;
+  --coffee-foam: #F5F5F5;
+  
+  /* Accent Colors */
+  --espresso: #4E342E;
+  --caramel: #D2691E;
+  --latte: #CD853F;
+  --mocha: #8B4513;
+  --orange-zest: #FF6B35;
+  
+  /* Background Layers */
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #F5F5F5;
+  --bg-accent: #FFF9F0;
+  
+  /* Text Colors */
+  --text-primary: #3E2723;
+  --text-secondary: #5D4037;
+  --text-muted: #8D6E63;
+  
+  /* Interactive Elements */
+  --link-color: #D2691E;
+  --link-hover: #FF6B35;
+  --button-bg: #8D6E63;
+  --button-hover: #5D4037;
+}
+
+/* ================================================
+   WORKSPACE BACKGROUND
+   ================================================ */
+
+.workspace {
+  background-color: var(--bg-primary);
+}
+
+.workspace-leaf-content {
+  background-color: var(--bg-secondary);
+}
+
+/* ================================================
+   EDITOR STYLING
+   ================================================ */
+
+.markdown-source-view,
+.markdown-preview-view {
+  background-color: var(--bg-accent);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headers with Coffee Gradient */
+.markdown-preview-view h1,
+.cm-header-1 {
+  color: var(--espresso);
+  font-weight: 700;
+  border-bottom: 3px solid var(--caramel);
+  padding-bottom: 0.3em;
+  background: linear-gradient(90deg, var(--coffee-dark), var(--coffee-medium));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+  color: var(--coffee-medium);
+  font-weight: 600;
+  border-bottom: 2px solid var(--coffee-light);
+  padding-bottom: 0.2em;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+  color: var(--coffee-light);
+  font-weight: 600;
+}
+
+/* ================================================
+   PROPERTIES / FRONTMATTER STYLING
+   ================================================ */
+
+.metadata-container {
+  background: linear-gradient(135deg, #FFF9F0 0%, #F5F5F5 100%);
+  border: 2px solid var(--coffee-cream);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(62, 39, 35, 0.1);
+}
+
+.metadata-property {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--coffee-cream);
+}
+
+.metadata-property:last-child {
+  border-bottom: none;
+}
+
+.metadata-property-key {
+  color: var(--coffee-medium);
+  font-weight: 600;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metadata-property-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Rating Properties - Star Styling */
+.metadata-property[data-property-key="rating"] .metadata-property-value {
+  color: var(--orange-zest);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+/* ================================================
+   TABLES (BASES & DATACORE)
+   ================================================ */
+
+table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(62, 39, 35, 0.08);
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+}
+
+thead {
+  background: linear-gradient(135deg, var(--coffee-medium), var(--coffee-light));
+  color: white;
+}
+
+th {
+  padding: 1rem;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.85em;
+  border: none !important;
+}
+
+td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--coffee-cream);
+  color: var(--text-primary);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background-color: var(--bg-accent);
+  transition: background-color 0.2s ease;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: #FAFAFA;
+}
+
+/* ================================================
+   LINKS
+   ================================================ */
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.internal-link {
+  color: var(--coffee-medium);
+  border-bottom: 1px dotted var(--coffee-light);
+}
+
+.internal-link:hover {
+  color: var(--orange-zest);
+  border-bottom: 1px solid var(--orange-zest);
+}
+
+/* ================================================
+   CALLOUTS (for Tasting Notes, etc.)
+   ================================================ */
+
+/* Custom callout for tasting notes */
+.callout[data-callout="tasting"],
+.callout[data-callout="taste"] {
+  background: linear-gradient(135deg, #FFF9F0 0%, #FFF5E6 100%);
+  border-left: 4px solid var(--caramel);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.callout[data-callout="tasting"] .callout-title,
+.callout[data-callout="taste"] .callout-title {
+  color: var(--coffee-medium);
+  font-weight: 600;
+}
+
+/* Brewing callout */
+.callout[data-callout="brew"],
+.callout[data-callout="brewing"] {
+  background: linear-gradient(135deg, #F5F5F5 0%, #EEEEEE 100%);
+  border-left: 4px solid var(--mocha);
+  border-radius: 8px;
+}
+
+/* Rating callout */
+.callout[data-callout="rating"] {
+  background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+  border-left: 4px solid var(--orange-zest);
+  border-radius: 8px;
+}
+
+/* ================================================
+   TAGS
+   ================================================ */
+
+.tag {
+  background: var(--coffee-cream);
+  color: var(--coffee-dark);
+  border-radius: 12px;
+  padding: 0.2em 0.6em;
+  font-size: 0.85em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: var(--caramel);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Coffee-specific tags */
+a.tag[href="#coffee"],
+a.tag[href="#espresso"],
+a.tag[href="#pour-over"] {
+  background: var(--mocha);
+  color: white;
+}
+
+/* ================================================
+   CODE BLOCKS (for Datacore/Bases queries)
+   ================================================ */
+
+pre code {
+  background: var(--coffee-dark) !important;
+  color: var(--coffee-cream) !important;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: 'Fira Code', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* ================================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ================================================ */
+
+button,
+.clickable-icon {
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover,
+.clickable-icon:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(62, 39, 35, 0.2);
+}
+
+/* ================================================
+   FILE EXPLORER
+   ================================================ */
+
+.nav-folder-title,
+.nav-file-title {
+  color: var(--text-primary);
+  padding: 0.4rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-folder-title:hover,
+.nav-file-title:hover {
+  background-color: var(--coffee-cream);
+  color: var(--coffee-dark);
+}
+
+.nav-folder-title.is-active,
+.nav-file-title.is-active {
+  background: var(--coffee-medium);
+  color: white;
+  font-weight: 600;
+}
+
+/* Coffee folder icons */
+.nav-folder-title[data-path*="Coffee"],
+.nav-folder-title[data-path*="Brewing"],
+.nav-folder-title[data-path*="Beans"] {
+  border-left: 3px solid var(--caramel);
+}
+
+/* ================================================
+   CHECKBOXES (for tasks)
+   ================================================ */
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--coffee-medium);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--caramel);
+  border-color: var(--caramel);
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  top: -2px;
+  left: 2px;
+}
+
+/* ================================================
+   SCROLLBARS
+   ================================================ */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--coffee-light);
+  border-radius: 6px;
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--coffee-medium);
+}
+
+/* ================================================
+   GRAPH VIEW
+   ================================================ */
+
+.graph-view.color-fill-unresolved {
+  color: var(--coffee-cream);
+  opacity: 0.7;
+}
+
+.graph-view.color-fill-tag {
+  color: var(--caramel);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--latte);
+}
+
+.graph-view.color-circle {
+  color: var(--coffee-medium);
+}
+
+.graph-view.color-line {
+  color: var(--coffee-light);
+}
+
+/* ================================================
+   SPECIAL EMOJI STYLING
+   ================================================ */
+
+/* Make coffee emoji larger and more prominent */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has-text("☕") {
+  font-size: 1.2em;
+}
+
+/* ================================================
+   MOBILE OPTIMIZATIONS
+   ================================================ */
+
+@media (max-width: 768px) {
+  .metadata-container {
+    padding: 0.75rem;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+  
+  th, td {
+    padding: 0.6rem;
+  }
+}
+
+/* ================================================
+   PRINT STYLES
+   ================================================ */
+
+@media print {
+  .workspace {
+    background: white;
+  }
+  
+  table {
+    box-shadow: none;
+  }
+  
+  .callout {
+    border: 1px solid var(--coffee-medium);
+  }
+}
+
+/* ================================================
+   CUSTOM CLASSES FOR SPECIAL NOTES
+   ================================================ */
+
+/* Homepage styling */
+.homepage {
+  background: linear-gradient(135deg, #FFF9F0 0%, #FAFAFA 100%);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+/* Dashboard styling */
+.dashboard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(62, 39, 35, 0.08);
+}
+
+/* Stat card styling */
+.stat-card {
+  background: linear-gradient(135deg, var(--coffee-cream), var(--coffee-foam));
+  border-left: 4px solid var(--caramel);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+/* ================================================
+   END OF COFFEE THEME
+   ================================================ */
+

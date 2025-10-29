@@ -1,0 +1,18 @@
+{
+	"command_timeout": 5,
+	"templates_folder": "Templates",
+	"trigger_on_file_creation": true,
+	"auto_jump_to_cursor": true,
+	"enable_system_commands": false,
+	"enable_folder_templates": true,
+	"folder_templates": [
+		{
+			"folder": "Coffee Logs/",
+			"template": "Templates/Coffee-Log-v3.md"
+		},
+		{
+			"folder": "Beans Library/",
+			"template": "Templates/Bean Profile.md"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "base",
+  "source": {
+    "type": "folder",
+    "path": "Coffee Logs"
+  },
+  "columns": [
+    {
+      "id": "beans",
+      "label": "☕ Beans",
+      "type": "text",
+      "width": 200,
+      "visible": true
+    },
+    {
+      "id": "rating",
+      "label": "⭐",
+      "type": "number",
+      "width": 80,
+      "visible": true
+    },
+    {
+      "id": "brew-method",
+      "label": "Method",
+      "type": "text",
+      "width": 120,
+      "visible": true
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "date",
+      "width": 120,
+      "visible": true
+    }
+  ],
+  "sort": {
+    "column": "rating",
+    "direction": "desc"
+  },
+  "groupBy": "origin"
+}
+

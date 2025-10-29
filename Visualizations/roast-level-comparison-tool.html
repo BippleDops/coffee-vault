@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast Level Comparison Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #2C1810 0%, #5D3A2A 100%);
+            color: #FFF8E1;
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFD700;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .roast-spectrum {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .roast-level {
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .roast-level:hover {
+            transform: scale(1.05);
+            border-color: #FFD700;
+        }
+
+        .roast-level.active {
+            border-color: #FFD700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .light {
+            background: linear-gradient(135deg, #D4A574, #C19A6B);
+            color: #2B1810;
+        }
+
+        .city {
+            background: linear-gradient(135deg, #A67C52, #8B6914);
+            color: #FFF8E1;
+        }
+
+        .full-city {
+            background: linear-gradient(135deg, #8B6914, #654321);
+            color: #FFF8E1;
+        }
+
+        .vienna {
+            background: linear-gradient(135deg, #5D4037, #3E2723);
+            color: #FFF8E1;
+        }
+
+        .french {
+            background: linear-gradient(135deg, #3E2723, #1C0F0A);
+            color: #FFF8E1;
+        }
+
+        .roast-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .roast-temp {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .details-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .detail-section {
+            margin: 20px 0;
+        }
+
+        .detail-title {
+            color: #FFD700;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .detail-content {
+            color: #FFF8E1;
+            line-height: 1.6;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .characteristics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .char-item {
+            background: rgba(212, 165, 116, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #D4A574;
+        }
+
+        .char-label {
+            color: #FFD700;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .char-value {
+            color: #FFF8E1;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔥 Coffee Roast Level Comparison Tool</h1>
+
+        <div class="roast-spectrum">
+            <div class="roast-level light active" onclick="showDetails('light')">
+                <div class="roast-name">Light (City)</div>
+                <div class="roast-temp">405-410°F</div>
+            </div>
+            <div class="roast-level city" onclick="showDetails('city')">
+                <div class="roast-name">City+</div>
+                <div class="roast-temp">410-418°F</div>
+            </div>
+            <div class="roast-level full-city" onclick="showDetails('fullcity')">
+                <div class="roast-name">Full City</div>
+                <div class="roast-temp">418-425°F</div>
+            </div>
+            <div class="roast-level vienna" onclick="showDetails('vienna')">
+                <div class="roast-name">Vienna</div>
+                <div class="roast-temp">425-435°F</div>
+            </div>
+            <div class="roast-level french" onclick="showDetails('french')">
+                <div class="roast-name">French</div>
+                <div class="roast-temp">435-445°F</div>
+            </div>
+        </div>
+
+        <div class="details-panel" id="detailsPanel">
+            <div class="detail-section">
+                <div class="detail-title">Flavor Profile</div>
+                <div class="detail-content" id="flavorProfile"></div>
+            </div>
+
+            <div class="detail-section">
+                <div class="detail-title">Characteristics</div>
+                <div class="characteristics" id="characteristics"></div>
+            </div>
+
+            <div class="detail-section">
+                <div class="detail-title">Best Used For</div>
+                <div class="detail-content" id="bestFor"></div>
+            </div>
+
+            <div class="detail-section">
+                <div class="detail-title">Ideal Coffee Types</div>
+                <div class="detail-content" id="idealCoffees"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const roastData = {
+            light: {
+                flavor: "Bright, fruity, floral, origin character dominant. Maximum complexity and acidity. Tea-like body.",
+                chars: {
+                    acidity: "Very High (9-10/10)",
+                    body: "Light-Medium (4-6/10)",
+                    sweetness: "Moderate (6-7/10)",
+                    complexity: "Very High (9-10/10)",
+                    development: "30-75 seconds post-crack"
+                },
+                bestFor: "Pour-over (V60, Chemex), Aeropress. Showcasing origin terroir, complexity lovers, bright coffee enthusiasts.",
+                idealCoffees: "Ethiopian (Yirgacheffe, Guji), Kenyan SL-28, Panama Geisha, Colombian Pink Bourbon, any high-altitude specialty"
+            },
+            city: {
+                flavor: "Balanced fruit and chocolate, bright but developing sweetness. Origin character clear with caramel emerging.",
+                chars: {
+                    acidity: "High (7-9/10)",
+                    body: "Medium (5-7/10)",
+                    sweetness: "High (7-9/10)",
+                    complexity: "High (8-9/10)",
+                    development: "75-105 seconds post-crack"
+                },
+                bestFor: "Pour-over, espresso (light shots), versatile brewing. Balanced complexity and approachability.",
+                idealCoffees: "Guatemala SHB, Colombian specialty, Ethiopian, Costa Rican, most single-origin specialty"
+            },
+            fullcity: {
+                flavor: "Balanced chocolate-caramel-fruit. Sweet, versatile, crowd-pleasing. Origin and roast in harmony.",
+                chars: {
+                    acidity: "Medium-High (6-7/10)",
+                    body: "Medium-Full (6-8/10)",
+                    sweetness: "Very High (8-9/10)",
+                    complexity: "Moderate-High (7-8/10)",
+                    development: "105-150 seconds post-crack"
+                },
+                bestFor: "All brewing methods. Espresso, drip, pour-over. Most versatile roast level. Daily drinking excellence.",
+                idealCoffees: "Colombian, Guatemalan, Brazilian, Honduran, Costa Rican - balanced origins shine here"
+            },
+            vienna: {
+                flavor: "Chocolate, caramel dominant. Fuller body, lower acidity. Roast character emerging, origin fading.",
+                chars: {
+                    acidity: "Low-Medium (3-5/10)",
+                    body: "Full (7-9/10)",
+                    sweetness: "High (7-8/10)",
+                    complexity: "Moderate (5-6/10)",
+                    development: "150-210 seconds post-crack"
+                },
+                bestFor: "Espresso, French Press, Moka Pot. Milk drinks excellent. Traditional preferences.",
+                idealCoffees: "Brazilian, Sumatran, Indonesian, Colombian (dark roast style), blends for espresso"
+            },
+            french: {
+                flavor: "Roast flavors dominant (chocolate-smoke-charred). Very full body, zero acidity. Origin character gone.",
+                chars: {
+                    acidity: "Very Low (1-2/10)",
+                    body: "Very Full (9-10/10)",
+                    sweetness: "Bittersweet (5-6/10)",
+                    complexity: "Low (3-4/10)",
+                    development: "Into second crack, oils surfacing"
+                },
+                bestFor: "French Press, espresso (traditional Italian), very strong coffee. Handles milk well.",
+                idealCoffees: "Brazilian, Indonesian, Robusta blends, commodity-grade (dark roasting masks defects)"
+            }
+        };
+
+        function showDetails(level) {
+            // Update active state
+            document.querySelectorAll('.roast-level').forEach(el => el.classList.remove('active'));
+            event.target.closest('.roast-level').classList.add('active');
+
+            // Update details
+            const data = roastData[ level ];
+            document.getElementById('flavorProfile').textContent = data.flavor;
+            document.getElementById('bestFor').textContent = data.bestFor;
+            document.getElementById('idealCoffees').textContent = data.idealCoffees;
+
+            // Update characteristics
+            const charsHTML = Object.entries(data.chars).map(([ key, value ]) => `
+                <div class="char-item">
+                    <div class="char-label">${key.charAt(0).toUpperCase() + key.slice(1)}</div>
+                    <div class="char-value">${value}</div>
+                </div>
+            `).join('');
+            document.getElementById('characteristics').innerHTML = charsHTML;
+        }
+
+        // Initialize with light roast
+        showDetails('light');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1115 @@
+/**
+ * Coffee Vault Mobile Responsive Styles
+ * Version: 1.0.0
+ * Purpose: Mobile-first responsive design for exceptional phone and tablet experience
+ *
+ * Features:
+ * - Mobile-first approach with progressive enhancement
+ * - Touch-optimized components (44x44px minimum targets)
+ * - Responsive breakpoints: 480px (phone), 768px (tablet), 1024px (desktop)
+ * - Collapsible sections for small screens
+ * - Card layouts replacing tables on mobile
+ * - Large, thumb-friendly interactive elements
+ */
+
+/* ============================================
+   MOBILE-FIRST BASE STYLES
+   ============================================ */
+
+/* Ensure proper mobile viewport behavior */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+/* Base mobile typography - minimum 16px to prevent zoom on iOS */
+.markdown-preview-view {
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Improve touch scrolling on iOS */
+.markdown-preview-view,
+.markdown-source-view {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+/* ============================================
+   TOUCH TARGET OPTIMIZATION
+   ============================================ */
+
+/* Minimum 44x44px touch targets per iOS HIG and Material Design */
+.coffee-button,
+.coffee-tag,
+button,
+a,
+input[type="checkbox"],
+input[type="radio"],
+.clickable-icon {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px 16px;
+}
+
+/* Large touch-friendly interactive elements */
+.mobile-touch-target {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+/* Increase tap area with pseudo-element */
+.coffee-rating-star::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+/* ============================================
+   MOBILE NAVIGATION
+   ============================================ */
+
+/* Mobile-optimized breadcrumbs */
+.coffee-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  font-size: 14px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Sticky mobile header */
+.mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-elevated);
+  background: var(--bg-primary);
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Bottom navigation bar for mobile */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-light);
+  padding: var(--space-2);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: var(--z-elevated);
+}
+
+.mobile-bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--space-2);
+  min-width: 60px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.mobile-bottom-nav-item.active {
+  color: var(--color-primary);
+}
+
+/* ============================================
+   RESPONSIVE GRID LAYOUTS
+   ============================================ */
+
+/* Mobile: Single column */
+.coffee-dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  padding: var(--space-4);
+}
+
+/* Tablet: Two columns */
+@media (min-width: 768px) {
+  .coffee-dashboard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+    padding: var(--space-6);
+  }
+}
+
+/* Desktop: Three columns */
+@media (min-width: 1024px) {
+  .coffee-dashboard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Responsive card grid */
+.coffee-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 480px) {
+  .coffee-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .coffee-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .coffee-card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ============================================
+   MOBILE TABLE TRANSFORMATIONS
+   ============================================ */
+
+/* Hide tables on mobile, show card layout instead */
+@media (max-width: 767px) {
+  .coffee-table {
+    display: none;
+  }
+
+  .mobile-card-view {
+    display: block;
+  }
+
+  /* If table must be shown, make it scrollable */
+  .coffee-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 calc(var(--space-4) * -1);
+    padding: 0 var(--space-4);
+  }
+
+  .coffee-table-container .coffee-table {
+    display: table;
+    min-width: 600px;
+    font-size: 14px;
+  }
+
+  .coffee-table th,
+  .coffee-table td {
+    padding: var(--space-2) var(--space-3);
+    white-space: nowrap;
+  }
+}
+
+/* Desktop: show tables, hide mobile cards */
+@media (min-width: 768px) {
+  .coffee-table {
+    display: table;
+  }
+
+  .mobile-card-view {
+    display: none;
+  }
+}
+
+/* ============================================
+   MOBILE CARD COMPONENTS
+   ============================================ */
+
+/* Mobile-optimized card layout */
+.mobile-log-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.mobile-log-card:active {
+  transform: scale(0.98);
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-log-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+  gap: var(--space-3);
+}
+
+.mobile-log-card-title {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  flex: 1;
+  line-height: 1.3;
+}
+
+.mobile-log-card-rating {
+  font-size: 20px;
+  white-space: nowrap;
+  color: var(--coffee-gold);
+}
+
+.mobile-log-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.mobile-log-card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.mobile-log-card-body {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.mobile-log-card-footer {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border-light);
+}
+
+/* ============================================
+   COLLAPSIBLE SECTIONS
+   ============================================ */
+
+/* Accordion-style collapsible sections for mobile */
+.mobile-collapsible {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-3);
+  overflow: hidden;
+}
+
+.mobile-collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--bg-secondary);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 56px;
+}
+
+.mobile-collapsible-header:active {
+  background: var(--bg-tertiary);
+}
+
+.mobile-collapsible-title {
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.mobile-collapsible-icon {
+  font-size: 20px;
+  transition: transform var(--transition-base);
+  color: var(--text-muted);
+}
+
+.mobile-collapsible.expanded .mobile-collapsible-icon {
+  transform: rotate(180deg);
+}
+
+.mobile-collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-base);
+}
+
+.mobile-collapsible.expanded .mobile-collapsible-content {
+  max-height: 2000px;
+  padding: var(--space-4);
+}
+
+/* ============================================
+   MOBILE FORMS
+   ============================================ */
+
+/* Large, thumb-friendly form inputs */
+.mobile-form-group {
+  margin-bottom: var(--space-5);
+}
+
+.mobile-form-label {
+  display: block;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.mobile-form-input,
+.mobile-form-select,
+.mobile-form-textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.mobile-form-input:focus,
+.mobile-form-select:focus,
+.mobile-form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(111, 78, 55, 0.1);
+}
+
+.mobile-form-textarea {
+  min-height: 120px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* Large select dropdowns */
+.mobile-form-select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236f4e37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+  padding-right: 44px;
+}
+
+/* Checkbox and radio with larger touch targets */
+.mobile-form-checkbox,
+.mobile-form-radio {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  position: relative;
+  margin-right: var(--space-2);
+}
+
+.mobile-form-radio {
+  border-radius: 50%;
+}
+
+.mobile-form-checkbox:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.mobile-form-radio:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* ============================================
+   MOBILE RATING INPUT
+   ============================================ */
+
+.mobile-rating-input {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  padding: var(--space-4) 0;
+}
+
+.mobile-rating-star {
+  width: 48px;
+  height: 48px;
+  font-size: 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--border-medium);
+  transition: all var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-rating-star.filled {
+  color: var(--coffee-gold);
+  transform: scale(1.1);
+}
+
+.mobile-rating-star:active {
+  transform: scale(1.2);
+}
+
+/* ============================================
+   MOBILE MODALS
+   ============================================ */
+
+.mobile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: var(--z-modal);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+
+.mobile-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-modal-content {
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  padding: var(--space-6);
+  max-height: 85vh;
+  width: 100%;
+  max-width: 600px;
+  overflow-y: auto;
+  transform: translateY(100%);
+  transition: transform var(--transition-base);
+}
+
+.mobile-modal.active .mobile-modal-content {
+  transform: translateY(0);
+}
+
+.mobile-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mobile-modal-title {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.mobile-modal-close {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: var(--bg-tertiary);
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Swipe indicator */
+.mobile-modal-swipe-indicator {
+  width: 40px;
+  height: 4px;
+  background: var(--border-medium);
+  border-radius: 2px;
+  margin: 0 auto var(--space-4);
+}
+
+/* ============================================
+   MOBILE CHARTS & VISUALIZATIONS
+   ============================================ */
+
+/* Reorient charts vertically on mobile */
+.coffee-chart {
+  padding: var(--space-4);
+  margin: 0 calc(var(--space-4) * -1);
+}
+
+@media (max-width: 767px) {
+  .coffee-chart canvas {
+    max-height: 300px;
+  }
+
+  /* Force vertical bar charts */
+  .coffee-chart.horizontal {
+    transform: rotate(0deg);
+  }
+}
+
+/* Scrollable chart container */
+.mobile-chart-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: var(--space-2);
+}
+
+/* ============================================
+   MOBILE STATS DISPLAY
+   ============================================ */
+
+.mobile-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.mobile-stat-card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.mobile-stat-value {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.mobile-stat-label {
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--space-2);
+}
+
+/* ============================================
+   MOBILE FILTER BAR
+   ============================================ */
+
+.mobile-filter-bar {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--space-4);
+  margin: 0 calc(var(--space-4) * -1);
+  scrollbar-width: none;
+}
+
+.mobile-filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 16px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.mobile-filter-chip.active {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  border-color: var(--color-primary);
+}
+
+/* ============================================
+   MOBILE SEARCH BAR
+   ============================================ */
+
+.mobile-search-container {
+  position: relative;
+  margin-bottom: var(--space-4);
+}
+
+.mobile-search-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 48px 12px 48px;
+  font-size: 16px;
+  border: 2px solid var(--border-medium);
+  border-radius: var(--radius-full);
+  background: var(--bg-primary);
+}
+
+.mobile-search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.mobile-search-clear {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-search-input:not(:placeholder-shown) ~ .mobile-search-clear {
+  display: block;
+}
+
+/* ============================================
+   MOBILE ACTION BUTTONS
+   ============================================ */
+
+.mobile-action-row {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.mobile-action-button {
+  flex: 1;
+  min-height: 52px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.mobile-action-button.primary {
+  background: var(--color-primary);
+  color: var(--text-inverse);
+}
+
+.mobile-action-button.secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-medium);
+}
+
+.mobile-action-button:active {
+  transform: scale(0.96);
+}
+
+/* Floating action button */
+.mobile-fab {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  border: none;
+  font-size: 28px;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  z-index: var(--z-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.mobile-fab:active {
+  transform: scale(0.9);
+}
+
+/* ============================================
+   MOBILE LIST VIEWS
+   ============================================ */
+
+.mobile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-primary);
+  min-height: 64px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.mobile-list-item:active {
+  background: var(--bg-secondary);
+}
+
+.mobile-list-item-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.mobile-list-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.mobile-list-item-title {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile-list-item-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.mobile-list-item-action {
+  font-size: 20px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+/* ============================================
+   MOBILE TABS
+   ============================================ */
+
+.mobile-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--border-light);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  margin: 0 calc(var(--space-4) * -1) var(--space-4);
+  padding: 0 var(--space-4);
+}
+
+.mobile-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-tab {
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+  min-height: 48px;
+}
+
+.mobile-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ============================================
+   MOBILE PULL-TO-REFRESH
+   ============================================ */
+
+.mobile-pull-refresh {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-base);
+}
+
+.mobile-pull-refresh.active {
+  top: 10px;
+}
+
+.mobile-pull-refresh-icon {
+  font-size: 24px;
+  color: var(--text-muted);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================
+   MOBILE SPACING UTILITIES
+   ============================================ */
+
+@media (max-width: 767px) {
+  .mobile-p-0 { padding: 0 !important; }
+  .mobile-p-2 { padding: var(--space-2) !important; }
+  .mobile-p-4 { padding: var(--space-4) !important; }
+  .mobile-p-6 { padding: var(--space-6) !important; }
+
+  .mobile-m-0 { margin: 0 !important; }
+  .mobile-m-2 { margin: var(--space-2) !important; }
+  .mobile-m-4 { margin: var(--space-4) !important; }
+
+  .mobile-text-sm { font-size: 14px !important; }
+  .mobile-text-base { font-size: 16px !important; }
+  .mobile-text-lg { font-size: 18px !important; }
+
+  .mobile-hide { display: none !important; }
+  .mobile-show { display: block !important; }
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+
+/* Hardware acceleration for smooth animations */
+.mobile-collapsible-content,
+.mobile-modal-content,
+.mobile-fab {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Reduce repaints during scrolling */
+.mobile-list-item,
+.mobile-log-card {
+  contain: layout style paint;
+}
+
+/* ============================================
+   GESTURE SUPPORT
+   ============================================ */
+
+/* Disable text selection during gestures */
+.gesture-active {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Visual feedback for swipeable items */
+.swipeable {
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-action-left,
+.swipe-action-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.swipe-action-left {
+  left: 0;
+  background: var(--color-success);
+}
+
+.swipe-action-right {
+  right: 0;
+  background: var(--color-error);
+}
+
+/* ============================================
+   OFFLINE INDICATORS
+   ============================================ */
+
+.offline-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-warning);
+  color: var(--coffee-espresso);
+  padding: var(--space-3);
+  text-align: center;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  z-index: var(--z-popover);
+  transform: translateY(-100%);
+  transition: transform var(--transition-base);
+}
+
+.offline-banner.visible {
+  transform: translateY(0);
+}
+
+/* ============================================
+   ACCESSIBILITY ON MOBILE
+   ============================================ */
+
+/* Larger focus indicators on mobile */
+@media (max-width: 767px) {
+  *:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  /* Skip to content link */
+  .skip-to-content {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: var(--space-4);
+    z-index: var(--z-tooltip);
+    transition: top var(--transition-base);
+  }
+
+  .skip-to-content:focus {
+    top: 0;
+  }
+}
+
+/* ============================================
+   DARK MODE MOBILE ADJUSTMENTS
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  .mobile-modal {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .mobile-bottom-nav {
+    border-top-color: var(--coffee-dark-roast);
+  }
+
+  .offline-banner {
+    background: #d97706;
+    color: white;
+  }
+}
+
+/* ============================================
+   SAFE AREA INSETS (iPhone X+)
+   ============================================ */
+
+/* Account for notches and home indicators */
+.mobile-bottom-nav {
+  padding-bottom: calc(var(--space-2) + env(safe-area-inset-bottom));
+}
+
+.mobile-modal-content {
+  padding-bottom: calc(var(--space-6) + env(safe-area-inset-bottom));
+}
+
+.mobile-fab {
+  bottom: calc(80px + env(safe-area-inset-bottom));
+}
+
+/* ============================================
+   RESPONSIVE IMAGES
+   ============================================ */
+
+@media (max-width: 767px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Full-width images on mobile */
+  .mobile-image-full {
+    width: 100vw;
+    margin-left: calc(var(--space-4) * -1);
+    margin-right: calc(var(--space-4) * -1);
+  }
+}
+
+/* ============================================
+   MOBILE PRINT STYLES
+   ============================================ */
+
+@media print {
+  .mobile-bottom-nav,
+  .mobile-fab,
+  .mobile-filter-bar,
+  .offline-banner {
+    display: none !important;
+  }
+}

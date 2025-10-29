@@ -1,0 +1,29 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/hotkeys.json
+.obsidian/graph.json
+.obsidian/app.json
+
+# Trash
+.trash/
+
+# MacOS
+.DS_Store
+**/.DS_Store
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Personal/Private (if any sensitive data)
+# Uncomment if you have private notes:
+# Private/
+# Personal/
+
+# Logs might contain personal data - decide if you want to include
+# Coffee Logs/
+
+# Daily Notes might be personal - decide if you want to include
+# Daily Notes/
+

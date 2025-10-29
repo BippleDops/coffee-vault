@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(wc:*)",
+      "Bash(awk:*)",
+      "Bash(ls:*)",
+      "Bash(for file in weekly-summary-generator monthly-report-generator brewing-optimizer inventory-manager maintenance-scheduler data-export-pipeline notification-system batch-operations)",
+      "Bash(do ls -lh $file.js)",
+      "Bash(done)",
+      "Bash(node -e:*)",
+      "Bash(node Scripts/sample-data-generator.js:*)",
+      "Bash(for file in \"Monthly Dashboard.md\" \"Brewing Optimizer.md\" \"Cost Intelligence.md\" \"Palate Development.md\" \"Anomaly Detection.md\" \"Correlation-Engine.md\" \"Bean Performance Analytics.md\" \"Brewing Consistency Score.md\" \"Cross-Method Comparison.md\" \"Environmental Impact Dashboard.md\" \"Equipment Optimization.md\" \"Extraction Optimization.md\" \"Flavor Profile Clustering.md\" \"Predictive Quality Forecasting.md\" \"Roast Development Tracker.md\" \"Sensory Evolution Tracker.md\" \"Supply Chain Analytics.md\" \"Temporal Intelligence.md\" \"Advanced Seasonal Analysis.md\" \"Comparative Bean Intelligence.md\" \"Multi-Variable Recommendation Engine.md\")",
+      "Bash(do rm -f \"$file\")",
+      "Bash(for file in 1-Monthly-Analytics-Dashboard.md 2-Brewing-Optimization-Engine.md 3-Cost-Intelligence-System.md 4-Palate-Development-Tracker.md 5-Quality-Predictor.md 6-Correlation-Discovery-Engine.md 7-Anomaly-Detection-System.md 8-Multi-Variable-Recommendation-Engine.md)",
+      "Bash(do mv \"$file\" \"Analytics/$file\")",
+      "Bash(echo:*)",
+      "Bash(test:*)",
+      "Bash(xargs basename:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Chemistry Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a3a52 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #4FC3F7;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #81D4FA;
+            font-size: 1.1rem;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .input-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+        }
+
+        .section-title {
+            color: #4FC3F7;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .mineral-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .mineral-input {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(79, 195, 247, 0.2);
+        }
+
+        .mineral-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #81D4FA;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(79, 195, 247, 0.3);
+            border-radius: 8px;
+            color: #FFF8E1;
+            font-size: 1rem;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #4FC3F7;
+        }
+
+        .results-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+        }
+
+        .result-card {
+            background: rgba(79, 195, 247, 0.1);
+            border: 2px solid rgba(79, 195, 247, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            color: #81D4FA;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4FC3F7;
+        }
+
+        .result-status {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .status-optimal {
+            background: rgba(76, 175, 80, 0.3);
+            border: 1px solid #4CAF50;
+            color: #4CAF50;
+        }
+
+        .status-acceptable {
+            background: rgba(255, 152, 0, 0.3);
+            border: 1px solid #FF9800;
+            color: #FF9800;
+        }
+
+        .status-poor {
+            background: rgba(244, 67, 54, 0.3);
+            border: 1px solid #F44336;
+            color: #F44336;
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+            margin-bottom: 30px;
+        }
+
+        #mineral-chart {
+            width: 100%;
+            height: auto;
+        }
+
+        .recommendations {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+        }
+
+        .rec-list {
+            list-style: none;
+        }
+
+        .rec-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: rgba(79, 195, 247, 0.1);
+            border-left: 4px solid #4FC3F7;
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+
+        .presets-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(79, 195, 247, 0.3);
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .preset-btn {
+            background: rgba(79, 195, 247, 0.2);
+            border: 2px solid rgba(79, 195, 247, 0.3);
+            color: #FFF8E1;
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .preset-btn:hover {
+            background: rgba(79, 195, 247, 0.4);
+            border-color: #4FC3F7;
+        }
+
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mineral-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💧 Water Chemistry Calculator</h1>
+        <p class="subtitle">Optimize your brewing water composition for perfect extraction</p>
+
+        <div class="presets-section">
+            <h3 style="color: #4FC3F7; margin-bottom: 10px;">Water Presets</h3>
+            <div class="preset-grid">
+                <button class="preset-btn" onclick="loadPreset('ideal')">SCA Ideal</button>
+                <button class="preset-btn" onclick="loadPreset('third-wave')">Third Wave</button>
+                <button class="preset-btn" onclick="loadPreset('rao-perger')">Rao & Perger</button>
+                <button class="preset-btn" onclick="loadPreset('distilled')">Distilled</button>
+                <button class="preset-btn" onclick="loadPreset('tap')">Typical Tap</button>
+                <button class="preset-btn" onclick="loadPreset('reset')">Reset</button>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <div class="input-section">
+                <h3 class="section-title">Mineral Composition (ppm)</h3>
+
+                <div class="mineral-grid">
+                    <div class="mineral-input">
+                        <label class="mineral-label">Calcium (Ca²⁺)</label>
+                        <input type="number" id="calcium" value="68" min="0" max="200" step="1">
+                    </div>
+
+                    <div class="mineral-input">
+                        <label class="mineral-label">Magnesium (Mg²⁺)</label>
+                        <input type="number" id="magnesium" value="17" min="0" max="200" step="1">
+                    </div>
+
+                    <div class="mineral-input">
+                        <label class="mineral-label">Sodium (Na⁺)</label>
+                        <input type="number" id="sodium" value="10" min="0" max="100" step="1">
+                    </div>
+
+                    <div class="mineral-input">
+                        <label class="mineral-label">Bicarbonate (HCO₃⁻)</label>
+                        <input type="number" id="bicarbonate" value="40" min="0" max="200" step="1">
+                    </div>
+
+                    <div class="mineral-input">
+                        <label class="mineral-label">Sulfate (SO₄²⁻)</label>
+                        <input type="number" id="sulfate" value="68" min="0" max="200" step="1">
+                    </div>
+
+                    <div class="mineral-input">
+                        <label class="mineral-label">Chloride (Cl⁻)</label>
+                        <input type="number" id="chloride" value="34" min="0" max="100" step="1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-section">
+                <h3 class="section-title">Calculated Parameters</h3>
+
+                <div class="result-card">
+                    <div class="result-label">Total Hardness (GH)</div>
+                    <div class="result-value" id="hardness-value">235 ppm</div>
+                    <div class="result-status status-optimal" id="hardness-status">Optimal Range</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Total Alkalinity (KH)</div>
+                    <div class="result-value" id="alkalinity-value">40 ppm</div>
+                    <div class="result-status status-optimal" id="alkalinity-status">Optimal Range</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Total Dissolved Solids</div>
+                    <div class="result-value" id="tds-value">150 ppm</div>
+                    <div class="result-status status-optimal" id="tds-status">Optimal Range</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Buffer Capacity</div>
+                    <div class="result-value" id="buffer-value">Moderate</div>
+                    <div class="result-status status-optimal" id="buffer-status">Good for brewing</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h3 class="section-title">Mineral Distribution</h3>
+            <canvas id="mineral-chart" width="1200" height="400"></canvas>
+        </div>
+
+        <div class="recommendations">
+            <h3 class="section-title">Recommendations & Analysis</h3>
+            <ul class="rec-list" id="recommendations-list">
+                <li class="rec-item">Enter your water parameters to see personalized recommendations</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('mineral-chart');
+        const ctx = canvas.getContext('2d');
+
+        const inputs = {
+            calcium: document.getElementById('calcium'),
+            magnesium: document.getElementById('magnesium'),
+            sodium: document.getElementById('sodium'),
+            bicarbonate: document.getElementById('bicarbonate'),
+            sulfate: document.getElementById('sulfate'),
+            chloride: document.getElementById('chloride')
+        };
+
+        // Add event listeners
+        Object.values(inputs).forEach(input => {
+            input.addEventListener('input', calculate);
+        });
+
+        const waterPresets = {
+            'ideal': {
+                calcium: 68,
+                magnesium: 17,
+                sodium: 10,
+                bicarbonate: 40,
+                sulfate: 68,
+                chloride: 34
+            },
+            'third-wave': {
+                calcium: 51,
+                magnesium: 24,
+                sodium: 8,
+                bicarbonate: 40,
+                sulfate: 85,
+                chloride: 12
+            },
+            'rao-perger': {
+                calcium: 35,
+                magnesium: 13,
+                sodium: 5,
+                bicarbonate: 35,
+                sulfate: 60,
+                chloride: 18
+            },
+            'distilled': {
+                calcium: 0,
+                magnesium: 0,
+                sodium: 0,
+                bicarbonate: 0,
+                sulfate: 0,
+                chloride: 0
+            },
+            'tap': {
+                calcium: 120,
+                magnesium: 30,
+                sodium: 25,
+                bicarbonate: 150,
+                sulfate: 40,
+                chloride: 50
+            }
+        };
+
+        function loadPreset(preset) {
+            if (preset === 'reset') {
+                preset = 'ideal';
+            }
+
+            const values = waterPresets[preset];
+            if (values) {
+                Object.keys(values).forEach(key => {
+                    inputs[key].value = values[key];
+                });
+                calculate();
+            }
+        }
+
+        function calculate() {
+            const ca = parseFloat(inputs.calcium.value);
+            const mg = parseFloat(inputs.magnesium.value);
+            const na = parseFloat(inputs.sodium.value);
+            const hco3 = parseFloat(inputs.bicarbonate.value);
+            const so4 = parseFloat(inputs.sulfate.value);
+            const cl = parseFloat(inputs.chloride.value);
+
+            // Calculate hardness (GH) - sum of calcium and magnesium
+            const hardness = ca + mg;
+            document.getElementById('hardness-value').textContent = `${hardness.toFixed(0)} ppm`;
+            updateStatus('hardness', hardness, 50, 150);
+
+            // Calculate alkalinity (KH) - bicarbonate as CaCO3
+            const alkalinity = hco3 * 0.82; // Conversion factor
+            document.getElementById('alkalinity-value').textContent = `${alkalinity.toFixed(0)} ppm`;
+            updateStatus('alkalinity', alkalinity, 20, 60);
+
+            // Calculate TDS
+            const tds = ca + mg + na + hco3 + so4 + cl;
+            document.getElementById('tds-value').textContent = `${tds.toFixed(0)} ppm`;
+            updateStatus('tds', tds, 75, 250);
+
+            // Buffer capacity assessment
+            const bufferRatio = hco3 / hardness;
+            let bufferCapacity = 'Low';
+            if (bufferRatio > 0.5 && bufferRatio < 1.0) bufferCapacity = 'Moderate';
+            if (bufferRatio >= 1.0 && bufferRatio < 2.0) bufferCapacity = 'High';
+            if (bufferRatio >= 2.0) bufferCapacity = 'Very High';
+
+            document.getElementById('buffer-value').textContent = bufferCapacity;
+            const bufferStatus = (bufferRatio >= 0.3 && bufferRatio <= 1.5) ? 'Good for brewing' : 'May need adjustment';
+            document.getElementById('buffer-status').textContent = bufferStatus;
+            document.getElementById('buffer-status').className = `result-status status-${bufferRatio >= 0.3 && bufferRatio <= 1.5 ? 'optimal' : 'acceptable'}`;
+
+            drawChart();
+            generateRecommendations();
+        }
+
+        function updateStatus(param, value, min, max) {
+            const statusEl = document.getElementById(`${param}-status`);
+            let status, statusClass;
+
+            if (value >= min && value <= max) {
+                status = 'Optimal Range';
+                statusClass = 'status-optimal';
+            } else if (value >= min * 0.7 && value <= max * 1.3) {
+                status = 'Acceptable';
+                statusClass = 'status-acceptable';
+            } else {
+                status = value < min ? 'Too Low' : 'Too High';
+                statusClass = 'status-poor';
+            }
+
+            statusEl.textContent = status;
+            statusEl.className = `result-status ${statusClass}`;
+        }
+
+        function drawChart() {
+            const width = canvas.width;
+            const height = canvas.height;
+            const margin = 80;
+            const chartWidth = width - margin * 2;
+
+            ctx.clearRect(0, 0, width, height);
+
+            const minerals = [
+                { name: 'Calcium', value: parseFloat(inputs.calcium.value), ideal: 68, color: '#4CAF50' },
+                { name: 'Magnesium', value: parseFloat(inputs.magnesium.value), ideal: 17, color: '#2196F3' },
+                { name: 'Sodium', value: parseFloat(inputs.sodium.value), ideal: 10, color: '#9C27B0' },
+                { name: 'Bicarbonate', value: parseFloat(inputs.bicarbonate.value), ideal: 40, color: '#FF9800' },
+                { name: 'Sulfate', value: parseFloat(inputs.sulfate.value), ideal: 68, color: '#F44336' },
+                { name: 'Chloride', value: parseFloat(inputs.chloride.value), ideal: 34, color: '#00BCD4' }
+            ];
+
+            const maxValue = Math.max(...minerals.map(m => Math.max(m.value, m.ideal)), 100);
+            const barWidth = chartWidth / minerals.length - 20;
+
+            minerals.forEach((mineral, i) => {
+                const x = margin + (i * (chartWidth / minerals.length)) + 10;
+                const actualHeight = (mineral.value / maxValue) * (height - margin * 2);
+                const idealHeight = (mineral.ideal / maxValue) * (height - margin * 2);
+
+                // Draw ideal bar (lighter)
+                ctx.fillStyle = mineral.color + '44';
+                ctx.fillRect(x, height - margin - idealHeight, barWidth, idealHeight);
+
+                // Draw actual bar
+                ctx.fillStyle = mineral.color;
+                ctx.fillRect(x, height - margin - actualHeight, barWidth, actualHeight);
+
+                // Draw value labels
+                ctx.fillStyle = '#FFF';
+                ctx.font = 'bold 14px SF Pro Display, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(mineral.value.toFixed(0), x + barWidth / 2, height - margin - actualHeight - 10);
+
+                // Draw mineral names
+                ctx.save();
+                ctx.translate(x + barWidth / 2, height - margin + 20);
+                ctx.rotate(-Math.PI / 6);
+                ctx.fillStyle = '#81D4FA';
+                ctx.font = 'bold 13px SF Pro Display, sans-serif';
+                ctx.fillText(mineral.name, 0, 0);
+                ctx.restore();
+
+                // Draw ideal value indicator
+                ctx.fillStyle = mineral.color + '88';
+                ctx.font = '11px SF Pro Display, sans-serif';
+                ctx.fillText(`(${mineral.ideal})`, x + barWidth / 2, height - margin + 45);
+            });
+
+            // Draw legend
+            ctx.fillStyle = '#81D4FA';
+            ctx.font = '12px SF Pro Display, sans-serif';
+            ctx.textAlign = 'left';
+            ctx.fillRect(50, 30, 15, 15);
+            ctx.fillStyle = '#FFF';
+            ctx.fillText('Actual Value', 70, 42);
+
+            ctx.fillStyle = '#81D4FA44';
+            ctx.fillRect(180, 30, 15, 15);
+            ctx.fillStyle = '#FFF';
+            ctx.fillText('Ideal Value', 200, 42);
+        }
+
+        function generateRecommendations() {
+            const ca = parseFloat(inputs.calcium.value);
+            const mg = parseFloat(inputs.magnesium.value);
+            const hco3 = parseFloat(inputs.bicarbonate.value);
+            const so4 = parseFloat(inputs.sulfate.value);
+            const cl = parseFloat(inputs.chloride.value);
+            const hardness = ca + mg;
+            const tds = ca + mg + parseFloat(inputs.sodium.value) + hco3 + so4 + cl;
+
+            const recs = [];
+
+            // Overall assessment
+            if (hardness >= 50 && hardness <= 150 && hco3 >= 20 && hco3 <= 60 && tds >= 75 && tds <= 250) {
+                recs.push('Your water composition is excellent for coffee brewing! All parameters are in optimal ranges.');
+            }
+
+            // Hardness recommendations
+            if (hardness < 50) {
+                recs.push(`Hardness is low (${hardness.toFixed(0)} ppm). Consider adding calcium and magnesium. Low hardness may result in flat, under-extracted coffee.`);
+            } else if (hardness > 150) {
+                recs.push(`Hardness is high (${hardness.toFixed(0)} ppm). Consider diluting with distilled water or using a water softener. High hardness can lead to scale buildup.`);
+            }
+
+            // Alkalinity recommendations
+            if (hco3 < 20) {
+                recs.push('Alkalinity is low. Coffee may taste overly acidic. Consider adding sodium bicarbonate to increase buffer capacity.');
+            } else if (hco3 > 60) {
+                recs.push('Alkalinity is high. Coffee may taste flat or chalky. Consider using reverse osmosis water or diluting with distilled water.');
+            }
+
+            // TDS recommendations
+            if (tds < 75) {
+                recs.push('TDS is low. Coffee may lack body and sweetness. Consider remineralizing your water.');
+            } else if (tds > 250) {
+                recs.push('TDS is high. May cause uneven extraction and scale buildup. Consider dilution or filtration.');
+            }
+
+            // Magnesium/Calcium ratio
+            const mgCaRatio = mg / (ca + 1);
+            if (mgCaRatio < 0.15) {
+                recs.push('Magnesium levels are low relative to calcium. Increasing magnesium can enhance sweetness and fruit notes.');
+            } else if (mgCaRatio > 0.4) {
+                recs.push('Magnesium levels are high. This can increase extraction, but may make coffee taste sour if too high.');
+            } else {
+                recs.push('Excellent magnesium to calcium ratio! This promotes balanced extraction and sweetness.');
+            }
+
+            // Sulfate/Chloride ratio
+            if (so4 > 0 && cl > 0) {
+                const so4ClRatio = so4 / cl;
+                if (so4ClRatio > 2) {
+                    recs.push('High sulfate to chloride ratio will emphasize acidity and brightness. Great for light roasts!');
+                } else if (so4ClRatio < 0.5) {
+                    recs.push('High chloride to sulfate ratio will emphasize body and sweetness. Excellent for darker roasts!');
+                } else {
+                    recs.push('Balanced sulfate/chloride ratio provides versatility across different roast levels.');
+                }
+            }
+
+            const recList = document.getElementById('recommendations-list');
+            recList.innerHTML = recs.map(rec => `<li class="rec-item">${rec}</li>`).join('');
+        }
+
+        // Initialize
+        calculate();
+    </script>
+</body>
+</html>

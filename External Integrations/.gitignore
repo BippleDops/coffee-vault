@@ -1,0 +1,36 @@
+# Environment variables and secrets
+.env
+config.json
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Cache
+.cache/
+*.cache
+
+# Logs
+logs/
+*.log
+
+# Build outputs
+public/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+*.tmp

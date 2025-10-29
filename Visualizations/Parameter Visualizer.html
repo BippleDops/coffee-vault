@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Parameter Visualizer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #faf7f2;
+            color: #2b1810;
+            padding: 1rem;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(43, 24, 16, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6f4e37 0%, #4a7c59 100%);
+            color: #faf7f2;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 0.875rem;
+        }
+
+        .controls {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-bottom: 2px solid #e0d5c7;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .control-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #6f4e37;
+        }
+
+        .control-group select,
+        .control-group input {
+            padding: 0.5rem;
+            border: 2px solid #c4b5a0;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            background: white;
+        }
+
+        .control-group select:focus,
+        .control-group input:focus {
+            outline: none;
+            border-color: #6f4e37;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            background: #6f4e37;
+            color: white;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #5a3d1f;
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .btn.secondary {
+            background: #4a7c59;
+        }
+
+        .btn.secondary:hover {
+            background: #3d6647;
+        }
+
+        .viewer-container {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(180deg, #faf7f2 0%, #f4e8d8 100%);
+            cursor: grab;
+        }
+
+        .viewer-container:active {
+            cursor: grabbing;
+        }
+
+        #viewer3d {
+            width: 100%;
+            height: 100%;
+        }
+
+        .axis-labels {
+            position: absolute;
+            pointer-events: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6f4e37;
+            text-shadow: 0 0 3px white, 0 0 5px white;
+        }
+
+        .axis-labels.x { bottom: 20px; left: 50%; transform: translateX(-50%); }
+        .axis-labels.y { top: 20px; left: 20px; }
+        .axis-labels.z { top: 50%; right: 20px; transform: translateY(-50%); }
+
+        .info-panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(43, 24, 16, 0.95);
+            color: #faf7f2;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            max-width: 300px;
+            font-size: 0.875rem;
+            box-shadow: 0 10px 15px rgba(43, 24, 16, 0.3);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .info-panel.visible {
+            opacity: 1;
+        }
+
+        .info-panel h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #d4af37;
+        }
+
+        .info-panel p {
+            margin: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        .quality-indicator {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+
+        .quality-excellent { background: #5b8c5a; color: white; }
+        .quality-good { background: #d4af37; color: white; }
+        .quality-fair { background: #e8b339; color: white; }
+        .quality-poor { background: #c4314b; color: white; }
+
+        .legend {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-top: 2px solid #e0d5c7;
+        }
+
+        .legend h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #6f4e37;
+        }
+
+        .gradient-bar {
+            height: 30px;
+            border-radius: 0.5rem;
+            background: linear-gradient(to right, #c4314b, #e8b339, #d4af37, #5b8c5a);
+            margin-bottom: 0.5rem;
+            border: 2px solid #6f4e37;
+        }
+
+        .gradient-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #6f4e37;
+            font-weight: 600;
+        }
+
+        .stats {
+            padding: 1.5rem;
+            background: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-card {
+            padding: 1rem;
+            background: #f4e8d8;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6f4e37;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #a0826d;
+            margin-top: 0.25rem;
+        }
+
+        .instructions {
+            padding: 1rem;
+            background: #fff3cd;
+            border-left: 4px solid #e8b339;
+            margin: 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            color: #856404;
+        }
+
+        @media (max-width: 768px) {
+            .controls {
+                grid-template-columns: 1fr;
+            }
+
+            .viewer-container {
+                height: 400px;
+            }
+
+            .info-panel {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: auto;
+                max-width: 100%;
+                border-radius: 0.5rem 0.5rem 0 0;
+            }
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            color: #6f4e37;
+            font-size: 1.125rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Brewing Parameter Visualizer</h1>
+            <p>Explore the 3D space of grind size, temperature, and brew time</p>
+        </div>
+
+        <div class="instructions">
+            <strong>How to use:</strong> Drag to rotate the view. Scroll to zoom. Click on points to see details. Use filters to explore specific brewing methods or bean types.
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="filterMethod">Brewing Method</label>
+                <select id="filterMethod">
+                    <option value="all">All Methods</option>
+                    <option value="pour-over">Pour Over</option>
+                    <option value="french-press">French Press</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="aeropress">Aeropress</option>
+                    <option value="v60">V60</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="filterBean">Bean Type</label>
+                <select id="filterBean">
+                    <option value="all">All Beans</option>
+                    <option value="light">Light Roast</option>
+                    <option value="medium">Medium Roast</option>
+                    <option value="dark">Dark Roast</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="minRating">Minimum Rating</label>
+                <input type="range" id="minRating" min="1" max="5" step="0.5" value="1">
+                <span id="ratingValue">1.0</span>
+            </div>
+
+            <div class="control-group button-group">
+                <button class="btn" id="resetView">Reset View</button>
+                <button class="btn secondary" id="autoRotate">Auto Rotate</button>
+            </div>
+        </div>
+
+        <div class="viewer-container">
+            <div id="viewer3d" class="loading">Loading Three.js...</div>
+            <div class="axis-labels x">Grind Size (fine → coarse)</div>
+            <div class="axis-labels y">Quality (low → high)</div>
+            <div class="axis-labels z">Temperature (°F)</div>
+            <div class="info-panel" id="infoPanel"></div>
+        </div>
+
+        <div class="legend">
+            <h3>Quality Scale</h3>
+            <div class="gradient-bar"></div>
+            <div class="gradient-labels">
+                <span>Poor (1-2)</span>
+                <span>Fair (2-3)</span>
+                <span>Good (3-4)</span>
+                <span>Excellent (4-5)</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalBrews">0</div>
+                <div class="stat-label">Total Brews</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgQuality">0.0</div>
+                <div class="stat-label">Avg Quality</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="sweetSpot">--</div>
+                <div class="stat-label">Sweet Spot</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Sample brewing data
+        let brewingData = [
+            { method: 'pour-over', bean: 'light', grind: 6, temp: 205, time: 3.5, rating: 4.5 },
+            { method: 'pour-over', bean: 'light', grind: 5, temp: 200, time: 3.0, rating: 4.2 },
+            { method: 'pour-over', bean: 'medium', grind: 6, temp: 200, time: 3.5, rating: 4.3 },
+            { method: 'french-press', bean: 'medium', grind: 8, temp: 200, time: 4.0, rating: 4.1 },
+            { method: 'french-press', bean: 'dark', grind: 8, temp: 195, time: 4.0, rating: 3.9 },
+            { method: 'espresso', bean: 'medium', grind: 2, temp: 200, time: 0.5, rating: 4.7 },
+            { method: 'espresso', bean: 'dark', grind: 2, temp: 195, time: 0.5, rating: 4.4 },
+            { method: 'aeropress', bean: 'light', grind: 4, temp: 205, time: 2.0, rating: 4.6 },
+            { method: 'v60', bean: 'light', grind: 5, temp: 205, time: 3.0, rating: 4.8 }
+        ];
+
+        // Three.js setup
+        let scene, camera, renderer, controls;
+        let points = [];
+        let autoRotateEnabled = false;
+        let raycaster, mouse;
+        let selectedPoint = null;
+
+        const grindScale = { min: 1, max: 10 }; // 1=extra-fine, 10=extra-coarse
+        const tempScale = { min: 185, max: 212 };
+        const timeScale = { min: 0.5, max: 5 };
+
+        function init() {
+            const container = document.getElementById('viewer3d');
+            container.innerHTML = '';
+
+            // Scene
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xfaf7f2);
+
+            // Camera
+            const aspect = container.clientWidth / container.clientHeight;
+            camera = new THREE.PerspectiveCamera(75, aspect, 0.1, 1000);
+            camera.position.set(15, 15, 15);
+            camera.lookAt(0, 0, 0);
+
+            // Renderer
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            container.appendChild(renderer.domElement);
+
+            // Raycaster for interaction
+            raycaster = new THREE.Raycaster();
+            raycaster.params.Points.threshold = 0.5;
+            mouse = new THREE.Vector2();
+
+            // Lights
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+            scene.add(ambientLight);
+
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
+            directionalLight.position.set(10, 10, 10);
+            scene.add(directionalLight);
+
+            // Create axes
+            createAxes();
+
+            // Create grid
+            createGrid();
+
+            // Create data points
+            updateVisualization();
+
+            // Manual orbit controls
+            setupControls();
+
+            // Animation loop
+            animate();
+
+            // Handle window resize
+            window.addEventListener('resize', onWindowResize);
+
+            // Mouse events
+            renderer.domElement.addEventListener('mousemove', onMouseMove);
+            renderer.domElement.addEventListener('click', onClick);
+        }
+
+        function createAxes() {
+            const axesGroup = new THREE.Group();
+
+            // X-axis (Grind)
+            const xGeometry = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(-12, -10, 0),
+                new THREE.Vector3(12, -10, 0)
+            ]);
+            const xLine = new THREE.Line(xGeometry, new THREE.LineBasicMaterial({ color: 0x6f4e37, linewidth: 2 }));
+            axesGroup.add(xLine);
+
+            // Y-axis (Quality/Rating)
+            const yGeometry = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(0, -10, 0),
+                new THREE.Vector3(0, 10, 0)
+            ]);
+            const yLine = new THREE.Line(yGeometry, new THREE.LineBasicMaterial({ color: 0x4a7c59, linewidth: 2 }));
+            axesGroup.add(yLine);
+
+            // Z-axis (Temperature)
+            const zGeometry = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(0, -10, -12),
+                new THREE.Vector3(0, -10, 12)
+            ]);
+            const zLine = new THREE.Line(zGeometry, new THREE.LineBasicMaterial({ color: 0x8b1e3f, linewidth: 2 }));
+            axesGroup.add(zLine);
+
+            scene.add(axesGroup);
+        }
+
+        function createGrid() {
+            const gridHelper = new THREE.GridHelper(24, 12, 0xe0d5c7, 0xe0d5c7);
+            gridHelper.position.y = -10;
+            scene.add(gridHelper);
+        }
+
+        function normalizeValue(value, scale) {
+            return ((value - scale.min) / (scale.max - scale.min)) * 24 - 12;
+        }
+
+        function getColorForRating(rating) {
+            if (rating >= 4.5) return 0x5b8c5a; // Excellent - green
+            if (rating >= 3.5) return 0xd4af37; // Good - gold
+            if (rating >= 2.5) return 0xe8b339; // Fair - yellow
+            return 0xc4314b; // Poor - red
+        }
+
+        function getQualityLabel(rating) {
+            if (rating >= 4.5) return 'Excellent';
+            if (rating >= 3.5) return 'Good';
+            if (rating >= 2.5) return 'Fair';
+            return 'Poor';
+        }
+
+        function updateVisualization() {
+            // Remove existing points
+            points.forEach(point => scene.remove(point));
+            points = [];
+
+            // Filter data
+            const method = document.getElementById('filterMethod').value;
+            const bean = document.getElementById('filterBean').value;
+            const minRating = parseFloat(document.getElementById('minRating').value);
+
+            const filteredData = brewingData.filter(brew => {
+                return (method === 'all' || brew.method === method) &&
+                       (bean === 'all' || brew.bean === bean) &&
+                       brew.rating >= minRating;
+            });
+
+            // Create points
+            filteredData.forEach(brew => {
+                const x = normalizeValue(brew.grind, grindScale);
+                const y = normalizeValue(brew.rating, { min: 1, max: 5 });
+                const z = normalizeValue(brew.temp, tempScale);
+
+                const geometry = new THREE.SphereGeometry(0.5, 16, 16);
+                const material = new THREE.MeshStandardMaterial({
+                    color: getColorForRating(brew.rating),
+                    emissive: getColorForRating(brew.rating),
+                    emissiveIntensity: 0.2,
+                    metalness: 0.3,
+                    roughness: 0.4
+                });
+
+                const sphere = new THREE.Mesh(geometry, material);
+                sphere.position.set(x, y, z);
+                sphere.userData = brew;
+
+                scene.add(sphere);
+                points.push(sphere);
+            });
+
+            updateStats(filteredData);
+        }
+
+        function updateStats(data) {
+            document.getElementById('totalBrews').textContent = data.length;
+
+            const avgRating = data.length > 0
+                ? (data.reduce((sum, b) => sum + b.rating, 0) / data.length).toFixed(1)
+                : '0.0';
+            document.getElementById('avgQuality').textContent = avgRating;
+
+            // Find sweet spot (highest rated brew)
+            if (data.length > 0) {
+                const best = data.reduce((max, b) => b.rating > max.rating ? b : max, data[0]);
+                document.getElementById('sweetSpot').textContent =
+                    `${best.grind}/${best.temp}°/${best.time}m`;
+            } else {
+                document.getElementById('sweetSpot').textContent = '--';
+            }
+        }
+
+        function setupControls() {
+            let isDragging = false;
+            let previousMousePosition = { x: 0, y: 0 };
+
+            renderer.domElement.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                previousMousePosition = { x: e.clientX, y: e.clientY };
+            });
+
+            renderer.domElement.addEventListener('mousemove', (e) => {
+                if (isDragging) {
+                    const deltaX = e.clientX - previousMousePosition.x;
+                    const deltaY = e.clientY - previousMousePosition.y;
+
+                    const rotationSpeed = 0.005;
+
+                    // Rotate camera around scene
+                    const theta = deltaX * rotationSpeed;
+                    const phi = deltaY * rotationSpeed;
+
+                    const radius = Math.sqrt(
+                        camera.position.x ** 2 +
+                        camera.position.y ** 2 +
+                        camera.position.z ** 2
+                    );
+
+                    const currentTheta = Math.atan2(camera.position.z, camera.position.x);
+                    const currentPhi = Math.acos(camera.position.y / radius);
+
+                    const newTheta = currentTheta - theta;
+                    const newPhi = Math.max(0.1, Math.min(Math.PI - 0.1, currentPhi + phi));
+
+                    camera.position.x = radius * Math.sin(newPhi) * Math.cos(newTheta);
+                    camera.position.y = radius * Math.cos(newPhi);
+                    camera.position.z = radius * Math.sin(newPhi) * Math.sin(newTheta);
+
+                    camera.lookAt(0, 0, 0);
+
+                    previousMousePosition = { x: e.clientX, y: e.clientY };
+                }
+            });
+
+            renderer.domElement.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            renderer.domElement.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const zoomSpeed = 0.1;
+                const direction = e.deltaY > 0 ? 1 : -1;
+
+                const currentRadius = Math.sqrt(
+                    camera.position.x ** 2 +
+                    camera.position.y ** 2 +
+                    camera.position.z ** 2
+                );
+
+                const newRadius = Math.max(10, Math.min(50, currentRadius + direction * zoomSpeed * 5));
+                const scale = newRadius / currentRadius;
+
+                camera.position.multiplyScalar(scale);
+            });
+        }
+
+        function onMouseMove(event) {
+            const rect = renderer.domElement.getBoundingClientRect();
+            mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(points);
+
+            if (intersects.length > 0) {
+                const brew = intersects[0].object.userData;
+                showInfoPanel(brew, event.clientX, event.clientY);
+                renderer.domElement.style.cursor = 'pointer';
+            } else {
+                hideInfoPanel();
+                renderer.domElement.style.cursor = 'grab';
+            }
+        }
+
+        function onClick(event) {
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(points);
+
+            if (intersects.length > 0) {
+                selectedPoint = intersects[0].object;
+                console.log('Selected brew:', selectedPoint.userData);
+                // In Obsidian, navigate to the brew log
+            }
+        }
+
+        function showInfoPanel(brew, x, y) {
+            const panel = document.getElementById('infoPanel');
+            const qualityClass = `quality-${getQualityLabel(brew.rating).toLowerCase()}`;
+
+            panel.innerHTML = `
+                <h3>${brew.method}</h3>
+                <p><strong>Bean:</strong> ${brew.bean} roast</p>
+                <p><strong>Grind:</strong> ${brew.grind}/10</p>
+                <p><strong>Temperature:</strong> ${brew.temp}°F</p>
+                <p><strong>Time:</strong> ${brew.time} minutes</p>
+                <p><strong>Quality:</strong> <span class="quality-indicator ${qualityClass}">${getQualityLabel(brew.rating)}</span> ${brew.rating}/5</p>
+            `;
+
+            panel.classList.add('visible');
+        }
+
+        function hideInfoPanel() {
+            document.getElementById('infoPanel').classList.remove('visible');
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            if (autoRotateEnabled) {
+                const radius = Math.sqrt(
+                    camera.position.x ** 2 +
+                    camera.position.y ** 2 +
+                    camera.position.z ** 2
+                );
+
+                const theta = Math.atan2(camera.position.z, camera.position.x);
+                const phi = Math.acos(camera.position.y / radius);
+
+                const newTheta = theta + 0.005;
+
+                camera.position.x = radius * Math.sin(phi) * Math.cos(newTheta);
+                camera.position.z = radius * Math.sin(phi) * Math.sin(newTheta);
+                camera.lookAt(0, 0, 0);
+            }
+
+            renderer.render(scene, camera);
+        }
+
+        function onWindowResize() {
+            const container = document.getElementById('viewer3d');
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+
+        // Event listeners
+        document.getElementById('filterMethod').addEventListener('change', updateVisualization);
+        document.getElementById('filterBean').addEventListener('change', updateVisualization);
+        document.getElementById('minRating').addEventListener('input', (e) => {
+            document.getElementById('ratingValue').textContent = parseFloat(e.target.value).toFixed(1);
+            updateVisualization();
+        });
+
+        document.getElementById('resetView').addEventListener('click', () => {
+            camera.position.set(15, 15, 15);
+            camera.lookAt(0, 0, 0);
+        });
+
+        document.getElementById('autoRotate').addEventListener('click', (e) => {
+            autoRotateEnabled = !autoRotateEnabled;
+            e.target.textContent = autoRotateEnabled ? 'Stop Rotation' : 'Auto Rotate';
+        });
+
+        // API for Obsidian integration
+        window.ParameterVisualizer = {
+            setData: (data) => {
+                brewingData = data;
+                updateVisualization();
+            },
+            getData: () => brewingData,
+            reset: () => {
+                document.getElementById('filterMethod').value = 'all';
+                document.getElementById('filterBean').value = 'all';
+                document.getElementById('minRating').value = 1;
+                updateVisualization();
+            }
+        };
+
+        // Initialize when Three.js is loaded
+        if (typeof THREE !== 'undefined') {
+            init();
+        } else {
+            document.getElementById('viewer3d').innerHTML = 'Failed to load Three.js. Please check your internet connection.';
+        }
+    </script>
+</body>
+</html>

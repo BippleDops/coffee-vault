@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Flavor Compass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2B1810 0%, #5D4037 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D4A574;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #FFD700;
+            font-size: 0.95rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #FFD700;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #FFD700;
+            cursor: pointer;
+            border: none;
+        }
+
+        .value-display {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 4px 12px;
+            border-radius: 12px;
+            margin-left: 10px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        #compass-container {
+            position: relative;
+            margin: 0 auto;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.3) 100%);
+            border-radius: 50%;
+            border: 3px solid rgba(255, 215, 0, 0.5);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+
+        #compass-canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .legend-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid;
+        }
+
+        .legend-item.acidity { border-left-color: #FF8F00; }
+        .legend-item.sweetness { border-left-color: #D4A574; }
+        .legend-item.bitterness { border-left-color: #4E342E; }
+        .legend-item.body { border-left-color: #8D6E63; }
+
+        .legend-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .legend-desc {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            line-height: 1.4;
+        }
+
+        .profile-summary {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .profile-summary h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .profile-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+        }
+
+        .presets-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .preset-btn {
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            color: #FFF8E1;
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .preset-btn:hover {
+            background: rgba(255, 215, 0, 0.3);
+            border-color: #FFD700;
+            transform: translateY(-2px);
+        }
+
+        .comparison-mode {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .comparison-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            background: rgba(255, 215, 0, 0.3);
+            border: 2px solid #FFD700;
+            color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-btn.active {
+            background: #FFD700;
+            color: #2B1810;
+        }
+
+        .saved-profiles {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .saved-profile-chip {
+            background: rgba(33, 150, 243, 0.2);
+            border: 1px solid #2196F3;
+            color: #2196F3;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .saved-profile-chip:hover {
+            background: rgba(33, 150, 243, 0.3);
+        }
+
+        .saved-profile-chip .delete-btn {
+            margin-left: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .advanced-controls {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .slider-fine-tune {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .fine-tune-item {
+            text-align: center;
+        }
+
+        .fine-tune-btn {
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: #FFF8E1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin: 0 2px;
+        }
+
+        .fine-tune-btn:hover {
+            background: rgba(255, 215, 0, 0.3);
+        }
+
+        .comparison-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            #compass-container {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+                max-width: 400px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .legend {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Coffee Flavor Compass</h1>
+        <p class="subtitle">Interactive flavor profile visualization tool</p>
+
+        <div class="presets-section">
+            <h3 style="color: #FFD700; margin-bottom: 10px;">Quick Presets</h3>
+            <div class="preset-grid">
+                <button class="preset-btn" onclick="loadPreset('ethiopian')">Ethiopian</button>
+                <button class="preset-btn" onclick="loadPreset('colombian')">Colombian</button>
+                <button class="preset-btn" onclick="loadPreset('brazilian')">Brazilian</button>
+                <button class="preset-btn" onclick="loadPreset('kenyan')">Kenyan</button>
+                <button class="preset-btn" onclick="loadPreset('espresso')">Espresso</button>
+                <button class="preset-btn" onclick="loadPreset('cold-brew')">Cold Brew</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>
+                    Acidity (Brightness)
+                    <span class="value-display" id="acidity-value">5</span>
+                </label>
+                <input type="range" id="acidity" min="0" max="10" value="5" step="0.5">
+            </div>
+
+            <div class="control-group">
+                <label>
+                    Sweetness
+                    <span class="value-display" id="sweetness-value">5</span>
+                </label>
+                <input type="range" id="sweetness" min="0" max="10" value="5" step="0.5">
+            </div>
+
+            <div class="control-group">
+                <label>
+                    Bitterness
+                    <span class="value-display" id="bitterness-value">5</span>
+                </label>
+                <input type="range" id="bitterness" min="0" max="10" value="5" step="0.5">
+            </div>
+
+            <div class="control-group">
+                <label>
+                    Body (Mouthfeel)
+                    <span class="value-display" id="body-value">5</span>
+                </label>
+                <input type="range" id="body" min="0" max="10" value="5" step="0.5">
+            </div>
+        </div>
+
+        <div id="compass-container">
+            <canvas id="compass-canvas"></canvas>
+        </div>
+
+        <div class="profile-summary" id="profile-summary">
+            <h3>Flavor Profile Analysis</h3>
+            <div class="profile-tags" id="profile-tags"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item acidity">
+                <div class="legend-title">Acidity</div>
+                <div class="legend-desc">Brightness, liveliness. High acidity = crisp, vibrant. Low acidity = smooth, mellow.</div>
+            </div>
+            <div class="legend-item sweetness">
+                <div class="legend-title">Sweetness</div>
+                <div class="legend-desc">Natural sugars, caramel notes. High sweetness = rich, balanced. Low sweetness = dry, savory.</div>
+            </div>
+            <div class="legend-item bitterness">
+                <div class="legend-title">Bitterness</div>
+                <div class="legend-desc">Dark chocolate, roast character. High bitterness = bold, intense. Low bitterness = delicate, tea-like.</div>
+            </div>
+            <div class="legend-item body">
+                <div class="legend-title">Body</div>
+                <div class="legend-desc">Mouthfeel, texture. High body = heavy, creamy. Low body = light, clean.</div>
+            </div>
+        </div>
+
+        <div class="comparison-mode">
+            <div class="comparison-controls">
+                <button class="toggle-btn" id="save-profile-btn" onclick="saveCurrentProfile()">Save Current Profile</button>
+                <button class="toggle-btn" id="export-btn" onclick="exportProfile()">Export as Image</button>
+                <button class="toggle-btn" onclick="resetToDefault()">Reset</button>
+                <button class="toggle-btn" id="compare-btn" onclick="toggleComparisonMode()">Compare Profiles</button>
+            </div>
+            <div class="saved-profiles" id="saved-profiles"></div>
+        </div>
+
+        <div class="advanced-controls">
+            <h3 style="color: #FFD700; margin-bottom: 15px;">Advanced Controls</h3>
+            <div class="slider-fine-tune">
+                <div class="fine-tune-item">
+                    <label style="color: #D4A574; margin-bottom: 5px; display: block;">Acidity</label>
+                    <button class="fine-tune-btn" onclick="adjustValue('acidity', -0.5)">-0.5</button>
+                    <button class="fine-tune-btn" onclick="adjustValue('acidity', 0.5)">+0.5</button>
+                </div>
+                <div class="fine-tune-item">
+                    <label style="color: #D4A574; margin-bottom: 5px; display: block;">Sweetness</label>
+                    <button class="fine-tune-btn" onclick="adjustValue('sweetness', -0.5)">-0.5</button>
+                    <button class="fine-tune-btn" onclick="adjustValue('sweetness', 0.5)">+0.5</button>
+                </div>
+                <div class="fine-tune-item">
+                    <label style="color: #D4A574; margin-bottom: 5px; display: block;">Bitterness</label>
+                    <button class="fine-tune-btn" onclick="adjustValue('bitterness', -0.5)">-0.5</button>
+                    <button class="fine-tune-btn" onclick="adjustValue('bitterness', 0.5)">+0.5</button>
+                </div>
+                <div class="fine-tune-item">
+                    <label style="color: #D4A574; margin-bottom: 5px; display: block;">Body</label>
+                    <button class="fine-tune-btn" onclick="adjustValue('body', -0.5)">-0.5</button>
+                    <button class="fine-tune-btn" onclick="adjustValue('body', 0.5)">+0.5</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('compass-canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set canvas size
+        function resizeCanvas() {
+            const container = canvas.parentElement;
+            canvas.width = container.clientWidth;
+            canvas.height = container.clientHeight;
+            drawCompass();
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const sliders = {
+            acidity: document.getElementById('acidity'),
+            sweetness: document.getElementById('sweetness'),
+            bitterness: document.getElementById('bitterness'),
+            body: document.getElementById('body')
+        };
+
+        const valueDisplays = {
+            acidity: document.getElementById('acidity-value'),
+            sweetness: document.getElementById('sweetness-value'),
+            bitterness: document.getElementById('bitterness-value'),
+            body: document.getElementById('body-value')
+        };
+
+        // Add event listeners
+        Object.keys(sliders).forEach(key => {
+            sliders[key].addEventListener('input', (e) => {
+                valueDisplays[key].textContent = e.target.value;
+                drawCompass();
+                updateProfileAnalysis();
+            });
+        });
+
+        function drawCompass() {
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(centerX, centerY) * 0.85;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw background circles
+            for (let i = 5; i >= 1; i--) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radius * (i / 5), 0, Math.PI * 2);
+                ctx.strokeStyle = `rgba(255, 215, 0, ${0.1 + (i * 0.05)})`;
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+
+            // Draw axes
+            const axes = [
+                { name: 'Acidity', angle: -Math.PI / 2, color: '#FF8F00' },
+                { name: 'Sweetness', angle: 0, color: '#D4A574' },
+                { name: 'Bitterness', angle: Math.PI / 2, color: '#4E342E' },
+                { name: 'Body', angle: Math.PI, color: '#8D6E63' }
+            ];
+
+            axes.forEach(axis => {
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                const endX = centerX + Math.cos(axis.angle) * radius;
+                const endY = centerY + Math.sin(axis.angle) * radius;
+                ctx.lineTo(endX, endY);
+                ctx.strokeStyle = `rgba(255, 255, 255, 0.3)`;
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Draw labels
+                const labelX = centerX + Math.cos(axis.angle) * (radius + 30);
+                const labelY = centerY + Math.sin(axis.angle) * (radius + 30);
+                ctx.fillStyle = axis.color;
+                ctx.font = 'bold 16px SF Pro Display, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(axis.name, labelX, labelY);
+            });
+
+            // Draw comparison profile first (if active)
+            if (comparisonMode && comparisonProfile !== null && savedProfiles[comparisonProfile]) {
+                const compValues = savedProfiles[comparisonProfile];
+                const compPoints = [
+                    {
+                        x: centerX + Math.cos(-Math.PI / 2) * (radius * (compValues.acidity / 10)),
+                        y: centerY + Math.sin(-Math.PI / 2) * (radius * (compValues.acidity / 10))
+                    },
+                    {
+                        x: centerX + Math.cos(0) * (radius * (compValues.sweetness / 10)),
+                        y: centerY + Math.sin(0) * (radius * (compValues.sweetness / 10))
+                    },
+                    {
+                        x: centerX + Math.cos(Math.PI / 2) * (radius * (compValues.bitterness / 10)),
+                        y: centerY + Math.sin(Math.PI / 2) * (radius * (compValues.bitterness / 10))
+                    },
+                    {
+                        x: centerX + Math.cos(Math.PI) * (radius * (compValues.body / 10)),
+                        y: centerY + Math.sin(Math.PI) * (radius * (compValues.body / 10))
+                    }
+                ];
+
+                // Draw comparison polygon
+                ctx.beginPath();
+                ctx.moveTo(compPoints[0].x, compPoints[0].y);
+                compPoints.forEach((point, i) => {
+                    if (i > 0) ctx.lineTo(point.x, point.y);
+                });
+                ctx.closePath();
+                ctx.fillStyle = 'rgba(33, 150, 243, 0.2)';
+                ctx.fill();
+                ctx.strokeStyle = '#2196F3';
+                ctx.lineWidth = 2;
+                ctx.setLineDash([5, 5]);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+
+            // Draw flavor profile polygon
+            const values = {
+                acidity: parseFloat(sliders.acidity.value),
+                sweetness: parseFloat(sliders.sweetness.value),
+                bitterness: parseFloat(sliders.bitterness.value),
+                body: parseFloat(sliders.body.value)
+            };
+
+            const points = [
+                { // Acidity (top)
+                    x: centerX + Math.cos(-Math.PI / 2) * (radius * (values.acidity / 10)),
+                    y: centerY + Math.sin(-Math.PI / 2) * (radius * (values.acidity / 10))
+                },
+                { // Sweetness (right)
+                    x: centerX + Math.cos(0) * (radius * (values.sweetness / 10)),
+                    y: centerY + Math.sin(0) * (radius * (values.sweetness / 10))
+                },
+                { // Bitterness (bottom)
+                    x: centerX + Math.cos(Math.PI / 2) * (radius * (values.bitterness / 10)),
+                    y: centerY + Math.sin(Math.PI / 2) * (radius * (values.bitterness / 10))
+                },
+                { // Body (left)
+                    x: centerX + Math.cos(Math.PI) * (radius * (values.body / 10)),
+                    y: centerY + Math.sin(Math.PI) * (radius * (values.body / 10))
+                }
+            ];
+
+            // Draw filled polygon
+            ctx.beginPath();
+            ctx.moveTo(points[0].x, points[0].y);
+            points.forEach((point, i) => {
+                if (i > 0) ctx.lineTo(point.x, point.y);
+            });
+            ctx.closePath();
+            ctx.fillStyle = 'rgba(255, 215, 0, 0.3)';
+            ctx.fill();
+            ctx.strokeStyle = '#FFD700';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Draw points
+            points.forEach(point => {
+                ctx.beginPath();
+                ctx.arc(point.x, point.y, 6, 0, Math.PI * 2);
+                ctx.fillStyle = '#FFD700';
+                ctx.fill();
+                ctx.strokeStyle = '#FFF';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+        }
+
+        function updateProfileAnalysis() {
+            const values = {
+                acidity: parseFloat(sliders.acidity.value),
+                sweetness: parseFloat(sliders.sweetness.value),
+                bitterness: parseFloat(sliders.bitterness.value),
+                body: parseFloat(sliders.body.value)
+            };
+
+            const tags = [];
+
+            // Acidity analysis
+            if (values.acidity >= 7) tags.push('Bright & Vibrant');
+            else if (values.acidity >= 4) tags.push('Balanced Acidity');
+            else tags.push('Low Acidity');
+
+            // Sweetness analysis
+            if (values.sweetness >= 7) tags.push('Very Sweet');
+            else if (values.sweetness >= 4) tags.push('Moderate Sweetness');
+            else tags.push('Dry');
+
+            // Bitterness analysis
+            if (values.bitterness >= 7) tags.push('Bold & Intense');
+            else if (values.bitterness >= 4) tags.push('Balanced Bitterness');
+            else tags.push('Low Bitterness');
+
+            // Body analysis
+            if (values.body >= 7) tags.push('Full-Bodied');
+            else if (values.body >= 4) tags.push('Medium Body');
+            else tags.push('Light-Bodied');
+
+            // Combination analysis
+            if (values.acidity > 6 && values.sweetness > 6) tags.push('Complex & Layered');
+            if (values.acidity < 4 && values.bitterness > 6) tags.push('Dark & Smooth');
+            if (values.sweetness > 7 && values.body > 6) tags.push('Rich & Creamy');
+            if (values.acidity > 6 && values.body < 4) tags.push('Crisp & Clean');
+
+            // Render tags
+            const tagsContainer = document.getElementById('profile-tags');
+            tagsContainer.innerHTML = tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+        }
+
+        // Preset profiles
+        const presets = {
+            'ethiopian': { acidity: 8.5, sweetness: 7.5, bitterness: 2.5, body: 4.0 },
+            'colombian': { acidity: 6.5, sweetness: 7.0, bitterness: 4.5, body: 6.0 },
+            'brazilian': { acidity: 4.0, sweetness: 6.5, bitterness: 6.0, body: 7.5 },
+            'kenyan': { acidity: 9.0, sweetness: 6.5, bitterness: 3.0, body: 5.0 },
+            'espresso': { acidity: 5.0, sweetness: 6.0, bitterness: 7.5, body: 8.5 },
+            'cold-brew': { acidity: 3.0, sweetness: 8.0, bitterness: 4.0, body: 6.5 }
+        };
+
+        function loadPreset(presetName) {
+            const preset = presets[presetName];
+            if (preset) {
+                sliders.acidity.value = preset.acidity;
+                sliders.sweetness.value = preset.sweetness;
+                sliders.bitterness.value = preset.bitterness;
+                sliders.body.value = preset.body;
+
+                valueDisplays.acidity.textContent = preset.acidity;
+                valueDisplays.sweetness.textContent = preset.sweetness;
+                valueDisplays.bitterness.textContent = preset.bitterness;
+                valueDisplays.body.textContent = preset.body;
+
+                drawCompass();
+                updateProfileAnalysis();
+            }
+        }
+
+        function resetToDefault() {
+            Object.keys(sliders).forEach(key => {
+                sliders[key].value = 5;
+                valueDisplays[key].textContent = 5;
+            });
+            drawCompass();
+            updateProfileAnalysis();
+        }
+
+        let savedProfiles = JSON.parse(localStorage.getItem('flavorProfiles') || '[]');
+
+        function saveCurrentProfile() {
+            const profileName = prompt('Enter a name for this profile:');
+            if (profileName) {
+                const profile = {
+                    name: profileName,
+                    acidity: parseFloat(sliders.acidity.value),
+                    sweetness: parseFloat(sliders.sweetness.value),
+                    bitterness: parseFloat(sliders.bitterness.value),
+                    body: parseFloat(sliders.body.value),
+                    timestamp: new Date().toISOString()
+                };
+                savedProfiles.push(profile);
+                localStorage.setItem('flavorProfiles', JSON.stringify(savedProfiles));
+                displaySavedProfiles();
+                alert('Profile saved successfully!');
+            }
+        }
+
+        function displaySavedProfiles() {
+            const container = document.getElementById('saved-profiles');
+            container.innerHTML = savedProfiles.map((profile, index) =>
+                `<span class="saved-profile-chip" onclick="loadSavedProfile(${index})">
+                    ${profile.name}
+                    <span class="delete-btn" onclick="event.stopPropagation(); deleteProfile(${index})">×</span>
+                </span>`
+            ).join('');
+        }
+
+        function deleteProfile(index) {
+            if (confirm('Delete this profile?')) {
+                savedProfiles.splice(index, 1);
+                localStorage.setItem('flavorProfiles', JSON.stringify(savedProfiles));
+                displaySavedProfiles();
+                if (comparisonMode && comparisonProfile === index) {
+                    toggleComparisonMode();
+                }
+            }
+        }
+
+        function adjustValue(metric, delta) {
+            let currentValue = parseFloat(sliders[metric].value);
+            let newValue = Math.max(0, Math.min(10, currentValue + delta));
+            sliders[metric].value = newValue;
+            valueDisplays[metric].textContent = newValue;
+            drawCompass();
+            updateProfileAnalysis();
+        }
+
+        let comparisonMode = false;
+        let comparisonProfile = null;
+
+        function toggleComparisonMode() {
+            comparisonMode = !comparisonMode;
+            const btn = document.getElementById('compare-btn');
+
+            if (comparisonMode) {
+                if (savedProfiles.length === 0) {
+                    alert('Save a profile first to enable comparison mode');
+                    comparisonMode = false;
+                    return;
+                }
+
+                const profileIndex = prompt(`Enter profile number to compare (1-${savedProfiles.length}):`);
+                if (profileIndex === null) {
+                    comparisonMode = false;
+                    return;
+                }
+
+                comparisonProfile = parseInt(profileIndex) - 1;
+                if (comparisonProfile < 0 || comparisonProfile >= savedProfiles.length) {
+                    alert('Invalid profile number');
+                    comparisonMode = false;
+                    return;
+                }
+
+                btn.classList.add('active');
+                btn.textContent = 'Exit Comparison';
+            } else {
+                btn.classList.remove('active');
+                btn.textContent = 'Compare Profiles';
+                comparisonProfile = null;
+            }
+
+            drawCompass();
+        }
+
+        function loadSavedProfile(index) {
+            const profile = savedProfiles[index];
+            if (profile) {
+                sliders.acidity.value = profile.acidity;
+                sliders.sweetness.value = profile.sweetness;
+                sliders.bitterness.value = profile.bitterness;
+                sliders.body.value = profile.body;
+
+                valueDisplays.acidity.textContent = profile.acidity;
+                valueDisplays.sweetness.textContent = profile.sweetness;
+                valueDisplays.bitterness.textContent = profile.bitterness;
+                valueDisplays.body.textContent = profile.body;
+
+                drawCompass();
+                updateProfileAnalysis();
+            }
+        }
+
+        function exportProfile() {
+            const link = document.createElement('a');
+            link.download = 'flavor-profile.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        // Initial draw
+        drawCompass();
+        updateProfileAnalysis();
+        displaySavedProfiles();
+    </script>
+</body>
+</html>

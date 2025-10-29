@@ -1,0 +1,172 @@
+/* Advanced Query and Dashboard Styling */
+/* Enhances Datacore/Dataview query appearance */
+
+/* Query Tables Enhanced */
+.datacore-table,
+.dataview-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.datacore-table thead,
+.dataview-table thead {
+    background: linear-gradient(135deg, #6F4E37, #8B4513);
+    color: #FFF8E1;
+}
+
+.datacore-table th,
+.dataview-table th {
+    padding: 12px 15px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid #D4A574;
+}
+
+.datacore-table td,
+.dataview-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.datacore-table tr:hover,
+.dataview-table tr:hover {
+    background: rgba(212, 165, 116, 0.1);
+    transition: background 0.2s ease;
+}
+
+/* Rating Stars Enhanced */
+.datacore-table td:contains("⭐"),
+.dataview-table td:contains("⭐") {
+    color: #FFD700;
+    font-weight: 600;
+}
+
+/* Dashboard Cards */
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+.dashboard-card:hover {
+    border-color: #D4A574;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Stat Numbers */
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress Bars in Queries */
+.progress-bar-container {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #D4A574, #FFD700);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+/* Query Result Highlighting */
+.high-rating {
+    background: rgba(255, 215, 0, 0.2) !important;
+    border-left: 3px solid #FFD700;
+}
+
+.recent-entry {
+    background: rgba(100, 200, 100, 0.1) !important;
+}
+
+/* Inline DataviewJS Results */
+.dataviewjs-container p {
+    margin: 10px 0;
+    padding: 10px 15px;
+    background: rgba(212, 165, 116, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid #D4A574;
+}
+
+/* List Results Enhanced */
+.datacore-list li,
+.dataview-list li {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    border-left: 3px solid #8B4513;
+    transition: all 0.2s ease;
+}
+
+.datacore-list li:hover,
+.dataview-list li:hover {
+    background: rgba(212, 165, 116, 0.15);
+    border-left-color: #FFD700;
+    transform: translateX(5px);
+}
+
+/* Dashboard Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Metric Cards */
+.metric-card {
+    background: linear-gradient(135deg, rgba(111, 78, 55, 0.3), rgba(139, 69, 19, 0.3));
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    text-align: center;
+}
+
+.metric-label {
+    color: #D4A574;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+/* Empty State Messaging */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #D4A574;
+    font-style: italic;
+}
+
+.empty-state::before {
+    content: "☕";
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+

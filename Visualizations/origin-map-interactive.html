@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Origin World Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #FFD700;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .map-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+        .regions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .region-card {
+            background: rgba(212, 165, 116, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #D4A574;
+            transition: all 0.3s ease;
+        }
+        .region-card:hover {
+            transform: translateX(5px);
+            border-left-color: #FFD700;
+            background: rgba(255, 215, 0, 0.2);
+        }
+        .region-title {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .country-list {
+            list-style: none;
+        }
+        .country-item {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .country-name {
+            color: #FFF8E1;
+            font-weight: 600;
+        }
+        .coffee-belt {
+            background: linear-gradient(90deg, #D4A574, #FFD700, #D4A574);
+            height: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #2B1810;
+            font-size: 1.2rem;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            color: #FFD700;
+            font-weight: 700;
+        }
+        .stat-label {
+            color: #D4A574;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌍 Coffee Origin World Map</h1>
+    
+    <div class="map-container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Origins Profiled</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Continents</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Varieties Documented</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">25+</div>
+                <div class="stat-label">Major Producing Countries</div>
+            </div>
+        </div>
+
+        <div class="coffee-belt">
+            ☕ Coffee Belt: 25°N to 25°S ☕
+        </div>
+
+        <div class="regions">
+            <!-- Central America -->
+            <div class="region-card">
+                <div class="region-title">🌎 Central America</div>
+                <ul class="country-list">
+                    <li class="country-item"><span class="country-name">🇬🇹 Guatemala</span> - SHB, volcanic, complex</li>
+                    <li class="country-item"><span class="country-name">🇭🇳 Honduras</span> - Value leader, 6 regions</li>
+                    <li class="country-item"><span class="country-name">🇳🇮 Nicaragua</span> - Maracaturra specialist</li>
+                    <li class="country-item"><span class="country-name">🇨🇷 Costa Rica</span> - Honey-sweet, clean</li>
+                    <li class="country-item"><span class="country-name">🇸🇻 El Salvador</span> - Bourbon renaissance</li>
+                    <li class="country-item"><span class="country-name">🇲🇽 Mexico</span> - Organic leader</li>
+                </ul>
+            </div>
+
+            <!-- South America -->
+            <div class="region-card">
+                <div class="region-title">🌎 South America</div>
+                <ul class="country-list">
+                    <li class="country-item"><span class="country-name">🇧🇷 Brazil</span> - #1 producer, sweet, full-bodied</li>
+                    <li class="country-item"><span class="country-name">🇨🇴 Colombia</span> - Balanced excellence</li>
+                    <li class="country-item"><span class="country-name">🇵🇪 Peru</span> - Organic champion</li>
+                    <li class="country-item"><span class="country-name">🇪🇨 Ecuador</span> - Sidra variety star</li>
+                    <li class="country-item"><span class="country-name">🇧🇴 Bolivia</span> - High-altitude potential</li>
+                    <li class="country-item"><span class="country-name">🇻🇪 Venezuela</span> - Crisis-affected</li>
+                </ul>
+            </div>
+
+            <!-- East Africa -->
+            <div class="region-card">
+                <div class="region-title">🌍 East Africa</div>
+                <ul class="country-list">
+                    <li class="country-item"><span class="country-name">🇪🇹 Ethiopia</span> - Birthplace, complex, diverse</li>
+                    <li class="country-item"><span class="country-name">🇰🇪 Kenya</span> - Blackcurrant, bright, SL varieties</li>
+                    <li class="country-item"><span class="country-name">🇷🇼 Rwanda</span> - Post-genocide quality</li>
+                    <li class="country-item"><span class="country-name">🇧🇮 Burundi</span> - Best value East African</li>
+                    <li class="country-item"><span class="country-name">🇹🇿 Tanzania</span> - Underrated excellence</li>
+                    <li class="country-item"><span class="country-name">🇺🇬 Uganda</span> - Bugisu specialty</li>
+                </ul>
+            </div>
+
+            <!-- Asia & Pacific -->
+            <div class="region-card">
+                <div class="region-title">🌏 Asia & Pacific</div>
+                <ul class="country-list">
+                    <li class="country-item"><span class="country-name">🇮🇩 Indonesia</span> - Wet-hulled, earthy, full-bodied</li>
+                    <li class="country-item"><span class="country-name">🇻🇳 Vietnam</span> - #2 producer, Robusta giant</li>
+                    <li class="country-item"><span class="country-name">🇹🇭 Thailand</span> - Emerging, social impact</li>
+                    <li class="country-item"><span class="country-name">🇨🇳 China</span> - Yunnan specialty</li>
+                    <li class="country-item"><span class="country-name">🇮🇳 India</span> - Monsooned specialty</li>
+                    <li class="country-item"><span class="country-name">🇵🇬 PNG</span> - Pacific excellence</li>
+                    <li class="country-item"><span class="country-name">🇦🇺 Australia</span> - Boutique specialty</li>
+                </ul>
+            </div>
+
+            <!-- Islands & Others -->
+            <div class="region-card">
+                <div class="region-title">🏝️ Islands & Caribbean</div>
+                <ul class="country-list">
+                    <li class="country-item"><span class="country-name">🇯🇲 Jamaica</span> - Blue Mountain luxury</li>
+                    <li class="country-item"><span class="country-name">🇵🇦 Panama</span> - Geisha record prices</li>
+                    <li class="country-item"><span class="country-name">🇭🇹 Hawaii</span> - US-grown, expensive</li>
+                    <li class="country-item"><span class="country-name">🇷🇪 Réunion</span> - Bourbon homeland</li>
+                    <li class="country-item"><span class="country-name">🇲🇬 Madagascar</span> - Island terroir</li>
+                </ul>
+            </div>
+
+            <!-- Emerging & Rare -->
+            <div class="region-card">
+                <div class="region-title">🌱 Emerging & Rare</div>
+                <ul class="country-list">
+                    <li class="country-item"><span class="country-name">🇱🇦 Laos</span> - Bolaven Plateau</li>
+                    <li class="country-item"><span class="country-name">🇲🇲 Myanmar</span> - Shan State frontier</li>
+                    <li class="country-item"><span class="country-name">🇲🇼 Malawi</span> - Gesha trials</li>
+                    <li class="country-item"><span class="country-name">🇿🇲 Zambia</span> - Minimal production</li>
+                    <li class="country-item"><span class="country-name">🇿🇼 Zimbabwe</span> - Recovering</li>
+                    <li class="country-item"><span class="country-name">🇦🇴 Angola</span> - Post-conflict</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

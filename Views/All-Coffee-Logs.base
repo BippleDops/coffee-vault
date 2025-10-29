@@ -1,0 +1,79 @@
+{
+  "type": "base",
+  "source": {
+    "type": "folder",
+    "path": "Coffee Logs"
+  },
+  "columns": [
+    {
+      "id": "date",
+      "label": "Date",
+      "type": "date",
+      "width": 120,
+      "visible": true
+    },
+    {
+      "id": "beans",
+      "label": "☕ Beans",
+      "type": "text",
+      "width": 200,
+      "visible": true
+    },
+    {
+      "id": "rating",
+      "label": "⭐ Rating",
+      "type": "number",
+      "width": 100,
+      "visible": true
+    },
+    {
+      "id": "brew-method",
+      "label": "Method",
+      "type": "text",
+      "width": 130,
+      "visible": true
+    },
+    {
+      "id": "roaster",
+      "label": "Roaster",
+      "type": "text",
+      "width": 150,
+      "visible": true
+    },
+    {
+      "id": "origin",
+      "label": "🌍 Origin",
+      "type": "text",
+      "width": 120,
+      "visible": true
+    },
+    {
+      "id": "dose",
+      "label": "Dose (g)",
+      "type": "number",
+      "width": 90,
+      "visible": true
+    },
+    {
+      "id": "water",
+      "label": "Water (g)",
+      "type": "number",
+      "width": 100,
+      "visible": true
+    },
+    {
+      "id": "brew-ratio",
+      "label": "Ratio",
+      "type": "text",
+      "width": 90,
+      "visible": true
+    }
+  ],
+  "sort": {
+    "column": "date",
+    "direction": "desc"
+  },
+  "filter": "",
+  "groupBy": null
+}
+

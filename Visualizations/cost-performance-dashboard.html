@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost-Performance Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a1410 0%, #3E2723 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D4A574;
+            font-size: 1.1rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #FFD700, #FFA500);
+        }
+
+        .metric-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 5px;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: #D4A574;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metric-trend {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .trend-up {
+            color: #4CAF50;
+        }
+
+        .trend-down {
+            color: #F44336;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .chart-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .chart-title {
+            color: #FFD700;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .chart-canvas {
+            width: 100%;
+            height: auto;
+        }
+
+        .beans-table {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            color: #FFD700;
+            font-weight: bold;
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        tr:hover {
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        .value-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .value-badge.high {
+            background: rgba(76, 175, 80, 0.2);
+            color: #4CAF50;
+            border: 1px solid #4CAF50;
+        }
+
+        .value-badge.medium {
+            background: rgba(255, 152, 0, 0.2);
+            color: #FF9800;
+            border: 1px solid #FF9800;
+        }
+
+        .value-badge.low {
+            background: rgba(244, 67, 54, 0.2);
+            color: #F44336;
+            border: 1px solid #F44336;
+        }
+
+        .rating-stars {
+            color: #FFD700;
+        }
+
+        .action-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            text-align: center;
+        }
+
+        .action-panel button {
+            background: rgba(255, 215, 0, 0.3);
+            border: 2px solid #FFD700;
+            color: #FFD700;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .action-panel button:hover {
+            background: #FFD700;
+            color: #2B1810;
+        }
+
+        @media (max-width: 1200px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Cost-Performance Dashboard</h1>
+        <p class="subtitle">Track your coffee investments and optimize value</p>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon">💰</div>
+                <div class="metric-value">$142</div>
+                <div class="metric-label">Total Spent (30 days)</div>
+                <div class="metric-trend trend-down">
+                    ↓ 12% vs last month
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">☕</div>
+                <div class="metric-value">$2.84</div>
+                <div class="metric-label">Cost Per Cup</div>
+                <div class="metric-trend trend-down">
+                    ↓ $0.18 improvement
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">📊</div>
+                <div class="metric-value">4.3</div>
+                <div class="metric-label">Avg Quality Score</div>
+                <div class="metric-trend trend-up">
+                    ↑ 0.4 points
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">🎯</div>
+                <div class="metric-value">1.51</div>
+                <div class="metric-label">Value Index</div>
+                <div class="metric-trend trend-up">
+                    ↑ Quality/$ ratio
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">📦</div>
+                <div class="metric-value">720g</div>
+                <div class="metric-label">Current Inventory</div>
+                <div class="metric-trend">
+                    ≈ 40 cups remaining
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">🏆</div>
+                <div class="metric-value">92%</div>
+                <div class="metric-label">Satisfaction Rate</div>
+                <div class="metric-trend trend-up">
+                    ↑ 8% increase
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3 class="chart-title">Cost Per Cup Trend</h3>
+                <canvas id="cost-trend-canvas" class="chart-canvas" width="600" height="300"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3 class="chart-title">Quality vs Price Distribution</h3>
+                <canvas id="quality-price-canvas" class="chart-canvas" width="600" height="300"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3 class="chart-title">Monthly Spending Breakdown</h3>
+                <canvas id="spending-canvas" class="chart-canvas" width="600" height="300"></canvas>
+            </div>
+
+            <div class="chart-card">
+                <h3 class="chart-title">Value Index Over Time</h3>
+                <canvas id="value-index-canvas" class="chart-canvas" width="600" height="300"></canvas>
+            </div>
+        </div>
+
+        <div class="beans-table">
+            <h3 class="chart-title">Bean Performance Analysis</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coffee Bean</th>
+                        <th>Price/250g</th>
+                        <th>Cost/Cup</th>
+                        <th>Avg Rating</th>
+                        <th>Cups Brewed</th>
+                        <th>Value Score</th>
+                    </tr>
+                </thead>
+                <tbody id="beans-tbody">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="action-panel">
+            <h3 class="chart-title">Actions</h3>
+            <button onclick="exportData()">Export All Data (CSV)</button>
+            <button onclick="findBestValue()">Find Best Value Beans</button>
+            <button onclick="calculateMonthlyBudget()">Calculate Monthly Budget</button>
+        </div>
+    </div>
+
+    <script>
+        // Sample data (in production, this would come from your vault)
+        const beansData = [
+            { name: 'Ethiopian Yirgacheffe', price: 18.50, costPerCup: 2.96, rating: 4.7, cups: 15, value: 'high' },
+            { name: 'Colombian Huila', price: 15.00, costPerCup: 2.40, rating: 4.3, cups: 22, value: 'high' },
+            { name: 'Kenya AA', price: 22.00, costPerCup: 3.52, rating: 4.8, cups: 12, value: 'medium' },
+            { name: 'Brazil Santos', price: 12.00, costPerCup: 1.92, rating: 3.8, cups: 28, value: 'medium' },
+            { name: 'Sumatra Mandheling', price: 16.50, costPerCup: 2.64, rating: 4.1, cups: 18, value: 'high' },
+            { name: 'Guatemala Antigua', price: 17.00, costPerCup: 2.72, rating: 4.4, cups: 14, value: 'high' }
+        ];
+
+        // Populate beans table
+        const tbody = document.getElementById('beans-tbody');
+        beansData.forEach(bean => {
+            const valueScore = (bean.rating / bean.costPerCup).toFixed(2);
+            const row = `
+                <tr>
+                    <td><strong>${bean.name}</strong></td>
+                    <td>$${bean.price.toFixed(2)}</td>
+                    <td>$${bean.costPerCup.toFixed(2)}</td>
+                    <td><span class="rating-stars">${'★'.repeat(Math.floor(bean.rating))}${'☆'.repeat(5 - Math.floor(bean.rating))}</span> ${bean.rating}</td>
+                    <td>${bean.cups}</td>
+                    <td><span class="value-badge ${bean.value}">${valueScore}</span></td>
+                </tr>
+            `;
+            tbody.innerHTML += row;
+        });
+
+        // Chart 1: Cost Per Cup Trend
+        const costCanvas = document.getElementById('cost-trend-canvas');
+        const costCtx = costCanvas.getContext('2d');
+        drawCostTrendChart(costCtx);
+
+        function drawCostTrendChart(ctx) {
+            const data = [3.20, 3.15, 3.05, 2.95, 2.90, 2.85, 2.84];
+            const labels = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'];
+            drawLineChart(ctx, data, labels, '#4CAF50', 'Cost per cup declining');
+        }
+
+        // Chart 2: Quality vs Price
+        const qualityCanvas = document.getElementById('quality-price-canvas');
+        const qualityCtx = qualityCanvas.getContext('2d');
+        drawQualityPriceChart(qualityCtx);
+
+        function drawQualityPriceChart(ctx) {
+            const width = ctx.canvas.width;
+            const height = ctx.canvas.height;
+            const margin = 50;
+
+            // Background
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+            ctx.fillRect(0, 0, width, height);
+
+            // Axes
+            ctx.strokeStyle = '#FFD700';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, margin);
+            ctx.lineTo(margin, height - margin);
+            ctx.lineTo(width - margin, height - margin);
+            ctx.stroke();
+
+            // Plot points
+            beansData.forEach(bean => {
+                const x = margin + ((bean.costPerCup - 1.5) / 2.5) * (width - margin * 2);
+                const y = height - margin - ((bean.rating - 3.5) / 1.5) * (height - margin * 2);
+
+                ctx.beginPath();
+                ctx.arc(x, y, 8, 0, Math.PI * 2);
+                ctx.fillStyle = bean.value === 'high' ? '#4CAF50' : bean.value === 'medium' ? '#FF9800' : '#F44336';
+                ctx.fill();
+                ctx.strokeStyle = '#FFF';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+
+            // Labels
+            ctx.fillStyle = '#FFD700';
+            ctx.font = '12px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('Cost per Cup →', width / 2, height - 10);
+
+            ctx.save();
+            ctx.translate(15, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Quality Rating →', 0, 0);
+            ctx.restore();
+        }
+
+        // Chart 3: Monthly Spending
+        const spendingCanvas = document.getElementById('spending-canvas');
+        const spendingCtx = spendingCanvas.getContext('2d');
+        drawSpendingChart(spendingCtx);
+
+        function drawSpendingChart(ctx) {
+            const data = [
+                { label: 'Coffee Beans', value: 95, color: '#D4A574' },
+                { label: 'Equipment', value: 32, color: '#8D6E63' },
+                { label: 'Accessories', value: 15, color: '#5D4037' }
+            ];
+
+            const width = ctx.canvas.width;
+            const height = ctx.canvas.height;
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const radius = Math.min(width, height) / 2 - 40;
+
+            let currentAngle = -Math.PI / 2;
+            const total = data.reduce((sum, item) => sum + item.value, 0);
+
+            data.forEach(item => {
+                const sliceAngle = (item.value / total) * Math.PI * 2;
+
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, currentAngle, currentAngle + sliceAngle);
+                ctx.closePath();
+                ctx.fillStyle = item.color;
+                ctx.fill();
+                ctx.strokeStyle = '#2B1810';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                // Label
+                const labelAngle = currentAngle + sliceAngle / 2;
+                const labelX = centerX + Math.cos(labelAngle) * (radius * 0.7);
+                const labelY = centerY + Math.sin(labelAngle) * (radius * 0.7);
+                ctx.fillStyle = '#FFF';
+                ctx.font = 'bold 14px SF Pro Display, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(`${item.label}`, labelX, labelY - 10);
+                ctx.fillText(`$${item.value}`, labelX, labelY + 10);
+
+                currentAngle += sliceAngle;
+            });
+        }
+
+        // Chart 4: Value Index
+        const valueCanvas = document.getElementById('value-index-canvas');
+        const valueCtx = valueCanvas.getContext('2d');
+        drawValueIndexChart(valueCtx);
+
+        function drawValueIndexChart(ctx) {
+            const data = [1.25, 1.30, 1.35, 1.40, 1.45, 1.48, 1.51];
+            const labels = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'];
+            drawLineChart(ctx, data, labels, '#FFD700', 'Value improving');
+        }
+
+        function drawLineChart(ctx, data, labels, color, title) {
+            const width = ctx.canvas.width;
+            const height = ctx.canvas.height;
+            const margin = 50;
+            const plotWidth = width - margin * 2;
+            const plotHeight = height - margin * 2;
+
+            // Background
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.2)';
+            ctx.fillRect(0, 0, width, height);
+
+            // Find min/max for scaling
+            const min = Math.min(...data) * 0.95;
+            const max = Math.max(...data) * 1.05;
+
+            // Axes
+            ctx.strokeStyle = '#FFD700';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, margin);
+            ctx.lineTo(margin, height - margin);
+            ctx.lineTo(width - margin, height - margin);
+            ctx.stroke();
+
+            // Draw line
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            data.forEach((value, i) => {
+                const x = margin + (i / (data.length - 1)) * plotWidth;
+                const y = height - margin - ((value - min) / (max - min)) * plotHeight;
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+
+            // Draw points
+            data.forEach((value, i) => {
+                const x = margin + (i / (data.length - 1)) * plotWidth;
+                const y = height - margin - ((value - min) / (max - min)) * plotHeight;
+
+                ctx.beginPath();
+                ctx.arc(x, y, 6, 0, Math.PI * 2);
+                ctx.fillStyle = color;
+                ctx.fill();
+                ctx.strokeStyle = '#FFF';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Label
+                ctx.fillStyle = '#D4A574';
+                ctx.font = '10px SF Pro Display, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.fillText(labels[i], x, height - margin + 20);
+            });
+        }
+
+        // Export functionality
+        function exportData() {
+            let csv = 'Bean Name,Price/250g,Cost Per Cup,Rating,Cups Brewed,Value Score\n';
+            beansData.forEach(bean => {
+                const valueScore = (bean.rating / bean.costPerCup).toFixed(2);
+                csv += `"${bean.name}",${bean.price},${bean.costPerCup},${bean.rating},${bean.cups},${valueScore}\n`;
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'coffee-cost-analysis.csv';
+            link.click();
+        }
+
+        function findBestValue() {
+            const sorted = [...beansData].sort((a, b) => {
+                const aValue = a.rating / a.costPerCup;
+                const bValue = b.rating / b.costPerCup;
+                return bValue - aValue;
+            });
+
+            const top3 = sorted.slice(0, 3);
+            const message = `Top 3 Best Value Beans:\n\n${top3.map((bean, i) =>
+                `${i + 1}. ${bean.name}\n   Value Score: ${(bean.rating / bean.costPerCup).toFixed(2)}\n   Cost: $${bean.costPerCup}/cup | Rating: ${bean.rating}`
+            ).join('\n\n')}`;
+
+            alert(message);
+        }
+
+        function calculateMonthlyBudget() {
+            const cupsPerDay = prompt('How many cups do you drink per day?', '2');
+            if (!cupsPerDay) return;
+
+            const avgCost = 2.84; // Current average
+            const monthlyBudget = parseFloat(cupsPerDay) * avgCost * 30;
+
+            alert(`Monthly Budget Estimate:\n\nCups per day: ${cupsPerDay}\nAverage cost per cup: $${avgCost}\n\nEstimated monthly spend: $${monthlyBudget.toFixed(2)}\n\nThis is ${(monthlyBudget / 30).toFixed(2)} per day on coffee.`);
+        }
+    </script>
+</body>
+</html>

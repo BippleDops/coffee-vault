@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Method Comparison</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #faf7f2;
+            color: #2b1810;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(43, 24, 16, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6f4e37 0%, #4a7c9b 100%);
+            color: #faf7f2;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .controls {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-bottom: 2px solid #e0d5c7;
+        }
+
+        .method-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .method-btn {
+            padding: 0.5rem 1rem;
+            background: white;
+            color: #6f4e37;
+            border: 2px solid #c4b5a0;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .method-btn:hover {
+            border-color: #6f4e37;
+            transform: translateY(-1px);
+        }
+
+        .method-btn.active {
+            background: #6f4e37;
+            color: white;
+            border-color: #6f4e37;
+        }
+
+        .comparison-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 2px solid #e0d5c7;
+        }
+
+        .comparison-options label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6f4e37;
+            cursor: pointer;
+        }
+
+        .comparison-options input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .chart-container {
+            padding: 2rem;
+            background: white;
+            min-height: 600px;
+        }
+
+        #parallelChart {
+            width: 100%;
+            height: 500px;
+        }
+
+        .axis-line {
+            stroke: #6f4e37;
+            stroke-width: 2;
+        }
+
+        .axis-label {
+            font-size: 14px;
+            font-weight: 600;
+            fill: #6f4e37;
+            text-anchor: middle;
+        }
+
+        .axis-ticks text {
+            font-size: 11px;
+            fill: #a0826d;
+        }
+
+        .data-line {
+            fill: none;
+            stroke-width: 2;
+            opacity: 0.6;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .data-line:hover {
+            stroke-width: 4;
+            opacity: 1;
+        }
+
+        .data-line.highlighted {
+            stroke-width: 4;
+            opacity: 1;
+        }
+
+        .data-line.dimmed {
+            opacity: 0.15;
+        }
+
+        .reference-band {
+            fill: #4a7c59;
+            opacity: 0.1;
+        }
+
+        .info-panel {
+            position: absolute;
+            background: rgba(43, 24, 16, 0.95);
+            color: #faf7f2;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            max-width: 300px;
+            font-size: 0.875rem;
+            z-index: 100;
+            box-shadow: 0 10px 15px rgba(43, 24, 16, 0.3);
+        }
+
+        .info-panel.visible {
+            opacity: 1;
+        }
+
+        .info-panel h4 {
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-panel p {
+            margin: 0.25rem 0;
+        }
+
+        .legend {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-top: 2px solid #e0d5c7;
+        }
+
+        .legend h3 {
+            font-size: 1rem;
+            color: #6f4e37;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .legend-line {
+            width: 30px;
+            height: 3px;
+            border-radius: 2px;
+        }
+
+        .stats-panel {
+            padding: 2rem;
+            background: white;
+            border-top: 2px solid #e0d5c7;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .method-card {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-radius: 0.5rem;
+            border-left: 4px solid;
+        }
+
+        .method-card h4 {
+            font-size: 1.125rem;
+            color: #6f4e37;
+            margin-bottom: 1rem;
+        }
+
+        .method-card .param {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .method-card .param-name {
+            color: #6f4e37;
+            font-weight: 600;
+        }
+
+        .method-card .param-value {
+            color: #2b1810;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .chart-container {
+                padding: 1rem;
+            }
+
+            #parallelChart {
+                height: 400px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .instructions {
+            padding: 1rem;
+            background: #fff3cd;
+            border-left: 4px solid #e8b339;
+            margin: 1.5rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Brewing Method Comparison</h1>
+            <p>Compare brewing parameters across different methods using parallel coordinates</p>
+        </div>
+
+        <div class="instructions">
+            <strong>How to use:</strong> Select brewing methods to compare. Hover over lines to see details. Check "Show Recommended Ranges" to compare your parameters against standard recommendations.
+        </div>
+
+        <div class="controls">
+            <div class="method-selector" id="methodSelector"></div>
+            <div class="comparison-options">
+                <label>
+                    <input type="checkbox" id="showRecommended" checked>
+                    Show Recommended Ranges
+                </label>
+                <label>
+                    <input type="checkbox" id="showYourParams">
+                    Highlight Your Parameters
+                </label>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <svg id="parallelChart"></svg>
+            <div class="info-panel" id="infoPanel"></div>
+        </div>
+
+        <div class="legend">
+            <h3>Brewing Methods</h3>
+            <div class="legend-grid" id="legendGrid"></div>
+        </div>
+
+        <div class="stats-panel">
+            <h3 style="text-align: center; color: #6f4e37; margin-bottom: 1.5rem; font-size: 1.25rem;">Parameter Details</h3>
+            <div class="stats-grid" id="statsGrid"></div>
+        </div>
+    </div>
+
+    <script>
+        // Brewing method data with parameter ranges
+        const methodsData = {
+            'pour-over': {
+                name: 'Pour Over',
+                color: '#4a7c59',
+                grind: { min: 5, max: 7, ideal: 6, your: 6 },
+                temp: { min: 195, max: 205, ideal: 200, your: 202 },
+                time: { min: 2.5, max: 4.0, ideal: 3.0, your: 3.2 },
+                ratio: { min: 15, max: 17, ideal: 16, your: 16 },
+                pressure: { min: 0, max: 0, ideal: 0, your: 0 },
+                agitation: { min: 2, max: 4, ideal: 3, your: 3 }
+            },
+            'french-press': {
+                name: 'French Press',
+                color: '#6f4e37',
+                grind: { min: 7, max: 9, ideal: 8, your: 8 },
+                temp: { min: 195, max: 205, ideal: 200, your: 198 },
+                time: { min: 4.0, max: 5.0, ideal: 4.5, your: 4.0 },
+                ratio: { min: 12, max: 15, ideal: 14, your: 13 },
+                pressure: { min: 0, max: 0, ideal: 0, your: 0 },
+                agitation: { min: 1, max: 2, ideal: 1, your: 1 }
+            },
+            'espresso': {
+                name: 'Espresso',
+                color: '#8b1e3f',
+                grind: { min: 1, max: 2, ideal: 1.5, your: 1.5 },
+                temp: { min: 195, max: 205, ideal: 200, your: 201 },
+                time: { min: 0.4, max: 0.5, ideal: 0.45, your: 0.45 },
+                ratio: { min: 1.5, max: 2.5, ideal: 2, your: 2 },
+                pressure: { min: 8, max: 10, ideal: 9, your: 9 },
+                agitation: { min: 0, max: 0, ideal: 0, your: 0 }
+            },
+            'aeropress': {
+                name: 'Aeropress',
+                color: '#d4af37',
+                grind: { min: 3, max: 5, ideal: 4, your: 4 },
+                temp: { min: 175, max: 205, ideal: 190, your: 185 },
+                time: { min: 1.5, max: 2.5, ideal: 2.0, your: 2.0 },
+                ratio: { min: 14, max: 17, ideal: 15, your: 15 },
+                pressure: { min: 0.3, max: 0.5, ideal: 0.4, your: 0.4 },
+                agitation: { min: 3, max: 5, ideal: 4, your: 4 }
+            },
+            'v60': {
+                name: 'V60',
+                color: '#4a7c9b',
+                grind: { min: 5, max: 6, ideal: 5.5, your: 5.5 },
+                temp: { min: 200, max: 205, ideal: 203, your: 203 },
+                time: { min: 2.5, max: 3.5, ideal: 3.0, your: 3.0 },
+                ratio: { min: 15, max: 17, ideal: 16, your: 16 },
+                pressure: { min: 0, max: 0, ideal: 0, your: 0 },
+                agitation: { min: 3, max: 4, ideal: 3.5, your: 3 }
+            },
+            'cold-brew': {
+                name: 'Cold Brew',
+                color: '#5b8c5a',
+                grind: { min: 8, max: 10, ideal: 9, your: 9 },
+                temp: { min: 35, max: 70, ideal: 40, your: 40 },
+                time: { min: 12, max: 24, ideal: 16, your: 18 },
+                ratio: { min: 4, max: 8, ideal: 6, your: 7 },
+                pressure: { min: 0, max: 0, ideal: 0, your: 0 },
+                agitation: { min: 0, max: 1, ideal: 0, your: 0 }
+            }
+        };
+
+        // Parameter definitions
+        const parameters = [
+            { key: 'grind', label: 'Grind Size', unit: '/10', scale: [0, 10] },
+            { key: 'temp', label: 'Temperature', unit: '°F', scale: [35, 210] },
+            { key: 'time', label: 'Brew Time', unit: 'min', scale: [0, 25] },
+            { key: 'ratio', label: 'Coffee:Water', unit: ':1', scale: [0, 20] },
+            { key: 'pressure', label: 'Pressure', unit: 'bar', scale: [0, 10] },
+            { key: 'agitation', label: 'Agitation', unit: '/5', scale: [0, 5] }
+        ];
+
+        let selectedMethods = Object.keys(methodsData);
+        let showRecommended = true;
+        let showYourParams = false;
+        let hoveredMethod = null;
+
+        function initMethodSelector() {
+            const selector = document.getElementById('methodSelector');
+            selector.innerHTML = '';
+
+            Object.entries(methodsData).forEach(([key, method]) => {
+                const btn = document.createElement('button');
+                btn.className = 'method-btn active';
+                btn.textContent = method.name;
+                btn.setAttribute('data-method', key);
+                btn.addEventListener('click', () => toggleMethod(key, btn));
+                selector.appendChild(btn);
+            });
+        }
+
+        function toggleMethod(methodKey, btnElement) {
+            if (selectedMethods.includes(methodKey)) {
+                selectedMethods = selectedMethods.filter(m => m !== methodKey);
+                btnElement.classList.remove('active');
+            } else {
+                selectedMethods.push(methodKey);
+                btnElement.classList.add('active');
+            }
+            drawChart();
+            updateLegend();
+            updateStats();
+        }
+
+        function drawChart() {
+            const svg = document.getElementById('parallelChart');
+            const container = svg.parentElement;
+            const width = container.clientWidth;
+            const height = 500;
+            const padding = { top: 60, right: 100, bottom: 60, left: 100 };
+
+            svg.setAttribute('width', width);
+            svg.setAttribute('height', height);
+            svg.innerHTML = '';
+
+            if (selectedMethods.length === 0) {
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', width / 2);
+                text.setAttribute('y', height / 2);
+                text.setAttribute('text-anchor', 'middle');
+                text.setAttribute('fill', '#a0826d');
+                text.setAttribute('font-size', '18');
+                text.textContent = 'Select at least one brewing method to compare';
+                svg.appendChild(text);
+                return;
+            }
+
+            const chartWidth = width - padding.left - padding.right;
+            const chartHeight = height - padding.top - padding.bottom;
+            const axisSpacing = chartWidth / (parameters.length - 1);
+
+            // Draw axes
+            parameters.forEach((param, i) => {
+                const x = padding.left + (i * axisSpacing);
+
+                // Axis line
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('x1', x);
+                line.setAttribute('y1', padding.top);
+                line.setAttribute('x2', x);
+                line.setAttribute('y2', height - padding.bottom);
+                line.setAttribute('class', 'axis-line');
+                svg.appendChild(line);
+
+                // Axis label
+                const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                label.setAttribute('x', x);
+                label.setAttribute('y', padding.top - 30);
+                label.setAttribute('class', 'axis-label');
+                label.textContent = param.label;
+                svg.appendChild(label);
+
+                // Scale ticks
+                const tickGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                tickGroup.setAttribute('class', 'axis-ticks');
+
+                for (let t = 0; t <= 4; t++) {
+                    const tickY = padding.top + (t * chartHeight / 4);
+                    const tickValue = param.scale[1] - (t * (param.scale[1] - param.scale[0]) / 4);
+
+                    const tick = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    tick.setAttribute('x1', x - 5);
+                    tick.setAttribute('y1', tickY);
+                    tick.setAttribute('x2', x + 5);
+                    tick.setAttribute('y2', tickY);
+                    tick.setAttribute('stroke', '#c4b5a0');
+                    tick.setAttribute('stroke-width', '1');
+                    tickGroup.appendChild(tick);
+
+                    const tickText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    tickText.setAttribute('x', x + 15);
+                    tickText.setAttribute('y', tickY);
+                    tickText.setAttribute('text-anchor', 'start');
+                    tickText.setAttribute('dominant-baseline', 'middle');
+                    tickText.textContent = tickValue.toFixed(tickValue < 10 ? 1 : 0);
+                    tickGroup.appendChild(tickText);
+                }
+
+                svg.appendChild(tickGroup);
+
+                // Draw recommended ranges if enabled
+                if (showRecommended) {
+                    selectedMethods.forEach(methodKey => {
+                        const method = methodsData[methodKey];
+                        const paramData = method[param.key];
+
+                        const minY = padding.top + ((param.scale[1] - paramData.max) / (param.scale[1] - param.scale[0])) * chartHeight;
+                        const maxY = padding.top + ((param.scale[1] - paramData.min) / (param.scale[1] - param.scale[0])) * chartHeight;
+
+                        const bandWidth = axisSpacing * 0.1;
+                        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                        rect.setAttribute('x', x - bandWidth / 2);
+                        rect.setAttribute('y', minY);
+                        rect.setAttribute('width', bandWidth);
+                        rect.setAttribute('height', maxY - minY);
+                        rect.setAttribute('class', 'reference-band');
+                        rect.setAttribute('fill', method.color);
+                        svg.appendChild(rect);
+                    });
+                }
+            });
+
+            // Draw method lines
+            selectedMethods.forEach(methodKey => {
+                const method = methodsData[methodKey];
+                const dataSource = showYourParams ? 'your' : 'ideal';
+
+                const points = parameters.map((param, i) => {
+                    const x = padding.left + (i * axisSpacing);
+                    const value = method[param.key][dataSource];
+                    const y = padding.top + ((param.scale[1] - value) / (param.scale[1] - param.scale[0])) * chartHeight;
+                    return `${x},${y}`;
+                }).join(' ');
+
+                const polyline = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+                polyline.setAttribute('points', points);
+                polyline.setAttribute('class', 'data-line' +
+                    (hoveredMethod === methodKey ? ' highlighted' : '') +
+                    (hoveredMethod && hoveredMethod !== methodKey ? ' dimmed' : ''));
+                polyline.setAttribute('stroke', method.color);
+                polyline.setAttribute('data-method', methodKey);
+
+                polyline.addEventListener('mouseenter', (e) => {
+                    hoveredMethod = methodKey;
+                    drawChart();
+                    showInfo(method, e);
+                });
+
+                polyline.addEventListener('mousemove', (e) => {
+                    if (hoveredMethod === methodKey) {
+                        updateInfoPosition(e);
+                    }
+                });
+
+                polyline.addEventListener('mouseleave', () => {
+                    hoveredMethod = null;
+                    drawChart();
+                    hideInfo();
+                });
+
+                svg.appendChild(polyline);
+
+                // Draw points on the line
+                parameters.forEach((param, i) => {
+                    const x = padding.left + (i * axisSpacing);
+                    const value = method[param.key][dataSource];
+                    const y = padding.top + ((param.scale[1] - value) / (param.scale[1] - param.scale[0])) * chartHeight;
+
+                    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    circle.setAttribute('cx', x);
+                    circle.setAttribute('cy', y);
+                    circle.setAttribute('r', hoveredMethod === methodKey ? 6 : 4);
+                    circle.setAttribute('fill', method.color);
+                    circle.setAttribute('stroke', '#2b1810');
+                    circle.setAttribute('stroke-width', '2');
+                    svg.appendChild(circle);
+                });
+            });
+        }
+
+        function showInfo(method, event) {
+            const panel = document.getElementById('infoPanel');
+            const dataSource = showYourParams ? 'your' : 'ideal';
+
+            panel.innerHTML = `
+                <h4>${method.name}</h4>
+                ${parameters.map(param => `
+                    <p><strong>${param.label}:</strong> ${method[param.key][dataSource]}${param.unit}</p>
+                `).join('')}
+            `;
+
+            updateInfoPosition(event);
+            panel.classList.add('visible');
+        }
+
+        function updateInfoPosition(event) {
+            const panel = document.getElementById('infoPanel');
+            panel.style.position = 'fixed';
+            panel.style.left = Math.min(event.clientX + 20, window.innerWidth - 320) + 'px';
+            panel.style.top = event.clientY + 20 + 'px';
+        }
+
+        function hideInfo() {
+            document.getElementById('infoPanel').classList.remove('visible');
+        }
+
+        function updateLegend() {
+            const grid = document.getElementById('legendGrid');
+            grid.innerHTML = '';
+
+            selectedMethods.forEach(methodKey => {
+                const method = methodsData[methodKey];
+
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+
+                const line = document.createElement('div');
+                line.className = 'legend-line';
+                line.style.backgroundColor = method.color;
+
+                const label = document.createElement('span');
+                label.textContent = method.name;
+
+                item.appendChild(line);
+                item.appendChild(label);
+                grid.appendChild(item);
+            });
+        }
+
+        function updateStats() {
+            const grid = document.getElementById('statsGrid');
+            grid.innerHTML = '';
+
+            selectedMethods.forEach(methodKey => {
+                const method = methodsData[methodKey];
+
+                const card = document.createElement('div');
+                card.className = 'method-card';
+                card.style.borderLeftColor = method.color;
+
+                let html = `<h4>${method.name}</h4>`;
+
+                parameters.forEach(param => {
+                    const data = method[param.key];
+                    html += `
+                        <div class="param">
+                            <span class="param-name">${param.label}:</span>
+                            <span class="param-value">${data.min}-${data.max}${param.unit} (ideal: ${data.ideal}${param.unit})</span>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = html;
+                grid.appendChild(card);
+            });
+        }
+
+        // Event listeners
+        document.getElementById('showRecommended').addEventListener('change', (e) => {
+            showRecommended = e.target.checked;
+            drawChart();
+        });
+
+        document.getElementById('showYourParams').addEventListener('change', (e) => {
+            showYourParams = e.target.checked;
+            drawChart();
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            drawChart();
+        });
+
+        // API for Obsidian integration
+        window.MethodComparison = {
+            setData: (data) => {
+                Object.assign(methodsData, data);
+                initMethodSelector();
+                drawChart();
+                updateLegend();
+                updateStats();
+            },
+            getData: () => methodsData,
+            selectMethods: (methods) => {
+                selectedMethods = methods;
+                document.querySelectorAll('.method-btn').forEach(btn => {
+                    const method = btn.getAttribute('data-method');
+                    btn.classList.toggle('active', methods.includes(method));
+                });
+                drawChart();
+                updateLegend();
+                updateStats();
+            },
+            reset: () => {
+                selectedMethods = Object.keys(methodsData);
+                showRecommended = true;
+                showYourParams = false;
+                document.getElementById('showRecommended').checked = true;
+                document.getElementById('showYourParams').checked = false;
+                initMethodSelector();
+                drawChart();
+                updateLegend();
+                updateStats();
+            }
+        };
+
+        // Initialize
+        initMethodSelector();
+        drawChart();
+        updateLegend();
+        updateStats();
+    </script>
+</body>
+</html>

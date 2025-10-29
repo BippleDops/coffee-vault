@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Processing Method Comparison</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #FFD700;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        .methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .method-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        .method-card:hover {
+            transform: translateY(-8px);
+            border-color: #FFD700;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+        .method-name {
+            font-size: 1.8rem;
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .characteristic {
+            margin: 12px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            border-left: 4px solid #D4A574;
+        }
+        .char-label {
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .char-value {
+            color: #FFF8E1;
+            font-size: 0.95rem;
+        }
+        .flavor-profile {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(212, 165, 116, 0.2);
+            border-radius: 10px;
+        }
+        .flavor-title {
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .flavor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: rgba(255, 215, 0, 0.3);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255, 215, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>☕ Coffee Processing Method Comparison</h1>
+    <div class="methods">
+        <!-- Washed -->
+        <div class="method-card">
+            <div class="method-name">🌊 Washed (Wet)</div>
+            <div class="characteristic">
+                <div class="char-label">Duration</div>
+                <div class="char-value">24-72 hours (fermentation + drying)</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Water Use</div>
+                <div class="char-value">HIGH - 50-150 L per kg</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Labor</div>
+                <div class="char-value">Moderate - fermentation monitoring</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Cost</div>
+                <div class="char-value">$$ - Infrastructure needed</div>
+            </div>
+            <div class="flavor-profile">
+                <div class="flavor-title">Flavor Profile</div>
+                <div class="char-value">Clean, bright, acidic, origin character clear</div>
+                <div class="flavor-tags">
+                    <span class="tag">Citrus</span>
+                    <span class="tag">Floral</span>
+                    <span class="tag">Tea-like</span>
+                    <span class="tag">Bright</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Natural -->
+        <div class="method-card">
+            <div class="method-name">☀️ Natural (Dry)</div>
+            <div class="characteristic">
+                <div class="char-label">Duration</div>
+                <div class="char-value">20-35 days (drying only)</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Water Use</div>
+                <div class="char-value">ZERO - No water needed</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Labor</div>
+                <div class="char-value">Moderate - daily turning, monitoring</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Cost</div>
+                <div class="char-value">$ - Minimal infrastructure</div>
+            </div>
+            <div class="flavor-profile">
+                <div class="flavor-title">Flavor Profile</div>
+                <div class="char-value">Fruity, sweet, full-bodied, berry-forward</div>
+                <div class="flavor-tags">
+                    <span class="tag">Berry</span>
+                    <span class="tag">Wine-like</span>
+                    <span class="tag">Sweet</span>
+                    <span class="tag">Full Body</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Honey -->
+        <div class="method-card">
+            <div class="method-name">🍯 Honey (Pulped Natural)</div>
+            <div class="characteristic">
+                <div class="char-label">Duration</div>
+                <div class="char-value">12-25 days (drying with mucilage)</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Water Use</div>
+                <div class="char-value">LOW - Depulping only</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Labor</div>
+                <div class="char-value">HIGH - Constant raking, mold prevention</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Cost</div>
+                <div class="char-value">$$$ - Labor intensive</div>
+            </div>
+            <div class="flavor-profile">
+                <div class="flavor-title">Flavor Profile</div>
+                <div class="char-value">Sweet, fruity, balanced between washed/natural</div>
+                <div class="flavor-tags">
+                    <span class="tag">Caramel</span>
+                    <span class="tag">Fruit</span>
+                    <span class="tag">Balanced</span>
+                    <span class="tag">Sweet</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wet-Hulled -->
+        <div class="method-card">
+            <div class="method-name">🌿 Wet-Hulled (Giling Basah)</div>
+            <div class="characteristic">
+                <div class="char-label">Duration</div>
+                <div class="char-value">5-7 days (partial dry, hull wet, final dry)</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Water Use</div>
+                <div class="char-value">MODERATE - Initial washing</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Labor</div>
+                <div class="char-value">Moderate - timing critical</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Cost</div>
+                <div class="char-value">$$ - Specialized process</div>
+            </div>
+            <div class="flavor-profile">
+                <div class="flavor-title">Flavor Profile</div>
+                <div class="char-value">Earthy, herbal, full-bodied, low-acid</div>
+                <div class="flavor-tags">
+                    <span class="tag">Earthy</span>
+                    <span class="tag">Herbal</span>
+                    <span class="tag">Full Body</span>
+                    <span class="tag">Rustic</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anaerobic -->
+        <div class="method-card">
+            <div class="method-name">🧪 Anaerobic Fermentation</div>
+            <div class="characteristic">
+                <div class="char-label">Duration</div>
+                <div class="char-value">48-200 hours (sealed fermentation)</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Water Use</div>
+                <div class="char-value">Variable - depends on method</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Labor</div>
+                <div class="char-value">VERY HIGH - constant monitoring</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Cost</div>
+                <div class="char-value">$$$$ - Equipment, risk, expertise</div>
+            </div>
+            <div class="flavor-profile">
+                <div class="flavor-title">Flavor Profile</div>
+                <div class="char-value">Fruit bomb, wine-like, funky, experimental</div>
+                <div class="flavor-tags">
+                    <span class="tag">Tropical</span>
+                    <span class="tag">Wine-like</span>
+                    <span class="tag">Funky</span>
+                    <span class="tag">Unique</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Monsooned -->
+        <div class="method-card">
+            <div class="method-name">🌧️ Monsooned (India)</div>
+            <div class="characteristic">
+                <div class="char-label">Duration</div>
+                <div class="char-value">12-16 weeks (monsoon exposure)</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Water Use</div>
+                <div class="char-value">NONE - Humidity exposure</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Labor</div>
+                <div class="char-value">HIGH - Weekly raking, monitoring</div>
+            </div>
+            <div class="characteristic">
+                <div class="char-label">Cost</div>
+                <div class="char-value">$$$ - Time, labor, specialty</div>
+            </div>
+            <div class="flavor-profile">
+                <div class="flavor-title">Flavor Profile</div>
+                <div class="char-value">Earthy, spice, heavy body, low acid, unique</div>
+                <div class="flavor-tags">
+                    <span class="tag">Earthy</span>
+                    <span class="tag">Spice</span>
+                    <span class="tag">Heavy</span>
+                    <span class="tag">Unique</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

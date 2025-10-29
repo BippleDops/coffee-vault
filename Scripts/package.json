@@ -1,0 +1,28 @@
+{
+  "name": "coffee-vault-scripts",
+  "version": "4.0.0",
+  "description": "Coffee Vault automation scripts for Obsidian",
+  "type": "commonjs",
+  "main": "stats-utils.js",
+  "scripts": {
+    "test": "node --version",
+    "validate": "node data-validator.js",
+    "generate-weekly": "node weekly-summary-generator.js",
+    "generate-monthly": "node monthly-report-generator.js",
+    "optimize-brewing": "node brewing-optimizer.js",
+    "check-inventory": "node inventory-manager.js",
+    "sample-data": "node sample-data-generator.js"
+  },
+  "keywords": [
+    "coffee",
+    "obsidian",
+    "automation",
+    "analytics",
+    "machine-learning"
+  ],
+  "author": "Coffee Vault Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

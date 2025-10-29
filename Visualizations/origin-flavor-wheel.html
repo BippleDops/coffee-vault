@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origin Flavor Wheel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a0f0a 0%, #3E2723 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D4A574;
+            font-size: 1.1rem;
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 30px;
+        }
+
+        .wheel-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #flavor-wheel {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .info-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .origin-selector {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .origin-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 10px;
+            color: #FFF8E1;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .origin-btn:hover {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #FFD700;
+        }
+
+        .origin-btn.active {
+            background: rgba(255, 215, 0, 0.3);
+            border-color: #FFD700;
+        }
+
+        .flavor-details {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .flavor-category {
+            margin-bottom: 20px;
+        }
+
+        .category-title {
+            color: #FFD700;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .flavor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .flavor-tag {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .legend {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legend-color {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 1024px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Coffee Origin Flavor Wheel</h1>
+        <p class="subtitle">Explore characteristic flavors from different coffee-growing regions</p>
+
+        <div class="main-layout">
+            <div class="wheel-container">
+                <canvas id="flavor-wheel" width="700" height="700"></canvas>
+            </div>
+
+            <div class="info-panel">
+                <div class="origin-selector">
+                    <h3 style="color: #FFD700; margin-bottom: 15px;">Select Origin</h3>
+                    <div id="origin-buttons"></div>
+                </div>
+
+                <div class="flavor-details" id="flavor-details">
+                    <h3 style="color: #FFD700; margin-bottom: 15px;">Flavor Profile</h3>
+                    <p style="opacity: 0.6;">Select an origin to view its characteristic flavors</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <h3 style="color: #FFD700; margin-bottom: 15px;">Origin Regions</h3>
+            <div class="legend-grid" id="legend-grid"></div>
+        </div>
+    </div>
+
+    <script>
+        const origins = {
+            'Ethiopia': {
+                color: '#FFD700',
+                flavors: {
+                    Fruity: ['Blueberry', 'Strawberry', 'Citrus', 'Stone Fruit'],
+                    Floral: ['Jasmine', 'Bergamot', 'Lavender'],
+                    Sweet: ['Honey', 'Brown Sugar'],
+                    Other: ['Tea-like', 'Wine']
+                },
+                description: 'Known for bright, complex flavors with floral and fruity notes'
+            },
+            'Colombia': {
+                color: '#4CAF50',
+                flavors: {
+                    Nutty: ['Almond', 'Hazelnut', 'Peanut'],
+                    Sweet: ['Caramel', 'Brown Sugar', 'Chocolate'],
+                    Fruity: ['Apple', 'Cherry'],
+                    Other: ['Balanced', 'Clean']
+                },
+                description: 'Well-balanced with caramel sweetness and mild acidity'
+            },
+            'Brazil': {
+                color: '#8D6E63',
+                flavors: {
+                    Nutty: ['Peanut', 'Almond', 'Walnut'],
+                    Sweet: ['Chocolate', 'Caramel'],
+                    Spicy: ['Cinnamon'],
+                    Other: ['Low Acidity', 'Full Body']
+                },
+                description: 'Heavy body, low acidity, chocolate and nutty flavors'
+            },
+            'Kenya': {
+                color: '#F44336',
+                flavors: {
+                    Fruity: ['Blackcurrant', 'Grapefruit', 'Tomato'],
+                    Sweet: ['Brown Sugar', 'Molasses'],
+                    Wine: ['Red Wine', 'Berry'],
+                    Other: ['Bright', 'Complex']
+                },
+                description: 'Intense fruit-forward flavors with wine-like characteristics'
+            },
+            'Guatemala': {
+                color: '#2196F3',
+                flavors: {
+                    Sweet: ['Chocolate', 'Cocoa'],
+                    Spicy: ['Cinnamon', 'Clove'],
+                    Fruity: ['Apple', 'Peach'],
+                    Other: ['Smooth', 'Balanced']
+                },
+                description: 'Rich chocolate notes with spice complexity'
+            },
+            'Costa Rica': {
+                color: '#FF9800',
+                flavors: {
+                    Fruity: ['Citrus', 'Orange', 'Peach'],
+                    Sweet: ['Honey', 'Caramel'],
+                    Nutty: ['Almond'],
+                    Other: ['Clean', 'Crisp']
+                },
+                description: 'Clean, bright flavors with honey sweetness'
+            },
+            'Indonesia': {
+                color: '#9C27B0',
+                flavors: {
+                    Earthy: ['Tobacco', 'Cedar', 'Forest'],
+                    Spicy: ['Pepper', 'Herbs'],
+                    Sweet: ['Dark Chocolate'],
+                    Other: ['Full Body', 'Low Acidity']
+                },
+                description: 'Earthy, herbal notes with heavy body'
+            }
+        };
+
+        let selectedOrigin = null;
+        const canvas = document.getElementById('flavor-wheel');
+        const ctx = canvas.getContext('2d');
+
+        function createOriginButtons() {
+            const container = document.getElementById('origin-buttons');
+            container.innerHTML = Object.keys(origins).map(origin => `
+                <button class="origin-btn" onclick="selectOrigin('${origin}')" id="btn-${origin}">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 20px; height: 20px; border-radius: 50%; background: ${origins[origin].color};"></div>
+                        ${origin}
+                    </div>
+                </button>
+            `).join('');
+        }
+
+        function createLegend() {
+            const grid = document.getElementById('legend-grid');
+            grid.innerHTML = Object.entries(origins).map(([origin, data]) => `
+                <div class="legend-item">
+                    <div class="legend-color" style="background: ${data.color};"></div>
+                    <div>
+                        <strong>${origin}</strong><br>
+                        <small style="opacity: 0.8;">${data.description}</small>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function selectOrigin(origin) {
+            selectedOrigin = origin;
+
+            // Update button states
+            document.querySelectorAll('.origin-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`btn-${origin}`).classList.add('active');
+
+            // Update flavor details
+            updateFlavorDetails(origin);
+
+            // Redraw wheel
+            drawFlavorWheel();
+        }
+
+        function updateFlavorDetails(origin) {
+            const data = origins[origin];
+            const detailsContainer = document.getElementById('flavor-details');
+
+            let html = `<h3 style="color: ${data.color}; margin-bottom: 10px;">${origin}</h3>`;
+            html += `<p style="margin-bottom: 20px; line-height: 1.5;">${data.description}</p>`;
+
+            Object.entries(data.flavors).forEach(([category, flavors]) => {
+                html += `
+                    <div class="flavor-category">
+                        <div class="category-title">${category}</div>
+                        <div class="flavor-tags">
+                            ${flavors.map(flavor => `<span class="flavor-tag">${flavor}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+
+            detailsContainer.innerHTML = html;
+        }
+
+        function drawFlavorWheel() {
+            const width = canvas.width;
+            const height = canvas.height;
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const radius = Math.min(width, height) / 2 - 40;
+
+            ctx.clearRect(0, 0, width, height);
+
+            const originKeys = Object.keys(origins);
+            const angleStep = (Math.PI * 2) / originKeys.length;
+
+            // Draw segments
+            originKeys.forEach((origin, index) => {
+                const startAngle = index * angleStep - Math.PI / 2;
+                const endAngle = startAngle + angleStep;
+                const data = origins[origin];
+
+                // Segment
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                ctx.closePath();
+
+                if (selectedOrigin === origin) {
+                    ctx.fillStyle = data.color + 'CC';
+                    ctx.strokeStyle = '#FFF';
+                    ctx.lineWidth = 4;
+                } else {
+                    ctx.fillStyle = data.color + '66';
+                    ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+                    ctx.lineWidth = 2;
+                }
+
+                ctx.fill();
+                ctx.stroke();
+
+                // Label
+                const labelAngle = startAngle + angleStep / 2;
+                const labelRadius = radius * 0.7;
+                const labelX = centerX + Math.cos(labelAngle) * labelRadius;
+                const labelY = centerY + Math.sin(labelAngle) * labelRadius;
+
+                ctx.save();
+                ctx.translate(labelX, labelY);
+                ctx.rotate(labelAngle + Math.PI / 2);
+                ctx.fillStyle = '#FFF';
+                ctx.font = 'bold 16px SF Pro Display, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(origin, 0, 0);
+                ctx.restore();
+
+                // Flavor icons in outer ring
+                const flavors = Object.values(data.flavors).flat();
+                const numFlavors = Math.min(3, flavors.length);
+
+                for (let i = 0; i < numFlavors; i++) {
+                    const flavorAngle = startAngle + (angleStep / (numFlavors + 1)) * (i + 1);
+                    const iconRadius = radius * 1.15;
+                    const iconX = centerX + Math.cos(flavorAngle) * iconRadius;
+                    const iconY = centerY + Math.sin(flavorAngle) * iconRadius;
+
+                    ctx.beginPath();
+                    ctx.arc(iconX, iconY, 8, 0, Math.PI * 2);
+                    ctx.fillStyle = data.color;
+                    ctx.fill();
+                    ctx.strokeStyle = '#FFF';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+            });
+
+            // Center circle
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius * 0.3, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+            ctx.fill();
+            ctx.strokeStyle = '#FFD700';
+            ctx.lineWidth = 4;
+            ctx.stroke();
+
+            // Center text
+            ctx.fillStyle = '#FFD700';
+            ctx.font = 'bold 20px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('Coffee', centerX, centerY - 15);
+            ctx.fillText('Origins', centerX, centerY + 15);
+
+            // Title
+            ctx.fillStyle = '#FFD700';
+            ctx.font = 'bold 24px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('Origin Flavor Wheel', width / 2, 30);
+        }
+
+        // Make wheel interactive
+        canvas.addEventListener('click', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+
+            const dx = x - centerX;
+            const dy = y - centerY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            const angle = Math.atan2(dy, dx) + Math.PI / 2;
+            const normalizedAngle = angle < 0 ? angle + Math.PI * 2 : angle;
+
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 40;
+
+            if (distance <= radius && distance > radius * 0.3) {
+                const originKeys = Object.keys(origins);
+                const angleStep = (Math.PI * 2) / originKeys.length;
+                const segmentIndex = Math.floor(normalizedAngle / angleStep);
+                const origin = originKeys[segmentIndex];
+
+                if (origin) {
+                    selectOrigin(origin);
+                }
+            }
+        });
+
+        // Hover effect
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const dx = x - centerX;
+            const dy = y - centerY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            const radius = Math.min(canvas.width, canvas.height) / 2 - 40;
+
+            canvas.style.cursor = (distance <= radius && distance > radius * 0.3) ? 'pointer' : 'default';
+        });
+
+        // Initialize
+        createOriginButtons();
+        createLegend();
+        drawFlavorWheel();
+    </script>
+</body>
+</html>

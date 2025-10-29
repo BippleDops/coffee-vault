@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Comparison Matrix</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a1410 0%, #3E2723 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D4A574;
+            font-size: 1.1rem;
+        }
+
+        .bean-selector {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .bean-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .bean-checkbox {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bean-checkbox:hover {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #FFD700;
+        }
+
+        .bean-checkbox.selected {
+            background: rgba(255, 215, 0, 0.3);
+            border-color: #FFD700;
+        }
+
+        .bean-checkbox input {
+            margin-right: 10px;
+        }
+
+        .matrix-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        th {
+            background: rgba(255, 215, 0, 0.2);
+            color: #FFD700;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover {
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        .metric-value {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .high-score {
+            color: #4CAF50;
+        }
+
+        .medium-score {
+            color: #FF9800;
+        }
+
+        .low-score {
+            color: #F44336;
+        }
+
+        .radar-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .radar-title {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        #radar-canvas {
+            width: 100%;
+            height: auto;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .control-btn {
+            background: rgba(255, 215, 0, 0.3);
+            border: 2px solid #FFD700;
+            color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .control-btn:hover {
+            background: #FFD700;
+            color: #2B1810;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .bean-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            th, td {
+                padding: 10px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Bean Comparison Matrix</h1>
+        <p class="subtitle">Compare multiple coffee beans side-by-side across key metrics</p>
+
+        <div class="bean-selector">
+            <h3 style="color: #FFD700; margin-bottom: 15px;">Select Beans to Compare (up to 5)</h3>
+            <div class="bean-grid" id="bean-grid"></div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" onclick="compareSelected()">Compare Selected</button>
+            <button class="control-btn" onclick="exportComparison()">Export Comparison</button>
+            <button class="control-btn" onclick="clearSelection()">Clear Selection</button>
+        </div>
+
+        <div class="matrix-container" id="matrix-container">
+            <p style="text-align: center; opacity: 0.6;">Select beans above to view comparison</p>
+        </div>
+
+        <div class="radar-container">
+            <h3 class="radar-title">Visual Comparison Chart</h3>
+            <canvas id="radar-canvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const beans = [
+            {
+                name: 'Ethiopian Yirgacheffe',
+                origin: 'Ethiopia',
+                process: 'Washed',
+                roast: 'Light',
+                acidity: 9,
+                body: 4,
+                sweetness: 8,
+                flavor: 'Floral, Citrus, Bergamot',
+                price: 18.50,
+                rating: 4.7
+            },
+            {
+                name: 'Colombian Huila',
+                origin: 'Colombia',
+                process: 'Washed',
+                roast: 'Medium',
+                acidity: 6,
+                body: 7,
+                sweetness: 7,
+                flavor: 'Chocolate, Caramel, Nuts',
+                price: 15.00,
+                rating: 4.3
+            },
+            {
+                name: 'Brazilian Santos',
+                origin: 'Brazil',
+                process: 'Natural',
+                roast: 'Medium',
+                acidity: 4,
+                body: 8,
+                sweetness: 6,
+                flavor: 'Chocolate, Nutty, Low acidity',
+                price: 12.00,
+                rating: 3.8
+            },
+            {
+                name: 'Kenyan AA',
+                origin: 'Kenya',
+                process: 'Washed',
+                roast: 'Medium-Light',
+                acidity: 10,
+                body: 6,
+                sweetness: 7,
+                flavor: 'Blackcurrant, Wine, Bright',
+                price: 22.00,
+                rating: 4.8
+            },
+            {
+                name: 'Sumatra Mandheling',
+                origin: 'Indonesia',
+                process: 'Wet-hulled',
+                roast: 'Dark',
+                acidity: 3,
+                body: 9,
+                sweetness: 5,
+                flavor: 'Earthy, Herbal, Full-bodied',
+                price: 16.50,
+                rating: 4.1
+            },
+            {
+                name: 'Guatemala Antigua',
+                origin: 'Guatemala',
+                process: 'Washed',
+                roast: 'Medium',
+                acidity: 7,
+                body: 7,
+                sweetness: 7,
+                flavor: 'Cocoa, Spice, Smooth',
+                price: 17.00,
+                rating: 4.4
+            },
+            {
+                name: 'Costa Rica Tarrazu',
+                origin: 'Costa Rica',
+                process: 'Washed',
+                roast: 'Light-Medium',
+                acidity: 8,
+                body: 5,
+                sweetness: 8,
+                flavor: 'Citrus, Honey, Clean',
+                price: 19.00,
+                rating: 4.6
+            }
+        ];
+
+        let selectedBeans = [];
+
+        // Populate bean grid
+        function populateBeanGrid() {
+            const grid = document.getElementById('bean-grid');
+            grid.innerHTML = beans.map((bean, index) => `
+                <label class="bean-checkbox" id="bean-${index}">
+                    <input type="checkbox" value="${index}" onchange="toggleBean(${index})">
+                    <strong>${bean.name}</strong><br>
+                    <small style="opacity: 0.8;">${bean.origin} - ${bean.roast} Roast</small>
+                </label>
+            `).join('');
+        }
+
+        function toggleBean(index) {
+            const checkbox = document.querySelector(`#bean-${index} input`);
+            const label = document.getElementById(`bean-${index}`);
+
+            if (checkbox.checked) {
+                if (selectedBeans.length >= 5) {
+                    checkbox.checked = false;
+                    alert('Maximum 5 beans can be compared at once');
+                    return;
+                }
+                selectedBeans.push(index);
+                label.classList.add('selected');
+            } else {
+                selectedBeans = selectedBeans.filter(i => i !== index);
+                label.classList.remove('selected');
+            }
+
+            if (selectedBeans.length > 0) {
+                compareSelected();
+            }
+        }
+
+        function compareSelected() {
+            if (selectedBeans.length === 0) {
+                document.getElementById('matrix-container').innerHTML = '<p style="text-align: center; opacity: 0.6;">Select beans above to view comparison</p>';
+                return;
+            }
+
+            const selectedBeanData = selectedBeans.map(i => beans[i]);
+
+            let html = '<table><thead><tr><th>Metric</th>';
+            selectedBeanData.forEach(bean => {
+                html += `<th>${bean.name}</th>`;
+            });
+            html += '</tr></thead><tbody>';
+
+            // Add rows for each metric
+            const metrics = [
+                { key: 'origin', label: 'Origin', isScore: false },
+                { key: 'process', label: 'Process', isScore: false },
+                { key: 'roast', label: 'Roast Level', isScore: false },
+                { key: 'acidity', label: 'Acidity (1-10)', isScore: true },
+                { key: 'body', label: 'Body (1-10)', isScore: true },
+                { key: 'sweetness', label: 'Sweetness (1-10)', isScore: true },
+                { key: 'flavor', label: 'Flavor Notes', isScore: false },
+                { key: 'price', label: 'Price per 250g', isScore: false, format: v => `$${v.toFixed(2)}` },
+                { key: 'rating', label: 'Overall Rating', isScore: true }
+            ];
+
+            metrics.forEach(metric => {
+                html += `<tr><td style="text-align: left;"><strong>${metric.label}</strong></td>`;
+
+                selectedBeanData.forEach(bean => {
+                    let value = bean[metric.key];
+                    let className = '';
+
+                    if (metric.isScore && typeof value === 'number') {
+                        if (value >= 7) className = 'high-score';
+                        else if (value >= 4) className = 'medium-score';
+                        else className = 'low-score';
+                        value = `<span class="metric-value ${className}">${value}</span>`;
+                    } else if (metric.format) {
+                        value = metric.format(value);
+                    }
+
+                    html += `<td>${value}</td>`;
+                });
+
+                html += '</tr>';
+            });
+
+            html += '</tbody></table>';
+            document.getElementById('matrix-container').innerHTML = html;
+
+            drawRadarChart(selectedBeanData);
+        }
+
+        function drawRadarChart(beanData) {
+            const canvas = document.getElementById('radar-canvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const radius = Math.min(width, height) / 2 - 100;
+
+            ctx.clearRect(0, 0, width, height);
+
+            const metrics = ['acidity', 'body', 'sweetness'];
+            const labels = ['Acidity', 'Body', 'Sweetness'];
+            const numMetrics = metrics.length;
+            const angleStep = (Math.PI * 2) / numMetrics;
+
+            // Draw background circles
+            for (let i = 1; i <= 5; i++) {
+                ctx.beginPath();
+                for (let j = 0; j <= numMetrics; j++) {
+                    const angle = j * angleStep - Math.PI / 2;
+                    const r = radius * (i / 5);
+                    const x = centerX + Math.cos(angle) * r;
+                    const y = centerY + Math.sin(angle) * r;
+                    if (j === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.strokeStyle = 'rgba(255, 215, 0, 0.2)';
+                ctx.stroke();
+            }
+
+            // Draw axes
+            for (let i = 0; i < numMetrics; i++) {
+                const angle = i * angleStep - Math.PI / 2;
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.lineTo(centerX + Math.cos(angle) * radius, centerY + Math.sin(angle) * radius);
+                ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
+                ctx.stroke();
+
+                // Labels
+                const labelX = centerX + Math.cos(angle) * (radius + 40);
+                const labelY = centerY + Math.sin(angle) * (radius + 40);
+                ctx.fillStyle = '#FFD700';
+                ctx.font = 'bold 16px SF Pro Display, sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(labels[i], labelX, labelY);
+            }
+
+            // Draw bean profiles
+            const colors = ['#FFD700', '#4CAF50', '#2196F3', '#FF9800', '#9C27B0'];
+            beanData.forEach((bean, index) => {
+                ctx.beginPath();
+                for (let i = 0; i <= numMetrics; i++) {
+                    const metricIndex = i % numMetrics;
+                    const value = bean[metrics[metricIndex]];
+                    const angle = metricIndex * angleStep - Math.PI / 2;
+                    const r = radius * (value / 10);
+                    const x = centerX + Math.cos(angle) * r;
+                    const y = centerY + Math.sin(angle) * r;
+                    if (i === 0) ctx.moveTo(x, y);
+                    else ctx.lineTo(x, y);
+                }
+                ctx.closePath();
+                ctx.fillStyle = colors[index] + '33';
+                ctx.fill();
+                ctx.strokeStyle = colors[index];
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+
+            // Legend
+            beanData.forEach((bean, index) => {
+                ctx.fillStyle = colors[index];
+                ctx.fillRect(50, 50 + index * 30, 20, 20);
+                ctx.fillStyle = '#FFF';
+                ctx.font = '14px SF Pro Display, sans-serif';
+                ctx.textAlign = 'left';
+                ctx.fillText(bean.name, 80, 65 + index * 30);
+            });
+        }
+
+        function clearSelection() {
+            selectedBeans = [];
+            document.querySelectorAll('.bean-checkbox input').forEach(cb => cb.checked = false);
+            document.querySelectorAll('.bean-checkbox').forEach(label => label.classList.remove('selected'));
+            document.getElementById('matrix-container').innerHTML = '<p style="text-align: center; opacity: 0.6;">Select beans above to view comparison</p>';
+            const canvas = document.getElementById('radar-canvas');
+            const ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function exportComparison() {
+            if (selectedBeans.length === 0) {
+                alert('Please select beans to compare first');
+                return;
+            }
+
+            const selectedBeanData = selectedBeans.map(i => beans[i]);
+            const dataStr = JSON.stringify(selectedBeanData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'bean-comparison.json';
+            link.click();
+        }
+
+        // Initialize
+        populateBeanGrid();
+    </script>
+</body>
+</html>

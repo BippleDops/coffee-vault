@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Journey Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #faf7f2;
+            color: #2b1810;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(43, 24, 16, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6f4e37 0%, #8b1e3f 100%);
+            color: #faf7f2;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .controls {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-bottom: 2px solid #e0d5c7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            background: #6f4e37;
+            color: white;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .btn:hover {
+            background: #5a3d1f;
+            transform: translateY(-1px);
+        }
+
+        .btn.active {
+            background: #4a7c59;
+        }
+
+        .timeline-container {
+            padding: 3rem 2rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+            min-height: 500px;
+            position: relative;
+            background: linear-gradient(180deg, #faf7f2 0%, white 100%);
+        }
+
+        .timeline-svg {
+            min-width: 100%;
+            display: block;
+        }
+
+        .timeline-line {
+            stroke: #6f4e37;
+            stroke-width: 4;
+            fill: none;
+        }
+
+        .milestone-group {
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .milestone-group:hover .milestone-circle {
+            r: 18;
+            stroke-width: 4;
+        }
+
+        .milestone-circle {
+            transition: all 0.2s;
+            stroke: #2b1810;
+            stroke-width: 3;
+        }
+
+        .milestone-icon {
+            font-size: 20px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+        }
+
+        .milestone-label {
+            font-size: 14px;
+            font-weight: 600;
+            fill: #6f4e37;
+            text-anchor: middle;
+        }
+
+        .milestone-date {
+            font-size: 11px;
+            fill: #a0826d;
+            text-anchor: middle;
+        }
+
+        .trend-line {
+            stroke: #4a7c59;
+            stroke-width: 3;
+            fill: none;
+            stroke-dasharray: 5, 5;
+            opacity: 0.6;
+        }
+
+        .trend-area {
+            fill: url(#qualityGradient);
+            opacity: 0.2;
+        }
+
+        .detail-panel {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 20px 25px rgba(43, 24, 16, 0.3);
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            z-index: 1000;
+        }
+
+        .detail-panel.visible {
+            opacity: 1;
+            pointer-events: all;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .detail-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(43, 24, 16, 0.7);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            z-index: 999;
+        }
+
+        .detail-overlay.visible {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e0d5c7;
+        }
+
+        .detail-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-title {
+            font-size: 1.5rem;
+            color: #6f4e37;
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+
+        .detail-date {
+            font-size: 0.875rem;
+            color: #a0826d;
+        }
+
+        .close-btn {
+            background: #e0d5c7;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: all 0.15s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn:hover {
+            background: #c4b5a0;
+        }
+
+        .detail-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #2b1810;
+        }
+
+        .detail-content strong {
+            color: #6f4e37;
+        }
+
+        .detail-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #e0d5c7;
+        }
+
+        .detail-stat {
+            text-align: center;
+            padding: 1rem;
+            background: #f4e8d8;
+            border-radius: 0.5rem;
+        }
+
+        .detail-stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6f4e37;
+        }
+
+        .detail-stat-label {
+            font-size: 0.75rem;
+            color: #a0826d;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+
+        .legend {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-top: 2px solid #e0d5c7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #6f4e37;
+        }
+
+        .legend-circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 3px solid #2b1810;
+        }
+
+        .stats-summary {
+            padding: 2rem;
+            background: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-card {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-radius: 0.5rem;
+            text-align: center;
+            border: 2px solid #e0d5c7;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #6f4e37;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #a0826d;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .timeline-container {
+                padding: 2rem 1rem;
+            }
+
+            .detail-panel {
+                padding: 1.5rem;
+            }
+
+            .stats-summary {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .milestone-group.highlight {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Coffee Journey</h1>
+            <p>A chronological visualization of milestones, discoveries, and growth</p>
+        </div>
+
+        <div class="controls">
+            <button class="btn active" id="showAll">Show All</button>
+            <button class="btn" id="showEquipment">Equipment</button>
+            <button class="btn" id="showSkills">Skills</button>
+            <button class="btn" id="showDiscoveries">Discoveries</button>
+            <button class="btn" id="showCompetitions">Competitions</button>
+        </div>
+
+        <div class="timeline-container">
+            <svg id="timelineSvg" class="timeline-svg" height="400"></svg>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #4a7c59;"></div>
+                <span>Equipment</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #d4af37;"></div>
+                <span>Skills</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #8b1e3f;"></div>
+                <span>Discovery</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-circle" style="background: #4a7c9b;"></div>
+                <span>Competition</span>
+            </div>
+        </div>
+
+        <div class="stats-summary">
+            <div class="stat-card">
+                <div class="stat-value" id="totalMilestones">0</div>
+                <div class="stat-label">Total Milestones</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="journeyDuration">0</div>
+                <div class="stat-label">Days of Journey</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="qualityGrowth">0%</div>
+                <div class="stat-label">Quality Growth</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-overlay" id="detailOverlay"></div>
+    <div class="detail-panel" id="detailPanel">
+        <div class="detail-header">
+            <div>
+                <div class="detail-icon" id="detailIcon">☕</div>
+                <h2 class="detail-title" id="detailTitle">Milestone Title</h2>
+                <p class="detail-date" id="detailDate">Date</p>
+            </div>
+            <button class="close-btn" id="closeDetail">×</button>
+        </div>
+        <div class="detail-content" id="detailContent"></div>
+    </div>
+
+    <script>
+        // Sample milestone data
+        let milestones = [
+            {
+                id: 1,
+                date: '2023-01-15',
+                title: 'First Espresso Machine',
+                type: 'equipment',
+                icon: '☕',
+                description: 'Purchased my first espresso machine - Breville Barista Express. This marked the beginning of my home espresso journey.',
+                impact: 'Opened up a whole new world of coffee brewing possibilities.',
+                avgRating: 3.2
+            },
+            {
+                id: 2,
+                date: '2023-03-22',
+                title: 'Latte Art Basics',
+                type: 'skill',
+                icon: '🎨',
+                description: 'Successfully poured my first heart in latte art after weeks of practice.',
+                impact: 'Gained confidence in milk steaming and pouring techniques.',
+                avgRating: 3.5
+            },
+            {
+                id: 3,
+                date: '2023-05-10',
+                title: 'Ethiopian Yirgacheffe Discovery',
+                type: 'discovery',
+                icon: '🌟',
+                description: 'Tried Ethiopian Yirgacheffe for the first time - mind blown by the floral and fruity notes.',
+                impact: 'Realized the incredible diversity of coffee flavors. Started exploring light roasts.',
+                avgRating: 4.2
+            },
+            {
+                id: 4,
+                date: '2023-07-05',
+                title: 'Upgraded Grinder',
+                type: 'equipment',
+                icon: '⚙️',
+                description: 'Invested in a Baratza Vario grinder. The difference in grind consistency was immediately noticeable.',
+                impact: 'Espresso quality improved dramatically. Better extractions and flavor clarity.',
+                avgRating: 4.4
+            },
+            {
+                id: 5,
+                date: '2023-09-18',
+                title: 'Cupping Training Session',
+                type: 'skill',
+                icon: '🎓',
+                description: 'Attended a professional coffee cupping course. Learned to identify flavor notes and evaluate quality.',
+                impact: 'Developed a more refined palate. Can now distinguish subtle flavor differences.',
+                avgRating: 4.5
+            },
+            {
+                id: 6,
+                date: '2023-11-12',
+                title: 'Local Latte Art Competition',
+                type: 'competition',
+                icon: '🏆',
+                description: 'Competed in my first local latte art throwdown. Placed 3rd in the beginner category!',
+                impact: 'Huge confidence boost. Met other coffee enthusiasts in the community.',
+                avgRating: 4.6
+            },
+            {
+                id: 7,
+                date: '2024-01-20',
+                title: 'Pour Over Mastery',
+                type: 'skill',
+                icon: '💧',
+                description: 'After months of experimentation, finally dialed in the perfect V60 recipe.',
+                impact: 'Consistently achieving balanced, complex brews. Understanding water flow dynamics.',
+                avgRating: 4.7
+            },
+            {
+                id: 8,
+                date: '2024-04-05',
+                title: 'Home Roasting Setup',
+                type: 'equipment',
+                icon: '🔥',
+                description: 'Started home roasting with a Behmor 1600. Complete control over the coffee from bean to cup.',
+                impact: 'Ultimate freshness. Ability to experiment with roast profiles.',
+                avgRating: 4.8
+            }
+        ];
+
+        const colors = {
+            equipment: '#4a7c59',
+            skill: '#d4af37',
+            discovery: '#8b1e3f',
+            competition: '#4a7c9b'
+        };
+
+        let currentFilter = 'all';
+        let selectedMilestone = null;
+
+        function initTimeline() {
+            const svg = document.getElementById('timelineSvg');
+            const container = svg.parentElement;
+            const width = Math.max(container.clientWidth, milestones.length * 200);
+            const height = 400;
+            const padding = { top: 100, right: 50, bottom: 100, left: 50 };
+
+            svg.setAttribute('width', width);
+            svg.setAttribute('height', height);
+
+            // Clear existing content
+            svg.innerHTML = '';
+
+            // Create gradient for quality trend
+            const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+            const gradient = document.createElementNS('http://www.w3.org/2000/svg', 'linearGradient');
+            gradient.setAttribute('id', 'qualityGradient');
+            gradient.setAttribute('x1', '0%');
+            gradient.setAttribute('y1', '0%');
+            gradient.setAttribute('x2', '0%');
+            gradient.setAttribute('y2', '100%');
+
+            const stop1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+            stop1.setAttribute('offset', '0%');
+            stop1.setAttribute('style', 'stop-color:#4a7c59;stop-opacity:0.4');
+
+            const stop2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+            stop2.setAttribute('offset', '100%');
+            stop2.setAttribute('style', 'stop-color:#4a7c59;stop-opacity:0');
+
+            gradient.appendChild(stop1);
+            gradient.appendChild(stop2);
+            defs.appendChild(gradient);
+            svg.appendChild(defs);
+
+            // Filter milestones
+            const filteredMilestones = currentFilter === 'all'
+                ? milestones
+                : milestones.filter(m => m.type === currentFilter);
+
+            if (filteredMilestones.length === 0) {
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', width / 2);
+                text.setAttribute('y', height / 2);
+                text.setAttribute('text-anchor', 'middle');
+                text.setAttribute('fill', '#a0826d');
+                text.setAttribute('font-size', '18');
+                text.textContent = 'No milestones in this category';
+                svg.appendChild(text);
+                return;
+            }
+
+            const timelineY = height / 2;
+            const spacing = (width - padding.left - padding.right) / (filteredMilestones.length - 1 || 1);
+
+            // Draw main timeline line
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', padding.left);
+            line.setAttribute('y1', timelineY);
+            line.setAttribute('x2', width - padding.right);
+            line.setAttribute('y2', timelineY);
+            line.setAttribute('class', 'timeline-line');
+            svg.appendChild(line);
+
+            // Draw quality trend line if showing all
+            if (currentFilter === 'all' && milestones.length > 1) {
+                const trendPoints = milestones.map((m, i) => {
+                    const x = padding.left + (i * spacing);
+                    const y = timelineY - ((m.avgRating - 1) / 4 * 150);
+                    return `${x},${y}`;
+                }).join(' ');
+
+                const trendLine = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+                trendLine.setAttribute('points', trendPoints);
+                trendLine.setAttribute('class', 'trend-line');
+                svg.appendChild(trendLine);
+
+                // Trend area
+                const areaPoints = `${padding.left},${timelineY} ${trendPoints} ${width - padding.right},${timelineY}`;
+                const trendArea = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+                trendArea.setAttribute('points', areaPoints);
+                trendArea.setAttribute('class', 'trend-area');
+                svg.appendChild(trendArea);
+            }
+
+            // Draw milestones
+            filteredMilestones.forEach((milestone, index) => {
+                const x = padding.left + (index * spacing);
+                const y = timelineY;
+
+                // Create group for milestone
+                const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                group.setAttribute('class', 'milestone-group');
+                group.setAttribute('data-id', milestone.id);
+
+                // Circle
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', x);
+                circle.setAttribute('cy', y);
+                circle.setAttribute('r', 15);
+                circle.setAttribute('fill', colors[milestone.type]);
+                circle.setAttribute('class', 'milestone-circle');
+                group.appendChild(circle);
+
+                // Icon (using text for emoji)
+                const icon = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                icon.setAttribute('x', x);
+                icon.setAttribute('y', y);
+                icon.setAttribute('class', 'milestone-icon');
+                icon.textContent = milestone.icon;
+                group.appendChild(icon);
+
+                // Label above
+                const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                label.setAttribute('x', x);
+                label.setAttribute('y', y - 35);
+                label.setAttribute('class', 'milestone-label');
+                label.textContent = milestone.title;
+                group.appendChild(label);
+
+                // Date below
+                const date = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                date.setAttribute('x', x);
+                date.setAttribute('y', y + 35);
+                date.setAttribute('class', 'milestone-date');
+                date.textContent = formatDate(milestone.date);
+                group.appendChild(date);
+
+                // Event listener
+                group.addEventListener('click', () => showDetail(milestone));
+                group.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1)';
+                    this.style.transformOrigin = `${x}px ${y}px`;
+                });
+                group.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+
+                svg.appendChild(group);
+            });
+
+            updateStats();
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+        }
+
+        function showDetail(milestone) {
+            selectedMilestone = milestone;
+
+            document.getElementById('detailIcon').textContent = milestone.icon;
+            document.getElementById('detailTitle').textContent = milestone.title;
+            document.getElementById('detailDate').textContent = new Date(milestone.date).toLocaleDateString('en-US', {
+                month: 'long',
+                day: 'numeric',
+                year: 'numeric'
+            });
+
+            const content = document.getElementById('detailContent');
+            content.innerHTML = `
+                <p><strong>Description:</strong><br>${milestone.description}</p>
+                <p><strong>Impact:</strong><br>${milestone.impact}</p>
+                <div class="detail-stats">
+                    <div class="detail-stat">
+                        <div class="detail-stat-value">${milestone.type}</div>
+                        <div class="detail-stat-label">Category</div>
+                    </div>
+                    <div class="detail-stat">
+                        <div class="detail-stat-value">${milestone.avgRating.toFixed(1)}</div>
+                        <div class="detail-stat-label">Avg Rating</div>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('detailPanel').classList.add('visible');
+            document.getElementById('detailOverlay').classList.add('visible');
+        }
+
+        function hideDetail() {
+            document.getElementById('detailPanel').classList.remove('visible');
+            document.getElementById('detailOverlay').classList.remove('visible');
+            selectedMilestone = null;
+        }
+
+        function updateStats() {
+            const filteredMilestones = currentFilter === 'all'
+                ? milestones
+                : milestones.filter(m => m.type === currentFilter);
+
+            document.getElementById('totalMilestones').textContent = filteredMilestones.length;
+
+            if (milestones.length > 0) {
+                const firstDate = new Date(milestones[0].date);
+                const lastDate = new Date(milestones[milestones.length - 1].date);
+                const daysDiff = Math.floor((lastDate - firstDate) / (1000 * 60 * 60 * 24));
+                document.getElementById('journeyDuration').textContent = daysDiff;
+
+                const firstRating = milestones[0].avgRating;
+                const lastRating = milestones[milestones.length - 1].avgRating;
+                const growth = ((lastRating - firstRating) / firstRating * 100).toFixed(0);
+                document.getElementById('qualityGrowth').textContent = `${growth}%`;
+            }
+        }
+
+        function setFilter(filter) {
+            currentFilter = filter;
+
+            // Update button states
+            document.querySelectorAll('.controls .btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            initTimeline();
+        }
+
+        // Event listeners
+        document.getElementById('showAll').addEventListener('click', () => setFilter('all'));
+        document.getElementById('showEquipment').addEventListener('click', () => setFilter('equipment'));
+        document.getElementById('showSkills').addEventListener('click', () => setFilter('skill'));
+        document.getElementById('showDiscoveries').addEventListener('click', () => setFilter('discovery'));
+        document.getElementById('showCompetitions').addEventListener('click', () => setFilter('competition'));
+
+        document.getElementById('closeDetail').addEventListener('click', hideDetail);
+        document.getElementById('detailOverlay').addEventListener('click', hideDetail);
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            initTimeline();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                hideDetail();
+            }
+        });
+
+        // API for Obsidian integration
+        window.JourneyTimeline = {
+            setData: (data) => {
+                milestones = data.sort((a, b) => new Date(a.date) - new Date(b.date));
+                initTimeline();
+            },
+            getData: () => milestones,
+            addMilestone: (milestone) => {
+                milestones.push(milestone);
+                milestones.sort((a, b) => new Date(a.date) - new Date(b.date));
+                initTimeline();
+            },
+            reset: () => {
+                currentFilter = 'all';
+                document.getElementById('showAll').classList.add('active');
+                initTimeline();
+            }
+        };
+
+        // Initialize
+        initTimeline();
+    </script>
+</body>
+</html>

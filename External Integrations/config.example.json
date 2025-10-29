@@ -1,0 +1,72 @@
+{
+  "vaultPath": "/absolute/path/to/your/vault",
+  "integrations": {
+    "reviewAggregator": {
+      "enabled": false,
+      "sources": ["coffeereview", "perfectdailygrind"],
+      "cacheDuration": 604800,
+      "rateLimit": 1000,
+      "autoMatch": true,
+      "minScore": 90,
+      "outputFolder": "Reviews & Articles"
+    },
+    "roasterSync": {
+      "enabled": false,
+      "sources": ["sca", "community"],
+      "updateInterval": 86400,
+      "autoUpdate": false,
+      "createNew": true,
+      "outputFolder": "Roasters"
+    },
+    "eventCalendar": {
+      "enabled": false,
+      "subscriptions": [
+        "https://sca.coffee/events/feed",
+        "https://worldcoffeeevents.org/events.ical"
+      ],
+      "lookAheadDays": 365,
+      "createNotes": true,
+      "notesFolder": "Events",
+      "reminderDays": 7
+    },
+    "socialSharing": {
+      "enabled": false,
+      "outputPath": "./public",
+      "domain": "mycoffee.example.com",
+      "shareTypes": ["bean-profile", "brewing-guide"],
+      "requireTag": "share",
+      "stripProperties": ["email", "phone", "cost", "address", "price"],
+      "generateRSS": true,
+      "siteName": "My Coffee Journey",
+      "siteDescription": "Coffee brewing notes and experiences"
+    },
+    "equipmentSync": {
+      "enabled": false,
+      "devices": [],
+      "importInterval": 3600,
+      "autoCreateLogs": true,
+      "logsFolder": "Coffee Logs"
+    }
+  },
+  "privacy": {
+    "stripPersonalData": true,
+    "excludeProperties": ["email", "phone", "address", "cost", "price"],
+    "requireExplicitConsent": true
+  },
+  "cache": {
+    "enabled": true,
+    "path": "./.cache",
+    "maxAge": 604800
+  },
+  "network": {
+    "timeout": 30000,
+    "userAgent": "CoffeeVault/1.0 (Personal Coffee Tracking)",
+    "retryAttempts": 3,
+    "retryDelay": 2000
+  },
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "path": "./logs"
+  }
+}

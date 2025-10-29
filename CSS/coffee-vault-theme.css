@@ -1,0 +1,1442 @@
+/**
+ * Coffee Vault Theme - Version 3.0
+ *
+ * A comprehensive, coffee-inspired design system for Obsidian
+ * providing consistent styling across all vault components.
+ *
+ * Features:
+ * - Coffee-inspired color palette with semantic naming
+ * - Responsive typography scale
+ * - Modular spacing system
+ * - Component-specific styles for coffee tracking
+ * - Mobile-first responsive design
+ * - Dark mode support
+ * - Print optimization
+ * - Accessibility features (WCAG 2.1 AA compliant)
+ *
+ * @version 3.0.0
+ * @date 2025-10-25
+ */
+
+/* ============================================
+   CSS CUSTOM PROPERTIES (Design Tokens)
+   ============================================ */
+
+:root {
+  /* ===== Coffee-Inspired Color Palette ===== */
+
+  /* Primary Coffee Colors */
+  --coffee-espresso: #2B1810;        /* Deep, dark brown */
+  --coffee-dark-roast: #3E2723;      /* Dark chocolate brown */
+  --coffee-medium-roast: #5D4037;    /* Rich medium brown */
+  --coffee-light-roast: #8D6E63;     /* Warm tan brown */
+  --coffee-cream: #FFF8E1;           /* Cream/latte color */
+  --coffee-milk: #FFFBF0;            /* Light cream */
+  --coffee-foam: #FAFAFA;            /* Steamed milk foam */
+
+  /* Accent Colors (Coffee Flavor Notes) */
+  --coffee-berry: #C62828;           /* Cherry, berry notes */
+  --coffee-citrus: #FF8F00;          /* Orange, citrus acidity */
+  --coffee-caramel: #D4A574;         /* Caramel sweetness */
+  --coffee-chocolate: #4E342E;       /* Chocolate notes */
+  --coffee-floral: #9C27B0;          /* Floral, jasmine */
+  --coffee-honey: #F9A825;           /* Honey sweetness */
+  --coffee-nutty: #A1887F;           /* Nutty, almond */
+  --coffee-earth: #6D4C41;           /* Earthy, mushroom */
+
+  /* Semantic Colors */
+  --color-success: #2E7D32;          /* Success state */
+  --color-warning: #F57C00;          /* Warning state */
+  --color-error: #C62828;            /* Error state */
+  --color-info: #0277BD;             /* Info state */
+
+  /* Neutral Grays */
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+
+  /* ===== Typography ===== */
+
+  /* Font Families */
+  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont,
+                       "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-family-mono: "Courier New", Courier, monospace, "SF Mono", Monaco;
+  --font-family-display: var(--font-family-sans);
+
+  /* Font Sizes (Modular Scale: 1.250 - Major Third) */
+  --font-size-xs: 0.75rem;           /* 12px */
+  --font-size-sm: 0.875rem;          /* 14px */
+  --font-size-base: 1rem;            /* 16px */
+  --font-size-md: 1.125rem;          /* 18px */
+  --font-size-lg: 1.25rem;           /* 20px */
+  --font-size-xl: 1.5rem;            /* 24px */
+  --font-size-2xl: 1.875rem;         /* 30px */
+  --font-size-3xl: 2.25rem;          /* 36px */
+  --font-size-4xl: 3rem;             /* 48px */
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.05em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+
+  /* ===== Spacing Scale ===== */
+
+  --space-0: 0;
+  --space-1: 0.25rem;     /* 4px */
+  --space-2: 0.5rem;      /* 8px */
+  --space-3: 0.75rem;     /* 12px */
+  --space-4: 1rem;        /* 16px */
+  --space-5: 1.25rem;     /* 20px */
+  --space-6: 1.5rem;      /* 24px */
+  --space-8: 2rem;        /* 32px */
+  --space-10: 2.5rem;     /* 40px */
+  --space-12: 3rem;       /* 48px */
+  --space-16: 4rem;       /* 64px */
+  --space-20: 5rem;       /* 80px */
+  --space-24: 6rem;       /* 96px */
+
+  /* ===== Sizing ===== */
+
+  --size-icon-sm: 16px;
+  --size-icon-md: 24px;
+  --size-icon-lg: 32px;
+  --size-icon-xl: 48px;
+
+  --size-avatar-sm: 32px;
+  --size-avatar-md: 48px;
+  --size-avatar-lg: 64px;
+
+  /* ===== Border Radius ===== */
+
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-full: 9999px;  /* Fully rounded */
+
+  /* ===== Shadows ===== */
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+               0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+               0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+               0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+               0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Coffee-themed shadows */
+  --shadow-coffee-sm: 0 2px 4px 0 rgba(43, 24, 16, 0.15);
+  --shadow-coffee-md: 0 4px 8px 0 rgba(43, 24, 16, 0.2);
+  --shadow-coffee-lg: 0 8px 16px 0 rgba(43, 24, 16, 0.25);
+
+  /* ===== Transitions ===== */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  --transition-slower: 500ms ease;
+
+  /* ===== Z-Index Scale ===== */
+
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+
+  /* ===== Breakpoints (for reference in JS) ===== */
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}
+
+/* ============================================
+   DARK MODE OVERRIDES
+   ============================================ */
+
+.theme-dark {
+  /* Inverted coffee colors for dark mode */
+  --coffee-espresso: #FFF8E1;
+  --coffee-dark-roast: #F5E6D3;
+  --coffee-medium-roast: #D7C0A8;
+  --coffee-light-roast: #B39C7F;
+  --coffee-cream: #2B1810;
+  --coffee-milk: #3E2723;
+  --coffee-foam: #4E342E;
+
+  /* Adjusted accents for dark mode */
+  --coffee-berry: #EF5350;
+  --coffee-citrus: #FFA726;
+  --coffee-caramel: #E4B794;
+  --coffee-chocolate: #A1887F;
+  --coffee-floral: #BA68C8;
+  --coffee-honey: #FFD54F;
+
+  /* Dark mode grays (inverted) */
+  --gray-50: #212121;
+  --gray-100: #2C2C2C;
+  --gray-200: #373737;
+  --gray-300: #424242;
+  --gray-400: #616161;
+  --gray-500: #757575;
+  --gray-600: #9E9E9E;
+  --gray-700: #BDBDBD;
+  --gray-800: #E0E0E0;
+  --gray-900: #F5F5F5;
+
+  /* Adjust shadows for dark mode */
+  --shadow-coffee-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  --shadow-coffee-md: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  --shadow-coffee-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--coffee-espresso);
+  background-color: var(--coffee-milk);
+}
+
+/* ===== Typography Base ===== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--coffee-dark-roast);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+h5 { font-size: var(--font-size-md); }
+h6 { font-size: var(--font-size-base); }
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+a {
+  color: var(--coffee-medium-roast);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--coffee-dark-roast);
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: var(--font-weight-bold);
+}
+
+em, i {
+  font-style: italic;
+}
+
+code {
+  font-family: var(--font-family-mono);
+  font-size: 0.9em;
+  background-color: var(--gray-100);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  color: var(--coffee-chocolate);
+}
+
+pre {
+  font-family: var(--font-family-mono);
+  background-color: var(--gray-100);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-bottom: var(--space-4);
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--coffee-caramel);
+  padding-left: var(--space-4);
+  margin-left: 0;
+  margin-bottom: var(--space-4);
+  font-style: italic;
+  color: var(--gray-700);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--gray-300);
+  margin: var(--space-8) 0;
+}
+
+/* ============================================
+   COMPONENT STYLES - COFFEE SPECIFIC
+   ============================================ */
+
+/* ===== Coffee Rating Display ===== */
+
+.coffee-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+}
+
+.coffee-rating-stars {
+  color: var(--coffee-honey);
+  font-size: var(--font-size-lg);
+  letter-spacing: var(--space-1);
+}
+
+.coffee-rating-value {
+  color: var(--coffee-dark-roast);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Rating with scale */
+.coffee-rating-scale {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.coffee-rating-scale .rating-bar {
+  height: 8px;
+  width: 100px;
+  background-color: var(--gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.coffee-rating-scale .rating-fill {
+  height: 100%;
+  background: linear-gradient(to right, var(--coffee-caramel), var(--coffee-honey));
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+}
+
+/* ===== Roast Level Indicator ===== */
+
+.roast-level {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--gray-100);
+}
+
+.roast-level-dots {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.roast-level-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--gray-300);
+  transition: background-color var(--transition-fast);
+}
+
+.roast-level.light .roast-level-dot:nth-child(-n+2) {
+  background-color: var(--coffee-light-roast);
+}
+
+.roast-level.light-medium .roast-level-dot:nth-child(-n+3) {
+  background-color: var(--coffee-light-roast);
+}
+
+.roast-level.medium .roast-level-dot:nth-child(-n+5) {
+  background-color: var(--coffee-medium-roast);
+}
+
+.roast-level.medium-dark .roast-level-dot:nth-child(-n+7) {
+  background-color: var(--coffee-dark-roast);
+}
+
+.roast-level.dark .roast-level-dot {
+  background-color: var(--coffee-espresso);
+}
+
+/* ===== Coffee Stats Display ===== */
+
+.coffee-stat {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  background-color: var(--coffee-foam);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-coffee-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.coffee-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-coffee-md);
+}
+
+.coffee-stat-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--space-2);
+}
+
+.coffee-stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--coffee-dark-roast);
+  line-height: var(--line-height-tight);
+}
+
+.coffee-stat-unit {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  color: var(--gray-500);
+  margin-left: var(--space-1);
+}
+
+.coffee-stat-change {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-top: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.coffee-stat-change.positive {
+  color: var(--color-success);
+}
+
+.coffee-stat-change.negative {
+  color: var(--color-error);
+}
+
+.coffee-stat-change.neutral {
+  color: var(--gray-500);
+}
+
+/* ===== Coffee Dashboard Grid ===== */
+
+.coffee-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.coffee-dashboard-card {
+  background-color: var(--coffee-foam);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-coffee-sm);
+  border: 1px solid var(--gray-200);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.coffee-dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-coffee-lg);
+}
+
+.coffee-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.coffee-dashboard-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--coffee-dark-roast);
+  margin: 0;
+}
+
+.coffee-dashboard-icon {
+  width: var(--size-icon-lg);
+  height: var(--size-icon-lg);
+  color: var(--coffee-medium-roast);
+}
+
+.coffee-dashboard-content {
+  margin-bottom: var(--space-4);
+}
+
+.coffee-dashboard-footer {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--gray-200);
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+}
+
+/* ===== Coffee Table Styles ===== */
+
+.coffee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-6);
+  background-color: var(--coffee-foam);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.coffee-table thead {
+  background-color: var(--coffee-light-roast);
+  color: white;
+}
+
+.coffee-table th {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.coffee-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--gray-200);
+  font-size: var(--font-size-sm);
+}
+
+.coffee-table tbody tr:hover {
+  background-color: var(--coffee-cream);
+  transition: background-color var(--transition-fast);
+}
+
+.coffee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Striped table variant */
+.coffee-table.striped tbody tr:nth-child(even) {
+  background-color: var(--gray-50);
+}
+
+/* Compact table variant */
+.coffee-table.compact th,
+.coffee-table.compact td {
+  padding: var(--space-2) var(--space-3);
+}
+
+/* ===== Coffee Tag/Badge ===== */
+
+.coffee-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--gray-200);
+  color: var(--gray-700);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  transition: background-color var(--transition-fast);
+}
+
+.coffee-tag:hover {
+  background-color: var(--gray-300);
+}
+
+/* Tag color variants */
+.coffee-tag.origin {
+  background-color: var(--coffee-earth);
+  color: white;
+}
+
+.coffee-tag.method {
+  background-color: var(--coffee-medium-roast);
+  color: white;
+}
+
+.coffee-tag.roaster {
+  background-color: var(--coffee-caramel);
+  color: var(--coffee-espresso);
+}
+
+.coffee-tag.flavor {
+  background-color: var(--coffee-floral);
+  color: white;
+}
+
+.coffee-tag.processing {
+  background-color: var(--coffee-citrus);
+  color: white;
+}
+
+/* ===== Coffee Button Styles ===== */
+
+.coffee-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  font-family: var(--font-family-sans);
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.coffee-button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.coffee-button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-xs);
+}
+
+.coffee-button:focus {
+  outline: 2px solid var(--coffee-medium-roast);
+  outline-offset: 2px;
+}
+
+/* Button variants */
+.coffee-button.primary {
+  background-color: var(--coffee-medium-roast);
+  color: white;
+}
+
+.coffee-button.primary:hover {
+  background-color: var(--coffee-dark-roast);
+}
+
+.coffee-button.secondary {
+  background-color: var(--coffee-caramel);
+  color: var(--coffee-espresso);
+}
+
+.coffee-button.secondary:hover {
+  background-color: var(--coffee-honey);
+}
+
+.coffee-button.outline {
+  background-color: transparent;
+  border: 2px solid var(--coffee-medium-roast);
+  color: var(--coffee-medium-roast);
+}
+
+.coffee-button.outline:hover {
+  background-color: var(--coffee-medium-roast);
+  color: white;
+}
+
+.coffee-button.ghost {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--coffee-medium-roast);
+}
+
+.coffee-button.ghost:hover {
+  background-color: var(--gray-100);
+}
+
+/* Button sizes */
+.coffee-button.small {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-sm);
+}
+
+.coffee-button.large {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--font-size-lg);
+}
+
+/* ===== Brewing Method Icon Styles ===== */
+
+.brew-method-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--coffee-cream);
+  color: var(--coffee-medium-roast);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.brew-method-icon.v60 { background-color: rgba(255, 143, 0, 0.15); }
+.brew-method-icon.chemex { background-color: rgba(93, 64, 55, 0.15); }
+.brew-method-icon.aeropress { background-color: rgba(2, 119, 189, 0.15); }
+.brew-method-icon.french-press { background-color: rgba(109, 76, 65, 0.15); }
+.brew-method-icon.espresso { background-color: rgba(43, 24, 16, 0.15); }
+
+/* ===== Flavor Descriptors List ===== */
+
+.flavor-descriptors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.flavor-descriptor {
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--coffee-cream);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  color: var(--coffee-dark-roast);
+  border: 1px solid var(--gray-300);
+  transition: all var(--transition-fast);
+}
+
+.flavor-descriptor:hover {
+  background-color: var(--coffee-caramel);
+  color: white;
+  border-color: var(--coffee-caramel);
+  transform: scale(1.05);
+}
+
+/* ===== Progress Bar (e.g., brew progress) ===== */
+
+.coffee-progress {
+  width: 100%;
+  height: 12px;
+  background-color: var(--gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+  margin: var(--space-3) 0;
+}
+
+.coffee-progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, var(--coffee-medium-roast), var(--coffee-caramel));
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.coffee-progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ===== Coffee Card (for bean profiles, etc.) ===== */
+
+.coffee-card {
+  background-color: var(--coffee-foam);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-coffee-md);
+  border: 1px solid var(--gray-200);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  margin-bottom: var(--space-6);
+}
+
+.coffee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-coffee-lg);
+}
+
+.coffee-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.coffee-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--coffee-dark-roast);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.coffee-card-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--gray-600);
+  margin: 0;
+}
+
+.coffee-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.coffee-card-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.coffee-card-meta-label {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--gray-500);
+  font-weight: var(--font-weight-medium);
+}
+
+.coffee-card-meta-value {
+  font-size: var(--font-size-sm);
+  color: var(--coffee-dark-roast);
+  font-weight: var(--font-weight-semibold);
+}
+
+.coffee-card-content {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--gray-700);
+}
+
+.coffee-card-footer {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Alert/Callout Boxes ===== */
+
+.coffee-alert {
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.coffee-alert-icon {
+  flex-shrink: 0;
+  width: var(--size-icon-md);
+  height: var(--size-icon-md);
+}
+
+.coffee-alert-content {
+  flex: 1;
+}
+
+.coffee-alert-title {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-2);
+  font-size: var(--font-size-base);
+}
+
+.coffee-alert.info {
+  background-color: rgba(2, 119, 189, 0.1);
+  border-left-color: var(--color-info);
+  color: #01579B;
+}
+
+.coffee-alert.success {
+  background-color: rgba(46, 125, 50, 0.1);
+  border-left-color: var(--color-success);
+  color: #1B5E20;
+}
+
+.coffee-alert.warning {
+  background-color: rgba(245, 124, 0, 0.1);
+  border-left-color: var(--color-warning);
+  color: #E65100;
+}
+
+.coffee-alert.error {
+  background-color: rgba(198, 40, 40, 0.1);
+  border-left-color: var(--color-error);
+  color: #B71C1C;
+}
+
+/* ===== Input Fields ===== */
+
+.coffee-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-sans);
+  color: var(--coffee-espresso);
+  background-color: white;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.coffee-input:focus {
+  outline: none;
+  border-color: var(--coffee-medium-roast);
+  box-shadow: 0 0 0 3px rgba(93, 64, 55, 0.1);
+}
+
+.coffee-input::placeholder {
+  color: var(--gray-400);
+}
+
+.coffee-input:disabled {
+  background-color: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ===== Badge Indicators ===== */
+
+.coffee-badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.coffee-badge.active {
+  background-color: #D4EDDA;
+  color: #155724;
+}
+
+.coffee-badge.finished {
+  background-color: #F8D7DA;
+  color: #721C24;
+}
+
+.coffee-badge.aging {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.coffee-badge.favorite {
+  background-color: rgba(249, 168, 37, 0.2);
+  color: var(--coffee-honey);
+  border: 1px solid var(--coffee-honey);
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.container-wide {
+  max-width: 1400px;
+}
+
+.container-narrow {
+  max-width: 800px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 { gap: var(--space-2); }
+.gap-4 { gap: var(--space-4); }
+.gap-6 { gap: var(--space-6); }
+.gap-8 { gap: var(--space-8); }
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Mobile First - Base styles above are for mobile */
+
+/* Small devices (landscape phones, 480px and up) */
+@media (min-width: 480px) {
+  .coffee-dashboard {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  :root {
+    --font-size-base: 1.0625rem; /* 17px */
+  }
+
+  .coffee-dashboard {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .coffee-dashboard {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .grid-lg-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  .container {
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
+}
+
+/* Mobile-specific overrides */
+@media (max-width: 479px) {
+  h1 { font-size: var(--font-size-2xl); }
+  h2 { font-size: var(--font-size-xl); }
+  h3 { font-size: var(--font-size-lg); }
+
+  .coffee-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .coffee-table {
+    font-size: var(--font-size-xs);
+  }
+
+  .coffee-table th,
+  .coffee-table td {
+    padding: var(--space-2);
+  }
+
+  .coffee-card {
+    padding: var(--space-4);
+  }
+
+  .coffee-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY FEATURES
+   ============================================ */
+
+/* Focus indicators */
+*:focus {
+  outline: 2px solid var(--coffee-medium-roast);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--coffee-dark-roast);
+  color: white;
+  padding: var(--space-2) var(--space-4);
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --coffee-espresso: #000000;
+    --coffee-cream: #FFFFFF;
+  }
+
+  .coffee-button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  .coffee-dashboard-card,
+  .coffee-card,
+  .coffee-table {
+    box-shadow: none;
+    border: 1px solid #000;
+    page-break-inside: avoid;
+  }
+
+  .coffee-button,
+  .no-print {
+    display: none;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Spacing utilities */
+.mt-2 { margin-top: var(--space-2); }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mt-8 { margin-top: var(--space-8); }
+
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+
+.p-2 { padding: var(--space-2); }
+.p-4 { padding: var(--space-4); }
+.p-6 { padding: var(--space-6); }
+.p-8 { padding: var(--space-8); }
+
+/* Text utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+
+.font-light { font-weight: var(--font-weight-light); }
+.font-normal { font-weight: var(--font-weight-normal); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+
+/* Color utilities */
+.text-coffee-espresso { color: var(--coffee-espresso); }
+.text-coffee-dark { color: var(--coffee-dark-roast); }
+.text-coffee-medium { color: var(--coffee-medium-roast); }
+.text-gray-600 { color: var(--gray-600); }
+.text-gray-700 { color: var(--gray-700); }
+
+.bg-coffee-foam { background-color: var(--coffee-foam); }
+.bg-coffee-cream { background-color: var(--coffee-cream); }
+.bg-gray-100 { background-color: var(--gray-100); }
+
+/* Border utilities */
+.border { border: 1px solid var(--gray-300); }
+.border-t { border-top: 1px solid var(--gray-300); }
+.border-b { border-bottom: 1px solid var(--gray-300); }
+
+.rounded { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* Shadow utilities */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-coffee { box-shadow: var(--shadow-coffee-md); }
+
+/* Display utilities */
+.hidden { display: none; }
+.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+/* ============================================
+   ANIMATION UTILITIES
+   ============================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in {
+  animation: fadeIn var(--transition-base) ease-out;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp var(--transition-base) ease-out;
+}
+
+.animate-slide-in-down {
+  animation: slideInDown var(--transition-base) ease-out;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* ============================================
+   DATAVIEW/DATACORE QUERY STYLING
+   ============================================ */
+
+.dataview {
+  margin: var(--space-6) 0;
+}
+
+.dataview.table-view table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--coffee-foam);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.dataview.table-view thead {
+  background-color: var(--coffee-light-roast);
+  color: white;
+}
+
+.dataview.table-view th {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+.dataview.table-view td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.dataview.list-view ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dataview.list-view li {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+/* ============================================
+   OBSIDIAN-SPECIFIC OVERRIDES
+   ============================================ */
+
+.workspace-leaf-content[data-type="markdown"] .view-content {
+  padding: var(--space-6);
+}
+
+.cm-line {
+  line-height: var(--line-height-relaxed);
+}
+
+.markdown-preview-view {
+  padding: var(--space-6);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  color: var(--coffee-dark-roast);
+}
+
+/* Tag styling in Obsidian */
+.tag {
+  background-color: var(--coffee-caramel);
+  color: var(--coffee-espresso);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ============================================
+   END OF COFFEE VAULT THEME
+   ============================================ */
+
+/**
+ * Usage Notes:
+ *
+ * 1. Import this file in your Obsidian CSS snippets folder
+ * 2. Enable the snippet in Settings > Appearance > CSS Snippets
+ * 3. Use coffee-* classes in your notes and templates
+ * 4. Customize colors by modifying CSS custom properties in :root
+ * 5. Extend with personal classes as needed
+ *
+ * Documentation: See Configuration/User-Configuration-Guide.md
+ * Support: Coffee Vault Community Forum
+ */

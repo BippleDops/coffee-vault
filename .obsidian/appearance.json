@@ -1,0 +1,8 @@
+{
+  "enabledCssSnippets": [
+    "coffee-theme",
+    "coffee-vault-theme",
+    "mobile-responsive"
+  ],
+  "translucency": false
+}

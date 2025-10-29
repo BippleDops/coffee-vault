@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Control Triangle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0f0a08 0%, #2B1810 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D4A574;
+            font-size: 1.1rem;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .triangle-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #brewing-canvas {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .controls-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .control-group {
+            margin-bottom: 25px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #FFD700;
+            font-size: 0.95rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            color: #FFF8E1;
+            font-size: 1rem;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #FFD700;
+        }
+
+        .result-card {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .result-label {
+            font-size: 0.85rem;
+            color: #D4A574;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .result-interpretation {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #FFF8E1;
+            line-height: 1.5;
+        }
+
+        .zone-indicator {
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .zone-ideal {
+            background: rgba(76, 175, 80, 0.3);
+            border: 2px solid #4CAF50;
+            color: #4CAF50;
+        }
+
+        .zone-strong {
+            background: rgba(255, 152, 0, 0.3);
+            border: 2px solid #FF9800;
+            color: #FF9800;
+        }
+
+        .zone-weak {
+            background: rgba(33, 150, 243, 0.3);
+            border: 2px solid #2196F3;
+            color: #2196F3;
+        }
+
+        .zone-bitter {
+            background: rgba(156, 39, 176, 0.3);
+            border: 2px solid #9C27B0;
+            color: #9C27B0;
+        }
+
+        .zone-sour {
+            background: rgba(244, 67, 54, 0.3);
+            border: 2px solid #F44336;
+            color: #F44336;
+        }
+
+        .recommendations {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .recommendations h3 {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .rec-list {
+            list-style: none;
+        }
+
+        .rec-item {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #FFD700;
+            border-radius: 6px;
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .legend-item {
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .presets-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .preset-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .preset-btn {
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            color: #FFF8E1;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .preset-btn:hover {
+            background: rgba(255, 215, 0, 0.4);
+            border-color: #FFD700;
+        }
+
+        .history-log {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .history-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 3px solid #FFD700;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1024px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Brewing Control Triangle</h1>
+        <p class="subtitle">Scientific extraction analysis based on TDS & Yield</p>
+
+        <div class="presets-panel">
+            <h3 style="color: #FFD700; margin-bottom: 10px;">Common Methods</h3>
+            <div class="preset-buttons">
+                <button class="preset-btn" onclick="loadMethodPreset('v60')">V60</button>
+                <button class="preset-btn" onclick="loadMethodPreset('chemex')">Chemex</button>
+                <button class="preset-btn" onclick="loadMethodPreset('aeropress')">Aeropress</button>
+                <button class="preset-btn" onclick="loadMethodPreset('french-press')">French Press</button>
+                <button class="preset-btn" onclick="loadMethodPreset('espresso')">Espresso</button>
+                <button class="preset-btn" onclick="saveToHistory()">Save to History</button>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <div class="triangle-container">
+                <canvas id="brewing-canvas" width="600" height="520"></canvas>
+            </div>
+
+            <div class="controls-panel">
+                <h3 style="color: #FFD700; margin-bottom: 20px;">Brewing Parameters</h3>
+
+                <div class="control-group">
+                    <label class="control-label">Coffee Dose (g)</label>
+                    <input type="number" id="dose" value="18" min="10" max="100" step="0.5">
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Water Used (g)</label>
+                    <input type="number" id="water" value="300" min="100" max="1000" step="5">
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">TDS (Total Dissolved Solids) %</label>
+                    <input type="number" id="tds" value="1.35" min="0.5" max="2.5" step="0.01">
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Brew Ratio</div>
+                    <div class="result-value" id="ratio-value">1:16.7</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Extraction Yield</div>
+                    <div class="result-value" id="yield-value">22.5%</div>
+                    <div class="result-interpretation" id="yield-interpretation"></div>
+                </div>
+
+                <div class="zone-indicator" id="zone-indicator">
+                    IDEAL ZONE
+                </div>
+            </div>
+        </div>
+
+        <div class="recommendations" id="recommendations">
+            <h3>Brewing Recommendations</h3>
+            <ul class="rec-list" id="rec-list"></ul>
+        </div>
+
+        <div class="legend-grid">
+            <div class="legend-item zone-ideal">Ideal Zone<br>18-22% / 1.15-1.35% TDS</div>
+            <div class="legend-item zone-strong">Strong<br>High TDS</div>
+            <div class="legend-item zone-weak">Weak<br>Low TDS</div>
+            <div class="legend-item zone-bitter">Bitter<br>Over-Extracted</div>
+            <div class="legend-item zone-sour">Sour<br>Under-Extracted</div>
+        </div>
+
+        <div class="history-log">
+            <h3 style="color: #FFD700; margin-bottom: 15px;">Brew History</h3>
+            <div id="history-list"></div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('brewing-canvas');
+        const ctx = canvas.getContext('2d');
+
+        const inputs = {
+            dose: document.getElementById('dose'),
+            water: document.getElementById('water'),
+            tds: document.getElementById('tds')
+        };
+
+        // Add event listeners
+        Object.values(inputs).forEach(input => {
+            input.addEventListener('input', calculate);
+        });
+
+        function calculate() {
+            const dose = parseFloat(inputs.dose.value);
+            const water = parseFloat(inputs.water.value);
+            const tds = parseFloat(inputs.tds.value);
+
+            // Calculate brew ratio
+            const ratio = water / dose;
+            document.getElementById('ratio-value').textContent = `1:${ratio.toFixed(1)}`;
+
+            // Calculate extraction yield
+            // Formula: (TDS × Beverage Weight) / Coffee Dose × 100
+            const beverageWeight = water; // Assuming water weight ≈ beverage weight
+            const extractionYield = (tds * beverageWeight) / dose;
+
+            document.getElementById('yield-value').textContent = `${extractionYield.toFixed(1)}%`;
+
+            // Determine zone and recommendations
+            const zone = determineZone(extractionYield, tds);
+            updateZoneIndicator(zone);
+            updateRecommendations(zone, extractionYield, tds, ratio);
+
+            // Draw triangle
+            drawTriangle(extractionYield, tds);
+        }
+
+        function determineZone(yield_, tds) {
+            // Ideal zone: 18-22% extraction, 1.15-1.35% TDS
+            if (yield_ >= 18 && yield_ <= 22 && tds >= 1.15 && tds <= 1.35) {
+                return 'ideal';
+            }
+            // Over-extracted (bitter)
+            if (yield_ > 22) {
+                return 'bitter';
+            }
+            // Under-extracted (sour)
+            if (yield_ < 18) {
+                return 'sour';
+            }
+            // Strong (high TDS)
+            if (tds > 1.35) {
+                return 'strong';
+            }
+            // Weak (low TDS)
+            if (tds < 1.15) {
+                return 'weak';
+            }
+            return 'ideal';
+        }
+
+        function updateZoneIndicator(zone) {
+            const indicator = document.getElementById('zone-indicator');
+            indicator.className = 'zone-indicator zone-' + zone;
+
+            const zoneNames = {
+                ideal: '✓ IDEAL ZONE',
+                bitter: '⚠ OVER-EXTRACTED (Bitter)',
+                sour: '⚠ UNDER-EXTRACTED (Sour)',
+                strong: 'STRONG (High Concentration)',
+                weak: 'WEAK (Low Concentration)'
+            };
+
+            indicator.textContent = zoneNames[zone];
+        }
+
+        function updateRecommendations(zone, yield_, tds, ratio) {
+            const recList = document.getElementById('rec-list');
+            let recommendations = [];
+
+            if (zone === 'ideal') {
+                recommendations = [
+                    '✓ Perfect extraction! Your parameters are dialed in.',
+                    'Maintain current grind size, temperature, and technique.',
+                    'This is your baseline for this coffee - document it!',
+                    'Experiment with minor adjustments to explore flavor nuances.'
+                ];
+            } else if (zone === 'bitter') {
+                recommendations = [
+                    'Reduce extraction time (brew faster)',
+                    'Use coarser grind size',
+                    'Lower water temperature (try -3-5°C)',
+                    'Reduce agitation/turbulence',
+                    `Current yield ${yield_.toFixed(1)}% is too high (target: 18-22%)`
+                ];
+            } else if (zone === 'sour') {
+                recommendations = [
+                    'Increase extraction time (brew slower)',
+                    'Use finer grind size',
+                    'Raise water temperature (try +3-5°C)',
+                    'Increase agitation during bloom',
+                    `Current yield ${yield_.toFixed(1)}% is too low (target: 18-22%)`
+                ];
+            } else if (zone === 'strong') {
+                recommendations = [
+                    'Increase brew ratio (more water, same coffee)',
+                    `Current TDS ${tds.toFixed(2)}% is high (target: 1.15-1.35%)`,
+                    `Try ratio 1:${Math.ceil(ratio + 1)} instead of 1:${ratio.toFixed(1)}`,
+                    'Consider this may be personal preference for strength'
+                ];
+            } else if (zone === 'weak') {
+                recommendations = [
+                    'Decrease brew ratio (less water, same coffee)',
+                    `Current TDS ${tds.toFixed(2)}% is low (target: 1.15-1.35%)`,
+                    `Try ratio 1:${Math.floor(ratio - 1)} instead of 1:${ratio.toFixed(1)}`,
+                    'Or increase dose while keeping water constant'
+                ];
+            }
+
+            recList.innerHTML = recommendations.map(rec => `<li class="rec-item">${rec}</li>`).join('');
+        }
+
+        function drawTriangle(currentYield, currentTDS) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const margin = 60;
+            const width = canvas.width - margin * 2;
+            const height = canvas.height - margin * 2;
+
+            // Define coordinate system
+            // X-axis: Extraction Yield (10% to 30%)
+            // Y-axis: TDS (0.5% to 2.5%)
+
+            const yieldMin = 10;
+            const yieldMax = 30;
+            const tdsMin = 0.5;
+            const tdsMax = 2.5;
+
+            function yieldToX(yield_) {
+                return margin + ((yield_ - yieldMin) / (yieldMax - yieldMin)) * width;
+            }
+
+            function tdsToY(tds) {
+                return canvas.height - margin - ((tds - tdsMin) / (tdsMax - tdsMin)) * height;
+            }
+
+            // Draw grid
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 1;
+
+            // Vertical grid lines (yield)
+            for (let y = 10; y <= 30; y += 2) {
+                ctx.beginPath();
+                ctx.moveTo(yieldToX(y), margin);
+                ctx.lineTo(yieldToX(y), canvas.height - margin);
+                ctx.stroke();
+            }
+
+            // Horizontal grid lines (TDS)
+            for (let t = 0.5; t <= 2.5; t += 0.2) {
+                ctx.beginPath();
+                ctx.moveTo(margin, tdsToY(t));
+                ctx.lineTo(canvas.width - margin, tdsToY(t));
+                ctx.stroke();
+            }
+
+            // Draw zones
+            drawZone(yieldToX, tdsToY, 18, 22, 1.15, 1.35, 'rgba(76, 175, 80, 0.2)', '#4CAF50');
+            drawZone(yieldToX, tdsToY, 22, 30, 0.5, 2.5, 'rgba(156, 39, 176, 0.15)', '#9C27B0');
+            drawZone(yieldToX, tdsToY, 10, 18, 0.5, 2.5, 'rgba(244, 67, 54, 0.15)', '#F44336');
+
+            // Draw axes
+            ctx.strokeStyle = '#FFD700';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(margin, margin);
+            ctx.lineTo(margin, canvas.height - margin);
+            ctx.lineTo(canvas.width - margin, canvas.height - margin);
+            ctx.stroke();
+
+            // Draw axis labels
+            ctx.fillStyle = '#FFD700';
+            ctx.font = 'bold 14px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+
+            // X-axis label
+            ctx.fillText('Extraction Yield (%)', canvas.width / 2, canvas.height - 10);
+
+            // X-axis ticks
+            for (let y = 10; y <= 30; y += 5) {
+                ctx.fillText(y, yieldToX(y), canvas.height - margin + 20);
+            }
+
+            // Y-axis label
+            ctx.save();
+            ctx.translate(15, canvas.height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('TDS - Brew Strength (%)', 0, 0);
+            ctx.restore();
+
+            // Y-axis ticks
+            ctx.textAlign = 'right';
+            for (let t = 0.5; t <= 2.5; t += 0.5) {
+                ctx.fillText(t.toFixed(1), margin - 10, tdsToY(t) + 5);
+            }
+
+            // Draw zone labels
+            ctx.font = 'bold 16px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+
+            ctx.fillStyle = '#4CAF50';
+            ctx.fillText('IDEAL', yieldToX(20), tdsToY(1.25));
+
+            ctx.fillStyle = '#9C27B0';
+            ctx.fillText('BITTER', yieldToX(25), tdsToY(1.5));
+
+            ctx.fillStyle = '#F44336';
+            ctx.fillText('SOUR', yieldToX(14), tdsToY(1.5));
+
+            ctx.fillStyle = '#FF9800';
+            ctx.fillText('STRONG', yieldToX(20), tdsToY(1.8));
+
+            ctx.fillStyle = '#2196F3';
+            ctx.fillText('WEAK', yieldToX(20), tdsToY(0.8));
+
+            // Draw current point
+            const x = yieldToX(currentYield);
+            const y = tdsToY(currentTDS);
+
+            ctx.beginPath();
+            ctx.arc(x, y, 10, 0, Math.PI * 2);
+            ctx.fillStyle = '#FFD700';
+            ctx.fill();
+            ctx.strokeStyle = '#FFF';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Draw crosshair
+            ctx.setLineDash([5, 5]);
+            ctx.strokeStyle = 'rgba(255, 215, 0, 0.5)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(x, margin);
+            ctx.lineTo(x, canvas.height - margin);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(margin, y);
+            ctx.lineTo(canvas.width - margin, y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+
+        function drawZone(yieldToX, tdsToY, yieldMin, yieldMax, tdsMin, tdsMax, fillColor, strokeColor) {
+            ctx.fillStyle = fillColor;
+            ctx.strokeStyle = strokeColor;
+            ctx.lineWidth = 2;
+
+            ctx.beginPath();
+            ctx.rect(
+                yieldToX(yieldMin),
+                tdsToY(tdsMax),
+                yieldToX(yieldMax) - yieldToX(yieldMin),
+                tdsToY(tdsMin) - tdsToY(tdsMax)
+            );
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        // Method presets
+        const methodPresets = {
+            'v60': { dose: 15, water: 250, tds: 1.30 },
+            'chemex': { dose: 42, water: 700, tds: 1.25 },
+            'aeropress': { dose: 17, water: 220, tds: 1.40 },
+            'french-press': { dose: 30, water: 500, tds: 1.45 },
+            'espresso': { dose: 18, water: 36, tds: 8.50 }
+        };
+
+        function loadMethodPreset(method) {
+            const preset = methodPresets[method];
+            if (preset) {
+                inputs.dose.value = preset.dose;
+                inputs.water.value = preset.water;
+                inputs.tds.value = preset.tds;
+                calculate();
+            }
+        }
+
+        let brewHistory = JSON.parse(localStorage.getItem('brewHistory') || '[]');
+
+        function saveToHistory() {
+            const dose = parseFloat(inputs.dose.value);
+            const water = parseFloat(inputs.water.value);
+            const tds = parseFloat(inputs.tds.value);
+            const ratio = water / dose;
+            const extractionYield = (tds * water) / dose;
+            const zone = determineZone(extractionYield, tds);
+
+            const entry = {
+                timestamp: new Date().toLocaleString(),
+                dose: dose,
+                water: water,
+                tds: tds,
+                ratio: ratio.toFixed(1),
+                yield: extractionYield.toFixed(1),
+                zone: zone
+            };
+
+            brewHistory.unshift(entry);
+            if (brewHistory.length > 10) brewHistory.pop();
+            localStorage.setItem('brewHistory', JSON.stringify(brewHistory));
+            displayHistory();
+        }
+
+        function displayHistory() {
+            const historyList = document.getElementById('history-list');
+            if (brewHistory.length === 0) {
+                historyList.innerHTML = '<p style="opacity: 0.6;">No history yet. Save your brews!</p>';
+                return;
+            }
+
+            const zoneColors = {
+                ideal: '#4CAF50',
+                bitter: '#9C27B0',
+                sour: '#F44336',
+                strong: '#FF9800',
+                weak: '#2196F3'
+            };
+
+            historyList.innerHTML = brewHistory.map(entry => `
+                <div class="history-item">
+                    <strong style="color: ${zoneColors[entry.zone]}">${entry.zone.toUpperCase()}</strong> - ${entry.timestamp}<br>
+                    ${entry.dose}g : ${entry.water}g (1:${entry.ratio}) | TDS: ${entry.tds}% | Yield: ${entry.yield}%
+                </div>
+            `).join('');
+        }
+
+        // Initial calculation
+        calculate();
+        displayHistory();
+    </script>
+</body>
+</html>

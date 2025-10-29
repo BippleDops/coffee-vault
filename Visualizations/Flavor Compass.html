@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Flavor Compass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #faf7f2;
+            color: #2b1810;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(43, 24, 16, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #6f4e37;
+            color: #faf7f2;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 0.875rem;
+        }
+
+        .controls {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-bottom: 2px solid #e0d5c7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .control-group label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #6f4e37;
+        }
+
+        .control-group select,
+        .control-group input {
+            padding: 0.5rem;
+            border: 2px solid #c4b5a0;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            background: white;
+            min-width: 150px;
+        }
+
+        .control-group select:focus,
+        .control-group input:focus {
+            outline: none;
+            border-color: #6f4e37;
+        }
+
+        .canvas-container {
+            position: relative;
+            padding: 2rem;
+            background: white;
+        }
+
+        #compassCanvas {
+            display: block;
+            margin: 0 auto;
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .info-panel {
+            position: absolute;
+            background: rgba(43, 24, 16, 0.95);
+            color: #faf7f2;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            max-width: 300px;
+            z-index: 10;
+            font-size: 0.875rem;
+            box-shadow: 0 10px 15px rgba(43, 24, 16, 0.3);
+        }
+
+        .info-panel.visible {
+            opacity: 1;
+        }
+
+        .info-panel h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #d4af37;
+        }
+
+        .info-panel p {
+            margin: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        .info-panel .rating {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .legend {
+            padding: 1.5rem;
+            background: #f4e8d8;
+            border-top: 2px solid #e0d5c7;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #6f4e37;
+        }
+
+        .stats {
+            padding: 1.5rem;
+            background: white;
+            border-top: 2px solid #e0d5c7;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-card {
+            padding: 1rem;
+            background: #f4e8d8;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #6f4e37;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #a0826d;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-group select,
+            .control-group input {
+                width: 100%;
+            }
+
+            .canvas-container {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #6f4e37;
+            font-size: 1.125rem;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #a0826d;
+        }
+
+        .empty-state h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #6f4e37;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Coffee Flavor Compass</h1>
+            <p>Explore your coffee collection in 2D taste space</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="xAxis">X-Axis (Horizontal)</label>
+                <select id="xAxis">
+                    <option value="fruity-nutty">Fruity ← → Nutty</option>
+                    <option value="bright-mellow">Bright ← → Mellow</option>
+                    <option value="sweet-savory">Sweet ← → Savory</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="yAxis">Y-Axis (Vertical)</label>
+                <select id="yAxis">
+                    <option value="complex-simple">Complex ↑ ↓ Simple</option>
+                    <option value="bright-mellow">Bright ↑ ↓ Mellow</option>
+                    <option value="fruity-nutty">Fruity ↑ ↓ Nutty</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="colorBy">Color By</label>
+                <select id="colorBy">
+                    <option value="origin">Origin</option>
+                    <option value="roast">Roast Level</option>
+                    <option value="method">Brew Method</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="filterRating">Min Rating</label>
+                <input type="number" id="filterRating" min="1" max="5" step="0.5" value="1" />
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="compassCanvas"></canvas>
+            <div class="info-panel" id="infoPanel"></div>
+        </div>
+
+        <div class="legend" id="legend"></div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalCoffees">0</div>
+                <div class="stat-label">Coffees Plotted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgRating">0.0</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="uniqueOrigins">0</div>
+                <div class="stat-label">Unique Origins</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const CONFIG = {
+            canvas: {
+                width: 800,
+                height: 600,
+                padding: 60
+            },
+            point: {
+                radius: 8,
+                hoverRadius: 12,
+                strokeWidth: 2
+            },
+            colors: {
+                origin: {
+                    'Ethiopia': '#8b1e3f',
+                    'Colombia': '#4a7c59',
+                    'Brazil': '#e8b339',
+                    'Kenya': '#c4314b',
+                    'Guatemala': '#5b8c5a',
+                    'Costa Rica': '#4a7c9b',
+                    'default': '#6f4e37'
+                },
+                roast: {
+                    'light': '#f5e6d3',
+                    'medium-light': '#e8d4b8',
+                    'medium': '#d4b896',
+                    'medium-dark': '#a68860',
+                    'dark': '#6f4e37'
+                },
+                method: {
+                    'pour-over': '#4a7c59',
+                    'v60': '#4a7c9b',
+                    'chemex': '#5b8c5a',
+                    'french-press': '#6f4e37',
+                    'aeropress': '#8b1e3f',
+                    'espresso': '#2b1810',
+                    'cold-brew': '#4a7c9b',
+                    'default': '#a0826d'
+                },
+                rating: (rating) => {
+                    const colors = ['#c4314b', '#e8b339', '#d4af37', '#5b8c5a', '#4a7c59'];
+                    return colors[Math.floor(rating) - 1] || '#6f4e37';
+                }
+            }
+        };
+
+        // Sample data - in production, this would come from Obsidian vault
+        let coffeeData = [
+            { name: 'Ethiopian Yirgacheffe', origin: 'Ethiopia', roast: 'light', method: 'pour-over', rating: 4.8, flavors: ['fruity', 'floral', 'bright', 'complex'] },
+            { name: 'Colombian Supremo', origin: 'Colombia', roast: 'medium', method: 'french-press', rating: 4.2, flavors: ['nutty', 'chocolate', 'balanced', 'smooth'] },
+            { name: 'Brazilian Santos', origin: 'Brazil', roast: 'medium-dark', method: 'espresso', rating: 3.9, flavors: ['nutty', 'sweet', 'low-acid', 'simple'] },
+            { name: 'Kenyan AA', origin: 'Kenya', roast: 'medium-light', method: 'v60', rating: 4.6, flavors: ['fruity', 'bright', 'complex', 'citrus'] },
+            { name: 'Guatemala Antigua', origin: 'Guatemala', roast: 'medium', method: 'chemex', rating: 4.4, flavors: ['chocolate', 'balanced', 'smooth', 'sweet'] },
+            { name: 'Costa Rica Tarrazu', origin: 'Costa Rica', roast: 'light', method: 'aeropress', rating: 4.5, flavors: ['bright', 'citrus', 'clean', 'complex'] }
+        ];
+
+        // State
+        let state = {
+            xAxis: 'fruity-nutty',
+            yAxis: 'complex-simple',
+            colorBy: 'origin',
+            filterRating: 1,
+            hoveredPoint: null,
+            selectedPoint: null
+        };
+
+        // Canvas setup
+        const canvas = document.getElementById('compassCanvas');
+        const ctx = canvas.getContext('2d');
+        const infoPanel = document.getElementById('infoPanel');
+
+        // Set canvas size (2x for retina)
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = CONFIG.canvas.width * dpr;
+        canvas.height = CONFIG.canvas.height * dpr;
+        canvas.style.width = CONFIG.canvas.width + 'px';
+        canvas.style.height = CONFIG.canvas.height + 'px';
+        ctx.scale(dpr, dpr);
+
+        // Utility functions
+        function getFlavorScore(coffee, flavor) {
+            // This would be more sophisticated in production
+            const scores = {
+                'fruity': coffee.flavors.includes('fruity') ? 1 : coffee.flavors.includes('nutty') ? -1 : 0,
+                'nutty': coffee.flavors.includes('nutty') ? 1 : coffee.flavors.includes('fruity') ? -1 : 0,
+                'bright': coffee.flavors.includes('bright') ? 1 : coffee.flavors.includes('mellow') ? -1 : 0,
+                'mellow': coffee.flavors.includes('smooth') || coffee.flavors.includes('balanced') ? 1 : -1,
+                'complex': coffee.flavors.includes('complex') ? 1 : coffee.flavors.includes('simple') ? -1 : 0.5,
+                'simple': coffee.flavors.includes('simple') ? 1 : -0.5,
+                'sweet': coffee.flavors.includes('sweet') ? 1 : -0.3,
+                'savory': coffee.flavors.includes('savory') ? 1 : -0.3
+            };
+            return scores[flavor] || 0;
+        }
+
+        function getAxisValue(coffee, axis) {
+            const [negative, positive] = axis.split('-');
+            return (getFlavorScore(coffee, positive) - getFlavorScore(coffee, negative)) / 2;
+        }
+
+        function getPointColor(coffee, colorBy) {
+            if (colorBy === 'origin') {
+                return CONFIG.colors.origin[coffee.origin] || CONFIG.colors.origin.default;
+            } else if (colorBy === 'roast') {
+                return CONFIG.colors.roast[coffee.roast] || '#6f4e37';
+            } else if (colorBy === 'method') {
+                return CONFIG.colors.method[coffee.method] || CONFIG.colors.method.default;
+            } else if (colorBy === 'rating') {
+                return CONFIG.colors.rating(coffee.rating);
+            }
+            return '#6f4e37';
+        }
+
+        function normalizeToCanvas(value, dimension) {
+            const padding = CONFIG.canvas.padding;
+            const size = dimension === 'x' ? CONFIG.canvas.width : CONFIG.canvas.height;
+            // Map -1 to 1 range to canvas coordinates
+            return padding + ((value + 1) / 2) * (size - 2 * padding);
+        }
+
+        function canvasToNormalized(pixel, dimension) {
+            const padding = CONFIG.canvas.padding;
+            const size = dimension === 'x' ? CONFIG.canvas.width : CONFIG.canvas.height;
+            return ((pixel - padding) / (size - 2 * padding)) * 2 - 1;
+        }
+
+        // Drawing functions
+        function drawAxes() {
+            const { width, height, padding } = CONFIG.canvas;
+            ctx.strokeStyle = '#c4b5a0';
+            ctx.lineWidth = 2;
+
+            // X-axis
+            ctx.beginPath();
+            ctx.moveTo(padding, height / 2);
+            ctx.lineTo(width - padding, height / 2);
+            ctx.stroke();
+
+            // Y-axis
+            ctx.beginPath();
+            ctx.moveTo(width / 2, padding);
+            ctx.lineTo(width / 2, height - padding);
+            ctx.stroke();
+
+            // Labels
+            ctx.fillStyle = '#6f4e37';
+            ctx.font = 'bold 12px sans-serif';
+            ctx.textAlign = 'center';
+
+            const xLabels = state.xAxis.split('-');
+            const yLabels = state.yAxis.split('-');
+
+            // X-axis labels
+            ctx.fillText(xLabels[0].toUpperCase(), padding + 20, height / 2 - 10);
+            ctx.fillText(xLabels[1].toUpperCase(), width - padding - 20, height / 2 - 10);
+
+            // Y-axis labels
+            ctx.save();
+            ctx.translate(width / 2 + 10, padding + 20);
+            ctx.fillText(yLabels[0].toUpperCase(), 0, 0);
+            ctx.restore();
+
+            ctx.save();
+            ctx.translate(width / 2 + 10, height - padding - 20);
+            ctx.fillText(yLabels[1].toUpperCase(), 0, 0);
+            ctx.restore();
+
+            // Grid lines
+            ctx.strokeStyle = '#e0d5c7';
+            ctx.lineWidth = 1;
+            ctx.setLineDash([5, 5]);
+
+            for (let i = 1; i < 4; i++) {
+                const x = padding + (i * (width - 2 * padding) / 4);
+                const y = padding + (i * (height - 2 * padding) / 4);
+
+                // Vertical lines
+                ctx.beginPath();
+                ctx.moveTo(x, padding);
+                ctx.lineTo(x, height - padding);
+                ctx.stroke();
+
+                // Horizontal lines
+                ctx.beginPath();
+                ctx.moveTo(padding, y);
+                ctx.lineTo(width - padding, y);
+                ctx.stroke();
+            }
+            ctx.setLineDash([]);
+        }
+
+        function drawPoint(coffee, isHovered = false) {
+            const x = getAxisValue(coffee, state.xAxis);
+            const y = -getAxisValue(coffee, state.yAxis); // Negative for canvas Y
+
+            const canvasX = normalizeToCanvas(x, 'x');
+            const canvasY = normalizeToCanvas(y, 'y');
+
+            const radius = isHovered ? CONFIG.point.hoverRadius : CONFIG.point.radius;
+            const color = getPointColor(coffee, state.colorBy);
+
+            // Shadow for hover
+            if (isHovered) {
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+                ctx.shadowBlur = 10;
+                ctx.shadowOffsetX = 2;
+                ctx.shadowOffsetY = 2;
+            }
+
+            // Draw point
+            ctx.beginPath();
+            ctx.arc(canvasX, canvasY, radius, 0, Math.PI * 2);
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.strokeStyle = '#2b1810';
+            ctx.lineWidth = CONFIG.point.strokeWidth;
+            ctx.stroke();
+
+            // Reset shadow
+            ctx.shadowColor = 'transparent';
+            ctx.shadowBlur = 0;
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+
+            // Store position for hit detection
+            coffee._canvasX = canvasX;
+            coffee._canvasY = canvasY;
+        }
+
+        function render() {
+            ctx.clearRect(0, 0, CONFIG.canvas.width, CONFIG.canvas.height);
+            drawAxes();
+
+            const filteredData = coffeeData.filter(c => c.rating >= state.filterRating);
+
+            filteredData.forEach(coffee => {
+                const isHovered = state.hoveredPoint === coffee;
+                drawPoint(coffee, isHovered);
+            });
+
+            updateStats(filteredData);
+        }
+
+        function updateStats(data) {
+            document.getElementById('totalCoffees').textContent = data.length;
+
+            const avgRating = data.length > 0
+                ? (data.reduce((sum, c) => sum + c.rating, 0) / data.length).toFixed(1)
+                : '0.0';
+            document.getElementById('avgRating').textContent = avgRating;
+
+            const uniqueOrigins = new Set(data.map(c => c.origin)).size;
+            document.getElementById('uniqueOrigins').textContent = uniqueOrigins;
+        }
+
+        function updateLegend() {
+            const legend = document.getElementById('legend');
+            legend.innerHTML = '';
+
+            let items = [];
+
+            if (state.colorBy === 'origin') {
+                const origins = [...new Set(coffeeData.map(c => c.origin))];
+                items = origins.map(origin => ({
+                    label: origin,
+                    color: CONFIG.colors.origin[origin] || CONFIG.colors.origin.default
+                }));
+            } else if (state.colorBy === 'roast') {
+                items = Object.entries(CONFIG.colors.roast).map(([roast, color]) => ({
+                    label: roast.replace('-', ' '),
+                    color
+                }));
+            } else if (state.colorBy === 'method') {
+                const methods = [...new Set(coffeeData.map(c => c.method))];
+                items = methods.map(method => ({
+                    label: method,
+                    color: CONFIG.colors.method[method] || CONFIG.colors.method.default
+                }));
+            } else if (state.colorBy === 'rating') {
+                items = [
+                    { label: '1-2 stars', color: CONFIG.colors.rating(1.5) },
+                    { label: '2-3 stars', color: CONFIG.colors.rating(2.5) },
+                    { label: '3-4 stars', color: CONFIG.colors.rating(3.5) },
+                    { label: '4-5 stars', color: CONFIG.colors.rating(4.5) }
+                ];
+            }
+
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'legend-item';
+                div.innerHTML = `
+                    <div class="legend-color" style="background-color: ${item.color}"></div>
+                    <span>${item.label}</span>
+                `;
+                legend.appendChild(div);
+            });
+        }
+
+        // Event handlers
+        function findPointAt(x, y) {
+            const rect = canvas.getBoundingClientRect();
+            const scaleX = CONFIG.canvas.width / rect.width;
+            const scaleY = CONFIG.canvas.height / rect.height;
+            const canvasX = (x - rect.left) * scaleX;
+            const canvasY = (y - rect.top) * scaleY;
+
+            return coffeeData.find(coffee => {
+                if (!coffee._canvasX || !coffee._canvasY) return false;
+                const dx = coffee._canvasX - canvasX;
+                const dy = coffee._canvasY - canvasY;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                return distance <= CONFIG.point.hoverRadius;
+            });
+        }
+
+        function showInfoPanel(coffee, x, y) {
+            infoPanel.innerHTML = `
+                <h3>${coffee.name}</h3>
+                <p><strong>Origin:</strong> ${coffee.origin}</p>
+                <p><strong>Roast:</strong> ${coffee.roast}</p>
+                <p><strong>Method:</strong> ${coffee.method}</p>
+                <p class="rating"><strong>Rating:</strong> ${'★'.repeat(Math.floor(coffee.rating))}${'☆'.repeat(5 - Math.floor(coffee.rating))} ${coffee.rating}</p>
+                <p><strong>Flavors:</strong> ${coffee.flavors.join(', ')}</p>
+            `;
+
+            infoPanel.style.left = x + 20 + 'px';
+            infoPanel.style.top = y + 'px';
+            infoPanel.classList.add('visible');
+        }
+
+        function hideInfoPanel() {
+            infoPanel.classList.remove('visible');
+        }
+
+        canvas.addEventListener('mousemove', (e) => {
+            const point = findPointAt(e.clientX, e.clientY);
+
+            if (point !== state.hoveredPoint) {
+                state.hoveredPoint = point;
+                render();
+
+                if (point) {
+                    canvas.style.cursor = 'pointer';
+                    showInfoPanel(point, e.clientX, e.clientY);
+                } else {
+                    canvas.style.cursor = 'crosshair';
+                    hideInfoPanel();
+                }
+            } else if (point) {
+                // Update panel position
+                infoPanel.style.left = e.clientX + 20 + 'px';
+                infoPanel.style.top = e.clientY + 'px';
+            }
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            state.hoveredPoint = null;
+            render();
+            hideInfoPanel();
+            canvas.style.cursor = 'crosshair';
+        });
+
+        canvas.addEventListener('click', (e) => {
+            const point = findPointAt(e.clientX, e.clientY);
+            if (point) {
+                state.selectedPoint = point;
+                // In Obsidian, this would navigate to the coffee log note
+                console.log('Navigate to:', point.name);
+            }
+        });
+
+        // Touch support
+        canvas.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const point = findPointAt(touch.clientX, touch.clientY);
+
+            if (point) {
+                state.hoveredPoint = point;
+                render();
+                showInfoPanel(point, touch.clientX, touch.clientY);
+            }
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            const touch = e.touches[0];
+            const point = findPointAt(touch.clientX, touch.clientY);
+
+            if (point !== state.hoveredPoint) {
+                state.hoveredPoint = point;
+                render();
+
+                if (point) {
+                    showInfoPanel(point, touch.clientX, touch.clientY);
+                } else {
+                    hideInfoPanel();
+                }
+            } else if (point) {
+                infoPanel.style.left = touch.clientX + 20 + 'px';
+                infoPanel.style.top = touch.clientY + 'px';
+            }
+        });
+
+        canvas.addEventListener('touchend', () => {
+            hideInfoPanel();
+            state.hoveredPoint = null;
+            render();
+        });
+
+        // Control event listeners
+        document.getElementById('xAxis').addEventListener('change', (e) => {
+            state.xAxis = e.target.value;
+            render();
+        });
+
+        document.getElementById('yAxis').addEventListener('change', (e) => {
+            state.yAxis = e.target.value;
+            render();
+        });
+
+        document.getElementById('colorBy').addEventListener('change', (e) => {
+            state.colorBy = e.target.value;
+            updateLegend();
+            render();
+        });
+
+        document.getElementById('filterRating').addEventListener('input', (e) => {
+            state.filterRating = parseFloat(e.target.value);
+            render();
+        });
+
+        // Responsive canvas
+        function resizeCanvas() {
+            const container = canvas.parentElement;
+            const maxWidth = container.clientWidth - 32; // Account for padding
+
+            if (maxWidth < CONFIG.canvas.width) {
+                const scale = maxWidth / CONFIG.canvas.width;
+                canvas.style.width = maxWidth + 'px';
+                canvas.style.height = (CONFIG.canvas.height * scale) + 'px';
+            }
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Initialize
+        updateLegend();
+        render();
+
+        // API for Obsidian integration
+        window.FlavorCompass = {
+            setData: (data) => {
+                coffeeData = data;
+                updateLegend();
+                render();
+            },
+            getData: () => coffeeData,
+            reset: () => {
+                state = {
+                    xAxis: 'fruity-nutty',
+                    yAxis: 'complex-simple',
+                    colorBy: 'origin',
+                    filterRating: 1,
+                    hoveredPoint: null,
+                    selectedPoint: null
+                };
+                render();
+            }
+        };
+    </script>
+</body>
+</html>

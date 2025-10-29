@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraction Zone Mapper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1a0f0a 0%, #3E2723 100%);
+            color: #FFF8E1;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #D4A574;
+            font-size: 1.1rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .param-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .param-title {
+            color: #FFD700;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .param-control {
+            margin-bottom: 20px;
+        }
+
+        .param-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            color: #D4A574;
+            font-size: 0.9rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #FFD700;
+            cursor: pointer;
+        }
+
+        .value-badge {
+            background: rgba(255, 215, 0, 0.2);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .heatmap-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        #heatmap-canvas {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .info-label {
+            font-size: 0.8rem;
+            color: #D4A574;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        .color-scale {
+            display: flex;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .color-scale-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: #D4A574;
+        }
+
+        .recommendation-card {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #FFD700;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .recommendation-title {
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 8px;
+        }
+
+        .recommendation-text {
+            color: #FFF8E1;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .action-btn {
+            background: rgba(255, 215, 0, 0.3);
+            border: 2px solid #FFD700;
+            color: #FFD700;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background: #FFD700;
+            color: #2B1810;
+        }
+
+        .animation-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>☕ Extraction Zone Mapper</h1>
+        <p class="subtitle">Visualize extraction zones across grind size and time parameters</p>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="param-card">
+                    <div class="param-title">Brewing Parameters</div>
+
+                    <div class="param-control">
+                        <div class="param-label">
+                            <span>Temperature</span>
+                            <span class="value-badge" id="temp-value">92°C</span>
+                        </div>
+                        <input type="range" id="temp-slider" min="85" max="100" value="92" step="1">
+                    </div>
+
+                    <div class="param-control">
+                        <div class="param-label">
+                            <span>Dose</span>
+                            <span class="value-badge" id="dose-value">18g</span>
+                        </div>
+                        <input type="range" id="dose-slider" min="10" max="30" value="18" step="0.5">
+                    </div>
+
+                    <div class="param-control">
+                        <div class="param-label">
+                            <span>Water</span>
+                            <span class="value-badge" id="water-value">300g</span>
+                        </div>
+                        <input type="range" id="water-slider" min="150" max="500" value="300" step="10">
+                    </div>
+                </div>
+
+                <div class="param-card">
+                    <div class="param-title">Current Point</div>
+
+                    <div class="param-control">
+                        <div class="param-label">
+                            <span>Grind Size</span>
+                            <span class="value-badge" id="grind-value">25</span>
+                        </div>
+                        <input type="range" id="grind-slider" min="10" max="40" value="25" step="1">
+                    </div>
+
+                    <div class="param-control">
+                        <div class="param-label">
+                            <span>Brew Time</span>
+                            <span class="value-badge" id="time-value">3:00</span>
+                        </div>
+                        <input type="range" id="time-slider" min="60" max="360" value="180" step="15">
+                    </div>
+                </div>
+
+                <div class="param-card">
+                    <div class="param-title">Extraction Quality</div>
+                    <div class="info-grid" style="grid-template-columns: 1fr;">
+                        <div class="info-card" id="quality-card">
+                            <div class="info-label">Zone</div>
+                            <div class="info-value" id="zone-name">Ideal</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-label">Est. Yield</div>
+                            <div class="info-value" id="yield-estimate">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heatmap-container">
+                <canvas id="heatmap-canvas" width="800" height="600"></canvas>
+
+                <div class="color-scale" id="color-scale"></div>
+                <div class="color-scale-label">
+                    <span>Under-Extracted (Sour)</span>
+                    <span>Ideal</span>
+                    <span>Over-Extracted (Bitter)</span>
+                </div>
+
+                <div class="recommendation-card">
+                    <div class="recommendation-title">💡 Optimization Suggestions</div>
+                    <div class="recommendation-text" id="recommendations">
+                        Adjust parameters to explore different extraction zones...
+                    </div>
+                    <div class="action-buttons">
+                        <button class="action-btn" onclick="exportHeatmap()">Export Heatmap</button>
+                        <button class="action-btn" onclick="toggleAnimation()" id="anim-btn">Start Animation</button>
+                        <button class="action-btn" onclick="findOptimal()">Find Optimal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('heatmap-canvas');
+        const ctx = canvas.getContext('2d');
+
+        const sliders = {
+            temp: document.getElementById('temp-slider'),
+            dose: document.getElementById('dose-slider'),
+            water: document.getElementById('water-slider'),
+            grind: document.getElementById('grind-slider'),
+            time: document.getElementById('time-slider')
+        };
+
+        const displays = {
+            temp: document.getElementById('temp-value'),
+            dose: document.getElementById('dose-value'),
+            water: document.getElementById('water-value'),
+            grind: document.getElementById('grind-value'),
+            time: document.getElementById('time-value')
+        };
+
+        // Event listeners
+        Object.keys(sliders).forEach(key => {
+            sliders[key].addEventListener('input', updateDisplay);
+        });
+
+        function updateDisplay() {
+            displays.temp.textContent = `${sliders.temp.value}°C`;
+            displays.dose.textContent = `${sliders.dose.value}g`;
+            displays.water.textContent = `${sliders.water.value}g`;
+            displays.grind.textContent = sliders.grind.value;
+
+            const time = parseInt(sliders.time.value);
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
+            displays.time.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+            drawHeatmap();
+            updateCurrentPoint();
+        }
+
+        function calculateExtractionYield(grind, time, temp, dose, water) {
+            // Simplified extraction model
+            // Real calculation would be more complex
+
+            // Base extraction
+            let extraction = 15;
+
+            // Grind size effect (finer = more extraction)
+            extraction += (40 - grind) * 0.3;
+
+            // Time effect
+            extraction += (time / 60) * 2;
+
+            // Temperature effect
+            extraction += (temp - 90) * 0.5;
+
+            // Ratio effect (more water = lower concentration but similar yield)
+            const ratio = water / dose;
+            extraction += (ratio - 16) * 0.1;
+
+            // Clamp to realistic range
+            return Math.max(10, Math.min(30, extraction));
+        }
+
+        function drawHeatmap() {
+            const width = canvas.width;
+            const height = canvas.height;
+            const margin = 60;
+            const plotWidth = width - margin * 2;
+            const plotHeight = height - margin * 2;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, width, height);
+
+            // Get current parameters
+            const temp = parseFloat(sliders.temp.value);
+            const dose = parseFloat(sliders.dose.value);
+            const water = parseFloat(sliders.water.value);
+
+            // Draw heatmap grid
+            const grindSteps = 30;
+            const timeSteps = 30;
+            const cellWidth = plotWidth / grindSteps;
+            const cellHeight = plotHeight / timeSteps;
+
+            for (let i = 0; i < grindSteps; i++) {
+                for (let j = 0; j < timeSteps; j++) {
+                    const grind = 10 + (i / grindSteps) * 30; // 10-40
+                    const time = 60 + (j / timeSteps) * 300; // 60-360 seconds
+
+                    const extraction = calculateExtractionYield(grind, time, temp, dose, water);
+                    const color = getExtractionColor(extraction);
+
+                    ctx.fillStyle = color;
+                    ctx.fillRect(
+                        margin + i * cellWidth,
+                        margin + (timeSteps - 1 - j) * cellHeight,
+                        cellWidth + 1,
+                        cellHeight + 1
+                    );
+                }
+            }
+
+            // Draw axes
+            ctx.strokeStyle = '#FFD700';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(margin, margin);
+            ctx.lineTo(margin, height - margin);
+            ctx.lineTo(width - margin, height - margin);
+            ctx.stroke();
+
+            // Draw labels
+            ctx.fillStyle = '#FFD700';
+            ctx.font = 'bold 14px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+
+            // X-axis label
+            ctx.fillText('Grind Size (clicks)', width / 2, height - 10);
+
+            // X-axis ticks
+            for (let g = 10; g <= 40; g += 5) {
+                const x = margin + ((g - 10) / 30) * plotWidth;
+                ctx.fillText(g, x, height - margin + 25);
+            }
+
+            // Y-axis label
+            ctx.save();
+            ctx.translate(15, height / 2);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('Brew Time (minutes)', 0, 0);
+            ctx.restore();
+
+            // Y-axis ticks
+            ctx.textAlign = 'right';
+            for (let t = 1; t <= 6; t++) {
+                const y = margin + plotHeight - ((t - 1) / 5) * plotHeight;
+                ctx.fillText(`${t}:00`, margin - 10, y + 5);
+            }
+
+            // Draw current point
+            const currentGrind = parseFloat(sliders.grind.value);
+            const currentTime = parseFloat(sliders.time.value);
+            const x = margin + ((currentGrind - 10) / 30) * plotWidth;
+            const y = margin + plotHeight - ((currentTime - 60) / 300) * plotHeight;
+
+            // Crosshair
+            ctx.setLineDash([5, 5]);
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.6)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(x, margin);
+            ctx.lineTo(x, height - margin);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(margin, y);
+            ctx.lineTo(width - margin, y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+
+            // Current point marker
+            ctx.beginPath();
+            ctx.arc(x, y, 12, 0, Math.PI * 2);
+            ctx.fillStyle = '#FFD700';
+            ctx.fill();
+            ctx.strokeStyle = '#FFF';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Point label
+            ctx.fillStyle = '#000';
+            ctx.font = 'bold 11px SF Pro Display, sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('YOU', x, y + 4);
+        }
+
+        function getExtractionColor(extraction) {
+            // Color scale: blue (under) -> green (ideal) -> red (over)
+            let r, g, b;
+
+            if (extraction < 18) {
+                // Under-extracted: blue gradient
+                const t = extraction / 18;
+                r = Math.floor(100 + t * 100);
+                g = Math.floor(150 + t * 105);
+                b = Math.floor(200 + t * 55);
+            } else if (extraction <= 22) {
+                // Ideal: green
+                const t = (extraction - 18) / 4;
+                r = Math.floor(200 - t * 124);
+                g = Math.floor(255 - t * 80);
+                b = Math.floor(255 - t * 175);
+            } else {
+                // Over-extracted: red gradient
+                const t = Math.min((extraction - 22) / 8, 1);
+                r = Math.floor(76 + t * 179);
+                g = Math.floor(175 - t * 125);
+                b = Math.floor(80 - t * 30);
+            }
+
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+
+        function updateCurrentPoint() {
+            const grind = parseFloat(sliders.grind.value);
+            const time = parseFloat(sliders.time.value);
+            const temp = parseFloat(sliders.temp.value);
+            const dose = parseFloat(sliders.dose.value);
+            const water = parseFloat(sliders.water.value);
+
+            const extraction = calculateExtractionYield(grind, time, temp, dose, water);
+            document.getElementById('yield-estimate').textContent = `${extraction.toFixed(1)}%`;
+
+            let zone, zoneColor;
+            if (extraction < 18) {
+                zone = 'Under';
+                zoneColor = '#2196F3';
+            } else if (extraction <= 22) {
+                zone = 'Ideal';
+                zoneColor = '#4CAF50';
+            } else {
+                zone = 'Over';
+                zoneColor = '#F44336';
+            }
+
+            const zoneNameEl = document.getElementById('zone-name');
+            zoneNameEl.textContent = zone;
+            zoneNameEl.style.color = zoneColor;
+
+            const qualityCard = document.getElementById('quality-card');
+            qualityCard.style.borderColor = zoneColor;
+
+            // Generate recommendations
+            const recs = [];
+            if (extraction < 18) {
+                recs.push('• Try finer grind (lower number)');
+                recs.push('• Increase brew time');
+                recs.push('• Raise temperature by 2-3°C');
+            } else if (extraction > 22) {
+                recs.push('• Try coarser grind (higher number)');
+                recs.push('• Decrease brew time');
+                recs.push('• Lower temperature by 2-3°C');
+            } else {
+                recs.push('• You\'re in the ideal zone! ✓');
+                recs.push('• Make small adjustments to fine-tune flavor');
+                recs.push('• Document these parameters for this coffee');
+            }
+
+            document.getElementById('recommendations').innerHTML = recs.join('<br>');
+        }
+
+        // Draw color scale
+        function drawColorScale() {
+            const scale = document.getElementById('color-scale');
+            const steps = 100;
+            for (let i = 0; i < steps; i++) {
+                const extraction = 10 + (i / steps) * 20;
+                const color = getExtractionColor(extraction);
+                const div = document.createElement('div');
+                div.style.flex = '1';
+                div.style.background = color;
+                scale.appendChild(div);
+            }
+        }
+
+        // Initialize
+        drawColorScale();
+        updateDisplay();
+
+        // Export functionality
+        function exportHeatmap() {
+            const link = document.createElement('a');
+            link.download = 'extraction-heatmap.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        // Animation
+        let isAnimating = false;
+        let animationId = null;
+
+        function toggleAnimation() {
+            isAnimating = !isAnimating;
+            const btn = document.getElementById('anim-btn');
+
+            if (isAnimating) {
+                btn.textContent = 'Stop Animation';
+                animateGrindSize();
+            } else {
+                btn.textContent = 'Start Animation';
+                if (animationId) cancelAnimationFrame(animationId);
+            }
+        }
+
+        function animateGrindSize() {
+            if (!isAnimating) return;
+
+            let currentGrind = parseFloat(sliders.grind.value);
+            currentGrind += 0.2;
+
+            if (currentGrind > 40) currentGrind = 10;
+
+            sliders.grind.value = currentGrind;
+            displays.grind.textContent = Math.round(currentGrind);
+            drawHeatmap();
+            updateCurrentPoint();
+
+            animationId = setTimeout(animateGrindSize, 100);
+        }
+
+        // Find optimal point
+        function findOptimal() {
+            const temp = parseFloat(sliders.temp.value);
+            const dose = parseFloat(sliders.dose.value);
+            const water = parseFloat(sliders.water.value);
+
+            let bestGrind = 25;
+            let bestTime = 180;
+            let bestDiff = Infinity;
+
+            for (let g = 15; g <= 35; g += 0.5) {
+                for (let t = 120; t <= 300; t += 10) {
+                    const extraction = calculateExtractionYield(g, t, temp, dose, water);
+                    const diff = Math.abs(extraction - 20); // Target 20% extraction
+
+                    if (diff < bestDiff) {
+                        bestDiff = diff;
+                        bestGrind = g;
+                        bestTime = t;
+                    }
+                }
+            }
+
+            sliders.grind.value = bestGrind;
+            sliders.time.value = bestTime;
+            updateDisplay();
+
+            alert(`Optimal settings found!\nGrind: ${bestGrind.toFixed(1)}\nTime: ${Math.floor(bestTime/60)}:${(bestTime%60).toString().padStart(2,'0')}`);
+        }
+    </script>
+</body>
+</html>
