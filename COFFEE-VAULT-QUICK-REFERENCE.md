@@ -178,6 +178,7 @@ tags:
 - [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis]]
 - [[Workspaces/Learning-Education/INDEX|Learning & Education]]
 - [[Workspaces/Supply-Chain/INDEX|Supply Chain]]
+- [[Configuration/Manual-Operations-Guide|Manual Operations Guide]] (`node Scripts/manual-review-checklist.js`)
 
 ---
 

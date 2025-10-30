@@ -150,6 +150,7 @@ dv.list([
 - [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis Bundle]]
 - [[Workspaces/Learning-Education/INDEX|Learning & Education Bundle]]
 - [[Workspaces/Supply-Chain/INDEX|Supply Chain Bundle]]
+- [[Configuration/Manual-Operations-Guide|Manual Operations Guide]] (`node Scripts/manual-review-checklist.js`)
 
 ---
 

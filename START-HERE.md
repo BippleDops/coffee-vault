@@ -110,6 +110,7 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 - [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis]]
 - [[Workspaces/Learning-Education/INDEX|Learning & Education]]
 - [[Workspaces/Supply-Chain/INDEX|Supply Chain]]
+- [[Configuration/Manual-Operations-Guide|Manual Operations Guide]] (run `node Scripts/manual-review-checklist.js` after major updates)
 
 ---
 

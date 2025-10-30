@@ -48,6 +48,7 @@ Each workspace folder contains an `INDEX.md` launch note with curated links to d
 - `HOME-DASHBOARD` now presents dashboards grouped by workspace.
 - Command palette search surfaced as `"Daily Brewing Workspace"`, `"Analytics Workspace"`, etc. via the new index notes.
 - Workspace layouts in `.obsidian/workspace-layouts/` point directly to the new folder locations.
+- Manual workflow instructions live in `Configuration/Manual-Operations-Guide.md`.
 
 ## 4. Migration Checklist
 

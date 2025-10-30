@@ -85,6 +85,7 @@ An intelligent coffee platform that combines:
 3. After 5 logs, explore `Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard.md`
 4. Try visualizations in `Visualizations/` folder
 5. Read documentation as needed
+6. Review manual operations in `Configuration/Manual-Operations-Guide.md` (run `node Scripts/manual-review-checklist.js` after major updates)
 
 ---
 
