@@ -55,7 +55,7 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 
 ## 🔬 Individual Acid Characteristics
 
-### Citric Acid
+### [[Citric Acid]]
 
 **Flavor**: Lemon, lime, bright citrus  
 **Character**: Clean, refreshing, vibrant  
@@ -63,9 +63,9 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 **Perception**: Desirable brightness  
 **Stability**: Relatively stable during roasting
 
-**Learn More**: [[Acids in Coffee]]
+**Learn More**: [[Citric Acid]]
 
-### Malic Acid
+### [[Malic Acid]]
 
 **Flavor**: Green apple, stone fruit (peach, apricot)  
 **Character**: Fruity acidity, pleasant  
@@ -73,9 +73,9 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 **Perception**: Fruit-driven acidity  
 **Stability**: Decreases with roasting
 
-**Learn More**: [[Acids in Coffee]]
+**Learn More**: [[Malic Acid]]
 
-### Quinic Acid
+### [[Quinic Acid]]
 
 **Flavor**: Sour, bitter, astringent  
 **Source**: [[Chlorogenic Acids]] breakdown during roasting  
@@ -83,9 +83,9 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 **Perception**: Undesirable when dominant  
 **Effect**: "Old coffee" bitterness
 
-**Learn More**: [[Roasting Science]]
+**Learn More**: [[Quinic Acid]]
 
-### Phosphoric Acid
+### [[Phosphoric Acid]]
 
 **Flavor**: Soft, round, sweet acidity  
 **Character**: Gentle, wine-like  
@@ -93,7 +93,7 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 **Perception**: Desirable, sophisticated  
 **Unique**: Enhances Kenyan distinctiveness
 
-**Learn More**: [[Acids in Coffee]]
+**Learn More**: [[Phosphoric Acid]]
 
 ---
 
