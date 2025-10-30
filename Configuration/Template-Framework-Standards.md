@@ -1,18 +1,18 @@
 ---
 type: configuration-document
 title: Template Framework Standards
-version: 3.0.0
-date: 2025-10-25
+version: 5.1.0
+date: 2025-10-28
 status: authoritative
 ---
 
-# 📝 Template Framework Standards - Version 3.0
+# 📝 Template Framework Standards - Version 5.1
 
 **Purpose**: This document defines authoritative standards for creating and maintaining Templater templates within the Coffee Vault. All template developers must follow these conventions to ensure consistency, maintainability, and user experience quality.
 
 **Status**: **AUTHORITATIVE** - All templates must conform to this specification
 
-**Version**: 3.0.0 Enhanced Edition
+**Version**: 5.1.0 Production Edition
 
 ---
 

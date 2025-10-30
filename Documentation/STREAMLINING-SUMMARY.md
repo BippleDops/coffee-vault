@@ -1,4 +1,4 @@
-# Coffee Vault 4.0 - Streamlining Summary
+# Coffee Vault 5.1 - Streamlining Summary
 
 **Date**: 2025-10-26
 **Action**: Vault reorganization and cleanup
@@ -134,7 +134,7 @@ See `Configuration/NAMING-STANDARDS.md` for complete guidelines.
 ## Directory Structure (After Streamlining)
 
 ```
-Coffee Vault 4.0/
+Coffee Vault 5.1/
 ├── README.md                      # Quick links hub
 ├── START-HERE.md                  # User quick start
 │

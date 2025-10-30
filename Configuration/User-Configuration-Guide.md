@@ -1,18 +1,18 @@
 ---
 type: configuration-document
 title: User Configuration Guide
-version: 3.0.0
-date: 2025-10-25
+version: 5.1.0
+date: 2025-10-28
 status: primary-entry-point
 ---
 
-# ☕ Coffee Vault 3.0 - User Configuration Guide
+# ☕ Coffee Vault 5.1 - User Configuration Guide
 
-**Welcome to Coffee Vault 3.0!** This comprehensive guide will help you configure and optimize your coffee tracking and learning system.
+**Welcome to Coffee Vault 5.1!** This comprehensive guide will help you configure and optimize your coffee tracking and learning system.
 
 **Status**: **PRIMARY ENTRY POINT** - Start here!
 
-**Version**: 3.0.0 Enhanced Edition
+**Version**: 5.1.0 Production Edition
 
 ---
 

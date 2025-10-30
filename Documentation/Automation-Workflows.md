@@ -2,7 +2,7 @@
 title: Automation Workflows Guide
 type: documentation
 tags: [automation, workflows, guide]
-version: 1.0.0
+version: 5.1.0
 last-updated: 2025-10-25
 ---
 

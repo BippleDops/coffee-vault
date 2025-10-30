@@ -1,7 +1,7 @@
 ---
 type: documentation
 category: analytics
-version: 1.0.0
+version: 5.1.0
 last-updated: 2025-10-25
 tags: [documentation, analytics, guide]
 ---
