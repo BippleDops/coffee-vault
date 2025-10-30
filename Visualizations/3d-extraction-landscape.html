@@ -102,9 +102,49 @@
         const grid = new THREE.GridHelper(40, 40, 0x666666, 0x333333);
         scene.add(grid);
         
-        // Axes with labels
+        // Axes with enhanced visibility
         const axes = new THREE.AxesHelper(20);
         scene.add(axes);
+        
+        // Create professional axis labels
+        function createAxisLabel(text, color = 0xFFD700) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 512;
+            canvas.height = 128;
+            
+            // Background box
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+            ctx.fillRect(0, 0, 512, 128);
+            ctx.strokeStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.lineWidth = 3;
+            ctx.strokeRect(5, 5, 502, 118);
+            
+            // Text
+            ctx.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.font = 'Bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, 256, 64);
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture }));
+            sprite.scale.set(8, 2, 1);
+            return sprite;
+        }
+        
+        // Add axis labels
+        const xLabel = createAxisLabel('TDS (Strength) →', 0xFF6B35);
+        xLabel.position.set(22, -2, 0);
+        scene.add(xLabel);
+        
+        const yLabel = createAxisLabel('↑ RATING (Quality)', 0x4ECDC4);
+        yLabel.position.set(-2, 22, 0);
+        scene.add(yLabel);
+        
+        const zLabel = createAxisLabel('EXTRACTION YIELD (%) →', 0xA8E6CF);
+        zLabel.position.set(0, -2, 22);
+        scene.add(zLabel);
         
         // Create extraction landscape
         extractions.forEach(point => {

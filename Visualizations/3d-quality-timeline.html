@@ -162,9 +162,48 @@
         grid.position.y = -15;
         scene.add(grid);
         
-        // Axes
-        const axes = new THREE.AxesHelper(25);
+        // Axes with enhanced visibility
+        const axes = new THREE.AxesHelper(30);
         scene.add(axes);
+        
+        // Create professional axis labels
+        function createTimelineLabel(text, color = 0xFFD700) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 512;
+            canvas.height = 128;
+            
+            // Background
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.85)';
+            ctx.fillRect(0, 0, 512, 128);
+            ctx.strokeStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.lineWidth = 3;
+            ctx.strokeRect(5, 5, 502, 118);
+            
+            // Text
+            ctx.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.font = 'Bold 50px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(text, 256, 75);
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture }));
+            sprite.scale.set(10, 2.5, 1);
+            return sprite;
+        }
+        
+        // Add timeline axis labels
+        const timeLabel = createTimelineLabel('← EARLIER    TIME    LATER →', 0xFFD700);
+        timeLabel.position.set(0, -18, 0);
+        scene.add(timeLabel);
+        
+        const ratingLabel = createTimelineLabel('↑ RATING (QUALITY)', 0x4ECDC4);
+        ratingLabel.position.set(-25, 0, 0);
+        scene.add(ratingLabel);
+        
+        const depthLabel = createTimelineLabel('SESSION DEPTH', 0xA8E6CF);
+        depthLabel.position.set(0, -18, 15);
+        scene.add(depthLabel);
         
         // Rotation control
         let rotating = false;

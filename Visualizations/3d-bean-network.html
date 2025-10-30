@@ -162,6 +162,38 @@
             scene.add(glow);
         });
         
+        // Add network title label
+        function createNetworkLabel(text, color = 0xFFD700) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 512;
+            canvas.height = 128;
+            
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.9)';
+            ctx.fillRect(0, 0, 512, 128);
+            ctx.strokeStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.lineWidth = 3;
+            ctx.strokeRect(5, 5, 502, 118);
+            
+            ctx.fillStyle = `#${color.toString(16).padStart(6, '0')}`;
+            ctx.font = 'Bold 46px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(text, 256, 75);
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture }));
+            sprite.scale.set(15, 3.5, 1);
+            return sprite;
+        }
+        
+        const networkTitle = createNetworkLabel('BEAN SIMILARITY NETWORK', 0xFFD700);
+        networkTitle.position.set(0, 30, 0);
+        scene.add(networkTitle);
+        
+        const descLabel = createNetworkLabel('Connections = Similar Profiles', 0xD4A574);
+        descLabel.position.set(0, -30, 0);
+        scene.add(descLabel);
+        
         // Create connections
         networkData.forEach(data => {
             const startNode = nodeMap[data.id];
