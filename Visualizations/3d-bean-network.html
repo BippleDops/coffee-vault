@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Bean Network Graph - Coffee Vault 5.0</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #FFF8E1;
+            overflow: hidden;
+        }
+        #container { width: 100vw; height: 100vh; position: relative; }
+        .panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 25px;
+            border-radius: 16px;
+            border: 2px solid #FFD700;
+            z-index: 100;
+            max-width: 320px;
+        }
+        h1 {
+            font-size: 22px;
+            color: #FFD700;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+        .network-info {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #D4A574;
+        }
+        .network-info strong {
+            color: #FFD700;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: rgba(255, 215, 0, 0.2);
+            border: 1px solid #FFD700;
+            border-radius: 8px;
+            color: #FFD700;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #FFD700;
+            color: #000;
+        }
+        #node-info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.95);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            z-index: 100;
+            max-width: 280px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <div class="panel">
+        <h1>🕸️ Bean Network</h1>
+        <div class="network-info">
+            <p><strong>Nodes:</strong> <span id="node-count">--</span></p>
+            <p><strong>Connections:</strong> <span id="edge-count">--</span></p>
+            <p><strong>Network Type:</strong> Similarity Graph</p>
+        </div>
+        <button class="btn" id="rotate-toggle" onclick="toggleRotate()">Enable Rotation</button>
+        <button class="btn" onclick="resetView()">Reset View</button>
+        <button class="btn" onclick="expandNetwork()">Expand Network</button>
+    </div>
+    
+    <div id="node-info">
+        <h3 style="color: #FFD700; margin-bottom: 10px;" id="node-name">Bean Name</h3>
+        <p style="font-size: 12px; line-height: 1.6;" id="node-details"></p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const networkData = [
+            { id: 1, name: 'Ethiopian Yirgacheffe', type: 'bean', connections: [2, 6], color: 0xff6b6b },
+            { id: 2, name: 'Ethiopian Guji', type: 'bean', connections: [1, 6], color: 0xff6b6b },
+            { id: 3, name: 'Colombian Supremo', type: 'bean', connections: [4, 5], color: 0x4ecdc4 },
+            { id: 4, name: 'Colombian Pink Bourbon', type: 'bean', connections: [3, 5], color: 0x4ecdc4 },
+            { id: 5, name: 'Colombian Gesha', type: 'bean', connections: [3, 4, 9], color: 0x4ecdc4 },
+            { id: 6, name: 'Ethiopian Sidamo', type: 'bean', connections: [1, 2], color: 0xff6b6b },
+            { id: 7, name: 'Kenya AA', type: 'bean', connections: [8], color: 0xffe66d },
+            { id: 8, name: 'Kenya SL-28', type: 'bean', connections: [7], color: 0xffe66d },
+            { id: 9, name: 'Panama Gesha', type: 'bean', connections: [5], color: 0xf8b195 }
+        ];
+        
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x0a0a0a);
+        scene.fog = new THREE.FogExp2(0x0a0a0a, 0.01);
+        
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 50);
+        
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('container').appendChild(renderer.domElement);
+        
+        // Lighting
+        const ambientLight = new THREE.AmbientLight(0x404040, 2);
+        scene.add(ambientLight);
+        
+        const pointLight = new THREE.PointLight(0xFFD700, 1.5, 100);
+        pointLight.position.set(0, 0, 30);
+        scene.add(pointLight);
+        
+        // Create network nodes
+        const nodes = [];
+        const edges = [];
+        const nodeMap = {};
+        
+        // Position nodes in 3D space (force-directed layout simulation)
+        networkData.forEach((data, i) => {
+            const angle = (i / networkData.length) * Math.PI * 2;
+            const radius = 20;
+            const x = radius * Math.cos(angle);
+            const y = radius * Math.sin(angle);
+            const z = (Math.random() - 0.5) * 10;
+            
+            const geometry = new THREE.SphereGeometry(1.5, 24, 24);
+            const material = new THREE.MeshPhongMaterial({
+                color: data.color,
+                emissive: data.color,
+                emissiveIntensity: 0.5,
+                shininess: 100
+            });
+            const sphere = new THREE.Mesh(geometry, material);
+            sphere.position.set(x, y, z);
+            sphere.userData = data;
+            
+            scene.add(sphere);
+            nodes.push(sphere);
+            nodeMap[data.id] = sphere;
+            
+            // Add glow
+            const glowGeo = new THREE.SphereGeometry(2.2, 16, 16);
+            const glowMat = new THREE.MeshBasicMaterial({
+                color: data.color,
+                transparent: true,
+                opacity: 0.2
+            });
+            const glow = new THREE.Mesh(glowGeo, glowMat);
+            glow.position.copy(sphere.position);
+            scene.add(glow);
+        });
+        
+        // Create connections
+        networkData.forEach(data => {
+            const startNode = nodeMap[data.id];
+            data.connections.forEach(targetId => {
+                const endNode = nodeMap[targetId];
+                if (endNode) {
+                    const points = [startNode.position, endNode.position];
+                    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                    const material = new THREE.LineBasicMaterial({
+                        color: 0xFFD700,
+                        transparent: true,
+                        opacity: 0.3,
+                        linewidth: 2
+                    });
+                    const line = new THREE.Line(geometry, material);
+                    scene.add(line);
+                    edges.push(line);
+                }
+            });
+        });
+        
+        document.getElementById('node-count').textContent = nodes.length;
+        document.getElementById('edge-count').textContent = edges.length;
+        
+        // Rotation control
+        let rotating = false;
+        let rotationSpeed = 0.002;
+        let isDragging = false;
+        let previousMouse = { x: 0, y: 0 };
+        let manualRotation = { x: 0, y: 0 };
+        
+        function toggleRotate() {
+            rotating = !rotating;
+            document.getElementById('rotate-toggle').textContent = rotating ? 'Disable Rotation' : 'Enable Rotation';
+        }
+        
+        function resetView() {
+            camera.position.set(0, 0, 50);
+            manualRotation = { x: 0, y: 0 };
+            camera.lookAt(0, 0, 0);
+        }
+        
+        function expandNetwork() {
+            nodes.forEach(node => {
+                node.position.multiplyScalar(1.3);
+            });
+            edges.forEach(edge => scene.remove(edge));
+            edges.length = 0;
+            // Recreate edges with new positions
+            networkData.forEach(data => {
+                const startNode = nodeMap[data.id];
+                data.connections.forEach(targetId => {
+                    const endNode = nodeMap[targetId];
+                    if (endNode) {
+                        const points = [startNode.position, endNode.position];
+                        const geo = new THREE.BufferGeometry().setFromPoints(points);
+                        const mat = new THREE.LineBasicMaterial({ color: 0xFFD700, transparent: true, opacity: 0.3 });
+                        const line = new THREE.Line(geo, mat);
+                        scene.add(line);
+                        edges.push(line);
+                    }
+                });
+            });
+        }
+        
+        // Mouse controls
+        renderer.domElement.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            previousMouse = { x: e.clientX, y: e.clientY };
+        });
+        
+        renderer.domElement.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const deltaX = e.clientX - previousMouse.x;
+                const deltaY = e.clientY - previousMouse.y;
+                manualRotation.x -= deltaY * 0.005;
+                manualRotation.y += deltaX * 0.005;
+                previousMouse = { x: e.clientX, y: e.clientY };
+            }
+        });
+        
+        renderer.domElement.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+        
+        renderer.domElement.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            camera.position.z = Math.max(30, Math.min(100, camera.position.z + e.deltaY * 0.1));
+        });
+        
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            if (rotating && !isDragging) {
+                manualRotation.y += rotationSpeed;
+            }
+            
+            // Apply rotations to all objects
+            nodes.forEach(node => {
+                node.rotation.x = manualRotation.x;
+                node.rotation.y = manualRotation.y;
+            });
+            
+            // Pulse animation
+            const time = Date.now() * 0.001;
+            nodes.forEach((node, i) => {
+                const scale = 1 + Math.sin(time + i * 0.5) * 0.1;
+                node.scale.set(scale, scale, scale);
+            });
+            
+            renderer.render(scene, camera);
+        }
+        
+        animate();
+        
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>
+
