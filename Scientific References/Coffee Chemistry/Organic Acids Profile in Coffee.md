@@ -20,7 +20,7 @@ status: reference
 
 ## 📋 Overview
 
-Coffee contains numerous organic acids contributing to perceived acidity, brightness, flavor complexity, and mouthfeel. Understanding which acids create which sensory experiences enables informed choices about origin, roast level, and brewing methods to achieve desired acidity balance.
+Coffee contains numerous [[Organic Acids]] contributing to [[Perceived Acidity]], brightness, flavor complexity, and mouthfeel. Understanding which acids create which sensory experiences enables informed choices about origin, roast level, and brewing methods to achieve desired acidity balance.
 
 **Major Coffee Acids**:
 1. **Chlorogenic Acids (CGAs)**: 4-8% of green coffee, decrease in roasting
@@ -81,7 +81,7 @@ Coffee contains numerous organic acids contributing to perceived acidity, bright
 
 ## 📝 Summary
 
-Coffee's acidity comes from multiple organic acids - citric (bright, clean), malic (fruity), quinic (bitter-sour, increases with roasting), phosphoric (soft, Kenyan), and others. Understanding acid profiles explains why origins taste different and how roasting/brewing affects perceived acidity.
+Coffee's acidity comes from multiple [[Organic Acids]] - citric (bright, clean), malic (fruity), quinic (bitter-sour, increases with roasting), phosphoric (soft, Kenyan), and others. Understanding acid profiles explains why origins taste different and how roasting/brewing affects [[Perceived Acidity]].
 
 **Key Takeaways**:
 - **Citric**: Bright, lemony, clean (desirable)

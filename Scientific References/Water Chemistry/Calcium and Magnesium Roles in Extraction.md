@@ -36,7 +36,7 @@ Calcium and magnesium are brew water's primary extraction minerals - binding to 
 **Function**:
 - **Extracts Acids**: Binds to acidic compounds, pulls into solution
 - **Clarity**: Enhances flavor articulation, definition
-- **Brightness**: Amplifies perceived acidity
+- **Brightness**: Amplifies [[Perceived Acidity]]
 - **Fruity Notes**: Helps extract fruity, bright flavors
 
 **Effect on Cup**:

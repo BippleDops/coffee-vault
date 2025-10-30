@@ -173,7 +173,7 @@ Chlorogenic acid (5-CQA): Ester of **caffeic acid** + **quinic acid**
 **High CGAs (Light Roast)**:
 - **Astringency**: Dry, puckering mouthfeel
 - **Bitterness**: Moderate, phenolic bitter (not roast bitter)
-- **Acidity**: CGAs contribute to perceived acidity
+- **Acidity**: CGAs contribute to [[Perceived Acidity]]
 - **Body**: Moderate contribution to mouthfeel
 - **Antioxidants**: Maximum antioxidant capacity
 

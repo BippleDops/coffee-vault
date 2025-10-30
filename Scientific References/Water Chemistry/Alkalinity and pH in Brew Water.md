@@ -82,7 +82,7 @@ Alkalinity and pH are critical water parameters that determine how brew water in
 
 ## 📝 Summary
 
-Alkalinity is water's acid-buffering capacity - critically affecting coffee's perceived acidity and brightness. Optimal range (40-75 ppm) balances brightness without flatness; too high (>100 ppm) creates dull, chalky coffee; too low (<30 ppm) creates harsh acidity. Matching alkalinity to coffee type enables optimal acidity balance.
+Alkalinity is water's acid-buffering capacity - critically affecting coffee's [[Perceived Acidity]] and brightness. Optimal range (40-75 ppm) balances brightness without flatness; too high (>100 ppm) creates dull, chalky coffee; too low (<30 ppm) creates harsh acidity. Matching alkalinity to coffee type enables optimal acidity balance.
 
 **Key Takeaways**:
 - **Alkalinity**: Acid-buffering capacity (40-75 ppm ideal)

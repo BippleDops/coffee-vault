@@ -11,7 +11,7 @@ date: 2025-10-27
 
 ## Overview
 
-Acidity is one of coffee's most important flavor characteristics. Multiple organic acids contribute to coffee's brightness, complexity, and perceived quality. Understanding these acids illuminates roasting, brewing, and tasting.
+Acidity is one of coffee's most important flavor characteristics. Multiple [[Organic Acids]] contribute to coffee's brightness, complexity, and [[Perceived Acidity]]. Understanding these acids illuminates roasting, brewing, and tasting.
 
 ## Major Organic Acids
 
@@ -223,13 +223,13 @@ Acidity is one of coffee's most important flavor characteristics. Multiple organ
 ### Perceived vs Actual Acidity
 
 **Discrepancy**:
-- pH doesn't predict perceived acidity well
-- Organic acid types matter more than total
+- pH doesn't predict [[Perceived Acidity]] well
+- [[Organic Acids]] types matter more than total
 - Sensory perception complex
 - Multiple factors interact
 
 **What Matters**:
-- Type of acids (citric vs quinic)
+- Type of [[Organic Acids]] (citric vs quinic)
 - Concentration of each
 - Balance with other flavors
 - Temperature of coffee

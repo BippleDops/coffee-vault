@@ -269,7 +269,7 @@ Roast degree classification helps communicate roast levels consistently. Multipl
 - High chlorogenic acids (antioxidants)
 - More caffeine per volume
 - Higher citric acid
-- More organic acids
+- More [[Organic Acids]]
 - Less caramelization products
 
 ### Dark Roast Chemistry
@@ -277,7 +277,7 @@ Roast degree classification helps communicate roast levels consistently. Multipl
 - Low chlorogenic acids (degraded)
 - Less caffeine per volume
 - Higher quinic acid
-- Fewer organic acids
+- Fewer [[Organic Acids]]
 - More caramelization products
 
 ## Consumer Guidance

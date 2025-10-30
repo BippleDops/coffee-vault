@@ -51,7 +51,7 @@ Mucilage (the sticky fruit layer surrounding coffee bean) is fermentation's subs
 
 **Microbial Fermentation**:
 - **Yeast**: Consume sugars → alcohols, CO₂
-- **Bacteria**: Produce organic acids (lactic, acetic)
+- **Bacteria**: Produce [[Organic Acids]] (lactic, acetic)
 - **Fermentation Byproducts**: Flavor compounds, acids, alcohols, esters
 
 **Washed Processing**:

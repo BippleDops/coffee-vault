@@ -43,7 +43,7 @@ Yeast inoculation is controlled fermentation's cutting edge - adding specific ye
 
 **Yeast Function**:
 - **Sugar Consumption**: Yeast consumes sugars in mucilage
-- **Byproducts**: Alcohols, esters, organic acids, CO₂
+- **Byproducts**: Alcohols, esters, [[Organic Acids]], CO₂
 - **Flavor Compounds**: Esters (fruity), alcohols (wine-like), acids (complexity)
 
 **Spontaneous Fermentation** (Traditional):

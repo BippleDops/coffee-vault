@@ -96,7 +96,7 @@ $$\text{Hardness (ppm)} = [\text{Ca}^{2+}] + [\text{Mg}^{2+}]$$
 - Acts as "acid sponge"
 
 **Why It Matters**:
-- Coffee contains 30+ organic acids (chlorogenic, citric, malic, etc.)
+- Coffee contains 30+ [[Organic Acids]] (chlorogenic, citric, malic, etc.)
 - Alkalinity neutralizes these acids
 - Too much buffering → Loss of brightness and complexity
 - Too little buffering → Overly sour, harsh acidity
@@ -169,7 +169,7 @@ Bicarbonate neutralizes hydrogen ions (acids), producing water and CO₂.
 ### Extraction Efficiency
 
 **Soft Water (Low Hardness)**:
-- Poor extraction of organic acids and flavor oils
+- Poor extraction of [[Organic Acids]] and flavor oils
 - Flat, one-dimensional flavor
 - Lower overall extraction yield
 - Missing complexity
@@ -209,7 +209,7 @@ Bicarbonate neutralizes hydrogen ions (acids), producing water and CO₂.
 
 $$\text{Citric Acid (coffee)} + \text{HCO}_3^- \text{(water)} \rightarrow \text{Neutralized (less sour)}$$
 
-More alkalinity = more acid neutralization = less perceived acidity.
+More alkalinity = more acid neutralization = less [[Perceived Acidity]].
 
 ### Flavor Compound Solubility
 
