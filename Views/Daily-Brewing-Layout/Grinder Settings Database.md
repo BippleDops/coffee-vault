@@ -408,7 +408,7 @@ Add your own grinder-specific click counts or settings below:
 - [[Master Coffee Reference]]
 
 **Analytics**:
-- [[Views/Coffee Dashboard]] - View all your brewing statistics
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - View all your brewing statistics
 
 ---
 

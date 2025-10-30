@@ -155,7 +155,7 @@ tags: [kanban, supply-chain, transparency, ethics]
 
 ### Integration
 
-**Supply Chain Dashboard**: [[Analytics/10-Supply-Chain-Transparency-Dashboard]]  
+**Supply Chain Dashboard**: [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]  
 **Producer Profiles**: [[Producers/]]  
 **Bean Profiles**: Update with producer links  
 

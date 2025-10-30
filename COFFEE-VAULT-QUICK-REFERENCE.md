@@ -156,22 +156,28 @@ tags:
 ### Daily Brewing
 1. [[HOME-DASHBOARD]]
 2. `Templates/Coffee-Log-v5.md`
-3. [[Analytics/9-Real-Time-Brewing-Assistant]]
+3. [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]
 
 ### Weekly Review
-1. [[Analytics/1-Monthly-Analytics-Dashboard]]
-2. [[Views/Advanced-Analytics-Base]]
+1. [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]]
+2. [[Views/Analytics-Analysis-Layout/Advanced-Analytics-Base]]
 3. Review goals in [[Coffee Goals/]]
 
 ### Research & Planning
 1. [[Beans Library/]] - Explore beans
 2. [[Producers/]] - Research supply chains
-3. [[Analytics/10-Supply-Chain-Transparency-Dashboard]]
+3. [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]
 
 ### Learning
 1. [[Scientific References/]]
-2. [[Analytics/11-Learning-Development-Dashboard]]
+2. [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
 3. [[Brewing Guides/]]
+
+### Workspace Bundles
+- [[Workspaces/Daily-Brewing/INDEX|Daily Brewing]]
+- [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis]]
+- [[Workspaces/Learning-Education/INDEX|Learning & Education]]
+- [[Workspaces/Supply-Chain/INDEX|Supply Chain]]
 
 ---
 
@@ -256,7 +262,7 @@ node monthly-report-generator.js
 5. Check real-time assistant feedback
 
 ### Weekly Review
-1. Analytics/1-Monthly-Analytics-Dashboard
+1. Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard
 2. Review top brews
 3. Check goal progress
 4. Plan next week's beans

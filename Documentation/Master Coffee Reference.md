@@ -384,7 +384,7 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 
 **Visualization**:
 - [[Tracker Examples]] - Charts, calendars, graphs
-- [[Views/Coffee Dashboard]] - Main analytics hub
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Main analytics hub
 
 ---
 
@@ -466,7 +466,7 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 - [[Chicago Coffee MOC]] - Local scene
 
 **Data Hubs**:
-- [[Views/Coffee Dashboard]] - Analytics
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Analytics
 - Your Base files - Database views
 
 ### Linking Patterns
@@ -725,7 +725,7 @@ return sorted.length > 0 ? (
 
 **Daily Use**:
 - [[START HERE]] - Homepage
-- [[Views/Coffee Dashboard]] - Analytics
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Analytics
 - [[Templates/Coffee Log]] - New log template
 
 **Learning**:
@@ -877,7 +877,7 @@ return <div>
 3. Full log if special brew
 
 **Weekly**:
-1. Review [[Views/Coffee Dashboard]]
+1. Review [[Views/Daily-Brewing-Layout/Coffee Dashboard]]
 2. Check [[Bases Configuration Guide|Base views]]
 3. Update [[Beans Library/]] profiles
 

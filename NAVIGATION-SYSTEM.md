@@ -94,11 +94,11 @@ Visualizations/ (18 interactive tools)
 ```
 START-HERE
     ↓
-Analytics/10-Supply-Chain-Transparency-Dashboard
+Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard
     ↓
 Producers/ (create producer profiles)
     ↓
-Views/Supply-Chain-Visualization-Base
+Views/Supply-Chain-Layout/Supply-Chain-Visualization-Base
     ↓
 Visualizations/supply-chain-map.html
 ```
@@ -256,7 +256,7 @@ FROM #category:bean-profile
 **Path**:
 1. Brewing Guides/ (pick your method)
 2. Templates/Coffee-Log-v5 (start logging)
-3. Analytics/9-Real-Time-Brewing-Assistant (live guidance)
+3. Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant (live guidance)
 4. Visualizations/brewing-triangle.html (understand extraction)
 5. Scientific References/Extraction Science/ (deep learning)
 
@@ -266,9 +266,9 @@ FROM #category:bean-profile
 
 **Entry**: START-HERE > "Ethical Sourcing" section  
 **Path**:
-1. Analytics/10-Supply-Chain-Transparency-Dashboard
+1. Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard
 2. Producers/ (create profiles)
-3. Views/Supply-Chain-Visualization-Base
+3. Views/Supply-Chain-Layout/Supply-Chain-Visualization-Base
 4. Visualizations/supply-chain-map.html
 5. Documentation/Fair-Trade-Certification-Guide
 
@@ -280,7 +280,7 @@ FROM #category:bean-profile
 **Path**:
 1. Documentation/Coffee-History-Origins-and-Spread (context)
 2. Scientific References/ (by category)
-3. Analytics/11-Learning-Development-Dashboard (track progress)
+3. Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard (track progress)
 4. Coffee Goals/ (set learning goals)
 5. Cupping Sessions/ (practice evaluation)
 
@@ -290,10 +290,10 @@ FROM #category:bean-profile
 
 **Entry**: HOME-DASHBOARD > Analytics section  
 **Path**:
-1. Analytics/2-Brewing-Optimization-Engine (get suggestions)
+1. Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine (get suggestions)
 2. Scripts/enhanced-parameter-optimizer.js (advanced optimization)
 3. Recipes/ (create and use recipes)
-4. Views/Advanced-Analytics-Base (deep analysis)
+4. Views/Analytics-Analysis-Layout/Advanced-Analytics-Base (deep analysis)
 5. Visualizations/interactive-brewing-dashboard.html (monitor results)
 
 **Loop**: Analyze → Adjust → Test → Measure → Refine
@@ -306,7 +306,7 @@ FROM #category:bean-profile
 
 **Most Frequent Actions**:
 - New Coffee Log: `Templates/Coffee-Log-v5.md`
-- View Stats: `Analytics/1-Monthly-Analytics-Dashboard.md`
+- View Stats: `Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard.md`
 - Visualizations: `Visualizations/VISUALIZATION-HUB.html`
 - Search: Cmd/Ctrl+Shift+F
 
@@ -329,7 +329,7 @@ FROM #category:bean-profile
 1. HOME-DASHBOARD (primary hub)
 2. START-HERE (reference)
 3. Templates/Coffee-Log-v5 (frequent)
-4. Analytics/1-Monthly-Analytics-Dashboard (weekly)
+4. Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard (weekly)
 5. Visualizations/VISUALIZATION-HUB.html (exploration)
 
 ---

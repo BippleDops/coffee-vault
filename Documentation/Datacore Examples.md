@@ -640,7 +640,7 @@ return <div>
 **Related**:
 - [[Bases Configuration Guide]] - Native database views
 - [[Plugin Installation Guide]] - Setup instructions
-- [[Views/Coffee Dashboard]] - Example implementations
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Example implementations
 
 ---
 

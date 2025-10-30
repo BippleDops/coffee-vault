@@ -102,7 +102,7 @@ LIMIT 50
 **Sample Verified**:
 ```markdown
 - [[Ethiopia-Guji]] - Direct link
-- [[Views/Coffee Dashboard|📊 Main Dashboard]] - Pipe notation
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard|📊 Main Dashboard]] - Pipe notation
 - [[Brewing Guides/Kalita-Wave-Guide]] - Path-specific
 ```
 

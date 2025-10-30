@@ -123,7 +123,7 @@ tags: [faq, help, questions]
 **A**: V60 or Aeropress. Both are forgiving, versatile, and teach fundamental skills. See [[Brewing Guides/]].
 
 ### Q: How do I find transparent coffee?
-**A**: Check [[Analytics/10-Supply-Chain-Transparency-Dashboard]], look for Direct Trade roasters, create [[Producers/]] profiles. Target transparency score 7+.
+**A**: Check [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]], look for Direct Trade roasters, create [[Producers/]] profiles. Target transparency score 7+.
 
 ### Q: What equipment do I really need?
 **A**: Minimum: Quality burr grinder ($100+), brewing method ($20-50), scale ($15-30), kettle ($30-80). See [[Documentation/Coffee-Equipment-Buying-Guide]].
@@ -158,7 +158,7 @@ But templates and queries work out-of-box.
 ## 🎯 Goals & Development
 
 ### Q: How do goals work?
-**A**: Create goals with `Templates/Coffee Goal.md`. Progress auto-updates from your coffee logs. Track in [[Views/Goals-Dashboard-View]] and [[Analytics/11-Learning-Development-Dashboard]].
+**A**: Create goals with `Templates/Coffee Goal.md`. Progress auto-updates from your coffee logs. Track in [[Views/Learning-Education-Layout/Goals-Dashboard-View]] and [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]].
 
 ### Q: Can Coffee Vault help me improve?
 **A**: Yes! Through:
@@ -174,7 +174,7 @@ But templates and queries work out-of-box.
 1. Set goal with `Templates/Coffee Goal.md`
 2. Practice cupping with `Templates/Cupping Session.md`
 3. Study [[Scientific References/]]
-4. Track progress in [[Analytics/11-Learning-Development-Dashboard]]
+4. Track progress in [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
 5. Enroll in SCA courses when ready
 
 ---
@@ -282,12 +282,12 @@ Or create manually with `Templates/Recipe Profile.md`.
 **A**: **Log consistently**. Even basic logs build intelligence. Perfect logs aren't necessary - consistency matters most.
 
 ### Q: How do I find my best bean?
-**A**: Check [[Analytics/1-Monthly-Analytics-Dashboard]] or [[Views/Advanced-Analytics-Base]] - sorted by average rating.
+**A**: Check [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]] or [[Views/Analytics-Analysis-Layout/Advanced-Analytics-Base]] - sorted by average rating.
 
 ### Q: How do I improve my brewing?
 **A**: 
-1. Use [[Analytics/9-Real-Time-Brewing-Assistant]]
-2. Check [[Analytics/2-Brewing-Optimization-Engine]]
+1. Use [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]
+2. Check [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine]]
 3. Study [[Scientific References/Extraction Science/]]
 4. Practice consistently
 5. Measure and adjust

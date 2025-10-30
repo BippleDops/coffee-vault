@@ -82,7 +82,7 @@ An intelligent coffee platform that combines:
 
 1. Install Datacore + Templater plugins
 2. Create your first coffee log using `Templates/Coffee-Log-v3.md`
-3. After 5 logs, explore `Analytics/1-Monthly-Analytics-Dashboard.md`
+3. After 5 logs, explore `Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard.md`
 4. Try visualizations in `Visualizations/` folder
 5. Read documentation as needed
 

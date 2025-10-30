@@ -575,7 +575,7 @@ Summary: Average (rating column)
 **Related Guides**:
 - [[Datacore Examples]] - Alternative query system
 - [[Plugin Installation Guide]] - General setup
-- [[Views/Coffee Dashboard]] - Dashboard integration
+- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Dashboard integration
 
 ---
 
@@ -588,7 +588,7 @@ Summary: Average (rating column)
 - [ ] Add table summary (average rating)
 - [ ] Create second base: `Top Rated.base`
 - [ ] Experiment with formulas
-- [ ] Embed in [[Views/Coffee Dashboard]]
+- [ ] Embed in [[Views/Daily-Brewing-Layout/Coffee Dashboard]]
 
 ---
 

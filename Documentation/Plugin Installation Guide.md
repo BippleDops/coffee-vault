@@ -168,7 +168,7 @@ Dataview turns your vault into a database, allowing powerful queries to analyze 
 
 ### Testing Dataview
 
-1. Open `Views/Coffee Dashboard.md`
+1. Open `Views/Daily-Brewing-Layout/Coffee Dashboard.md`
 2. Queries should render as tables
 3. If you see code blocks instead of tables: Check Dataview is enabled
 4. Add a coffee log and dashboard should update
@@ -519,7 +519,7 @@ Now that plugins are installed:
    - See it appear in Dashboard
 
 2. ✅ **Open the Coffee Dashboard**
-   - Navigate to `Views/Coffee Dashboard.md`
+   - Navigate to `Views/Daily-Brewing-Layout/Coffee Dashboard.md`
    - Watch queries populate with your data
 
 3. ✅ **Experiment with a Base View**

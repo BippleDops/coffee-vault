@@ -186,7 +186,7 @@ Coffee Vault 5.0 is a **massive expansion** of the platform, adding:
 - Deviation alerts
 - Corrective action suggestions
 
-**Location**: `Analytics/9-Real-Time-Brewing-Assistant.md`
+**Location**: `Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant.md`
 
 #### 10. Supply Chain Transparency Dashboard
 - Producer relationship tracking
@@ -194,7 +194,7 @@ Coffee Vault 5.0 is a **massive expansion** of the platform, adding:
 - Price premium analysis
 - Sustainability metrics visualization
 
-**Location**: `Analytics/10-Supply-Chain-Transparency-Dashboard.md`
+**Location**: `Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard.md`
 
 #### 11. Learning & Development Dashboard
 - Knowledge gap identification
@@ -202,7 +202,7 @@ Coffee Vault 5.0 is a **massive expansion** of the platform, adding:
 - Skill development tracking
 - Achievement system
 
-**Location**: `Analytics/11-Learning-Development-Dashboard.md`
+**Location**: `Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard.md`
 
 #### 12. Community Comparison Dashboard
 - Compare with community averages
@@ -210,7 +210,7 @@ Coffee Vault 5.0 is a **massive expansion** of the platform, adding:
 - Popular combinations
 - Coffee trends
 
-**Location**: `Analytics/12-Community-Comparison-Dashboard.md`
+**Location**: `Analytics/Supply-Chain-Layout/12-Community-Comparison-Dashboard.md`
 
 #### 13. Equipment Maintenance Dashboard
 - Usage pattern tracking
@@ -218,7 +218,7 @@ Coffee Vault 5.0 is a **massive expansion** of the platform, adding:
 - Replacement recommendations
 - Cost of ownership analysis
 
-**Location**: `Analytics/13-Equipment-Maintenance-Dashboard.md`
+**Location**: `Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard.md`
 
 ---
 
@@ -411,8 +411,8 @@ changelog:
 ## 🎯 Recommended First Steps
 
 1. **Explore New Dashboards**:
-   - `Analytics/10-Supply-Chain-Transparency-Dashboard.md`
-   - `Analytics/11-Learning-Development-Dashboard.md`
+   - `Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard.md`
+   - `Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard.md`
 
 2. **Try New Templates**:
    - `Templates/Coffee-Log-v5.md` (enhanced logging)

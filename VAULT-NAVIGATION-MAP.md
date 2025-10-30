@@ -59,7 +59,7 @@ Templates/Coffee-Log-v5.md (create new log)
     ↓
 Complete logging (2 minutes)
     ↓
-Analytics/9-Real-Time-Brewing-Assistant (review guidance)
+Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant (review guidance)
     ↓
 Return to HOME-DASHBOARD
 ```
@@ -73,9 +73,9 @@ Return to HOME-DASHBOARD
 ```
 HOME-DASHBOARD
     ↓
-Analytics/1-Monthly-Analytics-Dashboard
+Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard
     ↓
-Views/Advanced-Analytics-Base (deep dive)
+Views/Analytics-Analysis-Layout/Advanced-Analytics-Base (deep dive)
     ↓
 Visualizations/interactive-brewing-dashboard.html (visual analysis)
     ↓
@@ -93,7 +93,7 @@ Plan next week's beans/methods
 ```
 HOME-DASHBOARD
     ↓
-Analytics/11-Learning-Development-Dashboard (identify gaps)
+Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard (identify gaps)
     ↓
 Scientific References/ OR Brewing Guides/ (learn)
     ↓
@@ -118,7 +118,7 @@ Cupping Sessions/ (formal evaluation practice)
 - Coffee Logs/ (review recent)
 
 ### Weekly Use (15% of time)
-- Analytics/1-Monthly-Analytics-Dashboard
+- Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard
 - Views/ (database queries)
 - Coffee Goals/ (check progress)
 
@@ -299,7 +299,7 @@ Mastery achieved!
 ### Level 2: Intermediate (10-50 logs)
 
 **Focus On**:
-- Analytics/1-6 (core dashboards)
+- Analytics/Analytics-Analysis-Layout (core dashboards)
 - Views/ (database exploration)
 - Scientific References/ (learning)
 - Visualizations/ (understanding data)
@@ -313,7 +313,7 @@ Mastery achieved!
 ### Level 3: Advanced (50-100 logs)
 
 **Focus On**:
-- Analytics/7-13 (all dashboards)
+- Analytics/Daily-Brewing-Layout + Analytics/Supply-Chain-Layout + Analytics/Learning-Education-Layout (extended dashboards)
 - Scripts/ (automation)
 - Advanced bases (complex queries)
 - Producers/ (supply chain)
@@ -372,7 +372,7 @@ Mastery achieved!
 2. **START-HERE** - When stuck
 3. **COFFEE-VAULT-QUICK-REFERENCE** - Quick answers
 4. **Visualizations/VISUALIZATION-HUB.html** - All tools
-5. **Analytics/9-Real-Time-Brewing-Assistant** - Brewing guidance
+5. **Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant** - Brewing guidance
 
 **That's it!** Everything else accessible from these.
 

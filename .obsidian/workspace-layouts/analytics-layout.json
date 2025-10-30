@@ -14,7 +14,7 @@
               "type": "leaf",
               "state": {
                 "type": "markdown",
-                "file": "Analytics/1-Monthly-Analytics-Dashboard.md",
+                "file": "Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard.md",
                 "mode": "preview"
               }
             },
@@ -22,7 +22,7 @@
               "type": "leaf",
               "state": {
                 "type": "markdown",
-                "file": "Analytics/2-Brewing-Optimization-Engine.md",
+                "file": "Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine.md",
                 "mode": "preview"
               }
             },
@@ -30,7 +30,7 @@
               "type": "leaf",
               "state": {
                 "type": "markdown",
-                "file": "Analytics/10-Supply-Chain-Transparency-Dashboard.md",
+                "file": "Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard.md",
                 "mode": "preview"
               }
             },
@@ -38,7 +38,7 @@
               "type": "leaf",
               "state": {
                 "type": "markdown",
-                "file": "Analytics/11-Learning-Development-Dashboard.md",
+                "file": "Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard.md",
                 "mode": "preview"
               }
             }
@@ -48,7 +48,7 @@
           "type": "leaf",
           "state": {
             "type": "markdown",
-            "file": "Views/Advanced-Analytics-Base.md",
+            "file": "Views/Analytics-Analysis-Layout/Advanced-Analytics-Base.md",
             "mode": "preview"
           },
           "width": 500

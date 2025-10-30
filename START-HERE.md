@@ -67,21 +67,21 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 ### Better Coffee
 1. [[Brewing Guides/Pour-Over-V60-Guide]]
 2. Log with `Templates/Coffee-Log-v5.md`
-3. [[Analytics/9-Real-Time-Brewing-Assistant]]
+3. [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]
 
 ### Understand Coffee
 1. [[Documentation/Coffee-History-Origins-and-Spread]]
 2. [[Scientific References/Extraction Science/]]
-3. [[Analytics/11-Learning-Development-Dashboard]]
+3. [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
 
 ### Ethical Sourcing
-1. [[Analytics/10-Supply-Chain-Transparency-Dashboard]]
+1. [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]
 2. Create producer profiles
 3. Track certifications
 
 ### Track Development
 1. Set goals: `Templates/Coffee Goal.md`
-2. [[Views/Goals-Dashboard-View]]
+2. [[Views/Learning-Education-Layout/Goals-Dashboard-View]]
 3. Monitor progress automatically
 
 ---
@@ -100,10 +100,16 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 ## Key Dashboards
 
 **Daily**: [[HOME-DASHBOARD]]  
-**Stats**: [[Analytics/1-Monthly-Analytics-Dashboard]]  
-**Live**: [[Analytics/9-Real-Time-Brewing-Assistant]]  
-**Supply Chain**: [[Analytics/10-Supply-Chain-Transparency-Dashboard]]  
-**Learning**: [[Analytics/11-Learning-Development-Dashboard]]
+**Stats**: [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]]  
+**Live**: [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]  
+**Supply Chain**: [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]  
+**Learning**: [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
+
+### Workspace Bundles
+- [[Workspaces/Daily-Brewing/INDEX|Daily Brewing Workflow]]
+- [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis]]
+- [[Workspaces/Learning-Education/INDEX|Learning & Education]]
+- [[Workspaces/Supply-Chain/INDEX|Supply Chain]]
 
 ---
 

@@ -313,7 +313,7 @@ Coffee Vault 5.0/
 ### Daily Brewing Workflow
 
 1. **Before Brewing**:
-   - Check `Analytics/9-Real-Time-Brewing-Assistant.md`
+   - Check `Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant.md`
    - Review optimal parameters for your bean
    - Note environmental context
 
@@ -329,8 +329,8 @@ Coffee Vault 5.0/
 
 ### Weekly Workflow
 
-1. Review `Analytics/1-Monthly-Analytics-Dashboard.md`
-2. Check `Analytics/11-Learning-Development-Dashboard.md`
+1. Review `Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard.md`
+2. Check `Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard.md`
 3. Update goals in `Coffee Goals/`
 4. Plan next week's beans
 

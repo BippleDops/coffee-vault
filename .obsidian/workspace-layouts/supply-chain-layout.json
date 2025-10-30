@@ -14,7 +14,7 @@
               "type": "leaf",
               "state": {
                 "type": "markdown",
-                "file": "Analytics/10-Supply-Chain-Transparency-Dashboard.md",
+                "file": "Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard.md",
                 "mode": "preview"
               }
             },
@@ -22,7 +22,7 @@
               "type": "leaf",
               "state": {
                 "type": "markdown",
-                "file": "Views/Supply-Chain-Visualization-Base.md",
+                "file": "Views/Supply-Chain-Layout/Supply-Chain-Visualization-Base.md",
                 "mode": "preview"
               }
             }

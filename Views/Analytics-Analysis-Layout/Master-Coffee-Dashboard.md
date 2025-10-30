@@ -342,10 +342,10 @@ LIMIT 10
 - [[Documentation/VAULT-ARCHITECTURE-REFERENCE]] - Technical reference
 
 **Analytics Dashboards:**
-- [[Analytics/1-Monthly-Analytics-Dashboard]] - Comprehensive stats
-- [[Analytics/2-Brewing-Optimization-Engine]] - ML recommendations
-- [[Views/Live-Weekly-Summary]] - This week's performance
-- [[Views/Live-Inventory-Status]] - Bean inventory
+- [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]] - Comprehensive stats
+- [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine]] - ML recommendations
+- [[Views/Daily-Brewing-Layout/Live-Weekly-Summary]] - This week's performance
+- [[Views/Daily-Brewing-Layout/Live-Inventory-Status]] - Bean inventory
 
 ---
 

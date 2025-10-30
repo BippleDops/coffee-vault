@@ -203,7 +203,7 @@ if (totalBrews < 20) {
 5. Goal: Try 3 different origins, compare flavor profiles
 
 **Recommended Resources**:
-- [[Analytics/6-Correlation-Discovery-Engine]]
+- [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine]]
 - [[Scientific References/Sensory Science/Flavor Wheel Development]]
   `);
 } else if (totalBrews < 100) {
@@ -218,7 +218,7 @@ if (totalBrews < 20) {
 5. Consider SCA certification prep
 
 **Recommended Resources**:
-- [[Analytics/5-Quality-Predictor]]
+- [[Analytics/Analytics-Analysis-Layout/5-Quality-Predictor]]
 - [[Documentation/Advanced-Brewing-Techniques]]
   `);
 } else {

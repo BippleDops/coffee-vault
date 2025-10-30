@@ -209,7 +209,7 @@ supply-chain-verified: true
 ```
 
 3. View supply chain in new dashboard:
-   - `Analytics/10-Supply-Chain-Transparency-Dashboard.md`
+   - `Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard.md`
 
 ---
 
@@ -218,8 +218,8 @@ supply-chain-verified: true
 Track your coffee development:
 
 1. Create goals using `Templates/Coffee Goal.md`
-2. View progress in `Views/Goals-Dashboard-View.md`
-3. Get recommendations in `Analytics/11-Learning-Development-Dashboard.md`
+2. View progress in `Views/Learning-Education-Layout/Goals-Dashboard-View.md`
+3. Get recommendations in `Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard.md`
 
 ---
 

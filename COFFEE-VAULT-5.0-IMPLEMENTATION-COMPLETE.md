@@ -52,11 +52,11 @@ All planned features have been implemented:
 - `Templates/Coffee-Log-v5.md`
 
 **Analytics Dashboards (5 new)**:
-- `Analytics/9-Real-Time-Brewing-Assistant.md`
-- `Analytics/10-Supply-Chain-Transparency-Dashboard.md`
-- `Analytics/11-Learning-Development-Dashboard.md`
-- `Analytics/12-Community-Comparison-Dashboard.md`
-- `Analytics/13-Equipment-Maintenance-Dashboard.md`
+- `Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant.md`
+- `Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard.md`
+- `Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard.md`
+- `Analytics/Supply-Chain-Layout/12-Community-Comparison-Dashboard.md`
+- `Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard.md`
 
 **ML & Automation Scripts (10 new)**:
 - `Scripts/flavor-profile-predictor.js`
@@ -75,9 +75,9 @@ All planned features have been implemented:
 - `Visualizations/supply-chain-map.html`
 
 **Database Views (3 new)**:
-- `Views/Producer-Database-View.md`
-- `Views/Recipe-Database-View.md`
-- `Views/Goals-Dashboard-View.md`
+- `Views/Supply-Chain-Layout/Producer-Database-View.md`
+- `Views/Analytics-Analysis-Layout/Recipe-Database-View.md`
+- `Views/Learning-Education-Layout/Goals-Dashboard-View.md`
 
 **Documentation (9 new)**:
 - `Documentation/COFFEE-VAULT-5.0-NEW-ENTITY-TYPES.md`

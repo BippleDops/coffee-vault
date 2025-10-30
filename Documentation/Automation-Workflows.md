@@ -326,7 +326,7 @@ The Grinder Settings Database is an intelligent reference view that:
 ### How to Use
 
 1. **Access the Database**:
-   - Open `Views/Grinder Settings Database.md`
+   - Open `Views/Daily-Brewing-Layout/Grinder Settings Database.md`
    - Automatically updates as you add coffee logs
 
 2. **Find Starting Points**:

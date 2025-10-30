@@ -24,8 +24,8 @@ You are working with a comprehensive Coffee Vault in Obsidian with 205+ entries 
 ### Phase 2: Datacore Query Testing
 
 1. Open `HOME-DASHBOARD.md` and verify all Datacore queries render correctly
-2. Check `Views/Master-Coffee-Dashboard.md` for query rendering
-3. Test `Views/Coffee Dashboard.md` queries
+2. Check `Views/Analytics-Analysis-Layout/Master-Coffee-Dashboard.md` for query rendering
+3. Test `Views/Daily-Brewing-Layout/Coffee Dashboard.md` queries
 4. Test all 8 Analytics dashboard queries (numbered 1-8 in Analytics/ folder)
 5. Verify Base files render: `All-Coffee-Logs.base`, `By-Origin.base`, `By-Roaster.base`, `Top-Rated-Brews.base`
 6. If queries fail: Check Datacore plugin settings (Settings → Datacore → Enable codeblock dataviews: ON, Enable inline dataviews: ON)
@@ -72,7 +72,7 @@ You are working with a comprehensive Coffee Vault in Obsidian with 205+ entries 
    - roast-profile-analyzer.html
    - water-chemistry-calculator.html
    - (And 6 alternative versions)
-2. Verify iframe embeds work in `Views/Interactive-Visualizations-Dashboard.md`
+2. Verify iframe embeds work in `Views/Learning-Education-Layout/Interactive-Visualizations-Dashboard.md`
 
 ---
 
