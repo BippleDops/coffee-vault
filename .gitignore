@@ -19,6 +19,9 @@ package-lock.json
 # Archive (historical progress reports)
 Archive/
 
+# .vault-meta is tracked but hidden (vault internal docs)
+# Keep it in Git but it won't clutter root visually
+
 # Personal data (optional - uncomment if desired)
 # Coffee Logs/
 # Daily Notes/
