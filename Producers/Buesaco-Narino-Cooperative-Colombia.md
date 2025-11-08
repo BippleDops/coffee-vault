@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Buesaco Cooperative
 country: [[Origins/Colombia]]
 region: [[Origins/Colombia-Narino]]
-type: Cooperative
+producer-category: Cooperative
 established: 1999
 varieties: Caturra-Castillo-Colombia-Typica
 processing-methods: Washed-Double-Fermentation

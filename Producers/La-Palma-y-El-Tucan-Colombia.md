@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: La Palma y El Tucan (LPET)
 country: [[Origins/Colombia]]
 region: [[Origins/Colombia-Cundinamarca]]
-type: Experimental-Estate-Processing-Lab
+producer-category: Experimental-Estate-Processing-Lab
 established: 2011
 varieties: Caturra-Castillo-Geisha-Sudan-Rume-Pink-Bourbon-Sidra-Wush-Wush
 processing-methods: Washed-Natural-Honey-Anaerobic-Carbonic-Maceration-Lactic-Koji-Yeast-Experimental

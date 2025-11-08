@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Helsar de Zarcero Micromill
 country: [[Origins/Costa-Rica]]
 region: [[Origins/Costa-Rica-West-Valley]]
-type: Micro-Mill
+producer-category: Micro-Mill
 established: 2000
 varieties: Caturra-Catuai-Villa-Sarchi-Geisha-SL28
 processing-methods: Washed-Honey-Natural-Experimental

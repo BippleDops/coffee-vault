@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Yirgacheffe Kochere Union
 country: [[Origins/Ethiopia]]
 region: [[Origins/Ethiopia-Yirgacheffe]]
-type: Cooperative-Union
+producer-category: Cooperative-Union
 established: 2002
 varieties: Ethiopian-Heirloom-Varieties
 processing-methods: Washed-Natural

@@ -1,6 +1,6 @@
 ---
 <%*
-// Load helper functions for intelligent suggestions
+# Load helper functions for intelligent suggestions
 let helpers;
 try {
   helpers = await tp.user.require("Scripts/template-helpers.js");
@@ -8,7 +8,7 @@ try {
   console.log("Helper functions not available, using defaults");
 }
 
-// Get smart suggestions from vault history
+# Get smart suggestions from vault history
 let recentBeans = [];
 let topMethods = ["Pour Over", "French Press", "Espresso", "Aeropress", "Cold Brew"];
 let suggestedBean = "";
@@ -32,7 +32,7 @@ if (helpers) {
   }
 }
 
-// Prompt for required properties with smart defaults
+# Prompt for required properties with smart defaults
 const beanName = await tp.system.prompt("Bean name/blend", suggestedBean);
 const roasterName = await tp.system.prompt("Roaster name", suggestedRoaster);
 const origin = await tp.system.suggester(
@@ -44,13 +44,13 @@ const roastLevel = await tp.system.suggester(
   ["light", "medium-light", "medium", "medium-dark", "dark"]
 );
 
-// Brew method with personalized suggestions
+# Brew method with personalized suggestions
 const brewMethodDisplay = await tp.system.suggester(
   topMethods.concat(["Moka Pot", "Chemex", "Siphon", "V60"]),
   topMethods.map(m => m.toLowerCase().replace(" ", "-")).concat(["moka-pot", "chemex", "siphon", "v60"])
 );
 
-// Get intelligent grind size suggestion
+# Get intelligent grind size suggestion
 let suggestedGrind = "medium-fine";
 if (helpers) {
   suggestedGrind = await helpers.getRecommendedGrindSize(app, brewMethodDisplay) || helpers.getDefaultGrindSize(brewMethodDisplay);
@@ -61,7 +61,7 @@ const grindSize = await tp.system.suggester(
   ["extra-fine", "fine", "medium-fine", "medium", "medium-coarse", "coarse", "extra-coarse"],
 );
 
-// Get intelligent temperature and time suggestions
+# Get intelligent temperature and time suggestions
 let suggestedTemp = "200";
 let suggestedTime = "3.5";
 let suggestedRatio = "1:16";
@@ -77,14 +77,14 @@ const brewTime = await tp.system.prompt("Brew time (minutes)", suggestedTime);
 const ratio = await tp.system.prompt("Coffee:Water ratio", suggestedRatio);
 const rating = await tp.system.prompt("Rating (1-5)", "4.0");
 
-// Validate rating
+# Validate rating
 const validatedRating = helpers ? helpers.validateRating(rating) : parseFloat(rating);
 %>
 date: <% tp.date.now("YYYY-MM-DD") %>
 time: <% tp.date.now("HH:mm") %>
 type: coffee-log
 beans: <% beanName %>
-roaster: [[<% roasterName %>]]
+roaster: "[[<%  roasterName  %>]"]
 origin: <% origin %>
 roast-level: <% roastLevel %>
 brew-method: <% brewMethodDisplay %>
@@ -96,14 +96,14 @@ rating: <% validatedRating %>
 cups-brewed: 1
 flavor-notes: []
 would-rebuy: false
-tags: [coffee, <% tp.date.now("YYYY/MM") %>]
+tags: "[coffee, <%  tp.date.now("YYYY/MM")  %>]"
 status: draft
 ---
 
 # ☕ Coffee Log: <% tp.file.title %>
 
 **Date**: <% tp.frontmatter.date %> at <% tp.frontmatter.time %>
-**Beans**: [[<% tp.frontmatter.beans %>]]
+**Beans**: "[[<%  tp.frontmatter.beans  %>]"]
 **Roaster**: <% tp.frontmatter.roaster %>
 **Origin**: <% tp.frontmatter.origin %>
 **Rating**: <% helpers ? helpers.formatRating(tp.frontmatter.rating) : '⭐ ' + tp.frontmatter.rating %>/5

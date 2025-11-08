@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Karatu District Cooperative
 country: [[Origins/Tanzania]]
 region: [[Origins/Tanzania-Northern-Highlands]]
-type: District-Cooperative
+producer-category: District-Cooperative
 established: 2005
 varieties: Bourbon-Kent-N39-Typica
 processing-methods: Washed

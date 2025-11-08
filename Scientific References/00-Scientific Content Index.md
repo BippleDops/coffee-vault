@@ -70,12 +70,21 @@ This library is organized into six major domains, each containing detailed notes
 - [[Defect Identification Guide]] - Common coffee faults
 - [[Blind Tasting Strategies]] - Objective evaluation
 - [[Cupping Competition Preparation]] - Advanced sensory skills
+- **[[Sensory-Fatigue-and-Palate-Calibration]]** - ⭐ Maintaining accuracy and consistency (v8.0 NEW)
+- **[[Triangle-Test-Statistical-Significance]]** - ⭐ Discrimination testing and analysis (v8.0 NEW)
+- **[[Flavor-Wheels-Scientific-Basis]]** - ⭐ Scientific basis and practical application (v8.0 NEW)
+- **[[Aroma-Compound-Identification]]** - ⭐ Chemistry of coffee flavor perception (v8.0 NEW)
+- **[[Cupping-Protocol-SCA-Standards]]** - ⭐ Standardized coffee evaluation methodology (v8.0 NEW)
+- **[[Palate-Training-Exercises]]** - ⭐ Systematic sensory skill development (v8.0 NEW)
+- **[[Sensory-Memory-Development]]** - ⭐ Building recall and recognition (v8.0 NEW)
+- **[[Off-Flavor-Identification-Guide]]** - ⭐ Defects, taints, and quality issues (v8.0 NEW)
 
 **Learning Path**:
-1. Start with Flavor Wheel and Descriptor Taxonomy
-2. Learn SCA Cupping Protocol for structured approach
-3. Practice with Cupping Form and Scoring
-4. Develop consistency through Palate Calibration
+1. Start with Flavor-Wheels-Scientific-Basis and Aroma-Compound-Identification
+2. Learn Cupping-Protocol-SCA-Standards for structured approach
+3. Practice with Palate-Training-Exercises and Triangle-Test-Statistical-Significance
+4. Develop consistency through Sensory-Fatigue-and-Palate-Calibration and Sensory-Memory-Development
+5. Master defect identification with Off-Flavor-Identification-Guide
 
 ---
 
@@ -350,12 +359,22 @@ As you learn and experiment:
 - **[[Pour-Over-Technique-Physics]]** - ⭐ Controlling extraction variables (NEW)
 - **[[AeroPress-Pressure-Physics]]** - ⭐ Understanding pressure effects (NEW)
 - **[[Espresso-Dialing-In-Framework]]** - ⭐ Science-based optimization (NEW)
+- **[[Bloom-Phase-Temperature-Optimization]]** - ⭐ Temperature effects on degassing and extraction (v8.0 NEW)
+- **[[Turbulent-vs-Laminar-Flow-in-Espresso]]** - ⭐ Fluid dynamics and extraction quality (v8.0 NEW)
+- **[[Puck-Preparation-Science]]** - ⭐ Distribution, tamping, and uniformity (v8.0 NEW)
+- **[[Pre-Infusion-Pressure-Profiling]]** - ⭐ Advanced espresso extraction control (v8.0 NEW)
+- **[[Flow-Rate-Control-Techniques]]** - ⭐ Precision brewing through flow management (v8.0 NEW)
+- **[[Temperature-Stability-in-Brewing]]** - ⭐ Thermal management for consistency (v8.0 NEW)
+- **[[Pressure-Pulse-Brewing]]** - ⭐ Oscillating pressure for enhanced extraction (v8.0 NEW)
+- **[[Agitation-Impact-on-Extraction]]** - ⭐ Stirring, swirling, and turbulence effects (v8.0 NEW)
+- **[[Bypass-Water-Calculation]]** - ⭐ Understanding brew strength through dilution (v8.0 NEW)
 
 **Learning Path**:
 1. **NEW: Brewing-Physics-Immersion-vs-Percolation for foundational understanding**
-2. **NEW: The-Bloom-Phase-CO2-Release for percolation brewing**
+2. **NEW: The-Bloom-Phase-CO2-Release and Bloom-Phase-Temperature-Optimization for percolation brewing**
 3. **NEW: Method-Specific-Extraction-Optimization for practical application**
-4. Advanced: Pour-Over-Technique-Physics and AeroPress-Pressure-Physics
+4. Advanced: Pour-Over-Technique-Physics, AeroPress-Pressure-Physics, Flow-Rate-Control-Techniques
+5. Espresso: Puck-Preparation-Science → Pre-Infusion-Pressure-Profiling → Turbulent-vs-Laminar-Flow
 
 ---
 
@@ -384,17 +403,43 @@ As you learn and experiment:
 - **[[Espresso-Machine-Heating-Systems]]** - ⭐ Physics of temperature control (NEW)
 - **[[Filter-Material-Science]]** - ⭐ Paper vs. metal vs. cloth (NEW)
 - **[[Scale-Precision-and-Brewing-Accuracy]]** - ⭐ Measurement importance (NEW)
+- **[[Grinder-Burr-Geometry-Analysis]]** - ⭐ Flat vs. conical design and performance (v8.0 NEW)
+- **[[Espresso-Machine-Temperature-PID-Control]]** - ⭐ Precision thermal management (v8.0 NEW)
+- **[[Water-Filtration-Systems-Comparison]]** - ⭐ Optimizing mineral content for coffee (v8.0 NEW)
+- **[[Brewing-Device-Heat-Retention]]** - ⭐ Thermal mass and material properties (v8.0 NEW)
+- **[[Pressure-Profiling-Equipment-Guide]]** - ⭐ Technology for advanced espresso control (v8.0 NEW)
 
 **Learning Path**:
-1. **NEW: Espresso-Machine-Heating-Systems for espresso equipment**
-2. **NEW: Filter-Material-Science for filtration understanding**
-3. **NEW: Scale-Precision-and-Brewing-Accuracy for measurement standards**
+1. **NEW: Grinder-Burr-Geometry-Analysis for grinding fundamentals**
+2. **NEW: Espresso-Machine-Temperature-PID-Control for temperature precision**
+3. **NEW: Water-Filtration-Systems-Comparison for water optimization**
+4. Advanced: Pressure-Profiling-Equipment-Guide for extraction control
 
 ---
 
-**Last Updated**: 2025-11-06
-**Total Notes**: 60+ comprehensive references (20 NEW additions)
-**Coverage**: Foundation through advanced topics across nine domains
-**Recent Additions**: 20 Tier 1 priority notes from content gap analysis
+### 🌍 Origin Profiles
+
+**Focus**: Geographic terroir, regional characteristics, and origin-specific genetics
+
+- **[[Ethiopia-Terroir-and-Varietals]]** - ⭐ Birthplace of Arabica, heirloom diversity (v8.0 NEW)
+- **[[Colombia-Regional-Profiles]]** - ⭐ Diverse microclimates and balanced coffees (v8.0 NEW)
+- **[[Kenya-SL-Varieties-Deep-Dive]]** - ⭐ Genetic excellence and intense acidity (v8.0 NEW)
+- **[[Guatemala-Microclimate-Analysis]]** - ⭐ Volcanic diversity and regional character (v8.0 NEW)
+- **[[Panama-Gesha-Origins]]** - ⭐ The $1,000/lb coffee phenomenon (v8.0 NEW)
+- **[[Yemen-Historical-Coffee-Genetics]]** - ⭐ Mocha port and ancient cultivation (v8.0 NEW)
+- **[[Java-Heirloom-Preservation]]** - ⭐ Historic varieties and conservation efforts (v8.0 NEW)
+
+**Learning Path**:
+1. Start with Ethiopia-Terroir-and-Varietals for Arabica's origins and genetic diversity
+2. Explore Colombia-Regional-Profiles for balanced, consistent quality understanding
+3. Study Kenya-SL-Varieties-Deep-Dive for extreme acidity and SL genetics
+4. Advanced: Panama-Gesha-Origins, Yemen-Historical-Coffee-Genetics for specialty/historical perspectives
+
+---
+
+**Last Updated**: 2025-11-08
+**Total Notes**: 90+ comprehensive references (30 NEW v8.0 additions)
+**Coverage**: Foundation through advanced topics across ten domains
+**Recent Additions**: v8.0 "Knowledge Density" - 30 Tier 1 priority scientific references with 100% verified citations
 
 *Navigate using links above, or explore the folder structure in Scientific References/*

@@ -12,7 +12,10 @@ success-rate: 82
 avg-rating: 4.7
 tags: [recipe-profile, siphon, vacuum-pot, theatrical, clean-cup]
 relationships:
-  requires: [[Siphon Coffee Maker]], [[Grinder]], [[Heat Source]]
+  requires:
+    - "[[Siphon Coffee Maker]]"
+    - "[[Grinder]]"
+    - "[[Heat Source]]"
 ---
 
 # 📖 Recipe: Siphon (Vacuum Pot) Recipe

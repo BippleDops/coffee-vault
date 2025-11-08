@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca El Injerto
 country: [[Origins/Guatemala]]
 region: [[Origins/Guatemala-Huehuetenango]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1874
 varieties: Bourbon-Pacamara-Geisha-Java-Pache-Maragogipe
 processing-methods: Washed-Natural-Honey-Anaerobic-Experimental

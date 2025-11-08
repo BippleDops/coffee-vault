@@ -5,7 +5,7 @@ protocol: <% tp.system.suggester(["SCA", "COE", "CQI", "Informal", "Custom", "Pr
 session-type: <% tp.system.suggester(["Formal Cupping", "Comparison", "Blind Cupping", "Training", "Evaluation", "Competition", "Casual"], ["formal-cupping", "comparison", "blind-cupping", "training", "evaluation", "competition", "casual"]) %>
 location: <% tp.system.prompt("Location", "Home") %>
 status: active
-tags: [cupping-session, <% tp.date.now("YYYY-MM") %>]
+tags: "[cupping-session, <%  tp.date.now("YYYY-MM")  %>]"
 ---
 
 # ☕ Cupping Session - <% tp.date.now("MMMM DD, YYYY") %>

@@ -12,7 +12,10 @@ success-rate: 92
 avg-rating: 4.5
 tags: [recipe-profile, kalita-wave, pour-over, flat-bed, consistent]
 relationships:
-  requires: [[Kalita Wave]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[Kalita Wave]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: Kalita Wave Classic Recipe

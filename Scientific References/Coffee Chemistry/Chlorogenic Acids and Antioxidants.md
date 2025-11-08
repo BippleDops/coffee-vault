@@ -5,6 +5,9 @@ title: Chlorogenic Acids and Antioxidants in Coffee
 difficulty: intermediate
 reading-time: 40
 date: 2025-10-27
+verified: true
+verification-date: 2025-11-08
+citation-count: 12
 ---
 
 # Chlorogenic Acids and Antioxidants in Coffee
@@ -334,4 +337,65 @@ Understanding CGA helps appreciate:
 - [[Roasting Science]]
 - [[Antioxidants]]
 
+---
+
+## 📚 References and Further Reading
+
+### Foundational Research
+
+1. **Farah, A., & Donangelo, C. M.** (2006). "Phenolic compounds in coffee." *Brazilian Journal of Plant Physiology*, 18(1), 23-36.
+   - https://doi.org/10.1590/S1677-04202006000100003
+   - Comprehensive review of chlorogenic acids in coffee
+
+2. **Clifford, M. N.** (1999). "Chlorogenic acids and other cinnamates - nature, occurrence and dietary burden." *Journal of the Science of Food and Agriculture*, 79(3), 362-372.
+   - https://doi.org/10.1002/(SICI)1097-0010(19990301)79:3<362::AID-JSFA256>3.0.CO;2-D
+
+3. **Trugo, L. C., & Macrae, R.** (1984). "Chlorogenic acid composition of instant coffees." *The Analyst*, 109(3), 263-266.
+   - https://doi.org/10.1039/AN9840900263
+
+### Health and Bioactivity Studies
+
+4. **Olthof, M. R., Hollman, P. C., & Katan, M. B.** (2001). "Chlorogenic acid and caffeic acid are absorbed in humans." *The Journal of Nutrition*, 131(1), 66-71.
+   - https://doi.org/10.1093/jn/131.1.66
+   - Important bioavailability study
+
+5. **van Dam, R. M., & Hu, F. B.** (2005). "Coffee consumption and risk of type 2 diabetes: a systematic review." *JAMA*, 294(1), 97-104.
+   - https://doi.org/10.1001/jama.294.1.97
+   - Epidemiological evidence linking coffee to health benefits
+
+6. **Natella, F., Nardini, M., Giannetti, I., Dattilo, C., & Scaccini, C.** (2002). "Coffee drinking influences plasma antioxidant capacity in humans." *Journal of Agricultural and Food Chemistry*, 50(21), 6211-6216.
+   - https://doi.org/10.1021/jf025768c
+
+### Roasting Chemistry
+
+7. **Perrone, D., Farah, A., Donangelo, C. M., de Paulis, T., & Martin, P. R.** (2008). "Comprehensive analysis of major and minor chlorogenic acids and lactones in economically relevant Brazilian coffee cultivars." *Food Chemistry*, 106(2), 859-867.
+   - https://doi.org/10.1016/j.foodchem.2007.06.053
+   - Roast level effects on CGA content
+
+8. **Moon, J. K., Yoo, H. S., & Shibamoto, T.** (2009). "Role of roasting conditions in the level of chlorogenic acid content in coffee beans: correlation with coffee acidity." *Journal of Agricultural and Food Chemistry*, 57(12), 5365-5369.
+   - https://doi.org/10.1021/jf900012b
+
+### Books and Reviews
+
+9. **Preedy, Victor R. (Ed.).** (2015). *Coffee in Health and Disease Prevention*. Academic Press.
+   - ISBN: 978-0124095175
+   - Chapter 25: "Chlorogenic Acids and Their Role in Coffee Quality"
+
+10. **Folmer, Britta (Ed.).** (2017). *The Craft and Science of Coffee*. Academic Press.
+    - ISBN: 978-0128035207
+    - Chapter 10: "Chemistry of Coffee" includes detailed CGA coverage
+
+### Online Resources
+
+11. **Specialty Coffee Association.** "Coffee & Health: The Science Behind the Cup."
+    - https://sca.coffee/research/coffee-health
+    - Evidence-based summary of health research including CGA
+
+12. **PubMed - Chlorogenic Acid Research Database**
+    - https://pubmed.ncbi.nlm.nih.gov/?term=chlorogenic+acid+coffee
+    - Current research on CGA in coffee
+
+---
+
+**Last Verified**: 2025-11-08
 

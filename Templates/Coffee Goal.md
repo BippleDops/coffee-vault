@@ -5,7 +5,7 @@ target-date: <% tp.system.prompt("Target completion date (YYYY-MM-DD)", tp.date.
 status: <% tp.system.suggester(["Planned", "In Progress", "Paused", "Completed", "Abandoned"], ["planned", "in-progress", "paused", "completed", "abandoned"]) %>
 created-date: <% tp.date.now("YYYY-MM-DD") %>
 priority: <% tp.system.suggester(["Low", "Medium", "High", "Critical"], ["low", "medium", "high", "critical"]) %>
-tags: [coffee-goal, <% tp.frontmatter["goal-type"] %>]
+tags: "[coffee-goal, <%  tp.frontmatter["goal-type"]  %>]"
 ---
 
 # 🎯 Goal: <% tp.system.prompt("Goal title", "Coffee Goal") %>

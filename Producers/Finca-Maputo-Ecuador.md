@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Maputo
 country: [[Origins/Ecuador]]
 region: [[Origins/Ecuador-Loja]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1920s
 varieties: Typica-Caturra-Bourbon-Sidra-Geisha
 processing-methods: Washed-Natural-Honey-Anaerobic-Experimental

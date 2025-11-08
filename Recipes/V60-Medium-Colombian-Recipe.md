@@ -12,7 +12,10 @@ success-rate: 95
 avg-rating: 4.5
 tags: [recipe-profile, v60, colombia, medium-roast, balanced]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Medium Colombian Recipe

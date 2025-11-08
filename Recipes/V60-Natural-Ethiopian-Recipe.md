@@ -12,7 +12,10 @@ success-rate: 92
 avg-rating: 4.6
 tags: [recipe-profile, v60, ethiopia, natural-process, fruity]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Natural Ethiopian Recipe

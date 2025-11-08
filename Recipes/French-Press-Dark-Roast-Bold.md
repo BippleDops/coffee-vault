@@ -12,7 +12,11 @@ success-rate: 96
 avg-rating: 4.6
 tags: [recipe-profile, french-press, dark-roast, bold, full-body, immersion]
 relationships:
-  requires: [[French Press]], [[Grinder]], [[Kettle]], [[Timer]]
+  requires:
+    - "[[French Press]]"
+    - "[[Grinder]]"
+    - "[[Kettle]]"
+    - "[[Timer]]"
   works-with: [[Dark Roast]], [[Indonesia]], [[Brazil]], [[Italian Roast]]
   complements: [[Full Body]], [[Low Acidity]], [[Bold Flavor]]
 ---

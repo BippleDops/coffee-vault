@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca La Esperanza
 country: [[Origins/Colombia]]
 region: [[Origins/Colombia-Huila]]
-type: Family-Farm
+producer-category: Family-Farm
 established: 1985
 varieties: Caturra-Castillo-Colombia-Pink-Bourbon
 processing-methods: Washed-Honey-Experimental

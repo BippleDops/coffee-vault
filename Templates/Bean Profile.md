@@ -1,7 +1,7 @@
 ---
 type: bean-profile
 bean-name: <% tp.system.prompt("Bean name") %>
-roaster: [[<% tp.system.prompt("Roaster name") %>]]
+roaster: "[[<%  tp.system.prompt("Roaster name")  %>]"]
 origin: <% tp.system.suggester(["Ethiopia", "Colombia", "Guatemala", "Kenya", "Brazil", "Costa Rica", "Peru", "Honduras", "Rwanda", "Panama"], ["Ethiopia", "Colombia", "Guatemala", "Kenya", "Brazil", "Costa Rica", "Peru", "Honduras", "Rwanda", "Panama"]) %>
 roast-level: <% tp.system.suggester(["Light", "Medium", "Dark", "Medium-Light", "Medium-Dark"], ["light", "medium", "dark", "medium-light", "medium-dark"]) %>
 roast-date: <% tp.system.prompt("Roast date (YYYY-MM-DD)", tp.date.now("YYYY-MM-DD", -7)) %>
@@ -9,7 +9,7 @@ purchase-date: <% tp.date.now("YYYY-MM-DD") %>
 price: <% tp.system.prompt("Price paid ($)", "18.00") %>
 weight: <% tp.system.prompt("Weight (grams)", "340") %>
 status: active
-tags: [bean-profile, <% tp.frontmatter.origin.toLowerCase() %>]
+tags: "[bean-profile, <%  tp.frontmatter.origin.toLowerCase()  %>]"
 ---
 
 # 🫘 <% tp.frontmatter["bean-name"] %>
@@ -106,6 +106,6 @@ WHERE beans = this.bean-name OR contains(beans, this.bean-name)
 **Related Beans**: (manually link similar beans here)
 - 
 
-**Origin Profile**: [[Origins/<% tp.frontmatter.origin %>]]  
+**Origin Profile**: "[[Origins/<%  tp.frontmatter.origin  %>]"]  
 **Roaster Profile**: <% tp.frontmatter.roaster %>
 

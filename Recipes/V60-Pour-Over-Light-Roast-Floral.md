@@ -12,7 +12,11 @@ success-rate: 92
 avg-rating: 4.8
 tags: [recipe-profile, v60, light-roast, floral, ethiopian, clarity, pour-over]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]], [[Scale]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
+    - "[[Scale]]"
   works-with: [[Ethiopia]], [[Kenya]], [[Panama]], [[Geisha]]
   complements: [[Light Roast]], [[Washed Processing]], [[Floral Notes]]
 ---

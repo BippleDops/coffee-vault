@@ -12,7 +12,10 @@ success-rate: 85
 avg-rating: 4.8
 tags: [recipe-profile, turkish-coffee, ibrik, cezve, traditional, ultra-fine, unfiltered, cultural]
 relationships:
-  requires: [[Turkish Coffee Pot]], [[Grinder]], [[Heat Source]]
+  requires:
+    - "[[Turkish Coffee Pot]]"
+    - "[[Grinder]]"
+    - "[[Heat Source]]"
   works-with: [[Turkey]], [[Middle East]], [[Dark Roast]], [[Spiced Coffee]]
   complements: [[Turkish Coffee Culture]], [[Cardamom]], [[Unfiltered Coffee]]
 ---

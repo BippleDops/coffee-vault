@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Bukonzo Joint Cooperative
 country: [[Origins/Uganda]]
 region: [[Origins/Uganda-Rwenzori-Mountains]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 1999
 varieties: SL14-SL28-Nyasaland-Typica
 processing-methods: Washed-Natural

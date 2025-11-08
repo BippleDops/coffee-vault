@@ -1,7 +1,7 @@
 ---
 date: <% tp.date.now("YYYY-MM-DD") %>
 day-of-week: <% tp.date.now("dddd") %>
-tags: [daily-note, <% tp.date.now("YYYY/MM") %>]
+tags: "[daily-note, <%  tp.date.now("YYYY/MM")  %>]"
 ---
 
 # <% moment(tp.file.title,'YYYY-MM-DD').format("dddd, MMMM DD, YYYY") %>

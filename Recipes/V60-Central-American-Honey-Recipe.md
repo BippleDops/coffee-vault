@@ -12,7 +12,10 @@ success-rate: 90
 avg-rating: 4.6
 tags: [recipe-profile, v60, honey-process, central-america, sweet]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Central American Honey Process Recipe

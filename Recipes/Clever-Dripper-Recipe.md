@@ -12,7 +12,9 @@ success-rate: 94
 avg-rating: 4.6
 tags: [recipe-profile, clever-dripper, immersion-pour-over-hybrid, easy, consistent]
 relationships:
-  requires: [[Clever Dripper]], [[Grinder]]
+  requires:
+    - "[[Clever Dripper]]"
+    - "[[Grinder]]"
 ---
 
 # 📖 Recipe: Clever Dripper Recipe

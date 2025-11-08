@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Daterra Coffee Estates
 country: [[Origins/Brazil]]
 region: [[Origins/Brazil-Cerrado-Mineiro]]
-type: Estate-Corporate
+producer-category: Estate-Corporate
 established: 1980
 varieties: Yellow-Bourbon-Mundo-Novo-Catuai-Experimental
 processing-methods: Natural-Pulped-Natural-Experimental-Innovative

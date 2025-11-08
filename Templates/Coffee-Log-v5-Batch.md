@@ -1,16 +1,16 @@
 ---
 <%*
-// ============================================
-// TEMPLATE: Batch Coffee Log v5.0
-// VERSION: 5.0.0
-// PURPOSE: Log multiple brewing sessions at once
-// FEATURES: Multi-session tracking, comparison notes
-// ============================================
+# ============================================
+# TEMPLATE: Batch Coffee Log v5.0
+# VERSION: 5.0.0
+# PURPOSE: Log multiple brewing sessions at once
+# FEATURES: Multi-session tracking, comparison notes
+# ============================================
 
 const currentDate = tp.file.creation_date("YYYY-MM-DD");
 const currentTime = tp.file.creation_date("HH:mm");
 
-// Get current bean
+# Get current bean
 const currentBean = dv.pages('"Beans Library"')
   .where(p => p.type === "bean-profile" && p["is-current"])
   .array()[0];
@@ -18,7 +18,7 @@ const currentBean = dv.pages('"Beans Library"')
 const beanName = currentBean ? currentBean.name : "";
 const sessions = [1, 2, 3]; // Default 3 sessions, user can add more
 
-// Generate tags
+# Generate tags
 const tagInference = await tp.user.require("Scripts/tag-inference.js").catch(() => null);
 const tags = tagInference 
   ? tagInference.inferTags({

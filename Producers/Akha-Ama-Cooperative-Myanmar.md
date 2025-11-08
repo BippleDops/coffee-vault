@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Akha Ama Coffee Cooperative
 country: [[Origins/Myanmar]]
 region: [[Origins/Myanmar-Eastern-Shan-State]]
-type: Ethnic-Minority-Social-Enterprise
+producer-category: Ethnic-Minority-Social-Enterprise
 established: 2010
 varieties: Catimor-SL34-Caturra-Typica
 processing-methods: Washed-Natural-Honey-Anaerobic

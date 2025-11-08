@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca El Bosque
 country: [[Origins/Guatemala]]
 region: [[Origins/Guatemala-Antigua]]
-type: Family-Farm
+producer-category: Family-Farm
 established: 1890
 varieties: Bourbon-Caturra-Catuai-Pacamara
 processing-methods: Washed-Honey

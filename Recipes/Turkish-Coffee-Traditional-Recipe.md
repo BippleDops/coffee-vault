@@ -12,7 +12,9 @@ success-rate: 78
 avg-rating: 4.6
 tags: [recipe-profile, turkish, traditional, cultural, concentrated]
 relationships:
-  requires: [[Turkish Coffee Pot (Cezve/Ibrik)]], [[Grinder]]
+  requires:
+    - "[[Turkish Coffee Pot (Cezve/Ibrik)]]"
+    - "[[Grinder]]"
 ---
 
 # 📖 Recipe: Turkish Coffee Traditional Recipe

@@ -12,7 +12,11 @@ success-rate: 90
 avg-rating: 4.8
 tags: [recipe-profile, aeropress, inverted, light-roast, clean, precision]
 relationships:
-  requires: [[AeroPress]], [[Grinder]], [[Kettle]], [[Scale]]
+  requires:
+    - "[[AeroPress]]"
+    - "[[Grinder]]"
+    - "[[Kettle]]"
+    - "[[Scale]]"
   works-with: [[Light Roast]], [[Ethiopia]], [[Kenya]], [[Washed Processing]]
   complements: [[Clean Finish]], [[Bright Acidity]], [[Clarity]]
 ---

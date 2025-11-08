@@ -65,7 +65,7 @@ sub-category: <% tp.system.prompt("Sub-category (optional)") %>
 # sub-category: string - Secondary classification
 
 # --- ARRAY FIELDS (Multiple Values) ---
-tags: [<% tp.frontmatter.type %>, <% tp.frontmatter.category %>, <% tp.date.now("YYYY-MM") %>, year:<% tp.date.now("YYYY") %>]
+tags: "[<%  tp.frontmatter.type %>, <% tp.frontmatter.category %>, <% tp.date.now("YYYY-MM") %>, year: "<%  tp.date.now("YYYY")   %>]""
 # tags: array[string] - Multiple labels for filtering and search
 # Convention: Use kebab-case, include temporal tags (YYYY-MM, year:YYYY)
 # Example: [bean-profile, ethiopia, natural-process, 2025-01, year:2025]
@@ -81,7 +81,7 @@ keywords: []
 # --- LINK FIELDS (Relationships) ---
 relationships:
   # Single link (one-to-one)
-  uses-equipment: [[<% tp.system.prompt("Equipment name (optional)", "") %>]]
+  uses-equipment: "[[<%  tp.system.prompt("Equipment name (optional)", "")  %>]"]
   # uses-equipment: link - Reference to single related entity
 
   # Multiple links (one-to-many)
@@ -92,7 +92,7 @@ relationships:
   related-logs: []
   # related-logs: array[link] - Backlinks to related logs
 
-  parent-entity: [[<% tp.system.prompt("Parent entity (optional)", "") %>]]
+  parent-entity: "[[<%  tp.system.prompt("Parent entity (optional)", "")  %>]"]
   # parent-entity: link - Hierarchical parent reference
 
   child-entities: []

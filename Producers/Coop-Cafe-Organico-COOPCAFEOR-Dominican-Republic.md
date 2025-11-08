@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Cooperativa de Café Orgánico (COOPCAFEOR)
 country: [[Origins/Dominican-Republic]]
 region: [[Origins/Dominican-Republic-Barahona]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 1989
 varieties: Typica-Caturra-Catuai-Bourbon
 processing-methods: Washed-Natural-Honey

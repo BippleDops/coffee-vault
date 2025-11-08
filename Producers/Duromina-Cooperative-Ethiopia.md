@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Duromina Coffee Farmers Cooperative
 country: [[Origins/Ethiopia]]
 region: [[Origins/Ethiopia-Yirgacheffe]]
-type: Cooperative-Washing-Station
+producer-category: Cooperative-Washing-Station
 established: 2002
 varieties: Heirloom-Ethiopian-Landraces
 processing-methods: Natural-Washed-Experimental

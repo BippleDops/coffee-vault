@@ -12,7 +12,10 @@ success-rate: 92
 avg-rating: 4.2
 tags: [recipe-profile, french-press, quick-method, weekday, practical]
 relationships:
-  requires: [[French Press]], [[Grinder]], [[Kettle]]
+  requires:
+    - "[[French Press]]"
+    - "[[Grinder]]"
+    - "[[Kettle]]"
 ---
 
 # 📖 Recipe: French Press Quick 3-Minute Method

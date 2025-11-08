@@ -1,29 +1,29 @@
 ---
 <%*
-// ============================================
-// TEMPLATE: Coffee Log v5.0 - Context-Aware
-// VERSION: 5.0.0
-// PURPOSE: Intelligent coffee logging with context awareness
-// FEATURES: Context detection, ML suggestions, photo integration
-// ============================================
+# ============================================
+# TEMPLATE: Coffee Log v5.0 - Context-Aware
+# VERSION: 5.0.0
+# PURPOSE: Intelligent coffee logging with context awareness
+# FEATURES: Context detection, ML suggestions, photo integration
+# ============================================
 
-// ============================================
-// SECTION 1: Configuration and Imports
-// ============================================
+# ============================================
+# SECTION 1: Configuration and Imports
+# ============================================
 
 const currentDate = tp.file.creation_date("YYYY-MM-DD");
 const currentTime = tp.file.creation_date("HH:mm");
 const currentHour = parseInt(currentTime.split(':')[0]);
 const currentDay = new Date().getDay();
 
-// Load ML models and utilities
+# Load ML models and utilities
 const ml = await tp.user.require("Scripts/advanced-ml-models.js").catch(() => null);
 const stats = await tp.user.require("Scripts/stats-utils.js").catch(() => null);
 const tagInference = await tp.user.require("Scripts/tag-inference.js").catch(() => null);
 
-// ============================================
-// SECTION 2: Context Detection
-// ============================================
+# ============================================
+# SECTION 2: Context Detection
+# ============================================
 
 function detectTimeOfDay(hour) {
   if (hour >= 5 && hour < 12) return "morning";
@@ -33,8 +33,8 @@ function detectTimeOfDay(hour) {
 }
 
 function detectWeather() {
-  // Would integrate with weather API in production
-  // For now, prompt user
+  # Would integrate with weather API in production
+  # For now, prompt user
   return null; // Will prompt user
 }
 
@@ -47,7 +47,7 @@ function detectCurrentBean() {
     return beans[0];
   }
   
-  // Find most recent bean
+  # Find most recent bean
   const recentBeans = dv.pages('"Beans Library"')
     .where(p => p.type === "bean-profile")
     .sort(p => p.date, 'desc')
@@ -75,9 +75,9 @@ function getContextualSuggestions(bean, timeOfDay, weather, physiologicalState) 
   return predictor.predict(context, historicalData);
 }
 
-// ============================================
-// SECTION 3: Auto-Generated Values
-// ============================================
+# ============================================
+# SECTION 3: Auto-Generated Values
+# ============================================
 
 const timeOfDay = detectTimeOfDay(currentHour);
 const currentBean = detectCurrentBean();
@@ -86,7 +86,7 @@ const beanOrigin = currentBean ? currentBean.origin : "";
 const beanRoastLevel = currentBean ? currentBean["roast-level"] : "";
 const beanProcessing = currentBean ? currentBean.processing : "";
 
-// Get suggestions if available
+# Get suggestions if available
 const suggestions = currentBean ? getContextualSuggestions(
   currentBean,
   timeOfDay,
@@ -94,9 +94,9 @@ const suggestions = currentBean ? getContextualSuggestions(
   null  // Physiological - would be detected
 ) : null;
 
-// ============================================
-// SECTION 4: Generate Frontmatter
-// ============================================
+# ============================================
+# SECTION 4: Generate Frontmatter
+# ============================================
 
 const frontmatter = {
   type: "coffee-log",
@@ -105,31 +105,31 @@ const frontmatter = {
   "brew-method": "",
   rating: "",
   
-  // Context (Coffee Vault 5.0)
+  # Context (Coffee Vault 5.0)
   "time-of-day": timeOfDay,
   "weather-condition": null, // Will prompt
   "ambient-temperature": null,
   "ambient-humidity": null,
   
-  // Physiological Context (Coffee Vault 5.0)
+  # Physiological Context (Coffee Vault 5.0)
   "energy-level": "",
   "hydration-level": "",
   "sleep-hours-previous": null,
   "meal-timing": "",
   
-  // Suggested Parameters (if available)
+  # Suggested Parameters (if available)
   dose: suggestions ? Math.round(suggestions.dose) : null,
   water: suggestions ? Math.round(suggestions.water) : null,
   "water-temperature": suggestions ? Math.round(suggestions.temperature) : null,
   "grind-size": suggestions ? suggestions.grindSize : "",
   
-  // Metadata
+  # Metadata
   "session-number": null,
   "days-off-roast": currentBean && currentBean["roast-date"] 
     ? Math.floor((new Date(currentDate) - new Date(currentBean["roast-date"])) / (1000 * 60 * 60 * 24))
     : null,
   
-  // Media (Coffee Vault 5.0)
+  # Media (Coffee Vault 5.0)
   "photo-links": [],
   "video-link": null,
   "audio-notes-link": null,
@@ -137,15 +137,15 @@ const frontmatter = {
   tags: []
 };
 
-// Generate tags
+# Generate tags
 if (tagInference) {
   const inferredTags = tagInference.inferTags(frontmatter);
   frontmatter.tags = tagInference.mergeTags(frontmatter.tags, inferredTags);
 }
 
-// ============================================
-// SECTION 5: Template Output
-// ============================================
+# ============================================
+# SECTION 5: Template Output
+# ============================================
 
 let output = `---
 type: ${frontmatter.type}

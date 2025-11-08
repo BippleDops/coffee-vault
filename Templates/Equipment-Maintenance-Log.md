@@ -4,7 +4,7 @@ equipment: <% tp.system.prompt("Equipment name") %>
 maintenance-type: <% tp.system.suggester(["Cleaning", "Calibration", "Burr Replacement", "Descaling", "General Maintenance", "Repair"], ["cleaning", "calibration", "burr-replacement", "descaling", "general-maintenance", "repair"]) %>
 date: <% tp.date.now("YYYY-MM-DD") %>
 cost: <% tp.system.prompt("Cost (if any)", "0") %>
-tags: [equipment-maintenance, <% tp.date.now("YYYY-MM") %>]
+tags: "[equipment-maintenance, <%  tp.date.now("YYYY-MM")  %>]"
 ---
 
 # 🔧 Equipment Maintenance: <% tp.frontmatter.equipment %>
@@ -17,7 +17,7 @@ tags: [equipment-maintenance, <% tp.date.now("YYYY-MM") %>]
 
 ## 🛠️ Maintenance Details
 
-**Equipment**: [[Equipment/<% tp.frontmatter.equipment %>]]  
+**Equipment**: "[[Equipment/<%  tp.frontmatter.equipment  %>]"]  
 **Last Maintenance**: (Check equipment profile)  
 **Maintenance Frequency**: (From equipment profile)  
 **Total Uses Since Last**: 
@@ -125,7 +125,7 @@ tags: [equipment-maintenance, <% tp.date.now("YYYY-MM") %>]
 
 ## 🔗 Related
 
-**Equipment Profile**: [[Equipment/<% tp.frontmatter.equipment %>]]  
+**Equipment Profile**: "[[Equipment/<%  tp.frontmatter.equipment  %>]"]  
 **Previous Maintenance**: (Link to last maintenance log)  
 **Maintenance Schedule**: [[Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard]]
 

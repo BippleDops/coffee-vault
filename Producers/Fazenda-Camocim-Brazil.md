@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Fazenda Camocim
 country: [[Origins/Brazil]]
 region: [[Origins/Brazil-Cerrado-Mineiro]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1974
 varieties: Yellow-Bourbon-Catuai-Mundo-Novo-Catucai
 processing-methods: Natural-Pulped-Natural-Anaerobic-Washed

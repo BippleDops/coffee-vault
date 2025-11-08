@@ -20,9 +20,8 @@ brew-time: <% tp.system.prompt("Brew time (MM:SS)", "2:45") %>
 rating: <% tp.system.prompt("Rating (1-5)", "4.0") %>
 cups-brewed: <% tp.system.prompt("Cups brewed", "1") %>
 status: active
-tags: [coffee-log, <% tp.frontmatter.origin.toLowerCase() %>, <% tp.frontmatter["brew-method"] %>, <% tp.date.now("YYYY-MM") %>, year:<% tp.date.now("YYYY") %>]
-relationships:
-  uses-bean: [[<% tp.frontmatter.beans %>]]
+tags: "[coffee-log, <%  tp.frontmatter.origin.toLowerCase() %>, <% tp.frontmatter["brew-method"] %>, <% tp.date.now("YYYY-MM") %>, year: "<%  tp.date.now("YYYY")   %>]""
+relationships: "uses-bean: "[[<%   tp.frontmatter.beans   %>]""]
 ---
 
 # ☕ Coffee Log: <% tp.frontmatter.beans %> | <% tp.frontmatter.date %>
@@ -35,9 +34,9 @@ relationships:
 
 ## 🫘 Bean Information
 
-**Bean**: [[<% tp.frontmatter.beans %>]]  
+**Bean**: "[[<%  tp.frontmatter.beans  %>]"]  
 **Roaster**: <% tp.frontmatter.roaster %>  
-**Origin**: [[Origins/<% tp.frontmatter.origin %>]]  
+**Origin**: "[[Origins/<%  tp.frontmatter.origin  %>]"]  
 **Roast Level**: <% tp.frontmatter["roast-level"] %>  
 **Days Off Roast**: (Check bean profile)
 

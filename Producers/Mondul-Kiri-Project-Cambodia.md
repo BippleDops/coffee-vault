@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Mondulkiri Project
 country: [[Origins/Cambodia]]
 region: Mondulkiri-Province
-type: Social-Enterprise-Cooperative
+producer-category: Social-Enterprise-Cooperative
 established: 2012
 varieties: Typica-Catimor-Bourbon
 processing-methods: Washed-Natural-Experimental

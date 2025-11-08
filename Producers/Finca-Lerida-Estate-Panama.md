@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Lerida Estate
 country: [[Origins/Panama]]
 region: [[Origins/Panama-Boquete]]
-type: Private-Estate
+producer-category: Private-Estate
 established: 1922
 varieties: Geisha-Typica-Caturra-Catuai
 processing-methods: Washed-Natural-Honey-Anaerobic

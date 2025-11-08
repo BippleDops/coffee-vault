@@ -1,17 +1,17 @@
 <%*
-// SCA Cupping Form Template
-// Based on official SCA protocols
-// Version: 1.0.0
+# SCA Cupping Form Template
+# Based on official SCA protocols
+# Version: 1.0.0
 
 const tp = this.app.plugins.plugins.templater.templater.current_functions_object;
 const currentDate = tp.file.creation_date("YYYY-MM-DD");
 const currentTime = tp.file.creation_date("HH:mm");
 const fileName = `Cupping-${currentDate}-${tp.file.creation_date("HHmmss")}`;
 
-// Rename file
+# Rename file
 await tp.file.rename(fileName);
 
-// Input cupping session details
+# Input cupping session details
 const roaster = await tp.system.prompt("Roaster/Producer", "");
 const sampleId = await tp.system.prompt("Sample ID/Code", "");
 const coffeeType = await tp.system.prompt("Coffee Type (variety/region)", "");

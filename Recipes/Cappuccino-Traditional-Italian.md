@@ -12,7 +12,11 @@ success-rate: 90
 avg-rating: 4.8
 tags: [recipe-profile, cappuccino, espresso, milk-drink, traditional, italian, microfoam]
 relationships:
-  requires: [[Espresso Machine]], [[Grinder]], [[Steam Wand]], [[Milk Pitcher]]
+  requires:
+    - "[[Espresso Machine]]"
+    - "[[Grinder]]"
+    - "[[Steam Wand]]"
+    - "[[Milk Pitcher]]"
   works-with: [[Medium Roast]], [[Dark Roast]], [[Italian Blend]], [[Brazil]]
   complements: [[Espresso]], [[Milk Steaming]], [[Latte Art]]
 ---

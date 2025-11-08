@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Thanh Ha Cooperative
 country: [[Origins/Vietnam]]
 region: [[Origins/Vietnam-Da-Lat]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 2005
 varieties: Catimor-Typica-Bourbon-Caturra
 processing-methods: Washed-Natural-Honey-Anaerobic

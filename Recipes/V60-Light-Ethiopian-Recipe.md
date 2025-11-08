@@ -12,7 +12,10 @@ success-rate: 100
 avg-rating: 4.7
 tags: [recipe-profile, v60, ethiopia, light-roast]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Light Ethiopian Recipe

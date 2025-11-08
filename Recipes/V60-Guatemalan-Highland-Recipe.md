@@ -12,7 +12,10 @@ success-rate: 91
 avg-rating: 4.5
 tags: [recipe-profile, v60, guatemala, highland, chocolate-citrus]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Guatemalan Highland Recipe

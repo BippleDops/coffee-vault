@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Arabica Lam Dong Cooperative
 country: [[Origins/Vietnam]]
 region: [[Origins/Vietnam-Lam-Dong]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 2010
 varieties: Catimor-Bourbon-Typica-Caturra
 processing-methods: Washed-Honey-Natural-Experimental

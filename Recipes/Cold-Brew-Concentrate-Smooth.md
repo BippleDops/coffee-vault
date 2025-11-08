@@ -12,7 +12,11 @@ success-rate: 95
 avg-rating: 4.7
 tags: [recipe-profile, cold-brew, concentrate, smooth, low-acidity, cold-coffee, immersion]
 relationships:
-  requires: [[Cold Brew Maker]], [[Grinder]], [[Scale]], [[Pitcher]]
+  requires:
+    - "[[Cold Brew Maker]]"
+    - "[[Grinder]]"
+    - "[[Scale]]"
+    - "[[Pitcher]]"
   works-with: [[Brazil]], [[Colombia]], [[Indonesia]], [[Medium Roast]]
   complements: [[Dark Roast]], [[Low Acidity]], [[Chocolate Notes]], [[Smooth Body]]
 ---

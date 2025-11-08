@@ -12,7 +12,10 @@ success-rate: 92
 avg-rating: 4.8
 tags: [recipe-profile, chemex, iced-coffee, flash-brew, summer, entertaining]
 relationships:
-  requires: [[Chemex]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[Chemex]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: Chemex Iced Flash Brew Recipe

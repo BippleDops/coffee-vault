@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Terrazas del Bosque
 country: [[Origins/Mexico]]
 region: [[Origins/Mexico-Chiapas]]
-type: Family-Farm
+producer-category: Family-Farm
 established: 1952
 varieties: Typica-Bourbon-Caturra-Mundo-Novo
 processing-methods: Washed-Natural-Honey

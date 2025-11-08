@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Muruyuge Washing Station
 country: [[Origins/Burundi]]
 region: [[Origins/Burundi-Kayanza]]
-type: Cooperative-Washing-Station
+producer-category: Cooperative-Washing-Station
 established: 2008
 varieties: Bourbon-Jackson-Mibirizi
 processing-methods: Washed-Double-Fermentation

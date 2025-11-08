@@ -12,7 +12,10 @@ success-rate: 85
 avg-rating: 4.3
 tags: [recipe-profile, moka-pot, stovetop, italian, concentrated]
 relationships:
-  requires: [[Moka Pot]], [[Grinder]], [[Stove]]
+  requires:
+    - "[[Moka Pot]]"
+    - "[[Grinder]]"
+    - "[[Stove]]"
 ---
 
 # 📖 Recipe: Moka Pot Classic Recipe

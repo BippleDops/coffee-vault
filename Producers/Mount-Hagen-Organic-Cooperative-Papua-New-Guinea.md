@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Mount Hagen Organic Cooperative
 country: [[Origins/Papua-New-Guinea]]
 region: [[Origins/Papua-New-Guinea-Western-Highlands]]
-type: Cooperative
+producer-category: Cooperative
 established: 2009
 varieties: Typica-Arusha-Bourbon
 processing-methods: Washed

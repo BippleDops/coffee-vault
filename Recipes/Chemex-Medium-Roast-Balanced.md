@@ -12,7 +12,11 @@ success-rate: 94
 avg-rating: 4.7
 tags: [recipe-profile, chemex, medium-roast, balanced, clean, central-american]
 relationships:
-  requires: [[Chemex]], [[Grinder]], [[Gooseneck Kettle]], [[Scale]]
+  requires:
+    - "[[Chemex]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
+    - "[[Scale]]"
   works-with: [[Colombia]], [[Costa Rica]], [[Guatemala]], [[Honduras]]
   complements: [[Medium Roast]], [[Washed Processing]], [[Balanced Profile]]
 ---

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Sidama Coffee Farmers Cooperative Union (SCFCU)
 country: [[Origins/Ethiopia]]
 region: [[Origins/Ethiopia-Sidama]]
-type: Cooperative-Union
+producer-category: Cooperative-Union
 established: 2001
 varieties: Ethiopian-Heirloom-Landraces-74110-74112
 processing-methods: Washed-Natural

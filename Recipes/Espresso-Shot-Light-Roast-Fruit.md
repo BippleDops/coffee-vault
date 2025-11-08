@@ -12,7 +12,11 @@ success-rate: 88
 avg-rating: 4.7
 tags: [recipe-profile, espresso, light-roast, fruit-forward, clarity, specialty, third-wave]
 relationships:
-  requires: [[Espresso Machine]], [[Grinder]], [[Scale]], [[Tamper]]
+  requires:
+    - "[[Espresso Machine]]"
+    - "[[Grinder]]"
+    - "[[Scale]]"
+    - "[[Tamper]]"
   works-with: [[Ethiopia]], [[Kenya]], [[Colombia]], [[Geisha]]
   complements: [[Light Roast]], [[Natural Processing]], [[Washed Processing]], [[Fruit Notes]]
 ---

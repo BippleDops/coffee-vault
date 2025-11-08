@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Nyeri Women's Coffee Cooperative
 country: [[Origins/Kenya]]
 region: [[Origins/Kenya-Central-Highlands]]
-type: Women-Only-Cooperative
+producer-category: Women-Only-Cooperative
 established: 2015
 varieties: SL28-SL34-Ruiru-11-Batian
 processing-methods: Washed-Kenyan-Double-Fermentation

@@ -12,7 +12,10 @@ success-rate: 94
 avg-rating: 4.4
 tags: [recipe-profile, french-press, immersion, full-body, classic]
 relationships:
-  requires: [[French Press]], [[Grinder]], [[Kettle]]
+  requires:
+    - "[[French Press]]"
+    - "[[Grinder]]"
+    - "[[Kettle]]"
 ---
 
 # 📖 Recipe: French Press Classic Recipe

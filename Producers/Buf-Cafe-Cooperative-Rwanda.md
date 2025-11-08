@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Buf Café Cooperative
 country: [[Origins/Rwanda]]
 region: [[Origins/Rwanda-Western-Province]]
-type: Cooperative-Washing-Station
+producer-category: Cooperative-Washing-Station
 established: 2004
 varieties: Bourbon-Red-Bourbon
 processing-methods: Washed-Double-Fermentation

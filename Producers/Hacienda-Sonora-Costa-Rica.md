@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Hacienda Sonora
 country: [[Origins/Costa-Rica]]
 region: [[Origins/Costa-Rica-Central-Valley]]
-type: Estate-Micromill
+producer-category: Estate-Micromill
 established: 1968
 varieties: Caturra-Villa-Sarchi-SL28-Geisha-Catuai-Typica
 processing-methods: Honey-Black-Red-Yellow-White-Natural-Washed-Experimental

@@ -26,7 +26,7 @@ cherry-ripeness: <% tp.system.prompt("Ripeness distribution (%)", "90% ripe, 10%
 defect-rate: <% tp.system.prompt("Estimated defect rate (%)", "< 1") %>
 
 # Processing Location
-farm-producer: [[<% tp.system.prompt("Farm/Producer name (optional)", "") %>]]
+farm-producer: "[[<%  tp.system.prompt("Farm/Producer name (optional)", "")  %>]"]
 processing-station: <% tp.system.prompt("Processing station/mill name", "") %>
 location-altitude: <% tp.system.prompt("Altitude (masl)", "") %>
 location-region: <% tp.system.prompt("Region", "") %>
@@ -147,16 +147,15 @@ success-rating: <% tp.system.prompt("Success rating (1-5)", "4") %>
 would-repeat: <% tp.system.suggester(["Yes", "With modifications", "No"], ["yes", "with-modifications", "no"]) %>
 
 # Relationships
-relationships:
-  source-beans: [[<% tp.system.prompt("Bean profile link (optional)", "") %>]]
-  producer: [[<% tp.frontmatter["farm-producer"] %>]]
+relationships: "source-beans: "[[<%   tp.system.prompt("Bean profile link (optional)", "")   %>]""]
+  producer: "[[<%  tp.frontmatter["farm-producer"]  %>]"]
   related-experiments: []
   cupping-sessions: []
   scientific-references: []
   coffee-logs: []
 
 # Metadata
-tags: [processing-playbook, <% tp.frontmatter["processing-method"] %>, <% tp.frontmatter["coffee-origin"].toLowerCase() %>, <% tp.frontmatter["experiment-type"] %>, <% tp.date.now("YYYY-MM") %>]
+tags: "[processing-playbook, <%  tp.frontmatter["processing-method"] %>, <% tp.frontmatter["coffee-origin"].toLowerCase() %>, <% tp.frontmatter["experiment-type"] %>, <% tp.date.now("YYYY-MM")  %>]"
 priority: <% tp.system.suggester(["high", "medium", "low"], ["high", "medium", "low"]) %>
 
 ---

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Los Pirineos
 country: [[Origins/El-Salvador]]
 region: [[Origins/El-Salvador-Apaneca-Ilamatepec]]
-type: Family-Farm-Estate
+producer-category: Family-Farm-Estate
 established: 1870
 varieties: Pacamara-Bourbon-Pacas-Caturra
 processing-methods: Washed-Honey-Natural-Experimental

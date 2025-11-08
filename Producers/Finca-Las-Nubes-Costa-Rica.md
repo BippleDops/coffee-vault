@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Las Nubes
 country: [[Origins/Costa-Rica]]
 region: [[Origins/Costa-Rica-Tarrazu]]
-type: Family-Estate-Micro-Mill
+producer-category: Family-Estate-Micro-Mill
 established: 1950-micro-mill-2004
 varieties: Caturra-Catuai-Villa-Sarchi-SL28-Geisha
 processing-methods: Washed-Honey-White-Yellow-Red-Black-Natural

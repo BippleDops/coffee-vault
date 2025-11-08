@@ -12,7 +12,10 @@ success-rate: 94
 avg-rating: 4.7
 tags: [recipe-profile, v60, iced-coffee, flash-brew, summer]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Iced Coffee (Flash Brew)

@@ -12,7 +12,9 @@ success-rate: 85
 avg-rating: 4.7
 tags: [recipe-profile, aeropress, competition, advanced, precise]
 relationships:
-  requires: [[AeroPress]], [[Grinder]]
+  requires:
+    - "[[AeroPress]]"
+    - "[[Grinder]]"
 ---
 
 # 📖 Recipe: AeroPress Competition Style Recipe

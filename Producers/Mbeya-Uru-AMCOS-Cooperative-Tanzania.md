@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Mbeya Uru AMCOS Cooperative
 country: [[Origins/Tanzania]]
 region: [[Origins/Tanzania-Southern-Highlands]]
-type: Cooperative-Washing-Station
+producer-category: Cooperative-Washing-Station
 established: 2011
 varieties: Bourbon-Kent-Nyara
 processing-methods: Washed

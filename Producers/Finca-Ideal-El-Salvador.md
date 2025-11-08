@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Ideal
 country: [[Origins/El-Salvador]]
 region: [[Origins/El-Salvador-Apaneca-Ilamatepec]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1928
 varieties: Bourbon-Pacamara-Pacas-Red-Catuai
 processing-methods: Washed-Honey-Natural-Anaerobic

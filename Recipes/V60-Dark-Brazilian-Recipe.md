@@ -12,7 +12,10 @@ success-rate: 90
 avg-rating: 4.3
 tags: [recipe-profile, v60, brazil, dark-roast, chocolatey]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Dark Brazilian Recipe

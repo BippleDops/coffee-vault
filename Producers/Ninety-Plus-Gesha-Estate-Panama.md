@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Ninety Plus Gesha Estate
 country: [[Origins/Panama]]
 region: [[Origins/Panama-Boquete]]
-type: Estate
+producer-category: Estate
 established: 2006
 varieties: Geisha
 processing-methods: Experimental-Innovative

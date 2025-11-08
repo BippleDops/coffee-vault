@@ -1,13 +1,13 @@
 {
-  "version": "7.0.0",
-  "codename": "Living Data",
+  "version": "8.0.0",
+  "codename": "Knowledge Density - Foundation",
   "releaseDate": "2025-11-08",
   "majorFeatures": [
-    "Real-Time Data Extraction Pipeline (405ms, 5x faster than target)",
-    "Unified Visualization Infrastructure (32KB JS, 19KB CSS)",
-    "Intelligent Automation Suite (link suggester, duplicate detector, auto-tagger)",
-    "Quality of Life Improvements (FAB, keyboard shortcuts, template variants)",
-    "Developer Experience (comprehensive docs, APIs, testing framework)"
+    "Scientific Content Index (180 references catalogued, gaps identified)",
+    "Origins Index (59 profiles, 98.3% coverage)",
+    "Quality Framework (citation standards, verification methodology)",
+    "Content Roadmap (phased expansion to 209 references)",
+    "Infrastructure for systematic knowledge expansion"
   ],
   "compatibility": {
     "backwardCompatible": true,
@@ -16,30 +16,33 @@
     "recommendedPlugins": ["Calendar", "Tasks", "Advanced Tables"]
   },
   "metrics": {
-    "totalFiles": 1150,
-    "scientificReferences": 179,
+    "totalFiles": 1152,
+    "scientificReferences": 180,
+    "originProfiles": 59,
     "templates": 21,
     "automationScripts": 48,
     "cssLines": 9800,
     "personas": 4,
-    "documentationPages": 27,
+    "documentationPages": 29,
     "visualizationsUpdated": "1/25",
     "dataExtractionSpeed": "405ms",
-    "testsPassing": "30/30"
+    "testsPassing": "30/30",
+    "coverageAnalysis": "86% (180/209 target)"
   },
   "upgrade": {
-    "from": "6.0.0",
+    "from": "7.0.0",
     "breakingChanges": false,
     "migrationRequired": false,
-    "estimatedUpgradeTime": "15 minutes",
+    "estimatedUpgradeTime": "5 minutes",
     "backupRecommended": true
   },
   "next": {
-    "version": "7.1.0",
+    "version": "8.1.0",
     "plannedFeatures": [
-      "Visualization rollout phase 1 (8 visualizations)",
-      "Accessibility score 80+",
-      "All visualization categories represented"
+      "Add 14 Brewing Science references",
+      "Add 10 Equipment Science references",
+      "Systematic citation additions",
+      "Link integrity improvements"
     ],
     "estimatedRelease": "Q1 2026"
   }

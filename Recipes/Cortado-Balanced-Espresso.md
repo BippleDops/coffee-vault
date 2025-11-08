@@ -12,7 +12,11 @@ success-rate: 93
 avg-rating: 4.9
 tags: [recipe-profile, cortado, espresso, milk-drink, balanced, spanish, gibraltar, specialty]
 relationships:
-  requires: [[Espresso Machine]], [[Grinder]], [[Steam Wand]], [[Gibraltar Glass]]
+  requires:
+    - "[[Espresso Machine]]"
+    - "[[Grinder]]"
+    - "[[Steam Wand]]"
+    - "[[Gibraltar Glass]]"
   works-with: [[Medium Roast]], [[Espresso]], [[Light Roast]], [[Milk Steaming]]
   complements: [[Cappuccino]], [[Flat White]], [[Espresso Drinks]], [[Specialty Coffee]]
 ---

@@ -12,7 +12,11 @@ success-rate: 91
 avg-rating: 4.9
 tags: [recipe-profile, flat-white, espresso, microfoam, velvet, australian, new-zealand, specialty, latte-art]
 relationships:
-  requires: [[Espresso Machine]], [[Grinder]], [[Steam Wand]], [[Milk Pitcher]]
+  requires:
+    - "[[Espresso Machine]]"
+    - "[[Grinder]]"
+    - "[[Steam Wand]]"
+    - "[[Milk Pitcher]]"
   works-with: [[Medium Roast]], [[Light Roast]], [[Espresso]], [[Milk Steaming]]
   complements: [[Cappuccino]], [[Cortado]], [[Latte]], [[Latte Art]], [[Microfoam]]
 ---

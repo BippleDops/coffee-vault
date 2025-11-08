@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Caranavi Coffee Cooperative
 country: [[Origins/Bolivia]]
 region: [[Origins/Bolivia-Yungas]]
-type: Indigenous-Smallholder-Cooperative
+producer-category: Indigenous-Smallholder-Cooperative
 established: 2007
 varieties: Typica-Caturra-Catuai-Java
 processing-methods: Washed-Natural-Honey

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Sophia
 country: [[Origins/Nicaragua]]
 region: [[Origins/Nicaragua-Jinotega]]
-type: Family-Estate-Micro-Mill
+producer-category: Family-Estate-Micro-Mill
 established: 1920-micro-mill-2007
 varieties: Java-Pacamara-Bourbon-Caturra-Maracaturra
 processing-methods: Washed-Honey-Natural-Anaerobic-Carbonic-Maceration

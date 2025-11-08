@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Kangocho Washing Station
 country: [[Origins/Kenya]]
 region: [[Origins/Kenya-Nyeri]]
-type: Washing-Station-Cooperative
+producer-category: Washing-Station-Cooperative
 established: 1968
 varieties: SL28-SL34-Ruiru-11-Batian
 processing-methods: Washed-Double-Fermentation

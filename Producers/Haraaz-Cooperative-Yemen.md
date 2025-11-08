@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Haraaz Cooperative
 country: [[Origins/Yemen]]
 region: [[Origins/Yemen-Haraaz]]
-type: Village-Cooperative
+producer-category: Village-Cooperative
 established: 1998
 varieties: Yemeni-Heirlooms-Tuffahi-Dawairi-Udaini
 processing-methods: Natural-Traditional-Dry

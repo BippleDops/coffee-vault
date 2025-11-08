@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca San Sebastián
 country: [[Origins/Guatemala]]
 region: [[Origins/Guatemala-Huehuetenango]]
-type: Family-Farm
+producer-category: Family-Farm
 established: 1920
 varieties: Bourbon-Caturra-Catuai-Typica
 processing-methods: Washed-Honey-Natural

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Northern Coffee Corporation
 country: [[Origins/Zambia]]
 region: [[Origins/Zambia-Northern-Province]]
-type: Smallholder-Cooperative-Network
+producer-category: Smallholder-Cooperative-Network
 established: 2004
 varieties: Bourbon-Catimor-Kent-Agaro
 processing-methods: Washed-Natural

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Kivu Coffee Company
 country: [[Origins/Democratic-Republic-of-Congo]]
 region: [[Origins/DRC-South-Kivu]]
-type: Social-Enterprise-Washing-Station-Network
+producer-category: Social-Enterprise-Washing-Station-Network
 established: 2010
 varieties: Bourbon-Jackson-Blue-Mountain
 processing-methods: Washed

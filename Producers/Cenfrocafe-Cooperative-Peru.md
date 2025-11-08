@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: CENFROCAFE Cooperative
 country: [[Origins/Peru]]
 region: [[Origins/Peru-Cajamarca]]
-type: Cooperative
+producer-category: Cooperative
 established: 1999
 varieties: Typica-Caturra-Bourbon-Catimor-Pache
 processing-methods: Washed-Natural-Honey

@@ -12,7 +12,11 @@ success-rate: 94
 avg-rating: 4.8
 tags: [recipe-profile, pour-over, iced, japanese-method, flash-brew, cold, summer, specialty]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Scale]], [[Ice]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Scale]]"
+    - "[[Ice]]"
   works-with: [[Light Roast]], [[Ethiopia]], [[Kenya]], [[Fruit Notes]]
   complements: [[Iced Coffee]], [[Summer Brewing]], [[Cold Coffee]], [[Clarity]]
 ---

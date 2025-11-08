@@ -52,14 +52,13 @@ materials-needed: []
 mentor-coach: <% tp.system.prompt("Mentor/coach (optional)", "Self-directed") %>
 
 # Relationships
-relationships:
-  related-goals: [[<% tp.system.prompt("Related goal (optional)", "") %>]]
+relationships: "related-goals: "[[<%   tp.system.prompt("Related goal (optional)", "")   %>]""]
   experiments: []
   practice-logs: []
   reference-materials: []
 
 # Metadata
-tags: [training-plan, <% tp.frontmatter["training-category"] %>, <% tp.frontmatter["skill-level"] %>-to-<% tp.frontmatter["target-level"] %>, <% tp.date.now("YYYY-MM") %>]
+tags: "[training-plan, <%  tp.frontmatter["training-category"] %>, <% tp.frontmatter["skill-level"] %>-to-<% tp.frontmatter["target-level"] %>, <% tp.date.now("YYYY-MM")  %>]"
 priority: <% tp.system.suggester(["high", "medium", "low"], ["high", "medium", "low"]) %>
 
 ---

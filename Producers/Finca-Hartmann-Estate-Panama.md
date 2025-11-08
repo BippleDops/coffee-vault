@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Hartmann Estate
 country: [[Origins/Panama]]
 region: [[Origins/Panama-Volcan-Baru]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1912
 varieties: Geisha-Typica-Caturra-Catuai-Pacamara-Bourbon
 processing-methods: Washed-Natural-Honey

@@ -11,7 +11,7 @@
  * - Streamlined property set
  */
 
-// Smart time-based defaults
+# Smart time-based defaults
 let currentHour = parseInt(tp.date.now("HH"));
 let defaultMethod = currentHour < 12 ? "pour-over" : "espresso";
 let defaultTemp = currentHour < 12 ? "200" : "195";
@@ -41,7 +41,7 @@ rating: <% tp.system.suggester(
   false,
   "Quick rating"
 ) %>
-roaster: [[<% tp.system.prompt("Roaster (optional)", "") %>]]
+roaster: "[[<%  tp.system.prompt("Roaster (optional)", "")  %>]"]
 origin: <% tp.system.suggester(
   ["🌍 Ethiopia", "🌍 Colombia", "🌍 Guatemala", "🌍 Kenya", "🌍 Brazil", "🌍 Other/Skip"],
   ["Ethiopia", "Colombia", "Guatemala", "Kenya", "Brazil", ""],
@@ -61,7 +61,7 @@ ratio: 1:16
 cups-brewed: 1
 flavor-notes: []
 would-rebuy: false
-tags: [coffee, mobile, quick-log, <% tp.date.now("YYYY/MM") %>]
+tags: "[coffee, mobile, quick-log, <%  tp.date.now("YYYY/MM")  %>]"
 status: draft
 photo: ""
 session-type: routine

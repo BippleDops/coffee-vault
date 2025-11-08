@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Mzuzu Coffee Cooperative
 country: [[Origins/Malawi]]
 region: [[Origins/Malawi-Northern-Region]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 2003
 varieties: Agaro-Geisha-Catimor-Mundo-Novo
 processing-methods: Washed-Natural-Honey

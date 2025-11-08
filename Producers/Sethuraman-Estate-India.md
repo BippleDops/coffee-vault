@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Sethuraman Estate
 country: [[Origins/India]]
 region: [[Origins/India-Chikmagalur]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1930
 varieties: Kent-S795-Cauvery-SLN-9
 processing-methods: Washed-Natural-Monsoon-Honey

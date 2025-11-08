@@ -6,7 +6,7 @@ country: <% tp.system.prompt("Country") %>
 region: <% tp.system.prompt("Region/Province", "") %>
 status: active
 date: <% tp.date.now("YYYY-MM-DD") %>
-tags: [producer-profile, <% tp.frontmatter.country.toLowerCase() %>]
+tags: "[producer-profile, <%  tp.frontmatter.country.toLowerCase()  %>]"
 ---
 
 # 🌱 <% tp.frontmatter.name %>

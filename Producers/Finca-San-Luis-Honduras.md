@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca San Luis
 country: [[Origins/Honduras]]
 region: [[Origins/Honduras-Marcala]]
-type: Family-Farm
+producer-category: Family-Farm
 established: 1920
 varieties: Catuai-Pacas-Lempira-IHCAFE-90
 processing-methods: Washed-Honey-Natural-Experimental

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Ngozi Washing Station
 country: [[Origins/Burundi]]
 region: [[Origins/Burundi-Ngozi-Province]]
-type: Washing-Station-Cooperative
+producer-category: Washing-Station-Cooperative
 established: 2008
 varieties: Bourbon-Jackson-Mibirizi
 processing-methods: Washed-Traditional-Double-Fermentation

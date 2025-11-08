@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Cooperativa Capucas (COCAFCAL)
 country: [[Origins/Honduras]]
 region: [[Origins/Honduras-La-Paz]]
-type: Cooperative
+producer-category: Cooperative
 established: 1999
 varieties: Bourbon-Caturra-Catuai-Lempira-IHCAFE-90-Pacas
 processing-methods: Washed-Honey-Natural

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Kona Pacific Farmers Cooperative
 country: [[Origins/United-States]]
 region: [[Origins/Hawaii-Kona]]
-type: Cooperative
+producer-category: Cooperative
 established: 1910
 varieties: Kona-Typica-Guatemalan-Typica-Red-Catuai-Yellow-Caturra
 processing-methods: Washed

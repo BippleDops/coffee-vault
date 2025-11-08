@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Korgua Cooperative
 country: [[Origins/Papua-New-Guinea]]
 region: [[Origins/PNG-Eastern-Highlands]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 1997
 varieties: Typica-Arusha-Bourbon
 processing-methods: Washed-Natural

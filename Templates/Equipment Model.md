@@ -4,7 +4,7 @@ name: <% tp.system.prompt("Equipment model name") %>
 brand: <% tp.system.prompt("Brand/Manufacturer") %>
 category: <% tp.system.suggester(["Grinder", "Brewer", "Kettle", "Scale", "Roaster", "Espresso Machine", "Accessories", "Filter", "Other"], ["grinder", "brewer", "kettle", "scale", "roaster", "espresso-machine", "accessories", "filter", "other"]) %>
 status: active
-tags: [equipment-model, <% tp.frontmatter.brand.toLowerCase() %>, <% tp.frontmatter.category %>]
+tags: "[equipment-model, <%  tp.frontmatter.brand.toLowerCase() %>, <% tp.frontmatter.category  %>]"
 ---
 
 # ⚙️ <% tp.frontmatter.brand %> <% tp.frontmatter.name %>

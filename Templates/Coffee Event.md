@@ -5,7 +5,7 @@ date: <% tp.date.now("YYYY-MM-DD") %>
 name: <% tp.system.prompt("Event/Cafe/Experience name") %>
 location: <% tp.system.prompt("Location") %>
 status: active
-tags: [coffee-event, <% tp.frontmatter["event-type"] %>, <% tp.date.now("YYYY-MM") %>]
+tags: "[coffee-event, <%  tp.frontmatter["event-type"] %>, <% tp.date.now("YYYY-MM")  %>]"
 ---
 
 # ☕ <% tp.frontmatter.name %>

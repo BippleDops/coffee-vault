@@ -12,7 +12,10 @@ success-rate: 93
 avg-rating: 4.7
 tags: [recipe-profile, v60, kenya, light-roast, bright-acidity]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Kenya AA Recipe

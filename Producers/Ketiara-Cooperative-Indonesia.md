@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Ketiara Cooperative
 country: [[Origins/Indonesia]]
 region: [[Origins/Indonesia-Sumatra-Gayo]]
-type: Womens-Cooperative
+producer-category: Womens-Cooperative
 established: 2009
 varieties: Timor-Hybrid-Ateng-Gayo-1-Lini-S-795
 processing-methods: Washed-Wet-Hulled-Giling-Basah

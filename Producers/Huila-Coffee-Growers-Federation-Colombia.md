@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Huila Coffee Growers Federation
 country: [[Origins/Colombia]]
 region: [[Origins/Colombia-Huila]]
-type: Regional-Federation-Cooperative-Network
+producer-category: Regional-Federation-Cooperative-Network
 established: 1959
 varieties: Caturra-Castillo-Colombia-Typica-Bourbon-Exotic
 processing-methods: Washed-Natural-Honey-Experimental

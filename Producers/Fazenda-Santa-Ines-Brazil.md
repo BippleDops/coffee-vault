@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Fazenda Santa Inês
 country: [[Origins/Brazil]]
 region: [[Origins/Brazil-Sul-de-Minas]]
-type: Estate-Family
+producer-category: Estate-Family
 established: 1979
 varieties: Yellow-Bourbon-Red-Bourbon-Catuai-Mundo-Novo
 processing-methods: Natural-Pulped-Natural-Experimental

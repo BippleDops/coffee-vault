@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Agricafe Cooperative
 country: [[Origins/Bolivia]]
 region: [[Origins/Bolivia-Yungas]]
-type: Cooperative
+producer-category: Cooperative
 established: 2007
 varieties: Typica-Caturra-Catuai
 processing-methods: Washed-Natural-Experimental

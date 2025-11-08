@@ -12,7 +12,9 @@ success-rate: 99
 avg-rating: 4.8
 tags: [recipe-profile, troubleshooting, pour-over, guide, reference, problem-solving]
 relationships:
-  requires: [[Pour-Over Equipment]], [[Grinder]]
+  requires:
+    - "[[Pour-Over Equipment]]"
+    - "[[Grinder]]"
 ---
 
 # 📖 Pour-Over Troubleshooting Guide

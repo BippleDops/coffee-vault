@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Baan Mae Sa Mai Village
 country: [[Origins/Thailand]]
 region: [[Origins/Thailand-Chiang-Mai]]
-type: Village-Cooperative
+producer-category: Village-Cooperative
 established: 2012
 varieties: Catimor-Caturra-Typica-Geisha
 processing-methods: Washed-Natural-Honey-Anaerobic

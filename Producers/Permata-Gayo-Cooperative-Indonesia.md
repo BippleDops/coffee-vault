@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Permata Gayo Cooperative
 country: [[Origins/Indonesia]]
 region: [[Origins/Indonesia-Sumatra-Gayo]]
-type: Cooperative
+producer-category: Cooperative
 established: 2005
 varieties: Timor-Hybrid-Ateng-Catimor
 processing-methods: Wet-Hulled-Washed-Natural

@@ -12,7 +12,11 @@ success-rate: 92
 avg-rating: 4.6
 tags: [recipe-profile, moka-pot, stovetop, italian, medium-roast, classic, traditional]
 relationships:
-  requires: [[Moka Pot]], [[Grinder]], [[Stovetop]], [[Scale]]
+  requires:
+    - "[[Moka Pot]]"
+    - "[[Grinder]]"
+    - "[[Stovetop]]"
+    - "[[Scale]]"
   works-with: [[Italy]], [[Brazil]], [[Colombia]], [[Medium Roast]]
   complements: [[Italian Coffee Culture]], [[Stovetop Brewing]], [[Espresso Alternative]]
 ---

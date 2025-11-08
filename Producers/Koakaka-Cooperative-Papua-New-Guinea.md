@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Koakaka Coffee Cooperative
 country: [[Origins/Papua-New-Guinea]]
 region: [[Origins/Papua-New-Guinea-Western-Highlands]]
-type: Highland-Cooperative
+producer-category: Highland-Cooperative
 established: 2008
 varieties: Arusha-Bourbon-Typica-Blue-Mountain
 processing-methods: Washed-Semi-Washed-Natural

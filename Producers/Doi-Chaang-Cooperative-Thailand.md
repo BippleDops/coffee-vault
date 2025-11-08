@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Doi Chaang Coffee Cooperative
 country: [[Origins/Thailand]]
 region: [[Origins/Thailand-Northern-Highlands]]
-type: Tribal-Cooperative
+producer-category: Tribal-Cooperative
 established: 2003
 varieties: Catimor-Caturra-Typica-SL28
 processing-methods: Washed-Natural-Honey-Anaerobic

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Mavis Bank Coffee Factory
 country: [[Origins/Jamaica]]
 region: [[Origins/Jamaica-Blue-Mountains]]
-type: Cooperative-Processor
+producer-category: Cooperative-Processor
 established: 1923
 varieties: Jamaica-Blue-Mountain-Typica
 processing-methods: Washed-Traditional

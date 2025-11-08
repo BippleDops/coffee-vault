@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: CARCAFE (Cauca Regional Coffee Cooperative)
 country: [[Origins/Colombia]]
 region: [[Origins/Colombia-Cauca]]
-type: Cooperative-Indigenous-Communities
+producer-category: Cooperative-Indigenous-Communities
 established: 2005
 varieties: Caturra-Castillo-Colombia-Typica-Geisha
 processing-methods: Washed-Honey-Natural-Anaerobic

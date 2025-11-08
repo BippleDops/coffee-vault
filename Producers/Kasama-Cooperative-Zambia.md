@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Kasama Coffee Cooperative
 country: [[Origins/Zambia]]
 region: [[Origins/Zambia-Northern-Province]]
-type: Smallholder-Cooperative
+producer-category: Smallholder-Cooperative
 established: 2004
 varieties: Bourbon-Catimor-Kenya-SL28-Mundo-Novo
 processing-methods: Washed-Natural-Honey

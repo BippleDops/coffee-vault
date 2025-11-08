@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Vista Hermosa
 country: [[Origins/El-Salvador]]
 region: [[Origins/El-Salvador-Apaneca-Ilamatepec]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1932
 varieties: Bourbon-Pacamara-Pacas-SL28
 processing-methods: Honey-Natural-Washed-Experimental

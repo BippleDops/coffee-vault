@@ -4,7 +4,7 @@ brew-method: <% tp.system.prompt("Brewing method") %>
 difficulty: <% tp.system.suggester(["Beginner", "Intermediate", "Advanced"], ["beginner", "intermediate", "advanced"]) %>
 source: <% tp.system.prompt("Source (URL, book, or person)", "Personal experimentation") %>
 date-created: <% tp.date.now("YYYY-MM-DD") %>
-tags: [brewing-guide, <% tp.frontmatter["brew-method"].toLowerCase().replace(/\s+/g, '-') %>]
+tags: "[brewing-guide, <%  tp.frontmatter["brew-method"].toLowerCase().replace(/\s+/g, '-')  %>]"
 ---
 
 # ☕ <% tp.frontmatter["brew-method"] %> Brewing Guide

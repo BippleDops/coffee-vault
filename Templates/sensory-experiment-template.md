@@ -73,13 +73,13 @@ passed: ""
 # Relationships
 relationships:
   related-beans: []
-  related-training-plan: [[<% tp.system.prompt("Training plan (optional)", "") %>]]
+  related-training-plan: "[[<%  tp.system.prompt("Training plan (optional)", "")  %>]"]
   scientific-references: []
-  previous-session: [[<% tp.system.prompt("Previous session (optional)", "") %>]]
-  next-session: [[<% tp.system.prompt("Next planned session (optional)", "") %>]]
+  previous-session: "[[<%  tp.system.prompt("Previous session (optional)", "")  %>]"]
+  next-session: "[[<%  tp.system.prompt("Next planned session (optional)", "")  %>]"]
 
 # Metadata
-tags: [sensory-experiment, <% tp.frontmatter["experiment-type"] %>, <% tp.frontmatter["experience-level"] %>, <% tp.date.now("YYYY-MM") %>]
+tags: "[sensory-experiment, <%  tp.frontmatter["experiment-type"] %>, <% tp.frontmatter["experience-level"] %>, <% tp.date.now("YYYY-MM")  %>]"
 priority: <% tp.system.suggester(["high", "medium", "low"], ["high", "medium", "low"]) %>
 
 ---

@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Mavis Bank Central Factory
 country: [[Origins/Jamaica]]
 region: [[Origins/Jamaica-Blue-Mountains]]
-type: Cooperative-Processor
+producer-category: Cooperative-Processor
 established: 1923
 varieties: Typica-Blue-Mountain
 processing-methods: Washed

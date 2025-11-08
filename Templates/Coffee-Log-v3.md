@@ -1,23 +1,23 @@
 ---
 <%*
-// ============================================
-// TEMPLATE: Coffee Log Enhanced v3.0
-// VERSION: 3.0.0
-// PURPOSE: Daily coffee brewing session with intelligent suggestions
-// FOLLOWS: Template Framework Standards v3.0
-// ============================================
+# ============================================
+# TEMPLATE: Coffee Log Enhanced v3.0
+# VERSION: 3.0.0
+# PURPOSE: Daily coffee brewing session with intelligent suggestions
+# FOLLOWS: Template Framework Standards v3.0
+# ============================================
 
-// ============================================
-// SECTION 1: Configuration and Imports
-// ============================================
+# ============================================
+# SECTION 1: Configuration and Imports
+# ============================================
 
 const currentDate = tp.file.creation_date("YYYY-MM-DD");
 const currentTime = tp.file.creation_date("HH:mm");
 const stats = await tp.user.require("Scripts/stats-utils.js").catch(() => null);
 
-// ============================================
-// SECTION 2: Helper Functions
-// ============================================
+# ============================================
+# SECTION 2: Helper Functions
+# ============================================
 
 function calculateRatio(dose, water) {
   if (!dose || !water || isNaN(dose) || isNaN(water)) return "1:16.5";
@@ -66,11 +66,11 @@ function getDefaultBrewTime(brewMethod) {
   return times[brewMethod] ?? '3:00';
 }
 
-// ============================================
-// SECTION 3: Data Gathering and Suggestions
-// ============================================
+# ============================================
+# SECTION 3: Data Gathering and Suggestions
+# ============================================
 
-// Safely query recent coffee logs with Datacore/Dataview
+# Safely query recent coffee logs with Datacore/Dataview
 let recentLogs = [];
 let suggestedBean = "";
 let suggestedRoaster = "";
@@ -79,7 +79,7 @@ let suggestedWater = 300;
 let topMethods = ["V60", "Chemex", "Aeropress", "French Press", "Espresso"];
 
 try {
-  // Use Datacore if available, fallback to Dataview
+  # Use Datacore if available, fallback to Dataview
   const pages = dv?.pages('"Coffee Logs"')
     .where(p => p.type === "coffee-log")
     .sort(p => p.date, 'desc')
@@ -96,7 +96,7 @@ try {
     suggestedWater = lastLog.water ?? 300;
   }
 
-  // Calculate top brew methods
+  # Calculate top brew methods
   if (stats && pages.length > 0) {
     const methods = pages.map(p => p["brew-method"]).filter(m => m);
     const methodCounts = stats.frequencyDistribution(methods);
@@ -106,13 +106,13 @@ try {
     }
   }
 } catch (error) {
-  // Silently fallback to defaults
+  # Silently fallback to defaults
   console.log("Data query failed, using defaults");
 }
 
-// ============================================
-// SECTION 4: User Input with Smart Defaults
-// ============================================
+# ============================================
+# SECTION 4: User Input with Smart Defaults
+# ============================================
 
 const beanName = await tp.system.prompt("Bean name", suggestedBean || "Ethiopian Yirgacheffe");
 const roasterName = await tp.system.prompt("Roaster", suggestedRoaster || "Local Roaster");
@@ -150,9 +150,9 @@ const origin = await tp.system.suggester(
   ["Ethiopia", "Colombia", "Guatemala", "Kenya", "Brazil", "Costa Rica", "Peru", "Honduras", "Rwanda", "Panama", "Yemen", "Indonesia", ""]
 ) || "";
 
-// ============================================
-// SECTION 5: Property Initialization
-// ============================================
+# ============================================
+# SECTION 5: Property Initialization
+# ============================================
 
 const properties = {
   type: "coffee-log",

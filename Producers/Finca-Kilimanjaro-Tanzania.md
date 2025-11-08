@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca Kilimanjaro
 country: [[Origins/Tanzania]]
 region: [[Origins/Tanzania-Kilimanjaro]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1899
 varieties: Bourbon-Kent-Typica
 processing-methods: Washed

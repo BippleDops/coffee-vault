@@ -5,7 +5,7 @@ brew-method: <% tp.system.suggester(["V60", "Chemex", "Aeropress", "French Press
 created-date: <% tp.date.now("YYYY-MM-DD") %>
 recipe-author: <% tp.system.prompt("Recipe author (your name)", "Me") %>
 status: active
-tags: [recipe-profile, <% tp.frontmatter["brew-method"] %>]
+tags: "[recipe-profile, <%  tp.frontmatter["brew-method"]  %>]"
 ---
 
 # 📖 Recipe: <% tp.frontmatter.name %>

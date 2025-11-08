@@ -22,14 +22,14 @@ shared-attributes:
   origin: <% tp.system.prompt("Common origin (if applicable)", "") %>
   roaster: <% tp.system.prompt("Common roaster (if applicable)", "") %>
   category: <% tp.system.prompt("Common category (if applicable)", "") %>
-  tags: [batch-created, batch-<% tp.frontmatter["batch-id"] %>, <% tp.date.now("YYYY-MM") %>]
+  tags: "[batch-created, batch-<%  tp.frontmatter["batch-id"] %>, <% tp.date.now("YYYY-MM")  %>]"
 
 # Auto-linking Configuration
 auto-link:
   link-to-previous: <% tp.system.suggester(["Yes", "No"], [true, false]) %>
   # Should each entity link to the previous one in sequence?
 
-  parent-entity: [[<% tp.system.prompt("Parent entity (optional)", "") %>]]
+  parent-entity: "[[<%  tp.system.prompt("Parent entity (optional)", "")  %>]"]
   # Link all entities to a common parent
 
   sibling-linking: <% tp.system.suggester(["Full mesh", "Sequential only", "None"], ["full-mesh", "sequential", "none"]) %>
@@ -66,9 +66,9 @@ auto-link:
 ## 🚀 Batch Creation Script
 
 <%*
-// =============================================================================
-// MAIN BATCH CREATION LOGIC
-// =============================================================================
+# =============================================================================
+# MAIN BATCH CREATION LOGIC
+# =============================================================================
 
 const batchType = tp.frontmatter["batch-type"];
 const batchSize = parseInt(tp.frontmatter["batch-size"]);
@@ -76,17 +76,17 @@ const prefix = tp.frontmatter.prefix || "";
 const namingPattern = tp.frontmatter["naming-pattern"];
 const batchId = tp.frontmatter["batch-id"];
 
-// Get shared attributes
+# Get shared attributes
 const sharedOrigin = tp.frontmatter["shared-attributes"].origin || "";
 const sharedRoaster = tp.frontmatter["shared-attributes"].roaster || "";
 const sharedCategory = tp.frontmatter["shared-attributes"].category || "";
 
-// Auto-linking configuration
+# Auto-linking configuration
 const linkToPrevious = tp.frontmatter["auto-link"]["link-to-previous"];
 const parentEntity = tp.frontmatter["auto-link"]["parent-entity"];
 const siblingLinking = tp.frontmatter["auto-link"]["sibling-linking"];
 
-// Determine target folder based on entity type
+# Determine target folder based on entity type
 let targetFolder = "";
 let templateName = "";
 
@@ -124,16 +124,16 @@ switch(batchType) {
     templateName = "base-entity-template";
 }
 
-// =============================================================================
-// BATCH CREATION LOOP
-// =============================================================================
+# =============================================================================
+# BATCH CREATION LOOP
+# =============================================================================
 
 tR += `## 📋 Creating ${batchSize} Entities\n\n`;
 tR += `**Target Folder**: \`${targetFolder}\`\n`;
 tR += `**Template**: \`${templateName}\`\n\n`;
 tR += `---\n\n`;
 
-// Prompt for batch-specific details
+# Prompt for batch-specific details
 const batchPrompt = await tp.system.prompt(
   `Ready to create ${batchSize} ${batchType} entities. Continue?`,
   "yes"
@@ -144,13 +144,13 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
   tR += `### ✓ Batch Creation Confirmed\n\n`;
   tR += `Creating entities...\n\n`;
 
-  // Store created entity names for linking
+  # Store created entity names for linking
   let createdEntities = [];
 
-  // Loop to create each entity
+  # Loop to create each entity
   for (let i = 1; i <= batchSize; i++) {
 
-    // Generate entity name based on naming pattern
+    # Generate entity name based on naming pattern
     let entityName = "";
 
     switch(namingPattern) {
@@ -172,7 +172,7 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
         entityName = `Entity-${i}`;
     }
 
-    // Log entity creation
+    # Log entity creation
     tR += `${i}. **${entityName}**\n`;
     tR += `   - Type: ${batchType}\n`;
 
@@ -183,7 +183,7 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
       tR += `   - Roaster: ${sharedRoaster}\n`;
     }
 
-    // Show linking relationships
+    # Show linking relationships
     if (linkToPrevious && i > 1) {
       tR += `   - Previous: [[${createdEntities[i-2]}]]\n`;
     }
@@ -194,12 +194,12 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
     tR += `   - Batch ID: \`${batchId}\`\n`;
     tR += `\n`;
 
-    // Store entity name for linking
+    # Store entity name for linking
     createdEntities.push(entityName);
 
-    // NOTE: Actual file creation would happen here using tp.file.create_new()
-    // This template documents the batch structure; actual creation requires
-    // manual template application or custom script
+    # NOTE: Actual file creation would happen here using tp.file.create_new()
+    # This template documents the batch structure; actual creation requires
+    # manual template application or custom script
 
   } // End loop
 
@@ -207,7 +207,7 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
   tR += `### ✓ Batch Creation Complete\n\n`;
   tR += `Created ${batchSize} entities in \`${targetFolder}\`\n\n`;
 
-  // Generate linking summary
+  # Generate linking summary
   if (siblingLinking === "full-mesh") {
     tR += `### 🔗 Linking Strategy: Full Mesh\n\n`;
     tR += `Each entity should link to all other entities in the batch:\n\n`;
@@ -232,7 +232,7 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
     tR += `\n\n`;
   }
 
-  // Parent linking
+  # Parent linking
   if (parentEntity) {
     tR += `### 👨‍👧‍👦 Parent Entity Linking\n\n`;
     tR += `All entities should link to parent: ${parentEntity}\n\n`;
@@ -252,7 +252,7 @@ if (batchPrompt.toLowerCase() === "yes" || batchPrompt.toLowerCase() === "y") {
 ## 📊 Batch Entity List
 
 <%*
-// Generate a quick reference table
+# Generate a quick reference table
 tR += `\n| # | Entity Name | Type | Status |\n`;
 tR += `|---|-------------|------|--------|\n`;
 
@@ -387,7 +387,7 @@ tR += `\n`;
 For true automation, use a custom Templater script:
 
 ```javascript
-// Example: Create batch programmatically
+# Example: Create batch programmatically
 const createBatch = async (tp, batchConfig) => {
   for (let i = 1; i <= batchConfig.size; i++) {
     const fileName = `${batchConfig.prefix}-${i}`;

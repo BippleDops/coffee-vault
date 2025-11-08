@@ -12,7 +12,10 @@ success-rate: 88
 avg-rating: 4.2
 tags: [recipe-profile, v60, quick-method, beginner-friendly, weekday]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires:
+    - "[[V60 Dripper]]"
+    - "[[Grinder]]"
+    - "[[Gooseneck Kettle]]"
 ---
 
 # 📖 Recipe: V60 Quick 3-Pour Method

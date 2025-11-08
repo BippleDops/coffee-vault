@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Baba Budan Giri Estate
 country: [[Origins/India]]
 region: [[Origins/India-Karnataka-Chikmagalur]]
-type: Family-Estate
+producer-category: Family-Estate
 established: 1842
 varieties: Chandragiri-Kent-SLN-795-Catimor
 processing-methods: Washed-Honey-Monsoon-Process

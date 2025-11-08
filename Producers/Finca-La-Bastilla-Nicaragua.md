@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Finca La Bastilla
 country: [[Origins/Nicaragua]]
 region: [[Origins/Nicaragua-Matagalpa]]
-type: Family-Farm-Estate
+producer-category: Family-Farm-Estate
 established: 1908
 varieties: Caturra-Catuai-Pacamara-Maracaturra-Java
 processing-methods: Washed-Honey-Natural-Experimental

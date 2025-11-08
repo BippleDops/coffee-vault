@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Man Lao Village Cooperative
 country: [[Origins/China]]
 region: [[Origins/China-Yunnan]]
-type: Village-Cooperative
+producer-category: Village-Cooperative
 established: 2011
 varieties: Catimor-Typica-Bourbon-Geisha
 processing-methods: Washed-Natural-Honey-Anaerobic

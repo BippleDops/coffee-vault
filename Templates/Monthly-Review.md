@@ -4,7 +4,7 @@ year: <% tp.date.now("YYYY") %>
 month: <% tp.date.now("MM") %>
 month-name: <% tp.date.now("MMMM") %>
 date: <% tp.date.now("YYYY-MM-DD") %>
-tags: [monthly-report, <% tp.date.now("YYYY-MM") %>]
+tags: "[monthly-report, <%  tp.date.now("YYYY-MM")  %>]"
 ---
 
 # 📅 Monthly Coffee Review - <% tp.date.now("MMMM YYYY") %>

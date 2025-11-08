@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Yunnan Coffee Project
 country: [[Origins/China]]
 region: Yunnan-Province
-type: Regional-Producer-Network
+producer-category: Regional-Producer-Network
 established: 2010s-Specialty-Era
 varieties: Catimor-Typica-Bourbon-Geisha-Experimental
 processing-methods: Washed-Natural-Honey-Experimental-Innovative

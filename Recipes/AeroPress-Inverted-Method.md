@@ -12,7 +12,9 @@ success-rate: 88
 avg-rating: 4.6
 tags: [recipe-profile, aeropress, inverted-method, full-immersion, advanced]
 relationships:
-  requires: [[AeroPress]], [[Grinder]]
+  requires:
+    - "[[AeroPress]]"
+    - "[[Grinder]]"
 ---
 
 # 📖 Recipe: AeroPress Inverted Method

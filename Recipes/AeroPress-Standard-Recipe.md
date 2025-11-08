@@ -12,7 +12,9 @@ success-rate: 96
 avg-rating: 4.5
 tags: [recipe-profile, aeropress, standard-method, versatile, beginner-friendly]
 relationships:
-  requires: [[AeroPress]], [[Grinder]]
+  requires:
+    - "[[AeroPress]]"
+    - "[[Grinder]]"
 ---
 
 # 📖 Recipe: AeroPress Standard Recipe

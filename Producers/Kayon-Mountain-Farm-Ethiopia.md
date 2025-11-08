@@ -3,7 +3,7 @@ type: producer-profile
 producer-name: Kayon Mountain Farm
 country: [[Origins/Ethiopia]]
 region: [[Origins/Ethiopia-Guji]]
-type: Family-Farm-Washing-Station
+producer-category: Family-Farm-Washing-Station
 established: 2012
 varieties: Ethiopian-Heirloom-74110-74112
 processing-methods: Washed-Natural-Experimental-Anaerobic
