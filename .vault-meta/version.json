@@ -1,0 +1,45 @@
+{
+  "version": "6.0.0",
+  "codename": "Next-Generation Intelligence",
+  "releaseDate": "2025-11-06",
+  "majorFeatures": [
+    "Persona-Driven UX (4 personas)",
+    "Research-Backed Design (10 UX principles)",
+    "Comprehensive Automation (4 production scripts)",
+    "Massive Knowledge Expansion (+20 scientific references)",
+    "Complete CSS Design System (3,429 lines)",
+    "Enterprise Content Governance"
+  ],
+  "compatibility": {
+    "backwardCompatible": true,
+    "minimumObsidianVersion": "1.4.0",
+    "requiredPlugins": ["Datacore", "Templater"],
+    "recommendedPlugins": ["Calendar", "Tasks", "Advanced Tables"]
+  },
+  "metrics": {
+    "totalFiles": 1050,
+    "scientificReferences": 179,
+    "templates": 18,
+    "automationScripts": 40,
+    "cssLines": 3429,
+    "personas": 4,
+    "documentationPages": 23
+  },
+  "upgrade": {
+    "from": "5.0.0",
+    "breakingChanges": false,
+    "migrationRequired": false,
+    "estimatedUpgradeTime": "15 minutes",
+    "backupRecommended": true
+  },
+  "next": {
+    "version": "6.1.0",
+    "plannedFeatures": [
+      "Accessibility fixes in visualizations",
+      "Content gap filling (top 30)",
+      "Vault health improvements",
+      "Performance optimizations"
+    ],
+    "estimatedRelease": "Q1 2026"
+  }
+}

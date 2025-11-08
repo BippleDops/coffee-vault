@@ -2,7 +2,7 @@
   "name": "coffee-vault-scripts",
   "version": "5.1.0",
   "description": "Coffee Vault automation scripts for Obsidian",
-  "type": "commonjs",
+  "type": "module",
   "main": "stats-utils.js",
   "scripts": {
     "test": "node --version",

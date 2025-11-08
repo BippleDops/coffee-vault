@@ -1,0 +1,240 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-11-06",
+  "description": "Coffee Vault Automation Configuration",
+
+  "ci": {
+    "enabled": true,
+    "scanDirectories": [
+      "Coffee Logs",
+      "Bean Library",
+      "Origins",
+      "Producers",
+      "Roasters",
+      "Recipes",
+      "Equipment Models",
+      "Cupping Sessions",
+      "Coffee Events",
+      "Coffee Goals",
+      "Brewing Guides",
+      "Scientific References"
+    ],
+    "excludePatterns": [
+      "node_modules/**",
+      ".git/**",
+      ".obsidian/**",
+      "Templates/**"
+    ],
+    "brokenLinkThreshold": 10,
+    "orphanThreshold": 20,
+    "autoFix": false,
+    "reportDirectory": ".vault-meta/reports",
+    "notifications": {
+      "onError": true,
+      "onWarning": false,
+      "onSuccess": false
+    }
+  },
+
+  "accessibility": {
+    "enabled": true,
+    "standard": "AA",
+    "scanDirectories": [
+      "Visualizations",
+      "."
+    ],
+    "excludePatterns": [
+      "node_modules/**"
+    ],
+    "contrastRatio": {
+      "normalText": 4.5,
+      "largeText": 3.0
+    },
+    "checkColorContrast": true,
+    "checkAltText": true,
+    "checkAriaLabels": true,
+    "checkKeyboardNav": true,
+    "checkSemanticHTML": true,
+    "checkFormLabels": true,
+    "checkHeadingHierarchy": true,
+    "reportDirectory": ".vault-meta/reports"
+  },
+
+  "dailyReport": {
+    "enabled": true,
+    "schedule": "0 9 * * *",
+    "hoursThreshold": 24,
+    "includeNewFiles": true,
+    "includeModifiedFiles": true,
+    "includeBrokenLinks": true,
+    "includeOrphanedFiles": true,
+    "includeCoverageMetrics": true,
+    "generateTodos": true,
+    "reportDirectory": ".vault-meta/reports",
+    "healthScore": {
+      "enabled": true,
+      "thresholds": {
+        "excellent": 90,
+        "good": 75,
+        "needsAttention": 50,
+        "critical": 0
+      }
+    },
+    "notifications": {
+      "enabled": false,
+      "channels": []
+    }
+  },
+
+  "userJourneys": {
+    "enabled": true,
+    "journeys": [
+      {
+        "id": 1,
+        "name": "New User Onboarding",
+        "description": "New user → START-HERE → Log first coffee",
+        "enabled": true,
+        "critical": true
+      },
+      {
+        "id": 2,
+        "name": "Bean Exploration",
+        "description": "Find specific bean → View origin → See scientific references",
+        "enabled": true,
+        "critical": true
+      },
+      {
+        "id": 3,
+        "name": "Visualization Exploration",
+        "description": "Explore visualizations → Launch 3D view → Return to home",
+        "enabled": true,
+        "critical": false
+      },
+      {
+        "id": 4,
+        "name": "Analytics Workflow",
+        "description": "Monthly analytics → Brewing optimizer → View recommendations",
+        "enabled": true,
+        "critical": false
+      }
+    ],
+    "clickLimit": 3,
+    "reportDirectory": ".vault-meta/reports"
+  },
+
+  "scheduling": {
+    "dailyReport": {
+      "enabled": false,
+      "time": "09:00",
+      "timezone": "UTC"
+    },
+    "ci": {
+      "enabled": false,
+      "onPush": true,
+      "onPullRequest": true,
+      "scheduled": false
+    },
+    "accessibility": {
+      "enabled": false,
+      "weekly": true,
+      "dayOfWeek": "monday"
+    },
+    "userJourneys": {
+      "enabled": false,
+      "beforeRelease": true,
+      "weekly": false
+    }
+  },
+
+  "ontology": {
+    "validationEnabled": true,
+    "ontologyFile": "Documentation/VAULT-ONTOLOGY.md",
+    "entitySchemas": {
+      "coffee-log": {
+        "requiredFields": ["type", "date", "beans", "brew-method", "rating", "tags"],
+        "directory": "Coffee Logs"
+      },
+      "bean-profile": {
+        "requiredFields": ["type", "origin", "country", "processing", "tags"],
+        "directory": "Bean Library"
+      },
+      "origin-profile": {
+        "requiredFields": ["type", "country", "altitude", "primary-process", "tags"],
+        "directory": "Origins"
+      },
+      "producer-profile": {
+        "requiredFields": ["type", "producer-name", "country", "type", "status", "tags"],
+        "directory": "Producers"
+      },
+      "roaster-profile": {
+        "requiredFields": ["type", "name", "location", "founded", "roasting-style", "status", "tags"],
+        "directory": "Roasters"
+      },
+      "recipe-profile": {
+        "requiredFields": ["type", "brew-method", "status", "tags"],
+        "directory": "Recipes"
+      },
+      "equipment-model": {
+        "requiredFields": ["type", "brand", "category", "status", "tags"],
+        "directory": "Equipment Models"
+      },
+      "cupping-session": {
+        "requiredFields": ["type", "date", "protocol", "sample-count", "status", "tags"],
+        "directory": "Cupping Sessions"
+      },
+      "coffee-event": {
+        "requiredFields": ["type", "name", "date", "event-type", "status", "tags"],
+        "directory": "Coffee Events"
+      },
+      "coffee-goal": {
+        "requiredFields": ["type", "goal-type", "status", "priority", "tags"],
+        "directory": "Coffee Goals"
+      },
+      "brewing-guide": {
+        "requiredFields": ["type", "brew-method", "difficulty", "tags"],
+        "directory": "Brewing Guides"
+      },
+      "scientific-reference": {
+        "requiredFields": ["type", "category", "title", "tags"],
+        "directory": "Scientific References"
+      }
+    }
+  },
+
+  "reporting": {
+    "format": "markdown",
+    "includeTimestamp": true,
+    "includeStatistics": true,
+    "includeMermaidCharts": true,
+    "includeEmojiCharts": true,
+    "detailLevel": "normal",
+    "archiveOldReports": true,
+    "archiveAfterDays": 30
+  },
+
+  "performance": {
+    "maxConcurrentFiles": 50,
+    "timeoutMs": 30000,
+    "cacheEnabled": true,
+    "cacheTTL": 3600
+  },
+
+  "integrations": {
+    "githubActions": {
+      "enabled": false,
+      "workflowFile": ".github/workflows/vault-ci.yml"
+    },
+    "obsidian": {
+      "enabled": true,
+      "dataviewQueries": true
+    },
+    "slack": {
+      "enabled": false,
+      "webhookUrl": ""
+    },
+    "email": {
+      "enabled": false,
+      "recipients": []
+    }
+  }
+}

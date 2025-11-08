@@ -1,0 +1,810 @@
+/**
+ * Coffee Vault Animations - Version 6.0
+ *
+ * Micro-interactions and animations for enhanced user experience.
+ * Based on UX Research Summary principles of the Aesthetic-Usability Effect.
+ *
+ * Features:
+ * - Button hover effects
+ * - Card transitions
+ * - Loading spinners
+ * - Fade-in effects
+ * - Smooth scrolling
+ * - Reduced motion support
+ *
+ * @version 6.0.0
+ * @date 2025-11-06
+ * @author Coffee Vault Design System Team
+ */
+
+/* ============================================
+   ANIMATION KEYFRAMES
+   ============================================ */
+
+/* Fade in animation */
+@keyframes cv-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide in from bottom */
+@keyframes cv-slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in from top */
+@keyframes cv-slide-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide in from left */
+@keyframes cv-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right */
+@keyframes cv-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale in animation */
+@keyframes cv-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bounce animation */
+@keyframes cv-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Pulse animation */
+@keyframes cv-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+}
+
+/* Spin animation (for loading) */
+@keyframes cv-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Coffee bean brewing animation */
+@keyframes cv-brew {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-5px) scale(1.05);
+  }
+  50% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(5px) scale(0.95);
+  }
+}
+
+/* Shimmer effect */
+@keyframes cv-shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Progress bar fill */
+@keyframes cv-progress-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--progress-width, 100%);
+  }
+}
+
+/* Shake animation (for errors) */
+@keyframes cv-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Wiggle animation */
+@keyframes cv-wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}
+
+/* ============================================
+   ANIMATION UTILITY CLASSES
+   ============================================ */
+
+.cv-animate-fade-in {
+  animation: cv-fade-in 300ms ease-out;
+}
+
+.cv-animate-slide-in-up {
+  animation: cv-slide-in-up 300ms ease-out;
+}
+
+.cv-animate-slide-in-down {
+  animation: cv-slide-in-down 300ms ease-out;
+}
+
+.cv-animate-slide-in-left {
+  animation: cv-slide-in-left 300ms ease-out;
+}
+
+.cv-animate-slide-in-right {
+  animation: cv-slide-in-right 300ms ease-out;
+}
+
+.cv-animate-scale-in {
+  animation: cv-scale-in 300ms ease-out;
+}
+
+.cv-animate-bounce {
+  animation: cv-bounce 600ms ease-in-out;
+}
+
+.cv-animate-pulse {
+  animation: cv-pulse 2s ease-in-out infinite;
+}
+
+.cv-animate-spin {
+  animation: cv-spin 1s linear infinite;
+}
+
+.cv-animate-brew {
+  animation: cv-brew 2s ease-in-out infinite;
+}
+
+.cv-animate-shake {
+  animation: cv-shake 500ms ease-in-out;
+}
+
+.cv-animate-wiggle {
+  animation: cv-wiggle 500ms ease-in-out;
+}
+
+/* Animation delays */
+.cv-animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.cv-animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.cv-animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.cv-animate-delay-500 {
+  animation-delay: 500ms;
+}
+
+/* ============================================
+   BUTTON MICRO-INTERACTIONS
+   ============================================ */
+
+.cv-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+}
+
+/* Ripple effect on click */
+.cv-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+.cv-btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Hover elevation */
+.cv-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cv-btn:active {
+  transform: translateY(0);
+  transition: transform 100ms ease-out;
+}
+
+/* Loading state animation */
+.cv-btn.cv-btn-loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.cv-btn.cv-btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: cv-spin 600ms linear infinite;
+  margin-left: 8px;
+}
+
+/* ============================================
+   CARD TRANSITIONS
+   ============================================ */
+
+.cv-card {
+  transition: transform 200ms ease-out,
+              box-shadow 200ms ease-out;
+}
+
+.cv-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card entrance animation */
+.cv-card.cv-card-enter {
+  animation: cv-scale-in 400ms ease-out;
+}
+
+/* Staggered card entrance */
+.cv-card-enter:nth-child(1) { animation-delay: 0ms; }
+.cv-card-enter:nth-child(2) { animation-delay: 100ms; }
+.cv-card-enter:nth-child(3) { animation-delay: 200ms; }
+.cv-card-enter:nth-child(4) { animation-delay: 300ms; }
+.cv-card-enter:nth-child(5) { animation-delay: 400ms; }
+.cv-card-enter:nth-child(6) { animation-delay: 500ms; }
+
+/* ============================================
+   LOADING SPINNERS
+   ============================================ */
+
+/* Coffee bean spinner */
+.cv-loading-coffee {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.cv-loading-coffee::before {
+  content: '☕';
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: cv-brew 2s ease-in-out infinite;
+}
+
+/* Circular spinner */
+.cv-loading-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(93, 64, 55, 0.2);
+  border-top-color: var(--cv-primary);
+  border-radius: 50%;
+  animation: cv-spin 800ms linear infinite;
+}
+
+.cv-loading-spinner-sm {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+.cv-loading-spinner-lg {
+  width: 60px;
+  height: 60px;
+  border-width: 6px;
+}
+
+/* Dots loading animation */
+.cv-loading-dots {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cv-loading-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: var(--cv-primary);
+  border-radius: 50%;
+  animation: cv-pulse 1.4s ease-in-out infinite;
+}
+
+.cv-loading-dots span:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.cv-loading-dots span:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.cv-loading-dots span:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+/* ============================================
+   PROGRESS BARS
+   ============================================ */
+
+.cv-progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(93, 64, 55, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cv-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg,
+    var(--cv-primary) 0%,
+    var(--cv-accent) 100%
+  );
+  border-radius: 999px;
+  transition: width 300ms ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated shimmer on progress bar */
+.cv-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: cv-shimmer 2s linear infinite;
+}
+
+/* Indeterminate progress bar */
+.cv-progress-indeterminate {
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-progress-indeterminate::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg,
+    transparent,
+    var(--cv-primary),
+    transparent
+  );
+  animation: cv-shimmer 1.5s linear infinite;
+}
+
+/* ============================================
+   MODAL & OVERLAY ANIMATIONS
+   ============================================ */
+
+.cv-modal {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 200ms ease-out,
+              transform 200ms ease-out;
+}
+
+.cv-modal.cv-modal-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cv-modal-backdrop {
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+}
+
+.cv-modal-backdrop.cv-modal-open {
+  opacity: 1;
+}
+
+/* ============================================
+   TOAST NOTIFICATIONS
+   ============================================ */
+
+.cv-toast {
+  transform: translateX(400px);
+  opacity: 0;
+  transition: transform 300ms ease-out,
+              opacity 300ms ease-out;
+}
+
+.cv-toast.cv-toast-show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.cv-toast.cv-toast-hide {
+  transform: translateX(400px);
+  opacity: 0;
+}
+
+/* ============================================
+   DROPDOWN ANIMATIONS
+   ============================================ */
+
+.cv-dropdown {
+  opacity: 0;
+  transform: translateY(-10px) scale(0.95);
+  transition: opacity 150ms ease-out,
+              transform 150ms ease-out;
+  pointer-events: none;
+}
+
+.cv-dropdown.cv-dropdown-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+/* ============================================
+   TOOLTIP ANIMATIONS
+   ============================================ */
+
+.cv-tooltip {
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 150ms ease-out,
+              transform 150ms ease-out;
+  pointer-events: none;
+}
+
+.cv-tooltip.cv-tooltip-show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+/* ============================================
+   ACCORDION ANIMATIONS
+   ============================================ */
+
+.cv-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-out,
+              opacity 200ms ease-out;
+  opacity: 0;
+}
+
+.cv-accordion-content.cv-accordion-open {
+  max-height: 2000px;
+  opacity: 1;
+}
+
+.cv-accordion-icon {
+  transition: transform 200ms ease-out;
+}
+
+.cv-accordion-open .cv-accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* ============================================
+   HOVER EFFECTS
+   ============================================ */
+
+/* Lift effect */
+.cv-hover-lift {
+  transition: transform 200ms ease-out,
+              box-shadow 200ms ease-out;
+}
+
+.cv-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Glow effect */
+.cv-hover-glow {
+  transition: box-shadow 200ms ease-out;
+}
+
+.cv-hover-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 111, 0, 0.4);
+}
+
+/* Scale effect */
+.cv-hover-scale {
+  transition: transform 200ms ease-out;
+}
+
+.cv-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Brightness effect */
+.cv-hover-brighten {
+  transition: filter 200ms ease-out;
+}
+
+.cv-hover-brighten:hover {
+  filter: brightness(1.1);
+}
+
+/* Underline effect */
+.cv-hover-underline {
+  position: relative;
+}
+
+.cv-hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--cv-accent);
+  transition: width 200ms ease-out;
+}
+
+.cv-hover-underline:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll fade-in effect (requires JavaScript) */
+.cv-scroll-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms ease-out,
+              transform 500ms ease-out;
+}
+
+.cv-scroll-fade.cv-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   SKELETON LOADING
+   ============================================ */
+
+.cv-skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 64, 55, 0.05) 25%,
+    rgba(93, 64, 55, 0.1) 50%,
+    rgba(93, 64, 55, 0.05) 75%
+  );
+  background-size: 200% 100%;
+  animation: cv-shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--cv-radius-md);
+}
+
+.cv-skeleton-text {
+  height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.cv-skeleton-title {
+  height: 2em;
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.cv-skeleton-button {
+  height: 44px;
+  width: 120px;
+}
+
+.cv-skeleton-card {
+  height: 200px;
+  width: 100%;
+}
+
+/* ============================================
+   PAGE TRANSITIONS
+   ============================================ */
+
+.cv-page-enter {
+  animation: cv-fade-in 400ms ease-out;
+}
+
+.cv-page-exit {
+  animation: cv-fade-in 400ms ease-out reverse;
+}
+
+/* ============================================
+   FOCUS ANIMATIONS
+   ============================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--cv-accent);
+  outline-offset: 2px;
+  animation: cv-pulse 2s ease-in-out;
+}
+
+/* ============================================
+   CUSTOM COFFEE ANIMATIONS
+   ============================================ */
+
+/* Steam rising animation */
+.cv-steam {
+  position: relative;
+}
+
+.cv-steam::before {
+  content: '~';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: rgba(93, 64, 55, 0.3);
+  animation: cv-slide-in-up 2s ease-in-out infinite;
+}
+
+/* Drip animation */
+.cv-drip {
+  position: relative;
+}
+
+.cv-drip::after {
+  content: '💧';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  animation: cv-slide-in-down 2s ease-in-out infinite;
+}
+
+/* ============================================
+   REDUCED MOTION SUPPORT
+   Respects user preference
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .cv-btn:hover,
+  .cv-card:hover,
+  .cv-hover-lift:hover,
+  .cv-hover-scale:hover {
+    transform: none;
+  }
+}
+
+/* ============================================
+   END OF COFFEE VAULT ANIMATIONS
+   ============================================ */
+
+/**
+ * Usage Examples:
+ *
+ * <!-- Fade in animation -->
+ * <div class="cv-card cv-animate-fade-in">...</div>
+ *
+ * <!-- Loading spinner -->
+ * <div class="cv-loading-spinner"></div>
+ *
+ * <!-- Progress bar -->
+ * <div class="cv-progress-bar">
+ *   <div class="cv-progress-fill" style="width: 75%;"></div>
+ * </div>
+ *
+ * <!-- Hover lift effect -->
+ * <div class="cv-card cv-hover-lift">...</div>
+ *
+ * <!-- Loading button -->
+ * <button class="cv-btn cv-btn-primary cv-btn-loading">Loading...</button>
+ */

@@ -1,0 +1,28 @@
+{
+  "name": "coffee-vault",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The complete coffee intelligence platform with supply chain transparency, advanced ML, and comprehensive tracking.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci": "node Scripts/vault-ci.js",
+    "accessibility": "node Scripts/accessibility-audit.js",
+    "daily-report": "node Scripts/daily-report-generator.js",
+    "test-journeys": "node Scripts/user-journey-simulator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:16385/git/BippleDops/coffee-vault"
+  },
+  "keywords": ["coffee", "obsidian", "vault", "automation", "ci-cd", "accessibility"],
+  "author": "Coffee Vault Team",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "chalk": "^5.3.0",
+    "yargs": "^17.7.2",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

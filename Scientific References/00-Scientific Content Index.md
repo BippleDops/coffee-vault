@@ -24,12 +24,16 @@ This library is organized into six major domains, each containing detailed notes
 - [[Grind Size and Extraction Kinetics]] - The physics of extraction
 - [[Temperature-Time-Grind Interactions]] - Multi-variable relationships
 - [[Water Chemistry and Extraction]] - The solvent matters
+- **[[Espresso-Extraction-Science]]** - ⭐ The 18-30% extraction challenge (NEW)
+- **[[Percolation-Flow-Dynamics]]** - ⭐ How water flows through coffee (NEW)
+- **[[Espresso-Channeling-Prevention]]** - ⭐ Physics, causes, and prevention (NEW)
 
 **Learning Path**:
 1. Start with Coffee Brewing Control Chart for core concepts
 2. Progress to TDS and Extraction Yield for measurement
 3. Explore Particle Size Distribution for practical applications
-4. Advanced users: Study Temperature-Time-Grind Interactions
+4. **NEW: Espresso-Extraction-Science for pressure-driven extraction**
+5. Advanced users: Study Temperature-Time-Grind Interactions
 
 ---
 
@@ -75,6 +79,25 @@ This library is organized into six major domains, each containing detailed notes
 
 ---
 
+### 🔬 Grinding Science
+
+**Focus**: Particle size, distribution, thermal effects, and grinder optimization
+
+- [[Burr Geometry Comparison]] - Flat vs. conical burr characteristics
+- [[Grinder Retention Physics]] - Understanding coffee retention
+- **[[Particle-Size-Distribution-Measurement]]** - ⭐ Measurement and optimization (NEW)
+- **[[Grinder-Thermal-Dynamics]]** - ⭐ Heat generation and impact (NEW)
+- **[[Burr-Alignment-and-Maintenance]]** - ⭐ Science of consistency (NEW)
+- **[[Static-Electricity-in-Grinding]]** - ⭐ Causes and solutions (NEW)
+
+**Learning Path**:
+1. Start with Burr Geometry Comparison for foundational understanding
+2. **NEW: Particle-Size-Distribution-Measurement for grind quality assessment**
+3. **NEW: Grinder-Thermal-Dynamics for heat management**
+4. Advanced: Burr-Alignment-and-Maintenance for optimization
+
+---
+
 ### 🌱 Coffee Agronomy
 
 **Focus**: Cultivation, varieties, terroir, and agricultural systems
@@ -112,12 +135,15 @@ This library is organized into six major domains, each containing detailed notes
 - [[Processing and Flavor Development]] - How methods create taste
 - [[Quality Control in Processing]] - Avoiding defects
 - [[Regional Processing Preferences]] - Geographic traditions
+- **[[Fermentation-Temperature-Control]]** - ⭐ Kinetics and flavor development (NEW)
+- **[[Green-Bean-Chemistry-and-Storage]]** - ⭐ How green beans change over time (NEW)
 
 **Learning Path**:
 1. Master the three classics: Washed, Natural, Honey
 2. Understand Processing and Flavor Development connections
-3. Explore experimental methods: Anaerobic, Carbonic Maceration
-4. Study regional specializations
+3. **NEW: Fermentation-Temperature-Control for processing optimization**
+4. Explore experimental methods: Anaerobic, Carbonic Maceration
+5. **NEW: Green-Bean-Chemistry-and-Storage for post-processing care**
 
 ---
 
@@ -312,8 +338,63 @@ As you learn and experiment:
 
 ---
 
-**Last Updated**: 2025-10-25
-**Total Notes**: 40+ comprehensive references
-**Coverage**: Foundation through advanced topics across six domains
+### ☕ Brewing Science
+
+**Focus**: Method-specific physics, technique, and equipment optimization
+
+- [[Water Temperature and Extraction]] - Temperature's role in brewing
+- [[Brewing Parameters Overview]] - Core brewing variables
+- **[[Brewing-Physics-Immersion-vs-Percolation]]** - ⭐ Fundamental framework (NEW)
+- **[[The-Bloom-Phase-CO2-Release]]** - ⭐ CO2 outgassing science (NEW)
+- **[[Method-Specific-Extraction-Optimization]]** - ⭐ V60, Chemex, French Press (NEW)
+- **[[Pour-Over-Technique-Physics]]** - ⭐ Controlling extraction variables (NEW)
+- **[[AeroPress-Pressure-Physics]]** - ⭐ Understanding pressure effects (NEW)
+- **[[Espresso-Dialing-In-Framework]]** - ⭐ Science-based optimization (NEW)
+
+**Learning Path**:
+1. **NEW: Brewing-Physics-Immersion-vs-Percolation for foundational understanding**
+2. **NEW: The-Bloom-Phase-CO2-Release for percolation brewing**
+3. **NEW: Method-Specific-Extraction-Optimization for practical application**
+4. Advanced: Pour-Over-Technique-Physics and AeroPress-Pressure-Physics
+
+---
+
+### 💧 Water Chemistry
+
+**Focus**: Water's role in extraction, mineral content, and treatment
+
+- [[Water Mineral Roles in Extraction]] - How minerals affect brewing
+- [[pH and Alkalinity in Brewing]] - Acidity and buffering
+- [[Water Recipe Formulation]] - Custom water design
+- **[[Water-Chemistry-for-Espresso]]** - ⭐ Mineral optimization for espresso (NEW)
+- **[[Water-Hardness-Testing-Practical-Guide]]** - ⭐ Measurement methods and tools (NEW)
+
+**Learning Path**:
+1. Start with Water Mineral Roles for basics
+2. **NEW: Water-Chemistry-for-Espresso for specific applications**
+3. **NEW: Water-Hardness-Testing-Practical-Guide for practical measurement**
+4. Advanced: Custom Water Recipe Formulation
+
+---
+
+### ⚙️ Equipment Science
+
+**Focus**: How coffee equipment works and affects brewing
+
+- **[[Espresso-Machine-Heating-Systems]]** - ⭐ Physics of temperature control (NEW)
+- **[[Filter-Material-Science]]** - ⭐ Paper vs. metal vs. cloth (NEW)
+- **[[Scale-Precision-and-Brewing-Accuracy]]** - ⭐ Measurement importance (NEW)
+
+**Learning Path**:
+1. **NEW: Espresso-Machine-Heating-Systems for espresso equipment**
+2. **NEW: Filter-Material-Science for filtration understanding**
+3. **NEW: Scale-Precision-and-Brewing-Accuracy for measurement standards**
+
+---
+
+**Last Updated**: 2025-11-06
+**Total Notes**: 60+ comprehensive references (20 NEW additions)
+**Coverage**: Foundation through advanced topics across nine domains
+**Recent Additions**: 20 Tier 1 priority notes from content gap analysis
 
 *Navigate using links above, or explore the folder structure in Scientific References/*
