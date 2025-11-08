@@ -16,6 +16,24 @@ You're at the beginning of an exciting journey into specialty coffee. This dashb
 
 ---
 
+## ⚡ Quick Actions
+
+<div class="quick-actions-grid">
+
+<a href="obsidian://new?file=Coffee%20Logs/{{date:YYYY-MM-DD}}-Quick-Log&template=Templates/Coffee-Log-Quick.md" class="action-button primary">☕ Log Coffee (Quick)</a>
+
+<a href="obsidian://search" class="action-button secondary">🔍 Search Vault</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=Brewing%20Guides" class="action-button secondary">📚 Brewing Guides</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=HOME-DASHBOARD" class="action-button secondary">🏠 Home Dashboard</a>
+
+</div>
+
+> **Tip**: Press `Shift + Space` to open the floating quick actions menu from anywhere!
+
+---
+
 ## 📊 Your Progress
 
 ```dataview

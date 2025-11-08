@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Flavor Space - Coffee Vault 5.0</title>
+    <title>3D Flavor Space - Coffee Vault 7.0</title>
+
+    <!-- Shared Infrastructure -->
+    <link rel="stylesheet" href="shared-styles.css">
+    <script src="shared-controls.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -115,9 +120,24 @@
     </style>
 </head>
 <body>
-    <div id="container"></div>
-    
-    <div id="controls">
+    <!-- Accessibility skip link -->
+    <a href="#canvas" class="cv-skip-link">Skip to visualization</a>
+
+    <!-- Unified Control Panel -->
+    <div id="cv-control-panel-container"></div>
+
+    <div id="container" role="main" aria-label="3D Flavor Space Visualization">
+        <canvas id="canvas" role="img" aria-label="Interactive 3D flavor space showing coffee characteristics" aria-describedby="flavor-desc"></canvas>
+    </div>
+
+    <!-- Accessibility description -->
+    <div id="flavor-desc" class="cv-sr-only">
+        This 3D visualization maps coffee flavors in a three-dimensional space.
+        Each sphere represents a coffee bean with position determined by flavor characteristics like acidity, body, and sweetness.
+        Use arrow keys to rotate, plus/minus to zoom, and mouse to interact.
+    </div>
+
+    <div id="controls" style="display: none;">
         <h1>☕ 3D Flavor Space</h1>
         
         <div class="control-group">
@@ -205,15 +225,140 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
-        // Sample data (would be loaded from vault)
-        const sampleBeans = [
-            { name: 'Ethiopian Yirgacheffe', origin: 'Ethiopia', processing: 'washed', roast: 'light', rating: 4.7, acidity: 9, body: 4, sweetness: 8, complexity: 9, flavors: ['floral', 'bergamot', 'jasmine'] },
-            { name: 'Colombian Supremo', origin: 'Colombia', processing: 'washed', roast: 'medium', rating: 4.3, acidity: 6, body: 7, sweetness: 7, complexity: 6, flavors: ['chocolate', 'caramel', 'nutty'] },
-            { name: 'Kenya AA', origin: 'Kenya', processing: 'washed', roast: 'light', rating: 4.8, acidity: 10, body: 8, sweetness: 8, complexity: 9, flavors: ['blackcurrant', 'grapefruit', 'wine'] },
-            { name: 'Guatemala Antigua', origin: 'Guatemala', processing: 'washed', roast: 'medium', rating: 4.5, acidity: 7, body: 8, sweetness: 7, complexity: 7, flavors: ['chocolate', 'apple', 'caramel'] },
-            { name: 'Brazilian Santos', origin: 'Brazil', processing: 'natural', roast: 'medium-dark', rating: 4.0, acidity: 4, body: 9, sweetness: 6, complexity: 5, flavors: ['chocolate', 'nutty', 'peanut'] },
-            { name: 'Ethiopian Natural', origin: 'Ethiopia', processing: 'natural', roast: 'light', rating: 4.6, acidity: 7, body: 6, sweetness: 9, complexity: 8, flavors: ['blueberry', 'strawberry', 'wine'] }
-        ];
+        // ============================================================================
+        // INITIALIZATION - Load real data from Coffee Vault
+        // ============================================================================
+
+        let allCoffeeLogs = [];
+        let currentData = [];
+        let controlPanel = null;
+
+        // Initialize visualization
+        async function initVisualization() {
+            LoadingStateManager.showLoading(
+                document.getElementById('container'),
+                'Loading your coffee data...'
+            );
+
+            try {
+                // Load real coffee log data
+                allCoffeeLogs = await DataLoader.loadCoffeeLogs();
+
+                // Initialize control panel
+                controlPanel = new StandardControlPanel('cv-control-panel-container', {
+                    title: '3D Flavor Space Controls',
+                    filters: ['time', 'method', 'rating', 'origin'],
+                    export: true,
+                    theme: true,
+                    customControls: [
+                        {
+                            id: 'x-axis',
+                            label: 'X-Axis',
+                            type: 'select',
+                            options: [
+                                { value: 'acidity', label: 'Acidity' },
+                                { value: 'body', label: 'Body' },
+                                { value: 'sweetness', label: 'Sweetness' },
+                                { value: 'complexity', label: 'Complexity' }
+                            ]
+                        },
+                        {
+                            id: 'y-axis',
+                            label: 'Y-Axis',
+                            type: 'select',
+                            options: [
+                                { value: 'body', label: 'Body' },
+                                { value: 'acidity', label: 'Acidity' },
+                                { value: 'sweetness', label: 'Sweetness' },
+                                { value: 'complexity', label: 'Complexity' }
+                            ]
+                        },
+                        {
+                            id: 'z-axis',
+                            label: 'Z-Axis',
+                            type: 'select',
+                            options: [
+                                { value: 'sweetness', label: 'Sweetness' },
+                                { value: 'acidity', label: 'Acidity' },
+                                { value: 'body', label: 'Body' },
+                                { value: 'complexity', label: 'Complexity' }
+                            ]
+                        }
+                    ]
+                });
+
+                // Listen for filter changes
+                controlPanel.onChange((filters) => {
+                    updateVisualization(filters);
+                });
+
+                // Listen for export events
+                window.addEventListener('cv-export', () => {
+                    ExportManager.showExportDialog({
+                        formats: ['png', 'csv'],
+                        onExport: (format) => {
+                            if (format === 'png') {
+                                const canvas = document.querySelector('canvas');
+                                ExportManager.exportPNG(canvas, '3d-flavor-space.png');
+                            } else if (format === 'csv') {
+                                ExportManager.exportCSV(currentData, '3d-flavor-space-data.csv');
+                            }
+                            AccessibilityHelper.announceToScreenReader('Visualization exported successfully');
+                        }
+                    });
+                });
+
+                // Initial render
+                updateVisualization({});
+
+                LoadingStateManager.hideLoading(document.getElementById('container'));
+
+            } catch (error) {
+                console.error('Failed to load data:', error);
+                LoadingStateManager.showError(
+                    document.getElementById('container'),
+                    'Failed to load coffee data. Using sample data instead.',
+                    () => initVisualization()
+                );
+            }
+        }
+
+        // Update visualization with filtered data
+        function updateVisualization(filters) {
+            currentData = allCoffeeLogs;
+
+            // Apply filters
+            if (filters.timeRange) {
+                const cutoff = new Date();
+                const days = filters.timeRange === '7days' ? 7 : filters.timeRange === '30days' ? 30 : 90;
+                cutoff.setDate(cutoff.getDate() - days);
+                currentData = currentData.filter(log => new Date(log.date) >= cutoff);
+            }
+
+            if (filters.method) {
+                currentData = currentData.filter(log => log.method === filters.method);
+            }
+
+            if (filters.minRating) {
+                currentData = currentData.filter(log => log.rating >= filters.minRating);
+            }
+
+            if (filters.origin) {
+                currentData = currentData.filter(log => log.origin === filters.origin);
+            }
+
+            if (currentData.length === 0) {
+                LoadingStateManager.showEmpty(
+                    document.querySelector('#legend'),
+                    'No coffee logs match the selected filters'
+                );
+                return;
+            }
+
+            // Recreate scene with filtered data
+            createScene(currentData);
+            AccessibilityHelper.announceToScreenReader(`Showing ${currentData.length} coffee logs`);
+        }
         
         // Color palettes
         const originColors = {
@@ -324,11 +469,11 @@
             // Clear existing points
             pointMeshes.forEach(mesh => scene.remove(mesh));
             pointMeshes.length = 0;
-            
-            const xAxis = document.getElementById('x-axis').value;
-            const yAxis = document.getElementById('y-axis').value;
-            const zAxis = document.getElementById('z-axis').value;
-            const colorBy = document.getElementById('color-by').value;
+
+            const xAxis = document.getElementById('cv-custom-x-axis')?.value || 'acidity';
+            const yAxis = document.getElementById('cv-custom-y-axis')?.value || 'body';
+            const zAxis = document.getElementById('cv-custom-z-axis')?.value || 'sweetness';
+            const colorBy = 'origin'; // Color by origin for now
             
             data.forEach(bean => {
                 const x = (bean[xAxis] - 5) * 2;
@@ -559,20 +704,71 @@
             renderer.setSize(window.innerWidth, window.innerHeight);
         });
         
-        // Keyboard controls
-        document.addEventListener('keydown', (e) => {
-            if (e.key === ' ') {
+        // ============================================================================
+        // ACCESSIBILITY - Keyboard Navigation
+        // ============================================================================
+
+        // Setup keyboard navigation
+        AccessibilityHelper.setupKeyboardNav(document.body, {
+            'ArrowLeft': () => {
+                manualRotation.x -= 0.1;
+                AccessibilityHelper.announceToScreenReader('Rotated left');
+            },
+            'ArrowRight': () => {
+                manualRotation.x += 0.1;
+                AccessibilityHelper.announceToScreenReader('Rotated right');
+            },
+            'ArrowUp': () => {
+                manualRotation.y += 0.1;
+                AccessibilityHelper.announceToScreenReader('Rotated up');
+            },
+            'ArrowDown': () => {
+                manualRotation.y -= 0.1;
+                AccessibilityHelper.announceToScreenReader('Rotated down');
+            },
+            '+': () => {
+                const currentDistance = Math.sqrt(
+                    camera.position.x ** 2 +
+                    camera.position.y ** 2 +
+                    camera.position.z ** 2
+                );
+                const newDistance = Math.max(10, currentDistance - 1);
+                const scale = newDistance / currentDistance;
+                camera.position.multiplyScalar(scale);
+                AccessibilityHelper.announceToScreenReader('Zoomed in');
+            },
+            '-': () => {
+                const currentDistance = Math.sqrt(
+                    camera.position.x ** 2 +
+                    camera.position.y ** 2 +
+                    camera.position.z ** 2
+                );
+                const newDistance = Math.min(30, currentDistance + 1);
+                const scale = newDistance / currentDistance;
+                camera.position.multiplyScalar(scale);
+                AccessibilityHelper.announceToScreenReader('Zoomed out');
+            },
+            'r': () => {
+                camera.position.set(15, 15, 15);
+                camera.lookAt(0, 0, 0);
+                manualRotation = { x: 0, y: 0 };
+                AccessibilityHelper.announceToScreenReader('View reset');
+            },
+            ' ': (e) => {
+                e.preventDefault();
                 autoRotate = !autoRotate;
                 autoRotateBtn.textContent = autoRotate ? 'Disable Auto-Rotate' : 'Enable Auto-Rotate';
                 autoRotateBtn.style.background = autoRotate ? 'rgba(255, 215, 0, 0.4)' : 'rgba(255, 215, 0, 0.2)';
+                AccessibilityHelper.announceToScreenReader(autoRotate ? 'Auto-rotation enabled' : 'Auto-rotation disabled');
             }
-            
-            // Arrow keys for manual rotation
-            if (e.key === 'ArrowLeft') manualRotation.x -= 0.1;
-            if (e.key === 'ArrowRight') manualRotation.x += 0.1;
-            if (e.key === 'ArrowUp') manualRotation.y += 0.1;
-            if (e.key === 'ArrowDown') manualRotation.y -= 0.1;
         });
+
+        // Initialize visualization on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initVisualization);
+        } else {
+            initVisualization();
+        }
     </script>
 </body>
 </html>

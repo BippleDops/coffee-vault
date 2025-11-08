@@ -772,6 +772,196 @@ Install these community plugins:
 
 ---
 
+## ⚡ Quality of Life Features (v7.0)
+
+Coffee Vault 7.0 introduces several quality-of-life enhancements designed to make your daily workflows faster, smoother, and more enjoyable.
+
+### Floating Action Bar
+
+**What it is**: A sticky action button in the bottom-right corner that expands to show quick actions.
+
+**How to use**:
+- Click the coffee icon (☕) in bottom-right corner
+- Press `Shift + Space` anywhere to toggle menu
+- Select action from expanded menu
+
+**Available actions**:
+- ☕ New Coffee Log (Quick Capture)
+- 🔍 Search Vault
+- 🕐 Recent Files (last 10)
+- 🏠 Jump to Dashboard
+- 📊 View Progress
+
+**Why you'll love it**: One-click access to common tasks without navigating menus or remembering complex shortcuts.
+
+---
+
+### Recent Items Sidebar
+
+**What it is**: A sidebar showing your last 10 viewed files with pin/favorite capability.
+
+**How to access**:
+- Click the recent items icon in top-right
+- Files auto-update as you browse
+- Pin favorites to keep them at the top
+
+**Benefits**:
+- Quick return to recently logged brews
+- Pin your "current bean" profile for easy reference
+- Persists across sessions (no need to search)
+
+---
+
+### Keyboard Shortcuts
+
+**Essential shortcuts for novices**:
+
+| Shortcut | Action | When to Use |
+|----------|--------|-------------|
+| `Cmd/Ctrl + O` | Quick switcher | Find any note fast |
+| `Cmd/Ctrl + Shift + L` | New coffee log | Log a brew quickly |
+| `Shift + Space` | Quick actions menu | Access common actions |
+| `Cmd/Ctrl + F` | Search in file | Find text in current log |
+| `?` | Show shortcuts | View all shortcuts |
+
+**Full reference**: See [[Configuration/KEYBOARD-SHORTCUTS|Complete Keyboard Shortcuts Guide]]
+
+---
+
+### Template Variants
+
+Choose the logging level that fits your time and detail needs:
+
+**Quick (1 minute)** - [[Templates/Coffee-Log-Quick|Coffee-Log-Quick.md]]
+- 5 essential fields only
+- Perfect for daily logging
+- Best for: Building consistency
+
+**Standard (3-5 minutes)** - [[Templates/Coffee-Log-Standard|Coffee-Log-Standard.md]]
+- 12 balanced fields
+- Recommended for most users
+- Best for: Tracking progress
+
+**Detailed (10+ minutes)** - [[Templates/Coffee-Log-Detailed|Coffee-Log-Detailed.md]]
+- 25+ comprehensive fields
+- Competition-level tracking
+- Best for: Special sessions (unlock at 20+ brews)
+
+**Pro tip**: Start with Quick, graduate to Standard as you build the habit.
+
+---
+
+### Enhanced Search
+
+**Search tips for beginners**:
+
+**Basic search**:
+```
+ethiopian
+```
+→ Find all notes mentioning "ethiopian"
+
+**Exact phrase**:
+```
+"pour over"
+```
+→ Find exact phrase "pour over"
+
+**Filter by rating**:
+```
+[rating:5]
+```
+→ Find your 5-star brews
+
+**Combine filters**:
+```
+ethiopian [rating:>4]
+```
+→ Find high-rated Ethiopian coffees
+
+**Full search guide**: [[Configuration/SEARCH-TIPS|Search Tips & Tricks]]
+
+---
+
+### Dashboard Quick Actions
+
+Every persona dashboard now includes quick action buttons at the top:
+- ☕ **Log Coffee** - One-click to appropriate template
+- 🔍 **Search Vault** - Instant search access
+- 📚 **Brewing Guides** - Jump to learning resources
+- 🏠 **Home Dashboard** - Return to main hub
+
+Look for the colorful buttons at the top of your [[Views/Persona-NOVICE-Dashboard|Novice Dashboard]].
+
+---
+
+### CSS Polish & Visual Enhancements
+
+Coffee Vault 7.0 includes visual polish for a smoother experience:
+
+**Loading states**: See skeleton screens while data loads (no more blank screens)
+
+**Toast notifications**: Friendly popups confirm actions (e.g., "Brew logged successfully!")
+
+**Smooth transitions**: Page changes and animations feel more polished
+
+**Better search highlighting**: Search results stand out with orange highlights
+
+**Progress bars**: Visual indicators for achievements and milestones
+
+**How to enable**:
+1. Settings → Appearance → CSS Snippets
+2. Enable `coffee-vault-design-system-v6.css`
+3. Enable `floating-actions.css`
+4. Restart Obsidian to see changes
+
+---
+
+### Mobile Optimization
+
+All QoL features work on mobile:
+- **Larger touch targets**: 64px buttons for easy tapping
+- **Responsive layouts**: Stack vertically on small screens
+- **Swipe-friendly**: Recent items sidebar slides in smoothly
+- **Touch-optimized FAB**: Floating action bar sized for thumbs
+
+---
+
+### Accessibility Enhancements
+
+v7.0 prioritizes accessibility:
+- **Keyboard navigation**: Everything accessible without mouse
+- **Screen reader support**: Proper labels and ARIA attributes
+- **Focus indicators**: Clear visual focus for keyboard users
+- **Reduced motion**: Respects system accessibility settings
+- **High contrast**: Better visibility in all lighting
+
+---
+
+### Getting Started with QoL Features
+
+**Week 1**: Learn keyboard shortcuts
+- Practice `Cmd/Ctrl + O` for quick switcher
+- Try `Shift + Space` for quick actions
+- Bookmark [[Configuration/KEYBOARD-SHORTCUTS|Shortcuts Guide]]
+
+**Week 2**: Explore template variants
+- Try Quick template for daily logs
+- Use Standard for special sessions
+- Compare which feels better
+
+**Week 3**: Master search
+- Practice basic searches
+- Try property filters like `[rating:5]`
+- Read [[Configuration/SEARCH-TIPS|Search Tips]]
+
+**Week 4**: Customize your workflow
+- Pin frequently-used files in Recent Items
+- Set up custom keyboard shortcuts
+- Adjust CSS to your preferences
+
+---
+
 ## Related Resources
 
 ### Essential Starting Points

@@ -9,7 +9,12 @@
     "ci": "node Scripts/vault-ci.js",
     "accessibility": "node Scripts/accessibility-audit.js",
     "daily-report": "node Scripts/daily-report-generator.js",
-    "test-journeys": "node Scripts/user-journey-simulator.js"
+    "test-journeys": "node Scripts/user-journey-simulator.js",
+    "extract-data": "node Scripts/data-loader.js",
+    "extract-data:force": "node Scripts/data-loader.js --force",
+    "extract-data:verbose": "node Scripts/data-loader.js --verbose",
+    "extract-data:dry-run": "node Scripts/data-loader.js --dry-run",
+    "test-extraction": "node Scripts/test-data-loader.js"
   },
   "repository": {
     "type": "git",

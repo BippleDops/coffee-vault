@@ -1218,6 +1218,230 @@ dv.paragraph(`**Cost Per Brew**: $${costPerBrew.toFixed(2)}`);
 
 ---
 
+## ⚡ Quality of Life Features (v7.0)
+
+Coffee Vault 7.0 brings powerful QoL enhancements for enthusiasts to work faster and iterate more efficiently.
+
+### Floating Action Bar
+
+**What it does**: Persistent quick-access menu for power users.
+
+**Enthusiast-specific actions**:
+- ☕ New Standard Log
+- 📊 Monthly Analytics
+- 🔬 Scientific References
+- 🌱 Beans Library
+- ⚙️ Run Data Extraction
+- 📈 Visualization Hub
+
+**Power tip**: Press `Shift + Space` anywhere, even while editing, to access quick actions without breaking flow.
+
+---
+
+### Recent Items Sidebar
+
+**Power user benefits**:
+- **Pin active experiments**: Keep your current bean profile, recipe, and goal pinned
+- **Compare logs**: Quickly switch between recent brews for comparison
+- **Research flow**: Pin scientific references while developing techniques
+
+**Workflow example**:
+1. Pin current bean profile
+2. Pin target recipe
+3. Log multiple iterations
+4. Compare results in Recent Items
+5. Update recipe based on findings
+
+---
+
+### Keyboard Shortcuts for Enthusiasts
+
+Master these for maximum efficiency:
+
+| Shortcut | Action | Workflow |
+|----------|--------|----------|
+| `Cmd/Ctrl + Shift + L` | New standard log | Quick iteration logging |
+| `Cmd/Ctrl + Shift + E` | Extract data | Update analytics |
+| `Cmd/Ctrl + Shift + V` | Visualization hub | Review trends |
+| `Cmd/Ctrl + Shift + M` | Monthly analytics | Deep dive analysis |
+| `Alt + 2` | Standard template | Fast logging |
+| `?` | Shortcuts overlay | Quick reference |
+
+**Full power user guide**: [[Configuration/KEYBOARD-SHORTCUTS|Complete Shortcuts Reference]]
+
+---
+
+### Template Variants for Experimentation
+
+**Quick (1 min)**: Daily consistency tracking
+- Use for rapid iteration (5+ brews/day)
+- Track only essential variables
+- [[Templates/Coffee-Log-Quick]]
+
+**Standard (3-5 min)**: Balanced exploration (recommended)
+- Full parameter tracking
+- Equipment logging
+- Flavor profiling
+- [[Templates/Coffee-Log-Standard]]
+
+**Detailed (10+ min)**: Competition prep & special sessions
+- Full SCA cupping protocol
+- TDS and extraction yield
+- Environmental factors
+- [[Templates/Coffee-Log-Detailed]]
+
+**Pro workflow**: Use Quick for daily, Standard for refinement, Detailed for competitions.
+
+---
+
+### Advanced Search for Data Discovery
+
+**Enthusiast-level searches**:
+
+**Find optimization opportunities**:
+```
+[rating:<4] [brew-method:v60]
+```
+→ V60 brews to improve
+
+**Track extraction trends**:
+```
+[tds:>0] [extraction-yield:>0]
+```
+→ All measured extractions
+
+**Bean performance analysis**:
+```
+[origin:ethiopia] [rating:>0]
+```
+→ Compare Ethiopian coffees
+
+**Method comparison**:
+```
+(v60 OR aeropress) [rating:>=4]
+```
+→ Top brews by method
+
+**Complex analysis**:
+```
+[date:>2025-11-01] [rating:>=4] [brew-method:v60]
+```
+→ Recent successful V60 brews
+
+**Master search**: [[Configuration/SEARCH-TIPS|Advanced Search Guide]]
+
+---
+
+### Dashboard Quick Actions
+
+Enthusiast Dashboard includes:
+- ☕ **Standard Log** - Balanced template
+- 📊 **View Analytics** - Monthly insights
+- 🔬 **Explore Science** - Research library
+- 🌱 **Beans Library** - Current inventory
+
+**Customization**: Edit [[Views/Persona-ENTHUSIAST-Dashboard]] to add your own quick actions.
+
+---
+
+### CSS & Visual Enhancements
+
+**New in v7.0**:
+
+**Loading states**: No more waiting for dataview queries - see skeleton screens
+
+**Toast notifications**: Confirm data extractions, exports, and actions
+
+**Enhanced search results**: Color-coded highlights and better previews
+
+**Progress indicators**: Visual feedback for long-running operations
+
+**Smooth transitions**: Polished animations between views
+
+**Chart enhancements**: Better hover states and interactive elements
+
+**Enable all features**:
+```
+Settings → Appearance → CSS Snippets:
+- coffee-vault-design-system-v6.css ✓
+- floating-actions.css ✓
+- coffee-vault-animations.css ✓
+```
+
+---
+
+### Data Extraction Workflow Enhancement
+
+**New workflow**:
+1. Log multiple brews throughout the day
+2. Press `Cmd/Ctrl + Shift + E` to extract
+3. View toast notification confirming extraction
+4. Navigate to analytics with `Cmd/Ctrl + Shift + M`
+5. See updated trends and insights
+
+**Automation tip**: Set up automatic extraction on schedule (see [[Configuration/Automation-Playbook]])
+
+---
+
+### Visualization Shortcuts
+
+When visualization is focused:
+
+| Shortcut | Action | Use Case |
+|----------|--------|----------|
+| `Arrow Keys` | Rotate view | Explore 3D data |
+| `+` / `-` | Zoom in/out | Focus on clusters |
+| `R` | Reset view | Return to default |
+| `E` | Export PNG | Share insights |
+| `D` | Dark mode toggle | Match environment |
+| `G` | Toggle grid | Better depth perception |
+| `L` | Toggle labels | Clean vs. detailed view |
+
+**3D navigation tip**: Hold `Shift` while dragging for pan instead of rotate.
+
+---
+
+### Mobile Optimization for Enthusiasts
+
+**On-the-go logging**:
+- Large 64px FAB button for easy tapping
+- Responsive quick actions grid
+- Touch-optimized search
+- Swipe gestures for Recent Items
+
+**Mobile workflow**:
+1. Brew coffee
+2. Quick Log on phone (1 min)
+3. Sync to desktop
+4. Extract data and analyze later
+
+---
+
+### Getting Started with v7.0 Features
+
+**Day 1**: Set up keyboard shortcuts
+- Configure `Cmd/Ctrl + Shift + L` for new log
+- Configure `Cmd/Ctrl + Shift + E` for extraction
+- Practice `Shift + Space` for quick access
+
+**Week 1**: Master template variants
+- Try all three templates
+- Find your sweet spot
+- Develop consistent workflow
+
+**Week 2**: Advanced search mastery
+- Practice complex queries
+- Create saved searches
+- Build custom dashboards with Dataview
+
+**Month 1**: Full v7.0 integration
+- FAB becomes muscle memory
+- Recent Items optimized for your workflow
+- Custom shortcuts for all common tasks
+- Extraction and analytics automated
+
+---
+
 ## Related Resources
 
 ### Essential Dashboards

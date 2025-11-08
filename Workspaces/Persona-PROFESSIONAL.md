@@ -394,6 +394,343 @@ node Scripts/competition-prep-export.js
 
 ---
 
+## ⚡ Quality of Life Features (v7.0)
+
+Coffee Vault 7.0 provides professional-grade QoL enhancements for peak productivity and research efficiency.
+
+### Floating Action Bar (Professional Mode)
+
+**Full action suite**:
+- ☕ Detailed Competition Log
+- 🥄 New Cupping Session (SCA)
+- 🔮 ML Quality Predictor
+- 📈 Visualization Hub
+- ⚙️ Run Data Extraction
+- 📊 Advanced Analytics
+- 🏠 Command Center
+
+**Pro shortcuts**:
+- `Shift + Space`: Quick actions
+- `Cmd/Ctrl + Shift + E`: Extract & analyze
+- `Cmd/Ctrl + Shift + V`: Full viz suite
+- `Cmd/Ctrl + Shift + C`: New cupping session
+
+---
+
+### Advanced Keyboard Workflows
+
+Professional-level shortcuts for maximum efficiency:
+
+**Data & Analytics**:
+- `Cmd/Ctrl + Shift + E` - Extract data
+- `Cmd/Ctrl + Shift + M` - Monthly analytics
+- `Cmd/Ctrl + Shift + T` - Trend analysis
+- `Cmd/Ctrl + Shift + Q` - Quality predictor
+
+**Cupping & Evaluation**:
+- `Cmd/Ctrl + Shift + C` - New cupping session
+- `Alt + C` - SCA cupping form
+- `Alt + S` - Sensory experiment
+
+**Templates**:
+- `Alt + 3` - Detailed competition log
+- `Alt + C` - Cupping session
+- `Alt + E` - Equipment maintenance
+
+**Complete reference**: [[Configuration/KEYBOARD-SHORTCUTS|Professional Shortcuts Guide]]
+
+---
+
+### Template Suite for Professionals
+
+**Competition Log** (10-15 min):
+- Full SCA evaluation protocol
+- TDS and extraction yield tracking
+- Environmental factors logging
+- Equipment settings documentation
+- [[Templates/Coffee-Log-Detailed]]
+
+**SCA Cupping Form** (per sample):
+- Standard cupping protocol
+- Fragrance, flavor, aftertaste scoring
+- Defects identification
+- Calibrated to SCA standards
+- [[Templates/SCA-Cupping-Form]]
+
+**Sensory Experiment**:
+- Multi-variable testing framework
+- Statistical analysis ready
+- Blind tasting support
+- [[Templates/sensory-experiment-template]]
+
+**Pro workflow**: Template selection based on session type (competition vs. research vs. production).
+
+---
+
+### Advanced Search & Data Mining
+
+**Professional search patterns**:
+
+**Statistical outlier detection**:
+```
+[tds:>0] [rating:>0]
+```
+→ Export to spreadsheet, calculate z-scores
+
+**Multi-parameter correlation**:
+```
+[grind-size:>0] [water-temperature:>0] [rating:>=4]
+```
+→ Feed into correlation engine
+
+**Competition data isolation**:
+```
+tag:#competition [rating:>=4.5]
+```
+→ Extract winning formulas
+
+**Time-series analysis**:
+```
+[date:>2025-10-01] [date:<2025-11-01] [tds:>0]
+```
+→ Monthly extraction trends
+
+**Regex for advanced patterns**:
+```
+/\d{2,3}°[CF]/
+```
+→ Find all temperature references
+
+**Master search**: [[Configuration/SEARCH-TIPS|Professional Search Techniques]]
+
+---
+
+### Data Extraction & Pipeline Automation
+
+**Enhanced extraction workflow**:
+
+1. **Batch logging**: Log multiple sessions
+2. **One-click extraction**: `Cmd/Ctrl + Shift + E`
+3. **Automated processing**: Scripts parse all fields
+4. **ML feature generation**: Auto-compute derived metrics
+5. **Analytics update**: Dashboards refresh
+6. **Notification**: Toast confirms completion
+
+**Pipeline configuration**:
+```javascript
+// .vault-meta/automation-config.json
+{
+  "extraction": {
+    "schedule": "0 0 * * *", // Daily at midnight
+    "autoML": true,
+    "exportFormats": ["csv", "json"],
+    "backupBeforeExtract": true
+  }
+}
+```
+
+**Advanced automation**: [[Configuration/Automation-Playbook]]
+
+---
+
+### Visualization Suite Enhancements
+
+**New v7.0 viz features**:
+
+**Interactive 3D plots**:
+- Grind × Temp × Extraction yield
+- Flavor profile dimensionality reduction
+- Equipment performance clustering
+
+**Real-time hover data**:
+- Instant metric display
+- Quick filtering
+- Drill-down to source logs
+
+**Export capabilities**:
+- High-res PNG (publication quality)
+- SVG (vector for editing)
+- Interactive HTML
+- Raw data CSV
+
+**Visualization shortcuts** (when focused):
+| Shortcut | Action | Professional Use |
+|----------|--------|------------------|
+| `E` | Export PNG | Publication graphics |
+| `S` | Save view | Reproducible angles |
+| `D` | Dark mode | Presentation mode |
+| `R` | Reset | Standard reference view |
+| `G` | Grid toggle | Axis alignment |
+| `L` | Label toggle | Clean for presentations |
+
+---
+
+### CSS & Professional UI Polish
+
+**Research-grade interface**:
+
+**Data table enhancements**:
+- Sortable columns with visual indicators
+- Hover highlighting for comparison
+- Zebra striping for long tables
+- Fixed headers for scroll
+
+**Chart polish**:
+- Anti-aliased rendering
+- Retina-ready graphics
+- Consistent color scheme
+- Publication-quality defaults
+
+**Loading states**:
+- Skeleton screens for ML models
+- Progress bars for long computations
+- Toast notifications for async operations
+
+**Accessibility**:
+- WCAG 2.1 AAA where possible
+- Keyboard-only navigation
+- Screen reader annotations
+- High contrast support
+
+**Enable professional CSS**:
+```
+Settings → Appearance → CSS Snippets:
+- coffee-vault-design-system-v6.css ✓
+- floating-actions.css ✓
+- coffee-vault-animations.css ✓
+- coffee-vault-utilities.css ✓
+```
+
+---
+
+### Recent Items for Research Workflow
+
+**Pin research stack**:
+1. **Active experiment protocol**
+2. **Current bean batch profile**
+3. **Target recipe**
+4. **Previous session logs** (for comparison)
+5. **Scientific reference** (method validation)
+6. **Data export** (spreadsheet)
+
+**Workflow**:
+- Pin all research materials
+- Quick switch during session
+- No context-switching delay
+- Maintain flow state
+
+---
+
+### Mobile Professional Workflow
+
+**Field cupping**:
+- Full SCA form on tablet
+- Photo capture integration
+- Sync to desktop for analysis
+- Offline-capable logging
+
+**On-site consulting**:
+- Quick access to client profiles
+- Reference recipes on phone
+- Immediate data entry
+- Export reports on device
+
+**Touch optimization**:
+- Large targets for outdoor use
+- Glove-friendly interface
+- Sunlight-readable contrast
+
+---
+
+### Integration with External Tools
+
+**Export for analysis**:
+- CSV → R/Python/Excel
+- JSON → Custom dashboards
+- PDF → Competition submissions
+
+**Import workflows**:
+- Roaster data → Bean profiles
+- Lab results → Water chemistry
+- Competition scores → Performance tracking
+
+**API hooks** (advanced):
+```javascript
+// Custom integration
+coffeeVault.export({
+  format: 'json',
+  filter: '[rating:>=4.5]',
+  fields: ['all'],
+  output: '/exports/elite-brews.json'
+});
+```
+
+---
+
+### Professional Automation Examples
+
+**Daily research routine**:
+```
+06:00 - Auto-extract yesterday's data
+06:05 - Generate morning analytics report
+06:10 - Email summary to team
+20:00 - Backup vault to cloud
+20:05 - Run anomaly detection
+20:10 - Generate next-day experiment suggestions
+```
+
+**Competition prep**:
+```
+- Auto-track bean age
+- Alert when < 7 days to competition
+- Generate practice schedule
+- Export performance trends
+```
+
+**Production monitoring**:
+```
+- Track consistency metrics
+- Alert on quality drops
+- Suggest corrective actions
+- Generate weekly reports
+```
+
+**Setup**: [[Configuration/Automation-Playbook|Professional Automation Guide]]
+
+---
+
+### Getting Started with v7.0 Pro Features
+
+**Day 1: Setup**
+- Install all CSS snippets
+- Configure all keyboard shortcuts
+- Test data extraction pipeline
+- Verify ML predictor access
+
+**Week 1: Integration**
+- Integrate into daily workflow
+- Pin research materials
+- Set up automated extractions
+- Customize quick actions
+
+**Week 2: Optimization**
+- Refine keyboard shortcuts
+- Create custom searches
+- Build personal dashboards
+- Automate reporting
+
+**Month 1: Mastery**
+- Full keyboard workflow (mouse-free)
+- Automated data pipeline
+- Custom scripts and integrations
+- Peak productivity achieved
+
+---
+
+**Pro tip**: Coffee Vault 7.0 is designed to disappear - the best tools get out of your way and let you focus on the coffee.
+
+---
+
 ## 🌟 You're at Expert Level
 
 The Professional workspace is built for peak productivity, research rigor, and professional excellence. You have complete control and maximum capability.

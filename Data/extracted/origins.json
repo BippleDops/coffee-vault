@@ -1,0 +1,1876 @@
+{
+  "extractedAt": "2025-11-08T19:06:26.230Z",
+  "version": "7.0.0",
+  "count": 59,
+  "origins": [
+    {
+      "type": "origin-profile",
+      "name": "Zimbabwe - Eastern Highlands",
+      "country": "Zimbabwe",
+      "region": "Eastern Highlands (Manicaland, Nyanga)",
+      "coffee-rank": "Recovering, boutique specialty",
+      "annual-production": "5,000-15,000 bags (estimate)",
+      "altitude-range": "1200-2000",
+      "primary-varieties": [
+        "Bourbon",
+        "Caturra",
+        "Catimor"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "fruit",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "zimbabwe",
+        "africa",
+        "emerging",
+        "rare",
+        "recovering"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Zimbabwe-Eastern-Highlands.md",
+      "_filename": "Zimbabwe-Eastern-Highlands.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Zambia - Northern Province",
+      "country": "Zambia",
+      "region": "Northern Province, Southern Africa",
+      "coffee-rank": "Emerging, tiny specialty",
+      "annual-production": "5,000-10,000 bags (Arabica)",
+      "altitude-range": "1200-1800",
+      "primary-varieties": [
+        "Catimor",
+        "Bourbon"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "fruit",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "zambia",
+        "africa",
+        "emerging",
+        "rare",
+        "specialty"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Zambia-Northern-Province.md",
+      "_filename": "Zambia-Northern-Province.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Yemen",
+      "category": "country",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/Yemen.md",
+      "_filename": "Yemen.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Vietnam",
+      "country": "Vietnam",
+      "region": "Southeast Asia",
+      "coffee-rank": "2nd largest producer globally",
+      "annual-production": "25-30 million bags",
+      "altitude-range": "500-1600",
+      "primary-varieties": [
+        "Robusta (dominant)",
+        "Catimor",
+        "Arabica"
+      ],
+      "processing-methods": [
+        "natural",
+        "wet-hulled"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "earthy",
+        "full-body",
+        "low-acid",
+        "strong"
+      ],
+      "tags": [
+        "origin",
+        "vietnam",
+        "robusta",
+        "catimor",
+        "volume-producer"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Vietnam-Coffee.md",
+      "_filename": "Vietnam-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Venezuela",
+      "country": "Venezuela",
+      "region": "South America (Andean)",
+      "coffee-rank": "Declining, crisis-affected",
+      "annual-production": "50,000-100,000 bags (declining)",
+      "altitude-range": "800-1800",
+      "primary-varieties": [
+        "Bourbon",
+        "Typica",
+        "Caturra"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "balanced",
+        "sweet",
+        "mild"
+      ],
+      "tags": [
+        "origin",
+        "venezuela",
+        "south-america",
+        "crisis",
+        "declining"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Venezuela-Coffee.md",
+      "_filename": "Venezuela-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Uganda (Bugisu/Bugishu)",
+      "country": "Uganda",
+      "region": "Eastern Uganda (Mount Elgon Slopes)",
+      "coffee-rank": "African Arabica producer",
+      "annual-production": "200,000-300,000 bags (Arabica)",
+      "altitude-range": "1200-2300",
+      "primary-varieties": [
+        "SL-14",
+        "SL-28",
+        "Kent",
+        "Typica"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "citrus",
+        "wine-like",
+        "complex",
+        "bright",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "uganda",
+        "bugisu",
+        "mount-elgon",
+        "bright",
+        "underrated"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Uganda-Bugisu.md",
+      "_filename": "Uganda-Bugisu.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Thailand (Northern Highlands)",
+      "country": "Thailand",
+      "region": "Northern Thailand (Chiang Mai, Chiang Rai, Mae Hong Son)",
+      "coffee-rank": "Emerging specialty origin",
+      "annual-production": "30,000-50,000 bags (Arabica)",
+      "altitude-range": "800-1500",
+      "primary-varieties": [
+        "Typica",
+        "Catimor",
+        "SL-28",
+        "Geisha"
+      ],
+      "processing-methods": [
+        "washed",
+        "honey",
+        "natural",
+        "experimental"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "fruit",
+        "balanced",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "thailand",
+        "emerging",
+        "specialty",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Thailand-Northern-Highlands.md",
+      "_filename": "Thailand-Northern-Highlands.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Tanzania",
+      "country": "Tanzania",
+      "region": "East Africa",
+      "coffee-rank": "Emerging specialty, established producer",
+      "annual-production": "800,000-1,000,000 bags",
+      "altitude-range": "1200-2100",
+      "primary-varieties": [
+        "Bourbon",
+        "Kent",
+        "Typica",
+        "N39",
+        "KP423"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural"
+      ],
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "wine-like",
+        "bright",
+        "complex",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "tanzania",
+        "east-africa",
+        "bright",
+        "berry",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Tanzania.md",
+      "_filename": "Tanzania.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Sumatra",
+      "category": "island-region",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/Sumatra.md",
+      "_filename": "Sumatra.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Réunion Island (Bourbon Pointu Homeland)",
+      "country": "Réunion Island (French Territory)",
+      "region": "Indian Ocean Island",
+      "coffee-rank": "Heritage origin, minimal production",
+      "annual-production": "100-500 bags (tiny, heritage)",
+      "altitude-range": "600-1200",
+      "primary-varieties": [
+        "Bourbon Pointu/Laurina",
+        "Bourbon"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "delicate",
+        "sweet",
+        "low-caffeine",
+        "heritage"
+      ],
+      "tags": [
+        "origin",
+        "reunion",
+        "bourbon-island",
+        "laurina",
+        "heritage",
+        "rare"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Réunion-Island-Bourbon-Pointu.md",
+      "_filename": "Réunion-Island-Bourbon-Pointu.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Rwanda",
+      "category": "country",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/Rwanda.md",
+      "_filename": "Rwanda.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Peru",
+      "country": "Peru",
+      "region": "South America (Andean)",
+      "coffee-rank": "Major organic producer",
+      "annual-production": "3.5-4.5 million bags",
+      "altitude-range": "1200-2100",
+      "primary-varieties": [
+        "Typica",
+        "Bourbon",
+        "Caturra",
+        "Catimor",
+        "Pache"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "bright-fruit",
+        "balanced",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "peru",
+        "south-america",
+        "organic",
+        "balanced",
+        "fair-trade"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Peru.md",
+      "_filename": "Peru.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Papua New Guinea",
+      "country": "Papua New Guinea",
+      "region": "Oceania/Pacific",
+      "coffee-rank": "Pacific Island specialty",
+      "annual-production": "800,000-1,000,000 bags",
+      "altitude-range": "1200-2000",
+      "primary-varieties": [
+        "Arusha",
+        "Typica",
+        "Bourbon",
+        "Blue Mountain"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "fruit",
+        "chocolate",
+        "complex",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "papua-new-guinea",
+        "pacific",
+        "balanced",
+        "smallholder"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Papua-New-Guinea.md",
+      "_filename": "Papua-New-Guinea.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Panama",
+      "category": "country",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/Panama.md",
+      "_filename": "Panama.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Nicaragua",
+      "country": "Nicaragua",
+      "region": "Central America",
+      "coffee-rank": "Emerging specialty leader",
+      "annual-production": "2-3 million bags",
+      "altitude-range": "800-1700",
+      "primary-varieties": [
+        "Caturra",
+        "Catuai",
+        "Maracaturra",
+        "Pacamara",
+        "Bourbon"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "nuts",
+        "fruit",
+        "floral",
+        "complex"
+      ],
+      "tags": [
+        "origin",
+        "nicaragua",
+        "central-america",
+        "balanced",
+        "specialty",
+        "maracaturra"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Nicaragua.md",
+      "_filename": "Nicaragua.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Myanmar - Shan State",
+      "country": "Myanmar (Burma)",
+      "region": "Shan State Highlands, Eastern Myanmar",
+      "coffee-rank": "Emerging, tiny specialty production",
+      "annual-production": "10,000-20,000 bags (Arabica)",
+      "altitude-range": "1000-1600",
+      "primary-varieties": [
+        "Catimor",
+        "S-795",
+        "Typica"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "fruit",
+        "balanced",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "myanmar",
+        "burma",
+        "shan-state",
+        "emerging",
+        "rare"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Myanmar-Shan-State.md",
+      "_filename": "Myanmar-Shan-State.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Mexico",
+      "country": "Mexico",
+      "region": "North America/Central America Border",
+      "coffee-rank": "Major producer, specialty emerging",
+      "annual-production": "3.5-4 million bags",
+      "altitude-range": "900-1800",
+      "primary-varieties": [
+        "Typica",
+        "Bourbon",
+        "Caturra",
+        "Mundo Novo",
+        "Catimor",
+        "Marsellesa"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "mild-fruit",
+        "balanced"
+      ],
+      "tags": [
+        "origin",
+        "mexico",
+        "north-america",
+        "balanced",
+        "organic",
+        "shade-grown"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Mexico.md",
+      "_filename": "Mexico.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Malawi",
+      "country": "Malawi",
+      "region": "Southern Africa",
+      "coffee-rank": "Small specialty producer, emerging",
+      "annual-production": "5,000-10,000 bags (Arabica)",
+      "altitude-range": "1000-2000",
+      "primary-varieties": [
+        "Gesha",
+        "Agaro",
+        "Catimor"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "fruit",
+        "balanced",
+        "clean",
+        "potential"
+      ],
+      "tags": [
+        "origin",
+        "malawi",
+        "africa",
+        "gesha",
+        "emerging",
+        "rare"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Malawi-Coffee.md",
+      "_filename": "Malawi-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Madagascar",
+      "country": "Madagascar",
+      "region": "Island Nation, East Africa",
+      "coffee-rank": "Small specialty producer",
+      "annual-production": "30,000-50,000 bags",
+      "altitude-range": "800-1500",
+      "primary-varieties": [
+        "Bourbon",
+        "Typica"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "fruit",
+        "spice",
+        "unique",
+        "island-terroir"
+      ],
+      "tags": [
+        "origin",
+        "madagascar",
+        "africa",
+        "island",
+        "bourbon",
+        "unique-terroir"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Madagascar-Coffee.md",
+      "_filename": "Madagascar-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Laos - Bolaven Plateau",
+      "country": "Laos",
+      "region": "Bolaven Plateau, Southern Laos",
+      "coffee-rank": "Emerging specialty, tiny production",
+      "annual-production": "30,000-50,000 bags",
+      "altitude-range": "1000-1350",
+      "primary-varieties": [
+        "Typica",
+        "Catimor"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "balanced",
+        "clean",
+        "mild-fruit"
+      ],
+      "tags": [
+        "origin",
+        "laos",
+        "bolaven-plateau",
+        "emerging",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Laos-Bolaven-Plateau.md",
+      "_filename": "Laos-Bolaven-Plateau.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "_filepath": "/home/user/coffee-vault/Origins/Kenya.md",
+      "_filename": "Kenya.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Kenya",
+      "region": "Nyeri",
+      "coffee-rank": "world-class-specialty",
+      "altitude": "1500-2100",
+      "annual-production": "50000-metric-tons",
+      "primary-process": "washed",
+      "secondary-process": "double-fermentation",
+      "primary-varieties": "SL28-SL34-Ruiru11-Batian",
+      "tags": [
+        "origin",
+        "kenya",
+        "nyeri",
+        "blackcurrant",
+        "africa",
+        "specialty",
+        "double-fermentation"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Kenya-Nyeri.md",
+      "_filename": "Kenya-Nyeri.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Kenya (Complete Profile)",
+      "country": "Kenya",
+      "region": "East Africa",
+      "coffee-rank": "Premium specialty, quality leader",
+      "annual-production": "800,000-900,000 bags",
+      "altitude-range": "1400-2200",
+      "primary-varieties": [
+        "SL-28",
+        "SL-34",
+        "Batian",
+        "Ruiru-11",
+        "K7"
+      ],
+      "processing-methods": [
+        "washed-double-fermentation"
+      ],
+      "flavor-profile": [
+        "berry",
+        "blackcurrant",
+        "citrus",
+        "wine-like",
+        "bright",
+        "complex"
+      ],
+      "tags": [
+        "origin",
+        "kenya",
+        "east-africa",
+        "sl-28",
+        "blackcurrant",
+        "premium",
+        "complete"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Kenya-Complete-Profile.md",
+      "_filename": "Kenya-Complete-Profile.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Jamaica (Blue Mountain)",
+      "country": "Jamaica",
+      "region": "Caribbean, Blue Mountain Range",
+      "coffee-rank": "Ultra-premium, limited production",
+      "annual-production": "20,000-30,000 bags",
+      "altitude-range": "900-1700",
+      "primary-varieties": [
+        "Typica",
+        "Blue Mountain variety"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "mild",
+        "balanced",
+        "sweet",
+        "smooth",
+        "clean",
+        "subtle"
+      ],
+      "tags": [
+        "origin",
+        "jamaica",
+        "blue-mountain",
+        "ultra-premium",
+        "mild",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Jamaica-Blue-Mountain.md",
+      "_filename": "Jamaica-Blue-Mountain.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Indonesia - Sumatra (Complete Profile)",
+      "country": "Indonesia",
+      "region": "Sumatra Island",
+      "coffee-rank": "Major Indonesian producer",
+      "annual-production": "800,000-1,000,000 bags",
+      "altitude-range": "800-1700",
+      "primary-varieties": [
+        "Typica",
+        "Catimor",
+        "S-795",
+        "Timor"
+      ],
+      "processing-methods": [
+        "wet-hulled"
+      ],
+      "flavor-profile": [
+        "earthy",
+        "herbal",
+        "full-body",
+        "low-acid",
+        "chocolate",
+        "rustic"
+      ],
+      "tags": [
+        "origin",
+        "indonesia",
+        "sumatra",
+        "wet-hulled",
+        "earthy",
+        "full-body"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Indonesia-Sumatra-Complete-Profile.md",
+      "_filename": "Indonesia-Sumatra-Complete-Profile.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Indonesia - Sulawesi (Celebes)",
+      "country": "Indonesia",
+      "region": "Sulawesi Island (formerly Celebes)",
+      "coffee-rank": "Specialty Indonesian origin",
+      "annual-production": "100,000-150,000 bags",
+      "altitude-range": "1000-1800",
+      "primary-varieties": [
+        "Typica",
+        "S-795",
+        "Jember",
+        "Catimor"
+      ],
+      "processing-methods": [
+        "wet-hulled",
+        "washed"
+      ],
+      "flavor-profile": [
+        "earthy",
+        "herbal",
+        "chocolate",
+        "spice",
+        "full-body",
+        "complex"
+      ],
+      "tags": [
+        "origin",
+        "indonesia",
+        "sulawesi",
+        "toraja",
+        "wet-hulled",
+        "earthy"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Indonesia-Sulawesi.md",
+      "_filename": "Indonesia-Sulawesi.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Indonesia - Java Island (Complete Profile)",
+      "country": "Indonesia",
+      "region": "Java Island",
+      "coffee-rank": "Historic origin, estate-focused",
+      "annual-production": "100,000-150,000 bags",
+      "altitude-range": "900-1800",
+      "primary-varieties": [
+        "Typica",
+        "S-795",
+        "Catimor"
+      ],
+      "processing-methods": [
+        "wet-hulled",
+        "washed"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "spice",
+        "earthy",
+        "balanced"
+      ],
+      "tags": [
+        "origin",
+        "indonesia",
+        "java",
+        "heritage",
+        "estate",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Indonesia-Java-Complete-Profile.md",
+      "_filename": "Indonesia-Java-Complete-Profile.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "India",
+      "category": "country",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/India.md",
+      "_filename": "India.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "India (Monsooned Malabar)",
+      "country": "India",
+      "region": "Malabar Coast, Karnataka, Kerala",
+      "coffee-rank": "Unique specialty, niche market",
+      "annual-production": "Varies (specialized process)",
+      "altitude-range": "1000-1600",
+      "primary-varieties": [
+        "Kent",
+        "S-795",
+        "Cauvery"
+      ],
+      "processing-methods": [
+        "monsooning",
+        "washed"
+      ],
+      "flavor-profile": [
+        "earthy",
+        "spice",
+        "low-acid",
+        "heavy-body",
+        "unique"
+      ],
+      "tags": [
+        "origin",
+        "india",
+        "monsooned",
+        "malabar",
+        "unique-process",
+        "heavy-body"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/India-Monsooned-Malabar.md",
+      "_filename": "India-Monsooned-Malabar.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Honduras",
+      "country": "Honduras",
+      "region": "Central America",
+      "coffee-rank": "Major producer",
+      "annual-production": "7-8 million bags",
+      "altitude-range": "1000-1700",
+      "primary-varieties": [
+        "Catuai",
+        "Caturra",
+        "Typica",
+        "Bourbon",
+        "Lempira",
+        "IHCAFE 90"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "caramel",
+        "citrus",
+        "fruity"
+      ],
+      "tags": [
+        "origin",
+        "honduras",
+        "central-america",
+        "balanced",
+        "emerging-specialty"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Honduras.md",
+      "_filename": "Honduras.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Guatemala",
+      "region": "Central America",
+      "coffee-rank": "premium-quality",
+      "tags": [
+        "origin",
+        "guatemala",
+        "central-america",
+        "arabica",
+        "volcanic"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Guatemala.md",
+      "_filename": "Guatemala.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Guatemala (Complete Profile)",
+      "country": "Guatemala",
+      "region": "Central America",
+      "coffee-rank": "Premium Central American specialty",
+      "annual-production": "3.5-4 million bags",
+      "altitude-range": "1300-2000",
+      "primary-varieties": [
+        "Bourbon",
+        "Caturra",
+        "Catuai",
+        "Typica",
+        "Pacamara"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "citrus",
+        "spice",
+        "complex",
+        "balanced"
+      ],
+      "tags": [
+        "origin",
+        "guatemala",
+        "central-america",
+        "SHB",
+        "volcanic",
+        "complete"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Guatemala-Complete-Profile.md",
+      "_filename": "Guatemala-Complete-Profile.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Guatemala",
+      "region": "Antigua",
+      "coffee-rank": "world-renowned-specialty",
+      "altitude": "1200-1800",
+      "annual-production": "15000-metric-tons",
+      "primary-process": "washed",
+      "secondary-process": "natural-honey",
+      "primary-varieties": "bourbon-caturra-catuai",
+      "tags": [
+        "origin",
+        "guatemala",
+        "antigua",
+        "volcanic",
+        "central-america",
+        "specialty",
+        "chocolate-spice"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Guatemala-Antigua.md",
+      "_filename": "Guatemala-Antigua.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Ethiopia",
+      "region": "East Africa",
+      "coffee-rank": "birthplace",
+      "tags": [
+        "origin",
+        "ethiopia",
+        "africa",
+        "arabica"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Ethiopia.md",
+      "_filename": "Ethiopia.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Ethiopia",
+      "region": "Yirgacheffe (Gedeo Zone)",
+      "coffee-rank": "specialty-birthplace",
+      "altitude": "1700-2200",
+      "annual-production": "35000-metric-tons",
+      "primary-process": "washed",
+      "secondary-process": "natural",
+      "primary-varieties": "heirloom",
+      "tags": [
+        "origin",
+        "ethiopia",
+        "yirgacheffe",
+        "gedeo",
+        "floral",
+        "africa",
+        "specialty"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Ethiopia-Yirgacheffe.md",
+      "_filename": "Ethiopia-Yirgacheffe.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "El Salvador",
+      "category": "country",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/El Salvador.md",
+      "_filename": "El Salvador.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Ecuador",
+      "country": "Ecuador",
+      "region": "South America (Andean & Galápagos)",
+      "coffee-rank": "Small specialty producer",
+      "annual-production": "50,000-80,000 bags",
+      "altitude-range": "800-2000",
+      "primary-varieties": [
+        "Typica",
+        "Bourbon",
+        "Caturra",
+        "Sidra"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "floral",
+        "balanced",
+        "complex",
+        "unique"
+      ],
+      "tags": [
+        "origin",
+        "ecuador",
+        "south-america",
+        "galapagos",
+        "sidra",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Ecuador-Coffee.md",
+      "_filename": "Ecuador-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Dominican Republic",
+      "country": "Dominican Republic",
+      "region": "Caribbean",
+      "coffee-rank": "Small Caribbean specialty producer",
+      "annual-production": "30,000-50,000 bags",
+      "altitude-range": "600-1500",
+      "primary-varieties": [
+        "Typica",
+        "Caturra",
+        "Catuai"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "mild",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "dominican-republic",
+        "caribbean",
+        "balanced",
+        "mild"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Dominican-Republic-Coffee.md",
+      "_filename": "Dominican-Republic-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Democratic Republic of Congo - Kivu Region",
+      "country": "Democratic Republic of Congo (DRC)",
+      "region": "Eastern DRC, Kivu Region (Rwanda border)",
+      "coffee-rank": "Conflict-affected, minimal specialty",
+      "annual-production": "10,000-30,000 bags (Arabica, uncertain)",
+      "altitude-range": "1400-2200",
+      "primary-varieties": [
+        "Bourbon"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "bright",
+        "potential"
+      ],
+      "tags": [
+        "origin",
+        "drc",
+        "congo",
+        "kivu",
+        "conflict",
+        "potential",
+        "rare"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/DR-Congo-Kivu-Region.md",
+      "_filename": "DR-Congo-Kivu-Region.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Costa-Rica",
+      "region": "Tarrazu",
+      "coffee-rank": "SHB-specialty-leader",
+      "altitude": "1200-1900",
+      "annual-production": "18000-metric-tons",
+      "primary-process": "honey-washed",
+      "secondary-process": "natural",
+      "primary-varieties": "caturra-catuai-villa-sarchi",
+      "tags": [
+        "origin",
+        "costa-rica",
+        "tarrazu",
+        "SHB",
+        "honey-process",
+        "central-america",
+        "balanced-sweet"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Costa-Rica-Tarrazu.md",
+      "_filename": "Costa-Rica-Tarrazu.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Costa Rica",
+      "category": "country",
+      "date": "2025-10-27T00:00:00.000Z",
+      "_filepath": "/home/user/coffee-vault/Origins/Costa Rica.md",
+      "_filename": "Costa Rica.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Colombia",
+      "region": "South America",
+      "coffee-rank": "3rd-largest-producer",
+      "tags": [
+        "origin",
+        "colombia",
+        "south-america",
+        "arabica",
+        "juan-valdez"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia.md",
+      "_filename": "Colombia.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Colombia - Tolima Region",
+      "country": "Colombia",
+      "region": "Tolima Department, Central Colombia",
+      "category": "region",
+      "coffee-rank": "Premium Colombian specialty",
+      "annual-production": "200,000-300,000 bags",
+      "altitude-range": "1200-2000",
+      "primary-varieties": [
+        "Caturra",
+        "Castillo",
+        "Tabi"
+      ],
+      "processing-methods": [
+        "washed",
+        "honey"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "caramel",
+        "citrus",
+        "sweet"
+      ],
+      "tags": [
+        "origin",
+        "colombia",
+        "tolima",
+        "regional-profile",
+        "balanced",
+        "specialty"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia-Regional-Tolima.md",
+      "_filename": "Colombia-Regional-Tolima.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Colombia - Nariño Region",
+      "country": "Colombia",
+      "region": "Nariño Department, Far Southwest Colombia",
+      "category": "region",
+      "coffee-rank": "Ultra-premium Colombian specialty",
+      "annual-production": "150,000-250,000 bags",
+      "altitude-range": "1500-2300",
+      "primary-varieties": [
+        "Caturra",
+        "Castillo",
+        "Pink Bourbon",
+        "Tabi"
+      ],
+      "processing-methods": [
+        "washed",
+        "honey",
+        "experimental"
+      ],
+      "flavor-profile": [
+        "bright",
+        "complex",
+        "fruit-forward",
+        "floral",
+        "vibrant"
+      ],
+      "tags": [
+        "origin",
+        "colombia",
+        "narino",
+        "regional-profile",
+        "ultra-specialty",
+        "high-altitude"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia-Regional-Narino.md",
+      "_filename": "Colombia-Regional-Narino.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Colombia - Huila Region",
+      "country": "Colombia",
+      "region": "Huila Department, Southern Colombia",
+      "category": "region",
+      "coffee-rank": "Premium Colombian specialty region",
+      "annual-production": "1.5-2 million bags",
+      "altitude-range": "1200-2100",
+      "primary-varieties": [
+        "Caturra",
+        "Castillo",
+        "Bourbon",
+        "Pink Bourbon",
+        "Gesha"
+      ],
+      "processing-methods": [
+        "washed",
+        "honey",
+        "natural",
+        "anaerobic"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "fruit",
+        "balanced",
+        "sweet",
+        "complex"
+      ],
+      "tags": [
+        "origin",
+        "colombia",
+        "huila",
+        "regional-profile",
+        "specialty",
+        "premium"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia-Regional-Huila.md",
+      "_filename": "Colombia-Regional-Huila.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Colombia - Cauca Region",
+      "country": "Colombia",
+      "region": "Cauca Department, Southwest Colombia",
+      "category": "region",
+      "coffee-rank": "Premium Colombian specialty, experimental processing leader",
+      "annual-production": "100,000-150,000 bags",
+      "altitude-range": "1500-2200",
+      "primary-varieties": [
+        "Caturra",
+        "Castillo",
+        "Pink Bourbon",
+        "Gesha",
+        "Tabi"
+      ],
+      "processing-methods": [
+        "washed",
+        "honey",
+        "natural",
+        "anaerobic",
+        "experimental"
+      ],
+      "flavor-profile": [
+        "complex",
+        "fruit-forward",
+        "experimental",
+        "bright",
+        "unique"
+      ],
+      "tags": [
+        "origin",
+        "colombia",
+        "cauca",
+        "regional-profile",
+        "experimental",
+        "innovation"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia-Regional-Cauca.md",
+      "_filename": "Colombia-Regional-Cauca.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Colombia",
+      "region": "Huila",
+      "coffee-rank": "premium-specialty",
+      "altitude": "1200-2000",
+      "annual-production": "180000-metric-tons",
+      "primary-process": "washed",
+      "secondary-process": "honey-natural",
+      "primary-varieties": "castillo-caturra-colombia",
+      "tags": [
+        "origin",
+        "colombia",
+        "huila",
+        "volcanic",
+        "south-america",
+        "specialty"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia-Huila.md",
+      "_filename": "Colombia-Huila.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Colombia (Complete National Profile)",
+      "country": "Colombia",
+      "region": "South America (Andean)",
+      "coffee-rank": "World's premium Arabica leader",
+      "annual-production": "12-14 million bags",
+      "altitude-range": "1200-2300",
+      "primary-varieties": [
+        "Castillo",
+        "Caturra",
+        "Colombia",
+        "Bourbon",
+        "Pink-Bourbon",
+        "Gesha",
+        "Tabi"
+      ],
+      "processing-methods": [
+        "washed",
+        "honey",
+        "experimental"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "caramel",
+        "fruit",
+        "versatile"
+      ],
+      "tags": [
+        "origin",
+        "colombia",
+        "south-america",
+        "complete-profile",
+        "balanced",
+        "premium"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Colombia-Complete-Profile.md",
+      "_filename": "Colombia-Complete-Profile.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "China - Yunnan Province",
+      "country": "China",
+      "region": "Yunnan Province, Southwest China",
+      "coffee-rank": "Emerging Asian specialty",
+      "annual-production": "150,000-200,000 bags",
+      "altitude-range": "1000-1800",
+      "primary-varieties": [
+        "Catimor",
+        "Typica",
+        "Bourbon"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "balanced",
+        "mild-fruit",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "china",
+        "yunnan",
+        "emerging",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/China-Yunnan.md",
+      "_filename": "China-Yunnan.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Cameroon",
+      "country": "Cameroon",
+      "region": "West/Central Africa",
+      "coffee-rank": "Small producer, Robusta-dominant",
+      "annual-production": "400,000-600,000 bags (mostly Robusta)",
+      "altitude-range": "800-1800",
+      "primary-varieties": [
+        "Robusta",
+        "Arabica (limited)",
+        "Java"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "mild"
+      ],
+      "tags": [
+        "origin",
+        "cameroon",
+        "africa",
+        "robusta",
+        "limited-arabica"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Cameroon-Coffee.md",
+      "_filename": "Cameroon-Coffee.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Burundi",
+      "country": "Burundi",
+      "region": "East Africa",
+      "coffee-rank": "Small but high-quality producer",
+      "annual-production": "300,000-400,000 bags",
+      "altitude-range": "1250-2000",
+      "primary-varieties": [
+        "Bourbon",
+        "Jackson",
+        "Mibirizi"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "floral",
+        "complex",
+        "bright",
+        "clean"
+      ],
+      "tags": [
+        "origin",
+        "burundi",
+        "east-africa",
+        "bourbon",
+        "bright",
+        "specialty",
+        "underrated"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Burundi.md",
+      "_filename": "Burundi.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "country": "Brazil",
+      "region": "South America",
+      "coffee-rank": "largest-producer",
+      "tags": [
+        "origin",
+        "brazil",
+        "south-america",
+        "arabica",
+        "robusta",
+        "commodity"
+      ],
+      "_filepath": "/home/user/coffee-vault/Origins/Brazil.md",
+      "_filename": "Brazil.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Brazil - Sul de Minas Region",
+      "country": "Brazil",
+      "region": "Sul de Minas, Southern Minas Gerais",
+      "category": "region",
+      "coffee-rank": "Largest Brazilian specialty region",
+      "annual-production": "6-8 million bags",
+      "altitude-range": "900-1400",
+      "primary-varieties": [
+        "Bourbon",
+        "Yellow Bourbon",
+        "Mundo Novo",
+        "Catuai"
+      ],
+      "processing-methods": [
+        "natural",
+        "pulped-natural"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "sweet",
+        "balanced"
+      ],
+      "tags": [
+        "origin",
+        "brazil",
+        "sul-de-minas",
+        "specialty",
+        "volume",
+        "sweet"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Brazil-Regional-Sul-de-Minas.md",
+      "_filename": "Brazil-Regional-Sul-de-Minas.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Brazil - Mogiana Region",
+      "country": "Brazil",
+      "region": "Mogiana, São amm/Minas Gerais Border",
+      "category": "region",
+      "coffee-rank": "Premium Brazilian specialty",
+      "annual-production": "500,000-700,000 bags",
+      "altitude-range": "900-1400",
+      "primary-varieties": [
+        "Bourbon",
+        "Yellow Bourbon",
+        "Mundo Novo",
+        "Catuai"
+      ],
+      "processing-methods": [
+        "natural",
+        "pulped-natural"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "sweet",
+        "full-body",
+        "complex"
+      ],
+      "tags": [
+        "origin",
+        "brazil",
+        "mogiana",
+        "regional-profile",
+        "sweet",
+        "premium"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Brazil-Regional-Mogiana.md",
+      "_filename": "Brazil-Regional-Mogiana.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Brazil - Cerrado Mineiro Region",
+      "country": "Brazil",
+      "region": "Cerrado Mineiro, Western Minas Gerais",
+      "category": "region",
+      "coffee-rank": "First Brazilian PDO, Quality Leader",
+      "annual-production": "4-6 million bags",
+      "altitude-range": "800-1300",
+      "primary-varieties": [
+        "Mundo Novo",
+        "Catuai",
+        "Bourbon",
+        "Icatu"
+      ],
+      "processing-methods": [
+        "natural",
+        "pulped-natural"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "sweet",
+        "clean",
+        "balanced"
+      ],
+      "tags": [
+        "origin",
+        "brazil",
+        "cerrado-mineiro",
+        "PDO",
+        "quality",
+        "mechanized"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Brazil-Regional-Cerrado-Mineiro.md",
+      "_filename": "Brazil-Regional-Cerrado-Mineiro.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Brazil - Bahia Region",
+      "country": "Brazil",
+      "region": "Bahia State, Northeast Brazil",
+      "category": "region",
+      "coffee-rank": "Mechanized, large-scale production",
+      "annual-production": "1-2 million bags",
+      "altitude-range": "700-1200",
+      "primary-varieties": [
+        "Catuai",
+        "Mundo Novo",
+        "Catimor"
+      ],
+      "processing-methods": [
+        "natural",
+        "pulped-natural"
+      ],
+      "flavor-profile": [
+        "neutral",
+        "balanced",
+        "clean",
+        "blending"
+      ],
+      "tags": [
+        "origin",
+        "brazil",
+        "bahia",
+        "mechanized",
+        "volume",
+        "blending"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Brazil-Regional-Bahia.md",
+      "_filename": "Brazil-Regional-Bahia.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Brazil (Complete National Profile)",
+      "country": "Brazil",
+      "region": "South America",
+      "coffee-rank": "World's largest producer",
+      "annual-production": "50-65 million bags",
+      "altitude-range": "700-1400",
+      "primary-varieties": [
+        "Bourbon",
+        "Yellow-Bourbon",
+        "Mundo-Novo",
+        "Catuai",
+        "Icatu"
+      ],
+      "processing-methods": [
+        "natural",
+        "pulped-natural"
+      ],
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "sweet",
+        "low-acid",
+        "full-body"
+      ],
+      "tags": [
+        "origin",
+        "brazil",
+        "south-america",
+        "complete-profile",
+        "sweet",
+        "volume-leader"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Brazil-Complete-National-Profile.md",
+      "_filename": "Brazil-Complete-National-Profile.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Australia - Skybury & Specialty Farms",
+      "country": "Australia",
+      "region": "Queensland (Atherton Tablelands)",
+      "coffee-rank": "Boutique specialty, tiny production",
+      "annual-production": "500-1,000 bags (estimate)",
+      "altitude-range": "600-900",
+      "primary-varieties": [
+        "Typica",
+        "Bourbon",
+        "Catuai",
+        "K7"
+      ],
+      "processing-methods": [
+        "washed",
+        "natural",
+        "honey"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "clean",
+        "mild",
+        "chocolate",
+        "nuts"
+      ],
+      "tags": [
+        "origin",
+        "australia",
+        "skybury",
+        "boutique",
+        "rare",
+        "specialty"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Australia-Skybury.md",
+      "_filename": "Australia-Skybury.md",
+      "_entityType": "origin-profile"
+    },
+    {
+      "type": "origin-profile",
+      "name": "Angola",
+      "country": "Angola",
+      "region": "Southern Africa",
+      "coffee-rank": "Recovering, post-conflict",
+      "annual-production": "5,000-10,000 bags (minimal, recovering)",
+      "altitude-range": "1000-1800",
+      "primary-varieties": [
+        "Bourbon",
+        "Typica"
+      ],
+      "processing-methods": [
+        "washed"
+      ],
+      "flavor-profile": [
+        "balanced",
+        "potential"
+      ],
+      "tags": [
+        "origin",
+        "angola",
+        "africa",
+        "recovering",
+        "post-conflict",
+        "frontier"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Origins/Angola-Coffee-Recovery.md",
+      "_filename": "Angola-Coffee-Recovery.md",
+      "_entityType": "origin-profile"
+    }
+  ]
+}

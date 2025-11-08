@@ -16,6 +16,28 @@ Welcome to your professional-grade coffee analysis suite. Full data access, ML-p
 
 ---
 
+## ⚡ Quick Actions
+
+<div class="quick-actions-grid">
+
+<a href="obsidian://new?file=Coffee%20Logs/{{date:YYYY-MM-DD}}-Detailed&template=Templates/Coffee-Log-Detailed.md" class="action-button primary">☕ Log Coffee (Detailed)</a>
+
+<a href="obsidian://new?file=Cupping%20Sessions/{{date:YYYY-MM-DD}}-Cupping&template=Templates/SCA-Cupping-Form.md" class="action-button accent">🥄 New Cupping Session</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=Analytics/Analytics-Analysis-Layout/5-Quality-Predictor" class="action-button accent">🔮 ML Predictor</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=Analytics/Visualization-Hub" class="action-button secondary">📈 Visualization Hub</a>
+
+<a href="javascript:void(0)" class="action-button secondary" onclick="extractData()">⚙️ Run Data Extraction</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=HOME-DASHBOARD" class="action-button secondary">🏠 Home Dashboard</a>
+
+</div>
+
+> **Pro Tip**: `Shift + Space` = Quick actions | `Cmd/Ctrl + Shift + E` = Extract data | `Cmd/Ctrl + Shift + V` = Visualizations
+
+---
+
 ## 🎯 Advanced Analytics Suite
 
 ### Core Intelligence Dashboards

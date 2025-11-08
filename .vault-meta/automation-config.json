@@ -236,5 +236,152 @@
       "enabled": false,
       "recipients": []
     }
+  },
+
+  "dataExtraction": {
+    "enabled": true,
+    "description": "Real-time data extraction system for Coffee Vault 7.0",
+    "sourceFolders": [
+      "Coffee Logs",
+      "Beans Library",
+      "Origins",
+      "Recipes",
+      "Equipment Models",
+      "Cupping Sessions"
+    ],
+    "outputDir": "Data/extracted",
+    "cacheDir": "Data/extracted/cache",
+    "cacheStrategy": "aggressive",
+    "includeContent": false,
+    "performanceTarget": {
+      "fullExtraction": 2000,
+      "incrementalExtraction": 200,
+      "description": "Target times in milliseconds"
+    },
+    "outputFormats": {
+      "json": {
+        "enabled": true,
+        "pretty": true,
+        "includeMetadata": true
+      }
+    },
+    "entityTypes": {
+      "coffee-log": {
+        "folder": "Coffee Logs",
+        "outputFile": "coffee-logs.json",
+        "enabled": true
+      },
+      "bean-profile": {
+        "folder": "Beans Library",
+        "outputFile": "beans.json",
+        "enabled": true
+      },
+      "origin-profile": {
+        "folder": "Origins",
+        "outputFile": "origins.json",
+        "enabled": true
+      },
+      "recipe-profile": {
+        "folder": "Recipes",
+        "outputFile": "recipes.json",
+        "enabled": true
+      },
+      "equipment-model": {
+        "folder": "Equipment Models",
+        "outputFile": "equipment.json",
+        "enabled": true
+      },
+      "cupping-session": {
+        "folder": "Cupping Sessions",
+        "outputFile": "cupping-sessions.json",
+        "enabled": true
+      }
+    },
+    "scheduling": {
+      "autoExtract": false,
+      "onFileChange": false,
+      "scheduled": {
+        "enabled": false,
+        "cron": "0 */6 * * *",
+        "description": "Every 6 hours"
+      }
+    },
+    "errorHandling": {
+      "skipMalformed": true,
+      "logErrors": true,
+      "continueOnError": true
+    },
+    "optimization": {
+      "batchSize": 100,
+      "parallelProcessing": false,
+      "compressionEnabled": false
+    }
+  },
+
+  "linkSuggestion": {
+    "enabled": true,
+    "minConfidence": 70,
+    "autoAddThreshold": 90,
+    "excludeFolders": ["Templates", ".obsidian", ".vault-meta", "node_modules"],
+    "entityWeight": 20,
+    "tagWeight": 15,
+    "keywordWeight": 50,
+    "maxSuggestionsPerNote": 10
+  },
+
+  "duplicateDetection": {
+    "enabled": true,
+    "similarityThreshold": 80,
+    "ignoreTemplates": true,
+    "autoMergePerfectDuplicates": false,
+    "minContentLength": 100
+  },
+
+  "qualityScoring": {
+    "enabled": true,
+    "weights": {
+      "completeness": 30,
+      "connectivity": 25,
+      "citations": 20,
+      "freshness": 10,
+      "engagement": 10,
+      "readability": 5
+    },
+    "thresholds": {
+      "excellent": 90,
+      "good": 70,
+      "needsImprovement": 50
+    }
+  },
+
+  "autoTagging": {
+    "enabled": true,
+    "confidenceThreshold": 75,
+    "respectHierarchy": true,
+    "autoApply": false,
+    "maxSuggestionsPerNote": 5
+  },
+
+  "scheduledMaintenance": {
+    "enabled": false,
+    "schedules": {
+      "daily": {
+        "enabled": false,
+        "time": "09:00",
+        "tasks": ["ci", "quality", "links", "daily"]
+      },
+      "weekly": {
+        "enabled": false,
+        "dayOfWeek": "monday",
+        "time": "09:00",
+        "tasks": ["ci", "quality", "links", "duplicates", "tags", "accessibility", "daily"]
+      },
+      "monthly": {
+        "enabled": false,
+        "dayOfMonth": 1,
+        "time": "09:00",
+        "tasks": ["ci", "quality", "links", "duplicates", "tags", "accessibility", "daily"]
+      }
+    }
   }
 }

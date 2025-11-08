@@ -16,6 +16,24 @@ You've built solid brewing fundamentals and you're ready to optimize, explore, a
 
 ---
 
+## ⚡ Quick Actions
+
+<div class="quick-actions-grid">
+
+<a href="obsidian://new?file=Coffee%20Logs/{{date:YYYY-MM-DD}}-Log&template=Templates/Coffee-Log-Standard.md" class="action-button primary">☕ Log Coffee (Standard)</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard" class="action-button accent">📊 View Analytics</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=Scientific%20References" class="action-button secondary">🔬 Explore Science</a>
+
+<a href="obsidian://open?vault=coffee-vault&file=Beans%20Library" class="action-button secondary">🌱 Beans Library</a>
+
+</div>
+
+> **Tip**: Press `Shift + Space` for quick actions | `Cmd/Ctrl + Shift + E` to run data extraction
+
+---
+
 ## 📊 Your Coffee Intelligence
 
 ### Performance Overview

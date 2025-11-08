@@ -1,0 +1,3539 @@
+{
+  "extractedAt": "2025-11-08T19:06:26.180Z",
+  "version": "7.0.0",
+  "count": 109,
+  "beans": [
+    {
+      "type": "bean-profile",
+      "bean-name": "Yemen Mokha",
+      "roaster": "Tim Wendelboe",
+      "origin": "Yemen",
+      "roast-level": "medium",
+      "roast-date": "2025-10-12T00:00:00.000Z",
+      "purchase-date": "2025-10-20T00:00:00.000Z",
+      "price": 35,
+      "weight": 500,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "yemen"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Yemen-Mokha.md",
+      "_filename": "Yemen-Mokha.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Timor Hybrid (Arabusta)",
+      "origin": "Timor-Leste (East Timor)",
+      "region": "Multiple (grown globally for breeding)",
+      "variety": "Timor Hybrid (Arabica x Robusta Natural Hybrid)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "Various",
+      "flavor-profile": [
+        "neutral",
+        "balanced",
+        "simple"
+      ],
+      "body": "full",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "timor-hybrid",
+        "arabusta",
+        "rust-resistant",
+        "breeding-parent"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Timor-Hybrid.md",
+      "_filename": "Timor-Hybrid.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Tanzania Kent",
+      "origin": "[[Tanzania]]",
+      "region": "Kilimanjaro, Arusha",
+      "variety": "Kent (Indian Variety, Rust-Resistant Heritage)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "wine-like",
+        "chocolate",
+        "balanced"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "tanzania",
+        "kent",
+        "rust-resistant",
+        "bright"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Tanzania-Kent.md",
+      "_filename": "Tanzania-Kent.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Tanzania Bourbon",
+      "origin": "[[Tanzania]]",
+      "region": "Kilimanjaro, Arusha regions",
+      "variety": "Bourbon (Traditional Heirloom)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "wine-like",
+        "chocolate",
+        "complex",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "tanzania",
+        "bourbon",
+        "bright",
+        "berry",
+        "value"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Tanzania-Bourbon.md",
+      "_filename": "Tanzania-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Sumatra Mandheling",
+      "roaster": "Tim Wendelboe",
+      "origin": "Indonesia",
+      "roast-level": "dark",
+      "roast-date": "2025-10-11T00:00:00.000Z",
+      "purchase-date": "2025-10-21T00:00:00.000Z",
+      "price": 16.5,
+      "weight": 340,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "indonesia"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sumatra-Mandheling.md",
+      "_filename": "Sumatra-Mandheling.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Sumatra Mandheling",
+      "origin": "[[Sumatra]]",
+      "region": "North Sumatra (Tapanuli, Mandailing regions)",
+      "variety": "Typica, S-795, Catimor",
+      "processing": "Wet-Hulled (Giling Basah)",
+      "roast-level": "dark",
+      "altitude": "750-1500",
+      "flavor-profile": [
+        "earthy",
+        "herbal",
+        "full-body",
+        "low-acid",
+        "chocolate",
+        "rustic"
+      ],
+      "body": "very-full",
+      "acidity": "very-low",
+      "tags": [
+        "bean-profile",
+        "sumatra",
+        "mandheling",
+        "wet-hulled",
+        "earthy",
+        "classic"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sumatra-Mandheling-Heritage.md",
+      "_filename": "Sumatra-Mandheling-Heritage.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Sumatra Lintong",
+      "origin": "[[Sumatra]]",
+      "region": "Lintong, North Sumatra",
+      "variety": "Typica, S-795, Catimor",
+      "processing": "Wet-Hulled (Giling Basah)",
+      "roast-level": "medium-dark",
+      "altitude": "1100-1600",
+      "flavor-profile": [
+        "earthy",
+        "herbal",
+        "chocolate",
+        "full-body",
+        "low-acid"
+      ],
+      "body": "very-full",
+      "acidity": "very-low",
+      "tags": [
+        "bean-profile",
+        "sumatra",
+        "lintong",
+        "wet-hulled",
+        "earthy",
+        "full-body"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sumatra-Lintong.md",
+      "_filename": "Sumatra-Lintong.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Sumatra Gayo",
+      "origin": "[[Sumatra]]",
+      "region": "Aceh Province, Gayo Highlands",
+      "variety": "Typica, Bourbon, Catimor, Tim Tim",
+      "processing": "Wet-Hulled (Giling Basah)",
+      "roast-level": "medium-dark",
+      "altitude": "1100-1600",
+      "flavor-profile": [
+        "earthy",
+        "herbal",
+        "cedar",
+        "spice",
+        "full-body",
+        "low-acid"
+      ],
+      "body": "very-full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "sumatra",
+        "gayo",
+        "wet-hulled",
+        "earthy",
+        "full-body"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sumatra-Gayo.md",
+      "_filename": "Sumatra-Gayo.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Sulawesi Toraja Kalosi",
+      "origin": "Indonesia (Sulawesi Island)",
+      "region": "Tana Toraja, South Sulawesi",
+      "variety": "Typica, S-795",
+      "processing": "Wet-Hulled, Washed",
+      "roast-level": "medium-dark",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "earthy",
+        "chocolate",
+        "spice",
+        "balanced",
+        "full-body"
+      ],
+      "body": "full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "sulawesi",
+        "toraja",
+        "kalosi",
+        "balanced-indonesian"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sulawesi-Toraja-Kalosi.md",
+      "_filename": "Sulawesi-Toraja-Kalosi.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Sudan Rume",
+      "origin": "Multiple (Sudan origin, grown globally)",
+      "region": "Sudan (origin), Colombia, Central America (cultivation)",
+      "variety": "Sudan Rume (Ethiopian/Sudanese Wild Type)",
+      "processing": "Washed, Honey, Anaerobic",
+      "roast-level": "light",
+      "altitude": "1600-2100",
+      "flavor-profile": [
+        "complex",
+        "fruit-forward",
+        "floral",
+        "unique",
+        "sweet"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "sudan-rume",
+        "rare",
+        "complex",
+        "experimental",
+        "wild-type"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sudan-Rume.md",
+      "_filename": "Sudan-Rume.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Sarchimor Varieties",
+      "origin": "Global (multiple origins)",
+      "region": "Central America primarily",
+      "variety": "Sarchimor (Villa Sarchi x Timor Hybrid)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1000-1800",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "nuts",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "sarchimor",
+        "rust-resistant",
+        "better-than-catimor"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Sarchimor-Varieties.md",
+      "_filename": "Sarchimor-Varieties.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Rwanda Red Bourbon",
+      "origin": "[[Rwanda]]",
+      "region": "Northern Province, Western Province, Southern Province",
+      "variety": "Red Bourbon",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1700-2200",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "floral",
+        "chocolate",
+        "complex",
+        "bright"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "rwanda",
+        "red-bourbon",
+        "washed",
+        "bright",
+        "berry",
+        "specialty"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Rwanda-Red-Bourbon.md",
+      "_filename": "Rwanda-Red-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Rwanda Jackson",
+      "origin": "[[Rwanda]]",
+      "region": "Multiple Rwandan provinces",
+      "variety": "Jackson (Bourbon Mutation)",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1600-2100",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "floral",
+        "bright",
+        "complex"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "rwanda",
+        "jackson",
+        "bourbon-mutation",
+        "bright"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Rwanda-Jackson.md",
+      "_filename": "Rwanda-Jackson.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Rwanda Bourbon",
+      "roaster": "The Coffee Collective",
+      "origin": "Rwanda",
+      "roast-level": "medium-light",
+      "roast-date": "2025-10-10T00:00:00.000Z",
+      "purchase-date": "2025-10-21T00:00:00.000Z",
+      "price": 16,
+      "weight": 500,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "rwanda"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Rwanda-Bourbon.md",
+      "_filename": "Rwanda-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Peru Typica",
+      "origin": "[[Peru]]",
+      "region": "Cajamarca, Amazonas, Junín",
+      "variety": "Typica",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1200-2000",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "clean",
+        "balanced",
+        "mild-fruit"
+      ],
+      "body": "medium",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "peru",
+        "typica",
+        "organic",
+        "fair-trade",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Peru-Typica.md",
+      "_filename": "Peru-Typica.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Peru Caturra",
+      "origin": "[[Peru]]",
+      "region": "Cajamarca, Amazonas, Junín",
+      "variety": "Caturra (Bourbon Mutation)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "bright",
+        "citrus",
+        "chocolate",
+        "balanced",
+        "clean"
+      ],
+      "body": "medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "peru",
+        "caturra",
+        "organic",
+        "bright",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Peru-Caturra.md",
+      "_filename": "Peru-Caturra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Peru Bourbon",
+      "origin": "[[Peru]]",
+      "region": "Cajamarca, Amazonas, Junín",
+      "variety": "Bourbon",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1300-2000",
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "balanced",
+        "clean",
+        "sweet",
+        "mild-fruit"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "peru",
+        "bourbon",
+        "organic",
+        "fair-trade",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Peru-Bourbon.md",
+      "_filename": "Peru-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Papua New Guinea Sigri",
+      "origin": "Papua New Guinea",
+      "region": "Western Highlands, Sigri Estate",
+      "variety": "Typica, Arusha, Blue Mountain",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "fruit",
+        "chocolate",
+        "balanced",
+        "clean",
+        "complex"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "papua-new-guinea",
+        "sigri",
+        "estate",
+        "balanced",
+        "fruit"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Papua-New-Guinea-Sigri.md",
+      "_filename": "Papua-New-Guinea-Sigri.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Papua New Guinea Arusha",
+      "origin": "Papua New Guinea",
+      "region": "Eastern Highlands",
+      "variety": "Arusha (Bourbon-Typica Selection)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1300-1900",
+      "flavor-profile": [
+        "fruit",
+        "balanced",
+        "chocolate",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "papua-new-guinea",
+        "arusha",
+        "balanced",
+        "fruit"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Papua-New-Guinea-Arusha.md",
+      "_filename": "Papua-New-Guinea-Arusha.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Panama Geisha",
+      "origin": "[[Panama]]",
+      "region": "Boquete, Volcan, Renacimiento",
+      "variety": "Geisha (from Ethiopian Gesha)",
+      "processing": "Washed, Natural, Honey",
+      "roast-level": "light",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "jasmine",
+        "bergamot",
+        "tropical-fruit",
+        "tea-like",
+        "floral",
+        "complex"
+      ],
+      "body": "light-medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "panama",
+        "geisha",
+        "gesha",
+        "ultra-premium",
+        "floral",
+        "record-prices"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Panama-Geisha.md",
+      "_filename": "Panama-Geisha.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Obata",
+      "origin": "Brazil (origin), Central America (trials)",
+      "region": "Brazil, experimental in Honduras, Costa Rica",
+      "variety": "Obata (Brazilian Hybrid)",
+      "processing": "Natural, Washed",
+      "roast-level": "medium",
+      "altitude": "800-1500",
+      "flavor-profile": [
+        "chocolate",
+        "balanced",
+        "sweet",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "obata",
+        "brazilian-hybrid",
+        "balanced",
+        "experimental"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Obata-Brazilian-Hybrid.md",
+      "_filename": "Obata-Brazilian-Hybrid.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Nicaragua Maracaturra",
+      "origin": "Nicaragua",
+      "region": "Jinotega, Matagalpa",
+      "variety": "Maracaturra (Maragogipe x Caturra hybrid)",
+      "processing": "Washed, Honey, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1200-1600",
+      "flavor-profile": [
+        "tropical-fruit",
+        "floral",
+        "berry",
+        "sweet",
+        "complex",
+        "unique"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "nicaragua",
+        "maracaturra",
+        "elephant-bean",
+        "large-bean",
+        "specialty"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Nicaragua-Maracaturra.md",
+      "_filename": "Nicaragua-Maracaturra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Nicaragua Java",
+      "origin": "Nicaragua",
+      "region": "Jinotega, Matagalpa",
+      "variety": "Java (Typica-Related Heirloom)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1200-1600",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "nuts",
+        "clean",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "nicaragua",
+        "java",
+        "heirloom",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Nicaragua-Java.md",
+      "_filename": "Nicaragua-Java.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Nicaragua Bourbon",
+      "origin": "Nicaragua",
+      "region": "Jinotega, Matagalpa",
+      "variety": "Bourbon",
+      "processing": "Washed, Honey",
+      "roast-level": "light-medium",
+      "altitude": "1300-1700",
+      "flavor-profile": [
+        "sweet",
+        "chocolate",
+        "fruit",
+        "caramel",
+        "balanced",
+        "complex"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "nicaragua",
+        "bourbon",
+        "traditional",
+        "sweet",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Nicaragua-Bourbon.md",
+      "_filename": "Nicaragua-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Mexico Typica",
+      "origin": "[[Mexico]]",
+      "region": "Chiapas, Oaxaca, Veracruz",
+      "variety": "Typica",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1000-1700",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "balanced",
+        "mild",
+        "clean"
+      ],
+      "body": "medium",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "mexico",
+        "typica",
+        "organic",
+        "shade-grown",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Mexico-Typica.md",
+      "_filename": "Mexico-Typica.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Mexico Caturra",
+      "origin": "[[Mexico]]",
+      "region": "Chiapas, Oaxaca",
+      "variety": "Caturra",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1000-1700",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "balanced",
+        "clean",
+        "bright"
+      ],
+      "body": "medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "mexico",
+        "caturra",
+        "organic",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Mexico-Caturra.md",
+      "_filename": "Mexico-Caturra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Mexico Bourbon",
+      "origin": "[[Mexico]]",
+      "region": "Chiapas, Oaxaca",
+      "variety": "Bourbon",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1000-1700",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "balanced",
+        "sweet",
+        "mild"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "mexico",
+        "bourbon",
+        "organic",
+        "shade-grown",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Mexico-Bourbon.md",
+      "_filename": "Mexico-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Maragogipe (Elephant Bean)",
+      "origin": "Multiple (Brazil origin, grown globally)",
+      "region": "Brazil (origin), Nicaragua, Guatemala, Mexico",
+      "variety": "Maragogipe (Typica Mutation)",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1000-1700",
+      "flavor-profile": [
+        "unique",
+        "complex",
+        "mild",
+        "sweet",
+        "low-acid"
+      ],
+      "body": "light-medium",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "maragogipe",
+        "elephant-bean",
+        "giant-bean",
+        "mutation"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Maragogipe-Elephant-Bean.md",
+      "_filename": "Maragogipe-Elephant-Bean.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Liberica Coffee",
+      "origin": "West Africa (origin), Southeast Asia (primary cultivation)",
+      "region": "Liberia (origin), Philippines, Malaysia (cultivation)",
+      "variety": "Liberica (Coffea liberica - Distinct Species)",
+      "processing": "Washed, Natural",
+      "roast-level": "dark",
+      "altitude": "0-900",
+      "flavor-profile": [
+        "woody",
+        "smoky",
+        "unique",
+        "bold",
+        "polarizing"
+      ],
+      "body": "very-full",
+      "acidity": "very-low",
+      "tags": [
+        "bean-profile",
+        "liberica",
+        "rare-species",
+        "philippines",
+        "malaysia",
+        "unique"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Liberica-Coffee.md",
+      "_filename": "Liberica-Coffee.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Laurina (Bourbon Pointu)",
+      "origin": "Réunion Island (origin), grown in Central America",
+      "region": "Réunion Island, Costa Rica, Colombia, El Salvador",
+      "variety": "Laurina / Bourbon Pointu (Low-Caffeine Bourbon Mutation)",
+      "processing": "Washed",
+      "roast-level": "light",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "delicate",
+        "sweet",
+        "low-caffeine",
+        "floral",
+        "unique"
+      ],
+      "body": "light-medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "laurina",
+        "bourbon-pointu",
+        "low-caffeine",
+        "rare",
+        "reunion"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Laurina-Bourbon-Pointu.md",
+      "_filename": "Laurina-Bourbon-Pointu.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Kenya SL-34",
+      "origin": "[[Kenya]]",
+      "region": "Nyeri, Kirinyaga, Murang'a, Kiambu",
+      "variety": "SL-34 (Scott Laboratories Selection)",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "berry",
+        "blackcurrant",
+        "citrus",
+        "complex",
+        "wine-like",
+        "sweet"
+      ],
+      "body": "full",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "kenya",
+        "sl-34",
+        "washed",
+        "bright",
+        "berry",
+        "complex",
+        "sibling-sl28"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-SL34.md",
+      "_filename": "Kenya-SL34.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Kenya SL-28",
+      "origin": "[[Kenya]]",
+      "region": "Multiple Kenyan regions (Nyeri, Kirinyaga, Murang'a)",
+      "variety": "SL-28 (Scott Laboratories selection)",
+      "processing": "Washed (double fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1500-2100",
+      "flavor-profile": [
+        "berry",
+        "blackcurrant",
+        "citrus",
+        "wine-like",
+        "bright",
+        "complex"
+      ],
+      "body": "full",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "kenya",
+        "sl-28",
+        "washed",
+        "bright",
+        "berry",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-SL28.md",
+      "_filename": "Kenya-SL28.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Kenya Ruiru 11",
+      "origin": "[[Kenya]]",
+      "region": "Multiple Kenyan regions",
+      "variety": "Ruiru 11 (Rust-Resistant Hybrid)",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "balanced",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "kenya",
+        "ruiru-11",
+        "rust-resistant",
+        "modern"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-Ruiru-11.md",
+      "_filename": "Kenya-Ruiru-11.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-library",
+      "name": "Kenya Nyeri SL28 Washed",
+      "origin": [
+        [
+          "Origins/Kenya"
+        ]
+      ],
+      "region": [
+        [
+          "Origins/Kenya-Nyeri"
+        ]
+      ],
+      "producer": [
+        [
+          "Producers/Gatomboya-Farmers-Cooperative"
+        ]
+      ],
+      "variety": [
+        [
+          "Coffee Varieties/SL28"
+        ]
+      ],
+      "processing": [
+        [
+          "Processing Methods/Kenya-Washed-Double-Fermentation"
+        ]
+      ],
+      "altitude": "1,700-1,850 masl",
+      "harvest-date": "2024-01",
+      "roaster": [
+        [
+          "Roasters/George-Howell"
+        ]
+      ],
+      "roast-level": "Light",
+      "roast-date": "2024-10-26T00:00:00.000Z",
+      "purchase-date": "2024-11-01T00:00:00.000Z",
+      "status": "active",
+      "rating": "94/100",
+      "cupping-score": 89,
+      "flavor-notes": [
+        "blackcurrant",
+        "tomato",
+        "grapefruit",
+        "brown-sugar",
+        "complex-acidity"
+      ],
+      "body": "Full",
+      "acidity": [
+        [
+          "Brewing Parameters/Acidity|Phosphoric Bright"
+        ]
+      ],
+      "sweetness": "High",
+      "complexity": "Very High",
+      "price-per-bag": "$26.00",
+      "bag-size": "340g",
+      "certifications": [],
+      "recommended-for": [
+        "pour-over",
+        "cupping",
+        "aeropress"
+      ],
+      "tags": [
+        "kenya",
+        "nyeri",
+        "SL28",
+        "washed",
+        "double-fermentation",
+        "blackcurrant",
+        "tomato",
+        "specialty-grade",
+        "single-origin",
+        "light-roast",
+        "full-body"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-Nyeri-SL28-Washed.md",
+      "_filename": "Kenya-Nyeri-SL28-Washed.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Kenya K7",
+      "origin": "[[Kenya]]",
+      "region": "Multiple Kenyan regions",
+      "variety": "K7 (French Mission Selection)",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1300-1900",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "balanced",
+        "sweet",
+        "clean"
+      ],
+      "body": "full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "kenya",
+        "k7",
+        "traditional",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-K7.md",
+      "_filename": "Kenya-K7.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Kenya Batian",
+      "origin": "[[Kenya]]",
+      "region": "Multiple Kenyan regions",
+      "variety": "Batian (Modern Rust-Resistant Cultivar)",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1200-2000",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "balanced",
+        "clean",
+        "sweet"
+      ],
+      "body": "full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "kenya",
+        "batian",
+        "rust-resistant",
+        "modern",
+        "quality"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-Batian.md",
+      "_filename": "Kenya-Batian.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Kenya AA",
+      "roaster": "Tim Wendelboe",
+      "origin": "Kenya",
+      "roast-level": "light",
+      "roast-date": "2025-10-15T00:00:00.000Z",
+      "purchase-date": "2025-10-22T00:00:00.000Z",
+      "price": 22,
+      "weight": 340,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "kenya"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Kenya-AA.md",
+      "_filename": "Kenya-AA.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Java Jampit Estate",
+      "origin": "Indonesia (Java Island)",
+      "region": "East Java, Ijen Plateau",
+      "variety": "Typica, S-795",
+      "processing": "Washed (Estate Processing)",
+      "roast-level": "medium",
+      "altitude": "1200-1700",
+      "flavor-profile": [
+        "chocolate",
+        "spice",
+        "balanced",
+        "clean",
+        "unique"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "java",
+        "jampit",
+        "estate",
+        "washed",
+        "clean",
+        "heritage"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Java-Jampit-Estate.md",
+      "_filename": "Java-Jampit-Estate.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Java Blawan Estate",
+      "origin": "Indonesia (Java Island)",
+      "region": "East Java, Ijen Plateau",
+      "variety": "Typica, S-795",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1300-1700",
+      "flavor-profile": [
+        "chocolate",
+        "spice",
+        "balanced",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "java",
+        "blawan",
+        "estate",
+        "washed",
+        "clean"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Java-Blawan-Estate.md",
+      "_filename": "Java-Blawan-Estate.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Java Estate Coffee",
+      "origin": "Indonesia (Java Island)",
+      "region": "East Java, Central Java",
+      "variety": "Typica, S-795, Catimor",
+      "processing": "Wet-Hulled (Giling Basah), Washed",
+      "roast-level": "medium-dark",
+      "altitude": "900-1700",
+      "flavor-profile": [
+        "earthy",
+        "spice",
+        "chocolate",
+        "herbal",
+        "full-body",
+        "rustic"
+      ],
+      "body": "very-full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "java",
+        "indonesia",
+        "wet-hulled",
+        "earthy",
+        "estate"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Indonesia-Java-Estate.md",
+      "_filename": "Indonesia-Java-Estate.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Bali Kintamani",
+      "origin": "Indonesia (Bali Island)",
+      "region": "Kintamani Highlands, North Bali",
+      "variety": "Typica, S-795, Catimor",
+      "processing": "Wet-Hulled, Washed",
+      "roast-level": "medium",
+      "altitude": "900-1500",
+      "flavor-profile": [
+        "citrus",
+        "spice",
+        "floral",
+        "clean",
+        "unique"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "indonesia",
+        "bali",
+        "kintamani",
+        "unique",
+        "volcanic"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Indonesia-Bali-Kintamani.md",
+      "_filename": "Indonesia-Bali-Kintamani.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "India S-795",
+      "origin": "India",
+      "region": "Karnataka, Tamil Nadu, Java",
+      "variety": "S-795 (Indian Selection)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "900-1600",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "spice",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "india",
+        "s795",
+        "balanced",
+        "rust-resistant"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/India-S795.md",
+      "_filename": "India-S795.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "India Kent",
+      "origin": "India",
+      "region": "Karnataka, Tamil Nadu",
+      "variety": "Kent (Indian-Bred Rust-Resistant)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1000-1600",
+      "flavor-profile": [
+        "chocolate",
+        "spice",
+        "balanced",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "india",
+        "kent",
+        "rust-resistant",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/India-Kent.md",
+      "_filename": "India-Kent.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Honduras Parainema",
+      "origin": "Honduras",
+      "region": "Multiple Honduran regions",
+      "variety": "Parainema (Sarchimor Derivative - Quality + Rust Resistance)",
+      "processing": "Washed, Honey",
+      "roast-level": "medium",
+      "altitude": "1200-1700",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "fruit",
+        "sweet",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "honduras",
+        "parainema",
+        "rust-resistant",
+        "specialty-grade"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Honduras-Parainema.md",
+      "_filename": "Honduras-Parainema.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Honduras Pacas",
+      "origin": "Honduras",
+      "region": "Multiple Honduran regions",
+      "variety": "Pacas (Bourbon mutation)",
+      "processing": "Washed, Honey",
+      "roast-level": "medium",
+      "altitude": "1200-1700",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "caramel",
+        "citrus",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "honduras",
+        "pacas",
+        "bourbon-mutation",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Honduras-Pacas.md",
+      "_filename": "Honduras-Pacas.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Honduras Lempira",
+      "origin": "Honduras",
+      "region": "Multiple Honduran regions",
+      "variety": "Lempira (Sarchimor Derivative - Rust Resistant)",
+      "processing": "Washed, Honey",
+      "roast-level": "medium",
+      "altitude": "1000-1700",
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "balanced",
+        "clean",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "honduras",
+        "lempira",
+        "rust-resistant",
+        "modern",
+        "ihcafe"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Honduras-Lempira.md",
+      "_filename": "Honduras-Lempira.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Honduras IHCAFE 90",
+      "origin": "Honduras",
+      "region": "Multiple Honduran regions",
+      "variety": "IHCAFE 90 (Catimor-Type Rust Resistant)",
+      "processing": "Washed",
+      "roast-level": "medium-dark",
+      "altitude": "900-1500",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "balanced",
+        "mild"
+      ],
+      "body": "full",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "honduras",
+        "ihcafe-90",
+        "rust-resistant",
+        "productive",
+        "commodity"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Honduras-IHCAFE-90.md",
+      "_filename": "Honduras-IHCAFE-90.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Honduras Catuai",
+      "origin": "Honduras",
+      "region": "Multiple Honduran regions",
+      "variety": "Catuai (Caturra x Mundo Novo)",
+      "processing": "Washed, Honey",
+      "roast-level": "medium",
+      "altitude": "1100-1700",
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "balanced",
+        "nuts",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "honduras",
+        "catuai",
+        "balanced",
+        "reliable"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Honduras-Catuai.md",
+      "_filename": "Honduras-Catuai.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Hawaii Maui Mokka",
+      "origin": "Hawaii, USA",
+      "region": "Maui Island",
+      "variety": "Mokka (Small-Bean Heirloom)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "300-900",
+      "flavor-profile": [
+        "floral",
+        "sweet",
+        "delicate",
+        "unique",
+        "complex"
+      ],
+      "body": "light-medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "hawaii",
+        "maui",
+        "mokka",
+        "rare",
+        "small-bean",
+        "expensive"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Hawaii-Maui-Mokka.md",
+      "_filename": "Hawaii-Maui-Mokka.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Hawaii Kona Typica",
+      "origin": "Hawaii, USA",
+      "region": "Kona District, Big Island (Hawaii)",
+      "variety": "Typica (Guatemalan origin)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "150-900",
+      "flavor-profile": [
+        "mild",
+        "balanced",
+        "smooth",
+        "nuts",
+        "caramel",
+        "clean"
+      ],
+      "body": "medium",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "hawaii",
+        "kona",
+        "typica",
+        "mild",
+        "expensive",
+        "usa"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Hawaii-Kona-Typica.md",
+      "_filename": "Hawaii-Kona-Typica.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Typica",
+      "origin": "[[Guatemala]]",
+      "region": "Huehuetenango, Antigua",
+      "variety": "Typica (Original Heirloom)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "complex",
+        "clean",
+        "balanced",
+        "floral",
+        "fruit",
+        "chocolate"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "typica",
+        "heirloom",
+        "traditional",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Typica.md",
+      "_filename": "Guatemala-Typica.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Tekisic",
+      "origin": "[[Guatemala]]",
+      "region": "Huehuetenango, Antigua",
+      "variety": "Tekisic (Pacas Selection)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "balanced",
+        "sweet",
+        "chocolate",
+        "citrus",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "tekisic",
+        "pacas-selection",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Tekisic.md",
+      "_filename": "Guatemala-Tekisic.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala SHB (Strictly Hard Bean)",
+      "origin": "[[Guatemala]]",
+      "region": "Antigua, Huehuetenango, Atitlán, Cobán",
+      "variety": "Bourbon, Typica, Caturra, Catuai",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "grade": "SHB (Strictly Hard Bean - 1,350+ MASL)",
+      "altitude": "1350-2000",
+      "flavor-profile": [
+        "complex",
+        "chocolate",
+        "citrus",
+        "floral",
+        "spice",
+        "bright"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "shb",
+        "washed",
+        "complex",
+        "altitude"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-SHB.md",
+      "_filename": "Guatemala-SHB.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Pache",
+      "origin": "[[Guatemala]]",
+      "region": "Antigua, Huehuetenango",
+      "variety": "Pache (Typica Mutation - Guatemalan Native)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "sweet",
+        "balanced",
+        "chocolate",
+        "citrus",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "pache",
+        "typica-mutation",
+        "native",
+        "sweet"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Pache.md",
+      "_filename": "Guatemala-Pache.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Pacas",
+      "origin": "[[Guatemala]]",
+      "region": "Huehuetenango, Antigua, Atitlán",
+      "variety": "Pacas (Bourbon Mutation)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1300-1800",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "citrus",
+        "sweet",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "pacas",
+        "bourbon-mutation",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Pacas.md",
+      "_filename": "Guatemala-Pacas.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Pacamara",
+      "origin": "[[Guatemala]]",
+      "region": "Huehuetenango, Antigua",
+      "variety": "Pacamara (Pacas x Maragogipe)",
+      "processing": "Washed, Honey, Natural",
+      "roast-level": "light",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "tropical-fruit",
+        "floral",
+        "complex",
+        "sweet",
+        "unique"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "pacamara",
+        "large-bean",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Pacamara.md",
+      "_filename": "Guatemala-Pacamara.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Caturra",
+      "origin": "[[Guatemala]]",
+      "region": "Antigua, Huehuetenango, Atitlán",
+      "variety": "Caturra (Bourbon Mutation)",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1300-1900",
+      "flavor-profile": [
+        "bright",
+        "citrus",
+        "chocolate",
+        "clean",
+        "balanced"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "caturra",
+        "bright",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Caturra.md",
+      "_filename": "Guatemala-Caturra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Catuai",
+      "origin": "[[Guatemala]]",
+      "region": "Multiple Guatemalan regions",
+      "variety": "Catuai (Caturra x Mundo Novo)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "caramel",
+        "citrus",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "catuai",
+        "balanced",
+        "reliable"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Catuai.md",
+      "_filename": "Guatemala-Catuai.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Guatemala Bourbon",
+      "origin": "[[Guatemala]]",
+      "region": "Antigua, Huehuetenango, Atitlán",
+      "variety": "Bourbon",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "citrus",
+        "sweet",
+        "complex",
+        "balanced"
+      ],
+      "body": "full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "guatemala",
+        "bourbon",
+        "washed",
+        "complex",
+        "traditional"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Bourbon.md",
+      "_filename": "Guatemala-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Guatemala Antigua",
+      "roaster": "Heart Roasters",
+      "origin": "Guatemala",
+      "roast-level": "medium",
+      "roast-date": "2025-10-09T00:00:00.000Z",
+      "purchase-date": "2025-10-23T00:00:00.000Z",
+      "price": 17,
+      "weight": 250,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "guatemala"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Guatemala-Antigua.md",
+      "_filename": "Guatemala-Antigua.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Geisha 1931 (Original Collection)",
+      "origin": "Multiple (Ethiopia origin, global cultivation)",
+      "region": "Panama, Colombia, Costa Rica, Guatemala (cultivation)",
+      "variety": "Geisha 1931 (Original 1931 Ethiopian Collection)",
+      "processing": "Washed, Honey, Natural, Anaerobic",
+      "roast-level": "light",
+      "altitude": "1400-2100",
+      "flavor-profile": [
+        "jasmine",
+        "bergamot",
+        "tropical-fruit",
+        "floral",
+        "tea-like",
+        "complex"
+      ],
+      "body": "light-medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "geisha-1931",
+        "original-collection",
+        "ultra-premium",
+        "floral"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Geisha-1931-Landrace.md",
+      "_filename": "Geisha-1931-Landrace.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "F1 Hybrid Starmaya",
+      "origin": "Multiple origins (World Coffee Research)",
+      "region": "Colombia, Central America",
+      "variety": "Starmaya (F1 Hybrid)",
+      "processing": "Washed, Honey",
+      "roast-level": "light-medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "sweet",
+        "balanced",
+        "fruit",
+        "chocolate",
+        "complex"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "f1-hybrid",
+        "starmaya",
+        "modern",
+        "quality-resistance"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/F1-Hybrid-Starmaya.md",
+      "_filename": "F1-Hybrid-Starmaya.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "F1 Hybrid Centroamericano",
+      "origin": "Multiple Central American countries",
+      "region": "Colombia, Honduras, Guatemala, Costa Rica",
+      "variety": "Centroamericano (F1 Hybrid)",
+      "processing": "Washed, Honey",
+      "roast-level": "light-medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "balanced",
+        "sweet",
+        "complex",
+        "fruit",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "f1-hybrid",
+        "centroamericano",
+        "modern",
+        "quality-resistance"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/F1-Hybrid-Centroamericano.md",
+      "_filename": "F1-Hybrid-Centroamericano.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Excelsa (Liberica Variant)",
+      "origin": "Southeast Asia (Chad origin, Southeast Asia cultivation)",
+      "region": "Philippines, Vietnam",
+      "variety": "Excelsa (Coffea liberica var. dewevrei)",
+      "processing": "Natural, Washed",
+      "roast-level": "dark",
+      "altitude": "0-800",
+      "flavor-profile": [
+        "tart",
+        "fruity",
+        "bold",
+        "unique",
+        "polarizing"
+      ],
+      "body": "full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "excelsa",
+        "liberica-variant",
+        "rare",
+        "unique",
+        "polarizing"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Excelsa-Liberica-Variant.md",
+      "_filename": "Excelsa-Liberica-Variant.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Eugenioides (Wild Coffee Species)",
+      "origin": "East Africa (wild), experimental cultivation",
+      "region": "Wild forests, experimental farms",
+      "variety": "Eugenioides (Coffea eugenioides - Arabica Parent Species)",
+      "processing": "Washed, Experimental",
+      "roast-level": "light",
+      "altitude": "Wild",
+      "flavor-profile": [
+        "sweet",
+        "delicate",
+        "low-caffeine",
+        "unique",
+        "tea-like"
+      ],
+      "body": "light",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "eugenioides",
+        "wild-species",
+        "rare",
+        "experimental",
+        "low-caffeine"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Eugenioides-Wild-Species.md",
+      "_filename": "Eugenioides-Wild-Species.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Ethiopian Yirgacheffe",
+      "roaster": "Heart Roasters",
+      "origin": "Ethiopia",
+      "roast-level": "light",
+      "roast-date": "2025-10-13T00:00:00.000Z",
+      "purchase-date": "2025-10-13T00:00:00.000Z",
+      "price": 18.5,
+      "weight": 500,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "ethiopia"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopian-Yirgacheffe.md",
+      "_filename": "Ethiopian-Yirgacheffe.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-library",
+      "name": "Ethiopia Yirgacheffe Gedeb Natural",
+      "origin": [
+        [
+          "Origins/Ethiopia"
+        ]
+      ],
+      "region": [
+        [
+          "Origins/Ethiopia-Yirgacheffe"
+        ]
+      ],
+      "sub-region": "Gedeb",
+      "producer": [
+        [
+          "Producers/Gedeb-Cooperative-Union"
+        ]
+      ],
+      "variety": "Ethiopian Heirloom",
+      "processing": [
+        [
+          "Processing Methods/Natural Process"
+        ]
+      ],
+      "altitude": "1,900-2,200 masl",
+      "harvest-date": "2024-11",
+      "roaster": [
+        [
+          "Roasters/Onyx-Coffee-Lab"
+        ]
+      ],
+      "roast-level": "Light",
+      "roast-date": "2024-10-28T00:00:00.000Z",
+      "purchase-date": "2024-11-01T00:00:00.000Z",
+      "status": "active",
+      "rating": "95/100",
+      "cupping-score": 89.5,
+      "flavor-notes": [
+        "blueberry",
+        "jasmine",
+        "bergamot",
+        "stone-fruit",
+        "floral"
+      ],
+      "body": "Medium-Light",
+      "acidity": [
+        [
+          "Brewing Parameters/Acidity|Bright Citric"
+        ]
+      ],
+      "sweetness": "High",
+      "complexity": "Very High",
+      "price-per-bag": "$24.00",
+      "bag-size": "340g",
+      "certifications": [
+        "Organic",
+        "Fair Trade"
+      ],
+      "recommended-for": [
+        "pour-over",
+        "aeropress",
+        "cold-brew"
+      ],
+      "tags": [
+        "ethiopia",
+        "yirgacheffe",
+        "gedeb",
+        "natural-process",
+        "heirloom",
+        "floral",
+        "fruity",
+        "specialty-grade",
+        "single-origin",
+        "light-roast"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Yirgacheffe-Gedeb-Natural.md",
+      "_filename": "Ethiopia-Yirgacheffe-Gedeb-Natural.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Wolisho (Heirloom)",
+      "origin": "[[Ethiopia]]",
+      "region": "Multiple Ethiopian regions",
+      "variety": "Wolisho (Ethiopian Landrace)",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1600-2200",
+      "flavor-profile": [
+        "floral",
+        "berry",
+        "citrus",
+        "complex",
+        "sweet",
+        "clean"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "wolisho",
+        "heirloom",
+        "landrace",
+        "floral"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Wolisho.md",
+      "_filename": "Ethiopia-Wolisho.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Sidamo (Sidama)",
+      "origin": "[[Ethiopia]]",
+      "region": "Sidama Zone, Southern Ethiopia",
+      "variety": "Ethiopian Heirloom",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1400-2200",
+      "flavor-profile": [
+        "berry",
+        "floral",
+        "wine-like",
+        "complex",
+        "sweet",
+        "balanced"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "sidamo",
+        "sidama",
+        "heirloom",
+        "berry",
+        "floral"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Sidamo.md",
+      "_filename": "Ethiopia-Sidamo.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Limu",
+      "origin": "[[Ethiopia]]",
+      "region": "Limu (Jimma Zone), Western Ethiopia",
+      "variety": "Ethiopian Heirloom",
+      "processing": "Washed",
+      "roast-level": "light-medium",
+      "altitude": "1400-2200",
+      "flavor-profile": [
+        "wine-like",
+        "spice",
+        "floral",
+        "citrus",
+        "balanced"
+      ],
+      "body": "medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "limu",
+        "heirloom",
+        "balanced",
+        "wine-like"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Limu.md",
+      "_filename": "Ethiopia-Limu.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Heirloom Kurume",
+      "origin": "[[Ethiopia]]",
+      "region": "Multiple Ethiopian regions",
+      "variety": "Kurume (Ethiopian Landrace)",
+      "processing": "Washed, Natural",
+      "roast-level": "light",
+      "altitude": "1600-2200",
+      "flavor-profile": [
+        "floral",
+        "bergamot",
+        "citrus",
+        "tea-like",
+        "complex"
+      ],
+      "body": "light-medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "kurume",
+        "heirloom",
+        "landrace",
+        "floral"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Heirloom-Kurume.md",
+      "_filename": "Ethiopia-Heirloom-Kurume.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Harrar (Harar)",
+      "origin": "[[Ethiopia]]",
+      "region": "Eastern Highlands, Harrar (Harar) Region",
+      "variety": "Ethiopian Heirloom",
+      "processing": "Natural (Dry) Only",
+      "roast-level": "light-medium",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "blueberry",
+        "wine-like",
+        "chocolate",
+        "spice",
+        "bold",
+        "fermented"
+      ],
+      "body": "full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "harrar",
+        "harar",
+        "natural",
+        "blueberry",
+        "wine-like"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Harrar.md",
+      "_filename": "Ethiopia-Harrar.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Guji",
+      "origin": "[[Ethiopia]]",
+      "region": "Guji Zone, Southern Ethiopia",
+      "variety": "Ethiopian Heirloom",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1800-2300",
+      "flavor-profile": [
+        "peach",
+        "berry",
+        "floral",
+        "complex",
+        "sweet",
+        "juicy"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "guji",
+        "heirloom",
+        "peach",
+        "complex",
+        "high-altitude"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Guji.md",
+      "_filename": "Ethiopia-Guji.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Gesha (Original)",
+      "origin": "[[Ethiopia]]",
+      "region": "Gesha Village, Bench Maji Zone",
+      "variety": "Gesha (Geisha) - Original Ethiopian",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1900-2100",
+      "flavor-profile": [
+        "floral",
+        "jasmine",
+        "bergamot",
+        "tea-like",
+        "complex",
+        "delicate"
+      ],
+      "body": "light-medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "gesha",
+        "geisha",
+        "floral",
+        "rare",
+        "ultra-premium"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Gesha.md",
+      "_filename": "Ethiopia-Gesha.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Djimmah (Jimma)",
+      "origin": "[[Ethiopia]]",
+      "region": "Jimma Zone, Southwest Ethiopia",
+      "variety": "Ethiopian Heirloom",
+      "processing": "Natural, Washed",
+      "roast-level": "medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "earthy",
+        "wine-like",
+        "chocolate",
+        "spice",
+        "bold"
+      ],
+      "body": "full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "djimmah",
+        "jimma",
+        "natural",
+        "earthy",
+        "bold"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Djimmah.md",
+      "_filename": "Ethiopia-Djimmah.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Dega (Heirloom)",
+      "origin": "[[Ethiopia]]",
+      "region": "Multiple Ethiopian regions",
+      "variety": "Dega (Ethiopian Landrace)",
+      "processing": "Washed, Natural",
+      "roast-level": "light",
+      "altitude": "1700-2200",
+      "flavor-profile": [
+        "berry",
+        "floral",
+        "citrus",
+        "complex",
+        "wine-like"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "dega",
+        "heirloom",
+        "landrace",
+        "berry"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Dega.md",
+      "_filename": "Ethiopia-Dega.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia Bebeka",
+      "origin": "[[Ethiopia]]",
+      "region": "Bebeka, Southwest Ethiopia",
+      "variety": "Ethiopian Heirloom",
+      "processing": "Natural, Washed",
+      "roast-level": "medium",
+      "altitude": "1000-1700",
+      "flavor-profile": [
+        "wine-like",
+        "chocolate",
+        "spice",
+        "earthy",
+        "full-body"
+      ],
+      "body": "full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        "bebeka",
+        "heirloom",
+        "wine-like",
+        "full-body"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-Bebeka.md",
+      "_filename": "Ethiopia-Bebeka.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia 74110 (Improved Variety)",
+      "origin": "[[Ethiopia]]",
+      "region": "Multiple Ethiopian regions",
+      "variety": "74110 (Jimma Research Center Selection)",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "balanced",
+        "berry",
+        "citrus",
+        "chocolate",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        74110,
+        "improved-variety",
+        "jimma",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-74110-Selection.md",
+      "_filename": "Ethiopia-74110-Selection.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ethiopia 74110 (Improved Variety)",
+      "origin": "[[Ethiopia]]",
+      "region": "Multiple Ethiopian regions",
+      "variety": "74110 (Jimma Research Center Selection)",
+      "processing": "Washed, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "balanced",
+        "floral",
+        "berry",
+        "chocolate",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "ethiopia",
+        74110,
+        "improved-variety",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ethiopia-74110-Improved-Variety.md",
+      "_filename": "Ethiopia-74110-Improved-Variety.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "El Salvador Pacamara",
+      "origin": "[[El Salvador]]",
+      "region": "Santa Ana, Ahuachapán, Apaneca-Ilamatepec",
+      "variety": "Pacamara (Pacas x Maragogipe hybrid)",
+      "processing": "Washed, Honey, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "tropical-fruit",
+        "floral",
+        "complex",
+        "sweet",
+        "juicy",
+        "unique"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "el-salvador",
+        "pacamara",
+        "large-bean",
+        "complex",
+        "competition"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/El-Salvador-Pacamara.md",
+      "_filename": "El-Salvador-Pacamara.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "El Salvador Bourbon",
+      "origin": "El Salvador",
+      "region": "Apaneca-Ilamatepec, Santa Ana, Ahuachapán",
+      "variety": "Bourbon (Traditional Heirloom)",
+      "processing": "Washed, Honey, Natural",
+      "roast-level": "light-medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "chocolate",
+        "caramel",
+        "fruit",
+        "balanced",
+        "sweet",
+        "complex"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "el-salvador",
+        "bourbon",
+        "traditional",
+        "balanced",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/El-Salvador-Bourbon.md",
+      "_filename": "El-Salvador-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Ecuador Sidra",
+      "origin": "Ecuador",
+      "region": "Loja, Zamora-Chinchipe",
+      "variety": "Sidra (Ethiopian-Origin Variety)",
+      "processing": "Washed, Honey, Natural, Anaerobic",
+      "roast-level": "light",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "tropical-fruit",
+        "floral",
+        "jasmine",
+        "complex",
+        "sweet",
+        "unique"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "ecuador",
+        "sidra",
+        "specialty",
+        "competition",
+        "floral",
+        "unique"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Ecuador-Sidra.md",
+      "_filename": "Ecuador-Sidra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Costa Rica Villa Sarchi",
+      "origin": "[[Costa Rica]]",
+      "region": "Central Valley, West Valley, Tarrazú",
+      "variety": "Villa Sarchi (Bourbon Mutation)",
+      "processing": "Washed, Honey",
+      "roast-level": "light-medium",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "citrus",
+        "honey",
+        "balanced",
+        "sweet",
+        "clean",
+        "bright"
+      ],
+      "body": "medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "costa-rica",
+        "villa-sarchi",
+        "bourbon-mutation",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Costa-Rica-Villa-Sarchi.md",
+      "_filename": "Costa-Rica-Villa-Sarchi.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Costa Rica Tarrazu",
+      "roaster": "The Coffee Collective",
+      "origin": "Costa Rica",
+      "roast-level": "medium",
+      "roast-date": "2025-10-07T00:00:00.000Z",
+      "purchase-date": "2025-10-12T00:00:00.000Z",
+      "price": 19,
+      "weight": 340,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "costa rica"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Costa-Rica-Tarrazu.md",
+      "_filename": "Costa-Rica-Tarrazu.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Costa Rica SL-28",
+      "origin": "[[Costa Rica]]",
+      "region": "Tarrazú, West Valley",
+      "variety": "SL-28 (Kenyan Variety in Costa Rica)",
+      "processing": "Washed, Honey",
+      "roast-level": "light",
+      "altitude": "1300-1800",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "bright",
+        "complex",
+        "clean"
+      ],
+      "body": "medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "costa-rica",
+        "sl-28",
+        "kenyan-variety",
+        "bright",
+        "experimental"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Costa-Rica-SL28.md",
+      "_filename": "Costa-Rica-SL28.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Costa Rica Gesha",
+      "origin": "[[Costa Rica]]",
+      "region": "Tarrazú, West Valley, Central Valley",
+      "variety": "Gesha/Geisha (Ethiopian, via Panama)",
+      "processing": "Washed, Honey, Natural",
+      "roast-level": "light",
+      "altitude": "1400-1800",
+      "flavor-profile": [
+        "floral",
+        "tropical-fruit",
+        "jasmine",
+        "complex",
+        "tea-like"
+      ],
+      "body": "light-medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "costa-rica",
+        "gesha",
+        "geisha",
+        "ultra-premium",
+        "floral"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Costa-Rica-Gesha.md",
+      "_filename": "Costa-Rica-Gesha.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Costa Rica Caturra",
+      "origin": "[[Costa Rica]]",
+      "region": "Tarrazú, Central Valley, West Valley",
+      "variety": "Caturra (Bourbon Mutation)",
+      "processing": "Washed, Honey",
+      "roast-level": "light-medium",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "citrus",
+        "honey",
+        "balanced",
+        "bright",
+        "clean",
+        "sweet"
+      ],
+      "body": "medium",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "costa-rica",
+        "caturra",
+        "bright",
+        "clean",
+        "honey-sweet"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Costa-Rica-Caturra.md",
+      "_filename": "Costa-Rica-Caturra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Costa Rica Catuai",
+      "origin": "[[Costa Rica]]",
+      "region": "Tarrazú, West Valley, Central Valley",
+      "variety": "Catuai (Brazilian Hybrid)",
+      "processing": "Washed, Honey",
+      "roast-level": "medium",
+      "altitude": "1200-1800",
+      "flavor-profile": [
+        "balanced",
+        "honey-sweet",
+        "chocolate",
+        "citrus",
+        "clean"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "costa-rica",
+        "catuai",
+        "balanced",
+        "honey-sweet"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Costa-Rica-Catuai.md",
+      "_filename": "Costa-Rica-Catuai.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Colombian Huila",
+      "roaster": "Onyx Coffee Lab",
+      "origin": "Colombia",
+      "roast-level": "medium-light",
+      "roast-date": "2025-10-20T00:00:00.000Z",
+      "purchase-date": "2025-10-15T00:00:00.000Z",
+      "price": 15,
+      "weight": 250,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "colombia"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombian-Huila.md",
+      "_filename": "Colombian-Huila.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Tabi",
+      "origin": "[[Colombia]]",
+      "region": "Nariño, Cauca, Huila",
+      "variety": "Tabi (Colombian-Bred Hybrid)",
+      "processing": "Washed, Honey",
+      "roast-level": "light-medium",
+      "altitude": "1600-2100",
+      "flavor-profile": [
+        "complex",
+        "fruit",
+        "floral",
+        "chocolate",
+        "sweet",
+        "balanced"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "tabi",
+        "hybrid",
+        "specialty",
+        "complex"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Tabi.md",
+      "_filename": "Colombia-Tabi.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Supremo",
+      "origin": "[[Colombia]]",
+      "region": "Multiple Colombian regions",
+      "variety": "Caturra, Castillo, Colombia",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "grade": "Supremo (screen size 17+)",
+      "altitude": "1400-2000",
+      "flavor-profile": [
+        "balanced",
+        "caramel",
+        "nutty",
+        "chocolate",
+        "citrus"
+      ],
+      "body": "medium-full",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "supremo",
+        "washed",
+        "balanced"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Supremo.md",
+      "_filename": "Colombia-Supremo.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Pink Bourbon",
+      "origin": "[[Colombia]]",
+      "region": "Huila, Cauca, Nariño",
+      "variety": "Pink Bourbon (Natural Mutation)",
+      "processing": "Washed, Honey, Natural, Anaerobic",
+      "roast-level": "light-medium",
+      "altitude": "1600-2100",
+      "flavor-profile": [
+        "fruit-forward",
+        "berry",
+        "tropical-fruit",
+        "floral",
+        "sweet",
+        "complex"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "pink-bourbon",
+        "rare",
+        "fruity",
+        "specialty",
+        "ultra-premium"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Pink-Bourbon.md",
+      "_filename": "Colombia-Pink-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-library",
+      "name": "Colombia Huila Pink Bourbon",
+      "origin": [
+        [
+          "Origins/Colombia"
+        ]
+      ],
+      "region": [
+        [
+          "Origins/Colombia-Huila"
+        ]
+      ],
+      "municipality": "Pitalito",
+      "producer": [
+        [
+          "Producers/Finca-El-Paraiso"
+        ]
+      ],
+      "variety": [
+        [
+          "Coffee Varieties/Pink-Bourbon"
+        ]
+      ],
+      "processing": [
+        [
+          "Processing Methods/Washed Process"
+        ]
+      ],
+      "altitude": "1,750-1,950 masl",
+      "harvest-date": "2024-05",
+      "roaster": [
+        [
+          "Roasters/Heart-Coffee"
+        ]
+      ],
+      "roast-level": "Light-Medium",
+      "roast-date": "2024-10-25T00:00:00.000Z",
+      "purchase-date": "2024-11-01T00:00:00.000Z",
+      "status": "active",
+      "rating": "93/100",
+      "cupping-score": 88,
+      "flavor-notes": [
+        "stone-fruit",
+        "peach",
+        "apricot",
+        "brown-sugar",
+        "floral",
+        "citrus"
+      ],
+      "body": "Medium",
+      "acidity": [
+        [
+          "Brewing Parameters/Acidity|Malic Bright"
+        ]
+      ],
+      "sweetness": "Very High",
+      "complexity": "High",
+      "price-per-bag": "$22.00",
+      "bag-size": "340g",
+      "certifications": [
+        "Rainforest-Alliance"
+      ],
+      "recommended-for": [
+        "pour-over",
+        "espresso",
+        "aeropress"
+      ],
+      "tags": [
+        "colombia",
+        "huila",
+        "pink-bourbon",
+        "washed",
+        "stone-fruit",
+        "specialty-grade",
+        "single-origin",
+        "light-medium-roast",
+        "rare-variety"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Huila-Pink-Bourbon.md",
+      "_filename": "Colombia-Huila-Pink-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Gesha (Valle del Cauca)",
+      "origin": "[[Colombia]]",
+      "region": "Valle del Cauca, Cauca",
+      "variety": "Gesha/Geisha (Ethiopian via Panama)",
+      "processing": "Washed, Honey, Anaerobic",
+      "roast-level": "light",
+      "altitude": "1600-2100",
+      "flavor-profile": [
+        "jasmine",
+        "tropical-fruit",
+        "floral",
+        "complex",
+        "sweet"
+      ],
+      "body": "light-medium",
+      "acidity": "very-high",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "gesha",
+        "geisha",
+        "ultra-premium",
+        "floral",
+        "cauca"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Gesha-Valle-del-Cauca.md",
+      "_filename": "Colombia-Gesha-Valle-del-Cauca.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Excelso",
+      "origin": "[[Colombia]]",
+      "region": "Multiple Colombian regions",
+      "variety": "Caturra, Castillo, Colombia",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "grade": "Excelso (screen size 14-16)",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "balanced",
+        "sweet",
+        "nutty",
+        "caramel",
+        "mild-fruit"
+      ],
+      "body": "medium",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "excelso",
+        "washed",
+        "balanced",
+        "export-grade"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Excelso.md",
+      "_filename": "Colombia-Excelso.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Variety (Colombia Cultivar)",
+      "origin": "[[Colombia]]",
+      "region": "Multiple Colombian regions",
+      "variety": "Colombia (Colombian-Bred Rust-Resistant)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "nuts",
+        "clean",
+        "reliable"
+      ],
+      "body": "medium-full",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "colombia-variety",
+        "rust-resistant",
+        "reliable"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Colombia-Variety.md",
+      "_filename": "Colombia-Colombia-Variety.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Caturra",
+      "origin": "[[Colombia]]",
+      "region": "Multiple Colombian regions",
+      "variety": "Caturra (Bourbon Mutation)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1400-1900",
+      "flavor-profile": [
+        "bright",
+        "citrus",
+        "caramel",
+        "balanced",
+        "clean",
+        "sweet"
+      ],
+      "body": "medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "caturra",
+        "bourbon-mutation",
+        "bright"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Caturra.md",
+      "_filename": "Colombia-Caturra.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Colombia Castillo",
+      "origin": "[[Colombia]]",
+      "region": "Multiple Colombian regions",
+      "variety": "Castillo (Rust-Resistant Hybrid)",
+      "processing": "Washed",
+      "roast-level": "medium",
+      "altitude": "1200-1900",
+      "flavor-profile": [
+        "balanced",
+        "chocolate",
+        "nuts",
+        "caramel",
+        "clean"
+      ],
+      "body": "medium",
+      "acidity": "medium",
+      "tags": [
+        "bean-profile",
+        "colombia",
+        "castillo",
+        "rust-resistant",
+        "modern",
+        "reliable"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Colombia-Castillo.md",
+      "_filename": "Colombia-Castillo.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Catimor Varieties",
+      "origin": "Global (multiple origins)",
+      "region": "Grown worldwide (commodity focus)",
+      "variety": "Catimor (Caturra x Timor Hybrid)",
+      "processing": "Washed, Natural",
+      "roast-level": "medium-dark",
+      "altitude": "Various (performs at lower altitudes)",
+      "flavor-profile": [
+        "neutral",
+        "nutty",
+        "woody",
+        "simple"
+      ],
+      "body": "medium-full",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "catimor",
+        "rust-resistant",
+        "productive",
+        "commodity"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Catimor-Varieties.md",
+      "_filename": "Catimor-Varieties.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Burundi Bourbon",
+      "origin": "[[Burundi]]",
+      "region": "Multiple Burundian provinces",
+      "variety": "Red Bourbon",
+      "processing": "Washed (Double Fermentation)",
+      "roast-level": "light-medium",
+      "altitude": "1250-2000",
+      "flavor-profile": [
+        "berry",
+        "citrus",
+        "floral",
+        "bright",
+        "complex",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "high",
+      "tags": [
+        "bean-profile",
+        "burundi",
+        "bourbon",
+        "east-africa",
+        "bright",
+        "value"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Burundi-Bourbon.md",
+      "_filename": "Burundi-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Yellow Bourbon",
+      "origin": "[[Brazil]]",
+      "region": "Sul de Minas, Cerrado Mineiro, Mogiana",
+      "variety": "Yellow Bourbon",
+      "processing": "Natural, Pulped Natural",
+      "roast-level": "medium",
+      "altitude": "900-1300",
+      "flavor-profile": [
+        "sweet",
+        "chocolate",
+        "nutty",
+        "caramel",
+        "low-acid",
+        "creamy"
+      ],
+      "body": "full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "yellow-bourbon",
+        "natural",
+        "sweet",
+        "low-acid"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Yellow-Bourbon.md",
+      "_filename": "Brazil-Yellow-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "bean-name": "Brazil Santos",
+      "roaster": "Blue Bottle",
+      "origin": "Brazil",
+      "roast-level": "medium-dark",
+      "roast-date": "2025-10-09T00:00:00.000Z",
+      "purchase-date": "2025-10-25T00:00:00.000Z",
+      "price": 12,
+      "weight": 340,
+      "status": "active",
+      "tags": [
+        "bean-profile",
+        "brazil"
+      ],
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Santos.md",
+      "_filename": "Brazil-Santos.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Red Bourbon",
+      "origin": "[[Brazil]]",
+      "region": "Sul de Minas, Cerrado Mineiro, Mogiana",
+      "variety": "Red Bourbon",
+      "processing": "Natural, Pulped Natural",
+      "roast-level": "medium",
+      "altitude": "900-1400",
+      "flavor-profile": [
+        "sweet",
+        "chocolate",
+        "caramel",
+        "nuts",
+        "balanced",
+        "smooth"
+      ],
+      "body": "full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "red-bourbon",
+        "natural",
+        "sweet",
+        "traditional"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Red-Bourbon.md",
+      "_filename": "Brazil-Red-Bourbon.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Mundo Novo",
+      "origin": "[[Brazil]]",
+      "region": "Cerrado, Sul de Minas, Mogiana",
+      "variety": "Mundo Novo (Typica x Bourbon Natural Hybrid)",
+      "processing": "Natural, Pulped Natural",
+      "roast-level": "medium-dark",
+      "altitude": "800-1300",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "smooth",
+        "low-acid",
+        "balanced"
+      ],
+      "body": "full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "mundo-novo",
+        "natural-hybrid",
+        "productive"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Mundo-Novo.md",
+      "_filename": "Brazil-Mundo-Novo.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Icatu",
+      "origin": "[[Brazil]]",
+      "region": "Minas Gerais, São Paulo",
+      "variety": "Icatu (Complex Interspecific Hybrid)",
+      "processing": "Natural, Pulped Natural, Washed",
+      "roast-level": "medium",
+      "altitude": "800-1400",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "balanced",
+        "clean",
+        "sweet"
+      ],
+      "body": "medium-full",
+      "acidity": "low-medium",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "icatu",
+        "hybrid",
+        "rust-resistant",
+        "productive"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Icatu.md",
+      "_filename": "Brazil-Icatu.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Catuai",
+      "origin": "[[Brazil]]",
+      "region": "Cerrado Mineiro, Sul de Minas, Mogiana",
+      "variety": "Catuai (Caturra x Mundo Novo hybrid)",
+      "processing": "Natural, Pulped Natural",
+      "roast-level": "medium-dark",
+      "altitude": "800-1300",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "smooth",
+        "low-acid",
+        "sweet"
+      ],
+      "body": "full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "catuai",
+        "natural",
+        "balanced",
+        "productive"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Catuai.md",
+      "_filename": "Brazil-Catuai.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Bourbon Santos",
+      "origin": "[[Brazil]]",
+      "region": "São Paulo (Santos Port Region)",
+      "variety": "Bourbon",
+      "processing": "Natural, Pulped Natural",
+      "roast-level": "medium",
+      "altitude": "800-1200",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "smooth",
+        "sweet",
+        "low-acid"
+      ],
+      "body": "full",
+      "acidity": "low",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "bourbon",
+        "santos",
+        "traditional",
+        "smooth"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Bourbon-Santos.md",
+      "_filename": "Brazil-Bourbon-Santos.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Brazil Acaia",
+      "origin": "[[Brazil]]",
+      "region": "Cerrado Mineiro, Sul de Minas",
+      "variety": "Acaia (Mundo Novo Mutation)",
+      "processing": "Natural, Pulped Natural",
+      "roast-level": "medium-dark",
+      "altitude": "900-1300",
+      "flavor-profile": [
+        "chocolate",
+        "nuts",
+        "caramel",
+        "sweet",
+        "smooth",
+        "full-body"
+      ],
+      "body": "very-full",
+      "acidity": "very-low",
+      "tags": [
+        "bean-profile",
+        "brazil",
+        "acaia",
+        "mutation",
+        "sweet",
+        "smooth"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Brazil-Acaia.md",
+      "_filename": "Brazil-Acaia.md",
+      "_entityType": "bean-profile"
+    },
+    {
+      "type": "bean-profile",
+      "name": "Bolivia Typica",
+      "origin": "Bolivia",
+      "region": "Yungas region, La Paz Department",
+      "variety": "Typica",
+      "processing": "Washed, Natural",
+      "roast-level": "medium",
+      "altitude": "1200-2300",
+      "flavor-profile": [
+        "chocolate",
+        "fruit",
+        "floral",
+        "clean",
+        "balanced",
+        "sweet"
+      ],
+      "body": "medium",
+      "acidity": "medium-high",
+      "tags": [
+        "bean-profile",
+        "bolivia",
+        "typica",
+        "yungas",
+        "balanced",
+        "organic"
+      ],
+      "date": "2025-10-28T00:00:00.000Z",
+      "status": "reference",
+      "_filepath": "/home/user/coffee-vault/Beans Library/Bolivia-Typica.md",
+      "_filename": "Bolivia-Typica.md",
+      "_entityType": "bean-profile"
+    }
+  ]
+}

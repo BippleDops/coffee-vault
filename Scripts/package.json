@@ -11,7 +11,15 @@
     "generate-monthly": "node monthly-report-generator.js",
     "optimize-brewing": "node brewing-optimizer.js",
     "check-inventory": "node inventory-manager.js",
-    "sample-data": "node sample-data-generator.js"
+    "sample-data": "node sample-data-generator.js",
+    "suggest-links": "node link-suggester-ai.js",
+    "detect-duplicates": "node duplicate-detector.js",
+    "score-quality": "node content-quality-scorer.js",
+    "auto-tag": "node auto-tagger.js",
+    "maintenance": "node scheduled-maintenance.js",
+    "maintenance:daily": "node scheduled-maintenance.js --schedule daily",
+    "maintenance:weekly": "node scheduled-maintenance.js --schedule weekly",
+    "maintenance:monthly": "node scheduled-maintenance.js --schedule monthly"
   },
   "keywords": [
     "coffee",

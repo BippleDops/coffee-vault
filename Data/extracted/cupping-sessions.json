@@ -1,0 +1,49 @@
+{
+  "extractedAt": "2025-11-08T19:06:26.432Z",
+  "version": "7.0.0",
+  "count": 2,
+  "sessions": [
+    {
+      "type": "cupping-session",
+      "date": "2025-10-29T00:00:00.000Z",
+      "protocol": "SCA",
+      "session-type": "origin-comparison",
+      "focus": "ethiopian-heirlooms",
+      "location": "Specialty Coffee Lab",
+      "participant-count": 6,
+      "sample-count": 5,
+      "status": "completed",
+      "tags": [
+        "cupping-session",
+        "ethiopia",
+        "heirloom",
+        "natural-process",
+        "origin-comparison",
+        "floral-profiles",
+        "2025-10"
+      ],
+      "_filepath": "/home/user/coffee-vault/Cupping Sessions/Ethiopian-Heirloom-Comparison-Session.md",
+      "_filename": "Ethiopian-Heirloom-Comparison-Session.md",
+      "_entityType": "cupping-session"
+    },
+    {
+      "type": "cupping-session",
+      "date": "2025-10-28T00:00:00.000Z",
+      "protocol": "SCA",
+      "session-type": "comparison",
+      "location": "Home",
+      "participant-count": 1,
+      "sample-count": 3,
+      "status": "completed",
+      "tags": [
+        "cupping-session",
+        "comparison",
+        "ethiopia",
+        "2025-10"
+      ],
+      "_filepath": "/home/user/coffee-vault/Cupping Sessions/2025-10-28-Ethiopian-Comparison-Cupping.md",
+      "_filename": "2025-10-28-Ethiopian-Comparison-Cupping.md",
+      "_entityType": "cupping-session"
+    }
+  ]
+}

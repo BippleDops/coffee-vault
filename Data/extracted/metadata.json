@@ -1,0 +1,28 @@
+{
+  "extractedAt": "2025-11-08T19:16:47.575Z",
+  "version": "7.0.0",
+  "vaultRoot": "/home/user/coffee-vault",
+  "totalFiles": 333,
+  "processedFiles": 0,
+  "skippedFiles": 298,
+  "errorFiles": 35,
+  "entities": {
+    "coffee-logs": 50,
+    "beans": 109,
+    "origins": 59,
+    "recipes": 35,
+    "equipment": 78,
+    "cupping-sessions": 2
+  },
+  "performance": {
+    "totalTimeMs": 144,
+    "totalTimeSec": "0.14",
+    "coffee-logs": 21,
+    "beans": 27,
+    "origins": 14,
+    "recipes": 38,
+    "equipment": 41,
+    "cupping-sessions": 2,
+    "total": 144
+  }
+}
