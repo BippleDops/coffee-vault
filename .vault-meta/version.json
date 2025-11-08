@@ -1,13 +1,13 @@
 {
-  "version": "9.0.0",
-  "codename": "Personalization - Framework",
+  "version": "10.0.0",
+  "codename": "Enterprise - Framework",
   "releaseDate": "2025-11-08",
   "majorFeatures": [
-    "Achievement System (50+ achievements across 5 categories)",
-    "Personalization Configuration (user preferences, dashboard customization)",
-    "Gamification Framework (milestones, exploration, method mastery)",
-    "Recommendation System Design (pattern-based, smart suggestions)",
-    "Mobile Optimization Preparation"
+    "Business Suite (inventory, financial, CRM, training, compliance)",
+    "Professional Workflows (competition prep, consulting, course creation)",
+    "Enterprise Architecture (multi-user design, API ready)",
+    "Business Intelligence Framework",
+    "Complete Coffee OS Vision Established"
   ],
   "compatibility": {
     "backwardCompatible": true,
@@ -16,34 +16,37 @@
     "recommendedPlugins": ["Calendar", "Tasks", "Advanced Tables"]
   },
   "metrics": {
-    "totalFiles": 1152,
+    "totalFiles": 1155,
     "scientificReferences": 180,
     "originProfiles": 59,
     "templates": 21,
     "automationScripts": 48,
     "cssLines": 9800,
     "personas": 4,
-    "documentationPages": 29,
+    "documentationPages": 32,
     "visualizationsUpdated": "1/25",
     "dataExtractionSpeed": "405ms",
     "testsPassing": "30/30",
-    "coverageAnalysis": "86% (180/209 target)"
+    "coverageAnalysis": "86% (180/209 target)",
+    "businessTemplates": 6,
+    "professionalWorkflows": 3,
+    "achievementsDefined": 50
   },
   "upgrade": {
-    "from": "7.0.0",
+    "from": "9.0.0",
     "breakingChanges": false,
     "migrationRequired": false,
-    "estimatedUpgradeTime": "5 minutes",
+    "estimatedUpgradeTime": "2 minutes",
     "backupRecommended": true
   },
   "next": {
-    "version": "8.1.0",
+    "version": "10.1.0",
     "plannedFeatures": [
-      "Add 14 Brewing Science references",
-      "Add 10 Equipment Science references",
-      "Systematic citation additions",
-      "Link integrity improvements"
+      "Business tool implementation (inventory, financial, CRM)",
+      "Professional workflow automation",
+      "API development (REST, authentication)",
+      "Device integrations (Acaia, Decent, VST)"
     ],
-    "estimatedRelease": "Q1 2026"
+    "estimatedRelease": "Q2 2026"
   }
 }
