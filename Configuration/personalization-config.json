@@ -1,0 +1,95 @@
+{
+  "version": "9.0.0",
+  "codename": "Personalization",
+  "created": "2025-11-08",
+  "user": {
+    "name": "",
+    "experience_level": "intermediate",
+    "primary_persona": "enthusiast",
+    "brewing_preferences": {
+      "favorite_methods": ["V60", "Espresso"],
+      "roast_preference": "light",
+      "flavor_preferences": ["fruity", "floral", "complex"],
+      "time_available": "standard"
+    },
+    "goals": {
+      "primary": "improve_technique",
+      "secondary": ["explore_origins", "develop_palate"],
+      "learning_pace": "progressive"
+    }
+  },
+  "dashboard": {
+    "default": "Persona-ENTHUSIAST-Dashboard",
+    "home_sections": [
+      "quick-actions",
+      "recent-brews",
+      "recommendations",
+      "progress-tracker",
+      "learning-path"
+    ],
+    "hidden_sections": [
+      "advanced-ml-suite",
+      "professional-tools"
+    ],
+    "widget_order": [
+      "quick-log",
+      "data-extraction",
+      "achievements",
+      "next-steps"
+    ]
+  },
+  "recommendations": {
+    "enabled": true,
+    "based_on": ["brew_history", "ratings", "flavor_notes"],
+    "frequency": "weekly",
+    "types": [
+      "similar_beans",
+      "new_origins",
+      "method_suggestions",
+      "learning_recommendations"
+    ]
+  },
+  "automation": {
+    "auto_tag": true,
+    "link_suggestions": true,
+    "duplicate_detection": false,
+    "data_extraction_schedule": "daily",
+    "achievement_notifications": true
+  },
+  "visualization_preferences": {
+    "default_theme": "dark",
+    "chart_style": "minimal",
+    "animation_speed": "normal",
+    "color_scheme": "coffee",
+    "accessibility": {
+      "high_contrast": false,
+      "reduced_motion": false,
+      "large_text": false
+    }
+  },
+  "mobile": {
+    "optimized_templates": [
+      "Coffee-Log-Quick.md",
+      "Coffee-Log-Standard.md"
+    ],
+    "quick_actions": [
+      "new_log",
+      "view_beans",
+      "search",
+      "achievements"
+    ],
+    "offline_sync": true
+  },
+  "privacy": {
+    "data_sharing": false,
+    "analytics": false,
+    "cloud_sync": false,
+    "local_only": true
+  },
+  "advanced": {
+    "enable_experimental_features": false,
+    "custom_css": "",
+    "plugin_integrations": [],
+    "api_access": false
+  }
+}

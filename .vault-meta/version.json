@@ -1,13 +1,13 @@
 {
-  "version": "8.0.0",
-  "codename": "Knowledge Density - Foundation",
+  "version": "9.0.0",
+  "codename": "Personalization - Framework",
   "releaseDate": "2025-11-08",
   "majorFeatures": [
-    "Scientific Content Index (180 references catalogued, gaps identified)",
-    "Origins Index (59 profiles, 98.3% coverage)",
-    "Quality Framework (citation standards, verification methodology)",
-    "Content Roadmap (phased expansion to 209 references)",
-    "Infrastructure for systematic knowledge expansion"
+    "Achievement System (50+ achievements across 5 categories)",
+    "Personalization Configuration (user preferences, dashboard customization)",
+    "Gamification Framework (milestones, exploration, method mastery)",
+    "Recommendation System Design (pattern-based, smart suggestions)",
+    "Mobile Optimization Preparation"
   ],
   "compatibility": {
     "backwardCompatible": true,
