@@ -479,9 +479,9 @@ date: 2025-10-27
 
 ## Tags
 
-- [[Origins]]
+- [[00-Origins-Index]]
 - [[East Africa]]
-- [[Bourbon]]
+- [[Réunion-Island-Bourbon-Pointu]]
 - [[Specialty Coffee]]
-- [[Washed Processing]]
+- [[Washed Processing Complete Guide]]
 

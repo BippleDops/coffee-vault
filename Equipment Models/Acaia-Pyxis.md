@@ -52,7 +52,7 @@ tags:
 
 The Acaia Pyxis represents a paradigm shift in espresso workflow integration, combining precision weighing with intelligent dosing cup design to address one of specialty coffee's most persistent challenges: accurately measuring coffee dose directly as it exits the grinder. Released in 2021, the Pyxis builds on Acaia's reputation for innovative coffee scales while introducing form-factor and functionality specifically tailored to espresso preparation workflows.
 
-At $160 USD, the Pyxis occupies a premium position in the coffee scale market, costing substantially more than basic kitchen scales ($15-30) and even more than quality brewing scales ($40-80). However, it undercuts Acaia's flagship [[Equipment Models/Acaia-Pearl]] ($200-250) while offering specialized functionality the Pearl doesn't provide. This pricing positions the Pyxis as a focused tool for espresso enthusiasts willing to invest in workflow optimization and precision but not requiring the Pearl's full feature set for brew-by-weight applications.
+At $160 USD, the Pyxis occupies a premium position in the coffee scale market, costing substantially more than basic kitchen scales ($15-30) and even more than quality brewing scales ($40-80). However, it undercuts Acaia's flagship [[Equipment Model]] ($200-250) while offering specialized functionality the Pearl doesn't provide. This pricing positions the Pyxis as a focused tool for espresso enthusiasts willing to invest in workflow optimization and precision but not requiring the Pearl's full feature set for brew-by-weight applications.
 
 Acaia, founded in Taiwan in 2013, emerged from frustration with existing coffee weighing solutions among specialty coffee professionals. The company's founding team included engineers and coffee enthusiasts who recognized that coffee brewing demands precision scales with specific characteristics: fast response time, high precision, water resistance, and brewing-specific features. Acaia's scales quickly became standard equipment in specialty cafes and competition settings worldwide, establishing the brand as synonymous with precision coffee measurement.
 
@@ -86,7 +86,7 @@ From cultural perspective, the Pyxis represents the increasing sophistication an
 
 The target market is specific: espresso enthusiasts who have progressed beyond beginner equipment and techniques, who understand the importance of precise dosing, and who value workflow optimization. This isn't a first purchase for someone new to espresso—it's an upgrade purchase for users who've experienced the frustrations of less integrated measurement approaches and recognize the value of solving them.
 
-Competition includes general coffee scales like the [[Equipment Models/Timemore-Black-Mirror-Basic]], larger espresso scales like the Acaia Pearl, and traditional kitchen scales adapted to coffee use. The Pyxis differentiates through form-factor specialization and dosing-specific features rather than competing on price or general functionality.
+Competition includes general coffee scales like the [[Equipment Model]], larger espresso scales like the Acaia Pearl, and traditional kitchen scales adapted to coffee use. The Pyxis differentiates through form-factor specialization and dosing-specific features rather than competing on price or general functionality.
 
 Community reception has been notably positive among serious espresso enthusiasts while remaining niche in broader home coffee markets. The Pyxis frequently appears in espresso workflow optimization discussions, single-dosing setup posts, and equipment recommendation threads for intermediate-to-advanced home baristas. Professional baristas have adopted the Pyxis for competition preparation and workflow development.
 
@@ -360,7 +360,7 @@ The Pyxis costs 5-10x more than basic kitchen scales, justifying premium through
 - Rechargeable battery vs. replaceable batteries or AC power
 
 **Compared to Quality Brewing Scales ($40-80)**
-Examples: [[Equipment Models/Timemore-Black-Mirror-Basic]] ($40), Hario Drip Scale ($60)
+Examples: [[Equipment Model]] ($40), Hario Drip Scale ($60)
 
 The Pyxis costs 2-4x more while offering:
 - Dosing-specific form factor (advantage for espresso, disadvantage for pour-over)
@@ -533,20 +533,20 @@ Longer-term users report:
 ## Related Notes & Cross-References
 
 ### Espresso Equipment & Workflow
-- [[Equipment Models/Baratza-Sette-270]]
-- [[Equipment Models/Niche-Zero]]
-- [[Equipment Models/Fellow-Ode]]
-- [[Equipment Models/Pesado-58.5mm-Tamper]]
-- [[Equipment Models/Weiss-Distribution-Tool-WDT]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 - [[Brewing Methods/Espresso]]
-- [[Brewing Parameters/Dose]]
-- [[Brewing Parameters/Grind-Size]]
+- [[Brewing Parameters]]
+- [[Brewing Parameters]]
 
 ### Scales & Measurement
-- [[Equipment Models/Acaia-Pearl]]
-- [[Equipment Models/Timemore-Black-Mirror-Basic]]
-- [[Equipment Models/Hario-Drip-Scale]]
-- [[Brewing Parameters/Coffee-to-Water-Ratio]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Brewing Parameters]]
 - [[Scientific References/Precision-Measurement]]
 
 ### Workflow & Technique

@@ -387,9 +387,9 @@ date: 2025-10-27
 
 ## Tags
 
-- [[Origins]]
+- [[00-Origins-Index]]
 - [[Middle East]]
 - [[Coffee History]]
-- [[Natural Processing]]
+- [[Honey Pulped Natural Processing]]
 - [[Premium Coffee]]
 

@@ -103,7 +103,7 @@ created: 2025-11-06
 **Required Fields**:
 - `type: coffee-log`
 - `date: YYYY-MM-DD`
-- `beans: [[Bean Profile Link]]`
+- `beans: [[Bean Profile]]`
 - `method: brew-method`
 - `rating: 1-5`
 

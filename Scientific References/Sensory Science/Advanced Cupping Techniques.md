@@ -109,7 +109,7 @@ Beyond basic cupping, advanced techniques enable deeper analysis, precise differ
 ## Tags
 
 - [[Sensory Science]]
-- [[Cupping]]
+- [[SCA-Cupping-Form]]
 - [[Professional Development]]
 - [[Advanced Techniques]]
 - [[Quality Assessment]]

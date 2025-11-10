@@ -978,12 +978,12 @@ For manual espresso devotees, travelers requiring portable café-quality espress
 ---
 
 **Cross-References:**
-- [[Equipment Models/Comandante-C40-MK4]] - Perfect pairing, portable hand grinder
-- [[Equipment Models/1Zpresso-JX-Pro]] - Alternative hand grinder, espresso-capable
-- [[Equipment Models/Cafelat-Robot]] - Manual competitor, different approach
-- [[Equipment Models/Decent-Espresso-DE1PRO]] - Electric profiling alternative (6× price)
+- [[Equipment Model]] - Perfect pairing, portable hand grinder
+- [[Equipment Model]] - Alternative hand grinder, espresso-capable
+- [[Equipment Model]] - Manual competitor, different approach
+- [[Equipment Model]] - Electric profiling alternative (6× price)
 - [[Brewing Methods/Espresso]] - Primary brewing method
-- [[Brewing Parameters/Pressure]] - Manual lever enables infinite pressure control
-- [[Brewing Parameters/Temperature]] - Pre-heating critical for stability
+- [[Brewing Parameters]] - Manual lever enables infinite pressure control
+- [[Brewing Parameters]] - Pre-heating critical for stability
 - [[Coffee Science/Extraction]] - Pressure profiling optimizes extraction
-- [[Brewing Parameters/Pre-Infusion]] - Manual control enables gentle pre-infusion
+- [[Brewing Parameters]] - Manual control enables gentle pre-infusion

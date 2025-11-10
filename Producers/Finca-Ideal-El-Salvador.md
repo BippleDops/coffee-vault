@@ -461,7 +461,7 @@ Beyond coffee excellence, Finca Ideal's significance lies in survival and transf
 
 **Cultural Context**: [[Coffee-Culture/Salvadoran-Coffee-Heritage]], [[Coffee-Culture/Family-Coffee-Estates]], [[Coffee-Culture/Post-Civil-War-Recovery]], [[Coffee-Culture/Pacamara-Excellence]]
 
-**Sustainability**: [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/Cloud-Forest-Conservation]], [[Sustainability/Volcanic-Coffee-Ecosystems]]
+**Sustainability**: [[Rainforest-Alliance-Certification]], [[Sustainability/Cloud-Forest-Conservation]], [[Sustainability/Volcanic-Coffee-Ecosystems]]
 
 **Historical Context**: [[History/El-Salvador-Civil-War-Coffee]], [[History/Post-Conflict-Coffee-Transformation]], [[History/Pacamara-Development]]
 

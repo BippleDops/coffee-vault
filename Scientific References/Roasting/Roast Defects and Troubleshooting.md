@@ -272,7 +272,7 @@ Understanding defects enables:
 ## Tags
 
 - [[Roasting Science]]
-- [[Defects]]
-- [[Troubleshooting]]
-- [[Quality Control]]
+- [[Roast Defects and Troubleshooting]]
+- [[Pour-Over-Troubleshooting-Guide]]
+- [[Post-Harvest Quality Control]]
 

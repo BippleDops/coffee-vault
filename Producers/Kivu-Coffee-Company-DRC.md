@@ -511,7 +511,7 @@ Beyond coffee quality, Kivu Coffee's social impact is profound: the company prov
 
 **Social Impact**: [[Social-Impact/Coffee-Peace-Building]], [[Social-Impact/Post-Conflict-Economic-Development]], [[Social-Impact/Social-Enterprise-Coffee]], [[Social-Impact/Gender-Based-Violence-Support]], [[Social-Impact/Womens-Empowerment-Conflict-Zones]]
 
-**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Certifications/Rainforest-Alliance-Certification]]
+**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Rainforest-Alliance-Certification]]
 
 **Markets**: [[Markets/Social-Impact-Coffee]], [[Markets/Direct-Trade-Coffee]], [[Markets/Conflict-Zone-Sourcing]]
 

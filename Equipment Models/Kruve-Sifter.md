@@ -475,7 +475,7 @@ community-rating: 4.6
 
 **Recommended Setup** (Espresso Optimization):
 - Kruve Sifter Twelve: $120
-- [[Equipment Models/Acaia-Lunar]] or precision scale: $50-250
+- [[Equipment Model]] or precision scale: $50-250
 - Good espresso grinder: $200-500+
 - Notebook/spreadsheet: Free (data recording)
 - **Total: $370-870+**
@@ -939,15 +939,15 @@ If you're in the niche that needs objective grind analysis, the Kruve is perfect
 **Tags**: equipment-model, kruve, sifter, grind-analysis, particle-distribution, espresso-optimization, specialty-tool
 
 **Cross-References**:
-- [[Grind Size]] - Understanding particle size impact
-- [[Particle Size Distribution]] - Scientific grind analysis
+- [[Grind Size and Extraction Kinetics]] - Understanding particle size impact
+- [[Particle Size Distribution Effects]] - Scientific grind analysis
 - [[Grinder Comparison]] - Using Kruve for objective testing
 - [[Espresso Fundamentals]] - Why distribution matters for espresso
 - [[Grinder Calibration]] - Alignment and optimization
-- [[Equipment Models/Baratza-Sette-270Wi]] - Grinder optimization target
-- [[Equipment Models/Niche-Zero-Grinder]] - Premium grinder comparison
-- [[Equipment Models/Fellow-Ode-Gen2]] - Filter grinder analysis
-- [[Coffee Science]] - Scientific methodology in coffee
-- [[Extraction]] - How grind distribution affects extraction
-- [[Burr Geometry]] - Different burrs produce different distributions
-- [[Fines Migration]] - Impact of fine particles
+- [[Equipment Model]] - Grinder optimization target
+- [[Equipment Model]] - Premium grinder comparison
+- [[Equipment Model]] - Filter grinder analysis
+- [[Coffee Science & Extraction]] - Scientific methodology in coffee
+- [[DATA-EXTRACTION-GUIDE]] - How grind distribution affects extraction
+- [[Burr Geometry and Design Comparison]] - Different burrs produce different distributions
+- [[Fines Migration and Filter Clogging]] - Impact of fine particles

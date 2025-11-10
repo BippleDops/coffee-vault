@@ -946,7 +946,7 @@ community-rating: 4.9
 ## 📚 Wikilinks & References
 
 ### Related Equipment
-- [[Niche-Zero]] - Entry-premium alternative
+- [[Niche-Zero-Grinder]] - Entry-premium alternative
 - [[Option-O-Lagom-P64]] - Mid-premium alternative
 - [[Kafatek-Monolith-Max]] - Comparable ultra-premium (lever)
 - [[Fellow-Ode-Gen2]] - Filter-focused alternative
@@ -956,21 +956,21 @@ community-rating: 4.9
 - [[Decent-Espresso-DE1PRO]] - Premium espresso machine pairing
 
 ### Related Concepts
-- [[Burr-Alignment]] - Precision alignment importance
+- [[Burr-Alignment-and-Maintenance]] - Precision alignment importance
 - [[Single-Dose-Grinding]] - Workflow optimization
 - [[Grinder-Retention]] - Low retention benefits
 - [[SSP-Burrs]] - SSP burr technology
 - [[Flat-Burrs-vs-Conical]] - Burr geometry differences
 - [[Grind-Quality]] - Particle size distribution
-- [[Espresso-Dialing-In]] - Dialing in with precision grinders
+- [[Espresso-Dialing-In-Framework]] - Dialing in with precision grinders
 
 ### Related Companies
-- [[Weber-Workshops]] - Company background, philosophy
+- [[Weber-Workshops-EG-1]] - Company background, philosophy
 - [[SSP-Grinding-Solutions]] - Burr manufacturer
 - [[Doug-Weber]] - Founder background
 
 ### Coffee Science
-- [[Particle-Size-Distribution]] - Grind quality analysis
+- [[Particle-Size-Distribution-Measurement]] - Grind quality analysis
 - [[Fines-in-Coffee]] - Ultra-low fines impact
 - [[Extraction-Uniformity]] - Alignment impact on extraction
 - [[Coffee-Clarity]] - Flavor clarity in espresso

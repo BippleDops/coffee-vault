@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Nicaragua Jinotega Maracaturra Natural
-origin: "[[Origins/Nicaragua]]"
-region: [[Origins/Nicaragua-Jinotega]]
+origin: "[[Nicaragua]]"
+region: [[Nicaragua]]
 variety: [[Coffee Varieties/Maracaturra]]
 processing: [[Processing Methods/Natural-Dry-Process]]
 roast-level: light-medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Nicaragua Jinotega Maracaturra Natural
 
-**Origin**: [[Origins/Nicaragua|Nicaragua]]
-**Region**: [[Origins/Nicaragua-Jinotega|Jinotega]]
+**Origin**: [[Nicaragua|Nicaragua]]
+**Region**: [[Nicaragua|Jinotega]]
 **Variety**: [[Coffee Varieties/Maracaturra|Maracaturra]]
 **Processing**: [[Processing Methods/Natural-Dry-Process|Natural/Dry Process]]
 **Grade**: SHG (Strictly High Grown)
@@ -465,8 +465,8 @@ Jinotega, in Nicaragua's north-central highlands, is the country's premier coffe
 ## 🔗 Related Content
 
 - [[El-Salvador-Apaneca-Pacamara-Washed]] (Similar large bean hybrid)
-- [[Brazil-Natural-Process]]
-- [[Ethiopia-Natural-Process]]
+- [[Brazil]]
+- [[Ethiopia]]
 
 ---
 

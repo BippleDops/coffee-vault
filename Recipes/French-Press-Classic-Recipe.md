@@ -13,9 +13,9 @@ avg-rating: 4.4
 tags: [recipe-profile, french-press, immersion, full-body, classic]
 relationships:
   requires:
-    - "[[French Press]]"
-    - "[[Grinder]]"
-    - "[[Kettle]]"
+    - "[[French Press Guide]]"
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[Hario-Buono-Kettle]]"
 ---
 
 # 📖 Recipe: French Press Classic Recipe

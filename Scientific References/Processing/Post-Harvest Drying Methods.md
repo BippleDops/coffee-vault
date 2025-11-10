@@ -413,8 +413,8 @@ Drying methods:
 
 ## Tags
 
-- [[Processing]]
-- [[Post-Harvest]]
-- [[Quality Control]]
-- [[Drying]]
+- [[processing-playbook-template]]
+- [[Post-Harvest Quality Control]]
+- [[Post-Harvest Quality Control]]
+- [[Post-Harvest Drying Methods]]
 

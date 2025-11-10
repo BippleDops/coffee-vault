@@ -212,7 +212,7 @@ WHERE brew-method = "french-press" OR brew-method = "French Press"
 **Related Techniques**:
 - [[Cold Brew Guide]] - Similar immersion, different temperature
 - [[Clever Dripper Guide]] - Immersion + filtration hybrid
-- [[Cupping Protocol]] - Similar immersion method for tasting
+- [[SCA Cupping Protocol Step-by-Step]] - Similar immersion method for tasting
 
 ---
 

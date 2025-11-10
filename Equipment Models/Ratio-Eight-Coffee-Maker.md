@@ -52,7 +52,7 @@ tags:
 
 The Ratio Eight represents a paradigm shift in automatic coffee maker design, merging third-wave coffee brewing principles with heirloom-quality craftsmanship and museum-worthy industrial design. Released in 2020 as the refined successor to Ratio's earlier models, the Eight positions automatic coffee brewing as an elevated ritual rather than a convenience compromise, targeting coffee enthusiasts who appreciate both exceptional cup quality and objects designed to last generations.
 
-At $550, the Ratio Eight occupies a premium price position that challenges conventional assumptions about automatic coffee makers. While mass-market drip machines retail for $30-100 and even quality alternatives like the [[Equipment Models/Technivorm-Moccamaster]] cost around $350, Ratio asks consumers to invest substantially more for what they describe as "the last coffee maker you'll ever need to buy." This positioning requires delivering not just superior brewing performance but also aesthetic presence, build quality, and ownership experience that justify the premium.
+At $550, the Ratio Eight occupies a premium price position that challenges conventional assumptions about automatic coffee makers. While mass-market drip machines retail for $30-100 and even quality alternatives like the [[Equipment Model]] cost around $350, Ratio asks consumers to invest substantially more for what they describe as "the last coffee maker you'll ever need to buy." This positioning requires delivering not just superior brewing performance but also aesthetic presence, build quality, and ownership experience that justify the premium.
 
 Founded by Mark Hellweg and partners in Portland, Oregon, Ratio emerged from a simple question: why can't automatic coffee makers brew as well as manual pour-over methods? The coffee industry had accepted a false dichotomy—either brew manually for quality or accept mediocrity for convenience. Ratio challenged this assumption by engineering automated brewing systems that replicate the temperature control, water distribution, and timing characteristics of skilled manual pour-over technique.
 
@@ -62,7 +62,7 @@ The name "Eight" references the approximate eight-cup (40-ounce) capacity while 
 
 Aesthetically, the Eight draws from mid-century modern design principles: honest materials, exposed joinery, functional beauty, and timeless proportions. The powder-coated steel frame, borosilicate glass carafe and water tank, stainless steel brew cone, and optional walnut or cork accents create material palette that integrates into thoughtfully designed living spaces. The brewer is intended to occupy countertop space permanently as a beautiful object rather than being hidden in cabinets between uses.
 
-The target market is specific: design-conscious coffee enthusiasts with disposable income who value objects that combine function and beauty. These are consumers who understand why the [[Equipment Models/Fellow-Stagg-EKG]] costs $175 when electric kettles cost $25, who buy [[Equipment Models/Chemex]] brewers as much for aesthetics as function, who appreciate craftsmanship premium. For this audience, the Ratio Eight offers permission to have both automation and quality without compromise.
+The target market is specific: design-conscious coffee enthusiasts with disposable income who value objects that combine function and beauty. These are consumers who understand why the [[Equipment Model]] costs $175 when electric kettles cost $25, who buy [[Equipment Model]] brewers as much for aesthetics as function, who appreciate craftsmanship premium. For this audience, the Ratio Eight offers permission to have both automation and quality without compromise.
 
 Brewing performance is the foundation that allows aesthetic premium to exist. The Eight replicates SCA (Specialty Coffee Association) Gold Cup brewing standards through precise temperature control (200-205°F brewing temperature), proper bloom cycle (45-60 second initial saturation), and methodical water distribution. The result is coffee extraction comparable to skilled manual pour-over, extracting the intended flavor compounds without over- or under-extraction.
 
@@ -82,7 +82,7 @@ Environmental implications are complex. The premium price and long warranty enco
 
 Community reception has been notably positive among design-conscious coffee enthusiasts while remaining niche in broader market. The Eight appears prominently in specialty coffee Instagram feeds, design blogs, and thoughtfully curated kitchens. However, at $550, it remains accessible only to affluent consumers, limiting market penetration. Ratio appears comfortable with this positioning, prioritizing margin and brand premium over volume.
 
-The competitive landscape includes few direct competitors. The [[Equipment Models/Technivorm-Moccamaster]] offers SCA certification at lower price but less design refinement. Various premium Japanese brewers (Hario, Kalita) offer alternatives but limited US availability. The Eight occupies a unique position: premium pricing with genuine performance differentiation and design object status.
+The competitive landscape includes few direct competitors. The [[Equipment Model]] offers SCA certification at lower price but less design refinement. Various premium Japanese brewers (Hario, Kalita) offer alternatives but limited US availability. The Eight occupies a unique position: premium pricing with genuine performance differentiation and design object status.
 
 From user experience perspective, the Eight transforms morning coffee from chore to ritual. The simplicity of operation makes quality coffee accessible even at 6 AM cognitive fog, while the visual beauty of the process provides meditative beginning to the day. Users report genuine pleasure in ownership beyond functional benefit—the machine sparks joy through design presence and craft quality.
 
@@ -368,7 +368,7 @@ Brands like Cuisinart, OXO, and Bonavita offer improved features at $100-200 pri
 The Eight costs 2.5-5.5x more while delivering incrementally better brewing performance but dramatically superior materials, aesthetics, and build quality. The brewing performance gap is smaller than the price gap; the premium buys design and craftsmanship.
 
 **Premium Brewers ($250-400)**
-- **[[Equipment Models/Technivorm-Moccamaster]]** ($300-350): Dutch-made, SCA certified, excellent brewing performance, 5-year warranty, proven longevity
+- **[[Equipment Model]]** ($300-350): Dutch-made, SCA certified, excellent brewing performance, 5-year warranty, proven longevity
 
 The Moccamaster is the Eight's closest competitor in terms of brewing performance and build quality. The Eight costs approximately $200 more (50-80% premium) for arguably comparable brewing performance. The premium buys:
 - Superior aesthetic design and material refinement
@@ -647,25 +647,25 @@ The Eight delivers what it promises—excellent brewing and beautiful design. Wh
 ### Brewing Methods & Science
 - [[Brewing Methods/Pour-Over]]
 - [[Brewing Methods/Drip Coffee]]
-- [[Brewing Parameters/Coffee-to-Water Ratio]]
-- [[Brewing Parameters/Water Temperature]]
-- [[Brewing Parameters/Brew Time]]
-- [[Brewing Parameters/Bloom]]
+- [[Brewing Parameters]]
+- [[Water Temperature]]
+- [[Brewing Parameters]]
+- [[Brewing Parameters]]
 - [[Scientific References/Extraction-Science]]
 - [[Scientific References/SCA-Gold-Cup-Standard]]
 
 ### Competitive Equipment
-- [[Equipment Models/Technivorm-Moccamaster]]
-- [[Equipment Models/Bonavita-BV1900TS]]
-- [[Equipment Models/OXO-Brew-9-Cup]]
-- [[Equipment Models/Chemex-8-Cup]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 ### Complementary Equipment
-- [[Equipment Models/Baratza-Virtuoso]]
-- [[Equipment Models/Wilfa-Svart-Aroma]]
-- [[Equipment Models/Fellow-Ode]]
-- [[Equipment Models/Timemore-Black-Mirror-Basic]]
-- [[Equipment Models/Fellow-Stagg-EKG]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 ### Coffee Preparation
 - [[Recipes/Pour-Over-Standard]]

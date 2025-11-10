@@ -382,6 +382,6 @@ Soil quality directly impacts coffee quality, yield, and plant health. Understan
 ## Tags
 
 - [[Agronomy]]
-- [[Sustainable Farming]]
+- [[Sustainable Farming Practices]]
 - [[Coffee Cultivation]]
 - [[Soil Management]]

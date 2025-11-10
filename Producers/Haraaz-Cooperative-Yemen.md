@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Haraaz Cooperative
-country: [[Origins/Yemen]]
-region: [[Origins/Yemen-Haraaz]]
+country: [[Yemen]]
+region: [[Yemen]]
 producer-category: Village-Cooperative
 established: 1998
 varieties: Yemeni-Heirlooms-Tuffahi-Dawairi-Udaini
@@ -539,15 +539,15 @@ The survival of Haraaz coffee—and Yemeni coffee heritage generally—depends o
 **Tags**: #Producer #Yemen #Cooperative #Conflict-Zone #Heritage-Coffee #Ancient-Varieties #Natural-Process #Terraced-Agriculture #Cultural-Heritage #Genetic-Diversity #Middle-East #Post-Conflict-Recovery #Traditional-Processing #High-Altitude #Qishr #Mocha-Port-History
 
 **Related Notes**:
-- [[Origins/Yemen]]
-- [[Origins/Yemen-Haraaz]]
+- [[Yemen]]
+- [[Yemen]]
 - [[Processing/Natural-Dry-Process]]
-- [[Varieties/Yemeni-Heirlooms]]
+- [[Yemen]]
 - [[Coffee-History/Mocha-Port]]
 - [[Coffee-History/Coffee-Origins]]
 - [[Challenges/Conflict-Impact-on-Coffee]]
 - [[Challenges/Qat-vs-Coffee]]
 - [[Processing/Traditional-Rooftop-Drying]]
-- [[Cultural-Practices/Yemeni-Coffee-Ceremony]]
+- [[Yemen]]
 - [[Conservation/Genetic-Diversity-Preservation]]
 - [[Markets/Specialty-Coffee-Premiums]]

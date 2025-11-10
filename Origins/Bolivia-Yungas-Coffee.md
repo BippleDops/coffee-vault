@@ -703,12 +703,12 @@ Bolivia's dry harvest season and cooperative infrastructure support processing e
 - [[Colombia]] - Comparable Andean coffee, similar flavor profiles
 - [[Ecuador-Coffee]] - Regional neighbor, high-elevation Arabica
 - [[Ethiopia]] - Flavor profile comparisons, sweetness and floral notes
-- [[Typica]] - Dominant variety in Bolivia
+- [[Peru-Typica]] - Dominant variety in Bolivia
 - [[High-Elevation Coffee]] - Altitude impact on quality
 - [[Organic Coffee]] - Nearly 100% organic production
 - [[Fair Trade]] - Significant Fair Trade presence
 - [[Cooperative Coffee]] - Organizational model
-- [[Washed Process]] - Dominant processing method
+- [[Washed Processing Complete Guide]] - Dominant processing method
 - [[Specialty Coffee]] - Market positioning
 - [[Cup of Excellence]] - Competition history and recognition
 

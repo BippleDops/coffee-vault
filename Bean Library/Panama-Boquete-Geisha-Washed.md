@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Panama Boquete Geisha Washed
-origin: "[[Origins/Panama]]"
-region: [[Origins/Panama-Boquete]]
+origin: "[[Panama]]"
+region: [[Panama]]
 variety: [[Coffee Varieties/Geisha]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: light
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Panama Boquete Geisha Washed
 
-**Origin**: [[Origins/Panama|Panama]]
-**Region**: [[Origins/Panama-Boquete|Boquete]]
+**Origin**: [[Panama|Panama]]
+**Region**: [[Panama|Boquete]]
 **Variety**: [[Coffee Varieties/Geisha|Geisha (Gesha)]]
 **Processing**: [[Processing Methods/Washed-Process|Washed (Wet) Process]]
 **Grade**: SHB (Strictly Hard Bean)
@@ -1450,20 +1450,20 @@ This is the most critical stage for Geisha quality—fermentation timing is meas
 
 ### Related Bean Profiles
 - [[Costa-Rica-Tarrazu-Geisha-Honey]] - Costa Rica Geisha (same variety, different terroir/processing)
-- [[Colombia-Geisha-Washed]] - Colombian Geisha comparison
-- [[Ethiopia-Gesha-Village]] - Geisha's Ethiopian birthplace
-- [[Guatemala-Huehuetenango-Geisha]] - Guatemalan Geisha
+- [[Colombia]] - Colombian Geisha comparison
+- [[Ethiopia]] - Geisha's Ethiopian birthplace
+- [[Guatemala]] - Guatemalan Geisha
 
 ### Related Origins
-- [[Origins/Panama]] - Complete Panama origin profile
-- [[Origins/Panama-Boquete]] - Detailed Boquete region information
+- [[Panama]] - Complete Panama origin profile
+- [[Panama]] - Detailed Boquete region information
 - [[Origins/Central-America]] - Regional context
 
 ### Related Varieties
 - [[Coffee Varieties/Geisha]] - Complete Geisha variety information (genetics, history, chemistry)
 - [[Coffee Varieties/Typica]] - Comparison variety
 - [[Coffee Varieties/Bourbon]] - Traditional variety comparison
-- [[Coffee Varieties/Ethiopian-Landraces]] - Geisha's genetic relatives
+- [[Ethiopia]] - Geisha's genetic relatives
 
 ### Processing Methods
 - [[Processing Methods/Washed-Process]] - Washed processing complete guide
@@ -1472,10 +1472,10 @@ This is the most critical stage for Geisha quality—fermentation timing is meas
 - [[Processing Methods/Fermentation-Science]] - Fermentation in washed coffee
 
 ### Brewing Guides
-- [[Brewing Guides/Pour-Over-Guide]] - Optimal for Geisha
-- [[Brewing Guides/V60-Technique]] - Best pour-over method for aromatics
-- [[Brewing Guides/Water-Chemistry]] - Critical for Geisha
-- [[Brewing Guides/Cupping-Protocol]] - Professional evaluation (SCA method)
+- [[Brewing Guide]] - Optimal for Geisha
+- [[Brewing Guide]] - Best pour-over method for aromatics
+- [[Brewing Guide]] - Critical for Geisha
+- [[Brewing Guide]] - Professional evaluation (SCA method)
 
 ### Scientific References
 - [[Scientific References/Geisha-Chemistry]] - Aromatic compound analysis (linalool, etc.)
@@ -1484,14 +1484,14 @@ This is the most critical stage for Geisha quality—fermentation timing is meas
 - [[Scientific References/Altitude-Effects]] - High-altitude coffee science
 
 ### Roasters with Panama Geisha Programs
-- [[Roasters/Onyx-Coffee-Lab]] - Regular Panama Geisha offerings, competition lots
+- [[Onyx-Coffee-Lab]] - Regular Panama Geisha offerings, competition lots
 - [[Roasters/Sweet-Bloom-Coffee]] - Competition Geisha specialist
 - [[Roasters/Cat-and-Cloud]] - Panama focus, Best of Panama lots
 - [[Roasters/Verve-Coffee]] - Direct trade Panama, quality focus
 - [[Roasters/Heart-Coffee]] - Panama relationships, exceptional roasting
 
 ### Historical References
-- [[Best-of-Panama-Competition]] - Annual competition history and impact
+- [[Panama]] - Annual competition history and impact
 - [[2004-Coffee-Revolution]] - The Esmeralda Geisha story
 - [[Hacienda-La-Esmeralda]] - The most famous Geisha farm
 

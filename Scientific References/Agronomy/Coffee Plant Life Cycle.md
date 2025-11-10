@@ -343,5 +343,5 @@ Understanding the lifecycle helps appreciate the complexity and time required fo
 
 - [[Agronomy]]
 - [[Coffee Cultivation]]
-- [[Harvest Timing]]
+- [[Cherry Selection and Harvest Timing]]
 

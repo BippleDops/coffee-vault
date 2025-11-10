@@ -591,8 +591,8 @@ Washed processing, also called "wet processing," is the most common method for s
 **In This Vault**:
 - [[Natural Processing Guide]] - Comparison method
 - [[Honey Processing Guide]] - Hybrid approach
-- [[Anaerobic Fermentation Methods]] - Experimental variations
-- [[Processing and Flavor Development]] - How processing creates flavor
+- [[Anaerobic Fermentation]] - Experimental variations
+- [[Flavor Development]] - How processing creates flavor
 - [[Water Chemistry and Extraction]] - Water's role in brewing washed coffees
 
 ---

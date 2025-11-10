@@ -92,8 +92,8 @@ LIMIT 1
 
 **Ready to record your coffee?** Start here:
 
-📝 **[[Templates/Quick Coffee Capture|Quick Coffee Capture]]** - Simple 2-minute form
-📋 **[[Templates/Coffee-Log-v5|Standard Coffee Log]]** - Full logging (recommended)
+📝 **[[Quick Coffee Capture|Quick Coffee Capture]]** - Simple 2-minute form
+📋 **[[Coffee-Log-v5|Standard Coffee Log]]** - Full logging (recommended)
 
 > **First Time?** Use Quick Capture - it only asks for the essentials!
 
@@ -126,9 +126,9 @@ LIMIT 3
 ```
 
 **Can't see guides above?** Try these:
-- **[[Brewing Guides/Pour-Over-V60-Guide|V60 Pour-Over Guide]]** - Most popular method
-- **[[Brewing Guides/French-Press-Guide|French Press Guide]]** - Easiest for beginners
-- **[[Brewing Guides/AeroPress-Guide|AeroPress Guide]]** - Versatile and forgiving
+- **[[Brewing Guide|V60 Pour-Over Guide]]** - Most popular method
+- **[[Brewing Guide|French Press Guide]]** - Easiest for beginners
+- **[[Brewing Guide|AeroPress Guide]]** - Versatile and forgiving
 
 ### Coffee 101: Scientific Basics
 
@@ -176,7 +176,7 @@ Learn the fundamentals that make great coffee:
 - **TDS**: Total Dissolved Solids - measures coffee strength
 - **Yield**: Total brewed coffee amount
 
-**See full glossary**: [[Documentation/Coffee-Terminology-Glossary|Coffee Terms A-Z]]
+**See full glossary**: [[GLOSSARY|Coffee Terms A-Z]]
 
 ---
 
@@ -314,7 +314,7 @@ WHERE file.path = this.file.path
 Coffee tastes sour | Grind finer or brew longer | [[Scientific References/Extraction Science/Under-Extraction-Solutions|Fix Sour Coffee]]
 Coffee tastes bitter | Grind coarser or brew shorter | [[Scientific References/Extraction Science/Over-Extraction-Solutions|Fix Bitter Coffee]]
 Don't know what to buy | Start with light-medium roast from local roaster | [[Documentation/Buying-Your-First-Specialty-Coffee|Buying Guide]]
-Inconsistent results | Focus on measuring everything | [[Brewing Guides/Consistency-Tips|Consistency Guide]]
+Inconsistent results | Focus on measuring everything | [[Brewing Guide|Consistency Guide]]
 Lost or confused | Come back to this dashboard! | [[START-HERE|Start Here Guide]]
 
 ### Common Mistakes to Avoid
@@ -383,32 +383,32 @@ LIMIT 1
 ### When You're Ready for More
 
 **After 10+ brews**, you'll unlock:
-- **[[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|Monthly Analytics]]** - See your patterns
-- **[[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant|Brewing Assistant]]** - Real-time guidance
+- **[[1-Monthly-Analytics-Dashboard|Monthly Analytics]]** - See your patterns
+- **[[9-Real-Time-Brewing-Assistant|Brewing Assistant]]** - Real-time guidance
 - **Trend Analysis** - Quality over time charts
 
 **After 20 brews**, consider:
-- **[[Views/Persona-ENTHUSIAST-Dashboard|Enthusiast Dashboard]]** - More advanced features
-- **[[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|Optimization Engine]]** - ML recommendations
-- **[[Coffee Goals/Master-V60-Technique|Setting Coffee Goals]]** - Structured learning
+- **[[Persona-ENTHUSIAST|Enthusiast Dashboard]]** - More advanced features
+- **[[2-Brewing-Optimization-Engine|Optimization Engine]]** - ML recommendations
+- **[[Coffee Goal|Setting Coffee Goals]]** - Structured learning
 
 ---
 
 ## 🔗 Quick Links
 
 **Daily Actions:**
-- [[Templates/Quick Coffee Capture|Log Coffee (Quick)]]
-- [[Templates/Coffee-Log-v5|Log Coffee (Full)]]
+- [[Quick Coffee Capture|Log Coffee (Quick)]]
+- [[Coffee-Log-v5|Log Coffee (Full)]]
 - [[START-HERE|Start Here Guide]]
 
 **Learning:**
-- [[Brewing Guides/|All Brewing Guides]]
+- [[Brewing Guide|All Brewing Guides]]
 - [[Scientific References/|Science Library]]
-- [[Documentation/Coffee-Terminology-Glossary|Glossary]]
+- [[GLOSSARY|Glossary]]
 
 **Help:**
 - [[HOME-DASHBOARD|Main Dashboard]]
-- [[Configuration/User-Configuration-Guide|Configuration Help]]
+- [[User-Configuration-Guide|Configuration Help]]
 
 ---
 

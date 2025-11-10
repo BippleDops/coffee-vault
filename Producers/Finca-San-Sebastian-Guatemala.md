@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca San Sebastián
-country: [[Origins/Guatemala]]
-region: [[Origins/Guatemala-Huehuetenango]]
+country: [[Guatemala]]
+region: [[Guatemala]]
 producer-category: Family-Farm
 established: 1920
 varieties: Bourbon-Caturra-Catuai-Typica
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Finca San Sebastián
 
 **Type**: Multi-Generational Family Farm - Highland Quality Leader
-**Location**: [[Origins/Guatemala-Huehuetenango|Huehuetenango, Guatemala]]
+**Location**: [[Guatemala|Huehuetenango, Guatemala]]
 **Established**: 1920
 
 ---
@@ -795,14 +795,14 @@ Overall: Classic Huehuetenango - bright, complex, wine-like
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/Guatemala-Bourbon-Washed]]
+- [[Guatemala]]
 - [[Beans Library/Huehuetenango-Organic]]
 - [[Beans Library/San-Sebastian-Micro-Lot]]
 
 **Related Origins**:
-- [[Origins/Guatemala]]
-- [[Origins/Guatemala-Huehuetenango]]
-- [[Origins/Guatemala-La-Libertad]]
+- [[Guatemala]]
+- [[Guatemala]]
+- [[Guatemala]]
 
 **Related Varieties**:
 - [[Scientific References/Bourbon-Variety]]
@@ -815,13 +815,13 @@ Overall: Classic Huehuetenango - bright, complex, wine-like
 - [[Scientific References/Organic-Coffee-Cultivation]]
 
 **Related Producers**:
-- [[Producers/Finca-El-Bosque-Guatemala]] (Guatemala comparison)
-- [[Producers/Finca-El-Injerto-Guatemala]] (Huehuetenango neighbor)
+- [[Finca-El-Bosque-Guatemala]] (Guatemala comparison)
+- [[Finca-El-Injerto-Guatemala]] (Huehuetenango neighbor)
 
 **Brewing Guides**:
-- [[Brewing Guides/Guatemalan-Coffee-Brewing]]
-- [[Brewing Guides/Bright-Acidic-Coffee]]
-- [[Brewing Guides/Washed-Coffee-Brewing]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 ---
 

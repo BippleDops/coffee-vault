@@ -349,6 +349,6 @@ Climate knowledge enhances appreciation of origin flavor and supports sustainabl
 
 - [[Agronomy]]
 - [[Coffee Cultivation]]
-- [[Terroir]]
+- [[Ethiopia-Terroir-and-Varietals]]
 - [[Origin Characteristics]]
 

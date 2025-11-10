@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Yirgacheffe Kochere Union
-country: [[Origins/Ethiopia]]
-region: [[Origins/Ethiopia-Yirgacheffe]]
+country: [[Ethiopia]]
+region: [[Ethiopia]]
 producer-category: Cooperative-Union
 established: 2002
 varieties: Ethiopian-Heirloom-Varieties
@@ -911,25 +911,25 @@ Yirgacheffe is considered one of the world's most distinctive coffee terroirs, i
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Ethiopia]], [[Origins/Ethiopia-Yirgacheffe]], [[Origins/Ethiopia-Sidama]], [[Origins/East-Africa-Region]], [[Origins/Coffee-Birthplace]]
+**Origins**: [[Ethiopia]], [[Ethiopia]], [[Ethiopia]], [[Origins/East-Africa-Region]], [[Origins/Coffee-Birthplace]]
 
-**Processing**: [[Processing/Washed-Process]], [[Processing/Natural-Process]], [[Processing/Ethiopian-Processing]], [[Processing/Underwater-Fermentation]]
+**Processing**: [[Processing/Washed-Process]], [[Processing/Natural-Process]], [[Ethiopia]], [[Processing/Underwater-Fermentation]]
 
 **Certifications**: [[Certifications/Fair-Trade]], [[Certifications/Organic]]
 
 **Sustainability**: [[Sustainability/Agroforestry]], [[Sustainability/Forest-Coffee]], [[Sustainability/Biodiversity-Conservation]], [[Sustainability/Organic-Agriculture]]
 
-**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Ultra-Premium-Coffee]], [[Quality/Ethiopian-Coffee-Profile]], [[Quality/Yirgacheffe-Terroir]]
+**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Ultra-Premium-Coffee]], [[Ethiopia]], [[Quality/Yirgacheffe-Terroir]]
 
 **Social Impact**: [[Producer-Development/Cooperative-Models]], [[Producer-Development/Cooperative-Unions]], [[Producer-Development/Women-in-Coffee]], [[Producer-Development/Community-Development]], [[Producer-Development/Fair-Trade-Impact]]
 
-**Varieties**: [[Varieties/Ethiopian-Heirloom-Varieties]], [[Varieties/Genetic-Diversity]]
+**Varieties**: [[Ethiopia]], [[Varieties/Genetic-Diversity]]
 
-**Cultural Context**: [[Coffee-Culture/Ethiopian-Coffee-Culture]], [[Coffee-Culture/Coffee-Ceremony]], [[Coffee-Culture/Coffee-Origin-Story]], [[Coffee-Culture/Gedeo-People]]
+**Cultural Context**: [[Ethiopia]], [[Coffee-Culture/Coffee-Ceremony]], [[Coffee-Culture/Coffee-Origin-Story]], [[Coffee-Culture/Gedeo-People]]
 
-**Related Producers**: [[Producers/Sidama-Coffee-Union-Ethiopia]], [[Producers/Guji-Highland-Cooperative-Ethiopia]], [[Producers/Harrar-Cooperative-Ethiopia]]
+**Related Producers**: [[Ethiopia]], [[Ethiopia]], [[Ethiopia]]
 
-**Environmental**: [[Environment/Coffee-Genetic-Diversity]], [[Environment/Forest-Coffee]], [[Environment/Ethiopian-Highland-Forests]]
+**Environmental**: [[Environment/Coffee-Genetic-Diversity]], [[Environment/Forest-Coffee]], [[Ethiopia]]
 
 ---
 

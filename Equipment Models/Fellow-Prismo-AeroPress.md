@@ -43,9 +43,9 @@ related_equipment:
 related_concepts:
   - "[[Aeropress-Brewing]]"
   - "[[Espresso-Fundamentals]]"
-  - "[[Extraction]]"
-  - "[[Crema]]"
-  - "[[Pressure]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
+  - "[[Crema-Coffee-Nashville-Profile]]"
+  - "[[Pressure-Profiling-Espresso-Advanced]]"
   - "[[Filter-Types]]"
   - "[[Immersion-Brewing]]"
   - "[[Brew-Ratio]]"
@@ -1088,7 +1088,7 @@ The back-pressure alters extraction compared to standard AeroPress:
 **AeroPress Fundamentals:**
 - [[Aeropress-Brewing]]: Core concepts for base device
 - [[Immersion-Brewing]]: Immersion extraction theory
-- [[Extraction]]: Understanding extraction variables
+- [[DATA-EXTRACTION-GUIDE]]: Understanding extraction variables
 - [[Brew-Ratio]]: Ratio calculations for concentrated brewing
 
 **Technique Resources:**
@@ -1565,4 +1565,4 @@ For travelers, the Prismo is essential gear. For office workers, it's transforma
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 8*
-*Related: [[Aeropress-Original]], [[Espresso-Fundamentals]], [[Immersion-Brewing]], [[Pressure-Profiling]], [[Travel-Coffee-Gear]]*
+*Related: [[Aeropress-Original]], [[Espresso-Fundamentals]], [[Immersion-Brewing]], [[Pressure-Profiling-Espresso-Advanced]], [[Travel-Coffee-Gear]]*

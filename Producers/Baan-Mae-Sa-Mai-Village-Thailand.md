@@ -787,7 +787,7 @@ Established in 2012 through a Royal Project initiative to provide alternatives t
 
 **Varieties**: [[Varieties/Catimor]], [[Varieties/Caturra]], [[Varieties/Typica]], [[Varieties/Geisha]]
 
-**Related Producers**: [[Producers/Doi-Chaang-Cooperative-Thailand]], [[Producers/Akha-Ama-Coffee-Thailand]], [[Producers/Hmong-Hilltribe-Coffee-Thailand]]
+**Related Producers**: [[Doi-Chaang-Cooperative-Thailand]], [[Producers/Akha-Ama-Coffee-Thailand]], [[Producers/Hmong-Hilltribe-Coffee-Thailand]]
 
 ---
 

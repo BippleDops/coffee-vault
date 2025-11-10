@@ -516,7 +516,7 @@ $$\text{TDS} = \frac{20 \times 25}{380} \times 100 = 1.32\%$$
 ### Scientific References
 - [[Coffee Brewing Control Chart]]
 - [[Grind Size and Extraction Kinetics]]
-- [[Water Temperature and Solubility]]
+- [[Water Temperature]]
 - [[Particle Size Distribution Effects]]
 - [[Water Chemistry and Extraction]]
 

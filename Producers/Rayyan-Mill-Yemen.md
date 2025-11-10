@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Rayyan Mill
-country: [[Origins/Yemen]]
-region: [[Origins/Yemen-Haraz-Mountains]]
+country: [[Yemen]]
+region: [[Yemen]]
 producer-category: Cooperative-Mill
 established: 2016
 varieties: Yemeni-Heirloom-Udaini-Dawairi-Tufahi
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Rayyan Mill
 
 **Type**: Cooperative Processing Mill + Smallholder Network
-**Location**: [[Origins/Yemen-Haraz-Mountains|Haraz Mountains, Yemen]]
+**Location**: [[Yemen|Haraz Mountains, Yemen]]
 **Established**: 2016
 
 ---

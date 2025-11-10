@@ -327,5 +327,5 @@ dv.paragraph(`**Change**: ${change >= 0 ? "+" : ""}${change.toFixed(2)} ${trend}
 
 ---
 
-*Generated from [[Templates/Monthly-Review]]*
+*Generated from [[Monthly-Review]]*
 

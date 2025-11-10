@@ -603,7 +603,7 @@ community-rating: 4.3
 - [[Timemore-Chestnut-X]] - Budget manual, cold brew capable
 
 **Related Brewing**:
-- [[French-Press]] - Similar coarse grind, immersion brewing
+- [[French-Press-Quick-3-Minute-Method]] - Similar coarse grind, immersion brewing
 - [[Clever-Coffee-Dripper]] - Immersion method (hot)
 - [[Cold-Brew-Ratio]] - Ratio science, concentrate brewing
 
@@ -618,13 +618,13 @@ community-rating: 4.3
 
 **Grind & Filtration**:
 - [[Grind-Size]] - Coarse grind importance (cold brew)
-- [[Filtration]] - Felt vs paper vs metal filtration
+- [[water-filtration-systems]] - Felt vs paper vs metal filtration
 - [[Sediment-Control]] - Sediment-free cold brew
 - [[Coffee-Oils]] - Oil extraction, mouthfeel
 
 **Flavor Development**:
-- [[Sweetness]] - Cold brew sweetness (low acidity)
-- [[Acidity]] - Reduced acidity in cold brew
+- [[Furans and Coffee Sweetness]] - Cold brew sweetness (low acidity)
+- [[Perceived Acidity]] - Reduced acidity in cold brew
 - [[Bitterness]] - Avoiding bitterness (time, temp management)
 - [[Body]] - Full body in immersion cold brew
 - [[Shelf-Life]] - Concentrate storage, freshness

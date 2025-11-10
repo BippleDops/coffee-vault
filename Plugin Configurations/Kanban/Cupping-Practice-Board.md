@@ -14,7 +14,7 @@ tags: [kanban, cupping, sensory, development]
   - Date: TBD
   - Participants: Solo
   - Protocol: SCA
-  - Link: Create with [[Templates/Cupping Session]]
+  - Link: Create with [[Cupping Session]]
 
 - [ ] **Kenya vs Ethiopia Comparison** #cupping #origin-comparison
   - Coffees: Kenya AA, Ethiopian Yirgacheffe (both washed)
@@ -54,7 +54,7 @@ tags: [kanban, cupping, sensory, development]
   - Protocol: SCA
   - Results: Yirgacheffe 88.5, Guji 87.5, Sidamo 86.0
   - Learning: Washed vs natural processing differences
-  - Link: [[Cupping Sessions/2025-10-28-Ethiopian-Comparison-Cupping]]
+  - Link: [[Cupping Session]]
 
 - [ ] **First Formal Cupping** #cupping #milestone #completed
   - Date: 2025-10-15
@@ -90,7 +90,7 @@ tags: [kanban, cupping, sensory, development]
   - Progress: 2/25
   - Timeline: 12 months
   - Frequency: 2-3 per month
-  - Link: [[Coffee Goals/Complete-25-Cuppings]]
+  - Link: [[Coffee Goal]]
 
 - [ ] **Attend Professional Cupping Event** #goal #experience
   - Options: Local roastery cupping, SCA event
@@ -141,7 +141,7 @@ tags: [kanban, cupping, sensory, development]
   - Purpose: Why doing this cupping
   - Date: When scheduled
   - Protocol: SCA, informal, blind, etc.
-  - Link: [[Cupping Sessions/Session-Name]]
+  - Link: [[Cupping Session]]
 ```
 
 ### Cupping Types

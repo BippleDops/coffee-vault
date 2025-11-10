@@ -41,7 +41,7 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 1. [[Citric Acid]] - Bright, lemony, clean
 2. [[Malic Acid]] - Apple-like, fruity
 3. [[Quinic Acid]] - Bitter-sour (from roasting)
-4. [[Chlorogenic Acids]] - Antioxidant-rich parent compounds
+4. [[Chlorogenic Acids and Antioxidants]] - Antioxidant-rich parent compounds
 5. [[Phosphoric Acid]] - Soft, sweet (Kenyan signature)
 6. [[Acetic Acid]] - Vinegar-like (fermentation byproduct)
 7. [[Tartaric Acid]] - Wine-like
@@ -78,7 +78,7 @@ Coffee contains **30+ organic acids**, each with distinct flavor characteristics
 ### [[Quinic Acid]]
 
 **Flavor**: Sour, bitter, astringent  
-**Source**: [[Chlorogenic Acids]] breakdown during roasting  
+**Source**: [[Chlorogenic Acids and Antioxidants]] breakdown during roasting  
 **Increases**: With roast level (highest in dark roasts)  
 **Perception**: Undesirable when dominant  
 **Effect**: "Old coffee" bitterness
@@ -160,7 +160,7 @@ Different growing regions produce distinct organic acid compositions:
 - [[Calcium and Magnesium Roles in Extraction|Calcium & Magnesium]]: Enhance acid extraction
 - Appropriate hardness: Amplifies brightness
 
-**Learn More**: [[Water Chemistry]], [[Alkalinity and pH in Brew Water]]
+**Learn More**: [[Water Chemistry and Extraction]], [[Alkalinity and pH in Brew Water]]
 
 ---
 
@@ -181,7 +181,7 @@ Different growing regions produce distinct organic acid compositions:
 - Understand origin differences
 - Appreciate balance
 
-**Learn More**: [[Brewing Guides]], [[Sensory Science]]
+**Learn More**: [[Brewing Guide]], [[Sensory Science]]
 
 ---
 
@@ -193,13 +193,13 @@ Different growing regions produce distinct organic acid compositions:
 - [[Chlorogenic Acids and Antioxidants]] - Parent compounds
 
 **Processing & Origin**:
-- [[Processing Methods]] - How processing affects acids
+- [[Coffee Processing Methods - Complete Guide]] - How processing affects acids
 - [[Origin Chemistry]] - Regional acid differences
 
 **Brewing & Extraction**:
 - [[Water Chemistry and Extraction]] - Acid extraction control
 - [[Extraction Science]] - Complete extraction guide
-- [[Brewing Guides]] - Practical applications
+- [[Brewing Guide]] - Practical applications
 
 **Roasting**:
 - [[Roasting Science]] - How roasting transforms acids

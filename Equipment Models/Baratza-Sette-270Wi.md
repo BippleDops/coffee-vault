@@ -57,13 +57,13 @@ related_equipment:
   - "[[Pullman-BigStep-Tamper]]"
 related_concepts:
   - "[[Grind-Size]]"
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Espresso-Fundamentals]]"
   - "[[Grinder-Calibration]]"
-  - "[[Burr-Geometry]]"
+  - "[[Grinder-Burr-Geometry-Analysis]]"
   - "[[Grind-Distribution]]"
-  - "[[Particle-Size-Distribution]]"
-  - "[[Retention]]"
+  - "[[Particle-Size-Distribution-Measurement]]"
+  - "[[Grinder Retention and Single-Dosing]]"
   - "[[Static-in-Coffee-Grinding]]"
   - "[[Dose-Consistency]]"
 ---
@@ -1120,11 +1120,11 @@ Limited formal testing published, but general characteristics:
 - "The Coffee Grinder" by Socratic Coffee
 - Barista Hustle articles on particle size distribution
 - [[Grind-Size]] note in this vault
-- [[Particle-Size-Distribution]] concepts
+- [[Particle-Size-Distribution-Measurement]] concepts
 
 **Espresso Technique:**
 - [[Espresso-Fundamentals]] for proper utilization
-- [[Extraction]] theory for grind size adjustments
+- [[DATA-EXTRACTION-GUIDE]] theory for grind size adjustments
 - [[Dose-Consistency]] importance in espresso
 
 **Comparison Shopping:**

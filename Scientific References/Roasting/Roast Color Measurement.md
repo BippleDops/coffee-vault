@@ -81,7 +81,7 @@ Color measurement:
 ## Tags
 
 - [[Roasting Science]]
-- [[Quality Control]]
-- [[Measurement]]
-- [[Standards]]
+- [[Post-Harvest Quality Control]]
+- [[Roast Color Measurement]]
+- [[Template-Framework-Standards]]
 

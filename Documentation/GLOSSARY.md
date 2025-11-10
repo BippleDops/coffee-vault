@@ -146,7 +146,7 @@ tags: [glossary, reference, terms]
 
 **Progressive Disclosure**: UX pattern showing features when user is ready (beginner → expert).
 
-**Property Schema**: Authoritative specification of all properties. See [[Configuration/Property-Schema]].
+**Property Schema**: Authoritative specification of all properties. See [[Property-Schema]].
 
 **Query**: Database-style search of vault data using Datacore syntax.
 

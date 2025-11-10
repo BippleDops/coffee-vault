@@ -443,24 +443,24 @@ Professional baristas' personal use (not commercial):
 - [[Brewing Methods/Drip Coffee]]
 - [[Brewing Methods/French Press]]
 - [[Brewing Methods/AeroPress]]
-- [[Equipment Models/Hario-V60-Dripper]]
-- [[Equipment Models/Kalita-Wave-185]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 ### Scales & Measurement
-- [[Equipment Models/Acaia-Pearl]]
-- [[Equipment Models/Acaia-Pyxis]]
-- [[Equipment Models/Hario-Drip-Scale]]
-- [[Brewing Parameters/Coffee-to-Water-Ratio]]
-- [[Brewing Parameters/Brew-Time]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Brewing Parameters]]
+- [[Brewing Parameters]]
 - [[Scientific References/Precision-Measurement]]
 
 ### Budget Equipment
-- [[Equipment Models/Wilfa-Svart-Aroma]]
-- [[Equipment Models/JavaPresse-Hand-Grinder]]
-- [[Equipment Models/Bodum-Pour-Over-Coffee-Maker]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 ### Timemore Products
-- [[Equipment Models/Timemore-Chestnut-C2]]
-- [[Equipment Models/Timemore-Slim-Plus]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 **Tags**: #equipment/scale #brewing-scale #budget-friendly #value #timemore #pour-over #home-brewing #entry-level #specialty-coffee #measurement #timer

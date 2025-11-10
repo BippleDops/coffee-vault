@@ -392,7 +392,7 @@ Create a note that embeds multiple base views:
 
 ## All Recent Logs
 
-![[Views/All Coffee Logs.base]]
+![[Coffee Log]]
 
 ## Top Performers
 
@@ -407,7 +407,7 @@ Create a note that embeds multiple base views:
 
 In any note:
 ```markdown
-View in: [[Views/All Coffee Logs.base|Full Database]] | [[Views/Top Rated.base|Top Rated]]
+View in: [[Coffee Log|Full Database]] | [[Views/Top Rated.base|Top Rated]]
 ```
 
 ---
@@ -575,7 +575,7 @@ Summary: Average (rating column)
 **Related Guides**:
 - [[Datacore Examples]] - Alternative query system
 - [[Plugin Installation Guide]] - General setup
-- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Dashboard integration
+- [[Coffee Dashboard]] - Dashboard integration
 
 ---
 
@@ -588,7 +588,7 @@ Summary: Average (rating column)
 - [ ] Add table summary (average rating)
 - [ ] Create second base: `Top Rated.base`
 - [ ] Experiment with formulas
-- [ ] Embed in [[Views/Daily-Brewing-Layout/Coffee Dashboard]]
+- [ ] Embed in [[Coffee Dashboard]]
 
 ---
 

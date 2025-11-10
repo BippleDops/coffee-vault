@@ -1258,21 +1258,21 @@ community-rating: 4.7
 - [[Particle-Distribution]] - Fines, boulders, uniformity science
 - [[Burr-Types]] - Flat vs conical burr comparison
 - [[Grind-Retention]] - Exchange retention, static, workflow impact
-- [[Burr-Alignment]] - Alignment importance, techniques, improvement
+- [[Burr-Alignment-and-Maintenance]] - Alignment importance, techniques, improvement
 
 **Espresso Fundamentals**:
 - [[Espresso-Brewing]] - Core espresso technique
 - [[Espresso-Grind-Size]] - Grind requirements for espresso
 - [[Espresso-Dose]] - Dosing principles (15-22g for Sculptor)
-- [[Espresso-Extraction]] - Extraction science, dialing-in
-- [[Espresso-Channeling]] - Channel prevention, puck prep importance
+- [[Master-Espresso-Extraction]] - Extraction science, dialing-in
+- [[Espresso-Channeling-Prevention]] - Channel prevention, puck prep importance
 - [[Espresso-Puck-Preparation]] - Distribution, tamping, WDT
 
 **Pour-Over Techniques**:
 - [[Pour-Over-Brewing]] - Filter coffee fundamentals
-- [[V60-Technique]] - V60-specific methods (Sculptor excels)
+- [[Master-V60-Technique]] - V60-specific methods (Sculptor excels)
 - [[Kalita-Wave-Technique]] - Flat-bottom brewing
-- [[Bloom-Phase]] - Blooming science, CO2 release
+- [[The-Bloom-Phase-CO2-Release]] - Blooming science, CO2 release
 - [[Drawdown-Time]] - Flow rate, grind size correlation
 
 **Extraction Variables**:
@@ -1283,8 +1283,8 @@ community-rating: 4.7
 - [[Coffee-Freshness]] - Bean freshness, degassing, optimal window
 
 **Flavor Development**:
-- [[Acidity]] - Acidity in coffee (Sculptor clarity showcases)
-- [[Sweetness]] - Sweetness extraction (uniform grind enables)
+- [[Perceived Acidity]] - Acidity in coffee (Sculptor clarity showcases)
+- [[Furans and Coffee Sweetness]] - Sweetness extraction (uniform grind enables)
 - [[Body]] - Body characteristics (flat burr lighter than conical)
 - [[Clarity]] - Flavor clarity (Sculptor strength via flat burrs)
 - [[Complexity]] - Flavor complexity (grind quality reveals)
@@ -1308,12 +1308,12 @@ community-rating: 4.7
 ### Coffee Beans
 
 **Bean Selection**:
-- [[Light-Roast]] - Light roast characteristics (Sculptor clarity shines)
-- [[Medium-Roast]] - Medium roast (versatile, Sculptor handles well)
-- [[Dark-Roast]] - Dark roast (more static, oils, frequent cleaning)
+- [[V60-Pour-Over-Light-Roast-Floral]] - Light roast characteristics (Sculptor clarity shines)
+- [[Moka-Pot-Medium-Roast-Classic]] - Medium roast (versatile, Sculptor handles well)
+- [[French-Press-Dark-Roast-Bold]] - Dark roast (more static, oils, frequent cleaning)
 - [[Single-Origin-Espresso]] - Single origin (Sculptor showcases terroir)
 - [[Espresso-Blends]] - Espresso blends (traditional vs modern)
-- [[Coffee-Storage]] - Bean storage, freshness preservation
+- [[Coffee-Storage-Freshness-Guide]] - Bean storage, freshness preservation
 
 ---
 

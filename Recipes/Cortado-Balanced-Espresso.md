@@ -14,11 +14,11 @@ tags: [recipe-profile, cortado, espresso, milk-drink, balanced, spanish, gibralt
 relationships:
   requires:
     - "[[Espresso Machine]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Steam Wand]]"
     - "[[Gibraltar Glass]]"
-  works-with: [[Medium Roast]], [[Espresso]], [[Light Roast]], [[Milk Steaming]]
-  complements: [[Cappuccino]], [[Flat White]], [[Espresso Drinks]], [[Specialty Coffee]]
+  works-with: [[Medium Roast]], [[Espresso-Shot-Light-Roast-Fruit]], [[Light Roast]], [[Milk Steaming]]
+  complements: [[Cappuccino-Traditional-Italian]], [[Flat White]], [[Espresso Drinks]], [[Specialty Coffee]]
 ---
 
 # 📖 Recipe: Cortado Balanced Espresso

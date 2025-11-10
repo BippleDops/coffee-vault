@@ -14,11 +14,11 @@ tags: [recipe-profile, cold-brew, concentrate, smooth, low-acidity, cold-coffee,
 relationships:
   requires:
     - "[[Cold Brew Maker]]"
-    - "[[Grinder]]"
-    - "[[Scale]]"
-    - "[[Pitcher]]"
-  works-with: [[Brazil]], [[Colombia]], [[Indonesia]], [[Medium Roast]]
-  complements: [[Dark Roast]], [[Low Acidity]], [[Chocolate Notes]], [[Smooth Body]]
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[OXO-Barista-Brain-Scale]]"
+    - "[[Rattleware-Milk-Pitcher]]"
+  works-with: [[Brazil]], [[Colombia]], [[Permata-Gayo-Cooperative-Indonesia]], [[Medium Roast]]
+  complements: [[Second Crack and Dark Roast Development]], [[Low Acidity]], [[Chocolate Notes]], [[Body]]
 ---
 
 # 📖 Recipe: Cold Brew Concentrate Smooth

@@ -12,26 +12,26 @@ Curated resources for the Obsidian **Daily Brewing Layout**. Use this bundle to 
 
 ## Core Launchpad
 - [[HOME-DASHBOARD|Home Dashboard]]
-- [[Templates/Coffee-Log-v5|Coffee Log v5 Template]]
-- [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant|Real-Time Brewing Assistant]]
-- [[Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard|Equipment Maintenance Dashboard]]
+- [[Coffee-Log-v5|Coffee Log v5 Template]]
+- [[9-Real-Time-Brewing-Assistant|Real-Time Brewing Assistant]]
+- [[13-Equipment-Maintenance-Dashboard|Equipment Maintenance Dashboard]]
 
 ## Supporting Views
-- [[Views/Daily-Brewing-Layout/Coffee Dashboard|Coffee Dashboard View]]
-- [[Views/Daily-Brewing-Layout/Live-Weekly-Summary|Live Weekly Summary]]
-- [[Views/Daily-Brewing-Layout/Live-Inventory-Status|Live Inventory Status]]
-- [[Views/Daily-Brewing-Layout/Grinder Settings Database|Grinder Settings Database]]
+- [[Coffee Dashboard|Coffee Dashboard View]]
+- [[Live-Weekly-Summary|Live Weekly Summary]]
+- [[Live-Inventory-Status|Live Inventory Status]]
+- [[Grinder Settings Database|Grinder Settings Database]]
 
 ## Boards & Automations
-- [[Plugin Configurations/Kanban/Brewing-Mastery-Board|Brewing Mastery Kanban]]
+- [[Brewing-Mastery-Board|Brewing Mastery Kanban]]
 - `Scripts/weekly-summary-generator.js`
 - `Scripts/auto-recipe-generator.js`
 
 ## Suggested Sequence
 1. Open [[HOME-DASHBOARD]] in preview mode.
-2. Pin [[Templates/Coffee-Log-v5]] for fast logging.
-3. Keep [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]] visible for guidance.
-4. Review maintenance tasks weekly via [[Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard]].
+2. Pin [[Coffee-Log-v5]] for fast logging.
+3. Keep [[9-Real-Time-Brewing-Assistant]] visible for guidance.
+4. Review maintenance tasks weekly via [[13-Equipment-Maintenance-Dashboard]].
 
 ## Tips
 - Save this workspace as an Obsidian **Workspace Shortcut**.

@@ -364,9 +364,9 @@ return <div className="stat-card">
 - Peter Schlumbohm invented 1941, over 300 patents
 
 **Related Techniques**:
-- [[Brewing Guides/Pour Over V60 Guide|V60 Guide]] - Similar cone pour-over
-- [[Brewing Guides/Kalita Wave Guide|Kalita Wave]] - Flat-bottom alternative
-- [[Origins/Ethiopia|Ethiopian Coffee]] - Ideal for Chemex
+- [[Brewing Guide|V60 Guide]] - Similar cone pour-over
+- [[Brewing Guide|Kalita Wave]] - Flat-bottom alternative
+- [[Ethiopia|Ethiopian Coffee]] - Ideal for Chemex
 
 ---
 
@@ -529,5 +529,5 @@ return <div className="stat-card">
 **Last Updated**: 2025-10-24  
 **Invented**: 1941  
 **Designer**: Dr. Peter Schlumbohm  
-**Related**: [[Brewing Guides/Pour Over V60 Guide|V60]], [[Origins/Ethiopia|Ethiopian Coffee]]
+**Related**: [[Brewing Guide|V60]], [[Ethiopia|Ethiopian Coffee]]
 

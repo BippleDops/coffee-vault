@@ -167,4 +167,4 @@ Already set with smart defaults based on your method choice:
 
 ---
 
-← [[Daily Notes/<% tp.date.now("YYYY-MM-DD") %>|Today's Note]]
+← [[Daily Note|Today's Note]]

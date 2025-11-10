@@ -441,7 +441,7 @@ Home roasting:
 ## Tags
 
 - [[Roasting Science]]
-- [[Home Roasting]]
+- [[Home Roasting Techniques]]
 - [[DIY Coffee]]
 - [[Coffee Enthusiast]]
 

@@ -13,8 +13,8 @@ avg-rating: 4.5
 tags: [recipe-profile, aeropress, standard-method, versatile, beginner-friendly]
 relationships:
   requires:
-    - "[[AeroPress]]"
-    - "[[Grinder]]"
+    - "[[Aeropress-Inverted-Light-Roast]]"
+    - "[[Timemore-Sculptor-Grinder]]"
 ---
 
 # 📖 Recipe: AeroPress Standard Recipe

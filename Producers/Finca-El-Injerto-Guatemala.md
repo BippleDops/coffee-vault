@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca El Injerto
-country: [[Origins/Guatemala]]
-region: [[Origins/Guatemala-Huehuetenango]]
+country: [[Guatemala]]
+region: [[Guatemala]]
 producer-category: Family-Estate
 established: 1874
 varieties: Bourbon-Pacamara-Geisha-Java-Pache-Maragogipe
@@ -471,7 +471,7 @@ Beyond competition success, El Injerto's impact on specialty coffee is profound:
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Guatemala]], [[Origins/Guatemala-Huehuetenango]], [[Origins/Central-America-Coffee]]
+**Origins**: [[Guatemala]], [[Guatemala]], [[Origins/Central-America-Coffee]]
 
 **Varieties**: [[Varieties/Pacamara]], [[Varieties/Geisha]], [[Varieties/Bourbon]], [[Varieties/Java]], [[Varieties/Maragogipe]], [[Varieties/Pache]]
 
@@ -481,9 +481,9 @@ Beyond competition success, El Injerto's impact on specialty coffee is profound:
 
 **Markets**: [[Markets/Direct-Trade-Coffee]], [[Markets/Specialty-Coffee-Auctions]], [[Markets/Ultra-Premium-Market]]
 
-**Cultural Context**: [[Coffee-Culture/Guatemalan-Coffee-Heritage]], [[Coffee-Culture/Family-Coffee-Estates]], [[Coffee-Culture/Indigenous-Coffee-Labor]], [[Coffee-Culture/Competition-Coffee-Culture]]
+**Cultural Context**: [[Guatemala]], [[Coffee-Culture/Family-Coffee-Estates]], [[Coffee-Culture/Indigenous-Coffee-Labor]], [[Coffee-Culture/Competition-Coffee-Culture]]
 
-**Sustainability**: [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/Forest-Conservation-Coffee]], [[Sustainability/Family-Estate-Sustainability]]
+**Sustainability**: [[Rainforest-Alliance-Certification]], [[Sustainability/Forest-Conservation-Coffee]], [[Sustainability/Family-Estate-Sustainability]]
 
 **Innovation**: [[Innovation/Processing-Experimentation]], [[Innovation/Quality-Frontiers]], [[Innovation/Micro-lot-Marketing]]
 

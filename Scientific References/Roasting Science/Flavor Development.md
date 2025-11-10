@@ -249,7 +249,7 @@ related-topics:
 - Explain flavor to customers
 - Optimize extraction
 
-**Learn More**: [[Roasting Science]], [[Cupping Protocol]]
+**Learn More**: [[Roasting Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -272,7 +272,7 @@ related-topics:
 - [[Perceived Acidity]] - Acid development impact
 - [[Bitterness]] - Bitter development
 - [[Sensory Science]] - Flavor evaluation
-- [[Cupping Protocol]] - Systematic tasting
+- [[SCA Cupping Protocol Step-by-Step]] - Systematic tasting
 
 ---
 
@@ -285,7 +285,7 @@ related-topics:
 
 **Practical Guides**:
 - [[Roast Degree Classification]] - Roast level selection
-- [[Cupping Protocol]] - Flavor evaluation
+- [[SCA Cupping Protocol Step-by-Step]] - Flavor evaluation
 - [[Roasting Science]] - Practical applications
 
 ---

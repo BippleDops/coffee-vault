@@ -333,7 +333,7 @@ difficulty:
 
 - [ ] Try this technique next brew
 - [ ] Note differences from my usual method
-- [ ] Log results in [[Coffee Logs/]]
+- [ ] Log results in [[Coffee Log]]
 
 ---
 
@@ -344,7 +344,7 @@ difficulty:
 ---
 
 **Tags**: {{tags}}  
-**Method**: [[Brewing Guides/|All Guides]]
+**Method**: [[Brewing Guide|All Guides]]
 ```
 
 ### Usage
@@ -566,7 +566,7 @@ video-type:
 
 **Creator's Channel**: [Link if available]  
 **Related Videos**: [List related]  
-**Related Guide**: [[Brewing Guides/|Brewing Guides]]
+**Related Guide**: [[Brewing Guide|Brewing Guides]]
 
 **Related Logs**: [If implementing technique]
 ```datacore
@@ -642,7 +642,7 @@ tags: [web-clip, {{date:YYYY/MM}}, coffee]
 **From Coffee Log**:
 ```markdown
 ## Research
-Based on [[Reviews & Articles/Amazing Ethiopian Review]]
+Based on [[Ethiopia]]
 ```
 
 **From Bean Profile**:

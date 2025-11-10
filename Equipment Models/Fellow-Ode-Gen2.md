@@ -885,11 +885,11 @@ community-rating: 4.6
 - **Espresso Roasts**: Good for filter brewing, cannot do espresso
 
 **Bean Origin Compatibility**:
-- [[Origins/Ethiopia]] - Outstanding (excels with dense beans)
-- [[Origins/Kenya]] - Exceptional (handles dense beans beautifully)
-- [[Origins/Colombia]] - Excellent (medium density)
-- [[Origins/Costa Rica]] - Excellent (all densities)
-- [[Origins/Guatemala]] - Excellent
+- [[Ethiopia]] - Outstanding (excels with dense beans)
+- [[Kenya]] - Exceptional (handles dense beans beautifully)
+- [[Colombia]] - Excellent (medium density)
+- [[Costa Rica]] - Excellent (all densities)
+- [[Guatemala]] - Excellent
 - All origins: No compatibility issues for filter brewing
 
 **Roast Development Compatibility**:
@@ -1751,11 +1751,11 @@ The Fellow Ode Gen 2 is what happens when a company listens to feedback, invests
 **Tags**: equipment-model, fellow, grinder, electric-grinder, flat-burr, filter-coffee, single-dose
 
 **Cross-References**:
-- [[Equipment Models/Baratza-Virtuoso-Plus]] - Value alternative
-- [[Equipment Models/Niche-Zero-Grinder]] - Espresso-focused alternative (different purpose)
-- [[Equipment Models/Lagom-Mini]] - Ultimate filter quality (premium)
+- [[Equipment Model]] - Value alternative
+- [[Equipment Model]] - Espresso-focused alternative (different purpose)
+- [[Equipment Model]] - Ultimate filter quality (premium)
 - [[Brewing Methods/Pour Over]] - Primary use case
 - [[Brewing Methods/V60]] - Outstanding compatibility
 - [[Brewing Methods/Chemex]] - Excellent performance
-- [[Brewing Parameters/Grind Size]] - Optimization guidance
+- [[Brewing Parameters]] - Optimization guidance
 - [[Guides/Dialing-In-Pour-Over]] - Workflow integration

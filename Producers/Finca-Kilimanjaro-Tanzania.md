@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca Kilimanjaro
-country: [[Origins/Tanzania]]
-region: [[Origins/Tanzania-Kilimanjaro]]
+country: [[Tanzania]]
+region: [[Tanzania]]
 producer-category: Family-Estate
 established: 1899
 varieties: Bourbon-Kent-Typica
@@ -938,7 +938,7 @@ While not formally certified, estate operates on direct trade principles:
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Tanzania]], [[Origins/Tanzania-Kilimanjaro]], [[Origins/East-Africa-Region]], [[Origins/Volcanic-Soil-Coffee]]
+**Origins**: [[Tanzania]], [[Tanzania]], [[Origins/East-Africa-Region]], [[Origins/Volcanic-Soil-Coffee]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/Traditional-East-African-Processing]], [[Processing/Peaberry-Processing]]
 
@@ -946,7 +946,7 @@ While not formally certified, estate operates on direct trade principles:
 
 **Sustainability**: [[Sustainability/Agroforestry]], [[Sustainability/Biodiversity-Conservation]], [[Sustainability/Montane-Forest-Conservation]], [[Sustainability/Watershed-Protection]]
 
-**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Ultra-Premium-Coffee]], [[Quality/Tanzanian-Coffee-Profile]], [[Quality/Peaberry-Specialty]]
+**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Ultra-Premium-Coffee]], [[Tanzania]], [[Quality/Peaberry-Specialty]]
 
 **Business Models**: [[Producer-Development/Family-Estate-Model]], [[Producer-Development/Outgrower-Partnership]], [[Producer-Development/Direct-Trade]]
 
@@ -954,11 +954,11 @@ While not formally certified, estate operates on direct trade principles:
 
 **Terroir**: [[Terroir/Volcanic-Soil]], [[Terroir/High-Altitude-Coffee]], [[Terroir/Mount-Kilimanjaro]]
 
-**Cultural Context**: [[Coffee-Culture/Tanzanian-Coffee-Heritage]], [[Coffee-Culture/Chagga-People]], [[Coffee-Culture/Multi-Generational-Coffee-Estates]]
+**Cultural Context**: [[Tanzania]], [[Coffee-Culture/Chagga-People]], [[Coffee-Culture/Multi-Generational-Coffee-Estates]]
 
 **Conservation**: [[Conservation/Mount-Kilimanjaro-Ecosystem]], [[Conservation/Montane-Forest]], [[Conservation/Coffee-and-Climate-Change]]
 
-**Related Producers**: [[Producers/Kilimanjaro-Native-Cooperative-Tanzania]], [[Producers/Uru-North-Cooperative-Tanzania]], [[Producers/Arusha-Coffee-Lodge-Tanzania]]
+**Related Producers**: [[Tanzania]], [[Tanzania]], [[Tanzania]]
 
 ---
 

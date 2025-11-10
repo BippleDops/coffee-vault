@@ -522,8 +522,8 @@ Consistent practice develops:
 ## Tags
 
 - [[Sensory Science]]
-- [[Training]]
-- [[Cupping]]
+- [[training-plan-template]]
+- [[SCA-Cupping-Form]]
 - [[Professional Development]]
 - [[Skill Building]]
 

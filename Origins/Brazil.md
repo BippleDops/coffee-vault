@@ -346,5 +346,5 @@ Brazil is the largest country in South America, occupying nearly half the contin
 
 **Last Updated**: 2025-10-24  
 **Related**: [[Colombia]] (neighbor), [[Peru]] (South American)  
-**Perfect For**: [[Brewing Guides/Cold Brew Guide|Cold Brew]], [[Brewing Guides/Espresso Guide|Espresso Blends]]
+**Perfect For**: [[Brewing Guide|Cold Brew]], [[Brewing Guide|Espresso Blends]]
 

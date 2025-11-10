@@ -642,9 +642,9 @@ The high domestic coffee price ($8-15/cup in cafés) supports direct farm-to-con
 - [[Ethiopia]] - Flavor profile comparisons, floral characteristics
 - [[Hawaii-Coffee]] - Similar scarcity, high pricing, island terroir
 - [[Jamaica-Blue-Mountain]] - Comparable premium positioning
-- [[Typica]] - Primary variety in Taiwan
-- [[Geisha]] - Growing presence, premium lots
-- [[Honey Process]] - Significant processing method
+- [[Peru-Typica]] - Primary variety in Taiwan
+- [[2025-10-23-Panama-Geisha-48]] - Growing presence, premium lots
+- [[Honey Process Variations Guide]] - Significant processing method
 - [[Anaerobic Fermentation]] - Experimental processing trend
 - [[Specialty Coffee]] - Market positioning
 - [[High-Elevation Coffee]] - Altitude impact on quality

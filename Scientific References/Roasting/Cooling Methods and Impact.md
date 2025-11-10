@@ -233,5 +233,5 @@ Proper cooling ensures:
 
 - [[Roasting Science]]
 - [[Post-Roast]]
-- [[Quality Control]]
+- [[Post-Harvest Quality Control]]
 

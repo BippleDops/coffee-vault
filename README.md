@@ -201,6 +201,6 @@ Inspired by the specialty coffee community and coffee science research.
 
 ---
 
-**Version**: 6.0.0 | **Updated**: 2025-11-06 | **Status**: Production Ready | **See**: [[Documentation/NEXTGEN-RELEASE-NOTES-v6.0]]
+**Version**: 6.0.0 | **Updated**: 2025-11-06 | **Status**: Production Ready | **See**: [[NEXTGEN-RELEASE-NOTES-v6.0]]
 
 **Start brewing intelligently today** → [START-HERE.md](START-HERE.md)

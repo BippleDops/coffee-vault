@@ -875,11 +875,11 @@ community-rating: 4.6
 ### Espresso Science & Technique
 
 **Extraction Science**:
-- [[Espresso-Extraction]] - Extraction fundamentals, IMS impact
-- [[Espresso-Channeling]] - Channeling reduction, screen benefits
+- [[Master-Espresso-Extraction]] - Extraction fundamentals, IMS impact
+- [[Espresso-Channeling-Prevention]] - Channeling reduction, screen benefits
 - [[Water-Distribution]] - Water flow science, screen function
-- [[Puck-Preparation]] - Puck prep importance (screen reveals errors)
-- [[Pre-Infusion]] - Pre-infusion enhancement, micro-hole effect
+- [[Puck-Preparation-Science]] - Puck prep importance (screen reveals errors)
+- [[Pre-Infusion and Blooming Science]] - Pre-infusion enhancement, micro-hole effect
 
 **Espresso Variables**:
 - [[Espresso-Pressure]] - Pressure distribution, screen impact
@@ -892,7 +892,7 @@ community-rating: 4.6
 - [[Bottomless-Portafilter-Technique]] - Visual diagnosis, screen reveals improvement
 - [[WDT-Technique]] - Weiss Distribution Technique, synergy with screen
 - [[Tamping-Technique]] - Tamping consistency, screen compensation
-- [[Puck-Preparation]] - Distribution importance, screen reveals quality
+- [[Puck-Preparation-Science]] - Distribution importance, screen reveals quality
 
 **Troubleshooting**:
 - [[Channeling-Diagnosis]] - Identifying channeling causes
@@ -907,13 +907,13 @@ community-rating: 4.6
 - [[Descaling]] - Descaling importance, screen longevity
 - [[Group-Head-Cleaning]] - Group head maintenance, screen care
 - [[Gasket-Replacement]] - Gasket replacement, screen installation
-- [[Water-Filtration]] - Water quality, scale prevention
+- [[water-filtration-systems]] - Water quality, scale prevention
 
 **Water Quality**:
 - [[Brew-Water]] - Water science, espresso optimization
-- [[Water-Hardness]] - Hardness impact, screen lifespan
+- [[Water-Hardness-Testing-Practical-Guide]] - Hardness impact, screen lifespan
 - [[Third-Wave-Water-Classic]] - Water mineralization, scale reduction
-- [[Water-Filtration-Systems]] - Filtration options (Brita, RO, etc.)
+- [[water-filtration-systems]] - Filtration options (Brita, RO, etc.)
 
 ### Coffee Science
 
@@ -925,9 +925,9 @@ community-rating: 4.6
 - [[Coffee-Freshness]] - Bean freshness, screen reveals quality
 
 **Flavor Development**:
-- [[Sweetness]] - Sweetness increase, balanced extraction
+- [[Furans and Coffee Sweetness]] - Sweetness increase, balanced extraction
 - [[Clarity]] - Flavor clarity improvement (screen strength)
-- [[Acidity]] - Acidity brightness, clean extraction
+- [[Perceived Acidity]] - Acidity brightness, clean extraction
 - [[Bitterness]] - Bitterness reduction, even extraction
 - [[Body]] - Body enhancement, complete extraction
 - [[Complexity]] - Complexity revelation, terroir expression

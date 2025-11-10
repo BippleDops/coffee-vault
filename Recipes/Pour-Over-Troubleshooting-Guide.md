@@ -14,7 +14,7 @@ tags: [recipe-profile, troubleshooting, pour-over, guide, reference, problem-sol
 relationships:
   requires:
     - "[[Pour-Over Equipment]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
 ---
 
 # 📖 Pour-Over Troubleshooting Guide

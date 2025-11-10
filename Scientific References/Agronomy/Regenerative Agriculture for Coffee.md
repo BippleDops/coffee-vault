@@ -428,7 +428,7 @@ Understanding regenerative helps:
 
 - [[Agronomy]]
 - [[Sustainability]]
-- [[Regenerative Agriculture]]
+- [[Regenerative Agriculture for Coffee]]
 - [[Climate Solutions]]
 - [[Future of Coffee]]
 

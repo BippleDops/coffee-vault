@@ -302,9 +302,9 @@ if (thisWeek.length === 0) {
 ## 🔗 Quick Links
 
 - [[Mobile Quick Capture|📱 Quick Log]]
-- [[Coffee Logs/|📚 All Logs]]
+- [[Coffee Log|📚 All Logs]]
 - [[Beans Library/|🫘 Bean Library]]
-- [[Documentation/Mobile-Guide|📖 Mobile Guide]]
+- [[Mobile-Guide|📖 Mobile Guide]]
 
 ---
 

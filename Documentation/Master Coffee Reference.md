@@ -38,14 +38,14 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 
 1. [[README]] - **Start here** - Vault overview and features
 2. [[Quick Start - First Steps]] - Log your first coffee in 5 min
-3. [[History of Coffee#Third Wave Coffee]] - Modern specialty coffee movement
+3. [[History of Coffee]] - Modern specialty coffee movement
 
 ### Easiest Brewing Methods
 
 **Beginner-Friendly Methods**:
-- [[Brewing Guides/French Press Guide]] ⭐ **Easiest** - Forgiving, consistent
-- [[Brewing Guides/Aeropress Guide]] - Versatile, quick, portable
-- [[Brewing Guides/Cold Brew Guide]] - Hands-off, make-ahead
+- [[Brewing Guide]] ⭐ **Easiest** - Forgiving, consistent
+- [[Brewing Guide]] - Versatile, quick, portable
+- [[Brewing Guide]] - Hands-off, make-ahead
 
 **Why These?**:
 - Hard to mess up
@@ -57,16 +57,16 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### First Coffees to Try
 
 **Approachable Profiles**:
-- [[Origins/Colombia|Colombian Coffee]] - Balanced, reliable, medium body
+- [[Colombia|Colombian Coffee]] - Balanced, reliable, medium body
 - Medium roast blends - Forgiving, consistent
 - **Avoid initially**: Super light Ethiopians, very acidic Kenyans, dark Italian
 
 ### Basic Concepts
 
 **Core Knowledge**:
-- [[Coffee Science & Extraction#What is Extraction]] - Extraction basics
-- [[History of Coffee#Coffee Waves Summary]] - Understanding specialty coffee
-- [[README#Smart Properties]] - How tracking works
+- [[Coffee Science & Extraction]] - Extraction basics
+- [[History of Coffee]] - Understanding specialty coffee
+- [[README]] - How tracking works
 
 ---
 
@@ -77,9 +77,9 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### Brewing Methods to Master
 
 **Technique-Dependent Methods**:
-- [[Brewing Guides/Pour Over V60 Guide]] ⭐ **Most versatile** - Clarity-focused
-- [[Brewing Guides/Chemex Guide]] - Clean, tea-like, elegant
-- [[Brewing Guides/Moka Pot Guide]] - Stovetop concentrated
+- [[Brewing Guide]] ⭐ **Most versatile** - Clarity-focused
+- [[Brewing Guide]] - Clean, tea-like, elegant
+- [[Brewing Guide]] - Stovetop concentrated
 
 **Why These?**:
 - Require more technique
@@ -90,8 +90,8 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### Expand Your Palate
 
 **Try These Origins**:
-- [[Origins/Ethiopia|Ethiopian Coffee]] - Floral, fruity, complex (birthplace)
-- [[Origins/Colombia|Colombian Coffees]] - Explore regional differences
+- [[Ethiopia|Ethiopian Coffee]] - Floral, fruity, complex (birthplace)
+- [[Colombia|Colombian Coffees]] - Explore regional differences
 - **Future**: Kenya, Guatemala, Brazil
 
 **Processing to Compare**:
@@ -117,8 +117,8 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 
 **Core Science**:
 - [[Coffee Science & Extraction]] ⭐ **Complete guide** - Chemistry, extraction, water
-- [[Coffee Science & Extraction#Water Chemistry Deep Dive]] - Water minerals explained
-- [[Coffee Science & Extraction#Measuring Extraction]] - TDS and extraction %
+- [[Coffee Science & Extraction]] - Water minerals explained
+- [[Coffee Science & Extraction]] - TDS and extraction %
 
 **Application**:
 - Dial-in espresso precisely
@@ -129,8 +129,8 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### Advanced Brewing
 
 **Technical Methods**:
-- [[Brewing Guides/Espresso Guide]] ⭐ **Most complex** - Pressure, variables, precision
-- [[Brewing Guides/Espresso Guide#Advanced Techniques]] - Pressure profiling, temperature surfing
+- [[Brewing Guide]] ⭐ **Most complex** - Pressure, variables, precision
+- [[Brewing Guide]] - Pressure profiling, temperature surfing
 
 **Experimental Approaches**:
 - Measuring TDS and extraction
@@ -141,9 +141,9 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### Professional Development
 
 **Learn Like a Pro**:
-- Study [[Coffee Science & Extraction#Coffee Freshness & Degassing]]
-- Master [[Brewing Guides/Espresso Guide#Dialing In New Coffee]]
-- Understand [[History of Coffee#Coffee Science Movement]]
+- Study [[Coffee Science & Extraction]]
+- Master [[Brewing Guide]]
+- Understand [[History of Coffee]]
 
 ---
 
@@ -155,13 +155,13 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 
 | Method | Difficulty | Time | Body | Clarity | Best For |
 |--------|------------|------|------|---------|----------|
-| [[Brewing Guides/French Press Guide\|French Press]] | ⭐ Easy | 5 min | Full | Low | Rich, bold |
-| [[Brewing Guides/Aeropress Guide\|Aeropress]] | ⭐ Easy | 2 min | Medium | Medium | Versatile, travel |
-| [[Brewing Guides/Cold Brew Guide\|Cold Brew]] | ⭐ Easy | 16h | Medium | High | Smooth, low-acid |
-| [[Brewing Guides/Pour Over V60 Guide\|V60]] | ⭐⭐ Medium | 3 min | Light | High | Bright, clean |
-| [[Brewing Guides/Chemex Guide\|Chemex]] | ⭐⭐ Medium | 4.5 min | Very Light | Very High | Tea-like, delicate |
-| [[Brewing Guides/Moka Pot Guide\|Moka Pot]] | ⭐⭐ Medium | 6 min | Full | Medium | Concentrated, stovetop |
-| [[Brewing Guides/Espresso Guide\|Espresso]] | ⭐⭐⭐ Hard | 30 sec | Full | Medium | Concentrated, milk drinks |
+| [[Brewing Guide|French Press]] | ⭐ Easy | 5 min | Full | Low | Rich, bold |
+| [[Brewing Guide|Aeropress]] | ⭐ Easy | 2 min | Medium | Medium | Versatile, travel |
+| [[Brewing Guide|Cold Brew]] | ⭐ Easy | 16h | Medium | High | Smooth, low-acid |
+| [[Brewing Guide|V60]] | ⭐⭐ Medium | 3 min | Light | High | Bright, clean |
+| [[Brewing Guide|Chemex]] | ⭐⭐ Medium | 4.5 min | Very Light | Very High | Tea-like, delicate |
+| [[Brewing Guide|Moka Pot]] | ⭐⭐ Medium | 6 min | Full | Medium | Concentrated, stovetop |
+| [[Brewing Guide|Espresso]] | ⭐⭐⭐ Hard | 30 sec | Full | Medium | Concentrated, milk drinks |
 
 **Future Additions**: Turkish Coffee, Siphon, Clever Dripper, Kalita Wave
 
@@ -172,8 +172,8 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### Available Origin Profiles
 
 **In-Depth Guides** (400+ lines each):
-- [[Origins/Ethiopia|🇪🇹 Ethiopia]] - Birthplace, floral, fruity, 20+ references
-- [[Origins/Colombia|🇨🇴 Colombia]] - Year-round harvest, balanced, 25+ references
+- [[Ethiopia|🇪🇹 Ethiopia]] - Birthplace, floral, fruity, 20+ references
+- [[Colombia|🇨🇴 Colombia]] - Year-round harvest, balanced, 25+ references
 
 **Quick Origin Characteristics**:
 
@@ -224,19 +224,19 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 - [[History of Coffee]] - **2,200+ words** from ancient origins to 2025
 
 **Key Sections**:
-- [[History of Coffee#Ancient Origins]] - Ethiopia, Kaldi legend
-- [[History of Coffee#Spread Through Arab World]] - Yemen, coffeehouses
-- [[History of Coffee#Coffee Reaches Europe]] - European adoption
-- [[History of Coffee#Coffee in the Americas]] - New World cultivation
-- [[History of Coffee#Industrialization & First Wave]] - Mass production
-- [[History of Coffee#Second Wave Coffee]] - Starbucks era
-- [[History of Coffee#Third Wave Coffee]] - Specialty movement
-- [[History of Coffee#Fourth Wave]] - Sustainability, 2020s
+- [[History of Coffee]] - Ethiopia, Kaldi legend
+- [[History of Coffee]] - Yemen, coffeehouses
+- [[History of Coffee]] - European adoption
+- [[History of Coffee]] - New World cultivation
+- [[History of Coffee]] - Mass production
+- [[History of Coffee]] - Starbucks era
+- [[History of Coffee]] - Specialty movement
+- [[History of Coffee]] - Sustainability, 2020s
 
 **Cultural Insights**:
-- [[History of Coffee#The Coffeehouse Culture]] - Social spaces
-- [[History of Coffee#Coffee and Slavery]] - Dark history
-- [[History of Coffee#Coffee Philosophy]] - Quotes and meaning
+- [[History of Coffee]] - Social spaces
+- [[History of Coffee]] - Dark history
+- [[History of Coffee]] - Quotes and meaning
 
 ---
 
@@ -246,11 +246,11 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 - [[Chicago Coffee Guide]] - **Complete Chicago resource**
 
 **Sections**:
-- [[Chicago Coffee Guide#Major Chicago Roasters]] - Intelligentsia, Metropolis, Dark Matter, etc.
-- [[Chicago Coffee Guide#Chicago Coffee Neighborhoods]] - Logan Square, West Loop, Wicker Park
-- [[Chicago Coffee Guide#Where to Buy Beans in Chicago]] - Roasteries, stores
-- [[Chicago Coffee Guide#Coffee by L Line]] - CTA transit guide
-- [[Chicago Coffee Guide#Chicago Coffee & Weather]] - Winter vs summer culture
+- [[Chicago Coffee Guide]] - Intelligentsia, Metropolis, Dark Matter, etc.
+- [[Chicago Coffee Guide]] - Logan Square, West Loop, Wicker Park
+- [[Chicago Coffee Guide]] - Roasteries, stores
+- [[Chicago Coffee Guide]] - CTA transit guide
+- [[Chicago Coffee Guide]] - Winter vs summer culture
 
 **Local Roasters Featured**:
 1. **Intelligentsia** - Direct Trade pioneers (1995)
@@ -281,10 +281,10 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
   - Optimization techniques
 
 **Key Concepts**:
-- [[Coffee Science & Extraction#Extraction Fundamentals]] - What is extraction?
-- [[Coffee Science & Extraction#Water Chemistry Deep Dive]] - Why water matters
-- [[Coffee Science & Extraction#Factors Affecting Extraction]] - Variables matrix
-- [[Coffee Science & Extraction#Measuring Extraction]] - TDS, extraction %
+- [[Coffee Science & Extraction]] - What is extraction?
+- [[Coffee Science & Extraction]] - Why water matters
+- [[Coffee Science & Extraction]] - Variables matrix
+- [[Coffee Science & Extraction]] - TDS, extraction %
 
 ### Applying Science
 
@@ -309,10 +309,10 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 ### Brewing Equipment Guides
 
 **Within Method Guides**:
-- [[Brewing Guides/Espresso Guide#Equipment Notes]] - Grinders, machines
-- [[Brewing Guides/Chemex Guide#Buying Guide]] - Chemex models, filters
-- [[Brewing Guides/Moka Pot Guide#Bialetti vs Others]] - Moka pot brands
-- [[Brewing Guides/Aeropress Guide#Accessories Worth Considering]] - Add-ons
+- [[Brewing Guide]] - Grinders, machines
+- [[Brewing Guide]] - Chemex models, filters
+- [[Brewing Guide]] - Moka pot brands
+- [[Brewing Guide]] - Add-ons
 
 **Core Equipment Categories**:
 1. **Grinders** - Most important investment
@@ -384,7 +384,7 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 
 **Visualization**:
 - [[Tracker Examples]] - Charts, calendars, graphs
-- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Main analytics hub
+- [[Coffee Dashboard]] - Main analytics hub
 
 ---
 
@@ -398,8 +398,8 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 - [[Web Clipper Templates]] - Research integration
 
 **Customization**:
-- [[README#Templates Overview]] - All templates explained
-- [[README#Property Standards]] - Property naming conventions
+- [[README]] - All templates explained
+- [[README]] - Property naming conventions
 - `.obsidian/snippets/coffee-theme.css` - Custom theme code
 
 ### Theme & Aesthetics
@@ -457,7 +457,7 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 
 **Master Hubs**:
 - [[Master Coffee Reference]] (This note) - Everything
-- [[Vault Index]] - File navigation
+- [[INDEX]] - File navigation
 - [[START HERE]] - Homepage/dashboard
 
 **Topic Hubs**:
@@ -466,15 +466,15 @@ This Map of Content (MOC) organizes all coffee knowledge in your vault by topic,
 - [[Chicago Coffee MOC]] - Local scene
 
 **Data Hubs**:
-- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Analytics
+- [[Coffee Dashboard]] - Analytics
 - Your Base files - Database views
 
 ### Linking Patterns
 
 **Logs → References**:
 ```markdown
-Method: [[Brewing Guides/V60 Guide]]
-Origin: [[Origins/Ethiopia]]
+Method: [[Brewing Guide]]
+Origin: [[Ethiopia]]
 Roaster: [[Roasters/Intelligentsia Coffee]]
 ```
 
@@ -498,21 +498,21 @@ return <dc.Table rows={logs} columns={...} />
 ### Brewing & Technique
 
 **All Brewing Guides**:
-1. [[Brewing Guides/French Press Guide|French Press]] (beginner)
-2. [[Brewing Guides/Aeropress Guide|Aeropress]] (beginner)
-3. [[Brewing Guides/Cold Brew Guide|Cold Brew]] (beginner)
-4. [[Brewing Guides/Pour Over V60 Guide|V60]] (intermediate)
-5. [[Brewing Guides/Chemex Guide|Chemex]] (intermediate)
-6. [[Brewing Guides/Moka Pot Guide|Moka Pot]] (intermediate)
-7. [[Brewing Guides/Espresso Guide|Espresso]] (advanced)
+1. [[Brewing Guide|French Press]] (beginner)
+2. [[Brewing Guide|Aeropress]] (beginner)
+3. [[Brewing Guide|Cold Brew]] (beginner)
+4. [[Brewing Guide|V60]] (intermediate)
+5. [[Brewing Guide|Chemex]] (intermediate)
+6. [[Brewing Guide|Moka Pot]] (intermediate)
+7. [[Brewing Guide|Espresso]] (advanced)
 
 **Future**: Turkish Coffee, Siphon, Clever Dripper, Kalita Wave, Cupping Protocol
 
 ### Geography & Origins
 
 **Comprehensive Profiles**:
-- [[Origins/Ethiopia]] - Birthplace, 7 regions, heirloom varieties
-- [[Origins/Colombia]] - 7+ regions, year-round harvest, FNC system
+- [[Ethiopia]] - Birthplace, 7 regions, heirloom varieties
+- [[Colombia]] - 7+ regions, year-round harvest, FNC system
 
 **Regional Groups**:
 - **East Africa**: Ethiopia, Kenya, Rwanda, Burundi
@@ -606,7 +606,7 @@ return <dc.Table rows={logs} columns={...} />
 
 **Knowledge Base**:
 - Study [[Coffee Science & Extraction]]
-- Apply to [[Brewing Guides/]]
+- Apply to [[Brewing Guide]]
 - Log extraction % in sessions
 - Track improvements
 
@@ -690,7 +690,7 @@ return sorted.length > 0 ? (
 ### Coffee Education Curriculum
 
 **Level 1: Foundation** (Week 1-4):
-- [ ] Read [[History of Coffee#Coffee Waves Summary]]
+- [ ] Read [[History of Coffee]]
 - [ ] Master one brewing method
 - [ ] Try 5 different origins
 - [ ] Log consistently
@@ -725,11 +725,11 @@ return sorted.length > 0 ? (
 
 **Daily Use**:
 - [[START HERE]] - Homepage
-- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - Analytics
-- [[Templates/Coffee Log]] - New log template
+- [[Coffee Dashboard]] - Analytics
+- [[Coffee Log]] - New log template
 
 **Learning**:
-- [[Brewing Guides/]] - All techniques
+- [[Brewing Guide]] - All techniques
 - [[Origins/]] - Coffee regions
 - [[Coffee Science & Extraction]] - How it works
 
@@ -740,7 +740,7 @@ return sorted.length > 0 ? (
 
 **Local**:
 - [[Chicago Coffee Guide]] - Chicago scene
-- [[History of Coffee#Chicago Coffee]] - Chicago history
+- [[History of Coffee]] - Chicago history
 
 ---
 
@@ -872,12 +872,12 @@ return <div>
 ### Daily Workflow
 
 **Morning**:
-1. Brew coffee using [[Brewing Guides/]]
-2. Quick log in [[Daily Notes/]]
+1. Brew coffee using [[Brewing Guide]]
+2. Quick log in [[Daily Note]]
 3. Full log if special brew
 
 **Weekly**:
-1. Review [[Views/Daily-Brewing-Layout/Coffee Dashboard]]
+1. Review [[Coffee Dashboard]]
 2. Check [[Bases Configuration Guide|Base views]]
 3. Update [[Beans Library/]] profiles
 
@@ -896,10 +896,10 @@ return <div>
 4. Compare to past logs in [[Bases Configuration Guide|Bases]]
 
 **After Brewing**:
-1. Log in [[Templates/Coffee Log|Coffee Logs]]
+1. Log in [[Coffee Log|Coffee Logs]]
 2. Link to [[Beans Library/|bean profile]]
-3. Reference [[Brewing Guides/|technique guide]]
-4. Note in [[Daily Notes/]]
+3. Reference [[Brewing Guide|technique guide]]
+4. Note in [[Daily Note]]
 
 ---
 
@@ -939,5 +939,5 @@ return <div>
 📚 Your Coffee Encyclopedia 📚
 </div>
 
-**Start exploring**: [[START HERE]] | [[Quick Start - First Steps]] | [[Vault Index]]
+**Start exploring**: [[START HERE]] | [[Quick Start - First Steps]] | [[INDEX]]
 

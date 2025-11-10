@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Muruyuge Washing Station
-country: [[Origins/Burundi]]
-region: [[Origins/Burundi-Kayanza]]
+country: [[Burundi]]
+region: [[Burundi]]
 producer-category: Cooperative-Washing-Station
 established: 2008
 varieties: Bourbon-Jackson-Mibirizi
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Muruyuge Washing Station
 
 **Type**: Smallholder Cooperative + Washing Station
-**Location**: [[Origins/Burundi-Kayanza|Kayanza Province, Northern Burundi]]
+**Location**: [[Burundi|Kayanza Province, Northern Burundi]]
 **Established**: 2008
 
 ---

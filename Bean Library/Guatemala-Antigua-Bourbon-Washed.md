@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Guatemala Antigua Bourbon Washed
-origin: "[[Origins/Guatemala]]"
-region: [[Origins/Guatemala-Antigua]]
+origin: "[[Guatemala]]"
+region: [[Guatemala]]
 variety: [[Coffee Varieties/Bourbon]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Guatemala Antigua Bourbon Washed
 
-**Origin**: [[Origins/Guatemala|Guatemala]]
-**Region**: [[Origins/Guatemala-Antigua|Antigua]]
+**Origin**: [[Guatemala|Guatemala]]
+**Region**: [[Guatemala|Antigua]]
 **Variety**: [[Coffee Varieties/Bourbon|Bourbon]]
 **Processing**: [[Processing Methods/Washed-Process|Washed]]
 **Grade**: SHB (Strictly Hard Bean)
@@ -1311,15 +1311,15 @@ Antigua's climate allows traditional sun-drying during harvest season's dry weat
 ## 🔗 Related Content
 
 ### Related Bean Profiles
-- [[Guatemala-Huehuetenango-Bourbon]] - Another premium Guatemalan region
+- [[Guatemala]] - Another premium Guatemalan region
 - [[Guatemala-SHB]] - General Guatemalan coffee profile
 - [[Costa-Rica-Tarrazu]] - Similar Central American washed profile
-- [[Honduras-SHG]] - Comparable origin and altitude
+- [[Honduras]] - Comparable origin and altitude
 - [[El-Salvador-Pacamara]] - Central American specialty variety
 
 ### Related Origins
-- [[Origins/Guatemala]] - Complete Guatemala origin profile
-- [[Origins/Guatemala-Antigua]] - Detailed Antigua region information
+- [[Guatemala]] - Complete Guatemala origin profile
+- [[Guatemala]] - Detailed Antigua region information
 - [[Origins/Central-America]] - Regional overview
 
 ### Related Varieties
@@ -1334,10 +1334,10 @@ Antigua's climate allows traditional sun-drying during harvest season's dry weat
 - [[Processing Methods/Fermentation-Science]] - Fermentation in washed coffee
 
 ### Brewing Guides
-- [[Brewing Guides/Pour-Over-Guide]] - V60, Kalita, Chemex techniques
-- [[Brewing Guides/French-Press-Guide]] - Immersion brewing
-- [[Brewing Guides/Espresso-Guide]] - Espresso extraction
-- [[Brewing Guides/Water-Chemistry]] - Water quality for brewing
+- [[Brewing Guide]] - V60, Kalita, Chemex techniques
+- [[Brewing Guide]] - Immersion brewing
+- [[Brewing Guide]] - Espresso extraction
+- [[Brewing Guide]] - Water quality for brewing
 
 ### Scientific References
 - [[Scientific References/Volcanic-Terroir]] - How volcanic soils affect coffee
@@ -1346,7 +1346,7 @@ Antigua's climate allows traditional sun-drying during harvest season's dry weat
 - [[Scientific References/SCA-Cupping-Protocol]] - Professional cupping methodology
 
 ### Roasters Known for Antigua Bourbon
-- [[Roasters/Onyx-Coffee-Lab]] - High-quality Antigua offerings
+- [[Onyx-Coffee-Lab]] - High-quality Antigua offerings
 - [[Roasters/Blue-Bottle]] - Antigua in regular rotation
 - [[Roasters/Counter-Culture]] - Direct trade Antigua program
 - [[Roasters/Intelligentsia]] - Classic Antigua offerings

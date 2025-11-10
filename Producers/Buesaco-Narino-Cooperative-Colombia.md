@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Buesaco Cooperative
-country: [[Origins/Colombia]]
-region: [[Origins/Colombia-Narino]]
+country: [[Colombia]]
+region: [[Colombia]]
 producer-category: Cooperative
 established: 1999
 varieties: Caturra-Castillo-Colombia-Typica
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Buesaco Cooperative
 
 **Type**: Smallholder Farmers Cooperative
-**Location**: [[Origins/Colombia-Narino|Nariño Department, Colombia]]
+**Location**: [[Colombia|Nariño Department, Colombia]]
 **Established**: 1999
 
 ---

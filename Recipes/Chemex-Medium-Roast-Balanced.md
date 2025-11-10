@@ -13,12 +13,12 @@ avg-rating: 4.7
 tags: [recipe-profile, chemex, medium-roast, balanced, clean, central-american]
 relationships:
   requires:
-    - "[[Chemex]]"
-    - "[[Grinder]]"
+    - "[[Chemex-Medium-Roast-Balanced]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
-    - "[[Scale]]"
+    - "[[OXO-Barista-Brain-Scale]]"
   works-with: [[Colombia]], [[Costa Rica]], [[Guatemala]], [[Honduras]]
-  complements: [[Medium Roast]], [[Washed Processing]], [[Balanced Profile]]
+  complements: [[Medium Roast]], [[Washed Processing Complete Guide]], [[Balanced Profile]]
 ---
 
 # 📖 Recipe: Chemex Medium Roast Balanced
@@ -1023,12 +1023,12 @@ relationships:
 ## 🔗 Related Resources
 
 **Vault Links**:
-- [[Chemex]] - Equipment details
+- [[Chemex-Medium-Roast-Balanced]] - Equipment details
 - [[Colombia]] - Origin profile
 - [[Medium Roast]] - Roast level
-- [[Washed Processing]] - Processing method
+- [[Washed Processing Complete Guide]] - Processing method
 - [[Balanced Profile]] - Flavor concept
-- [[Water Quality]] - Water chemistry
+- [[Sodium and Brew Water Quality]] - Water chemistry
 
 **Further Learning**:
 - Chemex official brewing guide

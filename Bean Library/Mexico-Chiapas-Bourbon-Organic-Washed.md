@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Mexico Chiapas Bourbon Organic Washed
-origin: "[[Origins/Mexico]]"
-region: [[Origins/Mexico-Chiapas]]
+origin: "[[Mexico]]"
+region: [[Mexico]]
 variety: [[Coffee Varieties/Bourbon]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Mexico Chiapas Bourbon Organic Washed
 
-**Origin**: [[Origins/Mexico|Mexico]]
-**Region**: [[Origins/Mexico-Chiapas|Chiapas]]
+**Origin**: [[Mexico|Mexico]]
+**Region**: [[Mexico|Chiapas]]
 **Variety**: [[Coffee Varieties/Bourbon|Bourbon]]
 **Processing**: [[Processing Methods/Washed-Process|Washed]]
 **Grade**: Altura (Strictly High Grown)

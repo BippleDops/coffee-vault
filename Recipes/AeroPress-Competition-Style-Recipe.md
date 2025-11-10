@@ -13,8 +13,8 @@ avg-rating: 4.7
 tags: [recipe-profile, aeropress, competition, advanced, precise]
 relationships:
   requires:
-    - "[[AeroPress]]"
-    - "[[Grinder]]"
+    - "[[Aeropress-Inverted-Light-Roast]]"
+    - "[[Timemore-Sculptor-Grinder]]"
 ---
 
 # 📖 Recipe: AeroPress Competition Style Recipe

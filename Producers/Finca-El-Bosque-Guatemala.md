@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca El Bosque
-country: [[Origins/Guatemala]]
-region: [[Origins/Guatemala-Antigua]]
+country: [[Guatemala]]
+region: [[Guatemala]]
 producer-category: Family-Farm
 established: 1890
 varieties: Bourbon-Caturra-Catuai-Pacamara
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Finca El Bosque
 
 **Type**: Family Farm - Traditional Guatemalan Estate
-**Location**: [[Origins/Guatemala-Antigua|Antigua, Guatemala]]
+**Location**: [[Guatemala|Antigua, Guatemala]]
 **Established**: 1890
 
 ---

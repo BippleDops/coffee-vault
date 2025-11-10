@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Mount Hagen Organic Cooperative
-country: [[Origins/Papua-New-Guinea]]
-region: [[Origins/Papua-New-Guinea-Western-Highlands]]
+country: [[Papua-New-Guinea]]
+region: [[Papua-New-Guinea]]
 producer-category: Cooperative
 established: 2009
 varieties: Typica-Arusha-Bourbon
@@ -508,9 +508,9 @@ Beyond coffee quality, Mount Hagen Cooperative's social impact is profound: Fair
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Papua-New-Guinea]], [[Origins/PNG-Western-Highlands]], [[Origins/Melanesian-Coffee]], [[Origins/Pacific-Island-Coffee]]
+**Origins**: [[Papua-New-Guinea]], [[Origins/PNG-Western-Highlands]], [[Origins/Melanesian-Coffee]], [[Origins/Pacific-Island-Coffee]]
 
-**Varieties**: [[Varieties/Typica]], [[Varieties/Jamaica-Blue-Mountain-Typica]], [[Varieties/Arusha]], [[Varieties/Bourbon]]
+**Varieties**: [[Varieties/Typica]], [[Jamaica-Blue-Mountain]], [[Varieties/Arusha]], [[Varieties/Bourbon]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/PNG-Traditional-Washed]], [[Processing/Highland-Processing]]
 

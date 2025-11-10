@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Koakaka Coffee Cooperative
-country: [[Origins/Papua-New-Guinea]]
-region: [[Origins/Papua-New-Guinea-Western-Highlands]]
+country: [[Papua-New-Guinea]]
+region: [[Papua-New-Guinea]]
 producer-category: Highland-Cooperative
 established: 2008
 varieties: Arusha-Bourbon-Typica-Blue-Mountain
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Koakaka Coffee Cooperative
 
 **Type**: Highland Smallholder Cooperative - Remote Mountain Excellence
-**Location**: [[Origins/Papua-New-Guinea-Western-Highlands|Western Highlands Province, Papua New Guinea]]
+**Location**: [[Papua-New-Guinea|Western Highlands Province, Papua New Guinea]]
 **Established**: 2008
 
 ---
@@ -978,14 +978,14 @@ This is coffee with soul.
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/Papua-New-Guinea-Organic]]
+- [[Papua-New-Guinea]]
 - [[Beans Library/Koakaka-Fair-Trade]]
 - [[Beans Library/Western-Highlands-AA]]
 
 **Related Origins**:
-- [[Origins/Papua-New-Guinea]]
-- [[Origins/Papua-New-Guinea-Western-Highlands]]
-- [[Origins/Papua-New-Guinea-Mount-Hagen]]
+- [[Papua-New-Guinea]]
+- [[Papua-New-Guinea]]
+- [[Papua-New-Guinea]]
 
 **Related Varieties**:
 - [[Scientific References/Arusha-Variety]]
@@ -998,8 +998,8 @@ This is coffee with soul.
 - [[Scientific References/Wet-Season-Drying]]
 
 **Related Producers**:
-- [[Producers/Mount-Hagen-Organic-Cooperative-Papua-New-Guinea]] (PNG comparison)
-- [[Producers/Korgua-Cooperative-Papua-New-Guinea]] (PNG neighbor)
+- [[Mount-Hagen-Organic-Cooperative-Papua-New-Guinea]] (PNG comparison)
+- [[Korgua-Cooperative-Papua-New-Guinea]] (PNG neighbor)
 
 **Certifications**:
 - [[Scientific References/Organic-Certification]]
@@ -1007,9 +1007,9 @@ This is coffee with soul.
 - [[Scientific References/Cooperative-Model]]
 
 **Brewing Guides**:
-- [[Brewing Guides/PNG-Coffee-Brewing]]
-- [[Brewing Guides/Balanced-Coffee]]
-- [[Brewing Guides/Organic-Coffee]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 ---
 

@@ -511,9 +511,9 @@ Understanding anaerobic helps:
 
 ## Tags
 
-- [[Processing]]
-- [[Experimental Processing]]
-- [[Fermentation]]
+- [[processing-playbook-template]]
+- [[Experimental Processing Techniques]]
+- [[Yeast Inoculation in Coffee Fermentation]]
 - [[Specialty Coffee]]
 - [[Innovation]]
 

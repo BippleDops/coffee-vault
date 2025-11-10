@@ -138,13 +138,13 @@ status: to-read
 **From Clipped Article to Vault**:
 ```markdown
 ## Related Brewing Guide
-[[Brewing Guides/V60 Guide]]
+[[Brewing Guide]]
 
 ## Try This With
-[[Beans Library/Ethiopian Yirgacheffe]]
+[[Ethiopia]]
 
 ## Log My Attempt
-[[Coffee Logs/2025-10-25 V60 Experiment]]
+[[Coffee Log]]
 ```
 
 **From Brewing Guide to Research**:

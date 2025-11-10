@@ -14,11 +14,11 @@ tags: [recipe-profile, espresso, light-roast, fruit-forward, clarity, specialty,
 relationships:
   requires:
     - "[[Espresso Machine]]"
-    - "[[Grinder]]"
-    - "[[Scale]]"
-    - "[[Tamper]]"
-  works-with: [[Ethiopia]], [[Kenya]], [[Colombia]], [[Geisha]]
-  complements: [[Light Roast]], [[Natural Processing]], [[Washed Processing]], [[Fruit Notes]]
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[OXO-Barista-Brain-Scale]]"
+    - "[[Pullman-BigStep-Tamper]]"
+  works-with: [[Ethiopia]], [[Kenya]], [[Colombia]], [[2025-10-23-Panama-Geisha-48]]
+  complements: [[Light Roast]], [[Honey Pulped Natural Processing]], [[Washed Processing Complete Guide]], [[Fruit Notes]]
 ---
 
 # 📖 Recipe: Espresso Shot Light Roast Fruit
@@ -1293,10 +1293,10 @@ relationships:
 - [[Ethiopia]] - Origin information for Guji, Yirgacheffe
 - [[Kenya]] - Origin information for AA coffees
 - [[Light Roast]] - Roasting concepts and development
-- [[Natural Processing]] - Processing method for fruit-forward coffees
-- [[Washed Processing]] - Clean, clarity-focused processing
+- [[Honey Pulped Natural Processing]] - Processing method for fruit-forward coffees
+- [[Washed Processing Complete Guide]] - Clean, clarity-focused processing
 - [[Fruit Notes]] - Flavor chemistry and compound information
-- [[Extraction]] - Extraction science deep dive
+- [[DATA-EXTRACTION-GUIDE]] - Extraction science deep dive
 
 **Recommended Reading**:
 - "The World Atlas of Coffee" by James Hoffmann (origin information)

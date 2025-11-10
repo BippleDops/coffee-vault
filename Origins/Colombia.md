@@ -518,5 +518,5 @@ SORT purchase-date DESC
 ---
 
 **Last Updated**: 2025-10-24  
-**Related Origins**: [[Peru]], [[Ecuador]], [[Brazil]] (South American neighbors)
+**Related Origins**: [[Peru]], [[Finca-Maputo-Ecuador]], [[Brazil]] (South American neighbors)
 

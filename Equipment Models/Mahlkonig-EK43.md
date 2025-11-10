@@ -47,7 +47,7 @@ tags:
   - particle-distribution
   - workflow-efficiency
 related_equipment:
-  - "[[Mahlkonig-Tanzania]]"
+  - "[[Tanzania]]"
   - "[[Ditting-KR1203]]"
   - "[[Baratza-Forte-BG]]"
   - "[[Fellow-Ode-Gen2]]"
@@ -56,17 +56,17 @@ related_equipment:
   - "[[Decent-Espresso-DE1PRO]]"
   - "[[La-Marzocco-Linea-Mini]]"
   - "[[Acaia-Pearl-Scale]]"
-  - "[[Hario-V60]]"
+  - "[[Hario-V60-Plastic-Dripper]]"
   - "[[Kalita-Wave-185]]"
 related_concepts:
   - "[[Grind-Size]]"
-  - "[[Particle-Size-Distribution]]"
-  - "[[Burr-Geometry]]"
+  - "[[Particle-Size-Distribution-Measurement]]"
+  - "[[Grinder-Burr-Geometry-Analysis]]"
   - "[[Grind-Distribution]]"
-  - "[[Extraction]]"
-  - "[[Uniformity]]"
-  - "[[Burr-Alignment]]"
-  - "[[Retention]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
+  - "[[Roast Uniformity and Consistency]]"
+  - "[[Burr-Alignment-and-Maintenance]]"
+  - "[[Grinder Retention and Single-Dosing]]"
   - "[[Single-Dose-Workflow]]"
   - "[[Filter-Coffee-Grinding]]"
   - "[[Espresso-Grinding]]"
@@ -900,8 +900,8 @@ For users whose needs align with the EK43's strengths—specialty cafe filter se
 
 ## Related Equipment
 
-- **[[Mahlkonig-EK43-S]]** - Updated version with single-dose features ($3,200)
-- **[[Mahlkonig-Tanzania]]** - Budget-friendly commercial flat burr grinder ($1,500)
+- **[[Mahlkonig-EK43]]** - Updated version with single-dose features ($3,200)
+- **[[Tanzania]]** - Budget-friendly commercial flat burr grinder ($1,500)
 - **[[Fellow-Ode-Gen2]]** - Home filter grinder with 64mm flat burrs ($300)
 - **[[Baratza-Forte-BG]]** - Brew-focused flat burr grinder ($700)
 - **[[Ditting-KR1203]]** - Swiss commercial alternative ($3,500)
@@ -910,18 +910,18 @@ For users whose needs align with the EK43's strengths—specialty cafe filter se
 - **[[Niche-Zero-Grinder]]** - Single-dose conical for espresso ($650)
 - **[[Comandante-C40-MK4]]** - Hand grinder alternative ($250)
 - **[[Acaia-Pearl-Scale]]** - Precision scale for dosing ($250)
-- **[[Hario-V60]]** - Pour-over brewer leveraging EK43 uniformity ($8)
+- **[[Hario-V60-Plastic-Dripper]]** - Pour-over brewer leveraging EK43 uniformity ($8)
 - **[[Kalita-Wave-185]]** - Flat-bottom dripper for EK43-ground coffee ($30)
 
 ## Related Concepts
 
-- **[[Particle-Size-Distribution]]** - Understanding grind uniformity metrics
-- **[[Burr-Geometry]]** - How burr design affects particle distribution
+- **[[Particle-Size-Distribution-Measurement]]** - Understanding grind uniformity metrics
+- **[[Grinder-Burr-Geometry-Analysis]]** - How burr design affects particle distribution
 - **[[Grind-Distribution]]** - Unimodal vs. bimodal distributions
-- **[[Extraction]]** - How grind uniformity affects extraction potential
-- **[[Uniformity]]** - Measuring and understanding consistency
-- **[[Burr-Alignment]]** - Critical factor in grind quality
-- **[[Retention]]** - Grinder retention and dosing accuracy
+- **[[DATA-EXTRACTION-GUIDE]]** - How grind uniformity affects extraction potential
+- **[[Roast Uniformity and Consistency]]** - Measuring and understanding consistency
+- **[[Burr-Alignment-and-Maintenance]]** - Critical factor in grind quality
+- **[[Grinder Retention and Single-Dosing]]** - Grinder retention and dosing accuracy
 - **[[Single-Dose-Workflow]]** - Adapting commercial grinders for single dosing
 - **[[Filter-Coffee-Grinding]]** - Optimal grind characteristics for filter brewing
 - **[[Espresso-Grinding]]** - Requirements for espresso vs. filter

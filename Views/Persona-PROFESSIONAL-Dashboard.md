@@ -44,25 +44,25 @@ Welcome to your professional-grade coffee analysis suite. Full data access, ML-p
 
 #### Machine Learning & Predictive Analytics
 
-**[[Analytics/Analytics-Analysis-Layout/5-Quality-Predictor|🔮 Quality Predictor]]**
+**[[5-Quality-Predictor|🔮 Quality Predictor]]**
 - ML-based quality forecasting for new beans
 - Parameter optimization for target profiles
 - Predictive modeling based on 100+ brew dataset
 - Multi-variable regression analysis
 
-**[[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|🔬 Correlation Discovery Engine]]**
+**[[6-Correlation-Discovery-Engine|🔬 Correlation Discovery Engine]]**
 - Multi-variable correlation matrices
 - Hidden pattern identification
 - Cross-parameter analysis (grind × temp × time)
 - Statistical significance testing
 
-**[[Analytics/Analytics-Analysis-Layout/7-Anomaly-Detection-System|⚡ Anomaly Detection System]]**
+**[[7-Anomaly-Detection-System|⚡ Anomaly Detection System]]**
 - Statistical outlier identification
 - Z-score analysis on brewing parameters
 - Quality deviation alerts
 - Performance drift monitoring
 
-**[[Analytics/Analytics-Analysis-Layout/8-Multi-Variable-Recommendation-Engine|🤖 Multi-Variable Recommendation Engine]]**
+**[[8-Multi-Variable-Recommendation-Engine|🤖 Multi-Variable Recommendation Engine]]**
 - AI-driven brewing optimization
 - Context-aware parameter suggestions
 - Ensemble model predictions
@@ -135,8 +135,8 @@ LIMIT 5
 ```
 
 **Quick Actions:**
-- **[[Templates/Cupping Session|Create New Cupping Session]]**
-- **[[Templates/SCA-Cupping-Form|SCA Cupping Form]]**
+- **[[Cupping Session|Create New Cupping Session]]**
+- **[[SCA-Cupping-Form|SCA Cupping Form]]**
 - **[[Scientific References/Sensory Science/SCA-Cupping-Protocol-Step-by-Step|Cupping Protocol Reference]]**
 
 #### Recent Cupping Sessions
@@ -167,7 +167,7 @@ LIMIT 10
 - [ ] Evaluate at 15 minutes, 12 minutes, 10 minutes
 - [ ] Score: Fragrance/Aroma, Flavor, Aftertaste, Acidity, Body, Balance, Uniformity, Clean Cup, Sweetness, Overall
 
-**[[Templates/SCA-Cupping-Form|Open SCA Form →]]**
+**[[SCA-Cupping-Form|Open SCA Form →]]**
 
 #### Score Aggregation & Analysis
 
@@ -217,7 +217,7 @@ LIMIT 5
 - **Descriptor matching**: Match sensory standards
 - **Blind scoring**: Evaluate without knowing the coffee
 
-**Track calibration**: [[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|Palate Development Tracker]]
+**Track calibration**: [[4-Palate-Development-Tracker|Palate Development Tracker]]
 
 ---
 
@@ -309,19 +309,19 @@ GROUP BY true
 
 **Advanced statistical views:**
 
-**[[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|📊 Monthly Analytics Dashboard]]**
+**[[1-Monthly-Analytics-Dashboard|📊 Monthly Analytics Dashboard]]**
 - Time series analysis
 - Trend identification
 - Seasonal patterns
 - Performance metrics
 
-**[[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|⚙️ Brewing Optimization Engine]]**
+**[[2-Brewing-Optimization-Engine|⚙️ Brewing Optimization Engine]]**
 - Parameter optimization algorithms
 - Bayesian optimization for recipe tuning
 - Multi-objective optimization (quality + consistency)
 - Sensitivity analysis
 
-**[[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|💰 Cost Intelligence System]]**
+**[[3-Cost-Intelligence-System|💰 Cost Intelligence System]]**
 - ROI analysis on equipment
 - Cost per quality point
 - Bean value optimization
@@ -350,7 +350,7 @@ LIMIT 1
 - Origin ↔ Optimal method
 - Processing ↔ Flavor profile
 
-**Full analysis**: [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|Correlation Engine]]
+**Full analysis**: [[6-Correlation-Discovery-Engine|Correlation Engine]]
 
 #### Time Series Analysis
 
@@ -383,7 +383,7 @@ LIMIT 12
 
 ### Professional Palate Training
 
-**[[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|🎯 Palate Development Tracker]]**
+**[[4-Palate-Development-Tracker|🎯 Palate Development Tracker]]**
 
 **Tracks:**
 - Descriptor vocabulary expansion (current vs. 6 months ago)
@@ -407,7 +407,7 @@ SORT date DESC
 LIMIT 10
 ```
 
-**Create new experiment**: [[Templates/sensory-experiment-template|Sensory Experiment Template]]
+**Create new experiment**: [[sensory-experiment-template|Sensory Experiment Template]]
 
 **Recommended experiments for professionals:**
 1. **Threshold Detection**: Find your sensory limits for acidity, sweetness, bitterness
@@ -482,7 +482,7 @@ LIMIT 1
 | Bitterness (Caffeine) | TBD | 0.05% | Test pending |
 | Saltiness (NaCl) | TBD | 0.2% | Test pending |
 
-**Test your thresholds**: [[Templates/sensory-experiment-template|Run Threshold Test]]
+**Test your thresholds**: [[sensory-experiment-template|Run Threshold Test]]
 
 ---
 
@@ -541,7 +541,7 @@ WHERE type = "scientific-reference"
 SORT processing-type
 ```
 
-**Processing playbooks:** [[Templates/processing-playbook-template|Create Processing Playbook]]
+**Processing playbooks:** [[processing-playbook-template|Create Processing Playbook]]
 
 #### Roasting Science Technical Docs
 
@@ -583,7 +583,7 @@ WHERE type = "scientific-reference"
 
 **Create multiple logs efficiently:**
 
-**[[Templates/Coffee-Log-v5-Batch|Batch Log Template]]**
+**[[Coffee-Log-v5|Batch Log Template]]**
 
 **Use cases:**
 - Cupping session logs (multiple coffees at once)
@@ -608,13 +608,13 @@ WHERE file.name = "Cupping Session"
 4. Complete evaluation
 5. Aggregate scores automatically
 
-**Batch cupping**: [[Templates/Cupping Session|Setup Multi-Bean Session]]
+**Batch cupping**: [[Cupping Session|Setup Multi-Bean Session]]
 
 #### Competition Prep Workflows
 
 **Systematic preparation for coffee competitions:**
 
-**[[Templates/training-plan-template|Training Plan Template]]**
+**[[training-plan-template|Training Plan Template]]**
 
 **Competition categories:**
 - Barista Championship
@@ -672,7 +672,7 @@ LIMIT 1
 
 #### 3D Flavor Space with Clustering
 
-**Navigate to**: [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|Interactive 3D Visualization]]
+**Navigate to**: [[6-Correlation-Discovery-Engine|Interactive 3D Visualization]]
 
 **Features:**
 - Each brew plotted in 3D flavor dimensions
@@ -718,7 +718,7 @@ LIMIT 1
 - Roaster profiles
 - Interactive exploration of entire dataset
 
-**Access**: [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|3D Universe Explorer]]
+**Access**: [[6-Correlation-Discovery-Engine|3D Universe Explorer]]
 
 #### Parameter Space Explorer
 
@@ -736,7 +736,7 @@ LIMIT 1
 
 ### Traceability & Transparency
 
-**[[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard|📍 Supply Chain Transparency Dashboard]]**
+**[[10-Supply-Chain-Transparency-Dashboard|📍 Supply Chain Transparency Dashboard]]**
 
 #### Producer Database (All Profiles)
 
@@ -763,7 +763,7 @@ WHERE type = "producer-profile"
 GROUP BY true
 ```
 
-**Add producer**: [[Templates/Producer Profile|Create Producer Profile]]
+**Add producer**: [[Producer Profile|Create Producer Profile]]
 
 #### Supply Chain Transparency
 
@@ -826,7 +826,7 @@ GROUP BY country
 SORT length(list(distinct(rows.beans))) DESC
 ```
 
-**Supply chain map**: [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard|Interactive Map]]
+**Supply chain map**: [[10-Supply-Chain-Transparency-Dashboard|Interactive Map]]
 
 #### Certifications Tracker
 
@@ -871,7 +871,7 @@ SORT next-due ASC
 LIMIT 10
 ```
 
-**Log maintenance**: [[Templates/Equipment-Maintenance-Log|Equipment Maintenance]]
+**Log maintenance**: [[Equipment-Maintenance-Log|Equipment Maintenance]]
 
 **Maintenance schedule:**
 - **Grinder burrs**: Clean weekly, replace annually (500-1000 lbs)
@@ -880,7 +880,7 @@ LIMIT 10
 - **Kettle**: Descale monthly
 - **Brewer**: Deep clean weekly
 
-**Dashboard**: [[Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard|Maintenance Dashboard]]
+**Dashboard**: [[13-Equipment-Maintenance-Dashboard|Maintenance Dashboard]]
 
 #### Grinder Performance Tracking
 
@@ -949,7 +949,7 @@ SORT priority DESC, price-range ASC
 LIMIT 10
 ```
 
-**ROI analysis**: [[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|Equipment ROI Calculator]]
+**ROI analysis**: [[3-Cost-Intelligence-System|Equipment ROI Calculator]]
 
 ---
 
@@ -1047,7 +1047,7 @@ SORT processing-method
 LIMIT 10
 ```
 
-**Create playbook**: [[Templates/processing-playbook-template|Processing Playbook Template]]
+**Create playbook**: [[processing-playbook-template|Processing Playbook Template]]
 
 **Professional processing methods:**
 - Carbonic maceration variations
@@ -1097,7 +1097,7 @@ WHERE file.name = "training-plan-template"
 SORT start-date DESC
 ```
 
-**Create plan**: [[Templates/training-plan-template|Training Plan Template]]
+**Create plan**: [[training-plan-template|Training Plan Template]]
 
 **Professional training focus areas:**
 - Competition preparation
@@ -1125,10 +1125,10 @@ SORT priority DESC, target-date ASC
 ```
 
 **Professional goal templates:**
-- [[Coffee Goals/Complete-SCA-Certification|SCA Certification]]
-- [[Coffee Goals/Master-Espresso-Extraction|Master Espresso]]
-- [[Coffee Goals/Win-Barista-Competition|Competition Victory]]
-- [[Coffee Goals/Open-Specialty-Cafe|Open Cafe]]
+- [[Coffee Goal|SCA Certification]]
+- [[Coffee Goal|Master Espresso]]
+- [[Coffee Goal|Competition Victory]]
+- [[Coffee Goal|Open Cafe]]
 
 #### Knowledge Contribution
 
@@ -1256,13 +1256,13 @@ LIMIT 1
 - `Scripts/link-validator.js` - Check broken links
 - `Scripts/data-quality-check.js` - Validate data
 
-**Documentation**: [[Scripts/README|Script Documentation]]
+**Documentation**: [[README|Script Documentation]]
 
 #### Configuration Management
 
 **System configuration:**
 
-- **[[Configuration/User-Configuration-Guide|User Configuration]]**
+- **[[User-Configuration-Guide|User Configuration]]**
 - **[[Configuration/Plugin-Setup|Plugin Configuration]]**
 - **[[Configuration/Automation-Setup|Automation Setup]]**
 - **[[Configuration/Export-Guide|Export Configuration]]**
@@ -1273,20 +1273,20 @@ LIMIT 1
 ## 🔗 Quick Access
 
 **Daily Operations:**
-- [[Templates/Coffee-Log-v5|Log Brew]]
-- [[Templates/SCA-Cupping-Form|Cupping Form]]
-- [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant|Brewing Assistant]]
+- [[Coffee-Log-v5|Log Brew]]
+- [[SCA-Cupping-Form|Cupping Form]]
+- [[9-Real-Time-Brewing-Assistant|Brewing Assistant]]
 
 **Analytics Suite:**
-- [[Analytics/Analytics-Analysis-Layout/5-Quality-Predictor|Quality Predictor]]
-- [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|Correlation Engine]]
-- [[Analytics/Analytics-Analysis-Layout/7-Anomaly-Detection-System|Anomaly Detection]]
-- [[Analytics/Analytics-Analysis-Layout/8-Multi-Variable-Recommendation-Engine|Recommendation Engine]]
+- [[5-Quality-Predictor|Quality Predictor]]
+- [[6-Correlation-Discovery-Engine|Correlation Engine]]
+- [[7-Anomaly-Detection-System|Anomaly Detection]]
+- [[8-Multi-Variable-Recommendation-Engine|Recommendation Engine]]
 
 **Professional Tools:**
-- [[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|Palate Tracker]]
-- [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard|Supply Chain]]
-- [[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|Cost Intelligence]]
+- [[4-Palate-Development-Tracker|Palate Tracker]]
+- [[10-Supply-Chain-Transparency-Dashboard|Supply Chain]]
+- [[3-Cost-Intelligence-System|Cost Intelligence]]
 
 **Data Management:**
 - [[Configuration/Export-Guide|Data Export]]

@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Permata Gayo Cooperative
 country: [[Origins/Indonesia]]
-region: [[Origins/Indonesia-Sumatra-Gayo]]
+region: [[Sumatra]]
 producer-category: Cooperative
 established: 2005
 varieties: Timor-Hybrid-Ateng-Catimor
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Permata Gayo Cooperative
 
 **Type**: Smallholder Farmers Cooperative
-**Location**: [[Origins/Indonesia-Sumatra-Gayo|Gayo Highlands, Aceh, Sumatra]]
+**Location**: [[Sumatra|Gayo Highlands, Aceh, Sumatra]]
 **Established**: 2005
 
 ---

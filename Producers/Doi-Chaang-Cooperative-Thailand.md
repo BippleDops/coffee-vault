@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Doi Chaang Coffee Cooperative
 country: [[Origins/Thailand]]
-region: [[Origins/Thailand-Northern-Highlands]]
+region: [[Thailand-Northern-Highlands]]
 producer-category: Tribal-Cooperative
 established: 2003
 varieties: Catimor-Caturra-Typica-SL28
@@ -851,7 +851,7 @@ Challenges remain—retail complexity, climate change, market recognition, youth
 
 **Related Notes**:
 - [[Origins/Thailand]]
-- [[Origins/Thailand-Northern-Highlands]]
+- [[Thailand-Northern-Highlands]]
 - [[Varieties/SL28]]
 - [[Varieties/Catimor]]
 - [[Varieties/Caturra]]

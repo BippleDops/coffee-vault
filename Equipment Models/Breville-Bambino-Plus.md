@@ -1761,11 +1761,11 @@ The Bambino Plus earns its position as the most-recommended entry-level espresso
 ---
 
 **Cross-References:**
-- [[Equipment Models/Breville-Smart-Grinder-Pro]] - Recommended grinder pairing
-- [[Equipment Models/Gaggia-Classic-Pro]] - Competitor, modification platform
-- [[Equipment Models/Breville-Dual-Boiler]] - Upgrade path for serious users
+- [[Equipment Model]] - Recommended grinder pairing
+- [[Equipment Model]] - Competitor, modification platform
+- [[Equipment Model]] - Upgrade path for serious users
 - [[Brewing Methods/Espresso]] - Primary brewing method
-- [[Brewing Parameters/Grind Size]] - Critical parameter for this machine
-- [[Brewing Parameters/Water Temperature]] - Fixed on this machine (limitation)
+- [[Brewing Parameters]] - Critical parameter for this machine
+- [[Water Temperature]] - Fixed on this machine (limitation)
 - [[Guides/Dialing-In-Espresso]] - Essential for using this machine well
-- [[Bean Library/Colombia-Supremo]] - Medium roasts optimal for fixed temperature
+- [[Colombia]] - Medium roasts optimal for fixed temperature

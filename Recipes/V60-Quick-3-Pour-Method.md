@@ -14,7 +14,7 @@ tags: [recipe-profile, v60, quick-method, beginner-friendly, weekday]
 relationships:
   requires:
     - "[[V60 Dripper]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
 ---
 

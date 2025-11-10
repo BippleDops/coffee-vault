@@ -551,10 +551,10 @@ Colombia Supremo's prominence is partly due to decades of brilliant marketing:
 ## 🔗 Related Profiles & Resources
 
 ### Related Bean Profiles
-- [[Colombian-Excelso]] - Smaller bean size, similar profile
+- [[Colombia]] - Smaller bean size, similar profile
 - [[Colombian-Huila]] - Specific region Supremo
-- [[Colombian-Gesha]] - Rare Colombian variety
-- [[Colombian-Pink-Bourbon]] - Experimental Colombian variety
+- [[Colombia]] - Rare Colombian variety
+- [[Colombia]] - Experimental Colombian variety
 
 ### Related Origins
 - [[Colombia]] - Complete Colombia origin profile

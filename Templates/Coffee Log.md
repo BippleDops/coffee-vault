@@ -176,4 +176,4 @@ LIMIT 5
 
 ---
 
-← [[<% tp.date.now("YYYY-MM-DD", -1) %>]] | [[Daily Notes/<% tp.date.now("YYYY-MM-DD") %>|Today]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>]] →
+← [[<% tp.date.now("YYYY-MM-DD", -1) %>]] | [[Daily Note|Today]] | [[<% tp.date.now("YYYY-MM-DD", 1) %>]] →

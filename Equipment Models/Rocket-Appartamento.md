@@ -1142,7 +1142,7 @@ community-rating: 4.6
 - [[Rocket-R58]] - Step up (dual boiler)
 - [[Lelit-MaraX]] - Budget HX alternative
 - [[ECM-Classika-PID]] - Similar tier competitor
-- [[Niche-Zero]] - Ideal grinder pairing
+- [[Niche-Zero-Grinder]] - Ideal grinder pairing
 - [[Eureka-Mignon-Specialita]] - Excellent grinder pairing
 - [[Gaggia-Classic-Pro]] - Common upgrade-from machine
 - [[Breville-Bambino-Plus]] - Entry-level alternative
@@ -1163,9 +1163,9 @@ community-rating: 4.6
 - [[E61-History]] - Faema E61 innovation (1961)
 
 ### Brew Concepts
-- [[Espresso-Extraction]] - Shot quality fundamentals
-- [[Milk-Steaming]] - Microfoam technique
-- [[Espresso-Dialing-In]] - Dialing in process
+- [[Master-Espresso-Extraction]] - Shot quality fundamentals
+- [[Milk-Steaming-Technique-Guide]] - Microfoam technique
+- [[Espresso-Dialing-In-Framework]] - Dialing in process
 - [[Grind-Size]] - Espresso grind importance
 - [[Brew-Ratio]] - Espresso dose and yield
 

@@ -761,5 +761,5 @@ return experiments.length > 0 ? (
 
 **Last Updated**: 2025-10-24  
 **Complexity**: Advanced topic, beginner-friendly explanation  
-**Related**: [[Brewing Guides/]], [[Water Chemistry Guide]], [[History of Coffee#Coffee Science]]
+**Related**: [[Brewing Guide]], [[Water Chemistry Guide]], [[History of Coffee]]
 

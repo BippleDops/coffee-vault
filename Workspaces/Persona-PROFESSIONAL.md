@@ -437,7 +437,7 @@ Professional-level shortcuts for maximum efficiency:
 - `Alt + C` - Cupping session
 - `Alt + E` - Equipment maintenance
 
-**Complete reference**: [[Configuration/KEYBOARD-SHORTCUTS|Professional Shortcuts Guide]]
+**Complete reference**: [[KEYBOARD-SHORTCUTS|Professional Shortcuts Guide]]
 
 ---
 
@@ -448,20 +448,20 @@ Professional-level shortcuts for maximum efficiency:
 - TDS and extraction yield tracking
 - Environmental factors logging
 - Equipment settings documentation
-- [[Templates/Coffee-Log-Detailed]]
+- [[Coffee-Log-Detailed]]
 
 **SCA Cupping Form** (per sample):
 - Standard cupping protocol
 - Fragrance, flavor, aftertaste scoring
 - Defects identification
 - Calibrated to SCA standards
-- [[Templates/SCA-Cupping-Form]]
+- [[SCA-Cupping-Form]]
 
 **Sensory Experiment**:
 - Multi-variable testing framework
 - Statistical analysis ready
 - Blind tasting support
-- [[Templates/sensory-experiment-template]]
+- [[sensory-experiment-template]]
 
 **Pro workflow**: Template selection based on session type (competition vs. research vs. production).
 
@@ -501,7 +501,7 @@ tag:#competition [rating:>=4.5]
 ```
 → Find all temperature references
 
-**Master search**: [[Configuration/SEARCH-TIPS|Professional Search Techniques]]
+**Master search**: [[SEARCH-TIPS|Professional Search Techniques]]
 
 ---
 
@@ -529,7 +529,7 @@ tag:#competition [rating:>=4.5]
 }
 ```
 
-**Advanced automation**: [[Configuration/Automation-Playbook]]
+**Advanced automation**: [[Automation-Playbook]]
 
 ---
 
@@ -695,7 +695,7 @@ coffeeVault.export({
 - Generate weekly reports
 ```
 
-**Setup**: [[Configuration/Automation-Playbook|Professional Automation Guide]]
+**Setup**: [[Automation-Playbook|Professional Automation Guide]]
 
 ---
 
@@ -755,12 +755,12 @@ The Professional workspace is built for peak productivity, research rigor, and p
 ---
 
 **Questions?**
-- Deep-dive: [[Documentation/VAULT-ARCHITECTURE-REFERENCE]]
-- Automation: [[Configuration/Automation-Playbook]]
+- Deep-dive: [[VAULT-ARCHITECTURE-REFERENCE]]
+- Automation: [[Automation-Playbook]]
 - API Access: [[Documentation/API-REFERENCE]] (if available)
 
 **Ready for professional excellence?**
-Open [[Views/Persona-PROFESSIONAL-Dashboard]] and command your coffee intelligence!
+Open [[Persona-PROFESSIONAL]] and command your coffee intelligence!
 
 ---
 
@@ -769,5 +769,5 @@ Open [[Views/Persona-PROFESSIONAL-Dashboard]] and command your coffee intelligen
 
 **Last Updated**: 2025-11-06
 **Status**: Production Ready  
-**Previous**: [[Workspaces/Persona-ENTHUSIAST|Enthusiast Workspace]]
+**Previous**: [[Persona-ENTHUSIAST|Enthusiast Workspace]]
 **For**: Professionals, Q Graders, Competitors, Roasters, Researchers

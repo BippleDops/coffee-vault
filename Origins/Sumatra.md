@@ -440,9 +440,9 @@ date: 2025-10-27
 
 ## Tags
 
-- [[Origins]]
-- [[Indonesia]]
+- [[00-Origins-Index]]
+- [[Permata-Gayo-Cooperative-Indonesia]]
 - [[Wet-Hulled Processing]]
-- [[Full Body]]
+- [[Body]]
 - [[Earthy Profile]]
 

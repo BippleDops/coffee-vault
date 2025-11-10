@@ -141,8 +141,8 @@ Semi-washed (also called pulped natural or semi-dry) is a hybrid processing meth
 
 ## Tags
 
-- [[Processing]]
+- [[processing-playbook-template]]
 - [[Hybrid Methods]]
-- [[Brazilian Coffee]]
+- [[Brazil]]
 - [[Mechanical Processing]]
 

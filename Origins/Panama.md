@@ -292,8 +292,8 @@ date: 2025-10-27
 
 ## Tags
 
-- [[Origins]]
+- [[00-Origins-Index]]
 - [[Central America]]
-- [[Gesha]]
+- [[Ninety-Plus-Gesha-Estate-Panama]]
 - [[Specialty Coffee]]
 

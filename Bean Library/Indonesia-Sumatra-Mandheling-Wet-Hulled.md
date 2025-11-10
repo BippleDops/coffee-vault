@@ -2,7 +2,7 @@
 type: bean-profile
 name: Indonesia Sumatra Mandheling Wet-Hulled
 origin: "[[Origins/Indonesia]]"
-region: [[Origins/Indonesia-Sumatra]]
+region: [[Sumatra]]
 variety: [[Coffee Varieties/Mixed-Heirlooms]]
 processing: [[Processing Methods/Wet-Hulled-Giling-Basah]]
 roast-level: medium-dark
@@ -19,7 +19,7 @@ status: reference
 # 🫘 Indonesia Sumatra Mandheling Wet-Hulled
 
 **Origin**: [[Origins/Indonesia|Indonesia]]
-**Region**: [[Origins/Indonesia-Sumatra|Sumatra]]
+**Region**: [[Sumatra|Sumatra]]
 **Variety**: [[Coffee Varieties/Mixed-Heirlooms|Mixed Heirlooms]]
 **Processing**: [[Processing Methods/Wet-Hulled-Giling-Basah|Wet-Hulled (Giling Basah)]]
 **Grade**: Grade 1 (TP - Triple Picked)
@@ -1525,15 +1525,15 @@ The distinctive blue-green color of Sumatra Mandheling develops during this stag
 ## 🔗 Related Content
 
 ### Related Bean Profiles
-- [[Indonesia-Sulawesi-Toraja]] - Similar processing, different terroir
+- [[Indonesia-Sulawesi]] - Similar processing, different terroir
 - [[Indonesia-Java-Estate]] - Indonesian coffee, different profile
-- [[Papua-New-Guinea-Highlands]] - Regional neighbor, washed process
-- [[Brazil-Natural-Process]] - Full body, low acid (different processing)
+- [[Papua-New-Guinea]] - Regional neighbor, washed process
+- [[Brazil]] - Full body, low acid (different processing)
 - [[India-Monsooned-Malabar]] - Another unique processing method
 
 ### Related Origins
 - [[Origins/Indonesia]] - Complete Indonesia origin profile
-- [[Origins/Indonesia-Sumatra]] - Detailed Sumatra region information
+- [[Sumatra]] - Detailed Sumatra region information
 - [[Origins/Southeast-Asia]] - Regional overview
 
 ### Related Varieties
@@ -1548,15 +1548,15 @@ The distinctive blue-green color of Sumatra Mandheling develops during this stag
 - [[Processing Methods/Unique-Regional-Methods]] - Global processing variations
 
 ### Brewing Guides
-- [[Brewing Guides/French-Press-Guide]] - Ideal for Mandheling
-- [[Brewing Guides/Cold-Brew-Guide]] - Excellent with Mandheling
-- [[Brewing Guides/Espresso-Guide]] - Mandheling in espresso
-- [[Brewing Guides/Low-Acid-Coffee-Brewing]] - Maximizing Mandheling strengths
+- [[Brewing Guide]] - Ideal for Mandheling
+- [[Brewing Guide]] - Excellent with Mandheling
+- [[Brewing Guide]] - Mandheling in espresso
+- [[Brewing Guide]] - Maximizing Mandheling strengths
 
 ### Scientific References
 - [[Scientific References/Processing-Methods-Impact]] - How processing affects flavor
 - [[Scientific References/Wet-Hulling-Chemistry]] - Science of Giling Basah
-- [[Scientific References/Body-Mouthfeel-Science]] - Understanding Mandheling's body
+- [[Body]] - Understanding Mandheling's body
 - [[Scientific References/Low-Acid-Coffee]] - Acidity science
 
 ### Roasting Guides
@@ -1567,7 +1567,7 @@ The distinctive blue-green color of Sumatra Mandheling develops during this stag
 ### Market & Trade
 - [[Coffee Trade/Indonesian-Coffee-Market]] - Market structure
 - [[Coffee Trade/Wet-Hulled-Coffee-Trade]] - Unique trading considerations
-- [[Coffee Trade/Specialty-Sumatra-Sourcing]] - How to source quality
+- [[Sumatra]] - How to source quality
 
 ---
 

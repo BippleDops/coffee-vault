@@ -827,10 +827,10 @@ community-rating: 4.5
 - **Filter Roasts**: Outstanding performance (primary use case)
 
 **Bean Origin Compatibility**:
-- [[Origins/Ethiopia]] - Excellent (handles dense beans well)
-- [[Origins/Kenya]] - Excellent (dense bean performance)
-- [[Origins/Colombia]] - Excellent (medium density)
-- [[Origins/Brazil]] - Excellent (all densities)
+- [[Ethiopia]] - Excellent (handles dense beans well)
+- [[Kenya]] - Excellent (dense bean performance)
+- [[Colombia]] - Excellent (medium density)
+- [[Brazil]] - Excellent (all densities)
 - All origins: No compatibility issues for filter brewing
 
 ### Equipment Compatibility
@@ -1705,11 +1705,11 @@ The Baratza Virtuoso+ is a workhorse. It won't win beauty contests, it won't imp
 **Tags**: equipment-model, baratza, grinder, electric-grinder, conical-burr, filter-coffee
 
 **Cross-References**:
-- [[Equipment Models/Baratza-Encore]] - Budget alternative (same company)
-- [[Equipment Models/Fellow-Ode-Gen2]] - Premium filter grinder alternative
-- [[Equipment Models/Breville-Smart-Grinder-Pro]] - Feature-rich competitor
+- [[Equipment Model]] - Budget alternative (same company)
+- [[Equipment Model]] - Premium filter grinder alternative
+- [[Equipment Model]] - Feature-rich competitor
 - [[Brewing Methods/Pour Over]] - Ideal use case
 - [[Brewing Methods/Drip Coffee]] - Excellent compatibility
 - [[Brewing Methods/French Press]] - Very good for coarse grinds
-- [[Brewing Parameters/Grind Size]] - Optimization guidance
+- [[Brewing Parameters]] - Optimization guidance
 - [[Guides/Dialing-In-Filter-Coffee]] - Workflow integration

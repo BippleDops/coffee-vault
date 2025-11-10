@@ -671,7 +671,7 @@ node Scripts/vault-ci.js
 
 **Solution**: Ensure wikilinks use exact file names:
 ```markdown
-❌ [[ethiopia yirgacheffe]]
+❌ [[Ethiopia]]
 ✅ [[Ethiopia-Yirgacheffe]]
 ```
 

@@ -13,12 +13,12 @@ avg-rating: 4.6
 tags: [recipe-profile, french-press, dark-roast, bold, full-body, immersion]
 relationships:
   requires:
-    - "[[French Press]]"
-    - "[[Grinder]]"
-    - "[[Kettle]]"
+    - "[[French Press Guide]]"
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[Hario-Buono-Kettle]]"
     - "[[Timer]]"
-  works-with: [[Dark Roast]], [[Indonesia]], [[Brazil]], [[Italian Roast]]
-  complements: [[Full Body]], [[Low Acidity]], [[Bold Flavor]]
+  works-with: [[Second Crack and Dark Roast Development]], [[Permata-Gayo-Cooperative-Indonesia]], [[Brazil]], [[Italian Roast]]
+  complements: [[Body]], [[Low Acidity]], [[Bold Flavor]]
 ---
 
 # 📖 Recipe: French Press Dark Roast Bold
@@ -1175,11 +1175,11 @@ Adjustments for next time: ____
 ## 🔗 Related Resources
 
 **Vault Links**:
-- [[French Press]] - Equipment guide
-- [[Dark Roast]] - Roast level details
-- [[Indonesia]] - Sumatra origins
+- [[French Press Guide]] - Equipment guide
+- [[Second Crack and Dark Roast Development]] - Roast level details
+- [[Permata-Gayo-Cooperative-Indonesia]] - Sumatra origins
 - [[Brazil]] - Brazilian coffee
-- [[Full Body]] - Body characteristics
+- [[Body]] - Body characteristics
 - [[Immersion Brewing]] - Brewing science
 
 **Recommended Learning**:

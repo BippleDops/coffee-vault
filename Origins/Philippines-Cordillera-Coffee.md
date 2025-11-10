@@ -734,14 +734,14 @@ The Philippines is a unique coffee origin with a rich coffee history dating to t
 - [[Taiwan-Alishan-Coffee]] - Regional peer, mountain coffee
 - [[Vietnam-Coffee]] - Neighbor, contrasting Robusta focus
 - [[Ethiopia]] - Flavor profile comparisons for specialty Arabica
-- [[Liberica]] - Species unique to Philippines (Barako)
-- [[Typica]] - Heritage variety in Cordillera
-- [[Washed Process]] - Dominant processing method
+- [[Liberica-Coffee]] - Species unique to Philippines (Barako)
+- [[Peru-Typica]] - Heritage variety in Cordillera
+- [[Washed Processing Complete Guide]] - Dominant processing method
 - [[Wet-Hulled Process]] - Mindanao method
 - [[Indigenous Coffee Farming]] - Cultural context
 - [[Smallholder Coffee]] - Production structure
 - [[Cooperative Coffee]] - Organizational model
-- [[Shade-Grown Coffee]] - Environmental practice
+- [[Shade-Grown Coffee and Biodiversity]] - Environmental practice
 
 ## References
 

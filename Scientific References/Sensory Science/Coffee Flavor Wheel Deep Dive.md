@@ -479,6 +479,6 @@ Using the wheel helps:
 
 - [[Sensory Science]]
 - [[Flavor Identification]]
-- [[Cupping]]
+- [[SCA-Cupping-Form]]
 - [[Coffee Education]]
 

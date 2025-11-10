@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Kangocho Washing Station
-country: [[Origins/Kenya]]
-region: [[Origins/Kenya-Nyeri]]
+country: [[Kenya]]
+region: [[Kenya]]
 producer-category: Washing-Station-Cooperative
 established: 1968
 varieties: SL28-SL34-Ruiru-11-Batian
@@ -460,21 +460,21 @@ Beyond coffee excellence, Kangocho Washing Station's significance lies in demons
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Kenya]], [[Origins/Kenya-Nyeri]], [[Origins/East-African-Coffee]]
+**Origins**: [[Kenya]], [[Kenya]], [[Origins/East-African-Coffee]]
 
-**Varieties**: [[Varieties/SL28]], [[Varieties/SL34]], [[Varieties/Ruiru-11]], [[Varieties/Batian]], [[Varieties/Kenyan-Varieties]]
+**Varieties**: [[Varieties/SL28]], [[Varieties/SL34]], [[Varieties/Ruiru-11]], [[Varieties/Batian]], [[Kenya]]
 
-**Processing**: [[Processing/Washed-Process]], [[Processing/Kenyan-Double-Fermentation]], [[Processing/African-Raised-Bed-Drying]]
+**Processing**: [[Processing/Washed-Process]], [[Kenya]], [[Processing/African-Raised-Bed-Drying]]
 
-**Quality**: [[Quality/Kenyan-AA-Excellence]], [[Quality/90-Plus-Scoring-Coffees]], [[Quality/Blackcurrant-Coffee-Character]]
+**Quality**: [[Kenya]], [[Quality/90-Plus-Scoring-Coffees]], [[Quality/Blackcurrant-Coffee-Character]]
 
-**Markets**: [[Markets/Nairobi-Coffee-Auction]], [[Markets/Direct-Trade-Coffee]], [[Markets/Kenyan-Coffee-Export]]
+**Markets**: [[Markets/Nairobi-Coffee-Auction]], [[Markets/Direct-Trade-Coffee]], [[Kenya]]
 
 **Social Impact**: [[Social-Impact/Smallholder-Washing-Station-Model]], [[Social-Impact/Tiny-Scale-Farming-Cooperatives]]
 
 **Challenges**: [[Challenges/Coffee-Berry-Disease]], [[Challenges/Coffee-Leaf-Rust]], [[Challenges/Land-Fragmentation]], [[Challenges/Generational-Transition-Coffee]]
 
-**Cultural Context**: [[Coffee-Culture/Kenyan-Coffee-Heritage]], [[Coffee-Culture/Kikuyu-Coffee-Farming]]
+**Cultural Context**: [[Kenya]], [[Coffee-Culture/Kikuyu-Coffee-Farming]]
 
 ---
 

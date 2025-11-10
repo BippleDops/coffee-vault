@@ -14,7 +14,7 @@ tags: [recipe-profile, v60, colombia, medium-roast, balanced]
 relationships:
   requires:
     - "[[V60 Dripper]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
 ---
 

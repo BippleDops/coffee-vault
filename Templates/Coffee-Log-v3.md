@@ -292,4 +292,4 @@ LIMIT 5
 
 ---
 
-**Navigation**: ← [[Coffee Logs]] | [[Analytics/Monthly Dashboard|Dashboard]] | [[Daily Notes/<%= currentDate %>|Today]] →
+**Navigation**: ← [[Coffee Log]] | [[Analytics/Monthly Dashboard|Dashboard]] | [[Daily Note|Today]] →

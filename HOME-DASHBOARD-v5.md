@@ -57,15 +57,15 @@ if (logs.length > 0) {
 ## 🎯 Essential Links
 
 ### Core Dashboards
-- **[[Views/Daily-Brewing-Layout/Coffee Dashboard|📊 Main Coffee Dashboard]]** - Your central hub
-- **[[Views/Learning-Education-Layout/Interactive-Visualizations-Dashboard|🎨 Visualizations]]** - Interactive charts
-- **[[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|📈 Monthly Analytics]]** - Comprehensive stats
-- **[[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|🎯 Brewing Optimizer]]** - ML recommendations
+- **[[Coffee Dashboard|📊 Main Coffee Dashboard]]** - Your central hub
+- **[[Interactive-Visualizations-Dashboard|🎨 Visualizations]]** - Interactive charts
+- **[[1-Monthly-Analytics-Dashboard|📈 Monthly Analytics]]** - Comprehensive stats
+- **[[2-Brewing-Optimization-Engine|🎯 Brewing Optimizer]]** - ML recommendations
 
 ### Quick Actions
-- **[[Templates/Coffee-Log-v3|➕ New Coffee Log]]** - Log a brew
-- **[[Templates/Bean Profile|🫘 New Bean Profile]]** - Add beans
-- **[[Templates/Quick Coffee Capture|⚡ Quick Capture]]** - Fast logging
+- **[[Coffee-Log-v3|➕ New Coffee Log]]** - Log a brew
+- **[[Bean Profile|🫘 New Bean Profile]]** - Add beans
+- **[[Quick Coffee Capture|⚡ Quick Capture]]** - Fast logging
 
 ### Database Views (Bases)
 - **[[Views/Analytics-Analysis-Layout/All-Coffee-Logs.base|📋 All Logs]]** - Sortable, filterable database
@@ -96,7 +96,7 @@ dv.list([
 ```
 
 ### Scientific References
-- **[[Scientific References/00-Scientific Content Index|🔬 Scientific Index]]** - Complete catalog
+- **[[00-Scientific Content Index|🔬 Scientific Index]]** - Complete catalog
 - **[[Scientific References/Extraction Science/|⚗️ Extraction Science]]** - Brewing science fundamentals
 - **[[Scientific References/Coffee Chemistry/|🧪 Chemistry]]** - Chemical deep-dives
 - **[[Scientific References/Roasting/|🔥 Roasting Science]]** - Roast development
@@ -106,11 +106,11 @@ dv.list([
 - **[[Scientific References/Grinding/|⚙️ Grinding Science]]** - Grinder fundamentals
 
 ### Practical Guides
-- **[[Brewing Guides/|☕ Brewing Guides]]** - 25+ method-specific instructions
+- **[[Brewing Guide|☕ Brewing Guides]]** - 25+ method-specific instructions
 - **[[Origins/|🌍 Origin Profiles]]** - 37+ geographic deep-dives
 - **[[Beans Library/|🫘 Bean Library]]** - 67+ variety profiles
 - **[[Roasters/|🏪 Roaster Profiles]]** - Specialty roaster database
-- **[[Configuration/Property-Schema|📋 Property Schema]]** - Complete reference
+- **[[Property-Schema|📋 Property Schema]]** - Complete reference
 
 ---
 
@@ -118,39 +118,39 @@ dv.list([
 
 ### Configuration
 - **[[VAULT-SYNTAX-AND-STANDARDS|📖 Syntax & Standards]]** - **NEW!** Complete reference
-- **[[Configuration/User-Configuration-Guide|⚙️ Configuration Guide]]** - Setup help
+- **[[User-Configuration-Guide|⚙️ Configuration Guide]]** - Setup help
 - **[[PLUGIN-INSTALLATION-GUIDE|🔌 Plugin Guide]]** - Installation instructions
-- **[[Configuration/Template-Framework-Standards|📐 Template Standards]]** - Development guide
+- **[[Template-Framework-Standards|📐 Template Standards]]** - Development guide
 
 ### Analytics Dashboards by Workspace
 
 **Daily Brewing Layout**
-- **[[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant|⚡ Real-Time Assistant]]** — live brew guidance
-- **[[Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard|🔧 Maintenance]]** — upkeep tracker
+- **[[9-Real-Time-Brewing-Assistant|⚡ Real-Time Assistant]]** — live brew guidance
+- **[[13-Equipment-Maintenance-Dashboard|🔧 Maintenance]]** — upkeep tracker
 
 **Analytics & Analysis Layout**
-- **[[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|📊 Monthly Analytics]]**
-- **[[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|🎯 Brewing Optimizer]]**
-- **[[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|💰 Cost Intelligence]]**
-- **[[Analytics/Analytics-Analysis-Layout/5-Quality-Predictor|🔮 Quality Predictor]]**
-- **[[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|🔗 Correlations]]**
-- **[[Analytics/Analytics-Analysis-Layout/7-Anomaly-Detection-System|🚨 Anomaly Detector]]**
-- **[[Analytics/Analytics-Analysis-Layout/8-Multi-Variable-Recommendation-Engine|🤖 Recommendations]]**
+- **[[1-Monthly-Analytics-Dashboard|📊 Monthly Analytics]]**
+- **[[2-Brewing-Optimization-Engine|🎯 Brewing Optimizer]]**
+- **[[3-Cost-Intelligence-System|💰 Cost Intelligence]]**
+- **[[5-Quality-Predictor|🔮 Quality Predictor]]**
+- **[[6-Correlation-Discovery-Engine|🔗 Correlations]]**
+- **[[7-Anomaly-Detection-System|🚨 Anomaly Detector]]**
+- **[[8-Multi-Variable-Recommendation-Engine|🤖 Recommendations]]**
 
 **Learning & Education Layout**
-- **[[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|👅 Palate Tracker]]**
-- **[[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard|🎓 Learning Path]]**
+- **[[4-Palate-Development-Tracker|👅 Palate Tracker]]**
+- **[[11-Learning-Development-Dashboard|🎓 Learning Path]]**
 
 **Supply Chain & Transparency Layout**
-- **[[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard|🌱 Supply Chain]]**
-- **[[Analytics/Supply-Chain-Layout/12-Community-Comparison-Dashboard|👥 Community]]**
+- **[[10-Supply-Chain-Transparency-Dashboard|🌱 Supply Chain]]**
+- **[[12-Community-Comparison-Dashboard|👥 Community]]**
 
 ### Workspace Bundles
-- [[Workspaces/Daily-Brewing/INDEX|Daily Brewing Workflow Bundle]]
-- [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis Bundle]]
-- [[Workspaces/Learning-Education/INDEX|Learning & Education Bundle]]
-- [[Workspaces/Supply-Chain/INDEX|Supply Chain Bundle]]
-- [[Configuration/Manual-Operations-Guide|Manual Operations Guide]] (`node Scripts/manual-review-checklist.js`)
+- [[INDEX|Daily Brewing Workflow Bundle]]
+- [[INDEX|Analytics & Analysis Bundle]]
+- [[INDEX|Learning & Education Bundle]]
+- [[INDEX|Supply Chain Bundle]]
+- [[Manual-Operations-Guide|Manual Operations Guide]] (`node Scripts/manual-review-checklist.js`)
 
 ---
 
@@ -165,15 +165,15 @@ Professional webapp with all 18 tools organized and accessible:
 - **[[Visualizations/3d-flavor-space.html|🌌 3D Flavor Space]]** - WebGL exploration
 - **[[Visualizations/supply-chain-map.html|🌱 Supply Chain Map]]** - Transparency tracking
 
-**Complete Index**: [[Views/Learning-Education-Layout/Interactive-Visualizations-Dashboard|📋 All 18 Tools]]
+**Complete Index**: [[Interactive-Visualizations-Dashboard|📋 All 18 Tools]]
 
 ---
 
 ## 📱 Mobile & Quick Access
 
 ### Mobile Templates
-- **[[Templates/Mobile Quick Capture|📱 Mobile Capture]]** - Phone-optimized
-- **[[Templates/Quick Coffee Capture|⚡ Quick Log]]** - Fast entry
+- **[[Mobile Quick Capture|📱 Mobile Capture]]** - Phone-optimized
+- **[[Quick Coffee Capture|⚡ Quick Log]]** - Fast entry
 
 ### CSS Themes
 - Coffee Vault Theme: Enabled ✅
@@ -190,9 +190,9 @@ Professional webapp with all 18 tools organized and accessible:
 - **[[VAULT-EXCELLENCE-ROADMAP|🗺️ Excellence Roadmap]]** - Implementation guide
 
 ### Advanced
-- **[[Documentation/VAULT-ARCHITECTURE-REFERENCE|🏗️ Architecture]]** - Technical deep-dive
-- **[[Scripts/AUTOMATION_MODULES_README|🤖 Automation]]** - 22 scripts explained
-- **[[Documentation/Analytics-Overview|📊 Analytics Guide]]** - ML features
+- **[[VAULT-ARCHITECTURE-REFERENCE|🏗️ Architecture]]** - Technical deep-dive
+- **[[README|🤖 Automation]]** - 22 scripts explained
+- **[[Analytics-Overview|📊 Analytics Guide]]** - ML features
 
 ---
 
@@ -270,7 +270,7 @@ if (logs.length > 0) {
 > 10 well-documented brews > 100 rushed entries. Focus on capturing what matters.
 
 > [!science] Learning Path
-> Start with [[Scientific References/Extraction Science/Coffee Brewing Control Chart|Brewing Control Chart]]—foundation of everything.
+> Start with [[Coffee Brewing Control Chart|Brewing Control Chart]]—foundation of everything.
 
 ---
 

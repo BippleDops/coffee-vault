@@ -42,11 +42,11 @@ related_equipment:
   - "[[La-Marzocco-Linea-Mini]]"
   - "[[Decent-Espresso-DE1PRO]]"
 related_concepts:
-  - "[[Water-Chemistry]]"
-  - "[[TDS]]"
-  - "[[Hardness]]"
-  - "[[Alkalinity]]"
-  - "[[Extraction]]"
+  - "[[Water-Chemistry-for-Espresso]]"
+  - "[[TDS and Extraction Yield Relationships]]"
+  - "[[Water-Hardness-Testing-Practical-Guide]]"
+  - "[[Alkalinity and pH in Brew Water]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Mineral-Content]]"
   - "[[Buffering-Capacity]]"
   - "[[Scale-Prevention]]"
@@ -686,4 +686,4 @@ The Classic Profile formulation works excellently across brewing methods and mos
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 4*
-*Related: [[Water-Chemistry]], [[TDS]], [[Extraction]], [[Hario-V60-Plastic-Dripper]], [[Chemex-Classic-8-Cup]]*
+*Related: [[Water-Chemistry-for-Espresso]], [[TDS and Extraction Yield Relationships]], [[DATA-EXTRACTION-GUIDE]], [[Hario-V60-Plastic-Dripper]], [[Chemex-Classic-8-Cup]]*

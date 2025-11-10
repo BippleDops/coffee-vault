@@ -154,7 +154,7 @@ related-topics:
 - Different extraction profile
 - Smooth, low acid
 
-**Learn More**: [[Brewing Guides]], [[Extraction Science]]
+**Learn More**: [[Brewing Guide]], [[Extraction Science]]
 
 ---
 
@@ -213,7 +213,7 @@ related-topics:
 **Brewing Science**:
 - [[Extraction Science]] - Complete extraction overview
 - [[Brewing Parameters]] - All brewing variables
-- [[Brewing Guides]] - Practical brewing techniques
+- [[Brewing Guide]] - Practical brewing techniques
 - [[Water Chemistry and Extraction]] - Water composition effects
 
 **Chemical Effects**:
@@ -237,7 +237,7 @@ related-topics:
 - [[Water Chemistry and Extraction]] - Water effects
 
 **Practical Guides**:
-- [[Brewing Guides]] - Temperature-specific techniques
+- [[Brewing Guide]] - Temperature-specific techniques
 - [[Extraction Science]] - Troubleshooting with temperature
 - [[Sensory Calibration Techniques]] - Perceiving temp effects
 

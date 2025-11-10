@@ -494,29 +494,29 @@ community-rating: 4.8
 
 **Recommended Setup** (Enthusiast - $300 total):
 - Clever Dripper Large: $25
-- [[Equipment Models/Fellow-Stagg-EKG]] kettle: $195
+- [[Equipment Model]] kettle: $195
 - Decent burr grinder: $50-150
-- [[Equipment Models/Hario-V60-Drip-Scale]]: $50
+- [[Equipment Model]]: $50
 - **Total: $270-370**
 
 **Recommended Setup** (Ultimate - $500+):
 - Clever Dripper Large: $25
-- [[Equipment Models/Fellow-Stagg-EKG]]: $195
-- [[Equipment Models/Fellow-Ode-Gen2]] grinder: $345
-- [[Equipment Models/Acaia-Lunar]] scale: $250
+- [[Equipment Model]]: $195
+- [[Equipment Model]] grinder: $345
+- [[Equipment Model]] scale: $250
 - **Total: $815 (but Clever still just $25!)**
 
 **Kettle Recommendations**:
 - Budget: Any electric kettle ($10-20)
 - Better: Variable temp kettle ($30-50)
-- Enthusiast: [[Equipment Models/Fellow-Stagg-EKG]] ($195)
+- Enthusiast: [[Equipment Model]] ($195)
 - Not required: Gooseneck (helpful but not essential for Clever)
 
 **Grinder Recommendations**:
 - Budget: Pre-ground coffee or blade grinder
 - Entry: Baratza Encore ($140)
-- Enthusiast: [[Equipment Models/Fellow-Ode-Gen2]] ($345)
-- Premium: [[Equipment Models/Baratza-Virtuoso-Plus]] ($250)
+- Enthusiast: [[Equipment Model]] ($345)
+- Premium: [[Equipment Model]] ($250)
 - Grind size: Medium (like drip coffee, not espresso-fine)
 
 **Server Options**:
@@ -895,12 +895,12 @@ The Clever proves that great coffee doesn't require complexity, expense, or mast
 **Cross-References**:
 - [[Brewing Methods/Immersion Brewing]] - Primary brewing principle
 - [[Brewing Methods/Pour Over]] - Drip drainage phase
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Alternative pour-over
-- [[Equipment Models/Aeropress-Original]] - Alternative immersion-pressure brewer
-- [[Equipment Models/Bodum-Chambord-French-Press]] - Full immersion alternative
+- [[Equipment Model]] - Alternative pour-over
+- [[Equipment Model]] - Alternative immersion-pressure brewer
+- [[Equipment Model]] - Full immersion alternative
 - [[Guides/Beginner-Brewing]] - Clever as ideal starting point
-- [[Grind Size]] - Medium grind recommendation
-- [[Extraction]] - Immersion extraction principles
-- [[Brewing Parameters/Steep Time]] - Key variable for Clever
-- [[Brewing Parameters/Water Temperature]] - Temperature considerations
+- [[Grind Size and Extraction Kinetics]] - Medium grind recommendation
+- [[DATA-EXTRACTION-GUIDE]] - Immersion extraction principles
+- [[Brewing Parameters]] - Key variable for Clever
+- [[Water Temperature]] - Temperature considerations
 - [[Paper Filters]] - Filter type and impact

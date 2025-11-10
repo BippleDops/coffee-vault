@@ -41,9 +41,9 @@ tags:
   - coffee-ceremony
   - copper-pot
 related_equipment:
-  - "[[Moka-Pot]]"
-  - "[[French-Press]]"
-  - "[[Espresso-Machine]]"
+  - "[[Moka-Pot-Medium-Roast-Classic]]"
+  - "[[French-Press-Quick-3-Minute-Method]]"
+  - "[[Cafiza-Espresso-Machine-Cleaner]]"
   - "[[Grinder-Turkish-Capable]]"
   - "[[Manual-Grinder]]"
   - "[[Electric-Turkish-Grinder]]"
@@ -55,7 +55,7 @@ related_concepts:
   - "[[Coffee-Foam]]"
   - "[[Traditional-Coffee-Culture]]"
   - "[[Middle-Eastern-Coffee]]"
-  - "[[Coffee-Ceremony]]"
+  - "[[Ethiopian-Coffee-Ceremony-Jebena]]"
   - "[[Sand-Brewing]]"
   - "[[Coffee-Fortune-Telling]]"
 ---
@@ -555,9 +555,9 @@ For those willing to acquire ultra-fine grinding capability and invest time in m
 
 ## Related Equipment
 
-- **[[Moka-Pot]]** - Stovetop espresso-style brewing with some similarities
-- **[[French-Press]]** - Another unfiltered immersion brewing method
-- **[[Espresso-Machine]]** - Fine-grind, intense coffee alternative
+- **[[Moka-Pot-Medium-Roast-Classic]]** - Stovetop espresso-style brewing with some similarities
+- **[[French-Press-Quick-3-Minute-Method]]** - Another unfiltered immersion brewing method
+- **[[Cafiza-Espresso-Machine-Cleaner]]** - Fine-grind, intense coffee alternative
 - **[[Electric-Turkish-Coffee-Maker]]** - Automated Turkish coffee preparation
 - **[[Manual-Hand-Mill]]** - Traditional grinding for Turkish coffee
 - **[[Blade-Grinder]]** - Budget option achieving Turkish fineness
@@ -571,6 +571,6 @@ For those willing to acquire ultra-fine grinding capability and invest time in m
 - **[[Coffee-Foam]]** - Formation, characteristics, and quality
 - **[[Traditional-Coffee-Culture]]** - Historical and social context
 - **[[Middle-Eastern-Coffee]]** - Regional coffee traditions and variations
-- **[[Coffee-Ceremony]]** - Ritualistic aspects of coffee preparation
+- **[[Ethiopian-Coffee-Ceremony-Jebena]]** - Ritualistic aspects of coffee preparation
 - **[[Sand-Brewing]]** - Traditional Turkish coffee brewing technique
 - **[[Coffee-Fortune-Telling]]** - Tasseography and cultural practices

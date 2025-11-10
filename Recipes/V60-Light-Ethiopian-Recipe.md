@@ -14,7 +14,7 @@ tags: [recipe-profile, v60, ethiopia, light-roast]
 relationships:
   requires:
     - "[[V60 Dripper]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
 ---
 

@@ -390,5 +390,5 @@ Guatemala is located in Central America, bordered by Mexico, Belize, Honduras, a
 
 **Last Updated**: 2025-10-24  
 **Related**: [[Colombia]], [[Costa Rica]], [[Honduras]]  
-**Best Brew Method**: [[Brewing Guides/Espresso Guide|Espresso]] or [[Brewing Guides/French Press Guide|French Press]]
+**Best Brew Method**: [[Brewing Guide|Espresso]] or [[Brewing Guide|French Press]]
 

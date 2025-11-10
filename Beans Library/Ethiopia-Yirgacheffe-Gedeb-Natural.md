@@ -1,15 +1,15 @@
 ---
 type: bean-library
 name: Ethiopia Yirgacheffe Gedeb Natural
-origin: [[Origins/Ethiopia]]
-region: [[Origins/Ethiopia-Yirgacheffe]]
+origin: [[Ethiopia]]
+region: [[Ethiopia]]
 sub-region: Gedeb
 producer: [[Producers/Gedeb-Cooperative-Union]]
 variety: Ethiopian Heirloom
 processing: [[Processing Methods/Natural Process]]
 altitude: 1,900-2,200 masl
 harvest-date: 2024-11
-roaster: [[Roasters/Onyx-Coffee-Lab]]
+roaster: [[Onyx-Coffee-Lab]]
 roast-level: Light
 roast-date: 2024-10-28
 purchase-date: 2024-11-01
@@ -18,7 +18,7 @@ rating: 95/100
 cupping-score: 89.5
 flavor-notes: [blueberry, jasmine, bergamot, stone-fruit, floral]
 body: Medium-Light
-acidity: [[Brewing Parameters/Acidity|Bright Citric]]
+acidity: [[Brewing Parameters|Bright Citric]]
 sweetness: High
 complexity: Very High
 price-per-bag: $24.00
@@ -44,7 +44,7 @@ The natural processing method employed for this coffee involves drying the whole
 
 At an altitude range of 1,900-2,200 meters above sea level, the coffee cherries ripen slowly in the cool highland climate, developing dense cellular structure and concentrated sugars that translate to heightened sweetness and complexity in the cup. The elevation also contributes to the coffee's vibrant acidity—a key component of the Yirgacheffe profile that provides structure and clarity even amidst the fruit-forward intensity of natural processing.
 
-This coffee was sourced and roasted by [[Roasters/Onyx-Coffee-Lab]], a roaster known for their meticulous sourcing of exceptional microlots and their light roast approach that prioritizes clarity and origin expression. Their treatment of this Gedeb natural exemplifies the modern specialty coffee ethos: minimal intervention in roasting to allow the inherent qualities of the green coffee to shine, careful quality control throughout the supply chain, and transparent communication about origin and processing.
+This coffee was sourced and roasted by [[Onyx-Coffee-Lab]], a roaster known for their meticulous sourcing of exceptional microlots and their light roast approach that prioritizes clarity and origin expression. Their treatment of this Gedeb natural exemplifies the modern specialty coffee ethos: minimal intervention in roasting to allow the inherent qualities of the green coffee to shine, careful quality control throughout the supply chain, and transparent communication about origin and processing.
 
 The sensory profile of this coffee is immediately arresting. The dry fragrance reveals intense notes of fresh blueberry and jasmine flowers, with underlying hints of bergamot and candied lemon peel. When water meets the grounds, the aromatics explode with fresh stone fruit—apricot and nectarine—alongside floral notes reminiscent of orange blossom and honeysuckle. The flavor follows through on the aromatic promise with layers of blueberry, blackberry, and raspberry, supported by delicate jasmine tea notes and a bright, citric acidity that provides structure. The finish is long and clean, with lingering sweetness and a subtle tannic quality that adds dimension without astringency.
 
@@ -56,7 +56,7 @@ The versatility of this coffee across brewing methods makes it particularly valu
 
 For those new to naturally processed Ethiopian coffees, this Gedeb natural serves as an ideal introduction—complex and distinctive enough to showcase what makes these coffees special, yet clean and balanced enough to be immediately approachable. For seasoned specialty coffee enthusiasts, it offers the kind of nuanced complexity and terroir expression that rewards careful brewing and mindful tasting, revealing new layers with each cup.
 
-The coffee's current availability and fresh roast date make it an excellent choice for immediate consumption, though naturally processed coffees often perform well with a brief rest period of 7-14 days post-roast to allow degassing and flavor integration. The light roast level preserves the delicate floral and fruit notes while developing enough sweetness to balance the bright acidity—a challenging equilibrium that [[Roasters/Onyx-Coffee-Lab]] has achieved with skill.
+The coffee's current availability and fresh roast date make it an excellent choice for immediate consumption, though naturally processed coffees often perform well with a brief rest period of 7-14 days post-roast to allow degassing and flavor integration. The light roast level preserves the delicate floral and fruit notes while developing enough sweetness to balance the bright acidity—a challenging equilibrium that [[Onyx-Coffee-Lab]] has achieved with skill.
 
 ## Origin Details
 
@@ -242,7 +242,7 @@ The bergamot tea note appears as a bright, complex citrus element that provides 
 
 The acidity of this coffee is bright and citric, providing essential structure to the fruit-forward flavor profile. Without this acidity, the intense fruit notes could become cloying or one-dimensional, but the vibrant acidity keeps the cup lively and refreshing. The acidity is pronounced but not sharp—it has a rounded, juicy quality rather than the piercing tartness found in some high-acidity coffees.
 
-The specific acidity type is primarily [[Brewing Parameters/Acidity|citric acid]], which provides clean, bright acidity reminiscent of lemon or grapefruit. This is complemented by malic acid (apple-like acidity) that adds a slightly softer, rounder acid note in the mid-palate. The combination creates a multi-dimensional acidity that changes character slightly from front palate to finish, maintaining interest throughout the tasting experience.
+The specific acidity type is primarily [[Brewing Parameters|citric acid]], which provides clean, bright acidity reminiscent of lemon or grapefruit. This is complemented by malic acid (apple-like acidity) that adds a slightly softer, rounder acid note in the mid-palate. The combination creates a multi-dimensional acidity that changes character slightly from front palate to finish, maintaining interest throughout the tasting experience.
 
 The acidity is well-integrated with the sweetness—rather than competing, the two elements balance and enhance each other. The high sweetness (discussed below) softens the acidity's edge, while the acidity prevents the sweetness from becoming heavy or syrupy. This balance is a hallmark of exceptional coffee and is particularly well-achieved in this lot.
 
@@ -294,7 +294,7 @@ For those keeping formal cupping notes or tracking coffees over time, this Gedeb
 
 ### Roaster Background
 
-This coffee was sourced and roasted by [[Roasters/Onyx-Coffee-Lab]], a specialty roaster based in Northwest Arkansas with a reputation for exceptional sourcing and precise, light-roast approach to coffee. Onyx has built its reputation on direct relationships with producers, competitive coffee success (multiple U.S. Barista Championship wins using Onyx coffee), and a consistent roasting philosophy that prioritizes origin expression over roast flavor development.
+This coffee was sourced and roasted by [[Onyx-Coffee-Lab]], a specialty roaster based in Northwest Arkansas with a reputation for exceptional sourcing and precise, light-roast approach to coffee. Onyx has built its reputation on direct relationships with producers, competitive coffee success (multiple U.S. Barista Championship wins using Onyx coffee), and a consistent roasting philosophy that prioritizes origin expression over roast flavor development.
 
 The Onyx approach to Ethiopian coffees is particularly well-suited to showcasing naturals like this Gedeb lot. They employ light roast profiles that preserve delicate aromatics and fruit-forward characteristics while developing enough sweetness and body to create balance. Their roasting philosophy emphasizes the green coffee quality—they believe great coffee is made at origin, and the roaster's job is to reveal that quality rather than to add flavors through roasting.
 
@@ -468,7 +468,7 @@ The longer ratio and lower pressure help prevent over-extraction and sourness wh
 
 ### Formal Cupping Assessment
 
-Professional cupping of this Gedeb natural was conducted according to Specialty Coffee Association (SCA) protocols by [[Roasters/Onyx-Coffee-Lab]] quality control team, resulting in a cupping score of 89.5 points on the 100-point scale. This score places the coffee firmly in the "specialty grade" category (defined as 80+ points) and approaches the "outstanding" designation (90+ points) reserved for truly exceptional coffees.
+Professional cupping of this Gedeb natural was conducted according to Specialty Coffee Association (SCA) protocols by [[Onyx-Coffee-Lab]] quality control team, resulting in a cupping score of 89.5 points on the 100-point scale. This score places the coffee firmly in the "specialty grade" category (defined as 80+ points) and approaches the "outstanding" designation (90+ points) reserved for truly exceptional coffees.
 
 The cupping protocol involves evaluating coffees under standardized conditions: 8.25g coffee ground medium-coarse in 150ml 93°C water, steeped for 4 minutes, then evaluated through multiple rounds of slurping to assess all aspects of the cup. The evaluation considers fragrance/aroma, flavor, aftertaste, acidity, body, balance, uniformity, clean cup, sweetness, and overall quality, with defects deducted from the total score.
 
@@ -528,7 +528,7 @@ The choice between washed and natural Yirgacheffe often comes down to preference
 
 At $24.00 for 340 grams (12 ounces), this coffee costs approximately $70.59 per kilogram or $32 per pound. This places it in the premium specialty coffee category, above everyday specialty offerings ($15-20/lb) but below ultra-premium competition lots or experimental processing coffees ($40-80/lb).
 
-The price-to-quality ratio is favorable. The 89.5 cupping score indicates exceptional quality that might command $35-40/lb from some specialty roasters. [[Roasters/Onyx-Coffee-Lab]] is known for reasonable pricing relative to quality, making their coffees accessible to serious home brewers while maintaining premium quality standards.
+The price-to-quality ratio is favorable. The 89.5 cupping score indicates exceptional quality that might command $35-40/lb from some specialty roasters. [[Onyx-Coffee-Lab]] is known for reasonable pricing relative to quality, making their coffees accessible to serious home brewers while maintaining premium quality standards.
 
 Comparing to other naturally processed Ethiopian coffees in the market:
 - Generic "Ethiopian Natural" from commodity specialty roasters: $16-20/lb, cupping scores typically 82-85
@@ -552,12 +552,12 @@ The home-brewing cost advantage is substantial—approximately 75-80% less expen
 
 ### Availability and Accessibility
 
-[[Roasters/Onyx-Coffee-Lab]] distributes primarily through online sales, with their coffees available for shipment throughout the United States. This direct-to-consumer model ensures freshness (coffee is typically roasted within days of ordering) and reasonable pricing without retail markup. The limitation is that you can't typically find Onyx coffees in grocery stores or most cafes—you need to order directly from their website.
+[[Onyx-Coffee-Lab]] distributes primarily through online sales, with their coffees available for shipment throughout the United States. This direct-to-consumer model ensures freshness (coffee is typically roasted within days of ordering) and reasonable pricing without retail markup. The limitation is that you can't typically find Onyx coffees in grocery stores or most cafes—you need to order directly from their website.
 
 The seasonal nature of Ethiopian coffee means this specific lot is available for a limited time—typically 2-4 months from the time it arrives in the United States and clears customs until the supply is exhausted. Harvest timing (October-January in Gedeb) means fresh Ethiopian naturals typically arrive in the U.S. market in early spring and are available through summer. By fall, most roasters have moved to new crop or are selling older inventory.
 
 For those seeking to purchase this or similar Gedeb naturals:
-- Order directly from [[Roasters/Onyx-Coffee-Lab]] while in stock
+- Order directly from [[Onyx-Coffee-Lab]] while in stock
 - Check other quality roasters known for Ethiopian sourcing: [[Roasters/Counter-Culture]], [[Roasters/Heart-Coffee]], [[Roasters/George-Howell]]
 - Look for "Gedeb" specifically on roaster websites, as this micro-region designation indicates similar quality and profile
 - Consider subscribing to Onyx's rotating offering to ensure access to similar quality coffees as seasons change
@@ -570,7 +570,7 @@ In the crowded specialty coffee market, this Gedeb natural competes primarily on
 
 **Terroir specificity**: The Gedeb designation provides geographic precision beyond generic "Yirgacheffe" labeling, appealing to coffee enthusiasts who value traceability and terroir expression.
 
-**Consistent quality**: [[Roasters/Onyx-Coffee-Lab]]'s reputation for reliable sourcing and quality control means customers can purchase with confidence that the coffee will match expectations.
+**Consistent quality**: [[Onyx-Coffee-Lab]]'s reputation for reliable sourcing and quality control means customers can purchase with confidence that the coffee will match expectations.
 
 **Roast approach**: The light roast profile optimized for origin expression rather than roast flavor appeals to modern specialty coffee preferences, particularly among pour-over enthusiasts.
 
@@ -586,7 +586,7 @@ The premium price for this coffee includes ethical considerations that many spec
 
 **Fair Trade certification**: The Fair Trade premium (a minimum additional payment per pound) funds community development projects chosen by the cooperative—typically schools, healthcare, or agricultural improvements.
 
-**Direct relationships**: [[Roasters/Onyx-Coffee-Lab]]'s direct sourcing model typically means they purchase through importers who have direct relationships with the Gedeb Cooperative Union, reducing middlemen and ensuring more value reaches origin.
+**Direct relationships**: [[Onyx-Coffee-Lab]]'s direct sourcing model typically means they purchase through importers who have direct relationships with the Gedeb Cooperative Union, reducing middlemen and ensuring more value reaches origin.
 
 For consumers who consider sustainability and ethics in purchasing decisions, the premium price represents value beyond cup quality—it's an investment in farming communities and sustainable agriculture practices.
 
@@ -594,19 +594,19 @@ For consumers who consider sustainability and ethics in purchasing decisions, th
 
 ### Origin Connections
 
-This coffee connects to broader knowledge about [[Origins/Ethiopia]] as the birthplace of coffee and home to unparalleled genetic diversity in Coffea arabica. Understanding Ethiopian coffee culture—the traditional coffee ceremony, the importance of coffee in rural livelihoods, the forest coffee systems—provides context for appreciating coffees like this Gedeb natural.
+This coffee connects to broader knowledge about [[Ethiopia]] as the birthplace of coffee and home to unparalleled genetic diversity in Coffea arabica. Understanding Ethiopian coffee culture—the traditional coffee ceremony, the importance of coffee in rural livelihoods, the forest coffee systems—provides context for appreciating coffees like this Gedeb natural.
 
-More specifically, the coffee represents the [[Origins/Ethiopia-Yirgacheffe]] region, one of the most celebrated coffee origins in the world. Yirgacheffe's reputation for floral complexity, bright acidity, and tea-like body is built on centuries of cultivation in ideal terroir conditions. This Gedeb lot expresses the Yirgacheffe character while showing the specific influences of the Gedeb district's microclimate and processing traditions.
+More specifically, the coffee represents the [[Ethiopia]] region, one of the most celebrated coffee origins in the world. Yirgacheffe's reputation for floral complexity, bright acidity, and tea-like body is built on centuries of cultivation in ideal terroir conditions. This Gedeb lot expresses the Yirgacheffe character while showing the specific influences of the Gedeb district's microclimate and processing traditions.
 
 ### Processing Method Deep Dive
 
 The [[Processing Methods/Natural Process]] employed for this coffee represents the oldest coffee processing technique and remains dominant in Ethiopia and other regions with dry harvest-season climates. Understanding natural processing—the fermentation dynamics, the quality control challenges, the flavor development pathways—illuminates why this coffee tastes the way it does and how processing influences cup quality.
 
-Comparing natural processing to other methods ([[Processing Methods/Washed Process]], [[Processing Methods/Honey Process]], [[Processing Methods/Anaerobic Fermentation]]) reveals how processing choices interact with terroir and variety to create the final flavor profile. This Gedeb coffee would taste radically different if washed, honey processed, or anaerobically fermented despite coming from the same trees in the same location.
+Comparing natural processing to other methods ([[Processing Methods/Washed Process]], [[Processing Methods/Honey Process]], [[Anaerobic Fermentation]]) reveals how processing choices interact with terroir and variety to create the final flavor profile. This Gedeb coffee would taste radically different if washed, honey processed, or anaerobically fermented despite coming from the same trees in the same location.
 
 ### Variety Exploration
 
-The Ethiopian Heirloom varieties in this coffee connect to broader questions about [[Coffee Varieties/Ethiopian-Landraces]] and coffee genetic diversity. The ongoing research into Ethiopian coffee genetics, the efforts to catalog and preserve native varieties, and the challenges of balancing productivity with quality preservation all influence coffees like this one.
+The Ethiopian Heirloom varieties in this coffee connect to broader questions about [[Ethiopia]] and coffee genetic diversity. The ongoing research into Ethiopian coffee genetics, the efforts to catalog and preserve native varieties, and the challenges of balancing productivity with quality preservation all influence coffees like this one.
 
 Comparing heirloom varieties to cultivated varieties like [[Coffee Varieties/Bourbon]], [[Coffee Varieties/Geisha]], or [[Coffee Varieties/SL28]] reveals how genetic differences influence flavor potential, growing characteristics, and cup quality.
 
@@ -614,11 +614,11 @@ Comparing heirloom varieties to cultivated varieties like [[Coffee Varieties/Bou
 
 The brewing recommendations for this coffee connect to specific equipment choices that optimize its expression:
 
-- [[Equipment Models/Hario-V60]]: The recommended pour-over device for clarity and brightness
-- [[Equipment Models/Kalita-Wave]]: Alternative pour-over for more forgiving, even extraction
-- [[Equipment Models/Aeropress]]: Versatile brewing for different flavor emphases
-- [[Equipment Models/Comandante-C40]]: Recommended hand grinder for grind consistency
-- [[Equipment Models/Baratza-Virtuoso]]: Quality electric grinder at accessible price point
+- [[Equipment Model]]: The recommended pour-over device for clarity and brightness
+- [[Equipment Model]]: Alternative pour-over for more forgiving, even extraction
+- [[Equipment Model]]: Versatile brewing for different flavor emphases
+- [[Equipment Model]]: Recommended hand grinder for grind consistency
+- [[Equipment Model]]: Quality electric grinder at accessible price point
 
 ### Recipe Connections
 
@@ -626,7 +626,7 @@ Specific brewing recipes optimized for naturally processed Ethiopian coffees:
 
 - [[Recipes/V60-Light-Roast-Recipe]]: Pour-over recipe optimized for light-roasted, fruit-forward coffees
 - [[Recipes/Aeropress-Bright-Fruity-Recipe]]: Aeropress recipe emphasizing acidity and fruit notes
-- [[Recipes/Cold-Brew-Ethiopian-Natural]]: Cold brew approach for natural Ethiopian coffees
+- [[Ethiopia]]: Cold brew approach for natural Ethiopian coffees
 - [[Recipes/Flash-Brew-Iced-Coffee]]: Japanese iced coffee method for preserved aromatics
 
 ### Scientific and Technical References
@@ -643,26 +643,26 @@ Understanding the science behind this coffee's characteristics:
 Learning more about the people behind this coffee:
 
 - [[Producers/Gedeb-Cooperative-Union]]: The producer organization that processed this coffee
-- [[Roasters/Onyx-Coffee-Lab]]: The roaster's philosophy, sourcing practices, and full coffee lineup
-- [[Coffee Events/Ethiopian-Coffee-Harvest-Season]]: The annual cycle of Ethiopian coffee production
-- [[Cupping Sessions/Ethiopian-Naturals-Comparison]]: Comparative tasting of multiple Ethiopian natural lots
+- [[Onyx-Coffee-Lab]]: The roaster's philosophy, sourcing practices, and full coffee lineup
+- [[Coffee Event]]: The annual cycle of Ethiopian coffee production
+- [[Cupping Session]]: Comparative tasting of multiple Ethiopian natural lots
 
 ### Tasting and Development
 
 Using this coffee for skill development and palate training:
 
-- [[Coffee Goals/Identify-Ethiopian-Terroir]]: Training your palate to recognize Yirgacheffe characteristics
-- [[Cupping Sessions/Natural-vs-Washed-Comparison]]: Side-by-side tasting of different processing methods
-- [[Coffee Goals/Master-Pour-Over-Technique]]: Using high-quality coffee to refine brewing skills
-- [[Coffee Goals/Understand-Natural-Process-Flavors]]: Calibrating your palate to natural process flavor markers
+- [[Coffee Goal]]: Training your palate to recognize Yirgacheffe characteristics
+- [[Cupping Session]]: Side-by-side tasting of different processing methods
+- [[Coffee Goal]]: Using high-quality coffee to refine brewing skills
+- [[Coffee Goal]]: Calibrating your palate to natural process flavor markers
 
 ### Market and Industry Context
 
 Broader coffee industry connections:
 
-- [[Coffee Events/SCA-Expo]]: Industry events where coffees like this are showcased
+- [[Coffee Event]]: Industry events where coffees like this are showcased
 - [[Scientific References/Coffee-Grading-Systems]]: Understanding cupping scores and quality assessment
-- [[Origins/Ethiopian-Coffee-Regulations]]: The Ethiopian Coffee Exchange and export system
+- [[Ethiopia]]: The Ethiopian Coffee Exchange and export system
 - [[Coffee Varieties/Heirloom-Preservation-Efforts]]: Initiatives to protect Ethiopian coffee diversity
 
 ---

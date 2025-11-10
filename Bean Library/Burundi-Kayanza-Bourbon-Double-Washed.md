@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Burundi Kayanza Bourbon Double-Washed
-origin: "[[Origins/Burundi]]"
-region: [[Origins/Burundi-Kayanza]]
+origin: "[[Burundi]]"
+region: [[Burundi]]
 variety: [[Coffee Varieties/Bourbon]]
 processing: [[Processing Methods/Double-Washed]]
 roast-level: light-medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Burundi Kayanza Bourbon Double-Washed
 
-**Origin**: [[Origins/Burundi|Burundi]]  
-**Region**: [[Origins/Burundi-Kayanza|Kayanza Province]]  
+**Origin**: [[Burundi|Burundi]]  
+**Region**: [[Burundi|Kayanza Province]]  
 **Variety**: [[Coffee Varieties/Bourbon|Red Bourbon]]  
 **Processing**: [[Processing Methods/Double-Washed|Double Fermentation Washed]]  
 **Grade**: A1 (Burundi grading)  

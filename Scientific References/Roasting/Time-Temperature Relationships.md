@@ -455,6 +455,6 @@ Mastering these relationships enables:
 
 - [[Roasting Science]]
 - [[Roast Control]]
-- [[Profile Development]]
+- [[Roast Profile Development]]
 - [[Quality Assurance]]
 

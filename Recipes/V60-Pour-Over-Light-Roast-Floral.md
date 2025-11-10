@@ -14,11 +14,11 @@ tags: [recipe-profile, v60, light-roast, floral, ethiopian, clarity, pour-over]
 relationships:
   requires:
     - "[[V60 Dripper]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
-    - "[[Scale]]"
-  works-with: [[Ethiopia]], [[Kenya]], [[Panama]], [[Geisha]]
-  complements: [[Light Roast]], [[Washed Processing]], [[Floral Notes]]
+    - "[[OXO-Barista-Brain-Scale]]"
+  works-with: [[Ethiopia]], [[Kenya]], [[Panama]], [[2025-10-23-Panama-Geisha-48]]
+  complements: [[Light Roast]], [[Washed Processing Complete Guide]], [[Floral Notes]]
 ---
 
 # 📖 Recipe: V60 Pour Over Light Roast Floral
@@ -1421,10 +1421,10 @@ Next: Try at 1:17 ratio for even more clarity
 - [[V60 Dripper]] - Equipment details
 - [[Ethiopia]] - Origin information
 - [[Light Roast]] - Roasting concepts
-- [[Washed Processing]] - Processing method
+- [[Washed Processing Complete Guide]] - Processing method
 - [[Floral Notes]] - Flavor chemistry
-- [[Extraction]] - Extraction science
-- [[Water Quality]] - Water chemistry
+- [[DATA-EXTRACTION-GUIDE]] - Extraction science
+- [[Sodium and Brew Water Quality]] - Water chemistry
 
 **Recommended Reading**:
 - "The Coffee Dictionary" by Maxwell Colonna-Dashwood

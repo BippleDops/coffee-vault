@@ -13,8 +13,8 @@ avg-rating: 4.8
 tags: [recipe-profile, chemex, iced-coffee, flash-brew, summer, entertaining]
 relationships:
   requires:
-    - "[[Chemex]]"
-    - "[[Grinder]]"
+    - "[[Chemex-Medium-Roast-Balanced]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
 ---
 

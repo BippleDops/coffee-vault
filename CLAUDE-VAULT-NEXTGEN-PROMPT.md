@@ -53,7 +53,7 @@ Deliver a vault that feels like a purpose-built knowledge operating system:
 - Create `Documentation/CONTENT-GOVERNANCE.md` with editorial guidelines, sourcing standards, update cadence.
 - Expand scientific references with deeper coverage on flavor chemistry, sensory perception, processing science (minimum +50 notes prioritized by ontology gaps).
 - Develop `Templates/sensory-experiment-template.md`, `Templates/processing-playbook-template.md`, `Templates/training-plan-template.md` to support future expansion.
-- Ensure all reversible links (e.g., `[[Organic Acids]]`, `[[Perceived Acidity]]`, `[[Chlorogenic Acids]]`) have fully enriched hub notes with reference sections.
+- Ensure all reversible links (e.g., `[[Organic Acids]]`, `[[Perceived Acidity]]`, `[[Chlorogenic Acids and Antioxidants]]`) have fully enriched hub notes with reference sections.
 - Embed related Datacore queries under each major concept to surface related recipes, beans, events automatically.
 
 ### Pillar F — Workspace Experience & Customization

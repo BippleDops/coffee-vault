@@ -2076,32 +2076,32 @@ Coffee is worth this level of dedication and celebration. The people growing, im
 
 ### Related Beans Purchased
 
-- [[Beans Library/Ethiopia-Hambela-Natural-Royal-Coffee]] - Strawberry cream bomb
-- [[Beans Library/Colombia-Huila-Microlot-Cafe-Imports]] - Clean, sweet, balanced
-- [[Beans Library/Kenya-Nyeri-AA-Dormans]] - Blackcurrant intensity
-- [[Beans Library/Guatemala-Anaerobic-Experimental-Azahar]] - Wild, funky, unique
-- [[Beans Library/Panama-Geisha-Ninety-Plus]] - Floral complexity, legendary
+- [[Ethiopia]] - Strawberry cream bomb
+- [[Colombia]] - Clean, sweet, balanced
+- [[Kenya]] - Blackcurrant intensity
+- [[Guatemala]] - Wild, funky, unique
+- [[Panama]] - Floral complexity, legendary
 
 ### Related Events
 
-- [[Coffee Events/Re-co-Symposium-2024-Seattle]] - Pre-event research conference
-- [[Coffee Events/SCA-Gala-Awards-2024]] - Awards ceremony and celebration
-- [[Coffee Events/Women-in-Coffee-Breakfast-2024]] - Networking and community
-- [[Coffee Events/Barista-Guild-Party-Seattle-2024]] - Evening celebration
+- [[Coffee Event]] - Pre-event research conference
+- [[Coffee Event]] - Awards ceremony and celebration
+- [[Coffee Event]] - Networking and community
+- [[Coffee Event]] - Evening celebration
 
 ### Related Goals
 
-- [[Coffee Goals/Achieve-Q-Grader-Certification]] - Pursue within 6 months
-- [[Coffee Goals/Visit-Coffee-Origin]] - Plan Colombia trip
-- [[Coffee Goals/Master-SCA-Cupping-Protocol]] - Implement consistently
-- [[Coffee Goals/Build-Direct-Trade-Relationships]] - Leverage connections made
-- [[Coffee Goals/Attend-SCE-2025]] - Already registered
+- [[Coffee Goal]] - Pursue within 6 months
+- [[Coffee Goal]] - Plan Colombia trip
+- [[Coffee Goal]] - Implement consistently
+- [[Coffee Goal]] - Leverage connections made
+- [[Coffee Goal]] - Already registered
 
 ### Related Cupping Sessions
 
-- [[Cupping Sessions/Ethiopia-Hambela-First-Roast]] - Roasting expo green coffee
-- [[Cupping Sessions/Portland-Coffee-Collective-Monthly]] - Local community cupping
-- [[Cupping Sessions/Onyx-Virtual-Cupping]] - Online session with Sarah Chen
+- [[Cupping Session]] - Roasting expo green coffee
+- [[Cupping Session]] - Local community cupping
+- [[Cupping Session]] - Online session with Sarah Chen
 
 ### Related People and Connections
 
@@ -2119,31 +2119,31 @@ Coffee is worth this level of dedication and celebration. The people growing, im
 
 ### Equipment Models
 
-- [[Equipment Models/La-Marzocco-Leva-X]] - Pressure profiling lever machine
-- [[Equipment Models/Mahlkonig-E65S-GBW]] - Grind-by-weight grinder
-- [[Equipment Models/Decent-Espresso-DE1]] - Advanced espresso technology
-- [[Equipment Models/Kruve-Coffee-Sifter]] - Particle distribution analysis
+- [[Equipment Model]] - Pressure profiling lever machine
+- [[Equipment Model]] - Grind-by-weight grinder
+- [[Equipment Model]] - Advanced espresso technology
+- [[Equipment Model]] - Particle distribution analysis
 
 ### Brewing Guides
 
-- [[Brewing Guides/SCA-Cupping-Protocol]] - Learned at workshop
-- [[Brewing Guides/Espresso-Pressure-Profiling]] - Scott Rao techniques
-- [[Brewing Guides/Competition-Brewing-Standards]] - From Brewers Cup
+- [[Brewing Guide]] - Learned at workshop
+- [[Brewing Guide]] - Scott Rao techniques
+- [[Brewing Guide]] - From Brewers Cup
 
 ### Roasters Visited
 
-- [[Roasters/Onyx-Coffee-Lab]] - Arkansas, competition focus
-- [[Roasters/Heart-Coffee-Roasters]] - Portland, quality pioneers
+- [[Onyx-Coffee-Lab]] - Arkansas, competition focus
+- [[Heart-Coffee-Roasters]] - Portland, quality pioneers
 - [[Roasters/Olympia-Coffee-Roasting]] - Washington, sustainability leaders
-- [[Roasters/Intelligentsia-Coffee]] - Multi-location, direct trade pioneers
+- [[Intelligentsia-Coffee]] - Multi-location, direct trade pioneers
 
 ### Origins Explored
 
-- [[Origins/Ethiopia-Guji-Zone]] - Hambela coffee sourcing
-- [[Origins/Colombia-Huila]] - Microlot discovery
-- [[Origins/Kenya-Nyeri]] - AA coffee excellence
-- [[Origins/Guatemala-Antigua]] - Experimental processing
-- [[Origins/Panama-Boquete]] - Gesha variety homeland
+- [[Ethiopia]] - Hambela coffee sourcing
+- [[Colombia]] - Microlot discovery
+- [[Kenya]] - AA coffee excellence
+- [[Guatemala]] - Experimental processing
+- [[Panama]] - Gesha variety homeland
 
 ---
 

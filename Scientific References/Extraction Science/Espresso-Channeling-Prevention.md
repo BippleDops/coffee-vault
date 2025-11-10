@@ -379,8 +379,8 @@ Pull 3-5 shots with identical recipes:
 - [[Espresso-Extraction-Science]] - Extraction fundamentals
 - [[Percolation-Flow-Dynamics]] - Flow physics
 - [[Particle-Size-Distribution-Measurement]] - Grind quality
-- [[Espresso-Puck-Preparation-Science]] - Distribution techniques
-- [[Grinder-Burr-Alignment-and-Maintenance]] - Grind consistency
+- [[Puck-Preparation-Science]] - Distribution techniques
+- [[Burr-Alignment-and-Maintenance]] - Grind consistency
 - [[Espresso-Dialing-In-Framework]] - Systematic optimization
 
 ## Further Reading

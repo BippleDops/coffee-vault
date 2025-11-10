@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Ketiara Cooperative
 country: [[Origins/Indonesia]]
-region: [[Origins/Indonesia-Sumatra-Gayo]]
+region: [[Sumatra]]
 producer-category: Womens-Cooperative
 established: 2009
 varieties: Timor-Hybrid-Ateng-Gayo-1-Lini-S-795
@@ -458,17 +458,17 @@ Beyond social impact, Ketiara has gained international recognition for producing
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Indonesia]], [[Origins/Indonesia-Sumatra-Gayo]], [[Origins/Indonesia-Sumatra]], [[Origins/Southeast-Asian-Coffee]]
+**Origins**: [[Origins/Indonesia]], [[Sumatra]], [[Sumatra]], [[Origins/Southeast-Asian-Coffee]]
 
-**Processing**: [[Processing/Wet-Hulling-Giling-Basah]], [[Processing/Washed-Process]], [[Processing/Sumatran-Processing-Methods]]
+**Processing**: [[Processing/Wet-Hulling-Giling-Basah]], [[Processing/Washed-Process]], [[Sumatra]]
 
-**Varieties**: [[Varieties/Timor-Hybrid]], [[Varieties/Catimor-Ateng]], [[Varieties/Disease-Resistant-Varieties]]
+**Varieties**: [[Timor-Hybrid]], [[Varieties/Catimor-Ateng]], [[Varieties/Disease-Resistant-Varieties]]
 
 **Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Fair-Trade-Coffee]], [[Quality/Organic-Coffee]]
 
 **Social Impact**: [[Social-Impact/Womens-Cooperatives]], [[Social-Impact/Gender-Equality-in-Coffee]], [[Social-Impact/Fair-Trade-Model]], [[Social-Impact/Womens-Empowerment-Coffee]]
 
-**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Certifications/Rainforest-Alliance-Certification]]
+**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Rainforest-Alliance-Certification]]
 
 **Markets**: [[Markets/Fair-Trade-Markets]], [[Markets/Specialty-Coffee-Direct-Trade]], [[Markets/Cooperative-Coffees]]
 

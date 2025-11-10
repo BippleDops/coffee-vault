@@ -959,13 +959,13 @@ For pour-over enthusiasts wanting portable quality, travelers requiring lightwei
 ---
 
 **Cross-References:**
-- [[Equipment Models/Comandante-C40-MK4]] - Premium competitor, marginal improvement
-- [[Equipment Models/1Zpresso-JX-Pro]] - Espresso-focused alternative
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Perfect pour-over pairing
-- [[Equipment Models/Aeropress-Original]] - Travel brewing companion
-- [[Equipment Models/Flair-58-Espresso-Maker]] - Travel espresso pairing (hand grinder + manual espresso)
-- [[Equipment Models/Hario-V60-Drip-Scale]] - Complete travel setup with scale
+- [[Equipment Model]] - Premium competitor, marginal improvement
+- [[Equipment Model]] - Espresso-focused alternative
+- [[Equipment Model]] - Perfect pour-over pairing
+- [[Equipment Model]] - Travel brewing companion
+- [[Equipment Model]] - Travel espresso pairing (hand grinder + manual espresso)
+- [[Equipment Model]] - Complete travel setup with scale
 - [[Brewing Methods/Pour-Over]] - Primary use case strength
 - [[Brewing Methods/Espresso]] - Secondary capability (adequate)
-- [[Brewing Parameters/Grind-Size]] - 42-click adjustment precision
+- [[Brewing Parameters]] - 42-click adjustment precision
 - [[Coffee Science/Extraction]] - Grind consistency critical variable

@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Man Lao Village Cooperative
 country: [[Origins/China]]
-region: [[Origins/China-Yunnan]]
+region: [[China-Yunnan]]
 producer-category: Village-Cooperative
 established: 2011
 varieties: Catimor-Typica-Bourbon-Geisha
@@ -709,7 +709,7 @@ Traditional washed processing with quality refinements:
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/China]], [[Origins/China-Yunnan]], [[Origins/Asia-Coffee-Region]], [[Origins/Emerging-Origins]]
+**Origins**: [[Origins/China]], [[China-Yunnan]], [[Origins/Asia-Coffee-Region]], [[Origins/Emerging-Origins]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/Natural-Process]], [[Processing/Honey-Process]], [[Processing/Anaerobic-Fermentation]]
 

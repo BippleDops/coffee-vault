@@ -62,7 +62,7 @@
 
 ```markdown
 - [ ] Order coffee beans from [[Roaster Name]] 🛒 📅 YYYY-MM-DD #bean-acquisition
-- [ ] Research new single-origin beans from [[Origin]] 🔍 📅 YYYY-MM-DD #bean-research
+- [ ] Research new single-origin beans from [[00-Origins-Index]] 🔍 📅 YYYY-MM-DD #bean-research
 - [ ] Compare prices for [[Bean Name]] across roasters 💰 📅 YYYY-MM-DD #bean-research
 - [ ] Check for roaster sales and discounts 🎁 📅 YYYY-MM-DD #bean-acquisition
 - [ ] Reorder favorite bean: [[Bean Name]] 🛒 ⏫ 📅 YYYY-MM-DD #bean-acquisition
@@ -142,7 +142,7 @@
 ```markdown
 - [ ] Watch James Hoffmann video: [[Video Title]] 📺 📅 YYYY-MM-DD #learning
 - [ ] Read article: [[Article Title]] 📄 📅 YYYY-MM-DD #learning
-- [ ] Read chapter [[X]] of [[Book Name]] 📚 📅 YYYY-MM-DD #learning
+- [ ] Read chapter [[VAULT-EXPANSION-STRATEGY]] of [[Book Name]] 📚 📅 YYYY-MM-DD #learning
 - [ ] Take notes on [[Topic]] 📝 📅 YYYY-MM-DD #learning
 - [ ] Research coffee science: [[Topic]] 🔬 📅 YYYY-MM-DD #learning
 ```
@@ -177,9 +177,9 @@
 - [ ] Test variable: [[Variable Name]] ☕ 📅 YYYY-MM-DD #experiment
 - [ ] Side-by-side comparison: [[Variable A]] vs [[Variable B]] ☕ 📅 YYYY-MM-DD #experiment
 - [ ] Test grind size: [[Coarser/Finer]] than baseline ☕ 📅 YYYY-MM-DD #experiment
-- [ ] Test water temperature: [[Temperature]] 🌡️ 📅 YYYY-MM-DD #experiment
-- [ ] Test ratio: [[Ratio]] vs baseline ☕ 📅 YYYY-MM-DD #experiment
-- [ ] Test brew time: [[Time]] vs baseline ⏱️ 📅 YYYY-MM-DD #experiment
+- [ ] Test water temperature: [[Bonavita-Variable-Temperature-Kettle]] 🌡️ 📅 YYYY-MM-DD #experiment
+- [ ] Test ratio: [[Northern-Coffee-Corporation-Zambia]] vs baseline ☕ 📅 YYYY-MM-DD #experiment
+- [ ] Test brew time: [[Timemore-Sculptor-Grinder]] vs baseline ⏱️ 📅 YYYY-MM-DD #experiment
 ```
 
 ### Experiment Documentation
@@ -198,7 +198,7 @@
 ### Creating Content
 
 ```markdown
-- [ ] Write brewing guide for [[Method]] 📝 📅 YYYY-MM-DD #documentation
+- [ ] Write brewing guide for [[V60-Quick-3-Pour-Method]] 📝 📅 YYYY-MM-DD #documentation
 - [ ] Create bean profile for [[Bean Name]] 🫘 📅 YYYY-MM-DD #bean-documentation
 - [ ] Write equipment review: [[Equipment Name]] ⭐ 📅 YYYY-MM-DD #equipment-review
 - [ ] Document recipe: [[Recipe Name]] 📝 📅 YYYY-MM-DD #documentation
@@ -266,13 +266,13 @@
 - [ ] Share brewing guide on [[Platform]] 📢 📅 YYYY-MM-DD #sharing
 - [ ] Post coffee photo on Instagram 📷 📅 YYYY-MM-DD #sharing
 - [ ] Write blog post about [[Topic]] ✍️ 📅 YYYY-MM-DD #sharing
-- [ ] Create video tutorial for [[Technique]] 📹 📅 YYYY-MM-DD #sharing
+- [ ] Create video tutorial for [[Flat-White-Microfoam-Technique]] 📹 📅 YYYY-MM-DD #sharing
 ```
 
 ### Community
 
 ```markdown
-- [ ] Help [[Person]] learn [[Technique]] 🤝 📅 YYYY-MM-DD #teaching
+- [ ] Help [[Persona-PROFESSIONAL]] learn [[Flat-White-Microfoam-Technique]] 🤝 📅 YYYY-MM-DD #teaching
 - [ ] Respond to coffee questions on [[Platform]] 💬 📅 YYYY-MM-DD #community
 - [ ] Attend virtual coffee tasting event 🍷 📅 YYYY-MM-DD #community
 - [ ] Join coffee discussion: [[Topic]] 💬 📅 YYYY-MM-DD #community
@@ -299,7 +299,7 @@
 1. **Copy the task** you need
 2. **Replace placeholders**:
    - `YYYY-MM-DD` → Actual date
-   - `[[Name]]` → Actual note link
+   - `[[Vietnamese-Phin-Filter-Guide]]` → Actual note link
    - `[[Topic]]` → Specific topic
 3. **Adjust recurrence** if needed
 4. **Set priority** (⏫ high, 🔼 medium, 🔽 low)

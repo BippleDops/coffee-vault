@@ -2305,32 +2305,32 @@ Exceptional event. Slight deduction only for logistics challenges (internet conn
 ## 🔗 Related Content and Resources
 
 ### Related Beans and Origins
-- [[Beans Library/Ethiopia-Buku-Sayisa-Champion]] - 93.84-point champion coffee
-- [[Beans Library/Ethiopia-Duromina-Natural]] - 2nd place COE winner
-- [[Origins/Ethiopia-Guji-Zone]] - Champion coffee origin
-- [[Origins/Ethiopia-Yirgacheffe]] - Premium Ethiopian region
-- [[Origins/Ethiopia-Sidama]] - Traditional quality region
+- [[Ethiopia]] - 93.84-point champion coffee
+- [[Ethiopia]] - 2nd place COE winner
+- [[Ethiopia]] - Champion coffee origin
+- [[Ethiopia]] - Premium Ethiopian region
+- [[Ethiopia]] - Traditional quality region
 
 ### Related People
 - [[People/Haji-Aman-Sayisa-Champion-Producer]] - 2024 COE Ethiopia Champion
 - [[People/Marcus-Chen-COE-Judge]] - Head judge, competition expertise
-- [[People/Sarah-Mitchell-Ethiopian-Coffee-Expert]] - Jury member, sourcing knowledge
+- [[Ethiopia]] - Jury member, sourcing knowledge
 
 ### Related Events
-- [[Coffee Events/Specialty-Coffee-Expo-2024-Seattle]] - Comparison event
-- [[Coffee Events/World-Barista-Championship-2024]] - Competition context
-- [[Coffee Events/Future-COE-Events]] - Other origin COE competitions
+- [[Coffee Event]] - Comparison event
+- [[Coffee Event]] - Competition context
+- [[Coffee Event]] - Other origin COE competitions
 
 ### Related Processing and Science
 - [[Scientific References/Processing/Natural-Processing-Mastery]] - From observations
-- [[Scientific References/Processing/Ethiopian-Coffee-Varieties]] - Heirloom diversity
+- [[Ethiopia]] - Heirloom diversity
 - [[Scientific References/Quality/Elevation-Impact]] - Quality correlation
-- [[Brewing Guides/Cupping-Protocol-SCA]] - COE evaluation method
+- [[Brewing Guide]] - COE evaluation method
 
 ### Related Producers and Regions
 - [[Producers/Buku-Able-Washing-Station]] - Champion coffee source
 - [[Producers/Duromina-Cooperative]] - 2nd place source
-- [[Regions/Ethiopian-Coffee-Growing-Regions]] - Geographic diversity
+- [[Ethiopia]] - Geographic diversity
 
 ---
 

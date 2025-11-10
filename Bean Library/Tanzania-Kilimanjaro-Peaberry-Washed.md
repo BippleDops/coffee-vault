@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Tanzania Kilimanjaro Peaberry Washed
-origin: "[[Origins/Tanzania]]"
-region: [[Origins/Tanzania-Kilimanjaro]]
+origin: "[[Tanzania]]"
+region: [[Tanzania]]
 variety: [[Coffee Varieties/Mixed-African-Heirlooms]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: light-medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Tanzania Kilimanjaro Peaberry Washed
 
-**Origin**: [[Origins/Tanzania|Tanzania]]
-**Region**: [[Origins/Tanzania-Kilimanjaro|Mount Kilimanjaro]]
+**Origin**: [[Tanzania|Tanzania]]
+**Region**: [[Tanzania|Mount Kilimanjaro]]
 **Variety**: [[Coffee Varieties/Mixed-African-Heirlooms|African Heirlooms (Bourbon, Kent, Typica)]]
 **Processing**: [[Processing Methods/Washed-Process|Washed]]
 **Grade**: Peaberry (PB)
@@ -724,13 +724,13 @@ Tanzania Kilimanjaro Peaberry has strong market reputation for:
 ## 🔗 Related Content
 
 ### Related Profiles
-- [[Kenya-AA-SL28-Washed]]
+- [[Kenya]]
 - [[Rwanda-Nyamasheke-Red-Bourbon-Washed]]
 - [[Burundi-Kayanza-Bourbon-Double-Washed]]
 
 ### Origins
-- [[Origins/Tanzania]]
-- [[Origins/Tanzania-Kilimanjaro]]
+- [[Tanzania]]
+- [[Tanzania]]
 - [[Origins/East-Africa]]
 
 ### Varieties

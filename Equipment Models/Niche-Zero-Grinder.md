@@ -764,10 +764,10 @@ community-rating: 4.7
 - **Filter Roasts**: Good to very good (light roasts show more fines)
 
 **Bean Origin Compatibility**:
-- [[Origins/Ethiopia]] - Excellent (handles dense beans well)
-- [[Origins/Kenya]] - Excellent (dense bean performance)
-- [[Origins/Colombia]] - Excellent (medium density)
-- [[Origins/Brazil]] - Excellent (all densities)
+- [[Ethiopia]] - Excellent (handles dense beans well)
+- [[Kenya]] - Excellent (dense bean performance)
+- [[Colombia]] - Excellent (medium density)
+- [[Brazil]] - Excellent (all densities)
 - All origins: No compatibility issues
 
 ### Equipment Compatibility
@@ -1585,10 +1585,10 @@ For its target market—home espresso enthusiasts who value quality, workflow, a
 **Tags**: equipment-model, niche, grinder, electric-grinder, single-dose, conical-burr, espresso
 
 **Cross-References**:
-- [[Equipment Models/Eureka-Mignon-Specialita]] - Primary competitor
-- [[Equipment Models/DF64-Grinder]] - Budget alternative
-- [[Equipment Models/Fellow-Ode-Gen2]] - Filter-focused alternative
-- [[Equipment Models/Comandante-C40-MK4]] - Manual grinder alternative
+- [[Equipment Model]] - Primary competitor
+- [[Equipment Model]] - Budget alternative
+- [[Equipment Model]] - Filter-focused alternative
+- [[Equipment Model]] - Manual grinder alternative
 - [[Brewing Methods/Espresso]] - Primary use case
-- [[Brewing Parameters/Grind Size]] - Optimization guidance
+- [[Brewing Parameters]] - Optimization guidance
 - [[Guides/Dialing-In-Espresso]] - Workflow integration

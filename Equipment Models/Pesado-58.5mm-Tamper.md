@@ -448,13 +448,13 @@ Some users prefer lighter or heavier tampers based on personal preference. 500g 
 ## Related Notes & Cross-References
 
 ### Espresso Equipment & Workflow
-- [[Equipment Models/VST-Precision-Baskets]]
-- [[Equipment Models/IMS-Precision-Baskets]]
-- [[Equipment Models/Weiss-Distribution-Tool-WDT]]
-- [[Equipment Models/Acaia-Pyxis]]
-- [[Equipment Models/Niche-Zero]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 - [[Brewing Methods/Espresso]]
-- [[Brewing Parameters/Dose]]
+- [[Brewing Parameters]]
 
 ### Technique & Science
 - [[Techniques/Espresso-Puck-Preparation]]
@@ -464,7 +464,7 @@ Some users prefer lighter or heavier tampers based on personal preference. 500g 
 - [[Scientific References/Flow-Dynamics]]
 
 ### Competition & Professional
-- [[Coffee Events/World-Barista-Championship]]
+- [[Coffee Event]]
 - [[Techniques/Competition-Preparation]]
 
 **Tags**: #equipment/tamper #espresso-tools #precision #pesado #barista-tools #specialty-coffee #competition-equipment #premium-tools #puck-preparation #workflow-optimization

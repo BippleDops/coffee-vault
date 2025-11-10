@@ -1442,7 +1442,7 @@ community-rating: 4.7
 - [[Cafetto-Espresso-Clean]] - Backflushing detergent
 
 **Upgrade Path**:
-- From: [[Gaggia-Classic-Pro]], [[Rancilio-Silvia]]
+- From: [[Gaggia-Classic-Pro]], [[Rancilio-Silvia-Pro-X]]
 - To: [[ECM-Synchronika]], [[Profitec-Pro-700]]
 
 **Alternative Considerations**:
@@ -1472,7 +1472,7 @@ community-rating: 4.7
 - [[Thermal-Stability]] - Consistent extraction
 
 **Espresso Fundamentals**:
-- [[Espresso-Extraction]] - Brewing science
+- [[Master-Espresso-Extraction]] - Brewing science
 - [[Brew-Pressure]] - Pressure profiling basics
 - [[Grind-Size]] - Critical variable
 - [[Dose-Distribution-Tamp]] - Puck preparation
@@ -1493,8 +1493,8 @@ community-rating: 4.7
 
 **Brewing Methods**:
 - [[Espresso-Brewing]] - Espresso fundamentals
-- [[Milk-Steaming]] - Microfoam technique
-- [[Latte-Art]] - Pouring patterns
+- [[Milk-Steaming-Technique-Guide]] - Microfoam technique
+- [[Learn-Latte-Art-Fundamentals]] - Pouring patterns
 - [[Home-Barista]] - Home espresso journey
 
 ---

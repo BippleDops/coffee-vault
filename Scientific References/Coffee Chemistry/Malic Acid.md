@@ -159,7 +159,7 @@ related-topics:
 - Contributes to positive cupping notes
 - Desirable in specialty coffee
 
-**Learn More**: [[Sensory Science]], [[Cupping Protocol]]
+**Learn More**: [[Sensory Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -180,7 +180,7 @@ related-topics:
 - Understand acid complexity
 - Appreciate round tartness vs. sharp citric
 
-**Learn More**: [[Brewing Guides]], [[Sensory Calibration Techniques]]
+**Learn More**: [[Brewing Guide]], [[Sensory Calibration Techniques]]
 
 ---
 
@@ -199,14 +199,14 @@ related-topics:
 - [[Acetic Acid]] - Harsh alternative
 
 **Processing & Origin**:
-- [[Processing Methods]] - How processing affects malic
+- [[Coffee Processing Methods - Complete Guide]] - How processing affects malic
 - [[Origin Chemistry]] - Regional malic differences
 - [[Coffee Origins]] - Origin-specific characteristics
 
 **Brewing & Extraction**:
 - [[Water Chemistry and Extraction]] - Malic extraction control
 - [[Extraction Science]] - Extraction principles
-- [[Brewing Guides]] - Practical brewing techniques
+- [[Brewing Guide]] - Practical brewing techniques
 
 ---
 

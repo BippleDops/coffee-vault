@@ -415,5 +415,5 @@ Understanding varietals helps you appreciate origin character, make informed pur
 ---
 
 **Last Updated**: 2025-10-24  
-**Related**: [[Origins/]] (each origin has signature varietals), [[Coffee Processing Methods]] (variety affects processing)
+**Related**: [[Origins/]] (each origin has signature varietals), [[Coffee Processing Methods - Complete Guide]] (variety affects processing)
 

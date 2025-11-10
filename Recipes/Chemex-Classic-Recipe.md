@@ -13,8 +13,8 @@ avg-rating: 4.6
 tags: [recipe-profile, chemex, classic-method, clean-cup, elegant]
 relationships:
   requires:
-    - "[[Chemex]]"
-    - "[[Grinder]]"
+    - "[[Chemex-Medium-Roast-Balanced]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
 ---
 

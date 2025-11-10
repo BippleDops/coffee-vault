@@ -156,29 +156,29 @@ tags:
 ### Daily Brewing
 1. [[HOME-DASHBOARD]]
 2. `Templates/Coffee-Log-v5.md`
-3. [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]
+3. [[9-Real-Time-Brewing-Assistant]]
 
 ### Weekly Review
-1. [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]]
-2. [[Views/Analytics-Analysis-Layout/Advanced-Analytics-Base]]
-3. Review goals in [[Coffee Goals/]]
+1. [[1-Monthly-Analytics-Dashboard]]
+2. [[Advanced-Analytics-Base]]
+3. Review goals in [[Coffee Goal]]
 
 ### Research & Planning
 1. [[Beans Library/]] - Explore beans
 2. [[Producers/]] - Research supply chains
-3. [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]
+3. [[10-Supply-Chain-Transparency-Dashboard]]
 
 ### Learning
 1. [[Scientific References/]]
-2. [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
-3. [[Brewing Guides/]]
+2. [[11-Learning-Development-Dashboard]]
+3. [[Brewing Guide]]
 
 ### Workspace Bundles
-- [[Workspaces/Daily-Brewing/INDEX|Daily Brewing]]
-- [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis]]
-- [[Workspaces/Learning-Education/INDEX|Learning & Education]]
-- [[Workspaces/Supply-Chain/INDEX|Supply Chain]]
-- [[Configuration/Manual-Operations-Guide|Manual Operations Guide]] (`node Scripts/manual-review-checklist.js`)
+- [[INDEX|Daily Brewing]]
+- [[INDEX|Analytics & Analysis]]
+- [[INDEX|Learning & Education]]
+- [[INDEX|Supply Chain]]
+- [[Manual-Operations-Guide|Manual Operations Guide]] (`node Scripts/manual-review-checklist.js`)
 
 ---
 

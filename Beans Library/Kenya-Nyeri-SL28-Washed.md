@@ -1,11 +1,11 @@
 ---
 type: bean-library
 name: Kenya Nyeri SL28 Washed
-origin: [[Origins/Kenya]]
-region: [[Origins/Kenya-Nyeri]]
+origin: [[Kenya]]
+region: [[Kenya]]
 producer: [[Producers/Gatomboya-Farmers-Cooperative]]
 variety: [[Coffee Varieties/SL28]]
-processing: [[Processing Methods/Kenya-Washed-Double-Fermentation]]
+processing: [[Kenya]]
 altitude: 1,700-1,850 masl
 harvest-date: 2024-01
 roaster: [[Roasters/George-Howell]]
@@ -17,7 +17,7 @@ rating: 94/100
 cupping-score: 89.0
 flavor-notes: [blackcurrant, tomato, grapefruit, brown-sugar, complex-acidity]
 body: Full
-acidity: [[Brewing Parameters/Acidity|Phosphoric Bright]]
+acidity: [[Brewing Parameters|Phosphoric Bright]]
 sweetness: High
 complexity: Very High
 price-per-bag: $26.00

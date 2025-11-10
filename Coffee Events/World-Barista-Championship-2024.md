@@ -2583,9 +2583,9 @@ The World Barista Championship is more than competition - it's celebration of co
 ## 🔗 Related Content and Resources
 
 ### Related Events
-- [[Coffee Events/Specialty-Coffee-Expo-2024-Seattle]] - SCE 2024 comparison
-- [[Coffee Events/National-Barista-Championship-Events]] - National qualifier pathway
-- [[Coffee Events/WBC-2025-Dubai]] - Future attendance plans
+- [[Coffee Event]] - SCE 2024 comparison
+- [[Coffee Event]] - National qualifier pathway
+- [[Coffee Event]] - Future attendance plans
 
 ### Related People
 - [[People/Mikael-Jasin-Indonesia-WBC-Champion]] - 2024 Champion, Tanamera Coffee
@@ -2596,34 +2596,34 @@ The World Barista Championship is more than competition - it's celebration of co
 - [[People/Gwilym-Davies-Coffee-Legend]] - 2009 Champion, current judge
 
 ### Related Coffee/Origins
-- [[Beans Library/Ethiopia-Hambela-Anaerobic-Frinsa]] - Mikael's championship coffee
-- [[Beans Library/Kenya-Nyeri-AA-SL28]] - Marcus Berg's coffee
-- [[Origins/Ethiopia-Guji-Zone]] - Championship coffee origin
-- [[Origins/Kenya-Coffee-Regions]] - Multiple competitors' origin
-- [[Origins/Colombia-Specialty-Coffee]] - Competition coffee powerhouse
-- [[Producers/Frinsa-Collective-Ethiopia]] - Championship coffee producer
+- [[Ethiopia]] - Mikael's championship coffee
+- [[Kenya]] - Marcus Berg's coffee
+- [[Ethiopia]] - Championship coffee origin
+- [[Kenya]] - Multiple competitors' origin
+- [[Colombia]] - Competition coffee powerhouse
+- [[Ethiopia]] - Championship coffee producer
 
 ### Related Techniques
-- [[Brewing Guides/Pressure-Profiling-Espresso]] - Championship technique
+- [[Brewing Guide]] - Championship technique
 - [[Scientific References/Fermentation/Anaerobic-Processing]] - Mikael's coffee processing
-- [[Brewing Guides/Competition-Espresso-Preparation]] - Championship standards
-- [[Brewing Guides/Milk-Beverage-Innovation]] - Creative milk courses
+- [[Brewing Guide]] - Championship standards
+- [[Brewing Guide]] - Creative milk courses
 - [[Techniques/Molecular-Gastronomy-Coffee]] - Spherification and signatures
 - [[Scientific References/Extraction/Espresso-Science]] - Competition-level understanding
 
 ### Related Equipment
-- [[Equipment Models/La-Marzocco-Leva]] - Championship espresso machine
-- [[Equipment Models/Mahlkonig-E80-Supreme]] - Competition grinder
-- [[Equipment Models/Acaia-Lunar-Scale]] - Precision measurement
-- [[Equipment Models/Decent-Espresso-Profiling]] - Pressure profiling pioneer
+- [[Equipment Model]] - Championship espresso machine
+- [[Equipment Model]] - Competition grinder
+- [[Equipment Model]] - Precision measurement
+- [[Equipment Model]] - Pressure profiling pioneer
 
 ### Related Goals
-- [[Coffee Goals/Attend-WBC-2025-Dubai]] - Already registered
-- [[Coffee Goals/Develop-Competition-Level-Skills]] - Inspired by WBC
-- [[Coffee Goals/Build-International-Coffee-Network]] - WBC connections
-- [[Coffee Goals/Visit-Coffee-Origins]] - Ethiopia trip planning (Mikael's coffee origin)
-- [[Coffee Goals/Explore-WCE-Judge-Certification]] - Long-term aspiration
-- [[Coffee Goals/Visit-Korean-Coffee-Scene]] - Seoul trip planning (Spring 2025)
+- [[Coffee Goal]] - Already registered
+- [[Coffee Goal]] - Inspired by WBC
+- [[Coffee Goal]] - WBC connections
+- [[Coffee Goal]] - Ethiopia trip planning (Mikael's coffee origin)
+- [[Coffee Goal]] - Long-term aspiration
+- [[Coffee Goal]] - Seoul trip planning (Spring 2025)
 
 ### Geographic/Cultural
 - [[Travel/Busan-Korea-Coffee-Scene]] - Host city specialty coffee

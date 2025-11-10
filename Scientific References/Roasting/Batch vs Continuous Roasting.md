@@ -289,7 +289,7 @@ Understanding helps:
 ## Tags
 
 - [[Roasting Science]]
-- [[Commercial Roasting]]
-- [[Equipment]]
-- [[Production]]
+- [[Commercial Roasting Equipment]]
+- [[Equipment-Maintenance-Log]]
+- [[Smoke Production and Management]]
 

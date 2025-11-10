@@ -692,9 +692,9 @@ Buy the plastic version. Learn to use it properly (watch James Hoffmann's video)
 **Cross-References**:
 - [[Brewing Methods/Pour Over]] - Primary brewing method
 - [[Brewing Methods/V60]] - Specific technique
-- [[Equipment Models/Fellow-Stagg-EKG]] - Ideal kettle pairing
-- [[Equipment Models/Fellow-Ode-Gen2]] - Excellent grinder pairing
+- [[Equipment Model]] - Ideal kettle pairing
+- [[Equipment Model]] - Excellent grinder pairing
 - [[Guides/Dialing-In-V60]] - Technique optimization
 - [[Recipes/V60-Pour-Over-Light-Roast]] - Recipe examples
-- [[Brewing Parameters/Water Temperature]] - Critical variable
-- [[Brewing Parameters/Grind Size]] - Critical variable
+- [[Water Temperature]] - Critical variable
+- [[Brewing Parameters]] - Critical variable

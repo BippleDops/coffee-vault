@@ -797,13 +797,13 @@ community-rating: 4.5
 **Perfect Pairings**:
 - [[Flair-Espresso]] - Manual lever espresso (ideal pairing)
 - [[Aeropress-Original]] - Travel brewing (portable setup)
-- [[Hario-V60]] - Pour-over brewing (excellent pour-over grinding)
+- [[Hario-V60-Plastic-Dripper]] - Pour-over brewing (excellent pour-over grinding)
 - [[Acaia-Lunar]] - Espresso dosing scale (precision workflow)
 
 **Manual Grinder Alternatives**:
-- [[Comandante-C40]] - Premium competitor (similar tier)
+- [[Comandante-C40-MK4]] - Premium competitor (similar tier)
 - [[1Zpresso-JX-Pro]] - Modern successor (currently available)
-- [[Orphan-Espresso-Lido-E]] - Direct successor (espresso-focused)
+- [[Orphan-Espresso-Lido-ET]] - Direct successor (espresso-focused)
 - [[Orphan-Espresso-Lido-ET]] - Travel successor (compact)
 
 **Electric Grinder Comparison**:

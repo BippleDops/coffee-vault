@@ -884,7 +884,7 @@ community-rating: 4.4
 **Profile 2: Single-Dose Purist**:
 - **Situation**: Wants zero retention, single-dose workflow exclusively
 - **Why not**: 1-3g retention frustrating for single-dosing
-- **Better choice**: [[Niche-Zero]] or [[Fellow-Ode-Gen-2]]
+- **Better choice**: [[Niche-Zero-Grinder]] or [[Fellow-Ode-Gen-2]]
 
 **Profile 3: Ultra-Premium Espresso Focus**:
 - **Situation**: Competitive-level espresso, ultra-light roasts, ultimate clarity
@@ -1339,14 +1339,14 @@ community-rating: 4.4
 **Essential Pairings**:
 - [[Gaggia-Classic-Pro]] - Entry espresso machine match
 - [[Breville-Bambino-Plus]] - Compact espresso pairing
-- [[Hario-V60]] - Pour-over brewing (Vario Plus excels)
+- [[Hario-V60-Plastic-Dripper]] - Pour-over brewing (Vario Plus excels)
 - [[Acaia-Pearl-Scale]] - Weighing doses (no built-in scale)
 - [[Normcore-Calibrated-Tamper]] - Espresso workflow
 - [[Fellow-Stagg-Kettle]] - Pour-over companion
 
 **Upgrade Considerations**:
 - From: [[Baratza-Encore]], [[Breville-Smart-Grinder-Pro]]
-- To: [[Eureka-Mignon-Specialita]], [[Niche-Zero]] (espresso focus)
+- To: [[Eureka-Mignon-Specialita]], [[Niche-Zero-Grinder]] (espresso focus)
 
 **Alternative Options**:
 - [[Baratza-Sette-270Wi]] - Same price, espresso-focused

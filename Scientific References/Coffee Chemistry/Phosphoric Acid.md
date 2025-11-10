@@ -100,7 +100,7 @@ related-topics:
 - Limited volcanic soil regions
 - Not replicated elsewhere
 
-**Learn More**: [[Coffee Origins]], [[Origins/Kenya]]
+**Learn More**: [[Coffee Origins]], [[Kenya]]
 
 ---
 
@@ -147,7 +147,7 @@ related-topics:
 - Stable across hardness ranges
 - Reproducible signature
 
-**Learn More**: [[Extraction Science]], [[Brewing Guides]]
+**Learn More**: [[Extraction Science]], [[Brewing Guide]]
 
 ---
 
@@ -171,7 +171,7 @@ related-topics:
 - "Soft yet vibrant"
 - "Kenyan character"
 
-**Learn More**: [[Sensory Science]], [[Cupping Protocol]]
+**Learn More**: [[Sensory Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -201,7 +201,7 @@ related-topics:
 - Explore Kenyan offerings
 - Learn origin stories
 
-**Learn More**: [[Brewing Guides]], [[Sensory Calibration Techniques]]
+**Learn More**: [[Brewing Guide]], [[Sensory Calibration Techniques]]
 
 ---
 
@@ -215,17 +215,17 @@ related-topics:
 
 **Origins**:
 - [[Coffee Origins]] - Origin-specific characteristics
-- [[Origins/Kenya]] - Kenyan comprehensive profile
+- [[Kenya]] - Kenyan comprehensive profile
 - [[Origin Chemistry]] - Terroir and chemistry
 
 **Quality & Sensory**:
 - [[Sensory Science]] - Sophisticated flavor evaluation
-- [[Cupping Protocol]] - Identifying premium characteristics
+- [[SCA Cupping Protocol Step-by-Step]] - Identifying premium characteristics
 - [[Palate Training Exercises]] - Developing recognition
 
 **Brewing & Extraction**:
 - [[Extraction Science]] - Consistent extraction
-- [[Brewing Guides]] - Showcasing phosphoric
+- [[Brewing Guide]] - Showcasing phosphoric
 - [[Water Chemistry and Extraction]] - Stable characteristics
 
 ---
@@ -238,13 +238,13 @@ related-topics:
 - [[Perceived Acidity]] - Sensory experience of phosphoric
 
 **Origin Guides**:
-- [[Origins/Kenya]] - Kenyan comprehensive profile
+- [[Kenya]] - Kenyan comprehensive profile
 - [[Coffee Origins]] - Origin chemistry and terroir
 - [[Origin Chemistry]] - Geological influences
 
 **Practical Guides**:
 - [[Roasting Science]] - Preserving phosphoric characteristics
-- [[Brewing Guides]] - Showcasing Kenyan coffee
+- [[Brewing Guide]] - Showcasing Kenyan coffee
 - [[Sensory Calibration Techniques]] - Recognizing phosphoric
 
 ---

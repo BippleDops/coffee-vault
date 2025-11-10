@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Kayon Mountain Farm
-country: [[Origins/Ethiopia]]
-region: [[Origins/Ethiopia-Guji]]
+country: [[Ethiopia]]
+region: [[Ethiopia]]
 producer-category: Family-Farm-Washing-Station
 established: 2012
 varieties: Ethiopian-Heirloom-74110-74112
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Kayon Mountain Farm
 
 **Type**: Family Farm + Washing Station
-**Location**: [[Origins/Ethiopia-Guji|Guji Zone, Ethiopia]]
+**Location**: [[Ethiopia|Guji Zone, Ethiopia]]
 **Established**: 2012
 
 ---

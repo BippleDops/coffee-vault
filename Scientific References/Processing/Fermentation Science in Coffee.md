@@ -243,9 +243,9 @@ Understanding fermentation helps:
 
 ## Tags
 
-- [[Processing]]
-- [[Fermentation]]
+- [[processing-playbook-template]]
+- [[Yeast Inoculation in Coffee Fermentation]]
 - [[Microbiology]]
-- [[Quality Control]]
-- [[Coffee Science]]
+- [[Post-Harvest Quality Control]]
+- [[Coffee Science & Extraction]]
 

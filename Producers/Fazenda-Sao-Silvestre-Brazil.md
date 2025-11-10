@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Fazenda São Silvestre
-country: [[Origins/Brazil]]
-region: [[Origins/Brazil-Sul-de-Minas]]
+country: [[Brazil]]
+region: [[Brazil]]
 producer-category: Estate-Farm
 established: 1890
 varieties: Mundo-Novo-Catuai-Yellow-Bourbon-Icatu
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Fazenda São Silvestre
 
 **Type**: Large Estate Farm
-**Location**: [[Origins/Brazil-Sul-de-Minas|Sul de Minas, Brazil]]
+**Location**: [[Brazil|Sul de Minas, Brazil]]
 **Established**: 1890
 
 ---

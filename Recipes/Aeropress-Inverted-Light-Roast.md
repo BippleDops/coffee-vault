@@ -13,11 +13,11 @@ avg-rating: 4.8
 tags: [recipe-profile, aeropress, inverted, light-roast, clean, precision]
 relationships:
   requires:
-    - "[[AeroPress]]"
-    - "[[Grinder]]"
-    - "[[Kettle]]"
-    - "[[Scale]]"
-  works-with: [[Light Roast]], [[Ethiopia]], [[Kenya]], [[Washed Processing]]
+    - "[[Aeropress-Inverted-Light-Roast]]"
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[Hario-Buono-Kettle]]"
+    - "[[OXO-Barista-Brain-Scale]]"
+  works-with: [[Light Roast]], [[Ethiopia]], [[Kenya]], [[Washed Processing Complete Guide]]
   complements: [[Clean Finish]], [[Bright Acidity]], [[Clarity]]
 ---
 
@@ -955,7 +955,7 @@ Adjustments: ____
 ## 🔗 Related Resources
 
 **Vault Links**:
-- [[AeroPress]] - Equipment guide
+- [[Aeropress-Inverted-Light-Roast]] - Equipment guide
 - [[Light Roast]] - Roast level details
 - [[Ethiopia]] - Ethiopian coffee
 - [[Inverted Method]] - Technique guide

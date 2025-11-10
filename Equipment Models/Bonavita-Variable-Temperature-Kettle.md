@@ -990,21 +990,21 @@ community-rating: 4.4
 **Temperature Science**:
 - [[Water-Temperature]] - Temperature impact on extraction
 - [[Brew-Temperature]] - Optimal temps by roast level
-- [[Temperature-Stability]] - Why precision matters (or doesn't)
+- [[Temperature-Stability-in-Brewing]] - Why precision matters (or doesn't)
 - [[Extraction-Temperature]] - Solubility, flavor development
 
 **Pour-Over Technique**:
 - [[Pour-Over-Brewing]] - Pour-over fundamentals, gooseneck essential
-- [[V60-Technique]] - V60 method, Bonavita gooseneck perfect
+- [[Master-V60-Technique]] - V60 method, Bonavita gooseneck perfect
 - [[Kalita-Wave-Technique]] - Kalita brewing, temperature control
-- [[Bloom-Phase]] - Blooming, temperature impact (200°F+ ideal)
+- [[The-Bloom-Phase-CO2-Release]] - Blooming, temperature impact (200°F+ ideal)
 - [[Pour-Pattern]] - Spiral, pulse, center pours (gooseneck enables)
-- [[Flow-Rate]] - Flow control, Bonavita 3-5 g/sec ideal
+- [[Flow-Rate-Control-Techniques]] - Flow control, Bonavita 3-5 g/sec ideal
 
 **Water Quality**:
 - [[Brew-Water]] - Water science, mineral content
-- [[Water-Hardness]] - Hardness impact, descaling necessity
-- [[Water-Filtration]] - Filtration importance, Brita minimum
+- [[Water-Hardness-Testing-Practical-Guide]] - Hardness impact, descaling necessity
+- [[water-filtration-systems]] - Filtration importance, Brita minimum
 - [[Third-Wave-Water-Classic]] - Water optimization, extraction enhancement
 
 **Extraction Variables**:

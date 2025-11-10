@@ -159,7 +159,7 @@ related-topics:
 - Coffee competitions favor citric-driven profiles
 - Consumer perception: "bright = premium"
 
-**Learn More**: [[Sensory Science]], [[Cupping Protocol]]
+**Learn More**: [[Sensory Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -180,7 +180,7 @@ related-topics:
 - Understand quality implications
 - Calibrate palate to citric characteristics
 
-**Learn More**: [[Brewing Guides]], [[Sensory Calibration Techniques]]
+**Learn More**: [[Brewing Guide]], [[Sensory Calibration Techniques]]
 
 ---
 
@@ -195,17 +195,17 @@ related-topics:
 - [[Malic Acid]] - Similar quality marker, fruity
 - [[Quinic Acid]] - Opposite effect, bitter-sour
 - [[Phosphoric Acid]] - Sophisticated, soft alternative
-- [[Chlorogenic Acids]] - Parent compounds
+- [[Chlorogenic Acids and Antioxidants]] - Parent compounds
 
 **Processing & Origin**:
-- [[Processing Methods]] - How processing affects citric
+- [[Coffee Processing Methods - Complete Guide]] - How processing affects citric
 - [[Origin Chemistry]] - Regional citric differences
 - [[Coffee Origins]] - Origin-specific characteristics
 
 **Brewing & Extraction**:
 - [[Water Chemistry and Extraction]] - Citric extraction control
 - [[Extraction Science]] - Extraction principles
-- [[Brewing Guides]] - Practical brewing techniques
+- [[Brewing Guide]] - Practical brewing techniques
 
 ---
 

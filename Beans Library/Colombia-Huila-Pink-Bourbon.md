@@ -1,8 +1,8 @@
 ---
 type: bean-library
 name: Colombia Huila Pink Bourbon
-origin: [[Origins/Colombia]]
-region: [[Origins/Colombia-Huila]]
+origin: [[Colombia]]
+region: [[Colombia]]
 municipality: Pitalito
 producer: [[Producers/Finca-El-Paraiso]]
 variety: [[Coffee Varieties/Pink-Bourbon]]
@@ -18,7 +18,7 @@ rating: 93/100
 cupping-score: 88.0
 flavor-notes: [stone-fruit, peach, apricot, brown-sugar, floral, citrus]
 body: Medium
-acidity: [[Brewing Parameters/Acidity|Malic Bright]]
+acidity: [[Brewing Parameters|Malic Bright]]
 sweetness: Very High
 complexity: High
 price-per-bag: $22.00
@@ -553,14 +553,14 @@ The cost per cup (approximately $1.29 at 20g per cup) is excellent value compare
 ## Related Notes and Connections
 
 ### Origin Deep Dive
-- [[Origins/Colombia]] - Colombia's coffee history, regions, and production systems
-- [[Origins/Colombia-Huila]] - Huila's emergence as Colombia's premier specialty region
-- [[Scientific References/Colombian-Coffee-Geography]] - How Colombia's topography creates diverse microclimates
+- [[Colombia]] - Colombia's coffee history, regions, and production systems
+- [[Colombia]] - Huila's emergence as Colombia's premier specialty region
+- [[Colombia]] - How Colombia's topography creates diverse microclimates
 
 ### Variety Exploration
 - [[Coffee Varieties/Pink-Bourbon]] - Comprehensive Pink Bourbon profile
 - [[Coffee Varieties/Yellow-Bourbon]] - Comparison to other Bourbon mutations
-- [[Coffee Varieties/Ethiopian-Landraces]] - Pink Bourbon's genetic origins
+- [[Ethiopia]] - Pink Bourbon's genetic origins
 - [[Coffee Varieties/Geisha]] - Comparison to other distinctive varieties
 
 ### Processing Methods
@@ -570,24 +570,24 @@ The cost per cup (approximately $1.29 at 20g per cup) is excellent value compare
 
 ### Producer Connections
 - [[Producers/Finca-El-Paraiso]] - Farm profile and philosophy
-- [[Coffee Events/Colombian-Harvest-Season]] - Annual production cycle
-- [[Scientific References/Colombian-Coffee-Cooperatives]] - Producer organization models
+- [[Coffee Event]] - Annual production cycle
+- [[Colombia]] - Producer organization models
 
 ### Equipment and Recipes
-- [[Equipment Models/Hario-V60]] - Recommended pour-over device
-- [[Equipment Models/Espresso-Machines]] - Espresso equipment guide
+- [[Equipment Model]] - Recommended pour-over device
+- [[Equipment Model]] - Espresso equipment guide
 - [[Recipes/V60-Light-Medium-Roast]] - Optimized pour-over recipe
 - [[Recipes/Espresso-Fruity-Profile]] - Espresso recipe for fruit-forward coffees
 
 ### Roaster Context
 - [[Roasters/Heart-Coffee]] - Roaster profile and sourcing philosophy
-- [[Coffee Events/SCA-Roasting-Standards]] - Professional roasting protocols
+- [[Coffee Event]] - Professional roasting protocols
 - [[Scientific References/Roasting-Chemistry]] - Maillard reactions and flavor development
 
 ### Comparative Tasting
-- [[Cupping Sessions/Colombian-Regional-Comparison]] - Comparing different Colombian origins
-- [[Cupping Sessions/Variety-Focused-Tasting]] - Exploring how variety affects cup quality
-- [[Coffee Goals/Identify-Variety-Characteristics]] - Training palate to recognize varieties
+- [[Cupping Session]] - Comparing different Colombian origins
+- [[Cupping Session]] - Exploring how variety affects cup quality
+- [[Coffee Goal]] - Training palate to recognize varieties
 
 ---
 

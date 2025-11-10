@@ -48,10 +48,10 @@ related_equipment:
   - "[[Fellow-Stagg-EKG]]"
   - "[[Acaia-Lunar]]"
 related_concepts:
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Water-Temperature]]"
   - "[[Brewing-Ratio]]"
-  - "[[Pre-Infusion]]"
+  - "[[Pre-Infusion and Blooming Science]]"
   - "[[Filter-Coffee]]"
   - "[[Grind-Size]]"
   - "[[Coffee-Freshness]]"
@@ -1496,4 +1496,4 @@ The Connoisseur proves that automatic drip brewers can produce excellent coffee 
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 3*
-*Related: [[Hario-V60-Plastic-Dripper]], [[Chemex-Classic-8-Cup]], [[Baratza-Virtuoso-Plus]], [[Fellow-Ode-Gen2]], [[Water-Temperature]], [[Extraction]]*
+*Related: [[Hario-V60-Plastic-Dripper]], [[Chemex-Classic-8-Cup]], [[Baratza-Virtuoso-Plus]], [[Fellow-Ode-Gen2]], [[Water-Temperature]], [[DATA-EXTRACTION-GUIDE]]*

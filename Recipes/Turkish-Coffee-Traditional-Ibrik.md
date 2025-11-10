@@ -14,9 +14,9 @@ tags: [recipe-profile, turkish-coffee, ibrik, cezve, traditional, ultra-fine, un
 relationships:
   requires:
     - "[[Turkish Coffee Pot]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Heat Source]]"
-  works-with: [[Turkey]], [[Middle East]], [[Dark Roast]], [[Spiced Coffee]]
+  works-with: [[Turkey]], [[Middle East]], [[Second Crack and Dark Roast Development]], [[Spiced Coffee]]
   complements: [[Turkish Coffee Culture]], [[Cardamom]], [[Unfiltered Coffee]]
 ---
 

@@ -72,7 +72,7 @@ related-topics:
 - **Perception**: Unpleasant, reduces quality
 - **Application**: None - defect to fix
 
-**Learn More**: [[Sensory Science]], [[Cupping Protocol]]
+**Learn More**: [[Sensory Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -154,7 +154,7 @@ related-topics:
 - **Washed process**: Cleaner
 - **Premium varietals**: Balanced profiles
 
-**Learn More**: [[Coffee Origins]], [[Processing Methods]]
+**Learn More**: [[Coffee Origins]], [[Coffee Processing Methods - Complete Guide]]
 
 ---
 
@@ -204,7 +204,7 @@ related-topics:
 - Evaluate balance
 - Understand sources
 
-**Learn More**: [[Brewing Guides]], [[Cupping Protocol]]
+**Learn More**: [[Brewing Guide]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -213,7 +213,7 @@ related-topics:
 **Sensory Science**:
 - [[Perceived Acidity]] - Complementary taste quality
 - [[Sensory Science]] - Complete sensory evaluation
-- [[Cupping Protocol]] - Systematic tasting
+- [[SCA Cupping Protocol Step-by-Step]] - Systematic tasting
 - [[Palate Training Exercises]] - Developing recognition
 
 **Chemistry**:
@@ -225,7 +225,7 @@ related-topics:
 **Brewing & Extraction**:
 - [[Extraction Science]] - Controlling extraction
 - [[Water Temperature]] - Temperature effects
-- [[Brewing Guides]] - Practical brewing
+- [[Brewing Guide]] - Practical brewing
 - [[Water Chemistry and Extraction]] - Water effects
 
 ---
@@ -239,8 +239,8 @@ related-topics:
 
 **Practical Guides**:
 - [[Sensory Calibration Techniques]] - Recognizing bitterness types
-- [[Brewing Guides]] - Controlling bitterness
-- [[Cupping Protocol]] - Evaluating bitterness
+- [[Brewing Guide]] - Controlling bitterness
+- [[SCA Cupping Protocol Step-by-Step]] - Evaluating bitterness
 
 ---
 

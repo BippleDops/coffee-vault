@@ -637,8 +637,8 @@ Colombia's signature washed processing creates the clean, balanced profile Excel
 ### Related Bean Profiles
 - [[Colombia-Supremo]] - Larger size grade comparison
 - [[Colombian-Huila]] - Regional Excelso example
-- [[Colombian-Castillo]] - Dominant variety in Excelso
-- [[Colombian-Pink-Bourbon]] - Specialty variety contrast
+- [[Colombia]] - Dominant variety in Excelso
+- [[Colombia]] - Specialty variety contrast
 
 ### Related Origins
 - [[Colombia]] - Complete origin profile

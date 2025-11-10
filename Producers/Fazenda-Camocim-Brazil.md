@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Fazenda Camocim
-country: [[Origins/Brazil]]
-region: [[Origins/Brazil-Cerrado-Mineiro]]
+country: [[Brazil]]
+region: [[Brazil]]
 producer-category: Family-Estate
 established: 1974
 varieties: Yellow-Bourbon-Catuai-Mundo-Novo-Catucai
@@ -486,21 +486,21 @@ Beyond environmental excellence, Camocim's social impact is profound: the estate
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Brazil]], [[Origins/Brazil-Cerrado-Mineiro]], [[Origins/Minas-Gerais-Coffee]]
+**Origins**: [[Brazil]], [[Brazil]], [[Origins/Minas-Gerais-Coffee]]
 
-**Processing**: [[Processing/Natural-Process]], [[Processing/Pulped-Natural-Brazil]], [[Processing/Anaerobic-Fermentation]], [[Processing/Experimental-Processing]]
+**Processing**: [[Processing/Natural-Process]], [[Brazil]], [[Processing/Anaerobic-Fermentation]], [[Processing/Experimental-Processing]]
 
 **Varieties**: [[Varieties/Yellow-Bourbon]], [[Varieties/Catuai]], [[Varieties/Mundo-Novo]], [[Varieties/Catucai]]
 
 **Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Organic-Coffee]], [[Quality/90-Plus-Scoring-Coffees]]
 
-**Sustainability**: [[Sustainability/Organic-Farming-Coffee]], [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/B-Corporation-Coffee]], [[Sustainability/Native-Habitat-Conservation]], [[Sustainability/Cerrado-Conservation]]
+**Sustainability**: [[Sustainability/Organic-Farming-Coffee]], [[Rainforest-Alliance-Certification]], [[Sustainability/B-Corporation-Coffee]], [[Sustainability/Native-Habitat-Conservation]], [[Sustainability/Cerrado-Conservation]]
 
 **Social Impact**: [[Social-Impact/Profit-Sharing-Models]], [[Social-Impact/Progressive-Employment-Coffee]], [[Social-Impact/Women-Led-Estates]]
 
-**Markets**: [[Markets/Direct-Trade-Coffee]], [[Markets/Specialty-Coffee-Brazil]]
+**Markets**: [[Markets/Direct-Trade-Coffee]], [[Brazil]]
 
-**Cultural Context**: [[Coffee-Culture/Women-in-Coffee-Leadership]], [[Coffee-Culture/Brazilian-Coffee-Heritage]], [[Coffee-Culture/Sustainability-Pioneers]]
+**Cultural Context**: [[Coffee-Culture/Women-in-Coffee-Leadership]], [[Brazil]], [[Coffee-Culture/Sustainability-Pioneers]]
 
 **Conservation**: [[Conservation/Cerrado-Ecosystem]], [[Conservation/Biodiversity-Hotspots-Coffee]], [[Conservation/Savanna-Conservation]]
 

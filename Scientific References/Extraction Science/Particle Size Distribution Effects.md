@@ -577,7 +577,7 @@ Smaller particles dramatically reduce permeability (flow).
 ### Extraction Science
 - [[Grind Size and Extraction Kinetics]]
 - [[TDS and Extraction Yield Relationships]]
-- [[Water Temperature and Solubility]]
+- [[Water Temperature]]
 - [[Coffee Brewing Control Chart]]
 
 ### Equipment

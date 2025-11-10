@@ -639,8 +639,8 @@ Happy mobile coffee logging!
 **Related Guides**:
 - [[Mobile-Troubleshooting|Troubleshooting Guide]]
 - [[Documentation/Mobile-Offline-Guide|Offline Guide]]
-- [[Templates/Mobile Quick Capture|Quick Capture Template]]
-- [[Mobile Optimizations/mobile-dashboard|Mobile Dashboard]]
+- [[Mobile Quick Capture|Quick Capture Template]]
+- [[mobile-dashboard|Mobile Dashboard]]
 
 ---
 

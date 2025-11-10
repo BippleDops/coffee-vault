@@ -68,8 +68,8 @@ Extended fermentation (48-72+ hours) is an experimental technique creating uniqu
 
 ## Tags
 
-- [[Processing]]
-- [[Experimental Processing]]
-- [[Fermentation]]
+- [[processing-playbook-template]]
+- [[Experimental Processing Techniques]]
+- [[Yeast Inoculation in Coffee Fermentation]]
 - [[Innovation]]
 

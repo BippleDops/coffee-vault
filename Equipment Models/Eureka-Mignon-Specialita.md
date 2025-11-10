@@ -488,9 +488,9 @@ For home baristas with mid-to-high-tier espresso machines who grind daily with h
 ---
 
 **Cross-References:**
-- [[Equipment Models/La-Marzocco-Linea-Mini]] - Excellent pairing
-- [[Equipment Models/Decent-Espresso-DE1PRO]] - Good pairing, benefits from precision
-- [[Equipment Models/Breville-Bambino-Plus]] - Outclasses machine (consider balanced pairing)
-- [[Equipment Models/Niche-Zero-Grinder]] - Primary competitor, single-dose optimized
+- [[Equipment Model]] - Excellent pairing
+- [[Equipment Model]] - Good pairing, benefits from precision
+- [[Equipment Model]] - Outclasses machine (consider balanced pairing)
+- [[Equipment Model]] - Primary competitor, single-dose optimized
 - [[Brewing Methods/Espresso]] - Primary use case
-- [[Brewing Parameters/Grind Size]] - Stepless adjustment enables precision
+- [[Brewing Parameters]] - Stepless adjustment enables precision

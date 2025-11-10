@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca Terrazas del Bosque
-country: [[Origins/Mexico]]
-region: [[Origins/Mexico-Chiapas]]
+country: [[Mexico]]
+region: [[Mexico]]
 producer-category: Family-Farm
 established: 1952
 varieties: Typica-Bourbon-Caturra-Mundo-Novo
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Finca Terrazas del Bosque
 
 **Type**: Family Farm - Third Generation
-**Location**: [[Origins/Mexico-Chiapas|Chiapas, Southern Mexico]]
+**Location**: [[Mexico|Chiapas, Southern Mexico]]
 **Established**: 1952
 
 ---

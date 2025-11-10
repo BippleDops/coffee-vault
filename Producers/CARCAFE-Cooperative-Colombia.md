@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: CARCAFE (Cauca Regional Coffee Cooperative)
-country: [[Origins/Colombia]]
-region: [[Origins/Colombia-Cauca]]
+country: [[Colombia]]
+region: [[Colombia]]
 producer-category: Cooperative-Indigenous-Communities
 established: 2005
 varieties: Caturra-Castillo-Colombia-Typica-Geisha
@@ -490,25 +490,25 @@ Beyond coffee excellence, CARCAFE's significance lies in indigenous empowerment 
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Colombia]], [[Origins/Colombia-Cauca]], [[Origins/Colombian-Coffee-Regions]]
+**Origins**: [[Colombia]], [[Colombia]], [[Colombia]]
 
-**Varieties**: [[Varieties/Caturra]], [[Varieties/Castillo]], [[Varieties/Colombia-Variety]], [[Varieties/Typica]], [[Varieties/Geisha]]
+**Varieties**: [[Varieties/Caturra]], [[Varieties/Castillo]], [[Colombia]], [[Varieties/Typica]], [[Varieties/Geisha]]
 
-**Processing**: [[Processing/Washed-Process]], [[Processing/Colombian-Washed-Processing]], [[Processing/Honey-Process]], [[Processing/Anaerobic-Fermentation]]
+**Processing**: [[Processing/Washed-Process]], [[Colombia]], [[Processing/Honey-Process]], [[Processing/Anaerobic-Fermentation]]
 
-**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Colombian-Coffee-Excellence]], [[Quality/Fair-Trade-Coffee]], [[Quality/Organic-Coffee]]
+**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Colombia]], [[Quality/Fair-Trade-Coffee]], [[Quality/Organic-Coffee]]
 
 **Social Impact**: [[Social-Impact/Indigenous-Coffee-Cooperatives]], [[Social-Impact/Indigenous-Empowerment-Coffee]], [[Social-Impact/Post-Conflict-Coffee-Recovery]], [[Social-Impact/Fair-Trade-Indigenous-Communities]], [[Social-Impact/Cultural-Preservation-Coffee]]
 
-**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Certifications/Rainforest-Alliance-Certification]]
+**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Rainforest-Alliance-Certification]]
 
-**Cultural Context**: [[Coffee-Culture/Colombian-Coffee-Heritage]], [[Coffee-Culture/Indigenous-Coffee-Cultivation]], [[Coffee-Culture/Nasa-People]], [[Coffee-Culture/Misak-People]], [[Coffee-Culture/Cauca-Cultural-Diversity]]
+**Cultural Context**: [[Colombia]], [[Coffee-Culture/Indigenous-Coffee-Cultivation]], [[Coffee-Culture/Nasa-People]], [[Coffee-Culture/Misak-People]], [[Coffee-Culture/Cauca-Cultural-Diversity]]
 
-**Conflict Context**: [[Conflict/Colombian-Armed-Conflict-Coffee]], [[Conflict/Coca-to-Coffee-Substitution]], [[Conflict/Indigenous-Resistance-Coffee]], [[Conflict/Coffee-Peace-Building]]
+**Conflict Context**: [[Colombia]], [[Conflict/Coca-to-Coffee-Substitution]], [[Conflict/Indigenous-Resistance-Coffee]], [[Conflict/Coffee-Peace-Building]]
 
 **Sustainability**: [[Sustainability/Indigenous-Agroforestry]], [[Sustainability/Traditional-Ecological-Knowledge]], [[Sustainability/Andean-Forest-Conservation]], [[Sustainability/Organic-Farming-Coffee]]
 
-**Historical Context**: [[History/Colombian-Conflict-History]], [[History/Indigenous-Land-Rights-Colombia]], [[History/Peace-Process-Coffee-Colombia]]
+**Historical Context**: [[Colombia]], [[Colombia]], [[Colombia]]
 
 ---
 

@@ -13,9 +13,9 @@ avg-rating: 4.3
 tags: [recipe-profile, moka-pot, stovetop, italian, concentrated]
 relationships:
   requires:
-    - "[[Moka Pot]]"
-    - "[[Grinder]]"
-    - "[[Stove]]"
+    - "[[Moka Pot Guide]]"
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[Bellman-Stovetop-Steamer]]"
 ---
 
 # 📖 Recipe: Moka Pot Classic Recipe

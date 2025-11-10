@@ -320,9 +320,9 @@ Wet-hulling (Giling Basah in Indonesian) is a unique processing method exclusive
 
 ## Tags
 
-- [[Processing]]
-- [[Indonesia]]
-- [[Wet-Hulled]]
+- [[processing-playbook-template]]
+- [[Permata-Gayo-Cooperative-Indonesia]]
+- [[Indonesia-Sumatra-Mandheling-Wet-Hulled]]
 - [[Sumatra]]
 - [[Unique Methods]]
 

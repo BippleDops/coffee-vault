@@ -14,9 +14,9 @@ tags: [recipe-profile, pour-over, iced, japanese-method, flash-brew, cold, summe
 relationships:
   requires:
     - "[[V60 Dripper]]"
-    - "[[Grinder]]"
-    - "[[Scale]]"
-    - "[[Ice]]"
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[OXO-Barista-Brain-Scale]]"
+    - "[[Persona-NOVICE]]"
   works-with: [[Light Roast]], [[Ethiopia]], [[Kenya]], [[Fruit Notes]]
   complements: [[Iced Coffee]], [[Summer Brewing]], [[Cold Coffee]], [[Clarity]]
 ---

@@ -469,7 +469,7 @@ The cooperative plays a vital role in Kona coffee's survival by providing servic
 
 **Origins**: [[Origins/United-States]], [[Origins/Hawaii]], [[Origins/Hawaii-Kona]], [[Origins/American-Coffee]]
 
-**Varieties**: [[Varieties/Typica]], [[Varieties/Kona-Typica]], [[Varieties/Guatemalan-Typica]], [[Varieties/Catuai]], [[Varieties/Caturra]]
+**Varieties**: [[Varieties/Typica]], [[Varieties/Kona-Typica]], [[Guatemala]], [[Varieties/Catuai]], [[Varieties/Caturra]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/Traditional-Hawaiian-Processing]]
 

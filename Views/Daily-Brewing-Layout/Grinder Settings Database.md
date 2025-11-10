@@ -399,16 +399,16 @@ Add your own grinder-specific click counts or settings below:
 ## 🔗 Related Resources
 
 **Brewing Guides**:
-- [[Brewing Guides/Pour Over V60 Guide]]
-- [[Brewing Guides/Espresso Guide]]
-- [[Brewing Guides/French Press Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 **Reference Materials**:
 - [[Coffee Science & Extraction]]
 - [[Master Coffee Reference]]
 
 **Analytics**:
-- [[Views/Daily-Brewing-Layout/Coffee Dashboard]] - View all your brewing statistics
+- [[Coffee Dashboard]] - View all your brewing statistics
 
 ---
 

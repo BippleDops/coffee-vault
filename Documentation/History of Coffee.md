@@ -850,9 +850,9 @@ The most widely accepted origin of coffee lies in the Ethiopian highlands, speci
 ## 🔗 Internal Vault Connections
 
 **Related Guides**:
-- [[Origins/Ethiopia]] - Where it all began
-- [[Origins/Colombia]] - Modern major producer
-- [[Brewing Guides/]] - Methods through history
+- [[Ethiopia]] - Where it all began
+- [[Colombia]] - Modern major producer
+- [[Brewing Guide]] - Methods through history
 - [[Chicago Coffee Guide]] - Local scene 🆕
 
 **Query This Information**:
@@ -867,5 +867,5 @@ return <dc.List items={history.map(h => ({content: h.$link}))} />
 **Last Updated**: 2025-10-24  
 **Word Count**: ~2,200 words  
 **References**: 30+ books, documentaries, organizations  
-**Related**: [[Origins/]], [[Brewing Guides/]], [[Chicago Coffee Guide]]
+**Related**: [[Origins/]], [[Brewing Guide]], [[Chicago Coffee Guide]]
 

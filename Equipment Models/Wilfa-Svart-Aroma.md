@@ -69,11 +69,11 @@ In the context of the broader coffee equipment market, the Wilfa Svart Aroma rep
 
 The grinder has particular cultural significance in Nordic coffee markets, where coffee consumption per capita is among the highest in the world. Norwegian, Swedish, and Finnish coffee culture emphasizes quality filter coffee consumption at home, making a grinder like the Svart Aroma an essential tool for everyday coffee preparation. This cultural context influenced the design priorities: reliability, consistency, and ease of use trump exotic features or espresso capability.
 
-For home brewers working with [[Brewing Parameters/Coffee-to-Water Ratio]] precision and [[Brewing Parameters/Grind Size]] control, the Svart Aroma provides the consistency necessary to dial in recipes and replicate results. The stepped grind adjustment system, while less precise than stepless alternatives, offers enough granularity for most filter brewing needs and the advantage of repeatability—you can return to a known setting with confidence.
+For home brewers working with [[Brewing Parameters]] precision and [[Brewing Parameters]] control, the Svart Aroma provides the consistency necessary to dial in recipes and replicate results. The stepped grind adjustment system, while less precise than stepless alternatives, offers enough granularity for most filter brewing needs and the advantage of repeatability—you can return to a known setting with confidence.
 
 The grinder's popularity has created a robust secondary market and community knowledge base. Online forums like Home-Barista, r/Coffee, and various specialty coffee communities feature extensive discussions of optimal settings for different brewing methods, modification possibilities, and troubleshooting guidance. This community support adds value beyond the hardware itself, providing new users with resources to maximize their investment.
 
-In terms of market position, the Wilfa Svart Aroma competes directly with grinders like the [[Equipment Models/Baratza-Encore]], [[Equipment Models/Capresso-Infinity]], and various models from manufacturers like Bodum and OXO. Among these competitors, the Svart Aroma is often praised for superior grind consistency and build quality, though some prefer the Baratza ecosystem for its repairability and parts availability in North American markets.
+In terms of market position, the Wilfa Svart Aroma competes directly with grinders like the [[Equipment Model]], [[Equipment Model]], and various models from manufacturers like Bodum and OXO. Among these competitors, the Svart Aroma is often praised for superior grind consistency and build quality, though some prefer the Baratza ecosystem for its repairability and parts availability in North American markets.
 
 The grinder's limitations are honest and well-documented: it's not suitable for espresso, lacks stepless adjustment, produces moderate static, and offers limited grind range. However, these limitations are appropriate to the grinder's intended use case and price point. Users seeking espresso capability or ultra-fine Turkish coffee grinding need to look elsewhere, but for the vast majority of home filter coffee brewing, the Svart Aroma delivers exactly what's needed without unnecessary complexity.
 
@@ -194,7 +194,7 @@ Wilfa's broader coffee equipment strategy includes automatic drip coffee makers,
 - **Cleaning Access**: Removable hopper and grounds container; burr chamber accessible with disassembly
 - **Burr Cleaning**: Can be brushed clean; removal requires tools and moderate technical skill
 - **Recommended Cleaning Frequency**: Brush cleaning every 2-3 weeks with regular use; deep cleaning every 3-6 months
-- **Cleaning Products**: Compatible with grinder cleaning tablets (e.g., [[Equipment Models/Pallo-Grindz-Grinder-Cleaner]])
+- **Cleaning Products**: Compatible with grinder cleaning tablets (e.g., [[Equipment Model]])
 - **Parts Availability**: Replacement parts available through Wilfa service centers and authorized retailers
 - **Repair Difficulty**: Moderate; some repairs possible by competent users, others require service center
 - **Common Maintenance**: Burr cleaning, hopper gasket replacement, switch mechanism servicing
@@ -264,7 +264,7 @@ International markets outside Europe and North America have limited official dis
 ### Availability by Channel
 
 **Specialist Coffee Retailers**
-The Svart Aroma is widely available through specialty coffee equipment retailers across European markets. These retailers typically provide knowledgeable staff, demonstration units, and integration with broader coffee equipment ecosystems. Specialty retailers may offer bundle pricing with coffee subscriptions or complementary equipment like [[Equipment Models/Hario-V60-Dripper]] or [[Equipment Models/Kalita-Wave-185]] brewing devices.
+The Svart Aroma is widely available through specialty coffee equipment retailers across European markets. These retailers typically provide knowledgeable staff, demonstration units, and integration with broader coffee equipment ecosystems. Specialty retailers may offer bundle pricing with coffee subscriptions or complementary equipment like [[Equipment Model]] or [[Equipment Model]] brewing devices.
 
 **Major Appliance Retailers**
 In Nordic markets, major appliance chains stock the Svart Aroma alongside mainstream kitchen appliances, providing broad accessibility for general consumers. This mass-market availability contributes to the grinder's popularity as a household standard in Norway and Sweden. Outside Northern Europe, mainstream appliance retail availability is limited.
@@ -278,7 +278,7 @@ Wilfa doesn't operate extensive direct-to-consumer sales channels, instead relyi
 ### Value Proposition Analysis
 
 **Price-to-Performance Ratio**
-At $140 USD, the Svart Aroma delivers grind quality competitive with grinders priced $50-100 higher. Independent testing has demonstrated grind uniformity metrics comparable to the [[Equipment Models/Baratza-Encore]] ($140) and superior to many competitors under $200. For users prioritizing filter coffee brewing, the performance-per-dollar calculation is highly favorable.
+At $140 USD, the Svart Aroma delivers grind quality competitive with grinders priced $50-100 higher. Independent testing has demonstrated grind uniformity metrics comparable to the [[Equipment Model]] ($140) and superior to many competitors under $200. For users prioritizing filter coffee brewing, the performance-per-dollar calculation is highly favorable.
 
 **Comparison to Direct Competitors**
 - **Baratza Encore** ($140): Similar pricing; Encore offers better North American support and parts availability; Svart Aroma generally considered to have slight edge in grind consistency
@@ -454,7 +454,7 @@ Testing reveals the grinder performs best at middle settings, with increasing va
 **Extraction Quality Testing**
 Controlled brewing tests using standardized extraction monitoring equipment (refractometers measuring TDS) show the Svart Aroma produces sufficiently consistent particle sizes to achieve target extraction ranges for filter coffee. Extractions fall within the Specialty Coffee Association's optimal range (18-22% extraction, 1.15-1.45% TDS) when recipes are properly developed.
 
-Comparison brewing tests blind-comparing coffee ground on the Svart Aroma versus premium grinders (e.g., [[Equipment Models/Baratza-Virtuoso]], [[Equipment Models/Fellow-Ode]]) show detectable but subtle differences. Expert tasters can often distinguish grinders, but consumer preference testing shows no clear preference pattern, suggesting real-world performance differences are minor for filter brewing.
+Comparison brewing tests blind-comparing coffee ground on the Svart Aroma versus premium grinders (e.g., [[Equipment Model]], [[Equipment Model]]) show detectable but subtle differences. Expert tasters can often distinguish grinders, but consumer preference testing shows no clear preference pattern, suggesting real-world performance differences are minor for filter brewing.
 
 **Heat Generation Testing**
 Thermal camera testing during extended grinding sessions shows minimal temperature increase in ground coffee exiting the grinder. Typical temperature rise is 1-3°C above ambient during normal grinding operations (20-30 second sessions), well below the threshold where volatile aromatic compounds would be significantly affected.
@@ -628,7 +628,7 @@ For **[[Brewing Methods/Chemex]]**:
 - Clean particle distribution supports Chemex's clarity-focused cup profile
 
 **Automatic Drip Coffee**
-Settings 5-9 accommodate most automatic drip coffee makers, including the [[Equipment Models/Technivorm-Moccamaster]] and other quality drip machines. The grinder's consistency ensures even extraction in basket brewers where uneven grinding would create channeling issues.
+Settings 5-9 accommodate most automatic drip coffee makers, including the [[Equipment Model]] and other quality drip machines. The grinder's consistency ensures even extraction in basket brewers where uneven grinding would create channeling issues.
 
 The moderate grinding speed suits batch brewing requirements, with 50-60 grams for a full pot requiring 30-40 seconds of grinding time. The removable grounds bin accommodates large batch volumes for typical household drip brewing.
 
@@ -657,7 +657,7 @@ Settings 5-7 work well for [[Brewing Methods/Siphon]] brewing, providing medium 
 **Espresso (Not Recommended)**
 The Svart Aroma cannot grind fine enough for proper espresso extraction. Even at setting 1 (finest available), the grind remains too coarse for appropriate espresso resistance and extraction. Users attempting espresso will experience under-extraction, thin body, and sour flavors due to excessive flow rate.
 
-The grinder was intentionally designed without espresso capability to optimize performance in the filter range rather than compromising across too broad a spectrum. Users wanting espresso capability should consider the [[Equipment Models/Sage-Barista-Express]] with integrated espresso grinder or dedicated espresso-capable grinders.
+The grinder was intentionally designed without espresso capability to optimize performance in the filter range rather than compromising across too broad a spectrum. Users wanting espresso capability should consider the [[Equipment Model]] with integrated espresso grinder or dedicated espresso-capable grinders.
 
 **Turkish Coffee (Insufficient Fineness)**
 Turkish coffee requires powder-fine grinding beyond the Svart Aroma's capability. The finest setting produces particles still too coarse for authentic Turkish coffee preparation. Dedicated Turkish coffee grinders or high-quality burr grinders with true fine grinding capability are necessary.
@@ -669,30 +669,30 @@ Turkish coffee requires powder-fine grinding beyond the Svart Aroma's capability
 
 **Brewing Devices**
 The grinder pairs excellently with filter coffee equipment in the $20-150 range:
-- [[Equipment Models/Hario-V60-Dripper]] ($8-25): Classic pairing for pour-over enthusiasts
-- [[Equipment Models/Kalita-Wave-185]] ($25-40): Stable, forgiving pour-over option
-- [[Equipment Models/Chemex]] ($45-55): Elegant large-format brewing
-- [[Equipment Models/AeroPress]] ($30-40): Versatile single-serve brewing
-- [[Equipment Models/Technivorm-Moccamaster]] ($300-350): Premium automatic drip
-- [[Equipment Models/Bodum-Chambord-French-Press]] ($30-50): Classic immersion brewing
+- [[Equipment Model]] ($8-25): Classic pairing for pour-over enthusiasts
+- [[Equipment Model]] ($25-40): Stable, forgiving pour-over option
+- [[Equipment Model]] ($45-55): Elegant large-format brewing
+- [[Equipment Model]] ($30-40): Versatile single-serve brewing
+- [[Equipment Model]] ($300-350): Premium automatic drip
+- [[Equipment Model]] ($30-50): Classic immersion brewing
 
 **Scales & Timing**
 Precision brewing benefits from quality scales:
-- [[Equipment Models/Timemore-Black-Mirror-Basic]] ($40): Budget-friendly brewing scale
-- [[Equipment Models/Acaia-Pearl]] ($150-200): Premium scale with timer integration
-- [[Equipment Models/Hario-Drip-Scale]] ($50-60): Purpose-built pour-over scale
+- [[Equipment Model]] ($40): Budget-friendly brewing scale
+- [[Equipment Model]] ($150-200): Premium scale with timer integration
+- [[Equipment Model]] ($50-60): Purpose-built pour-over scale
 
 **Kettles**
 Pour-over brewing requires appropriate gooseneck kettles:
-- [[Equipment Models/Fellow-Stagg-EKG]] ($150-175): Electric gooseneck with temperature control
-- [[Equipment Models/Hario-Buono]] ($45-60): Classic gooseneck kettle
-- [[Equipment Models/Brewista-Artisan]] ($65-85): Temperature control at mid-range price
+- [[Equipment Model]] ($150-175): Electric gooseneck with temperature control
+- [[Equipment Model]] ($45-60): Classic gooseneck kettle
+- [[Equipment Model]] ($65-85): Temperature control at mid-range price
 
 **Storage Solutions**
 Maintaining bean freshness enhances the grinder's performance:
-- [[Equipment Models/Airscape-Coffee-Canister]] ($20-35): One-way valve storage
-- [[Equipment Models/Fellow-Atmos]] ($25-35): Vacuum-sealed storage
-- [[Equipment Models/Coffee-Gator-Canister]] ($25-40): Stainless steel with valve
+- [[Equipment Model]] ($20-35): One-way valve storage
+- [[Equipment Model]] ($25-35): Vacuum-sealed storage
+- [[Equipment Model]] ($25-40): Stainless steel with valve
 
 ### Workflow Integration
 
@@ -776,7 +776,7 @@ The Wilfa Svart Aroma employs 58mm flat steel burrs in a parallel configuration.
 
 **Particle Size Importance**: Coffee extraction chemistry depends heavily on particle size consistency. Larger particles require longer extraction time to fully extract, while smaller particles extract rapidly and risk over-extraction if contact time is excessive. Inconsistent grinding produces wide particle distribution, meaning some particles over-extract while others under-extract, creating muddled cup profiles.
 
-**Extraction Uniformity**: The Svart Aroma's relatively consistent particle distribution in the filter range supports uniform extraction. When brewing with appropriate parameters ([[Brewing Parameters/Coffee-to-Water Ratio]], [[Brewing Parameters/Water Temperature]], [[Brewing Parameters/Brew Time]]), the grinder produces grounds that extract in similar timeframes, achieving balanced flavor extraction.
+**Extraction Uniformity**: The Svart Aroma's relatively consistent particle distribution in the filter range supports uniform extraction. When brewing with appropriate parameters ([[Brewing Parameters]], [[Water Temperature]], [[Brewing Parameters]]), the grinder produces grounds that extract in similar timeframes, achieving balanced flavor extraction.
 
 **Flow Rate Control**: In percolation brewing (pour-over, drip), particle size controls flow rate. The Svart Aroma's consistency means flow rates are predictable and repeatable when using same grind setting, allowing recipe development and replication. Inconsistent grinders produce variable flow rates even at same nominal settings.
 
@@ -985,34 +985,34 @@ In the context of democratizing specialty coffee quality, the Svart Aroma repres
 - [[Brewing Methods/Siphon]]
 
 ### Equipment Comparisons
-- [[Equipment Models/Baratza-Encore]]
-- [[Equipment Models/Baratza-Virtuoso]]
-- [[Equipment Models/Fellow-Ode]]
-- [[Equipment Models/Capresso-Infinity]]
-- [[Equipment Models/Breville-Smart-Grinder-Pro]]
-- [[Equipment Models/Timemore-Chestnut-C2]]
-- [[Equipment Models/Eureka-Mignon-Filtro]]
-- [[Equipment Models/OXO-Brew-Conical-Burr-Grinder]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 ### Complementary Equipment
-- [[Equipment Models/Hario-V60-Dripper]]
-- [[Equipment Models/Kalita-Wave-185]]
-- [[Equipment Models/Chemex-8-Cup]]
-- [[Equipment Models/AeroPress]]
-- [[Equipment Models/Technivorm-Moccamaster]]
-- [[Equipment Models/Timemore-Black-Mirror-Basic]]
-- [[Equipment Models/Fellow-Stagg-EKG]]
-- [[Equipment Models/Hario-Buono-Kettle]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 
 ### Brewing Parameters
-- [[Brewing Parameters/Grind Size]]
-- [[Brewing Parameters/Coffee-to-Water Ratio]]
-- [[Brewing Parameters/Water Temperature]]
-- [[Brewing Parameters/Brew Time]]
-- [[Brewing Parameters/Extraction]]
+- [[Brewing Parameters]]
+- [[Brewing Parameters]]
+- [[Water Temperature]]
+- [[Brewing Parameters]]
+- [[Brewing Parameters]]
 
 ### Maintenance & Care
-- [[Equipment Models/Pallo-Grindz-Grinder-Cleaner]]
+- [[Equipment Model]]
 - [[Maintenance/Grinder-Cleaning]]
 - [[Maintenance/Burr-Replacement]]
 

@@ -349,11 +349,11 @@ Connected to:
 🔗 Backlinks (5)
 
 Coffee Log - Nov 6
-"Brewed the [[Ethiopian Yirgacheffe]]
+"Brewed the [[Ethiopia]]
 with V60, fantastic clarity and acidity"
 
 Coffee Log - Nov 4
-"Second brew of [[Ethiopian Yirgacheffe]]
+"Second brew of [[Ethiopia]]
 trying different grind size"
 
 📎 Unlinked Mentions (2)
@@ -1267,7 +1267,7 @@ Master these for maximum efficiency:
 | `Alt + 2` | Standard template | Fast logging |
 | `?` | Shortcuts overlay | Quick reference |
 
-**Full power user guide**: [[Configuration/KEYBOARD-SHORTCUTS|Complete Shortcuts Reference]]
+**Full power user guide**: [[KEYBOARD-SHORTCUTS|Complete Shortcuts Reference]]
 
 ---
 
@@ -1276,19 +1276,19 @@ Master these for maximum efficiency:
 **Quick (1 min)**: Daily consistency tracking
 - Use for rapid iteration (5+ brews/day)
 - Track only essential variables
-- [[Templates/Coffee-Log-Quick]]
+- [[Coffee-Log-Quick]]
 
 **Standard (3-5 min)**: Balanced exploration (recommended)
 - Full parameter tracking
 - Equipment logging
 - Flavor profiling
-- [[Templates/Coffee-Log-Standard]]
+- [[Coffee-Log-Standard]]
 
 **Detailed (10+ min)**: Competition prep & special sessions
 - Full SCA cupping protocol
 - TDS and extraction yield
 - Environmental factors
-- [[Templates/Coffee-Log-Detailed]]
+- [[Coffee-Log-Detailed]]
 
 **Pro workflow**: Use Quick for daily, Standard for refinement, Detailed for competitions.
 
@@ -1328,7 +1328,7 @@ Master these for maximum efficiency:
 ```
 → Recent successful V60 brews
 
-**Master search**: [[Configuration/SEARCH-TIPS|Advanced Search Guide]]
+**Master search**: [[SEARCH-TIPS|Advanced Search Guide]]
 
 ---
 
@@ -1340,7 +1340,7 @@ Enthusiast Dashboard includes:
 - 🔬 **Explore Science** - Research library
 - 🌱 **Beans Library** - Current inventory
 
-**Customization**: Edit [[Views/Persona-ENTHUSIAST-Dashboard]] to add your own quick actions.
+**Customization**: Edit [[Persona-ENTHUSIAST]] to add your own quick actions.
 
 ---
 
@@ -1379,7 +1379,7 @@ Settings → Appearance → CSS Snippets:
 4. Navigate to analytics with `Cmd/Ctrl + Shift + M`
 5. See updated trends and insights
 
-**Automation tip**: Set up automatic extraction on schedule (see [[Configuration/Automation-Playbook]])
+**Automation tip**: Set up automatic extraction on schedule (see [[Automation-Playbook]])
 
 ---
 
@@ -1446,28 +1446,28 @@ When visualization is focused:
 
 ### Essential Dashboards
 
-- **[[Views/Persona-ENTHUSIAST-Dashboard|Enthusiast Dashboard]]** - Your home base
-- **[[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|Monthly Analytics]]** - Performance tracking
-- **[[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|Optimization Engine]]** - ML recommendations
-- **[[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|Cost Intelligence]]** - Budget tracking
+- **[[Persona-ENTHUSIAST|Enthusiast Dashboard]]** - Your home base
+- **[[1-Monthly-Analytics-Dashboard|Monthly Analytics]]** - Performance tracking
+- **[[2-Brewing-Optimization-Engine|Optimization Engine]]** - ML recommendations
+- **[[3-Cost-Intelligence-System|Cost Intelligence]]** - Budget tracking
 
 ### Learning Paths
 
 - **[[Scientific References/|Science Library]]** - Deep knowledge
-- **[[Brewing Guides/|Brewing Guides]]** - Technique refinement
-- **[[Coffee Goals/|Coffee Goals]]** - Structured learning
-- **[[Templates/Cupping Session|Cupping Sessions]]** - Palate development
+- **[[Brewing Guide|Brewing Guides]]** - Technique refinement
+- **[[Coffee Goal|Coffee Goals]]** - Structured learning
+- **[[Cupping Session|Cupping Sessions]]** - Palate development
 
 ### Configuration
 
-- **[[Configuration/User-Configuration-Guide|Configuration Guide]]** - Advanced settings
+- **[[User-Configuration-Guide|Configuration Guide]]** - Advanced settings
 - **[[Configuration/Plugin-Setup|Plugin Setup]]** - Plugin deep-dives
 - **[[HOME-DASHBOARD|Main Dashboard]]** - Vault home
 
 ### Next Level
 
-- **[[Views/Persona-PROFESSIONAL-Dashboard|Professional Dashboard]]** - When you hit 100+ brews
-- **[[Workspaces/Persona-PROFESSIONAL|Professional Workspace]]** - Advanced layout
+- **[[Persona-PROFESSIONAL|Professional Dashboard]]** - When you hit 100+ brews
+- **[[Persona-PROFESSIONAL|Professional Workspace]]** - Advanced layout
 
 ---
 
@@ -1491,4 +1491,4 @@ By providing powerful tools for analysis, comparison, and exploration while main
 **Target Persona**: Enthusiast (20-100 brews)
 **Design Philosophy**: Discovery, Optimization, Exploration, Balance
 
-**Questions?** See [[Configuration/User-Configuration-Guide|Configuration Help]]
+**Questions?** See [[User-Configuration-Guide|Configuration Help]]

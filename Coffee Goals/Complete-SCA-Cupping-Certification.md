@@ -1773,12 +1773,12 @@ SORT date DESC
 ### Related Notes and Links
 
 **Goal Dependencies**:
-- [[Coffee Goals/Master-Espresso-Extraction]] - Sensory skills from cupping enhance espresso work
-- [[Coffee Goals/Explore-African-Coffee-Origins]] - Cupping is method for systematic origin exploration
+- [[Coffee Goal]] - Sensory skills from cupping enhance espresso work
+- [[Coffee Goal]] - Cupping is method for systematic origin exploration
 
 **Practice Documentation**:
-- [[Cupping Sessions/]] - Individual cupping session notes stored here
-- [[Coffee Logs/]] - Some cupping notes may overlap with general coffee logs
+- [[Cupping Session]] - Individual cupping session notes stored here
+- [[Coffee Log]] - Some cupping notes may overlap with general coffee logs
 
 **Learning Resources**:
 - [[Scientific References/Sensory Science/]] - Theory behind cupping and sensory evaluation
@@ -1786,10 +1786,10 @@ SORT date DESC
 - [[Origins/]] - Origin characteristics useful for blind cupping practice
 
 **Equipment**:
-- [[Equipment Models/Cupping-Tools]] - Cupping spoons, bowls, etc.
+- [[Equipment Model]] - Cupping spoons, bowls, etc.
 
 **Skills and Techniques**:
-- [[Brewing Guides/Cupping-Protocol]] - Detailed cupping protocol notes
+- [[Brewing Guide]] - Detailed cupping protocol notes
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Honduras Marcala Pacas Washed
-origin: "[[Origins/Honduras]]"
-region: [[Origins/Honduras-Marcala]]
+origin: "[[Honduras]]"
+region: [[Honduras]]
 variety: [[Coffee Varieties/Pacas]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Honduras Marcala Pacas Washed
 
-**Origin**: [[Origins/Honduras|Honduras]]
-**Region**: [[Origins/Honduras-Marcala|Marcala]]
+**Origin**: [[Honduras|Honduras]]
+**Region**: [[Honduras|Marcala]]
 **Variety**: [[Coffee Varieties/Pacas|Pacas]]
 **Processing**: [[Processing Methods/Washed-Process|Washed]]
 **Grade**: SHG (Strictly High Grown)
@@ -629,8 +629,8 @@ Marcala, located in the mountains of La Paz department in southwestern Honduras,
 - [[Peru-Cajamarca-Caturra-Organic-Washed]]
 
 ### Origins
-- [[Origins/Honduras]]
-- [[Origins/Honduras-Marcala]]
+- [[Honduras]]
+- [[Honduras]]
 - [[Origins/Central-America]]
 
 ### Varieties

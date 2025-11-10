@@ -304,8 +304,8 @@ return <dc.Table rows={mokaLogs} columns={[
 - "L'omino coi baffi" (little man with mustache) - iconic logo
 
 **Related Techniques**:
-- [[Brewing Guides/Espresso Guide|Espresso]] - True pressurized brewing
-- [[Brewing Guides/Turkish Coffee Guide|Turkish Coffee]] - Another stovetop method
+- [[Brewing Guide|Espresso]] - True pressurized brewing
+- [[Brewing Guide|Turkish Coffee]] - Another stovetop method
 - [[Origins/Italy Guide|Italian Coffee Culture]] - Cultural context
 
 ---
@@ -520,9 +520,9 @@ return mokaLogs.length > 0 ? (
 - Symbol of Italian industrial design
 
 **Related Techniques**:
-- [[Brewing Guides/Espresso Guide|Espresso]] - True pressure brewing
-- [[Brewing Guides/Turkish Coffee Guide|Turkish Coffee]] - Stovetop alternative
-- [[Brewing Guides/Aeropress Guide|Aeropress]] - Portable pressure brewing
+- [[Brewing Guide|Espresso]] - True pressure brewing
+- [[Brewing Guide|Turkish Coffee]] - Stovetop alternative
+- [[Brewing Guide|Aeropress]] - Portable pressure brewing
 
 ---
 
@@ -553,5 +553,5 @@ return mokaLogs.length > 0 ? (
 **Last Updated**: 2025-10-24  
 **Invented**: 1933 by Alfonso Bialetti  
 **Cultural Icon**: Italian coffee tradition  
-**Related**: [[Brewing Guides/Espresso Guide|Espresso]], [[History of Coffee|Coffee History]]
+**Related**: [[Brewing Guide|Espresso]], [[History of Coffee|Coffee History]]
 

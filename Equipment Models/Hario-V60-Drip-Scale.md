@@ -918,13 +918,13 @@ For home brewers seeking affordable precision, the Hario V60 Drip Scale delivers
 ---
 
 **Cross-References:**
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Perfect pairing, same ecosystem
-- [[Equipment Models/Comandante-C40-MK4]] - Hand grinder pairing, travel setup
-- [[Equipment Models/Aeropress-Original]] - Compatible brewing method
-- [[Equipment Models/Bodum-Chambord-French-Press]] - French press brewing compatible
-- [[Equipment Models/Acaia-Lunar]] - Premium alternative (5× price)
-- [[Equipment Models/Timemore-Black-Mirror]] - Mid-tier upgrade option
+- [[Equipment Model]] - Perfect pairing, same ecosystem
+- [[Equipment Model]] - Hand grinder pairing, travel setup
+- [[Equipment Model]] - Compatible brewing method
+- [[Equipment Model]] - French press brewing compatible
+- [[Equipment Model]] - Premium alternative (5× price)
+- [[Equipment Model]] - Mid-tier upgrade option
 - [[Brewing Methods/Pour-Over]] - Primary use case
-- [[Brewing Parameters/Coffee-to-Water-Ratio]] - Scale enables precise ratios
-- [[Brewing Parameters/Brew-Time]] - Integrated timer critical
+- [[Brewing Parameters]] - Scale enables precise ratios
+- [[Brewing Parameters]] - Integrated timer critical
 - [[Coffee Science/Extraction]] - Precision dosing improves consistency

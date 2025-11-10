@@ -127,7 +127,7 @@ tags: "[equipment-maintenance, <%  tp.date.now("YYYY-MM")  %>]"
 
 **Equipment Profile**: "[[Equipment/<%  tp.frontmatter.equipment  %>]"]  
 **Previous Maintenance**: (Link to last maintenance log)  
-**Maintenance Schedule**: [[Analytics/Daily-Brewing-Layout/13-Equipment-Maintenance-Dashboard]]
+**Maintenance Schedule**: [[13-Equipment-Maintenance-Dashboard]]
 
 ---
 

@@ -62,11 +62,11 @@ related_equipment:
   - "[[Acaia-Lunar]]"
 related_concepts:
   - "[[Espresso-Fundamentals]]"
-  - "[[Extraction]]"
-  - "[[Temperature-Stability]]"
-  - "[[Pressure-Profiling]]"
-  - "[[Pre-Infusion]]"
-  - "[[Flow-Rate]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
+  - "[[Temperature-Stability-in-Brewing]]"
+  - "[[Pressure-Profiling-Espresso-Advanced]]"
+  - "[[Pre-Infusion and Blooming Science]]"
+  - "[[Flow-Rate-Control-Techniques]]"
   - "[[E61-Group-Head]]"
   - "[[Dual-Boiler-Systems]]"
   - "[[Rotary-Pump]]"
@@ -1209,9 +1209,9 @@ The integrated hot water tap draws from steam boiler, providing:
 
 **Espresso Fundamentals:**
 - [[Espresso-Fundamentals]]: Core concepts for machine operation
-- [[Extraction]]: Understanding extraction theory for profiling work
+- [[DATA-EXTRACTION-GUIDE]]: Understanding extraction theory for profiling work
 - [[Water-Temperature]]: Temperature impact on extraction
-- [[Pressure-Profiling]]: Theory and practice of flow control
+- [[Pressure-Profiling-Espresso-Advanced]]: Theory and practice of flow control
 
 **Machine-Specific:**
 - E61 Group Head design and operation
@@ -1879,4 +1879,4 @@ The machine rewards technique development, proper maintenance, and engaged espre
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 8*
-*Related: [[La-Marzocco-Linea-Mini]], [[Decent-Espresso-DE1PRO]], [[E61-Group-Head]], [[Pressure-Profiling]], [[Dual-Boiler-Systems]]*
+*Related: [[La-Marzocco-Linea-Mini]], [[Decent-Espresso-DE1PRO]], [[E61-Group-Head]], [[Pressure-Profiling-Espresso-Advanced]], [[Dual-Boiler-Systems]]*

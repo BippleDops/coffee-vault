@@ -764,21 +764,21 @@ community-rating: 4.8
 ### Equipment Compatibility
 
 **Optimal Brewing Methods**:
-- **[[Pour-Over]]**: Primary use case, designed specifically for this
-  - [[V60]] (perfectly sized for Hario V60-01, 02)
-  - [[Kalita-Wave]] (155, 185 sizes fit perfectly)
+- **[[V60-Pour-Over-Light-Roast-Floral]]**: Primary use case, designed specifically for this
+  - [[V60-Quick-3-Pour-Method]] (perfectly sized for Hario V60-01, 02)
+  - [[Kalita-Wave-Recipe]] (155, 185 sizes fit perfectly)
   - [[Chemex-Classic-8-Cup]] (fits 3-cup, 6-cup, 8-cup)
-  - [[Origami-Dripper]] (all sizes compatible)
+  - [[Origami-Dripper-Guide]] (all sizes compatible)
   - [[Blue-Bottle-Dripper]] (fits perfectly)
   - [[Clever-Coffee-Dripper]] (fits, though less common pairing)
 
-- **[[Espresso]]**: Excellent for dosing and yield measurement
+- **[[Espresso-Shot-Light-Roast-Fruit]]**: Excellent for dosing and yield measurement
   - Dose: Weigh grounds in portafilter (use [[Normcore-Spring-Tamper]] after)
   - Yield: Place cup on scale under group (scale thin enough for most machines)
   - Ratio dialing: Precise dose/yield for ratio experimentation
   - Limitation: Doesn't fit under some prosumer machines (use [[Acaia-Lunar]] instead)
 
-- **[[French-Press]]**: Useful for dosing coffee and water
+- **[[French-Press-Quick-3-Minute-Method]]**: Useful for dosing coffee and water
   - [[Bodum-Chambord-French-Press]] (weigh coffee, then water)
   - [[Espro-P7-French-Press]] (precise ratios easy)
   - Less common pairing (French press less precision-dependent)
@@ -788,7 +788,7 @@ community-rating: 4.8
   - Weigh water additions (precise temperature)
   - Competition Aeropress brewers use extensively
 
-- **[[Cold-Brew]]**: Ratio precision for large batches
+- **[[Cold-Brew-Concentrate-Smooth]]**: Ratio precision for large batches
   - Weigh large quantities (up to 2kg)
   - Precise ratios (e.g., 1:10 coffee:water)
   - Less common (batch brewing less precision-dependent)
@@ -870,7 +870,7 @@ community-rating: 4.8
   - Hario advantages: Lower price, simpler operation, no app required
   - Market position: Hario for budget-conscious, Pearl for precision seekers
 
-- **[[Timemore-Black-Mirror]]** ($85)
+- **[[Timemore-Black-Mirror-Basic]]** ($85)
   - Comparison: Mid-range competitor, 0.1g precision, auto-start timer
   - Pearl advantages: Better app, wider recipe community, proven reliability
   - Black Mirror advantages: Lower price, similar features, unique design
@@ -952,7 +952,7 @@ community-rating: 4.8
   - Timing: 45-second intervals enforced by app alerts
   - Customization: Easy to adjust pour weights for different ratios
 
-- **[[Onyx-Coffee-Lab-Recipes]]**:
+- **[[Onyx-Coffee-Lab]]**:
   - Pearl standard: All Onyx recipes designed with Pearl in mind
   - Precision: 0.1g precision critical for their recipes
   - App integration: Onyx shares recipes in Acaia format
@@ -1188,7 +1188,7 @@ community-rating: 4.8
 
 **"Precision Parker" - Home Enthusiast**:
 - Age: 32, software engineer, data-driven personality
-- Setup: [[Comandante-C40-MK4]], [[Fellow-Stagg-EKG]], [[Hario-V60]]
+- Setup: [[Comandante-C40-MK4]], [[Fellow-Stagg-EKG]], [[Hario-V60-Plastic-Dripper]]
 - Uses Pearl for: Every single brew, tracks all data in app
 - Values: Consistency, data, improvement tracking, recipe sharing
 - Willingness to pay: $140 reasonable for precision
@@ -1196,7 +1196,7 @@ community-rating: 4.8
 
 **"Competition Clara" - Barista Competitor**:
 - Age: 28, professional barista, World Brewers Cup competitor
-- Setup: [[Mahlkonig-EK43]], custom pour kettle, [[Origami-Dripper]]
+- Setup: [[Mahlkonig-EK43]], custom pour kettle, [[Origami-Dripper-Guide]]
 - Uses Pearl for: Competition practice, cafe service, recipe development
 - Values: Reliability, competition-standard equipment, flow rate consistency
 - Willingness to pay: $140 essential investment for competition
@@ -1295,7 +1295,7 @@ community-rating: 4.8
 3. **Quality control**: Manager reviews all brews in app → Identifies outlier brews → Retraining if needed
 
 **Recipe Development**:
-1. **New coffee arrival**: Roaster releases new [[Ethiopian-Natural-Process]]
+1. **New coffee arrival**: Roaster releases new [[Ethiopia]]
 2. **Initial test**: Brew with standard recipe (1:15 ratio, 2:30 time)
 3. **Adjustments**: Try 1:16 ratio → Try 1:14 ratio → Adjust grind → Track all in app
 4. **Optimization**: Find best recipe → Save in app → Share with customers/friends
@@ -1840,13 +1840,13 @@ community-rating: 4.8
 **NO if**:
 - You're brand new to specialty coffee (start cheaper)
 - You primarily brew espresso (consider [[Acaia-Lunar]] instead)
-- You're on a tight budget (consider [[Timemore-Black-Mirror]] or [[Hario-V60-Drip-Scale]])
+- You're on a tight budget (consider [[Timemore-Black-Mirror-Basic]] or [[Hario-V60-Drip-Scale]])
 - You brew large batches (need >2kg capacity)
 - You want absolute simplicity (app features may be overwhelming)
 - You don't care about 0.1g precision (cheaper scale adequate)
 
 **MAYBE if**:
-- You're intermediate (good upgrade, but [[Timemore-Black-Mirror]] also viable)
+- You're intermediate (good upgrade, but [[Timemore-Black-Mirror-Basic]] also viable)
 - You brew multiple methods (great all-rounder, but consider needs)
 - You're budget-conscious but serious (save up, or try Brewista Smart Scale II)
 
@@ -1927,12 +1927,12 @@ The Acaia Pearl is the **gold standard for pour-over brewing scales**. It's expe
 - [[Acaia-Lunar]] - Espresso-focused scale (smaller, fits under group)
 - [[Comandante-C40-MK4]] - Hand grinder (common Pearl pairing)
 - [[Fellow-Stagg-EKG]] - Gooseneck kettle (pour-over setup)
-- [[Hario-V60]] - Pour-over dripper (Pearl's primary use case)
-- [[Timemore-Black-Mirror]] - Main competitor scale
+- [[Hario-V60-Plastic-Dripper]] - Pour-over dripper (Pearl's primary use case)
+- [[Timemore-Black-Mirror-Basic]] - Main competitor scale
 - [[Brewista-Smart-Scale-II]] - Budget alternative (this file)
 
 ### Techniques
-- [[Pour-Over]] - Primary brewing method for Pearl
+- [[V60-Pour-Over-Light-Roast-Floral]] - Primary brewing method for Pearl
 - [[V60-Brewing-Technique]] - Specific pour-over method
 - [[James-Hoffmann-V60-Method]] - Popular recipe (pre-loaded in app)
 - [[Espresso-Dosing]] - Secondary use case
@@ -1940,10 +1940,10 @@ The Acaia Pearl is the **gold standard for pour-over brewing scales**. It's expe
 
 ### Concepts
 - [[Brewing-Precision]] - Importance of precise measurement
-- [[Flow-Rate]] - Flow rate indicator unique feature
+- [[Flow-Rate-Control-Techniques]] - Flow rate indicator unique feature
 - [[Brew-Consistency]] - Data-driven consistency improvement
 - [[Competition-Coffee]] - Competition standard equipment
-- [[Third-Wave-Coffee]] - Movement that elevated precision tools
+- [[Third-Wave-Coffee-Movement-History]] - Movement that elevated precision tools
 
 ---
 

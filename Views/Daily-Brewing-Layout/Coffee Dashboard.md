@@ -252,19 +252,19 @@ if (logs.length > 0) {
 ## 🎯 Quick Actions
 
 **New Entry**:
-- [[Coffee Log Template|+ New Coffee Log]]
-- [[Bean Profile Template|+ New Bean Profile]]
-- [[Roaster Profile Template|+ New Roaster]]
+- [[Coffee Log|+ New Coffee Log]]
+- [[Bean Profile|+ New Bean Profile]]
+- [[Roaster Profile|+ New Roaster]]
 - [[Quick Coffee Capture|⚡ Quick Capture]]
 
 **Views**:
-- [[Views/All Coffee Logs.base|📋 All Logs (Base)]]
+- [[Coffee Log|📋 All Logs (Base)]]
 - [[Views/Top Rated.base|⭐ Top Rated (Base)]]
 - [[Views/By Roaster.base|☕ By Roaster (Base)]]
 - [[Views/By Origin.base|🌍 By Origin (Base)]]
 
 **References**:
-- [[Brewing Guides/|🔧 Brewing Guides]]
+- [[Brewing Guide|🔧 Brewing Guides]]
 - [[Origins/|🌍 Origin Profiles]]
 - [[Roasters/|☕ Roaster Directory]]
 

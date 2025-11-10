@@ -357,23 +357,23 @@ The proliferation of quality coffee has changed competitive dynamics. When Intel
 - [[Tim-Wendelboe]] - Oslo, Nordic roasting and producer relationships
 
 ### Origins and Producers
-- [[Origins/Colombia]] - Major Direct Trade sourcing origin
-- [[Origins/Ethiopia]] - Core origin for fruit-forward single origins
-- [[Origins/Kenya]] - Source of bright, complex coffees
+- [[Colombia]] - Major Direct Trade sourcing origin
+- [[Ethiopia]] - Core origin for fruit-forward single origins
+- [[Kenya]] - Source of bright, complex coffees
 - [[Origins/El-Salvador]] - Central American partnerships
-- [[Origins/Guatemala]] - Long-term producer relationships
-- [[Origins/Rwanda]] - Emerging origin focus
+- [[Guatemala]] - Long-term producer relationships
+- [[Rwanda]] - Emerging origin focus
 
 ### Brewing Methods and Equipment
 - [[Brewing Methods/Espresso]] - Black Cat primary application
 - [[Brewing Methods/Pour-Over]] - Single-origin cafe preparation
 - [[Brewing Methods/Cold-Brew]] - Canned product line
-- [[Equipment Models/Loring-Roaster]] - Primary roasting equipment
-- [[Equipment Models/Probat-Roaster]] - Traditional roasting equipment
+- [[Equipment Model]] - Primary roasting equipment
+- [[Equipment Model]] - Traditional roasting equipment
 
 ### Coffee Concepts and Industry Topics
-- [[Direct-Trade-Model]] - Intelligentsia's sourcing framework
-- [[Third-Wave-Coffee-Movement]] - Historical and cultural context
+- [[Direct-Trade-Model-Complete-Guide]] - Intelligentsia's sourcing framework
+- [[Third-Wave-Coffee-Movement-History]] - Historical and cultural context
 - [[Barista-Championships]] - Competition success and influence
 - [[Specialty-Coffee-Scoring]] - Quality assessment methodology
 - [[Coffee-Transparency]] - Sourcing disclosure practices

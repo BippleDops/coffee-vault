@@ -32,9 +32,9 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 - Or quick: `Templates/Quick Coffee Capture.md`
 
 **4. Explore**:
-- Brewing: [[Brewing Guides/]]
+- Brewing: [[Brewing Guide]]
 - Science: [[Scientific References/]]
-- Goals: [[Coffee Goals/]] (NEW 5.0)
+- Goals: [[Coffee Goal]] (NEW 5.0)
 
 ---
 
@@ -65,23 +65,23 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 ## Getting Started by Goal
 
 ### Better Coffee
-1. [[Brewing Guides/Pour-Over-V60-Guide]]
+1. [[Brewing Guide]]
 2. Log with `Templates/Coffee-Log-v5.md`
-3. [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]
+3. [[9-Real-Time-Brewing-Assistant]]
 
 ### Understand Coffee
-1. [[Documentation/Coffee-History-Origins-and-Spread]]
+1. [[Coffee-History-Origins-and-Spread]]
 2. [[Scientific References/Extraction Science/]]
-3. [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
+3. [[11-Learning-Development-Dashboard]]
 
 ### Ethical Sourcing
-1. [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]
+1. [[10-Supply-Chain-Transparency-Dashboard]]
 2. Create producer profiles
 3. Track certifications
 
 ### Track Development
 1. Set goals: `Templates/Coffee Goal.md`
-2. [[Views/Learning-Education-Layout/Goals-Dashboard-View]]
+2. [[Goals-Dashboard-View]]
 3. Monitor progress automatically
 
 ---
@@ -100,17 +100,17 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 ## Key Dashboards
 
 **Daily**: [[HOME-DASHBOARD]]  
-**Stats**: [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]]  
-**Live**: [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]  
-**Supply Chain**: [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]  
-**Learning**: [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
+**Stats**: [[1-Monthly-Analytics-Dashboard]]  
+**Live**: [[9-Real-Time-Brewing-Assistant]]  
+**Supply Chain**: [[10-Supply-Chain-Transparency-Dashboard]]  
+**Learning**: [[11-Learning-Development-Dashboard]]
 
 ### Workspace Bundles
-- [[Workspaces/Daily-Brewing/INDEX|Daily Brewing Workflow]]
-- [[Workspaces/Analytics-Analysis/INDEX|Analytics & Analysis]]
-- [[Workspaces/Learning-Education/INDEX|Learning & Education]]
-- [[Workspaces/Supply-Chain/INDEX|Supply Chain]]
-- [[Configuration/Manual-Operations-Guide|Manual Operations Guide]] (run `node Scripts/manual-review-checklist.js` after major updates)
+- [[INDEX|Daily Brewing Workflow]]
+- [[INDEX|Analytics & Analysis]]
+- [[INDEX|Learning & Education]]
+- [[INDEX|Supply Chain]]
+- [[Manual-Operations-Guide|Manual Operations Guide]] (run `node Scripts/manual-review-checklist.js` after major updates)
 
 ---
 
@@ -127,7 +127,7 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 
 **Queries not working?** Install Datacore plugin  
 **Templates not working?** Configure Templater folder to "Templates"  
-**Need help?** See [[Configuration/User-Configuration-Guide]]
+**Need help?** See [[User-Configuration-Guide]]
 
 ---
 
@@ -143,7 +143,7 @@ Version: 5.0.0 | From producer to cup, from data to mastery
 ## Full Documentation
 
 **Complete Guide**: [[COFFEE-VAULT-5.0-COMPLETE-OVERVIEW]]  
-**Migration**: [[Documentation/MIGRATION-GUIDE-5.0]]  
+**Migration**: [[MIGRATION-GUIDE-5.0]]  
 **All Guides**: [[Documentation/]]
 
 ---

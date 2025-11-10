@@ -502,7 +502,7 @@ All existing content, templates, and workflows continue to work. New features ar
 
 3. **121 Recipe YAML Parse Errors**
    - **Status**: Malformed `requires:` field in Recipe frontmatter
-   - **Example**: `requires: [[V60]], [[Grinder]]` (commas break YAML)
+   - **Example**: `requires: [[V60-Quick-3-Pour-Method]], [[Timemore-Sculptor-Grinder]]` (commas break YAML)
    - **Impact**: Recipes excluded from data extraction
    - **Workaround**: Recipes still work in Obsidian, just not in visualizations
    - **Fix Timeline**: v7.4 (systematic YAML cleanup)

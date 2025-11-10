@@ -685,7 +685,7 @@ Install these community plugins:
 4. **Advanced Templates**: Switch from Quick Capture to full Coffee-Log-v5
 5. **Goal Setting**: Create your first Coffee Goal
 
-**Migration guide**: [[Views/Persona-ENTHUSIAST-Dashboard|Enthusiast Dashboard]]
+**Migration guide**: [[Persona-ENTHUSIAST|Enthusiast Dashboard]]
 
 ---
 
@@ -766,7 +766,7 @@ Install these community plugins:
 
 #### Q: I want to see more advanced features
 **A**:
-- You're ready to graduate! See [[Views/Persona-ENTHUSIAST-Dashboard|Enthusiast Dashboard]]
+- You're ready to graduate! See [[Persona-ENTHUSIAST|Enthusiast Dashboard]]
 - Enable Graph View: Settings → Core Plugins → Graph View
 - Explore Analytics folder (after 10+ brews)
 
@@ -824,7 +824,7 @@ Coffee Vault 7.0 introduces several quality-of-life enhancements designed to mak
 | `Cmd/Ctrl + F` | Search in file | Find text in current log |
 | `?` | Show shortcuts | View all shortcuts |
 
-**Full reference**: See [[Configuration/KEYBOARD-SHORTCUTS|Complete Keyboard Shortcuts Guide]]
+**Full reference**: See [[KEYBOARD-SHORTCUTS|Complete Keyboard Shortcuts Guide]]
 
 ---
 
@@ -832,17 +832,17 @@ Coffee Vault 7.0 introduces several quality-of-life enhancements designed to mak
 
 Choose the logging level that fits your time and detail needs:
 
-**Quick (1 minute)** - [[Templates/Coffee-Log-Quick|Coffee-Log-Quick.md]]
+**Quick (1 minute)** - [[Coffee-Log-Quick|Coffee-Log-Quick.md]]
 - 5 essential fields only
 - Perfect for daily logging
 - Best for: Building consistency
 
-**Standard (3-5 minutes)** - [[Templates/Coffee-Log-Standard|Coffee-Log-Standard.md]]
+**Standard (3-5 minutes)** - [[Coffee-Log-Standard|Coffee-Log-Standard.md]]
 - 12 balanced fields
 - Recommended for most users
 - Best for: Tracking progress
 
-**Detailed (10+ minutes)** - [[Templates/Coffee-Log-Detailed|Coffee-Log-Detailed.md]]
+**Detailed (10+ minutes)** - [[Coffee-Log-Detailed|Coffee-Log-Detailed.md]]
 - 25+ comprehensive fields
 - Competition-level tracking
 - Best for: Special sessions (unlock at 20+ brews)
@@ -879,7 +879,7 @@ ethiopian [rating:>4]
 ```
 → Find high-rated Ethiopian coffees
 
-**Full search guide**: [[Configuration/SEARCH-TIPS|Search Tips & Tricks]]
+**Full search guide**: [[SEARCH-TIPS|Search Tips & Tricks]]
 
 ---
 
@@ -891,7 +891,7 @@ Every persona dashboard now includes quick action buttons at the top:
 - 📚 **Brewing Guides** - Jump to learning resources
 - 🏠 **Home Dashboard** - Return to main hub
 
-Look for the colorful buttons at the top of your [[Views/Persona-NOVICE-Dashboard|Novice Dashboard]].
+Look for the colorful buttons at the top of your [[Persona-NOVICE|Novice Dashboard]].
 
 ---
 
@@ -943,7 +943,7 @@ v7.0 prioritizes accessibility:
 **Week 1**: Learn keyboard shortcuts
 - Practice `Cmd/Ctrl + O` for quick switcher
 - Try `Shift + Space` for quick actions
-- Bookmark [[Configuration/KEYBOARD-SHORTCUTS|Shortcuts Guide]]
+- Bookmark [[KEYBOARD-SHORTCUTS|Shortcuts Guide]]
 
 **Week 2**: Explore template variants
 - Try Quick template for daily logs
@@ -953,7 +953,7 @@ v7.0 prioritizes accessibility:
 **Week 3**: Master search
 - Practice basic searches
 - Try property filters like `[rating:5]`
-- Read [[Configuration/SEARCH-TIPS|Search Tips]]
+- Read [[SEARCH-TIPS|Search Tips]]
 
 **Week 4**: Customize your workflow
 - Pin frequently-used files in Recent Items
@@ -967,28 +967,28 @@ v7.0 prioritizes accessibility:
 ### Essential Starting Points
 
 - **[[START-HERE|Start Here Guide]]** - Complete beginner walkthrough
-- **[[Views/Persona-NOVICE-Dashboard|Novice Dashboard]]** - Your personalized home
-- **[[Templates/Quick Coffee Capture|Quick Coffee Capture]]** - Simplest logging template
-- **[[Templates/Coffee-Log-v5|Standard Coffee Log]]** - Full logging template
+- **[[Persona-NOVICE|Novice Dashboard]]** - Your personalized home
+- **[[Quick Coffee Capture|Quick Coffee Capture]]** - Simplest logging template
+- **[[Coffee-Log-v5|Standard Coffee Log]]** - Full logging template
 
 ### Learning Resources
 
-- **[[Brewing Guides/|All Brewing Guides]]** - Step-by-step instructions
+- **[[Brewing Guide|All Brewing Guides]]** - Step-by-step instructions
 - **[[Scientific References/Extraction Science/Coffee-Brewing-Control-Chart|Brewing Control Chart]]** - Visual extraction guide
-- **[[Documentation/Coffee-Terminology-Glossary|Coffee Glossary]]** - Common terms explained
+- **[[GLOSSARY|Coffee Glossary]]** - Common terms explained
 - **[[Documentation/Beginner-Equipment-Guide|Equipment Guide]]** - What to buy first
 
 ### Configuration Help
 
-- **[[Configuration/User-Configuration-Guide|User Configuration Guide]]** - Detailed settings help
+- **[[User-Configuration-Guide|User Configuration Guide]]** - Detailed settings help
 - **[[Configuration/Plugin-Setup|Plugin Setup Guide]]** - Plugin configuration
 - **[[HOME-DASHBOARD|Main Dashboard]]** - Coffee Vault home
 
 ### Next Steps
 
-- **[[Views/Persona-ENTHUSIAST-Dashboard|Enthusiast Dashboard]]** - When you're ready (20+ brews)
-- **[[Coffee Goals/|Coffee Goals]]** - Set structured learning goals
-- **[[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|Monthly Analytics]]** - Unlocks at 10 brews
+- **[[Persona-ENTHUSIAST|Enthusiast Dashboard]]** - When you're ready (20+ brews)
+- **[[Coffee Goal|Coffee Goals]]** - Set structured learning goals
+- **[[1-Monthly-Analytics-Dashboard|Monthly Analytics]]** - Unlocks at 10 brews
 
 ---
 
@@ -1011,4 +1011,4 @@ By hiding complexity, emphasizing essentials, and providing gentle guidance at e
 **Target Persona**: Novice Brewer (0-20 brews)
 **Design Philosophy**: Simplicity, Guidance, Encouragement, Focus
 
-**Questions?** See [[Configuration/User-Configuration-Guide|Configuration Help]] or [[START-HERE|Start Here]]
+**Questions?** See [[User-Configuration-Guide|Configuration Help]] or [[START-HERE|Start Here]]

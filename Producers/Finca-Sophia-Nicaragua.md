@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca Sophia
-country: [[Origins/Nicaragua]]
-region: [[Origins/Nicaragua-Jinotega]]
+country: [[Nicaragua]]
+region: [[Nicaragua]]
 producer-category: Family-Estate-Micro-Mill
 established: 1920-micro-mill-2007
 varieties: Java-Pacamara-Bourbon-Caturra-Maracaturra
@@ -482,23 +482,23 @@ Beyond coffee excellence, Finca Sophia's significance lies in resilience, innova
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Nicaragua]], [[Origins/Nicaragua-Jinotega]], [[Origins/Central-America-Coffee]]
+**Origins**: [[Nicaragua]], [[Nicaragua]], [[Origins/Central-America-Coffee]]
 
-**Varieties**: [[Varieties/Java]], [[Varieties/Pacamara]], [[Varieties/Bourbon]], [[Varieties/Caturra]], [[Varieties/Maracaturra]], [[Varieties/Ethiopian-Heirlooms-in-Central-America]]
+**Varieties**: [[Varieties/Java]], [[Varieties/Pacamara]], [[Varieties/Bourbon]], [[Varieties/Caturra]], [[Varieties/Maracaturra]], [[Ethiopia]]
 
 **Processing**: [[Processing/Anaerobic-Fermentation]], [[Processing/Carbonic-Maceration]], [[Processing/Extended-Fermentation]], [[Processing/Experimental-Processing]], [[Processing/Honey-Processing]], [[Processing/Natural-Process]], [[Processing/Washed-Process]]
 
 **Quality**: [[Quality/Cup-of-Excellence]], [[Quality/Experimental-Coffee]], [[Quality/90-Plus-Scoring-Coffees]], [[Quality/Processing-Innovation-Quality]]
 
-**Markets**: [[Markets/Direct-Trade-Coffee]], [[Markets/Experimental-Coffee-Market]], [[Markets/Ultra-Premium-Specialty]], [[Markets/Nicaraguan-Specialty-Coffee]]
+**Markets**: [[Markets/Direct-Trade-Coffee]], [[Markets/Experimental-Coffee-Market]], [[Markets/Ultra-Premium-Specialty]], [[Nicaragua]]
 
-**Cultural Context**: [[Coffee-Culture/Nicaraguan-Coffee-Heritage]], [[Coffee-Culture/Contra-War-Coffee-Recovery]], [[Coffee-Culture/Processing-Innovation-Culture]], [[Coffee-Culture/Micro-Mill-Movement-Central-America]]
+**Cultural Context**: [[Nicaragua]], [[Coffee-Culture/Contra-War-Coffee-Recovery]], [[Coffee-Culture/Processing-Innovation-Culture]], [[Coffee-Culture/Micro-Mill-Movement-Central-America]]
 
-**Sustainability**: [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/Cloud-Forest-Conservation]], [[Sustainability/Water-Recycling-Processing]]
+**Sustainability**: [[Rainforest-Alliance-Certification]], [[Sustainability/Cloud-Forest-Conservation]], [[Sustainability/Water-Recycling-Processing]]
 
 **Innovation**: [[Innovation/Processing-Experimentation]], [[Innovation/Fermentation-Innovation]], [[Innovation/Carbonic-Maceration-Coffee]], [[Innovation/Knowledge-Sharing-Coffee-Community]]
 
-**Historical Context**: [[History/Contra-War-Nicaragua-Coffee]], [[History/Post-Conflict-Coffee-Transformation]], [[History/Micro-Mill-Revolution-Central-America]]
+**Historical Context**: [[Nicaragua]], [[History/Post-Conflict-Coffee-Transformation]], [[History/Micro-Mill-Revolution-Central-America]]
 
 ---
 

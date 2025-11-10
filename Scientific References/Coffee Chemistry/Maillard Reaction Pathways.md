@@ -480,7 +480,7 @@ Melanoidins + Flavor Compounds + Aromatic Volatiles + CO₂ + H₂O
 - [[Chlorogenic Acids and Roast Development]] - Pre-cursor compounds
 - [[Roasting Phases and Reactions]] - Overall roasting chemistry
 - [[Volatile Aromatics and Aroma Compounds]] - Sensory active compounds
-- [[First Crack Chemistry]] - Physical-chemical transition point
+- [[First Crack Chemistry and Physics]] - Physical-chemical transition point
 - [[Roast Development Time Ratio]] - Timing implications
 
 ---

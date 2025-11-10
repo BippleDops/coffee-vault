@@ -13,11 +13,11 @@ avg-rating: 4.6
 tags: [recipe-profile, moka-pot, stovetop, italian, medium-roast, classic, traditional]
 relationships:
   requires:
-    - "[[Moka Pot]]"
-    - "[[Grinder]]"
-    - "[[Stovetop]]"
-    - "[[Scale]]"
-  works-with: [[Italy]], [[Brazil]], [[Colombia]], [[Medium Roast]]
+    - "[[Moka Pot Guide]]"
+    - "[[Timemore-Sculptor-Grinder]]"
+    - "[[Bellman-Stovetop-Steamer]]"
+    - "[[OXO-Barista-Brain-Scale]]"
+  works-with: [[Coffea-Circulor-Italy-Profile]], [[Brazil]], [[Colombia]], [[Medium Roast]]
   complements: [[Italian Coffee Culture]], [[Stovetop Brewing]], [[Espresso Alternative]]
 ---
 

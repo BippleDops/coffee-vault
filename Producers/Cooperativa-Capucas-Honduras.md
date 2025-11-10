@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Cooperativa Capucas (COCAFCAL)
-country: [[Origins/Honduras]]
-region: [[Origins/Honduras-La-Paz]]
+country: [[Honduras]]
+region: [[Honduras]]
 producer-category: Cooperative
 established: 1999
 varieties: Bourbon-Caturra-Catuai-Lempira-IHCAFE-90-Pacas
@@ -483,7 +483,7 @@ Beyond social impact, Capucas exemplifies quality-driven cooperative development
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Honduras]], [[Origins/Honduras-La-Paz]], [[Origins/Honduras-Marcala]], [[Origins/Central-America-Coffee]]
+**Origins**: [[Honduras]], [[Honduras]], [[Honduras]], [[Origins/Central-America-Coffee]]
 
 **Varieties**: [[Varieties/Bourbon]], [[Varieties/Caturra]], [[Varieties/Catuai]], [[Varieties/Lempira]], [[Varieties/Rust-Resistant-Varieties]]
 
@@ -493,7 +493,7 @@ Beyond social impact, Capucas exemplifies quality-driven cooperative development
 
 **Social Impact**: [[Social-Impact/Womens-Cooperatives]], [[Social-Impact/Womens-Leadership-Coffee]], [[Social-Impact/Cooperative-Coffee-Models]], [[Social-Impact/Fair-Trade-Community-Development]], [[Social-Impact/Womens-Empowerment-Coffee]]
 
-**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Certifications/Rainforest-Alliance-Certification]], [[Certifications/UTZ-Certification]]
+**Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Rainforest-Alliance-Certification]], [[Certifications/UTZ-Certification]]
 
 **Markets**: [[Markets/Fair-Trade-Markets]], [[Markets/Direct-Trade-Coffee]], [[Markets/Cooperative-Coffees]]
 

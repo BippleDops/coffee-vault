@@ -901,7 +901,7 @@ community-rating: 4.6
 - [[E61-Maintenance]] - Cleaning and care
 
 **Espresso Fundamentals**:
-- [[Espresso-Extraction]] - Brewing science
+- [[Master-Espresso-Extraction]] - Brewing science
 - [[Brew-Pressure]] - 9 bar pressure profiling
 - [[Commercial-Espresso-Components]] - Professional parts in prosumer machines
 - [[58mm-Portafilter-Ecosystem]] - Commercial standard benefits
@@ -921,8 +921,8 @@ community-rating: 4.6
 
 **Brewing Methods**:
 - [[Espresso-Brewing]] - Fundamentals
-- [[Milk-Steaming]] - Microfoam technique
-- [[Latte-Art]] - Pouring patterns
+- [[Milk-Steaming-Technique-Guide]] - Microfoam technique
+- [[Learn-Latte-Art-Fundamentals]] - Pouring patterns
 - [[Home-Barista]] - Home espresso journey
 
 ---

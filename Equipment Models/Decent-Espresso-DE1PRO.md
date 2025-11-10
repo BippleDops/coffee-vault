@@ -1070,10 +1070,10 @@ For experimental, tech-comfortable enthusiasts: absolutely buy this. For traditi
 ---
 
 **Cross-References:**
-- [[Equipment Models/La-Marzocco-Linea-Mini]] - Primary traditional competitor
-- [[Equipment Models/Lelit-Bianca]] - Manual profiling alternative
-- [[Equipment Models/Acaia-Lunar]] - Essential Bluetooth scale pairing
-- [[Equipment Models/Niche-Zero-Grinder]] - Minimum recommended grinder tier
+- [[Equipment Model]] - Primary traditional competitor
+- [[Equipment Model]] - Manual profiling alternative
+- [[Equipment Model]] - Essential Bluetooth scale pairing
+- [[Equipment Model]] - Minimum recommended grinder tier
 - [[Brewing Methods/Espresso]] - Primary method, advanced profiling
-- [[Brewing Parameters/Pressure]] - Machine enables complete pressure control
+- [[Brewing Parameters]] - Machine enables complete pressure control
 - [[Guides/Pressure-Profiling]] - Techniques enabled by this machine

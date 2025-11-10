@@ -27,7 +27,7 @@ tags: [example, daily-note, multiple-sessions]
 - **Recipe**: 20g → 320g, V60, 203°F
 - **Rating**: 4.8/5.0
 - **Notes**: Perfect stone fruit and jasmine. Best Guji brew yet.
-- **Link**: [[2025-10-28-Ethiopia-Guji-Morning-V60]]
+- **Link**: [[Ethiopia]]
 
 ### Midday - Pink Bourbon (AeroPress)
 - **Time**: 12:45 PM

@@ -1079,14 +1079,14 @@ For quality-focused home brewers wanting automatic convenience, busy professiona
 ---
 
 **Cross-References:**
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Manual pour-over alternative
-- [[Equipment Models/Bonavita-Connoisseur-8-Cup]] - Similar SCA certified brewer, lower price
-- [[Equipment Models/Chemex-Classic-8-Cup]] - Manual batch brewing alternative
-- [[Equipment Models/Comandante-C40-MK4]] - Premium grinder pairing
-- [[Equipment Models/Baratza-Virtuoso-Plus]] - Quality grinder pairing
+- [[Equipment Model]] - Manual pour-over alternative
+- [[Equipment Model]] - Similar SCA certified brewer, lower price
+- [[Equipment Model]] - Manual batch brewing alternative
+- [[Equipment Model]] - Premium grinder pairing
+- [[Equipment Model]] - Quality grinder pairing
 - [[Brewing Methods/Drip-Brewing]] - Primary brewing method
 - [[Brewing Methods/Pour-Over]] - Manual alternative (more control)
-- [[Brewing Parameters/Temperature]] - Copper boiler maintains 196-205°F optimal
-- [[Brewing Parameters/Brew-Time]] - 4-6 minutes automatic (SCA standard)
-- [[Brewing Parameters/Coffee-to-Water-Ratio]] - 1:16 to 1:18 optimal (scale required)
+- [[Brewing Parameters]] - Copper boiler maintains 196-205°F optimal
+- [[Brewing Parameters]] - 4-6 minutes automatic (SCA standard)
+- [[Brewing Parameters]] - 1:16 to 1:18 optimal (scale required)
 - [[Coffee Science/Extraction]] - SCA certification validates optimal extraction

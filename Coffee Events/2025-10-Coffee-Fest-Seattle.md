@@ -209,13 +209,13 @@ Seattle Coffee Fest 2025 was an incredible experience - the energy, passion, and
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Panama Gesha - Hacienda La Esmeralda]]
-- [[Guatemala Anaerobic Experimental]]
-- [[Yemen Mocha Traditional]]
+- [[Panama]]
+- [[Guatemala]]
+- [[Yemen]]
 
 **Related Goals**:
-- [[Coffee Goals/Learn-Formal-Cupping]]
-- [[Coffee Goals/Try-50-Different-Origins]]
+- [[Coffee Goal]]
+- [[Coffee Goal]]
 
 ---
 

@@ -442,8 +442,8 @@ Alternatives to keyboard shortcuts:
 
 ## Related Documentation
 
-- [[Configuration/User-Configuration-Guide|User Configuration Guide]]
-- [[Configuration/SEARCH-TIPS|Search Tips & Tricks]]
+- [[User-Configuration-Guide|User Configuration Guide]]
+- [[SEARCH-TIPS|Search Tips & Tricks]]
 - [[Documentation/Beginner-Equipment-Guide|Beginner's Guide]]
 - [[HOME-DASHBOARD|Home Dashboard]]
 

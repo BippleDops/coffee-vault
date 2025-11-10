@@ -69,9 +69,9 @@ date: 2025-10-27
 
 ## Tags
 
-- [[Origins]]
+- [[00-Origins-Index]]
 - [[Asia]]
 - [[Monsooned Coffee]]
 - [[Unique Processing]]
-- [[Shade-Grown]]
+- [[Shade-Grown Coffee and Biodiversity]]
 

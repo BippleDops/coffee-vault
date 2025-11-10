@@ -14,7 +14,7 @@ tags: [recipe-profile, siphon, vacuum-pot, theatrical, clean-cup]
 relationships:
   requires:
     - "[[Siphon Coffee Maker]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Heat Source]]"
 ---
 

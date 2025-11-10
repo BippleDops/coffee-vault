@@ -133,7 +133,7 @@ status: complete
 ## 🔗 Related Content
 
 **Try These**: [[Recipes/...]]  
-**Learn About**: [[Brewing Guides/Method Guide|Complete Method Guide]]  
+**Learn About**: [[Brewing Guide|Complete Method Guide]]  
 **Best Beans**: [[Beans Library/...]]  
 **Origins**: [[Origins/...]]
 
@@ -318,8 +318,8 @@ status: complete
 ## 🔗 Related Content
 
 **Recipes**: [[Recipes/...]]  
-**Guides**: [[Brewing Guides/...]]  
-**Comparisons**: [[Equipment Models/...]]
+**Guides**: [[Brewing Guide]]  
+**Comparisons**: [[Equipment Model]]
 
 ---
 
@@ -351,13 +351,13 @@ Use similar structured approach
 
 1. **Extract entities** from content:
    - Country/region names → Link to [[Origins/...]]
-   - Method names → Link to [[Brewing Guides/...]]
+   - Method names → Link to [[Brewing Guide]]
    - Bean names → Link to [[Beans Library/...]]
    - Roasters → Link to [[Roasters/...]]
    - Scientific concepts → Link to [[Scientific References/...]]
 
 2. **Create reciprocal links**:
-   - When you link [[Origins/Colombia]], add "## Links" section to Colombia
+   - When you link [[Colombia]], add "## Links" section to Colombia
    - When you link [[Recipes/V60]], add link back
    - When you link [[Producers/Finca]], add link to producer profile
 

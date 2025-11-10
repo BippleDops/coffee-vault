@@ -296,8 +296,8 @@ Carbonic maceration:
 
 ## Tags
 
-- [[Processing]]
-- [[Experimental Processing]]
+- [[processing-playbook-template]]
+- [[Experimental Processing Techniques]]
 - [[Innovation]]
 - [[Ultra-Premium]]
 

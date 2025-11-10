@@ -14,7 +14,7 @@ tags: [recipe-profile, cold-brew, concentrate, summer, make-ahead]
 relationships:
   requires:
     - "[[Cold Brew Maker]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
 ---
 
 # 📖 Recipe: Cold Brew Concentrate Recipe

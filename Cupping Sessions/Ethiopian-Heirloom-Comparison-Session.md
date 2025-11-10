@@ -64,7 +64,7 @@ This cupping session focused exclusively on Ethiopian natural-processed heirloom
 ### Sample 1: Yirgacheffe Kochere - Chelelektu Station
 
 **Origin Details**:
-- **Region**: [[Origins/Ethiopia-Yirgacheffe|Yirgacheffe]], Kochere District
+- **Region**: [[Ethiopia|Yirgacheffe]], Kochere District
 - **Processing Station**: Chelelektu Washing Station
 - **Altitude**: 2,100-2,300 MASL
 - **Variety**: Heirloom (predominantly local landraces)
@@ -163,7 +163,7 @@ Zero defects detected across all cups. No quakers, no insect damage, no sour or 
 ### Sample 2: Guji Shakiso - Hambela Estate
 
 **Origin Details**:
-- **Region**: [[Origins/Ethiopia-Guji|Guji]], Shakiso District
+- **Region**: [[Ethiopia|Guji]], Shakiso District
 - **Estate**: Hambela Coffee Estate
 - **Altitude**: 1,950-2,100 MASL
 - **Variety**: Heirloom (74110, 74112 mixed landraces)
@@ -265,7 +265,7 @@ Zero defects detected. Clean fermentation, no off-notes.
 ### Sample 3: Sidamo Bensa - Bombe Washing Station
 
 **Origin Details**:
-- **Region**: [[Origins/Ethiopia-Sidamo|Sidamo]], Bensa District
+- **Region**: [[Ethiopia|Sidamo]], Bensa District
 - **Processing Station**: Bombe Mountain Washing Station
 - **Altitude**: 2,000-2,200 MASL
 - **Variety**: Heirloom (local Sidamo landraces)
@@ -367,7 +367,7 @@ Two quakers in one cup, slight ferment note in another cup. Minor defects but pr
 ### Sample 4: Harrar Natural - Traditional Dry Process
 
 **Origin Details**:
-- **Region**: [[Origins/Ethiopia-Harrar|Harrar]], Eastern Highlands
+- **Region**: [[Ethiopia|Harrar]], Eastern Highlands
 - **Processing Station**: Traditional dry processing (small farmer collective)
 - **Altitude**: 1,800-2,100 MASL
 - **Variety**: Heirloom (Harrar landraces - distinct genetics)
@@ -469,7 +469,7 @@ Multiple quakers (4 in one cup), slight baggy note, over-fermentation character 
 ### Sample 5: Limu Natural - Forest Coffee
 
 **Origin Details**:
-- **Region**: [[Origins/Ethiopia-Limu|Limu]], Western Highlands
+- **Region**: [[Ethiopia|Limu]], Western Highlands
 - **Processing Station**: Limu Forest Coffee Cooperative
 - **Altitude**: 1,850-2,050 MASL
 - **Variety**: Heirloom (wild forest coffee genetics)
@@ -1500,12 +1500,12 @@ The genetic diversity in Ethiopian heirlooms contributes to complexity. Rather t
 ## 🔗 Related Content & Cross-References
 
 ### Origins Referenced
-- [[Origins/Ethiopia-Yirgacheffe|Yirgacheffe Region]]
-- [[Origins/Ethiopia-Guji|Guji Region]]
-- [[Origins/Ethiopia-Sidamo|Sidamo Region]]
-- [[Origins/Ethiopia-Harrar|Harrar Region]]
-- [[Origins/Ethiopia-Limu|Limu Region]]
-- [[Origins/Ethiopia|Ethiopia Overview]]
+- [[Ethiopia|Yirgacheffe Region]]
+- [[Ethiopia|Guji Region]]
+- [[Ethiopia|Sidamo Region]]
+- [[Ethiopia|Harrar Region]]
+- [[Ethiopia|Limu Region]]
+- [[Ethiopia|Ethiopia Overview]]
 
 ### Processing Methods
 - [[Scientific References/Processing/Natural-Process|Natural Processing]]
@@ -1515,7 +1515,7 @@ The genetic diversity in Ethiopian heirlooms contributes to complexity. Rather t
 - [[Scientific References/Processing/Fermentation-Control|Fermentation Control]]
 
 ### Varieties & Genetics
-- [[Scientific References/Varieties/Ethiopian-Heirlooms|Ethiopian Heirloom Varieties]]
+- [[Ethiopia|Ethiopian Heirloom Varieties]]
 - [[Scientific References/Varieties/Landrace-Diversity|Landrace Genetic Diversity]]
 - [[Scientific References/Genetics/Terroir-Expression|Variety and Terroir Interaction]]
 
@@ -1532,14 +1532,14 @@ The genetic diversity in Ethiopian heirlooms contributes to complexity. Rather t
 - [[Scientific References/Quality/Specialty-Grading|Specialty Coffee Grading]]
 
 ### Roasting Profiles
-- [[Recipes/Light-Roast-Ethiopian|Light Roast Profile for Ethiopians]]
+- [[Ethiopia|Light Roast Profile for Ethiopians]]
 - [[Scientific References/Roasting/Development-Time-Ratio|Development Time Optimization]]
 - [[Scientific References/Roasting/Density-Compensation|Roasting for Bean Density]]
 
 ### Related Cupping Sessions
-- [[Cupping Sessions/Processing-Method-Comparison-Washed-vs-Natural|Washed vs Natural Comparison]]
-- [[Cupping Sessions/African-Coffee-Triangle-Tasting|African Origins Comparison]]
-- [[Cupping Sessions/Experimental-Processing-Showcase|Experimental Processing]]
+- [[Cupping Session|Washed vs Natural Comparison]]
+- [[Cupping Session|African Origins Comparison]]
+- [[Cupping Session|Experimental Processing]]
 
 ---
 

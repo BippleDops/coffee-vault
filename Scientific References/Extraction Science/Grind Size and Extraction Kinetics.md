@@ -422,7 +422,7 @@ $$SA \propto \frac{1}{r}$$
 - [[Particle Size Distribution Effects]]
 - [[TDS and Extraction Yield Relationships]]
 - [[Coffee Brewing Control Chart]]
-- [[Water Temperature and Solubility]]
+- [[Water Temperature]]
 - [[Brew Time and Extraction Kinetics]]
 
 ### Equipment

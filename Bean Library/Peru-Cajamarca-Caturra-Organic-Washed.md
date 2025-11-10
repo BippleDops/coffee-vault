@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Peru Cajamarca Caturra Organic Washed
-origin: "[[Origins/Peru]]"
-region: [[Origins/Peru-Cajamarca]]
+origin: "[[Peru]]"
+region: [[Peru]]
 variety: [[Coffee Varieties/Caturra]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Peru Cajamarca Caturra Organic Washed
 
-**Origin**: [[Origins/Peru|Peru]]
-**Region**: [[Origins/Peru-Cajamarca|Cajamarca]]
+**Origin**: [[Peru|Peru]]
+**Region**: [[Peru|Cajamarca]]
 **Variety**: [[Coffee Varieties/Caturra|Caturra]]
 **Processing**: [[Processing Methods/Washed-Process|Washed]]
 **Grade**: Specialty Grade Organic
@@ -737,12 +737,12 @@ Cajamarca, located in Peru's northern highlands near the Ecuadorian border, prod
 
 ### Related Bean Profiles
 - [[Honduras-Marcala-Pacas-Washed]]
-- [[Colombia-Huila-Caturra-Washed]]
+- [[Colombia]]
 - [[Guatemala-Antigua-Bourbon-Washed]]
 
 ### Related Origins
-- [[Origins/Peru]]
-- [[Origins/Peru-Cajamarca]]
+- [[Peru]]
+- [[Peru]]
 - [[Origins/South-America]]
 
 ### Related Varieties

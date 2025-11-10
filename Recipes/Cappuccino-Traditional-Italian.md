@@ -14,11 +14,11 @@ tags: [recipe-profile, cappuccino, espresso, milk-drink, traditional, italian, m
 relationships:
   requires:
     - "[[Espresso Machine]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Steam Wand]]"
     - "[[Milk Pitcher]]"
-  works-with: [[Medium Roast]], [[Dark Roast]], [[Italian Blend]], [[Brazil]]
-  complements: [[Espresso]], [[Milk Steaming]], [[Latte Art]]
+  works-with: [[Medium Roast]], [[Second Crack and Dark Roast Development]], [[Italian Blend]], [[Brazil]]
+  complements: [[Espresso-Shot-Light-Roast-Fruit]], [[Milk Steaming]], [[Latte Art]]
 ---
 
 # 📖 Recipe: Cappuccino Traditional Italian
@@ -1018,7 +1018,7 @@ relationships:
 - [[Latte Art]] - Latte art tutorials
 - [[Medium Roast]] - Ideal roast for cappuccino
 - [[Italian Blend]] - Traditional espresso blends
-- [[Cortado]] - Similar milk drink, smaller
+- [[Cortado-Balanced-Espresso]] - Similar milk drink, smaller
 - [[Flat White]] - Similar drink, different foam
 
 **Recommended Reading**:

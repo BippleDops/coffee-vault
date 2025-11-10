@@ -29,9 +29,9 @@ Relationships are stored in a `relationships` object in YAML frontmatter:
 
 ```yaml
 relationships:
-  uses-bean: [[Bean Profile Name]]
+  uses-bean: [[Bean Profile]]
   uses-equipment: [[Equipment Profile Name]]
-  similar-to: [[Similar Bean Profile]]
+  similar-to: [[Bean Profile]]
   pairs-well-with: [[Brewing Method]]
 ```
 
@@ -98,7 +98,7 @@ type: coffee-log
 date: 2025-10-28
 beans: Ethiopian Yirgacheffe
 relationships:
-  uses-bean: [[Ethiopian Yirgacheffe]]
+  uses-bean: [[Ethiopia]]
   uses-equipment: [[Comandante C40]]
   uses-recipe: [[V60 Light Roast Recipe]]
   derived-from: [[Previous Successful Brew]]
@@ -271,7 +271,7 @@ dv.paragraph(`Path: ${path ? path.join(" → ") : "No path found"}`);
 ### 1. Consistent Naming
 
 - Use wiki-style links: `[[Entity Name]]`
-- Use full paths if ambiguous: `[[Beans Library/Ethiopian Yirgacheffe]]`
+- Use full paths if ambiguous: `[[Ethiopia]]`
 - Keep relationship names lowercase-with-hyphens
 
 ### 2. Bidirectional Relationships

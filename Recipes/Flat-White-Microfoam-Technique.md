@@ -14,11 +14,11 @@ tags: [recipe-profile, flat-white, espresso, microfoam, velvet, australian, new-
 relationships:
   requires:
     - "[[Espresso Machine]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Steam Wand]]"
     - "[[Milk Pitcher]]"
-  works-with: [[Medium Roast]], [[Light Roast]], [[Espresso]], [[Milk Steaming]]
-  complements: [[Cappuccino]], [[Cortado]], [[Latte]], [[Latte Art]], [[Microfoam]]
+  works-with: [[Medium Roast]], [[Light Roast]], [[Espresso-Shot-Light-Roast-Fruit]], [[Milk Steaming]]
+  complements: [[Cappuccino-Traditional-Italian]], [[Cortado-Balanced-Espresso]], [[Learn-Latte-Art-Fundamentals]], [[Latte Art]], [[Flat-White-Microfoam-Technique]]
 ---
 
 # 📖 Recipe: Flat White Microfoam Technique

@@ -49,13 +49,13 @@ related_equipment:
   - "[[Pullman-BigStep-Tamper]]"
 related_concepts:
   - "[[Grind-Size]]"
-  - "[[Burr-Geometry]]"
+  - "[[Grinder-Burr-Geometry-Analysis]]"
   - "[[Grind-Distribution]]"
-  - "[[Retention]]"
+  - "[[Grinder Retention and Single-Dosing]]"
   - "[[Espresso-Fundamentals]]"
   - "[[Manual-Grinding]]"
-  - "[[Particle-Size-Distribution]]"
-  - "[[Consistency]]"
+  - "[[Particle-Size-Distribution-Measurement]]"
+  - "[[Roast Uniformity and Consistency]]"
 ---
 
 # 1Zpresso JX-Pro Manual Coffee Grinder

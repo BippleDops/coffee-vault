@@ -57,7 +57,7 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 **Less Desirable Acidity** (Can Create Harshness):
 - [[Quinic Acid]] - Sour, bitter, astringent
 - [[Acetic Acid]] - Vinegar-like, sharp
-- [[Chlorogenic Acids]] - Bitter, astringent (in excess)
+- [[Chlorogenic Acids and Antioxidants]] - Bitter, astringent (in excess)
 
 **Learn More**: [[Organic Acids]], [[Acids in Coffee]]
 
@@ -157,7 +157,7 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 - **Flat** - Lacking brightness (over-roasted, old)
 - **Imbalanced** - Dominating other flavors
 
-**Learn More**: [[Sensory Calibration Techniques]], [[Flavor Wheel]]
+**Learn More**: [[Sensory Calibration Techniques]], [[Coffee Flavor Wheel Deep Dive]]
 
 ---
 
@@ -175,7 +175,7 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 - Positive: "Bright", "Lively", "Citrusy", "Wine-like", "Clean"
 - Negative: "Sour", "Harsh", "Astringent", "Flat", "Vinegary"
 
-**Learn More**: [[Cupping Protocol]], [[Palate Training Exercises]]
+**Learn More**: [[SCA Cupping Protocol Step-by-Step]], [[Palate Training Exercises]]
 
 ---
 
@@ -214,7 +214,7 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 - Excessive either creates imbalance
 - Dark roasts typically low acid, high bitter
 
-**Learn More**: [[Sensory Science]], [[Cupping Protocol]]
+**Learn More**: [[Sensory Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -235,7 +235,7 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 - Match preferences to origin/roast
 - Offer temperature recommendations
 
-**Learn More**: [[Brewing Guides]], [[Coffee Origins]]
+**Learn More**: [[Brewing Guide]], [[Coffee Origins]]
 
 ---
 
@@ -249,16 +249,16 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 **Sensory Evaluation**:
 - [[Sensory Calibration Techniques]] - Consistent perception
 - [[Palate Training Exercises]] - Improving acuity
-- [[Cupping Protocol]] - Systematic evaluation
-- [[Flavor Wheel]] - Classification system
+- [[SCA Cupping Protocol Step-by-Step]] - Systematic evaluation
+- [[Coffee Flavor Wheel Deep Dive]] - Classification system
 
 **Brewing & Roasting**:
 - [[Extraction Science]] - How extraction affects acidity
 - [[Roasting Science]] - How roasting transforms acidity
-- [[Brewing Guides]] - Practical brewing control
+- [[Brewing Guide]] - Practical brewing control
 
 **Processing & Origin**:
-- [[Processing Methods]] - How processing affects acidity
+- [[Coffee Processing Methods - Complete Guide]] - How processing affects acidity
 - [[Origin Chemistry]] - Regional differences
 
 ---
@@ -271,8 +271,8 @@ Despite coffee having relatively mild pH, we perceive it as "bright" and "acidic
 - [[Sensory Calibration Techniques]] - Consistent evaluation
 
 **Practical Guides**:
-- [[Cupping Protocol]] - Systematic evaluation
-- [[Brewing Guides]] - Acidity control in brewing
+- [[SCA Cupping Protocol Step-by-Step]] - Systematic evaluation
+- [[Brewing Guide]] - Acidity control in brewing
 - [[Palate Training Exercises]] - Improving perception
 
 ---

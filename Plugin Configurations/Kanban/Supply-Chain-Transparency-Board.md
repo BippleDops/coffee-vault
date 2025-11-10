@@ -13,13 +13,13 @@ tags: [kanban, supply-chain, transparency, ethics]
   - Current: Know roaster (Onyx), don't know producer
   - Action: Email roaster for producer information
   - Goal: Complete supply chain map
-  - Link: [[Ethiopian Yirgacheffe]]
+  - Link: [[Ethiopia]]
 
 - [ ] **Colombian Pink Bourbon** #transparency:low #medium-priority
   - Current: Have origin (Cauca), need farm details
   - Action: Check roaster website for lot information
   - Certifications: Unknown
-  - Link: [[Colombian Pink Bourbon]]
+  - Link: [[Colombia]]
 
 
 ## 📊 Partial Information
@@ -29,7 +29,7 @@ tags: [kanban, supply-chain, transparency, ethics]
   - Unknown: Individual farm, farmer names
   - Certifications: Fair Trade ✓, Organic ✓
   - Action: Research cooperative structure
-  - Link: [[Kenya AA Kirinyaga]]
+  - Link: [[Kenya]]
 
 - [ ] **Guatemala Antigua** #transparency:medium
   - Known: Region (Antigua), altitude (1,400m)
@@ -50,7 +50,7 @@ tags: [kanban, supply-chain, transparency, ethics]
   - ✅ Certifications: Organic, Fair Trade, Direct Trade
   - ✅ Transparency Score: 9/10
   - ✅ Price to farmer: $8.50/kg (350% above commodity)
-  - Link: [[Ethiopian Yirgacheffe Kochere]]
+  - Link: [[Ethiopia]]
 
 - [ ] **Direct Trade Colombian** #transparency:complete #direct-trade
   - ✅ Producer: Finca El Paraiso
@@ -155,7 +155,7 @@ tags: [kanban, supply-chain, transparency, ethics]
 
 ### Integration
 
-**Supply Chain Dashboard**: [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]]  
+**Supply Chain Dashboard**: [[10-Supply-Chain-Transparency-Dashboard]]  
 **Producer Profiles**: [[Producers/]]  
 **Bean Profiles**: Update with producer links  
 

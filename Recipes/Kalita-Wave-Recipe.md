@@ -14,7 +14,7 @@ tags: [recipe-profile, kalita-wave, pour-over, flat-bed, consistent]
 relationships:
   requires:
     - "[[Kalita Wave]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
     - "[[Gooseneck Kettle]]"
 ---
 

@@ -46,13 +46,13 @@ related_equipment:
   - "[[Comandante-C40-MK4]]"
   - "[[1Zpresso-JX-Pro]]"
   - "[[Hario-Skerton-Pro]]"
-  - "[[Porlex-Mini]]"
+  - "[[Porlex-Mini-Hand-Grinder]]"
   - "[[Aeropress-Original]]"
-  - "[[Hario-V60]]"
-  - "[[French-Press]]"
+  - "[[Hario-V60-Plastic-Dripper]]"
+  - "[[French-Press-Quick-3-Minute-Method]]"
   - "[[Clever-Coffee-Dripper]]"
   - "[[Wacaco-Nanopresso]]"
-  - "[[Fellow-Prismo]]"
+  - "[[Fellow-Prismo-AeroPress]]"
 related_concepts:
   - "[[Grind-Size]]"
   - "[[Grind-Consistency]]"
@@ -60,7 +60,7 @@ related_concepts:
   - "[[Ceramic-Burrs]]"
   - "[[Manual-Grinding]]"
   - "[[Grind-Distribution]]"
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Travel-Coffee]]"
   - "[[Budget-Coffee-Equipment]]"
   - "[[Entry-Level-Coffee]]"
@@ -72,7 +72,7 @@ related_concepts:
 
 The Rhinowares Hand Coffee Grinder represents the entry point to proper coffee grinding for budget-conscious beginners, travelers, and those exploring specialty coffee without significant financial commitment. Priced at approximately $45, this manual grinder delivers the fundamental benefit of burr grinding—adjustable, relatively consistent particle size—at a price point comparable to electric blade grinders while providing vastly superior grind quality and control.
 
-In the landscape of coffee equipment, the Rhinowares occupies the critical "first real grinder" niche. Many coffee enthusiasts begin their journey with pre-ground coffee or blade grinders before discovering that grind quality fundamentally limits coffee potential. The Rhinowares provides accessible transition from these inadequate options to proper burr grinding, typically paired with methods like [[Aeropress-Original]], [[Hario-V60]], or [[French-Press]] that similarly balance quality and affordability.
+In the landscape of coffee equipment, the Rhinowares occupies the critical "first real grinder" niche. Many coffee enthusiasts begin their journey with pre-ground coffee or blade grinders before discovering that grind quality fundamentally limits coffee potential. The Rhinowares provides accessible transition from these inadequate options to proper burr grinding, typically paired with methods like [[Aeropress-Original]], [[Hario-V60-Plastic-Dripper]], or [[French-Press-Quick-3-Minute-Method]] that similarly balance quality and affordability.
 
 The grinder employs 38mm conical ceramic burrs—small by specialty standards but functional for manual grinding applications. Ceramic burrs offer advantages for budget manual grinders: they're inexpensive to manufacture, don't transfer heat during grinding (minimal concern for manual grinding anyway), resist rust, and provide adequate consistency for basic brewing needs. However, ceramic burrs also present limitations: they're more fragile than steel (vulnerable to damage from rocks or hard objects), produce less uniform particle distributions than quality steel burrs, and wear differently over time.
 
@@ -94,7 +94,7 @@ The company's product range spans multiple categories: barista tools (tampers, p
 
 Rhinowares manufacturing occurs primarily in China and Taiwan, leveraging efficient production methods and material sourcing to achieve target price points. The company doesn't manufacture burrs directly—instead purchasing conical ceramic burr sets from specialized suppliers who produce burrs for multiple grinder brands. This component-sourcing approach is standard for budget coffee equipment, allowing companies to focus on assembly, design, and distribution rather than component manufacturing.
 
-The Hand Grinder model launched around 2015 as Rhinowares' entry into the growing hand grinder market. At that time, manual grinders were experiencing renaissance driven by specialty coffee's portability demands and renewed appreciation for manual processes. Established premium options like [[Comandante-C40-MK4]] and [[Porlex-Mini]] demonstrated market appetite, but their $150-250 price points excluded budget-conscious users. Rhinowares identified opportunity for a functional hand grinder at impulse-purchase pricing.
+The Hand Grinder model launched around 2015 as Rhinowares' entry into the growing hand grinder market. At that time, manual grinders were experiencing renaissance driven by specialty coffee's portability demands and renewed appreciation for manual processes. Established premium options like [[Comandante-C40-MK4]] and [[Porlex-Mini-Hand-Grinder]] demonstrated market appetite, but their $150-250 price points excluded budget-conscious users. Rhinowares identified opportunity for a functional hand grinder at impulse-purchase pricing.
 
 The design clearly derives from the common "tube-style" hand grinder template used by numerous budget brands: cylindrical body, ceramic conical burrs, adjustment mechanism at burr base, removable handle, and integrated catch jar. This template exists across dozens of brands (JavaPresse, Khaw-Fee, Kuissential, etc.) with minor cosmetic variations, suggesting shared manufacturing sources or licensed designs. Rhinowares differentiates primarily through brand reputation and distribution channels rather than unique engineering.
 
@@ -287,8 +287,8 @@ The Rhinowares' grind consistency is adequate for basic brewing methods but noti
 This distribution compares unfavorably to premium hand grinders (70-80% target size, <10% fines) but dramatically better than blade grinders (35-45% target size, 25%+ fines).
 
 **Practical Implications:**
-- **Pour-over brewing**: Acceptable results with forgiving brew methods like [[Hario-V60]] or [[French-Press]]
-- **Immersion brewing**: Works well for [[French-Press]], [[Clever-Coffee-Dripper]], [[Aeropress-Original]]
+- **Pour-over brewing**: Acceptable results with forgiving brew methods like [[Hario-V60-Plastic-Dripper]] or [[French-Press-Quick-3-Minute-Method]]
+- **Immersion brewing**: Works well for [[French-Press-Quick-3-Minute-Method]], [[Clever-Coffee-Dripper]], [[Aeropress-Original]]
 - **Espresso**: Inadequate uniformity causes channeling and inconsistent extraction
 - **Turkish coffee**: Cannot achieve proper ultra-fine consistency
 
@@ -350,7 +350,7 @@ However, users should protect the ceramic burrs from severe impacts that could c
 **Travel Coffee Setup Compatibility**
 The Rhinowares pairs excellently with travel-friendly brewing methods:
 - [[Aeropress-Original]] (compact, durable, excellent coffee)
-- [[Hario-V60]] (plastic versions are lightweight and packable)
+- [[Hario-V60-Plastic-Dripper]] (plastic versions are lightweight and packable)
 - [[Clever-Coffee-Dripper]] (larger but very forgiving brewing)
 - [[Wacaco-Nanopresso]] (portable espresso maker, though grind may be too coarse)
 
@@ -465,7 +465,7 @@ The portability and electricity-free operation shine for travel:
 - Compact size fits luggage easily
 - Lightweight (300g) adds minimal weight
 - No power requirements (perfect for camping, hotels, remote locations)
-- Pairs excellently with [[Aeropress-Original]] or [[Hario-V60]]
+- Pairs excellently with [[Aeropress-Original]] or [[Hario-V60-Plastic-Dripper]]
 
 **Office Workers**
 Enables fresh coffee at work:
@@ -570,7 +570,7 @@ The Rhinowares provides maximum value when:
 - User is exploring specialty coffee and uncertain about long-term commitment
 - Primary use is travel/camping (portability critical)
 - Budget is constrained ($45 affordable, $160+ challenging)
-- Brewing single servings with forgiving methods ([[Aeropress-Original]], [[French-Press]], basic pour-over)
+- Brewing single servings with forgiving methods ([[Aeropress-Original]], [[French-Press-Quick-3-Minute-Method]], basic pour-over)
 - Quiet operation is priority (early mornings, apartments, offices)
 
 For users in these scenarios, the Rhinowares often remains in service indefinitely even if supplemented by electric grinders for home use.
@@ -634,11 +634,11 @@ For many users, the Rhinowares represents a pivotal moment in their coffee journ
 - **[[Comandante-C40-MK4]]** - Premium hand grinder upgrade path ($250)
 - **[[1Zpresso-JX-Pro]]** - Excellent hand grinder with espresso capability ($160)
 - **[[Hario-Skerton-Pro]]** - Similar budget hand grinder alternative ($50)
-- **[[Porlex-Mini]]** - Compact Japanese hand grinder ($60)
+- **[[Porlex-Mini-Hand-Grinder]]** - Compact Japanese hand grinder ($60)
 - **[[Baratza-Encore]]** - Entry electric burr grinder upgrade ($140)
 - **[[Aeropress-Original]]** - Perfect brewing companion ($30)
-- **[[Hario-V60]]** - Pour-over brewer pairing well ($8)
-- **[[French-Press]]** - Forgiving brew method for this grinder ($20-50)
+- **[[Hario-V60-Plastic-Dripper]]** - Pour-over brewer pairing well ($8)
+- **[[French-Press-Quick-3-Minute-Method]]** - Forgiving brew method for this grinder ($20-50)
 - **[[Clever-Coffee-Dripper]]** - Immersion brewing complementing grinder ($25)
 - **[[Wacaco-Nanopresso]]** - Portable espresso maker for travel setups ($75)
 
@@ -650,7 +650,7 @@ For many users, the Rhinowares represents a pivotal moment in their coffee journ
 - **[[Ceramic-Burrs]]** - Ceramic vs. steel burr comparison
 - **[[Manual-Grinding]]** - Hand grinding techniques and considerations
 - **[[Grind-Distribution]]** - Particle size distribution effects
-- **[[Extraction]]** - How grind quality affects extraction
+- **[[DATA-EXTRACTION-GUIDE]]** - How grind quality affects extraction
 - **[[Travel-Coffee]]** - Portable coffee setup strategies
 - **[[Budget-Coffee-Equipment]]** - Building quality setups affordably
 - **[[Entry-Level-Coffee]]** - Beginning specialty coffee journey

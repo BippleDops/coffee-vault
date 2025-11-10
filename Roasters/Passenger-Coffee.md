@@ -171,11 +171,11 @@ Relationship focus creates advantages including exceptional coffee access, suppl
 
 Passenger sources from established specialty origins with particular emphasis on producers in [[Colombia]], [[Ethiopia]], and [[Central America]] where company has developed strong relationships. Geographic focus allows expertise development while accepting reduced origin diversity.
 
-Colombian partnerships have proven particularly significant with multi-year relationships with specific farms in [[Huila]] and other regions. Colombian coffee provides consistent quality base while partnerships enable processing experimentation and quality evolution over years.
+Colombian partnerships have proven particularly significant with multi-year relationships with specific farms in [[Huila-Coffee-Growers-Federation-Colombia]] and other regions. Colombian coffee provides consistent quality base while partnerships enable processing experimentation and quality evolution over years.
 
 Ethiopian sourcing includes both washing station relationships and importer partnerships providing exceptional lots. Passenger features Ethiopian coffees prominently given inherent complexity and fruit-forward characteristics appealing to customers while performing well under company's roasting approach.
 
-Central American origins including [[Costa-Rica]], [[Guatemala]], and [[El-Salvador]] provide diversity in flavor profiles and processing methods. Passenger works with producers pursuing quality through both traditional washed processing and innovative honey and natural methods.
+Central American origins including [[Helsar-de-Zarcero-Micromill-Costa-Rica]], [[Guatemala]], and [[Finca-Vista-Hermosa-El-Salvador]] provide diversity in flavor profiles and processing methods. Passenger works with producers pursuing quality through both traditional washed processing and innovative honey and natural methods.
 
 Processing method diversity spans washed, natural, honey, and some experimental protocols. While not as processing-innovation-focused as most experimental roasters, Passenger sources coffees with various processing creating flavor variation while maintaining quality standards.
 

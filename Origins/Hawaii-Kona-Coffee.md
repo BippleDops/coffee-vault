@@ -751,12 +751,12 @@ High consumer prices ($25-$50/lb roasted retail) support direct sales model.
 - [[Puerto-Rico-Coffee]] - Caribbean island coffee origin
 - [[Galapagos-Islands-Coffee]] - Rare island origin
 - [[Taiwan-Alishan-Coffee]] - High-price specialty origin comparison
-- [[Typica]] - Dominant variety (Kona Typica)
-- [[Geisha]] - Growing premium variety
+- [[Peru-Typica]] - Dominant variety (Kona Typica)
+- [[2025-10-23-Panama-Geisha-48]] - Growing premium variety
 - [[Volcanic Soil]] - Terroir characteristic
 - [[Island Coffee]] - Geographic classification
 - [[Specialty Coffee]] - Market positioning
-- [[Washed Process]] - Dominant processing
+- [[Washed Processing Complete Guide]] - Dominant processing
 - [[Coffee Berry Borer]] - Major pest challenge
 - [[Agritourism]] - Business model component
 

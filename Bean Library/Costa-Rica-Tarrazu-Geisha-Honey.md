@@ -2,7 +2,7 @@
 type: bean-profile
 name: Costa Rica Tarrazu Geisha Red Honey
 origin: "[[Origins/Costa-Rica]]"
-region: [[Origins/Costa-Rica-Tarrazu]]
+region: [[Costa-Rica-Tarrazu]]
 variety: [[Coffee Varieties/Geisha]]
 processing: [[Processing Methods/Honey-Process]]
 roast-level: light-medium
@@ -19,7 +19,7 @@ status: reference
 # 🫘 Costa Rica Tarrazu Geisha Red Honey
 
 **Origin**: [[Origins/Costa-Rica|Costa Rica]]
-**Region**: [[Origins/Costa-Rica-Tarrazu|Tarrazú]]
+**Region**: [[Costa-Rica-Tarrazu|Tarrazú]]
 **Variety**: [[Coffee Varieties/Geisha|Geisha (Gesha)]]
 **Processing**: [[Processing Methods/Honey-Process|Red Honey Process]]
 **Grade**: SHB (Strictly Hard Bean)
@@ -1065,21 +1065,21 @@ This is where red honey processing creates its magic and faces its greatest chal
 
 ### Related Bean Profiles
 - [[Panama-Boquete-Geisha-Washed]] - Classic washed Geisha comparison
-- [[Ethiopia-Gesha-Village]] - Geisha's Ethiopian origin
-- [[Costa-Rica-Tarrazu-Caturra-Washed]] - Same region, traditional variety
-- [[Guatemala-Huehuetenango-Geisha]] - Central American Geisha alternative
+- [[Ethiopia]] - Geisha's Ethiopian origin
+- [[Costa-Rica-Tarrazu]] - Same region, traditional variety
+- [[Guatemala]] - Central American Geisha alternative
 
 ### Related Origins
 - [[Origins/Costa-Rica]] - Complete Costa Rica profile
-- [[Origins/Costa-Rica-Tarrazu]] - Detailed Tarrazú information
-- [[Origins/Panama]] - Geisha's adopted home
+- [[Costa-Rica-Tarrazu]] - Detailed Tarrazú information
+- [[Panama]] - Geisha's adopted home
 - [[Origins/Central-America]] - Regional context
 
 ### Related Varieties
 - [[Coffee Varieties/Geisha]] - Complete Geisha variety information
 - [[Coffee Varieties/Typica]] - Traditional variety comparison
 - [[Coffee Varieties/Bourbon]] - Classic variety comparison
-- [[Coffee Varieties/Ethiopian-Landraces]] - Geisha's genetic relatives
+- [[Ethiopia]] - Geisha's genetic relatives
 
 ### Processing Methods
 - [[Processing Methods/Honey-Process]] - Honey processing complete guide
@@ -1088,10 +1088,10 @@ This is where red honey processing creates its magic and faces its greatest chal
 - [[Processing Methods/Fermentation-Science]] - Honey processing fermentation
 
 ### Brewing Guides
-- [[Brewing Guides/Pour-Over-Guide]] - Optimal for Geisha
-- [[Brewing Guides/V60-Technique]] - Best method for florals
-- [[Brewing Guides/Water-Chemistry]] - Critical for Geisha
-- [[Brewing Guides/Cupping-Protocol]] - Professional evaluation
+- [[Brewing Guide]] - Optimal for Geisha
+- [[Brewing Guide]] - Best method for florals
+- [[Brewing Guide]] - Critical for Geisha
+- [[Brewing Guide]] - Professional evaluation
 
 ### Scientific References
 - [[Scientific References/Geisha-Chemistry]] - Aromatic compound analysis
@@ -1100,7 +1100,7 @@ This is where red honey processing creates its magic and faces its greatest chal
 - [[Scientific References/Varietal-Impact]] - Why variety matters
 
 ### Roasters with Geisha Programs
-- [[Roasters/Onyx-Coffee-Lab]] - Regular Geisha offerings
+- [[Onyx-Coffee-Lab]] - Regular Geisha offerings
 - [[Roasters/Sweet-Bloom-Coffee]] - Competition Geisha specialist
 - [[Roasters/Cat-and-Cloud]] - Costa Rican Geisha focus
 - [[Roasters/Verve-Coffee]] - Direct trade Costa Rica

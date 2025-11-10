@@ -508,7 +508,7 @@ community-rating: 4.7
 
 **Recommended Setup** (Enthusiast - $200):
 - OXO Cold Brew Maker: $50
-- [[Equipment Models/Fellow-Ode-Gen2]] grinder: $345 (or $50-100 budget grinder)
+- [[Equipment Model]] grinder: $345 (or $50-100 budget grinder)
 - Scale: $15-50
 - Quality beans: $12-18 per batch
 - **Total: $415+ (with Fellow) or $115-200 (budget grinder)**
@@ -517,7 +517,7 @@ community-rating: 4.7
 - Coarse grind: Similar to French press
 - Burr grinder: Ensures consistent particle size
 - Budget: Baratza Encore ($140) or Capresso Infinity ($100)
-- Premium: [[Equipment Models/Fellow-Ode-Gen2]] ($345)
+- Premium: [[Equipment Model]] ($345)
 - Pre-ground: Acceptable (buy "coarse" or "French press" grind)
 
 **Water Recommendations**:
@@ -934,11 +934,11 @@ For anyone who drinks cold brew regularly, the OXO is a must-buy. It pays for it
 - [[Brewing Methods/Cold Brew]] - Primary brewing method
 - [[Brewing Methods/Immersion]] - Cold immersion technique
 - [[Cold Brew Science]] - Understanding cold extraction
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Alternative brewing method (hot)
-- [[Equipment Models/Clever-Coffee-Dripper]] - Similar immersion concept (hot)
-- [[Equipment Models/Bodum-Chambord-French-Press]] - Can also make cold brew
+- [[Equipment Model]] - Alternative brewing method (hot)
+- [[Equipment Model]] - Similar immersion concept (hot)
+- [[Equipment Model]] - Can also make cold brew
 - [[Coffee Roasting/Medium Roast]] - Ideal roast for cold brew
-- [[Brewing Parameters/Steep Time]] - Cold brew timing
-- [[Brewing Parameters/Grind Size]] - Coarse grind requirement
-- [[Water Quality]] - Critical for cold brew flavor
-- [[Coffee Storage]] - Storing cold brew concentrate
+- [[Brewing Parameters]] - Cold brew timing
+- [[Brewing Parameters]] - Coarse grind requirement
+- [[Sodium and Brew Water Quality]] - Critical for cold brew flavor
+- [[Green Coffee Storage and Aging]] - Storing cold brew concentrate

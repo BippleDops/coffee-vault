@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Sethuraman Estate
-country: [[Origins/India]]
-region: [[Origins/India-Chikmagalur]]
+country: [[India]]
+region: [[India]]
 producer-category: Family-Estate
 established: 1930
 varieties: Kent-S795-Cauvery-SLN-9
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Sethuraman Estate
 
 **Type**: Family Estate - Fourth Generation
-**Location**: [[Origins/India-Chikmagalur|Chikmagalur, Karnataka, India]]
+**Location**: [[India|Chikmagalur, Karnataka, India]]
 **Established**: 1930
 
 ---

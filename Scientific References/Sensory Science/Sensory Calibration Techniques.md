@@ -389,8 +389,8 @@ Regular calibration helps:
 ## Tags
 
 - [[Sensory Science]]
-- [[Calibration]]
-- [[Quality Control]]
+- [[Sensory-Fatigue-and-Palate-Calibration]]
+- [[Post-Harvest Quality Control]]
 - [[Professional Standards]]
-- [[Cupping]]
+- [[SCA-Cupping-Form]]
 

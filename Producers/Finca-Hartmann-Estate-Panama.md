@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca Hartmann Estate
-country: [[Origins/Panama]]
-region: [[Origins/Panama-Volcan-Baru]]
+country: [[Panama]]
+region: [[Panama]]
 producer-category: Family-Estate
 established: 1912
 varieties: Geisha-Typica-Caturra-Catuai-Pacamara-Bourbon
@@ -467,21 +467,21 @@ Beyond coffee excellence, Finca Hartmann's naturalist heritage makes it unique i
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Panama]], [[Origins/Panama-Volcan-Baru]], [[Origins/Panama-Boquete]], [[Origins/Central-America-Coffee]]
+**Origins**: [[Panama]], [[Panama]], [[Panama]], [[Origins/Central-America-Coffee]]
 
 **Varieties**: [[Varieties/Geisha]], [[Varieties/Typica]], [[Varieties/Caturra]], [[Varieties/Catuai]], [[Varieties/Pacamara]], [[Varieties/Bourbon]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/Natural-Process]], [[Processing/Honey-Process]], [[Processing/Micro-lot-Processing]]
 
-**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Competition-Coffee]], [[Quality/Best-of-Panama]], [[Quality/90-Plus-Scoring-Coffees]]
+**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Competition-Coffee]], [[Panama]], [[Quality/90-Plus-Scoring-Coffees]]
 
-**Sustainability**: [[Sustainability/Bird-Friendly-Coffee]], [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/Conservation-Agriculture]], [[Sustainability/Private-Nature-Reserves]], [[Sustainability/Biodiversity-in-Coffee]]
+**Sustainability**: [[Sustainability/Bird-Friendly-Coffee]], [[Rainforest-Alliance-Certification]], [[Sustainability/Conservation-Agriculture]], [[Sustainability/Private-Nature-Reserves]], [[Sustainability/Biodiversity-in-Coffee]]
 
 **Markets**: [[Markets/Direct-Trade-Coffee]], [[Markets/Specialty-Coffee-Auctions]], [[Markets/Micro-lot-Marketing]]
 
 **Cultural Context**: [[Coffee-Culture/Central-American-Coffee-Heritage]], [[Coffee-Culture/Naturalist-Coffee-Farmers]], [[Coffee-Culture/Multi-Generational-Coffee-Families]]
 
-**Tourism**: [[Coffee-Tourism/Origin-Trips]], [[Coffee-Tourism/Birding-and-Coffee]], [[Coffee-Tourism/Panama-Coffee-Destinations]]
+**Tourism**: [[Coffee-Tourism/Origin-Trips]], [[Coffee-Tourism/Birding-and-Coffee]], [[Panama]]
 
 ---
 

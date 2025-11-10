@@ -35,7 +35,7 @@ related-topics:
 
 **Structure**: C₇H₁₂O₆  
 **Type**: Cyclohexanecarboxylic acid  
-**Source**: Breakdown product of [[Chlorogenic Acids]] during roasting
+**Source**: Breakdown product of [[Chlorogenic Acids and Antioxidants]] during roasting
 
 **Formation**:
 - Degraded from chlorogenic acids above 200°C
@@ -119,7 +119,7 @@ Chlorogenic Acids → Quinic Acid → Quinic Lactones → Staleness
 - Appropriate roast level
 - Quick consumption
 
-**Learn More**: [[Coffee Storage]], [[Staling and Degradation]]
+**Learn More**: [[Green Coffee Storage and Aging]], [[Staling and Degradation]]
 
 ---
 
@@ -142,7 +142,7 @@ Chlorogenic Acids → Quinic Acid → Quinic Lactones → Staleness
 - Recognize over-extraction vs. roast defect
 - Understand brewing vs. roasting impact
 
-**Learn More**: [[Extraction Science]], [[Brewing Guides]]
+**Learn More**: [[Extraction Science]], [[Brewing Guide]]
 
 ---
 
@@ -159,7 +159,7 @@ Chlorogenic Acids → Quinic Acid → Quinic Lactones → Staleness
 - Washed process: More consistently controlled
 - Fermentation affects chlorogenic content
 
-**Learn More**: [[Processing Methods]], [[Origin Chemistry]]
+**Learn More**: [[Coffee Processing Methods - Complete Guide]], [[Origin Chemistry]]
 
 ---
 
@@ -183,7 +183,7 @@ Chlorogenic Acids → Quinic Acid → Quinic Lactones → Staleness
 - Recognize staling indicators
 - Calibrate to bitterness types
 
-**Learn More**: [[Brewing Guides]], [[Sensory Calibration Techniques]]
+**Learn More**: [[Brewing Guide]], [[Sensory Calibration Techniques]]
 
 ---
 
@@ -201,13 +201,13 @@ Chlorogenic Acids → Quinic Acid → Quinic Lactones → Staleness
 - [[Maillard Reaction Pathways]] - Roasting chemistry
 
 **Quality & Staling**:
-- [[Coffee Storage]] - Preventing staling
+- [[Green Coffee Storage and Aging]] - Preventing staling
 - [[Staling and Degradation]] - Age-related changes
 - [[Sensory Science]] - Identifying off-flavors
 
 **Brewing & Extraction**:
 - [[Extraction Science]] - Avoiding over-extraction
-- [[Brewing Guides]] - Optimal brewing parameters
+- [[Brewing Guide]] - Optimal brewing parameters
 - [[Water Chemistry and Extraction]] - Extraction control
 
 ---

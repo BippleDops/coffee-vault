@@ -14,7 +14,7 @@ tags: [recipe-profile, clever-dripper, immersion-pour-over-hybrid, easy, consist
 relationships:
   requires:
     - "[[Clever Dripper]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
 ---
 
 # 📖 Recipe: Clever Dripper Recipe

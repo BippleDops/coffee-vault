@@ -62,7 +62,7 @@ related-topics:
 - Extraction dependent
 - Can reduce body perception
 
-**Learn More**: [[Extraction Science]], [[Extraction Yield]]
+**Learn More**: [[Extraction Science]], [[TDS and Extraction Yield Relationships]]
 
 ---
 
@@ -167,7 +167,7 @@ related-topics:
 - **Character**: Smooth, substantial
 - **Typical**: 1.3-1.5% TDS
 
-**Learn More**: [[Brewing Guides]], [[Extraction Science]]
+**Learn More**: [[Brewing Guide]], [[Extraction Science]]
 
 ---
 
@@ -185,7 +185,7 @@ related-topics:
 - **Ethiopian**: Typically lighter body
 - **Some varieties**: Inherent light body
 
-**Learn More**: [[Coffee Origins]], [[Processing Methods]]
+**Learn More**: [[Coffee Origins]], [[Coffee Processing Methods - Complete Guide]]
 
 ---
 
@@ -204,7 +204,7 @@ related-topics:
 - Negative: "Thin", "Watery", "Astringent", "Flat"
 - Neutral: "Light", "Delicate", "Tea-like"
 
-**Learn More**: [[Cupping Protocol]], [[Sensory Calibration Techniques]]
+**Learn More**: [[SCA Cupping Protocol Step-by-Step]], [[Sensory Calibration Techniques]]
 
 ---
 
@@ -226,7 +226,7 @@ related-topics:
 - Light body + brightness = Delicate, elegant
 - Balance: Complements flavor profile
 
-**Learn More**: [[Sensory Science]], [[Cupping Protocol]]
+**Learn More**: [[Sensory Science]], [[SCA Cupping Protocol Step-by-Step]]
 
 ---
 
@@ -236,14 +236,14 @@ related-topics:
 - [[Perceived Acidity]] - Complementary quality
 - [[Bitterness]] - Affects body perception
 - [[Sensory Science]] - Complete sensory evaluation
-- [[Cupping Protocol]] - Systematic tasting
+- [[SCA Cupping Protocol Step-by-Step]] - Systematic tasting
 - [[Palate Training Exercises]] - Developing recognition
 
 **Extraction & Brewing**:
 - [[Extraction Science]] - Body-building compounds
-- [[Extraction Yield]] - TDS measurement
+- [[TDS and Extraction Yield Relationships]] - TDS measurement
 - [[Brewing Parameters]] - Body control
-- [[Brewing Guides]] - Method-specific body
+- [[Brewing Guide]] - Method-specific body
 
 **Roasting & Chemistry**:
 - [[Roasting Science]] - Body development
@@ -258,11 +258,11 @@ related-topics:
 **Primary Sources**:
 - [[Extraction Science]] - Body development principles
 - [[Roasting Science]] - Body in roasting
-- [[Extraction Yield]] - TDS measurement
+- [[TDS and Extraction Yield Relationships]] - TDS measurement
 
 **Practical Guides**:
-- [[Brewing Guides]] - Method-specific body control
-- [[Cupping Protocol]] - Body evaluation
+- [[Brewing Guide]] - Method-specific body control
+- [[SCA Cupping Protocol Step-by-Step]] - Body evaluation
 - [[Sensory Calibration Techniques]] - Body recognition
 
 ---

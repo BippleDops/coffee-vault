@@ -569,10 +569,10 @@ It's not just coffee brewer; it's design icon, conversation piece, and brewing r
 
 **Cross-References:**
 - [[Brewing Methods/Pour Over]] - Primary brewing method
-- [[Brewing Parameters/Grind Size]] - Medium-coarse optimal
-- [[Brewing Parameters/Water Temperature]] - 200-205°F typical
-- [[Brewing Parameters/Brew Time]] - 4-5 minutes target
-- [[Brewing Parameters/Ratio]] - 1:16-1:17 standard
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Primary competitor/comparison
-- [[Equipment Models/Fellow-Stagg-EKG]] - Ideal kettle pairing
-- [[Bean Library/Ethiopia-Yirgacheffe-Natural]] - Excellent showcase for Chemex
+- [[Brewing Parameters]] - Medium-coarse optimal
+- [[Water Temperature]] - 200-205°F typical
+- [[Brewing Parameters]] - 4-5 minutes target
+- [[Brewing Parameters]] - 1:16-1:17 standard
+- [[Equipment Model]] - Primary competitor/comparison
+- [[Equipment Model]] - Ideal kettle pairing
+- [[Ethiopia]] - Excellent showcase for Chemex

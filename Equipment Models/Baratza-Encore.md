@@ -1328,27 +1328,27 @@ A: Absolutely. Finer = more extraction (stronger, more bitter). Coarser = less e
 - [[Acaia-Lunar]] - Scale recommendations (premium)
 
 ### Related Brew Methods
-- [[Pour-Over]] - Primary use case for Encore
-- [[V60]] - Ideal Encore pairing (setting 16-20)
-- [[Chemex]] - Excellent Encore pairing (setting 24-30)
-- [[French-Press]] - Very good pairing (setting 32-36)
-- [[Aeropress]] - Versatile pairing (setting 10-18)
+- [[V60-Pour-Over-Light-Roast-Floral]] - Primary use case for Encore
+- [[V60-Quick-3-Pour-Method]] - Ideal Encore pairing (setting 16-20)
+- [[Chemex-Medium-Roast-Balanced]] - Excellent Encore pairing (setting 24-30)
+- [[French-Press-Quick-3-Minute-Method]] - Very good pairing (setting 32-36)
+- [[Aeropress-Inverted-Light-Roast]] - Versatile pairing (setting 10-18)
 - [[Drip-Coffee]] - Perfect pairing (setting 20-25)
-- [[Cold-Brew]] - Good pairing (setting 35-40)
-- [[Espresso]] - Not ideal (Encore ESP better)
+- [[Cold-Brew-Concentrate-Smooth]] - Good pairing (setting 35-40)
+- [[Espresso-Shot-Light-Roast-Fruit]] - Not ideal (Encore ESP better)
 
 ### Related Concepts
 - [[Grind-Size]] - Understanding particle size impact
 - [[Burr-Grinders]] - Conical vs flat burr technology
-- [[Extraction]] - How grind affects extraction
+- [[DATA-EXTRACTION-GUIDE]] - How grind affects extraction
 - [[Coffee-Grinder-Maintenance]] - Cleaning and care
 - [[Static-Electricity-Coffee]] - Managing static issues
 - [[Ross-Droplet-Technique]] - RDT for static reduction
 - [[Grinder-Retention]] - Understanding retention
-- [[Burr-Alignment]] - Alignment concepts
+- [[Burr-Alignment-and-Maintenance]] - Alignment concepts
 
 ### Related Companies & Brands
-- [[Baratza]] - Company background, philosophy
+- [[Baratza-Virtuoso-Plus]] - Company background, philosophy
 - [[Seattle-Coffee-Scene]] - Baratza's home city
 - [[Coffee-Grinder-Repairability]] - Right-to-repair in coffee
 
@@ -1358,7 +1358,7 @@ A: Absolutely. Finer = more extraction (stronger, more bitter). Coarser = less e
 - [[Brew-Time]] - Using time to dial in grind
 
 ### Coffee Science
-- [[Particle-Size-Distribution]] - Understanding grind quality
+- [[Particle-Size-Distribution-Measurement]] - Understanding grind quality
 - [[Fines-in-Coffee]] - Fines impact on flavor
 - [[Coffee-Extraction-Science]] - Extraction fundamentals
 

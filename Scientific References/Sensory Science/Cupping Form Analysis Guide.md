@@ -367,7 +367,7 @@ Mastering forms helps:
 ## Tags
 
 - [[Sensory Science]]
-- [[Cupping]]
+- [[SCA-Cupping-Form]]
 - [[Quality Assessment]]
 - [[SCA Standards]]
 - [[Professional Skills]]

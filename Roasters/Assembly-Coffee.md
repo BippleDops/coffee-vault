@@ -149,7 +149,7 @@ Processing collaboration involves Assembly working with producers on fermentatio
 
 Transparency about sourcing includes publishing producer names, processing details, origin information, and sometimes pricing. This disclosure recognizes producer contributions while providing customers with supply chain visibility. The transparency also holds Assembly accountable to sourcing commitments.
 
-Origin diversity spans traditional specialty coffee regions and emerging areas. Assembly sources from [[Ethiopia]], [[Kenya]], [[Colombia]], [[Costa-Rica]], and other established origins while exploring less traditional areas producing exceptional coffee. The geographic diversity provides flavor variation and demonstrates quality potential across different contexts.
+Origin diversity spans traditional specialty coffee regions and emerging areas. Assembly sources from [[Ethiopia]], [[Kenya]], [[Colombia]], [[Helsar-de-Zarcero-Micromill-Costa-Rica]], and other established origins while exploring less traditional areas producing exceptional coffee. The geographic diversity provides flavor variation and demonstrates quality potential across different contexts.
 
 ## Products, Services, and Customer Engagement
 

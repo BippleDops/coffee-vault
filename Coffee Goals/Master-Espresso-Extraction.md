@@ -1661,22 +1661,22 @@ LIMIT 20
 ### Related Notes
 
 **Goal Dependencies**:
-- [[Coffee Goals/Master-V60-Technique]] - Complementary brewing skill
-- [[Coffee Goals/Build-Home-Espresso-Setup]] - Equipment foundation for this goal
+- [[Coffee Goal]] - Complementary brewing skill
+- [[Coffee Goal]] - Equipment foundation for this goal
 
 **Practice Documentation**:
-- [[Coffee Logs/]] - All espresso practice shots logged here
+- [[Coffee Log]] - All espresso practice shots logged here
 - [[Recipes/Espresso-Recipes]] - Custom recipes developed
 
 **Learning Resources Referenced**:
 - [[Scientific References/Extraction Science/Espresso-Extraction-Dynamics]]
 - [[Scientific References/Grinding/Particle-Size-Distribution]]
-- [[Brewing Guides/Espresso-Fundamentals]]
-- [[Brewing Guides/Pressure-Profiling-Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 **Equipment Notes**:
-- [[Equipment Models/Decent-DE1-Plus]] - Machine-specific notes
-- [[Equipment Models/Niche-Zero-Grinder]] - Grinder settings and observations
+- [[Equipment Model]] - Machine-specific notes
+- [[Equipment Model]] - Grinder settings and observations
 
 ---
 

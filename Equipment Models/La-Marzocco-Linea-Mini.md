@@ -2341,13 +2341,13 @@ The Linea Mini earns its position as the prosumer gold standard and the most rec
 ---
 
 **Cross-References:**
-- [[Equipment Models/Decent-Espresso-DE1PRO]] - Primary competitor, profiling capability
-- [[Equipment Models/Breville-Dual-Boiler]] - Budget dual boiler alternative
-- [[Equipment Models/Niche-Zero-Grinder]] - Recommended grinder pairing (minimum tier)
-- [[Equipment Models/Acaia-Lunar]] - Ideal scale pairing for espresso workflow
+- [[Equipment Model]] - Primary competitor, profiling capability
+- [[Equipment Model]] - Budget dual boiler alternative
+- [[Equipment Model]] - Recommended grinder pairing (minimum tier)
+- [[Equipment Model]] - Ideal scale pairing for espresso workflow
 - [[Brewing Methods/Espresso]] - Fundamental brewing method this machine optimizes
-- [[Brewing Parameters/Water Temperature]] - Critical parameter this machine controls precisely
-- [[Brewing Parameters/Pressure]] - 9-bar standard this machine maintains
+- [[Water Temperature]] - Critical parameter this machine controls precisely
+- [[Brewing Parameters]] - 9-bar standard this machine maintains
 - [[Guides/Dialing-In-Espresso]] - Essential technique guide for using this machine
-- [[Origins/Ethiopia]] - Light roasts benefiting from high-temp capability
-- [[Origins/Colombia]] - Medium roasts ideal for standard temperature settings
+- [[Ethiopia]] - Light roasts benefiting from high-temp capability
+- [[Colombia]] - Medium roasts ideal for standard temperature settings

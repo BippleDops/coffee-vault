@@ -1437,7 +1437,7 @@ community-rating: 4.2
 
 **Espresso Fundamentals**:
 - [[Espresso-Brewing]] - Core espresso technique
-- [[Espresso-Extraction]] - Extraction science
+- [[Master-Espresso-Extraction]] - Extraction science
 - [[Espresso-Grind-Size]] - Grind requirements
 - [[Espresso-Dose]] - Dosing principles (14-18g for Dedica)
 - [[Espresso-Yield]] - Yield targeting
@@ -1445,23 +1445,23 @@ community-rating: 4.2
 - [[Espresso-Temperature]] - Temperature impact (critical for Dedica)
 - [[Espresso-Pressure]] - Pressure profiling (limited on Dedica)
 - [[Espresso-Puck-Preparation]] - Distribution and tamping
-- [[Espresso-Channeling]] - Diagnosing channeling (bottomless portafilter reveals)
+- [[Espresso-Channeling-Prevention]] - Diagnosing channeling (bottomless portafilter reveals)
 
 **Milk Techniques**:
-- [[Milk-Steaming]] - Milk steaming fundamentals
+- [[Milk-Steaming-Technique-Guide]] - Milk steaming fundamentals
 - [[Milk-Frothing]] - Frothing vs steaming difference
-- [[Microfoam]] - Microfoam creation (challenging on Dedica)
-- [[Latte-Art]] - Latte art basics (limited capability)
+- [[Flat-White-Microfoam-Technique]] - Microfoam creation (challenging on Dedica)
+- [[Learn-Latte-Art-Fundamentals]] - Latte art basics (limited capability)
 - [[Milk-Temperature]] - Milk temp science (60-65°C optimal)
 - [[Alternative-Milk-Steaming]] - Oat, almond, soy milk techniques
 
 **Drinks**:
-- [[Espresso]] - Straight espresso shots
-- [[Cappuccino]] - Cappuccino preparation (Dedica's strength)
-- [[Latte]] - Caffè latte
-- [[Americano]] - Americano (diluted espresso)
-- [[Macchiato]] - Espresso macchiato
-- [[Flat-White]] - Flat white (microfoam challenge)
+- [[Espresso-Shot-Light-Roast-Fruit]] - Straight espresso shots
+- [[Cappuccino-Traditional-Italian]] - Cappuccino preparation (Dedica's strength)
+- [[Learn-Latte-Art-Fundamentals]] - Caffè latte
+- [[Americano-Diluted-Espresso]] - Americano (diluted espresso)
+- [[Macchiato-Espresso-Marked]] - Espresso macchiato
+- [[Flat-White-Microfoam-Technique]] - Flat white (microfoam challenge)
 
 ### Coffee Science
 
@@ -1475,12 +1475,12 @@ community-rating: 4.2
 - [[Roast-Level]] - Roast level considerations
 
 **Flavor Development**:
-- [[Acidity]] - Acidity in coffee
+- [[Perceived Acidity]] - Acidity in coffee
 - [[Body]] - Body characteristics (Dedica produces good body)
-- [[Sweetness]] - Sweetness extraction
+- [[Furans and Coffee Sweetness]] - Sweetness extraction
 - [[Bitterness]] - Bitterness causes (common with Dedica over-extraction)
 - [[Flavor-Notes]] - Flavor note identification
-- [[Crema]] - Crema science (pressurized vs natural)
+- [[Crema-Coffee-Nashville-Profile]] - Crema science (pressurized vs natural)
 
 ### Maintenance & Troubleshooting
 
@@ -1490,25 +1490,25 @@ community-rating: 4.2
 - [[Group-Head-Cleaning]] - Group head maintenance
 - [[Portafilter-Cleaning]] - Portafilter care
 - [[Steam-Wand-Cleaning]] - Steam wand maintenance
-- [[Water-Filtration]] - Water filter systems
+- [[water-filtration-systems]] - Water filter systems
 
 **Troubleshooting**:
 - [[Espresso-Troubleshooting]] - General troubleshooting
 - [[Sour-Espresso]] - Under-extraction diagnosis (common with cold Dedica)
 - [[Bitter-Espresso]] - Over-extraction diagnosis
 - [[Weak-Espresso]] - Weak shot diagnosis
-- [[Channeling]] - Channeling identification
+- [[Espresso-Channeling-Prevention]] - Channeling identification
 - [[Temperature-Surfing]] - Temperature management (essential Dedica technique)
 
 ### Coffee Beans
 
 **Bean Selection**:
-- [[Light-Roast]] - Light roast challenges (difficult on Dedica)
-- [[Medium-Roast]] - Medium roast (Dedica sweet spot)
-- [[Dark-Roast]] - Dark roast (very forgiving on Dedica)
+- [[V60-Pour-Over-Light-Roast-Floral]] - Light roast challenges (difficult on Dedica)
+- [[Moka-Pot-Medium-Roast-Classic]] - Medium roast (Dedica sweet spot)
+- [[French-Press-Dark-Roast-Bold]] - Dark roast (very forgiving on Dedica)
 - [[Espresso-Blends]] - Espresso blend selection
 - [[Single-Origin-Espresso]] - Single origin considerations
-- [[Coffee-Storage]] - Bean storage (freshness critical)
+- [[Coffee-Storage-Freshness-Guide]] - Bean storage (freshness critical)
 
 ---
 

@@ -43,13 +43,13 @@ related_equipment:
   - "[[Third-Wave-Water-Classic]]"
 related_concepts:
   - "[[Pour-Over-Brewing]]"
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Brew-Ratio]]"
   - "[[Grind-Size]]"
   - "[[Pour-Technique]]"
-  - "[[Bloom]]"
+  - "[[Coffee-Bloom-Science-and-Technique]]"
   - "[[Drawdown]]"
-  - "[[Flow-Rate]]"
+  - "[[Flow-Rate-Control-Techniques]]"
   - "[[Flat-Bottom-vs-Conical]]"
 ---
 
@@ -589,4 +589,4 @@ Filter cost is ongoing consideration but justified by performance. At $0.10 per 
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 4*
-*Related: [[Pour-Over-Brewing]], [[Hario-V60-Plastic-Dripper]], [[Fellow-Stagg-EKG]], [[Extraction]]*
+*Related: [[Pour-Over-Brewing]], [[Hario-V60-Plastic-Dripper]], [[Fellow-Stagg-EKG]], [[DATA-EXTRACTION-GUIDE]]*

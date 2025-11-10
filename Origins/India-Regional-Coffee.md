@@ -796,7 +796,7 @@ India is the world's 6th largest coffee producer (approximately 350,000-400,000 
 - [[Yemen]] - Historical coffee connection (Baba Budan brought seeds from Yemen)
 - [[Ethiopia]] - Coffee origin, contrasting profiles (bright African vs. earthy Indian)
 - [[Monsooned Malabar]] - Unique processing method
-- [[Shade-Grown Coffee]] - Traditional cultivation method
+- [[Shade-Grown Coffee and Biodiversity]] - Traditional cultivation method
 - [[Kent Variety]] - Heritage Indian Arabica
 - [[S-795 Variety]] - Dominant Indian Arabica hybrid
 - [[Robusta Coffee]] - 70% of Indian production

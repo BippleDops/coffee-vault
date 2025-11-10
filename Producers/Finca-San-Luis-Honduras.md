@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca San Luis
-country: [[Origins/Honduras]]
-region: [[Origins/Honduras-Marcala]]
+country: [[Honduras]]
+region: [[Honduras]]
 producer-category: Family-Farm
 established: 1920
 varieties: Catuai-Pacas-Lempira-IHCAFE-90
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Finca San Luis
 
 **Type**: Family Farm - Fourth Generation
-**Location**: [[Origins/Honduras-Marcala|Marcala, La Paz, Honduras]]
+**Location**: [[Honduras|Marcala, La Paz, Honduras]]
 **Established**: 1920
 
 ---

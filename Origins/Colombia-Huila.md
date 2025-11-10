@@ -1533,9 +1533,9 @@ Colombia's coffee regions have **two rainy seasons and two dry seasons** annuall
 
 ### Origins
 - [[Colombia]] - National overview
-- [[Colombia-Narino]] - Neighboring specialty region
-- [[Colombia-Cauca]] - Similar volcanic terroir
-- [[Colombia-Tolima]] - Neighboring region
+- [[Colombia]] - Neighboring specialty region
+- [[Colombia]] - Similar volcanic terroir
+- [[Colombia]] - Neighboring region
 - [[Guatemala-Antigua]] - Similar volcanic, balanced profile
 - [[Costa-Rica-Tarrazu]] - Comparable altitude, processing
 
@@ -1549,12 +1549,12 @@ Colombia's coffee regions have **two rainy seasons and two dry seasons** annuall
 ### Varieties
 - [[Castillo-Variety]] - Dominant in Huila
 - [[Caturra-Variety]] - Quality lots
-- [[Colombia-Variety]] - Transitional
+- [[Colombia]] - Transitional
 - [[Typica-Variety]] - Rare, premium
 - [[Cenicafe-1-Variety]] - New release
 
 ### Organizations
-- [[FNC-Colombia]] - National Federation
+- [[Colombia]] - National Federation
 - [[Cenicafe]] - Coffee Research Center
 - [[Coocentral-Cooperative]] - Major Huila cooperative
 
@@ -1562,16 +1562,16 @@ Colombia's coffee regions have **two rainy seasons and two dry seasons** annuall
 - [[Chocolate-Notes-in-Coffee]] - Signature Huila
 - [[Caramel-Sweetness]] - Huila characteristic
 - [[Balanced-Coffee-Profile]] - Huila hallmark
-- [[Colombian-Coffee-Character]] - National profile
+- [[Colombia]] - National profile
 
 ### Roasters
 - [[Onyx-Coffee-Lab]] - Huila specialist
-- [[Square-Mile-Coffee]] - Colombian focus
+- [[Square-Mile-Coffee-Roasters]] - Colombian focus
 - [[Heart-Coffee-Roasters]] - Direct trade Colombia
 
 ### Sustainability
 - [[Coffee-Leaf-Rust]] - Major challenge
-- [[Climate-Change-Colombia]] - Adaptation
+- [[Colombia]] - Adaptation
 - [[Smallholder-Coffee-Economics]] - Farmer reality
 - [[Generational-Transition]] - Future challenge
 

@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Kasama Coffee Cooperative
 country: [[Origins/Zambia]]
-region: [[Origins/Zambia-Northern-Province]]
+region: [[Zambia-Northern-Province]]
 producer-category: Smallholder-Cooperative
 established: 2004
 varieties: Bourbon-Catimor-Kenya-SL28-Mundo-Novo
@@ -926,7 +926,7 @@ Challenges remain severe—climate change, poverty, infrastructure, youth migrat
 
 **Related Notes**:
 - [[Origins/Zambia]]
-- [[Origins/Zambia-Northern-Province]]
+- [[Zambia-Northern-Province]]
 - [[Varieties/SL28]]
 - [[Varieties/SL34]]
 - [[Varieties/Bourbon]]
@@ -950,5 +950,5 @@ Challenges remain severe—climate change, poverty, infrastructure, youth migrat
 - [[Sustainability/Miombo-Woodland-Conservation]]
 - [[Markets/Specialty-Coffee-Premiums]]
 - [[Quality/East-African-Profiles]]
-- [[Quality/Kenya-Variety-Excellence]]
+- [[Kenya]]
 - [[Cooperative-Models/Democratic-Governance]]

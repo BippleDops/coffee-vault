@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Fazenda Santa Inês
-country: [[Origins/Brazil]]
-region: [[Origins/Brazil-Sul-de-Minas]]
+country: [[Brazil]]
+region: [[Brazil]]
 producer-category: Estate-Family
 established: 1979
 varieties: Yellow-Bourbon-Red-Bourbon-Catuai-Mundo-Novo
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Fazenda Santa Inês
 
 **Type**: Large Family Estate - Natural Process Innovation Leader
-**Location**: [[Origins/Brazil-Sul-de-Minas|Sul de Minas, Brazil]]
+**Location**: [[Brazil|Sul de Minas, Brazil]]
 **Established**: 1979
 
 ---
@@ -695,13 +695,13 @@ Overall: Quintessential Brazilian sweetness with complexity
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/Brazil-Yellow-Bourbon-Natural]]
+- [[Brazil]]
 - [[Beans Library/Santa-Ines-Micro-Lot]]
 
 **Related Origins**:
-- [[Origins/Brazil]]
-- [[Origins/Brazil-Sul-de-Minas]]
-- [[Origins/Brazil-Carmo-de-Minas]]
+- [[Brazil]]
+- [[Brazil]]
+- [[Brazil]]
 
 **Related Varieties**:
 - [[Scientific References/Yellow-Bourbon-Variety]]
@@ -714,12 +714,12 @@ Overall: Quintessential Brazilian sweetness with complexity
 - [[Scientific References/Experimental-Fermentation]]
 
 **Related Producers**:
-- [[Producers/Fazenda-Sao-Silvestre-Brazil]] (Brazil comparison)
-- [[Producers/Daterra-Estate-Brazil]] (Brazil large estate)
+- [[Fazenda-Sao-Silvestre-Brazil]] (Brazil comparison)
+- [[Daterra-Estate-Brazil]] (Brazil large estate)
 
 **Brewing Guides**:
-- [[Brewing Guides/Brazilian-Coffee-Brewing]]
-- [[Brewing Guides/Natural-Process-Coffee]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 ---
 

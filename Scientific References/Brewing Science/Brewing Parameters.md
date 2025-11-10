@@ -20,7 +20,7 @@ related-topics:
 
 **Category**: Brewing Science → Extraction Control  
 **Difficulty**: Intermediate  
-**Related**: [[Extraction Science]], [[Water Temperature]], [[Brewing Guides]]
+**Related**: [[Extraction Science]], [[Water Temperature]], [[Brewing Guide]]
 
 ---
 
@@ -64,7 +64,7 @@ related-topics:
 - **Control**: Technique
 - **Effect**: Consistency, clarity
 
-**Learn More**: [[Extraction Science]], [[Brewing Guides]]
+**Learn More**: [[Extraction Science]], [[Brewing Guide]]
 
 ---
 
@@ -149,7 +149,7 @@ related-topics:
 - Ratio: 1:8 (concentrate) or 1:15 (ready)
 - Agitation: Steep only
 
-**Learn More**: [[Brewing Guides]], [[Extraction Science]]
+**Learn More**: [[Brewing Guide]], [[Extraction Science]]
 
 ---
 
@@ -196,7 +196,7 @@ related-topics:
 - Build knowledge
 - Reproduce success
 
-**Learn More**: [[Brewing Guides]], [[Coffee Logs]]
+**Learn More**: [[Brewing Guide]], [[Coffee Log]]
 
 ---
 
@@ -219,12 +219,12 @@ related-topics:
 **Brewing Science**:
 - [[Extraction Science]] - Complete extraction overview
 - [[Water Temperature]] - Temperature control
-- [[Brewing Guides]] - Method-specific parameters
+- [[Brewing Guide]] - Method-specific parameters
 - [[Water Chemistry and Extraction]] - Water composition effects
 
 **Extraction Control**:
-- [[Extraction Yield]] - Measuring extraction
-- [[TDS Measurement]] - Strength measurement
+- [[TDS and Extraction Yield Relationships]] - Measuring extraction
+- [[Extraction Yield and TDS Measurement]] - Strength measurement
 - [[Extraction Science]] - Scientific principles
 - [[Bitterness]] - Parameter effects on bitterness
 
@@ -232,7 +232,7 @@ related-topics:
 - [[Perceived Acidity]] - Parameter effects
 - [[Bitterness]] - Control of bitterness
 - [[Sensory Science]] - Evaluating results
-- [[Cupping Protocol]] - Systematic tasting
+- [[SCA Cupping Protocol Step-by-Step]] - Systematic tasting
 
 ---
 
@@ -240,13 +240,13 @@ related-topics:
 
 **Primary Sources**:
 - [[Extraction Science]] - Complete extraction science
-- [[Brewing Guides]] - Method-specific guidance
+- [[Brewing Guide]] - Method-specific guidance
 - [[Water Chemistry and Extraction]] - Water effects
 
 **Practical Guides**:
-- [[Brewing Guides]] - Parameter-specific techniques
+- [[Brewing Guide]] - Parameter-specific techniques
 - [[Extraction Science]] - Troubleshooting with parameters
-- [[Coffee Logs]] - Tracking parameters
+- [[Coffee Log]] - Tracking parameters
 
 ---
 

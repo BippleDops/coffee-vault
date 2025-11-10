@@ -990,12 +990,12 @@ For serious home baristas wanting commercial build quality, temperature precisio
 ---
 
 **Cross-References:**
-- [[Equipment Models/Eureka-Mignon-Specialita]] - Excellent pairing, balanced capabilities
-- [[Equipment Models/Niche-Zero-Grinder]] - Popular pairing, single-dose workflow
-- [[Equipment Models/Gaggia Classic Pro]] - Entry alternative, excellent with PID mod
-- [[Equipment Models/Breville-Bambino-Plus]] - Entry alternative, different philosophy
-- [[Equipment Models/Pullman-BigStep-Tamper]] - Recommended 58mm tamper
+- [[Equipment Model]] - Excellent pairing, balanced capabilities
+- [[Equipment Model]] - Popular pairing, single-dose workflow
+- [[Equipment Model]] - Entry alternative, excellent with PID mod
+- [[Equipment Model]] - Entry alternative, different philosophy
+- [[Equipment Model]] - Recommended 58mm tamper
 - [[Brewing Methods/Espresso]] - Primary use case
-- [[Brewing Parameters/Temperature]] - Dual PID enables precise control
-- [[Brewing Parameters/Pressure]] - OPV adjustment recommended
+- [[Brewing Parameters]] - Dual PID enables precise control
+- [[Brewing Parameters]] - OPV adjustment recommended
 - [[Coffee Science/Extraction]] - Temperature stability critical for consistent extraction

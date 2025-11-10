@@ -46,10 +46,10 @@ tags:
 related_equipment:
   - "[[Aeropress-Original]]"
   - "[[Flair-Espresso-Pro]]"
-  - "[[ROK-Espresso-Maker]]"
+  - "[[Rok-Espresso-Maker]]"
   - "[[Wacaco-Minipresso]]"
   - "[[Bellman-Stovetop-Steamer]]"
-  - "[[Moka-Pot]]"
+  - "[[Moka-Pot-Medium-Roast-Classic]]"
   - "[[Portable-Hand-Grinder]]"
   - "[[Rhinowares-Hand-Grinder]]"
   - "[[1Zpresso-JX-Pro]]"
@@ -60,7 +60,7 @@ related_concepts:
   - "[[Portable-Coffee-Setup]]"
   - "[[Manual-Espresso]]"
   - "[[Grind-Size]]"
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Crema-Formation]]"
   - "[[Outdoor-Coffee]]"
   - "[[Camping-Coffee]]"
@@ -334,7 +334,7 @@ Most users achieve acceptable espresso within 2-5 attempts:
 
 **Beyond**: Refinement of technique, understanding how variables affect results, achieving consistent quality.
 
-The learning curve is gentler than professional espresso machines (which can take weeks or months to master) but steeper than simple brewing methods like [[French-Press]] or [[Aeropress-Original]].
+The learning curve is gentler than professional espresso machines (which can take weeks or months to master) but steeper than simple brewing methods like [[French-Press-Quick-3-Minute-Method]] or [[Aeropress-Original]].
 
 ### Daily Travel Workflow
 
@@ -653,11 +653,11 @@ The Nanopresso isn't a replacement for home espresso machines, nor is it appropr
 
 - **[[Aeropress-Original]]** - Alternative portable brewer, different character ($30)
 - **[[Flair-Espresso-Pro]]** - Premium manual espresso, less portable ($270)
-- **[[ROK-Espresso-Maker]]** - Manual lever espresso, home-focused ($200)
+- **[[Rok-Espresso-Maker]]** - Manual lever espresso, home-focused ($200)
 - **[[Wacaco-Minipresso]]** - Predecessor model, simpler design ($50)
 - **[[Wacaco-Picopresso]]** - Premium Wacaco model, better performance ($150)
 - **[[Bellman-Stovetop-Steamer]]** - Portable steam for milk drinks ($150)
-- **[[Moka-Pot]]** - Stovetop espresso-style alternative ($25-60)
+- **[[Moka-Pot-Medium-Roast-Classic]]** - Stovetop espresso-style alternative ($25-60)
 - **[[1Zpresso-JX-Pro]]** - Excellent hand grinder pairing ($160)
 - **[[Rhinowares-Hand-Grinder]]** - Budget hand grinder pairing ($45)
 
@@ -669,7 +669,7 @@ The Nanopresso isn't a replacement for home espresso machines, nor is it appropr
 - **[[Portable-Coffee-Setup]]** - Building complete travel coffee kit
 - **[[Manual-Espresso]]** - Hand-powered espresso techniques
 - **[[Grind-Size]]** - Grind requirements for pressure extraction
-- **[[Extraction]]** - Understanding coffee extraction science
+- **[[DATA-EXTRACTION-GUIDE]]** - Understanding coffee extraction science
 - **[[Crema-Formation]]** - How crema forms in espresso
 - **[[Outdoor-Coffee]]** - Making quality coffee outdoors
 - **[[Camping-Coffee]]** - Camping-specific coffee solutions

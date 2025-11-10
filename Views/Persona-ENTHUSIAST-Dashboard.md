@@ -169,7 +169,7 @@ LIMIT 1
 
 ### ML-Powered Recommendations
 
-**🤖 [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|Brewing Optimization Engine]]**
+**🤖 [[2-Brewing-Optimization-Engine|Brewing Optimization Engine]]**
 Get intelligent recommendations based on your brewing history and preferences.
 
 **What it does:**
@@ -208,7 +208,7 @@ SORT rating DESC, date DESC
 LIMIT 8
 ```
 
-> **Pro Tip**: When you find a winning combination, create a [[Templates/Recipe Profile|Recipe Profile]] to reuse it!
+> **Pro Tip**: When you find a winning combination, create a [[Recipe Profile|Recipe Profile]] to reuse it!
 
 ### Consistency Analysis
 
@@ -486,8 +486,8 @@ LIMIT 8
 **Ready to formal taste?**
 
 Learn professional coffee evaluation:
-- **[[Templates/SCA-Cupping-Form|SCA Cupping Form]]** - Official protocol
-- **[[Templates/Cupping Session|Cupping Session Template]]** - Setup your first session
+- **[[SCA-Cupping-Form|SCA Cupping Form]]** - Official protocol
+- **[[Cupping Session|Cupping Session Template]]** - Setup your first session
 - **[[Scientific References/Sensory Science/SCA-Cupping-Protocol-Step-by-Step|Cupping Protocol]]** - Step-by-step guide
 
 **Why cup?**
@@ -600,7 +600,7 @@ LIMIT 1
 - Buying in bulk from favorite roasters saves 10-20%
 - Subscriptions offer convenience but less control
 
-**See detailed cost analysis**: [[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|Cost Intelligence System]]
+**See detailed cost analysis**: [[3-Cost-Intelligence-System|Cost Intelligence System]]
 
 ---
 
@@ -610,7 +610,7 @@ LIMIT 1
 
 **Your brews mapped in flavor dimensions:**
 
-> Navigate to **[[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|Correlation Discovery Engine]]** for interactive flavor space visualization.
+> Navigate to **[[6-Correlation-Discovery-Engine|Correlation Discovery Engine]]** for interactive flavor space visualization.
 
 **What it shows:**
 - Each brew as a point in 3D space
@@ -766,7 +766,7 @@ WHERE file.path = this.file.path
 
 **Structure your learning:**
 
-**[[Templates/Coffee Goal|Create a Coffee Goal]]**
+**[[Coffee Goal|Create a Coffee Goal]]**
 
 **Popular enthusiast goals:**
 - Master a specific brewing method
@@ -780,9 +780,9 @@ WHERE file.path = this.file.path
 
 **Host your first formal tasting:**
 
-1. **[[Templates/Cupping Session|Create Cupping Session]]**
+1. **[[Cupping Session|Create Cupping Session]]**
 2. Select 3-5 coffees to compare
-3. Use **[[Templates/SCA-Cupping-Form|SCA Cupping Protocol]]**
+3. Use **[[SCA-Cupping-Form|SCA Cupping Protocol]]**
 4. Invite friends or taste solo
 5. Document findings
 
@@ -796,7 +796,7 @@ WHERE file.path = this.file.path
 
 **Monitor your tasting evolution:**
 
-**[[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|Palate Development Tracker]]**
+**[[4-Palate-Development-Tracker|Palate Development Tracker]]**
 
 Features:
 - Flavor vocabulary expansion
@@ -825,19 +825,19 @@ LIMIT 5
 ## 🔗 Quick Access
 
 **Daily Actions:**
-- [[Templates/Coffee-Log-v5|Log New Brew]]
-- [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant|Brewing Assistant]]
+- [[Coffee-Log-v5|Log New Brew]]
+- [[9-Real-Time-Brewing-Assistant|Brewing Assistant]]
 - [[HOME-DASHBOARD|Main Dashboard]]
 
 **Optimization:**
-- [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|Optimization Engine]]
-- [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|Monthly Analytics]]
-- [[Analytics/Analytics-Analysis-Layout/3-Cost-Intelligence-System|Cost Intelligence]]
+- [[2-Brewing-Optimization-Engine|Optimization Engine]]
+- [[1-Monthly-Analytics-Dashboard|Monthly Analytics]]
+- [[3-Cost-Intelligence-System|Cost Intelligence]]
 
 **Learning:**
 - [[Scientific References/|Science Library]]
-- [[Brewing Guides/|Brewing Guides]]
-- [[Coffee Goals/|Your Goals]]
+- [[Brewing Guide|Brewing Guides]]
+- [[Coffee Goal|Your Goals]]
 
 **Discovery:**
 - [[Origins/|Origin Profiles]]

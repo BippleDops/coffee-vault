@@ -50,7 +50,7 @@ kanban-plugin-settings:
   - Consistent results every time
   - Can teach others
   - Variables mastered: Time, temp, grind, ratio
-  - Documentation: [[French Press Brewing Guide]]
+  - Documentation: [[Brewing Guide]]
 
 
 ## Teaching

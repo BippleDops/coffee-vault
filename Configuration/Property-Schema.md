@@ -87,7 +87,7 @@ status: authoritative
 | `date` | ISO date format | 2025-10-25 | YYYY-MM-DD |
 | `datetime` | ISO datetime | 2025-10-25T14:30 | YYYY-MM-DDTHH:mm |
 | `boolean` | True/false flag | true | true or false |
-| `link` | Internal wiki link | [[Origin Ethiopia]] | Valid note link |
+| `link` | Internal wiki link | [[Ethiopia]] | Valid note link |
 | `list` | Array of values | [floral, citrus, tea] | YAML list format |
 | `select` | Controlled vocabulary | light | From defined list |
 | `duration` | Time period | 3:30 | MM:SS or HH:MM:SS |
@@ -306,7 +306,7 @@ origin: text/link (country or origin profile link, required)
 **Origin & Sourcing Properties**:
 ```yaml
 # Geographic Origin
-origin: text/link (country, e.g., "Ethiopia" or [[Origin Ethiopia]])
+origin: text/link (country, e.g., "Ethiopia" or [[Ethiopia]])
 region: text (specific region, e.g., "Yirgacheffe")
 subregion: text (micro-region, e.g., "Kochere")
 farm: text (farm or co-op name)

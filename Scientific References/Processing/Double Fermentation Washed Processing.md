@@ -271,5 +271,5 @@ Understanding double fermentation explains why Kenyan coffee is distinctive, exp
 **Last Updated**: 2025-10-28  
 **Word Count**: ~2,500 words  
 **Status**: Reference Complete  
-**Related**: [[Fermentation Science in Coffee]], [[Washed Processing Complete Guide]], [[Kenyan Coffee Processing]]
+**Related**: [[Fermentation Science in Coffee]], [[Washed Processing Complete Guide]], [[Kenya]]
 

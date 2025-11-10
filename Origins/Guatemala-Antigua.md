@@ -941,8 +941,8 @@ Antigua is a historic coffee-growing valley in the **Sacatepéquez Department** 
 
 ### Origins
 - [[Guatemala]] - National overview
-- [[Guatemala-Huehuetenango]] - Quality competitor
-- [[Guatemala-Atitlan]] - Volcanic neighbor
+- [[Guatemala]] - Quality competitor
+- [[Guatemala]] - Volcanic neighbor
 - [[Colombia-Huila]] - Similar balance
 - [[Costa-Rica-Tarrazu]] - Central American peer
 

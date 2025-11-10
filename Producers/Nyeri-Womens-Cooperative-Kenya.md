@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Nyeri Women's Coffee Cooperative
-country: [[Origins/Kenya]]
-region: [[Origins/Kenya-Central-Highlands]]
+country: [[Kenya]]
+region: [[Kenya]]
 producer-category: Women-Only-Cooperative
 established: 2015
 varieties: SL28-SL34-Ruiru-11-Batian
@@ -1144,15 +1144,15 @@ Nyeri Women's Coffee Cooperative has proven women farmers' exceptional competenc
 **Tags**: #Producer #Kenya #Womens-Cooperative #Gender-Equity #SL28-SL34 #Washed-Process #Kenyan-Double-Fermentation #High-Altitude #Central-Highlands #Nyeri #Smallholder #Land-Rights #Economic-Empowerment #Cultural-Change #Blackcurrant #Volcanic-Soils #Quality-Focus #Direct-Trade #Auction #Climate-Adaptation #Youth-Engagement
 
 **Related Notes**:
-- [[Origins/Kenya]]
-- [[Origins/Kenya-Central-Highlands]]
-- [[Origins/Kenya-Nyeri]]
+- [[Kenya]]
+- [[Kenya]]
+- [[Kenya]]
 - [[Varieties/SL28]]
 - [[Varieties/SL34]]
 - [[Varieties/Batian]]
 - [[Varieties/Ruiru-11]]
 - [[Processing/Washed-Process]]
-- [[Processing/Kenyan-Double-Fermentation]]
+- [[Kenya]]
 - [[Social-Impact/Womens-Empowerment]]
 - [[Social-Impact/Gender-Equity]]
 - [[Social-Impact/Land-Rights]]
@@ -1160,7 +1160,7 @@ Nyeri Women's Coffee Cooperative has proven women farmers' exceptional competenc
 - [[Social-Impact/Education]]
 - [[Social-Impact/Challenging-Patriarchy]]
 - [[Quality/Blackcurrant-Profile]]
-- [[Quality/Kenyan-AA]]
+- [[Kenya]]
 - [[Quality/Auction-Coffee]]
 - [[Markets/Direct-Trade]]
 - [[Markets/Nairobi-Coffee-Auction]]

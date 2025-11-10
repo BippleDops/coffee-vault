@@ -14,7 +14,7 @@ tags: [recipe-profile, turkish, traditional, cultural, concentrated]
 relationships:
   requires:
     - "[[Turkish Coffee Pot (Cezve/Ibrik)]]"
-    - "[[Grinder]]"
+    - "[[Timemore-Sculptor-Grinder]]"
 ---
 
 # 📖 Recipe: Turkish Coffee Traditional Recipe

@@ -471,7 +471,7 @@ date: 2025-10-27
 
 ## Tags
 
-- [[Origins]]
+- [[00-Origins-Index]]
 - [[Central America]]
 - [[Honey Processing]]
 - [[Specialty Coffee]]

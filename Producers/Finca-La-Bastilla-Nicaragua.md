@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca La Bastilla
-country: [[Origins/Nicaragua]]
-region: [[Origins/Nicaragua-Matagalpa]]
+country: [[Nicaragua]]
+region: [[Nicaragua]]
 producer-category: Family-Farm-Estate
 established: 1908
 varieties: Caturra-Catuai-Pacamara-Maracaturra-Java
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 Finca La Bastilla
 
 **Type**: Family Estate - Fifth Generation
-**Location**: [[Origins/Nicaragua-Matagalpa|Matagalpa, Northern Nicaragua]]
+**Location**: [[Nicaragua|Matagalpa, Northern Nicaragua]]
 **Established**: 1908
 
 ---

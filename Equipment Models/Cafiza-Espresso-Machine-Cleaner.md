@@ -466,23 +466,23 @@ Users maintaining regular Cafiza cleaning schedules report:
 ## Related Notes & Cross-References
 
 ### Espresso Equipment & Maintenance
-- [[Equipment Models/La-Marzocco-Linea-Mini]]
-- [[Equipment Models/Rocket-Appartamento]]
-- [[Equipment Models/Sage-Barista-Express]]
-- [[Equipment Models/Profitec-Pro-700]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
+- [[Equipment Model]]
 - [[Maintenance/Espresso-Machine-Backflushing]]
 - [[Maintenance/Descaling]]
 - [[Maintenance/Group-Head-Gasket-Replacement]]
 
 ### Cleaning & Maintenance
-- [[Equipment Models/Pallo-Grindz-Grinder-Cleaner]]
+- [[Equipment Model]]
 - [[Maintenance/Equipment-Cleaning-Schedule]]
 - [[Maintenance/Water-Filtration]]
 
 ### Espresso Fundamentals
 - [[Brewing Methods/Espresso]]
-- [[Brewing Parameters/Espresso-Dose]]
-- [[Brewing Parameters/Extraction]]
+- [[Brewing Parameters]]
+- [[Brewing Parameters]]
 - [[Scientific References/Coffee-Oil-Chemistry]]
 
 ### Professional Standards

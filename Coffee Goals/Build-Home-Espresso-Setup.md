@@ -135,12 +135,12 @@ When this goal is achieved, I will have:
 ### Dependencies and Relationships
 
 This goal enables and supports:
-- [[Coffee Goals/Master-Espresso-Extraction]] - Equipment is foundation for technique development
-- [[Coffee Goals/Learn-Latte-Art-Fundamentals]] - Requires steam capability and proper milk pitcher
-- [[Coffee Goals/Create-Perfect-Morning-Ritual]] - Quality equipment makes ritual more satisfying
+- [[Coffee Goal]] - Equipment is foundation for technique development
+- [[Coffee Goal]] - Requires steam capability and proper milk pitcher
+- [[Coffee Goal]] - Quality equipment makes ritual more satisfying
 
 This goal is supported by:
-- [[Coffee Goals/Reduce-Coffee-Budget-Sustainably]] - Budget discipline enables equipment investment
+- [[Coffee Goal]] - Budget discipline enables equipment investment
 - Research and knowledge about equipment (ongoing learning)
 
 ---

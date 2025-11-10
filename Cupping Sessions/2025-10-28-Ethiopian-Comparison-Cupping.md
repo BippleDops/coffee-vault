@@ -33,9 +33,9 @@ tags: [cupping-session, comparison, ethiopia, 2025-10]
 ## ☕ Samples Evaluated
 
 **Samples**:
-- [[Ethiopian Yirgacheffe Kochere]] (washed)
-- [[Ethiopian Guji Natural]] (natural)
-- [[Ethiopian Sidamo]] (washed)
+- [[Ethiopia]] (washed)
+- [[Ethiopia]] (natural)
+- [[Ethiopia]] (washed)
 
 **Sample Count**: 3  
 **Blind Cupping**: No (learning session)  

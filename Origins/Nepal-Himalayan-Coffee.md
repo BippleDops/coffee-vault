@@ -595,9 +595,9 @@ The volcanic parent rock in some regions contributes mineral complexity similar 
 - [[Ethiopia]] - Flavor profile comparisons, floral characteristics
 - [[Thailand-Northern-Highlands]] - Regional peer, emerging specialty
 - [[Myanmar-Shan-State]] - Regional peer, similar development stage
-- [[Bourbon]] - Primary variety in Nepal
-- [[Washed Process]] - Dominant processing method
-- [[Natural Process]] - Growing trend in Nepal
+- [[Réunion-Island-Bourbon-Pointu]] - Primary variety in Nepal
+- [[Washed Processing Complete Guide]] - Dominant processing method
+- [[Honey Pulped Natural Processing]] - Growing trend in Nepal
 - [[Smallholder Farming]] - Production model
 - [[Cooperative Coffee]] - Organizational structure
 - [[Specialty Coffee]] - Market positioning

@@ -64,15 +64,15 @@ related_equipment:
   - "[[Pullman-BigStep-Tamper]]"
 related_concepts:
   - "[[Espresso-Fundamentals]]"
-  - "[[Extraction]]"
-  - "[[Pressure-Profiling]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
+  - "[[Pressure-Profiling-Espresso-Advanced]]"
   - "[[Flow-Profiling]]"
-  - "[[Temperature-Stability]]"
+  - "[[Temperature-Stability-in-Brewing]]"
   - "[[E61-Group-Head]]"
   - "[[Dual-Boiler-System]]"
   - "[[PID-Temperature-Control]]"
   - "[[Rotary-Pump]]"
-  - "[[Pre-Infusion]]"
+  - "[[Pre-Infusion and Blooming Science]]"
   - "[[Light-Roast-Extraction]]"
   - "[[Thermal-Management]]"
   - "[[Shot-Timer]]"
@@ -116,7 +116,7 @@ The company's quality control process includes pressure testing of both boilers,
 
 Lelit's customer service operates through regional distributors and authorized service centers worldwide. The company provides detailed technical manuals, wiring diagrams, and parts lists to service technicians, supporting long-term repairability. Parts availability is excellent for major components, though some proprietary elements (like the flow control paddle assembly) require factory ordering with longer lead times.
 
-The Bianca received immediate acclaim upon release, earning awards from European coffee publications and enthusiastic reception from online espresso communities. Reviewers praised the flow control implementation, temperature stability, and build quality while noting the exceptional value proposition compared to competitors. The machine's success prompted Lelit to expand the model line with the [[Lelit-Bianca-V3]], adding features like LCC (Lelit Control Center) with smartphone connectivity and advanced shot timer.
+The Bianca received immediate acclaim upon release, earning awards from European coffee publications and enthusiastic reception from online espresso communities. Reviewers praised the flow control implementation, temperature stability, and build quality while noting the exceptional value proposition compared to competitors. The machine's success prompted Lelit to expand the model line with the [[Lelit-Bianca]], adding features like LCC (Lelit Control Center) with smartphone connectivity and advanced shot timer.
 
 Within the prosumer market, the Bianca competes directly with machines like the [[Profitec-Pro-700]] ($3,400), [[Rocket-R58]] ($3,600), and [[ECM-Synchronika]] ($3,700), all offering dual boilers and E61 groups but lacking integrated flow control at comparable pricing. Against the [[La-Marzocco-Linea-Mini]] ($4,500), the Bianca trades brand prestige for superior feature set. Against the [[Decent-Espresso-DE1PRO]] ($3,500+), the Bianca offers mechanical simplicity and traditional workflow versus electronic sophistication and app-based profiling.
 
@@ -192,7 +192,7 @@ The brew boiler's 1.5L capacity exceeds most competitors in this class, providin
 
 The PID controller samples temperature via a PT100 RTD sensor positioned in the boiler's center, providing accurate readings independent of heating element cycling. The algorithm employs proportional-integral-derivative logic to maintain setpoint within ±0.5°C under stable conditions. During high thermal demand (like extended pre-infusion at maximum flow), temperature may drop 1-2°C before the PID compensates, though this rarely affects extraction quality due to the E61 group's thermal buffering.
 
-Temperature adjustment occurs via the front panel controls (dedicated buttons on V1/V2, touchscreen interface on V3), allowing changes in 0.1°C increments across the full range. Most users operate between 90°C-96°C depending on [[Roast-Level]], [[Bean-Density]], and desired [[Extraction]] characteristics. The PID stores temperature setpoints through power cycles, maintaining user preferences.
+Temperature adjustment occurs via the front panel controls (dedicated buttons on V1/V2, touchscreen interface on V3), allowing changes in 0.1°C increments across the full range. Most users operate between 90°C-96°C depending on [[Roast-Level]], [[Bean-Density]], and desired [[DATA-EXTRACTION-GUIDE]] characteristics. The PID stores temperature setpoints through power cycles, maintaining user preferences.
 
 The auto-fill system monitors water level via a capacitive sensor and triggers the rotary pump to refill when the level drops below the safe operating threshold. This prevents dry-firing the heating element, a common failure mode in less sophisticated machines. Users can override auto-fill for manual control or descaling procedures.
 
@@ -1151,14 +1151,14 @@ At $2,900, the Bianca represents substantial investment requiring corresponding 
 ## Related Concepts
 
 - **[[Espresso-Fundamentals]]** - Core espresso extraction principles
-- **[[Pressure-Profiling]]** - Manipulating pressure for extraction control
+- **[[Pressure-Profiling-Espresso-Advanced]]** - Manipulating pressure for extraction control
 - **[[Flow-Profiling]]** - Flow rate manipulation vs. pressure control
-- **[[Temperature-Stability]]** - Importance of consistent brew temperature
+- **[[Temperature-Stability-in-Brewing]]** - Importance of consistent brew temperature
 - **[[E61-Group-Head]]** - Classic espresso group design and function
 - **[[Dual-Boiler-System]]** - Dual boiler architecture benefits
 - **[[PID-Temperature-Control]]** - Digital temperature control systems
 - **[[Rotary-Pump]]** - Rotary pump vs. vibratory pump differences
-- **[[Pre-Infusion]]** - Low-pressure puck wetting techniques
+- **[[Pre-Infusion and Blooming Science]]** - Low-pressure puck wetting techniques
 - **[[Light-Roast-Extraction]]** - Techniques for light-roasted coffee
-- **[[Extraction]]** - Fundamental extraction theory and practice
+- **[[DATA-EXTRACTION-GUIDE]]** - Fundamental extraction theory and practice
 - **[[Grind-Size]]** - Grind particle size and extraction relationship

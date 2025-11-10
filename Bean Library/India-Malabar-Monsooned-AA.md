@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: India Malabar Monsooned AA
-origin: "[[Origins/India]]"
-region: [[Origins/India-Malabar]]
+origin: "[[India]]"
+region: [[India]]
 variety: [[Coffee Varieties/Kent-SLN795]]
 processing: [[Processing Methods/Monsooned-Process]]
 roast-level: medium-dark
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 India Malabar Monsooned AA
 
-**Origin**: [[Origins/India|India]]
-**Region**: [[Origins/India-Malabar|Malabar Coast]]
+**Origin**: [[India|India]]
+**Region**: [[India|Malabar Coast]]
 **Variety**: [[Coffee Varieties/Kent-SLN795|Kent, SLN-795, mixed]]
 **Processing**: [[Processing Methods/Monsooned-Process|Monsooned]]
 **Grade**: AA (large bean)
@@ -405,7 +405,7 @@ The Malabar Coast of southwestern India has produced coffee since the 1600s. Mon
 
 - [[Indonesia-Sumatra-Mandheling-Wet-Hulled]] (Low-acid, heavy body)
 - [[Processing Methods/Monsooned-Process]]
-- [[Origins/India]]
+- [[India]]
 
 ---
 

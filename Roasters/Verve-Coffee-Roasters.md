@@ -173,7 +173,7 @@ Multi-year commitments provide producers planning stability enabling infrastruct
 
 Transparency includes publishing producer names, origin details, and processing information. Verve provides substantial supply chain visibility recognizing producer contributions and holding company accountable to sourcing commitments.
 
-Origin diversity spans [[Colombia]], [[Ethiopia]], [[Kenya]], [[Guatemala]], [[El-Salvador]], and other regions. Geographic breadth provides flavor variation while demonstrating quality commitment across different contexts.
+Origin diversity spans [[Colombia]], [[Ethiopia]], [[Kenya]], [[Guatemala]], [[Finca-Vista-Hermosa-El-Salvador]], and other regions. Geographic breadth provides flavor variation while demonstrating quality commitment across different contexts.
 
 ### Sustainability and B-Corp Commitment
 

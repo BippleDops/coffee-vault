@@ -79,6 +79,6 @@ Batch size significantly affects roasting behavior and consistency. Understandin
 ## Tags
 
 - [[Roasting Science]]
-- [[Consistency]]
-- [[Quality Control]]
+- [[Roast Uniformity and Consistency]]
+- [[Post-Harvest Quality Control]]
 

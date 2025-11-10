@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Baba Budan Giri Estate
-country: [[Origins/India]]
-region: [[Origins/India-Karnataka-Chikmagalur]]
+country: [[India]]
+region: [[India]]
 producer-category: Family-Estate
 established: 1842
 varieties: Chandragiri-Kent-SLN-795-Catimor
@@ -453,21 +453,21 @@ Beyond coffee production, Baba Budan Giri's significance lies in living heritage
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/India]], [[Origins/India-Karnataka]], [[Origins/India-Karnataka-Chikmagalur]], [[Origins/Western-Ghats-Coffee]]
+**Origins**: [[India]], [[India]], [[India]], [[Origins/Western-Ghats-Coffee]]
 
-**Varieties**: [[Varieties/Kent]], [[Varieties/SLN-795]], [[Varieties/Chandragiri]], [[Varieties/Catimor]], [[Varieties/Indian-Coffee-Varieties]]
+**Varieties**: [[Varieties/Kent]], [[Varieties/SLN-795]], [[Varieties/Chandragiri]], [[Varieties/Catimor]], [[India]]
 
-**Processing**: [[Processing/Washed-Process]], [[Processing/Honey-Process]], [[Processing/Monsoon-Processing]], [[Processing/Indian-Traditional-Processing]]
+**Processing**: [[Processing/Washed-Process]], [[Processing/Honey-Process]], [[Processing/Monsoon-Processing]], [[India]]
 
-**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Indian-Coffee-Excellence]], [[Quality/Monsoon-Coffee-Unique-Processing]]
+**Quality**: [[Quality/Specialty-Grade-Coffee]], [[India]], [[Quality/Monsoon-Coffee-Unique-Processing]]
 
-**Cultural Context**: [[Coffee-Culture/Baba-Budan-Legend]], [[Coffee-Culture/Indian-Coffee-Heritage]], [[Coffee-Culture/Coffee-Introduction-Stories]], [[Coffee-Culture/Monsoon-Coffee-Tradition]]
+**Cultural Context**: [[Coffee-Culture/Baba-Budan-Legend]], [[India]], [[Coffee-Culture/Coffee-Introduction-Stories]], [[Coffee-Culture/Monsoon-Coffee-Tradition]]
 
-**Sustainability**: [[Sustainability/Western-Ghats-Conservation]], [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/Biodiversity-Hotspot-Coffee]], [[Sustainability/Human-Wildlife-Conflict-Coffee]]
+**Sustainability**: [[Sustainability/Western-Ghats-Conservation]], [[Rainforest-Alliance-Certification]], [[Sustainability/Biodiversity-Hotspot-Coffee]], [[Sustainability/Human-Wildlife-Conflict-Coffee]]
 
-**Markets**: [[Markets/Indian-Coffee-Export]], [[Markets/Monsoon-Coffee-Markets]], [[Markets/Middle-Eastern-Coffee-Markets]], [[Markets/Espresso-Blending-Coffees]]
+**Markets**: [[India]], [[Markets/Monsoon-Coffee-Markets]], [[Markets/Middle-Eastern-Coffee-Markets]], [[Markets/Espresso-Blending-Coffees]]
 
-**Historical Context**: [[History/Coffee-Introduction-India]], [[History/Baba-Budan-1670]], [[History/British-Colonial-Coffee-India]], [[History/Indian-Coffee-Liberalization]]
+**Historical Context**: [[India]], [[History/Baba-Budan-1670]], [[India]], [[India]]
 
 **Heritage**: [[Heritage/Multi-Generational-Coffee-Families]], [[Heritage/Colonial-Era-Coffee-Estates]], [[Heritage/Monsoon-Processing-Heritage]]
 

@@ -816,7 +816,7 @@ community-rating: 4.3
 - [[Glass-Storage-Containers]] - Concentrate storage options
 
 **Coffee Preparation**:
-- [[French-Press]] - Similar coarse grind, immersion brewing
+- [[French-Press-Quick-3-Minute-Method]] - Similar coarse grind, immersion brewing
 - [[Aeropress-Original]] - Cold brew capability (different method)
 
 ### Brewing Concepts
@@ -837,7 +837,7 @@ community-rating: 4.3
 
 **Cold Coffee Methods**:
 - [[Cold-Brew-Methods]] - Immersion vs slow-drip vs flash-chilled
-- [[Japanese-Iced-Coffee]] - Alternative cold coffee (hot brew over ice)
+- [[Japanese-Iced-Coffee-Method]] - Alternative cold coffee (hot brew over ice)
 - [[Nitro-Cold-Brew]] - Serving cold brew concentrate (kegged, nitrogenated)
 
 **Home Brewing**:

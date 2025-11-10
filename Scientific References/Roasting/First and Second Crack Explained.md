@@ -431,7 +431,7 @@ Understanding cracks helps:
 ## Tags
 
 - [[Roasting Science]]
-- [[Roast Development]]
-- [[Roasting Technique]]
+- [[Second Crack and Dark Roast Development]]
+- [[Home Roasting Techniques]]
 - [[Coffee Basics]]
 

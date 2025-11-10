@@ -673,11 +673,11 @@ Puerto Rican specialty coffee emphasizes high-elevation production (900+ MASL) f
 - [[Hawaii-Kona-Coffee]] - Comparable U.S. island coffee origin
 - [[Jamaica-Blue-Mountain]] - Caribbean premium coffee comparison
 - [[Dominican-Republic-Coffee]] - Neighboring Caribbean origin
-- [[Bourbon]] - Dominant heritage variety
+- [[Réunion-Island-Bourbon-Pointu]] - Dominant heritage variety
 - [[Limaní]] - Unique Puerto Rican variety
 - [[Yauco Selecto]] - Premium denomination
 - [[Hurricane Impact on Coffee]] - Climate vulnerability
-- [[Washed Process]] - Dominant processing
+- [[Washed Processing Complete Guide]] - Dominant processing
 - [[Specialty Coffee]] - Market positioning
 - [[Caribbean Coffee]] - Regional classification
 - [[Island Coffee]] - Geographic context

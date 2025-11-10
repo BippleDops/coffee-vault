@@ -1,9 +1,9 @@
 ---
 type: bean-profile
 name: Yemen Haraaz Mokha Natural
-origin: "[[Origins/Yemen]]"
-region: [[Origins/Yemen-Haraaz]]
-variety: [[Coffee Varieties/Yemen-Heirlooms]]
+origin: "[[Yemen]]"
+region: [[Yemen]]
+variety: [[Yemen]]
 processing: [[Processing Methods/Natural-Dry-Process]]
 roast-level: light-medium
 grade: Specialty-Grade
@@ -18,9 +18,9 @@ status: reference
 
 # 🫘 Yemen Haraaz Mokha Natural
 
-**Origin**: [[Origins/Yemen|Yemen]]
-**Region**: [[Origins/Yemen-Haraaz|Haraaz Mountains]]
-**Variety**: [[Coffee Varieties/Yemen-Heirlooms|Ancient Yemeni Heirlooms]]
+**Origin**: [[Yemen|Yemen]]
+**Region**: [[Yemen|Haraaz Mountains]]
+**Variety**: [[Yemen|Ancient Yemeni Heirlooms]]
 **Processing**: [[Processing Methods/Natural-Dry-Process|Natural/Dry Process]]
 **Grade**: Specialty Grade (hand-sorted)
 **Typical Altitude**: 1,800-2,400 MASL
@@ -1054,13 +1054,13 @@ This is the most iconic aspect of Yemeni coffee processing:
 ## 🔗 Related Content
 
 ### Related Bean Profiles
-- [[Ethiopia-Yirgacheffe-Heirloom-Natural]]
-- [[Ethiopia-Sidamo-Heirloom-Natural]]
-- [[Kenya-AA-SL28-Washed]]
+- [[Ethiopia]]
+- [[Ethiopia]]
+- [[Kenya]]
 
 ### Related Origins
-- [[Origins/Yemen]]
-- [[Origins/Yemen-Haraaz]]
+- [[Yemen]]
+- [[Yemen]]
 - [[Origins/Middle-East]]
 
 ### Processing
@@ -1070,7 +1070,7 @@ This is the most iconic aspect of Yemeni coffee processing:
 ### Cultural
 - [[Coffee History/Coffee-Origins]]
 - [[Coffee History/Mokha-Port-History]]
-- [[Coffee History/Yemeni-Coffee-Culture]]
+- [[Yemen]]
 
 ---
 

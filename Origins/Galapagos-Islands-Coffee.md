@@ -664,7 +664,7 @@ Galapagos coffee grows at lower elevations than most specialty origins but achie
 - [[Puerto-Rico-Yauco-Selecto]] - Caribbean island coffee comparison
 - [[Jamaica-Blue-Mountain]] - Premium island coffee
 - [[St. Helena Coffee]] - Another extremely rare island coffee
-- [[Bourbon]] - Dominant variety in Galapagos
+- [[Réunion-Island-Bourbon-Pointu]] - Dominant variety in Galapagos
 - [[Volcanic Soil]] - Terroir characteristic
 - [[Island Coffee]] - Geographic classification
 - [[Organic Coffee]] - Mandatory organic production

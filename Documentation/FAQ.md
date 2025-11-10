@@ -45,7 +45,7 @@ tags: [faq, help, questions]
 **A**: Yes, 100% backward compatible. All 4.0 content works unchanged. New features are additive and optional.
 
 ### Q: Can I customize Coffee Vault?
-**A**: Absolutely! Modify templates, create custom queries, add properties, build custom dashboards. See [[Configuration/Property-Schema]] for extensibility.
+**A**: Absolutely! Modify templates, create custom queries, add properties, build custom dashboards. See [[Property-Schema]] for extensibility.
 
 ---
 
@@ -120,13 +120,13 @@ tags: [faq, help, questions]
 **A**: Start with Ethiopian (Yirgacheffe), Colombian, or Guatemalan washed coffees. Light to medium roast. These are forgiving and showcase quality. See [[Beans Library/]] for profiles.
 
 ### Q: What brewing method is best for beginners?
-**A**: V60 or Aeropress. Both are forgiving, versatile, and teach fundamental skills. See [[Brewing Guides/]].
+**A**: V60 or Aeropress. Both are forgiving, versatile, and teach fundamental skills. See [[Brewing Guide]].
 
 ### Q: How do I find transparent coffee?
-**A**: Check [[Analytics/Supply-Chain-Layout/10-Supply-Chain-Transparency-Dashboard]], look for Direct Trade roasters, create [[Producers/]] profiles. Target transparency score 7+.
+**A**: Check [[10-Supply-Chain-Transparency-Dashboard]], look for Direct Trade roasters, create [[Producers/]] profiles. Target transparency score 7+.
 
 ### Q: What equipment do I really need?
-**A**: Minimum: Quality burr grinder ($100+), brewing method ($20-50), scale ($15-30), kettle ($30-80). See [[Documentation/Coffee-Equipment-Buying-Guide]].
+**A**: Minimum: Quality burr grinder ($100+), brewing method ($20-50), scale ($15-30), kettle ($30-80). See [[Coffee-Equipment-Buying-Guide]].
 
 ---
 
@@ -158,7 +158,7 @@ But templates and queries work out-of-box.
 ## 🎯 Goals & Development
 
 ### Q: How do goals work?
-**A**: Create goals with `Templates/Coffee Goal.md`. Progress auto-updates from your coffee logs. Track in [[Views/Learning-Education-Layout/Goals-Dashboard-View]] and [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]].
+**A**: Create goals with `Templates/Coffee Goal.md`. Progress auto-updates from your coffee logs. Track in [[Goals-Dashboard-View]] and [[11-Learning-Development-Dashboard]].
 
 ### Q: Can Coffee Vault help me improve?
 **A**: Yes! Through:
@@ -174,7 +174,7 @@ But templates and queries work out-of-box.
 1. Set goal with `Templates/Coffee Goal.md`
 2. Practice cupping with `Templates/Cupping Session.md`
 3. Study [[Scientific References/]]
-4. Track progress in [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard]]
+4. Track progress in [[11-Learning-Development-Dashboard]]
 5. Enroll in SCA courses when ready
 
 ---
@@ -228,7 +228,7 @@ Or create manually with `Templates/Recipe Profile.md`.
 **A**: Yes! Edit CSS files in `CSS/` folder or create custom snippets in `.obsidian/snippets/`.
 
 ### Q: Can I add custom properties?
-**A**: Yes! Follow guidelines in [[Configuration/Property-Schema]]. Use kebab-case naming, document in personal schema extension.
+**A**: Yes! Follow guidelines in [[Property-Schema]]. Use kebab-case naming, document in personal schema extension.
 
 ### Q: Can I create custom dashboards?
 **A**: Yes! Copy existing dashboards from `Analytics/` or `Views/` and modify queries. Datacore/Dataviewjs documentation helps.
@@ -248,46 +248,12 @@ Or create manually with `Templates/Recipe Profile.md`.
 ### Q: Links are broken - why?
 **A**: Check:
 - File moved? Update links or enable auto-update in settings
-- Typo in link? Use autocomplete (type [[ and suggestions appear)
-- File deleted? Check Archive/ or restore from backup
-
-### Q: Vault corrupted - what do?
-**A**: 
-1. Don't panic - it's just markdown files
-2. Restore from backup (you're making backups, right?)
-3. Restore from Git if version controlled
-4. Check `.trash/` folder (Obsidian's recycle bin)
-
----
-
-## 🚀 Advanced Usage
-
-### Q: Can multiple people use same vault?
-**A**: Yes, but:
-- Each person needs their own Coffee Logs folder or namespace
-- Shared reference content (Beans, Origins, etc.) works great
-- Consider Git for collaboration
-
-### Q: Can I contribute to Coffee Vault?
-**A**: Yes! Fork on GitHub, make improvements, submit pull requests. See CONTRIBUTING.md (to be created).
-
-### Q: How do I report bugs?
-**A**: GitHub Issues: https://github.com/BippleDops/coffee-vault/issues
-
----
-
-## 💡 Tips & Tricks
-
-### Q: What's the #1 tip for Coffee Vault success?
-**A**: **Log consistently**. Even basic logs build intelligence. Perfect logs aren't necessary - consistency matters most.
-
-### Q: How do I find my best bean?
-**A**: Check [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]] or [[Views/Analytics-Analysis-Layout/Advanced-Analytics-Base]] - sorted by average rating.
+- Typo in link? Use autocomplete (type [[Coffee Log]] or [[Advanced-Analytics-Base]] - sorted by average rating.
 
 ### Q: How do I improve my brewing?
 **A**: 
-1. Use [[Analytics/Daily-Brewing-Layout/9-Real-Time-Brewing-Assistant]]
-2. Check [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine]]
+1. Use [[9-Real-Time-Brewing-Assistant]]
+2. Check [[2-Brewing-Optimization-Engine]]
 3. Study [[Scientific References/Extraction Science/]]
 4. Practice consistently
 5. Measure and adjust

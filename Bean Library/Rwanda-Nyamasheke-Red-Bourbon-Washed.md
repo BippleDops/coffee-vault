@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Rwanda Nyamasheke Red Bourbon Washed
-origin: "[[Origins/Rwanda]]"
-region: [[Origins/Rwanda-Nyamasheke]]
+origin: "[[Rwanda]]"
+region: [[Rwanda]]
 variety: [[Coffee Varieties/Red-Bourbon]]
 processing: [[Processing Methods/Washed-Process]]
 roast-level: light-medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Rwanda Nyamasheke Red Bourbon Washed
 
-**Origin**: [[Origins/Rwanda|Rwanda]]  
-**Region**: [[Origins/Rwanda-Nyamasheke|Nyamasheke District]]  
+**Origin**: [[Rwanda|Rwanda]]  
+**Region**: [[Rwanda|Nyamasheke District]]  
 **Variety**: [[Coffee Varieties/Red-Bourbon|Red Bourbon]]  
 **Processing**: [[Processing Methods/Washed-Process|Fully Washed]]  
 **Grade**: A1 (Rwanda grading system)  
@@ -799,9 +799,9 @@ Rwanda offers exceptional African coffee at more accessible pricing than Kenyan 
 ## 🔗 Related Content
 
 ### Related Origins
-- [[Origins/Rwanda]] - Complete origin profile
-- [[Origins/Burundi]] - Neighbor, similar coffee
-- [[Origins/Kenya]] - Comparison African bright coffee
+- [[Rwanda]] - Complete origin profile
+- [[Burundi]] - Neighbor, similar coffee
+- [[Kenya]] - Comparison African bright coffee
 - [[Origins/East-Africa]] - Regional context
 
 ---

@@ -682,9 +682,9 @@ Test your search skills with these exercises:
 
 ## Related Documentation
 
-- [[Configuration/KEYBOARD-SHORTCUTS|Keyboard Shortcuts]]
-- [[Configuration/User-Configuration-Guide|User Configuration]]
-- [[Documentation/Coffee-Terminology-Glossary|Coffee Glossary]]
+- [[KEYBOARD-SHORTCUTS|Keyboard Shortcuts]]
+- [[User-Configuration-Guide|User Configuration]]
+- [[GLOSSARY|Coffee Glossary]]
 - [[HOME-DASHBOARD|Home Dashboard]]
 
 ---

@@ -49,11 +49,11 @@ related_equipment:
   - "[[Comandante-C40-MK4]]"
 related_concepts:
   - "[[Immersion-Brewing]]"
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Grind-Size]]"
   - "[[Water-Temperature]]"
   - "[[Brewing-Ratio]]"
-  - "[[Coffee-Body]]"
+  - "[[Body]]"
   - "[[Filter-Coffee]]"
   - "[[Brew-Time]]"
   - "[[Coffee-Oils]]"

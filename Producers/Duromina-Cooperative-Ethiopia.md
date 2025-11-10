@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Duromina Coffee Farmers Cooperative
-country: [[Origins/Ethiopia]]
-region: [[Origins/Ethiopia-Yirgacheffe]]
+country: [[Ethiopia]]
+region: [[Ethiopia]]
 producer-category: Cooperative-Washing-Station
 established: 2002
 varieties: Heirloom-Ethiopian-Landraces
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Duromina Coffee Farmers Cooperative
 
 **Type**: Smallholder Cooperative - Yirgacheffe Natural Process Tradition
-**Location**: [[Origins/Ethiopia-Yirgacheffe|Yirgacheffe, Ethiopia]]
+**Location**: [[Ethiopia|Yirgacheffe, Ethiopia]]
 **Established**: 2002
 
 ---
@@ -975,39 +975,39 @@ This is coffee with deep roots and meaningful impact.
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/Ethiopia-Yirgacheffe-Natural]]
+- [[Ethiopia]]
 - [[Beans Library/Duromina-Grade-1]]
-- [[Beans Library/Ethiopian-Heirloom-Organic]]
+- [[Ethiopia]]
 
 **Related Origins**:
-- [[Origins/Ethiopia]]
-- [[Origins/Ethiopia-Yirgacheffe]]
-- [[Origins/Ethiopia-Gedeb]]
+- [[Ethiopia]]
+- [[Ethiopia]]
+- [[Ethiopia]]
 
 **Related Varieties**:
-- [[Scientific References/Ethiopian-Heirloom-Varieties]]
+- [[Ethiopia]]
 - [[Scientific References/Yirgacheffe-Landraces]]
 - [[Scientific References/Coffee-Genetic-Diversity]]
 
 **Related Processing**:
 - [[Scientific References/Natural-Process]]
-- [[Scientific References/Ethiopian-Natural-Processing]]
+- [[Ethiopia]]
 - [[Scientific References/African-Raised-Bed-Drying]]
 
 **Related Producers**:
-- [[Producers/Kochere-Cooperative]] (Yirgacheffe neighbor)
-- [[Producers/Yirgacheffe-Kochere-Union-Ethiopia]] (YCFCU)
-- [[Producers/Sidama-Coffee-Farmers-Cooperative-Union-Ethiopia]] (Ethiopian comparison)
+- [[Kochere-Cooperative]] (Yirgacheffe neighbor)
+- [[Yirgacheffe-Kochere-Union-Ethiopia]] (YCFCU)
+- [[Sidama-Coffee-Farmers-Cooperative-Union-Ethiopia]] (Ethiopian comparison)
 
 **Certifications**:
 - [[Scientific References/Organic-Certification]]
 - [[Scientific References/Fair-Trade-Certification]]
-- [[Scientific References/Ethiopian-Cooperative-System]]
+- [[Ethiopia]]
 
 **Brewing Guides**:
-- [[Brewing Guides/Ethiopian-Coffee-Brewing]]
-- [[Brewing Guides/Natural-Process-Coffee]]
-- [[Brewing Guides/Fruit-Forward-Coffee]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 ---
 

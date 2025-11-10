@@ -46,7 +46,7 @@ This library is organized into six major domains, each containing detailed notes
 - [[Volatile Aromatics and Aroma Compounds]] - What creates coffee aroma
 - [[Trigonelline and Nicotinic Acid]] - Key transformations
 - [[Lipids and Oils in Coffee]] - Mouthfeel and crema
-- [[Organic Acids and Perceived Acidity]] - The bright, lively notes
+- [[Perceived Acidity]] - The bright, lively notes
 - [[Melanoidins and Color Development]] - Browning reactions
 - [[Caffeine Chemistry and Effects]] - The stimulant molecule
 
@@ -137,11 +137,11 @@ This library is organized into six major domains, each containing detailed notes
 - [[Washed Processing Complete Guide]] - Clean, bright profile
 - [[Natural/Dry Processing Guide]] - Fruity, wine-like character
 - [[Honey/Pulped Natural Processing]] - Sweetness and body
-- [[Anaerobic Fermentation Methods]] - Experimental processing
+- [[Anaerobic Fermentation]] - Experimental processing
 - [[Carbonic Maceration in Coffee]] - Wine-inspired techniques
 - [[Extended Fermentation Experiments]] - Pushing boundaries
 - [[Wet Hulling (Giling Basah)]] - Indonesian specialty
-- [[Processing and Flavor Development]] - How methods create taste
+- [[Flavor Development]] - How methods create taste
 - [[Quality Control in Processing]] - Avoiding defects
 - [[Regional Processing Preferences]] - Geographic traditions
 - **[[Fermentation-Temperature-Control]]** - ⭐ Kinetics and flavor development (NEW)
@@ -161,7 +161,7 @@ This library is organized into six major domains, each containing detailed notes
 **Focus**: Thermal transformation and roast development
 
 - [[Roasting Phases and Reactions]] - What happens during roasting
-- [[First Crack Chemistry]] - The popping point
+- [[First Crack Chemistry and Physics]] - The popping point
 - [[Second Crack and Dark Roasts]] - Going further
 - [[Roast Development Time Ratio]] - DTR and its importance
 - [[Heat Transfer in Roasting]] - Conduction, convection, radiation
@@ -194,7 +194,7 @@ Deepen your understanding:
 1. [[TDS and Extraction Yield Relationships]]
 2. [[SCA Cupping Protocol Step-by-Step]]
 3. [[Major Arabica Varieties Profiles]]
-4. [[Processing and Flavor Development]]
+4. [[Flavor Development]]
 5. [[Roast Development Time Ratio]]
 
 ### For Advanced Students
@@ -351,8 +351,8 @@ As you learn and experiment:
 
 **Focus**: Method-specific physics, technique, and equipment optimization
 
-- [[Water Temperature and Extraction]] - Temperature's role in brewing
-- [[Brewing Parameters Overview]] - Core brewing variables
+- [[Water Temperature]] - Temperature's role in brewing
+- [[Brewing Parameters]] - Core brewing variables
 - **[[Brewing-Physics-Immersion-vs-Percolation]]** - ⭐ Fundamental framework (NEW)
 - **[[The-Bloom-Phase-CO2-Release]]** - ⭐ CO2 outgassing science (NEW)
 - **[[Method-Specific-Extraction-Optimization]]** - ⭐ V60, Chemex, French Press (NEW)
@@ -384,7 +384,7 @@ As you learn and experiment:
 
 - [[Water Mineral Roles in Extraction]] - How minerals affect brewing
 - [[pH and Alkalinity in Brewing]] - Acidity and buffering
-- [[Water Recipe Formulation]] - Custom water design
+- [[Water Recipe Formulation Guide]] - Custom water design
 - **[[Water-Chemistry-for-Espresso]]** - ⭐ Mineral optimization for espresso (NEW)
 - **[[Water-Hardness-Testing-Practical-Guide]]** - ⭐ Measurement methods and tools (NEW)
 

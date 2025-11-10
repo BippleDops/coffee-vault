@@ -14,13 +14,13 @@ tags: [kanban, goals, development, achievements]
   - Target: 25 origins
   - Progress: 32%
   - Deadline: End of 2026
-  - Link: [[Coffee Goals/Explore-25-Origins]]
+  - Link: [[Coffee Goal]]
 
 - [ ] **Home Roasting Setup** #goal:equipment #long-term
   - Need: Home roaster ($300-500)
   - Research: Behmor vs Fresh Roast
   - Timeline: Save $50/month for 8 months
-  - Link: [[Coffee Goals/Start-Home-Roasting]]
+  - Link: [[Coffee Goal]]
 
 - [ ] **Visit Coffee Origin** #goal:travel #someday
   - Destination: Ethiopia (Yirgacheffe)
@@ -36,21 +36,21 @@ tags: [kanban, goals, development, achievements]
   - Recent: 3 consecutive 4.5+ brews ✓
   - Challenge: Flat bed consistency
   - Next milestone: 35 total brews by Nov 15
-  - Link: [[Coffee Goals/Master-V60-Technique]]
+  - Link: [[Coffee Goal]]
   - Status: On track, seeing improvement
 
 - [ ] **Try 50 Different Beans** #goal:exploration #medium-priority
   - Progress: 38/50 beans (76%)
   - Recent additions: Panama Gesha, Yemen Mocha
   - Focus: Try more African coffees (Rwanda, Burundi)
-  - Link: [[Coffee Goals/Try-50-Beans]]
+  - Link: [[Coffee Goal]]
 
 - [ ] **Achieve Consistent 4.5+ Rating** #goal:quality #high-priority
   - Current best: 4.9⭐
   - Target: 10 consecutive 4.5+ brews
   - Progress: 3 consecutive (need 7 more)
   - Strategy: Focus on V60 with Ethiopian beans
-  - Link: [[Coffee Goals/Consistent-Excellence]]
+  - Link: [[Coffee Goal]]
 
 
 ## 🔄 On Hold
@@ -77,7 +77,7 @@ tags: [kanban, goals, development, achievements]
   - Completed: 2025-10-01
   - First brew: 4.2⭐
   - Led to: Master V60 Technique goal
-  - Link: [[Coffee Goals/Try-V60]]
+  - Link: [[Coffee Goal]]
 
 - [ ] **Build Bean Library to 25** #goal:collection #completed
   - Completed: 2025-10-20
@@ -135,7 +135,7 @@ tags: [kanban, goals, development, achievements]
   - Progress: X% or X/Y
   - Current status or challenge
   - Next steps or milestones
-  - Link: [[Coffee Goals/Goal-Name]]
+  - Link: [[Coffee Goal]]
 ```
 
 ### Goal Types

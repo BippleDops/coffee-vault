@@ -505,8 +505,8 @@ Building aroma skills helps:
 ## Tags
 
 - [[Sensory Science]]
-- [[Aroma]]
-- [[Cupping]]
-- [[Training]]
+- [[Wilfa-Svart-Aroma]]
+- [[SCA-Cupping-Form]]
+- [[training-plan-template]]
 - [[Professional Development]]
 

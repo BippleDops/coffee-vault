@@ -409,7 +409,7 @@ Mastering profiles helps:
 ## Tags
 
 - [[Roasting Science]]
-- [[Roast Development]]
-- [[Quality Control]]
-- [[Consistency]]
+- [[Second Crack and Dark Roast Development]]
+- [[Post-Harvest Quality Control]]
+- [[Roast Uniformity and Consistency]]
 

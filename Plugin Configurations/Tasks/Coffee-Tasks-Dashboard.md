@@ -172,14 +172,14 @@ WHERE completion >= date(today) - dur(7 days)
 **Quick Task Templates** (copy and customize):
 
 ```markdown
-- [ ] Order coffee beans from [[Roaster]] 🛒 📅 YYYY-MM-DD #bean-acquisition
+- [ ] Order coffee beans from [[Roaster Profile]] 🛒 📅 YYYY-MM-DD #bean-acquisition
 - [ ] Clean grinder ⚙️ 📅 YYYY-MM-DD #coffee-maintenance
 - [ ] Practice V60 technique ☕ 📅 YYYY-MM-DD #practice
 - [ ] Research [[Equipment Name]] 🔍 📅 YYYY-MM-DD #equipment-research
 - [ ] Create Bean Profile for [[Bean Name]] 🫘 📅 YYYY-MM-DD #bean-documentation
 - [ ] Watch video on [[Topic]] 📺 📅 YYYY-MM-DD #learning
 - [ ] Test grind size variation ☕ 📅 YYYY-MM-DD #experiment
-- [ ] Write brewing guide for [[Method]] 📝 📅 YYYY-MM-DD #documentation
+- [ ] Write brewing guide for [[V60-Quick-3-Pour-Method]] 📝 📅 YYYY-MM-DD #documentation
 ```
 
 ---

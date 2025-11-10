@@ -184,11 +184,11 @@ if (totalBrews < 20) {
 **Focus**:
 1. Master one brewing method (V60 or Aeropress recommended)
 2. Log every brew consistently
-3. Read: [[Scientific References/Extraction Science/Coffee Brewing Control Chart]]
+3. Read: [[Coffee Brewing Control Chart]]
 4. Goal: Achieve 20 total brews with consistent technique
 
 **Recommended Resources**:
-- [[Brewing Guides/Pour Over Fundamentals]]
+- [[Brewing Guide]]
 - [[Scientific References/Grinding/Grind Size Impact on Extraction]]
   `);
 } else if (totalBrews < 50) {
@@ -203,7 +203,7 @@ if (totalBrews < 20) {
 5. Goal: Try 3 different origins, compare flavor profiles
 
 **Recommended Resources**:
-- [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine]]
+- [[6-Correlation-Discovery-Engine]]
 - [[Scientific References/Sensory Science/Flavor Wheel Development]]
   `);
 } else if (totalBrews < 100) {
@@ -218,7 +218,7 @@ if (totalBrews < 20) {
 5. Consider SCA certification prep
 
 **Recommended Resources**:
-- [[Analytics/Analytics-Analysis-Layout/5-Quality-Predictor]]
+- [[5-Quality-Predictor]]
 - [[Documentation/Advanced-Brewing-Techniques]]
   `);
 } else {

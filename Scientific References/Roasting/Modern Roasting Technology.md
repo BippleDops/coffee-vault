@@ -164,8 +164,8 @@ Roasting technology has advanced significantly, with automation, data analytics,
 ## Tags
 
 - [[Roasting Science]]
-- [[Technology]]
+- [[Modern Roasting Technology]]
 - [[Innovation]]
-- [[Automation]]
+- [[AUTOMATION_MODULES_README]]
 - [[Future Trends]]
 

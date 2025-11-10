@@ -48,16 +48,16 @@ related_equipment:
   - "[[Chemex-Classic-8-Cup]]"
   - "[[Aeropress-Original]]"
 related_concepts:
-  - "[[Coffee-Roasting]]"
+  - "[[Coffee-Roasting-Business-Startup-Guide]]"
   - "[[Roast-Levels]]"
   - "[[First-Crack]]"
   - "[[Second-Crack]]"
   - "[[Green-Coffee]]"
   - "[[Roast-Development]]"
-  - "[[Chaff]]"
+  - "[[Chaff Formation and Removal]]"
   - "[[Smoke-Suppression]]"
-  - "[[Home-Roasting]]"
-  - "[[Freshness]]"
+  - "[[Home-Roasting-Complete-Beginners-Guide]]"
+  - "[[Coffee-Storage-Freshness-Guide]]"
 ---
 
 # Behmor 1600 Plus Home Coffee Roaster
@@ -855,4 +855,4 @@ For specialty coffee enthusiasts spending $75+/month on roasted coffee, the fina
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 4*
-*Related: [[Coffee-Roasting]], [[Green-Coffee]], [[Roast-Levels]], [[Home-Roasting]], [[Freshness]]*
+*Related: [[Coffee-Roasting-Business-Startup-Guide]], [[Green-Coffee]], [[Roast-Levels]], [[Home-Roasting-Complete-Beginners-Guide]], [[Coffee-Storage-Freshness-Guide]]*

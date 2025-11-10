@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Gichataini Coffee Factory
-country: [[Origins/Kenya]]
-region: [[Origins/Kenya-Nyeri]]
+country: [[Kenya]]
+region: [[Kenya]]
 producer-category: Washing-Station-Cooperative
 established: 1999
 varieties: SL28-SL34-Ruiru-11-Batian
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Gichataini Coffee Factory
 
 **Type**: Cooperative Washing Station - Double Fermentation Excellence
-**Location**: [[Origins/Kenya-Nyeri|Nyeri County, Kenya]]
+**Location**: [[Kenya|Nyeri County, Kenya]]
 **Established**: 1999
 
 ---
@@ -888,14 +888,14 @@ Overall: Quintessential Kenya - bright, intense, complex, unforgettable
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/Kenya-AA-Nyeri]]
+- [[Kenya]]
 - [[Beans Library/Gichataini-Micro-Lot]]
-- [[Beans Library/Kenya-SL28-Washed]]
+- [[Kenya]]
 
 **Related Origins**:
-- [[Origins/Kenya]]
-- [[Origins/Kenya-Nyeri]]
-- [[Origins/Kenya-Mount-Kenya]]
+- [[Kenya]]
+- [[Kenya]]
+- [[Kenya]]
 
 **Related Varieties**:
 - [[Scientific References/SL28-Variety]]
@@ -904,24 +904,24 @@ Overall: Quintessential Kenya - bright, intense, complex, unforgettable
 - [[Scientific References/Batian-Variety]]
 
 **Related Processing**:
-- [[Scientific References/Kenyan-Washed-Process]]
+- [[Kenya]]
 - [[Scientific References/Double-Fermentation]]
 - [[Scientific References/African-Raised-Bed-Drying]]
 
 **Related Producers**:
-- [[Producers/Kangocho-Washing-Station-Kenya]] (Kenya comparison)
-- [[Producers/Nyeri-Gatomboya-Factory-Kenya]] (Nyeri neighbor)
-- [[Producers/Nyeri-Womens-Cooperative-Kenya]] (Nyeri cooperative)
+- [[Kangocho-Washing-Station-Kenya]] (Kenya comparison)
+- [[Nyeri-Gatomboya-Factory-Kenya]] (Nyeri neighbor)
+- [[Nyeri-Womens-Cooperative-Kenya]] (Nyeri cooperative)
 
 **Brewing Guides**:
-- [[Brewing Guides/Kenyan-Coffee-Brewing]]
-- [[Brewing Guides/Bright-Acidic-Coffee]]
-- [[Brewing Guides/Pour-Over-Light-Roast]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 **Scientific References**:
-- [[Scientific References/Kenyan-Coffee-System]]
+- [[Kenya]]
 - [[Scientific References/Smallholder-Cooperatives]]
-- [[Scientific References/Auction-System-Kenya]]
+- [[Kenya]]
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 type: bean-profile
 name: Brazil Sul de Minas Yellow Bourbon Natural
-origin: "[[Origins/Brazil]]"
-region: [[Origins/Brazil-Sul-de-Minas]]
+origin: "[[Brazil]]"
+region: [[Brazil]]
 variety: [[Coffee Varieties/Yellow-Bourbon]]
 processing: [[Processing Methods/Natural-Process]]
 roast-level: medium
@@ -18,8 +18,8 @@ status: reference
 
 # 🫘 Brazil Sul de Minas Yellow Bourbon Natural
 
-**Origin**: [[Origins/Brazil|Brazil]]
-**Region**: [[Origins/Brazil-Sul-de-Minas|Sul de Minas (South of Minas Gerais)]]
+**Origin**: [[Brazil|Brazil]]
+**Region**: [[Brazil|Sul de Minas (South of Minas Gerais)]]
 **Variety**: [[Coffee Varieties/Yellow-Bourbon|Yellow Bourbon]]
 **Processing**: [[Processing Methods/Natural-Process|Natural (Dry) Process]]
 **Grade**: NY 2/3 (New York grade, defect-based)
@@ -1053,14 +1053,14 @@ This is where natural processing creates Brazilian coffee's character and where 
 ## 🔗 Related Content
 
 ### Related Bean Profiles
-- [[Brazil-Cerrado-Natural]] - Another premium Brazilian natural region
+- [[Brazil]] - Another premium Brazilian natural region
 - [[Colombia-Excelso]] - Comparison: washed Central American
-- [[Ethiopia-Yirgacheffe-Natural]] - Comparison: African natural processing
-- [[Guatemala-Antigua-Bourbon]] - Bourbon variety in different terroir
+- [[Ethiopia]] - Comparison: African natural processing
+- [[Guatemala]] - Bourbon variety in different terroir
 
 ### Related Origins
-- [[Origins/Brazil]] - Complete Brazil origin profile
-- [[Origins/Brazil-Sul-de-Minas]] - Regional deep-dive
+- [[Brazil]] - Complete Brazil origin profile
+- [[Brazil]] - Regional deep-dive
 - [[Origins/Cerrado]] - Another premium Brazilian region
 - [[Origins/South-America]] - Continental context
 
@@ -1075,13 +1075,13 @@ This is where natural processing creates Brazilian coffee's character and where 
 - [[Processing Methods/Washed-Process]] - Comparison processing
 
 ### Brewing Guides
-- [[Brewing Guides/Espresso-Guide]] - Perfect for Brazilian coffee
-- [[Brewing Guides/French-Press-Guide]] - Ideal brewing method
-- [[Brewing Guides/Cold-Brew-Guide]] - Excellent application
+- [[Brewing Guide]] - Perfect for Brazilian coffee
+- [[Brewing Guide]] - Ideal brewing method
+- [[Brewing Guide]] - Excellent application
 
 ### Roasters with Brazilian Programs
 - [[Roasters/Ozone-Coffee]] - Excellent Brazilian offerings
-- [[Roasters/Passenger-Coffee]] - Direct trade Brazil
+- [[Passenger-Coffee]] - Direct trade Brazil
 - [[Roasters/Stumptown]] - Classic Brazilian roasts
 
 ---

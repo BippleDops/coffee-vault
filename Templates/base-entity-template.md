@@ -87,7 +87,7 @@ relationships:
   # Multiple links (one-to-many)
   related-beans: []
   # related-beans: array[link] - Multiple entity references
-  # Example: [[Brazil-Santos]], [[Colombia-Huila]], [[Ethiopia-Yirg]]
+  # Example: [[Brazil-Santos]], [[Colombia-Huila]], [[Ethiopia]]
 
   related-logs: []
   # related-logs: array[link] - Backlinks to related logs
@@ -289,7 +289,7 @@ tags: [bean-profile, ethiopia, natural-process, floral]
 ```yaml
 type: coffee-log
 date: 2025-01-20
-beans: [[Ethiopia Yirgacheffe]]
+beans: [[Ethiopia]]
 brew-method: v60
 dose: 18
 water: 300

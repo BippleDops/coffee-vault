@@ -346,7 +346,7 @@ Altitude and terroir are fundamental to coffee quality:
 ## Tags
 
 - [[Agronomy]]
-- [[Terroir]]
+- [[Ethiopia-Terroir-and-Varietals]]
 - [[Quality Indicators]]
 - [[Origin Characteristics]]
 

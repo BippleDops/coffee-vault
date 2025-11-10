@@ -433,7 +433,7 @@ Understanding natural processing helps:
 
 ## Tags
 
-- [[Processing]]
+- [[processing-playbook-template]]
 - [[Coffee Production]]
 - [[Flavor Development]]
 - [[Origin Characteristics]]

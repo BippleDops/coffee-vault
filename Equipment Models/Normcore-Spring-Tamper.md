@@ -573,7 +573,7 @@ community-rating: 4.6
 **Espresso Machines** (compatible sizes):
 - **[[Breville-Bambino-Plus]]**: 53.3mm Normcore (perfect pairing, budget setup)
 - **[[Gaggia-Classic-Pro]]**: 58mm Normcore (budget setup, manual control)
-- **[[Rancilio-Silvia]]**: 58mm Normcore (classic pairing, reliable)
+- **[[Rancilio-Silvia-Pro-X]]**: 58mm Normcore (classic pairing, reliable)
 - **[[Lelit-Bianca]]**: 58mm Normcore (budget tamper + prosumer machine)
 - **Breville Barista Express**: 53.3mm Normcore (most common pairing)
 - **Breville Barista Pro**: 53.3mm Normcore (popular combination)
@@ -581,7 +581,7 @@ community-rating: 4.6
 **Grinders** (workflow integration):
 - **[[Baratza-Sette-270Wi]]**: Auto-dose + Normcore tamp = consistent puck prep
 - **[[Eureka-Mignon-Specialita]]**: Manual dose + Normcore tamp = manual precision
-- **[[Niche-Zero]]**: Single-dose + Normcore tamp = home enthusiast setup
+- **[[Niche-Zero-Grinder]]**: Single-dose + Normcore tamp = home enthusiast setup
 - **[[Mahlkonig-EK43]]**: Professional grind + Normcore tamp = cafe quality at home
 - **Hand grinders**: [[1Zpresso-JX-Pro]] + Normcore = ultra-budget precision
 
@@ -624,7 +624,7 @@ community-rating: 4.6
 
 **Prosumer Setup** ($3000-5000):
 - **Machine**: [[Lelit-Bianca]] ($2900) or Rocket Appartamento ($1800)
-- **Grinder**: [[Niche-Zero]] ($700) or [[Mahlkonig-EK43]] ($2800)
+- **Grinder**: [[Niche-Zero-Grinder]] ($700) or [[Mahlkonig-EK43]] ($2800)
 - **Tamper**: Normcore 58mm ($35) OR Pullman ($150-200)
 - **Scale**: [[Acaia-Lunar]] ($250)
 - **Accessories**: Precision baskets, WDT, bottomless PF ($200)
@@ -912,7 +912,7 @@ community-rating: 4.6
 
 **"Pragmatic Paul" - Prosumer with Budget Mindset**:
 - Age: 42, engineer, 5 years espresso experience
-- Setup: [[Lelit-Bianca]], [[Niche-Zero]], considering tampers
+- Setup: [[Lelit-Bianca]], [[Niche-Zero-Grinder]], considering tampers
 - Needs: Performance, value (not prestige), functional excellence
 - Normcore fit: Perfect pragmatic choice (90% of Pullman at 20% of price)
 - Willingness to pay: $35 vs. $150 Pullman (easy choice for pragmatist)

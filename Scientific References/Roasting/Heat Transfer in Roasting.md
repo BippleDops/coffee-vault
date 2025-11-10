@@ -504,6 +504,6 @@ Mastering heat transfer helps:
 
 - [[Roasting Science]]
 - [[Roast Control]]
-- [[Roasting Technique]]
+- [[Home Roasting Techniques]]
 - [[Coffee Physics]]
 

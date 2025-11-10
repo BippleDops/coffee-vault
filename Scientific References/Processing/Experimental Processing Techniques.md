@@ -174,8 +174,8 @@ Experimental processing:
 
 ## Tags
 
-- [[Processing]]
-- [[Experimental Processing]]
+- [[processing-playbook-template]]
+- [[Experimental Processing Techniques]]
 - [[Innovation]]
 - [[Specialty Coffee]]
 - [[Future Trends]]

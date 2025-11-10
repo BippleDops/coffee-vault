@@ -43,12 +43,12 @@ related_equipment:
   - "[[Mazzer-Super-Jolly]]"
 related_concepts:
   - "[[Espresso-Fundamentals]]"
-  - "[[Extraction]]"
-  - "[[Puck-Preparation]]"
-  - "[[Channeling]]"
-  - "[[Distribution]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
+  - "[[Puck-Preparation-Science]]"
+  - "[[Espresso-Channeling-Prevention]]"
+  - "[[Weiss-Distribution-Tool-WDT]]"
   - "[[Tamping-Pressure]]"
-  - "[[Consistency]]"
+  - "[[Roast Uniformity and Consistency]]"
   - "[[Workflow-Optimization]]"
   - "[[Competition-Espresso]]"
 ---
@@ -1811,4 +1811,4 @@ For users outside that profile—casual espresso drinkers, budget-focused setups
 
 *Last Updated: 2024*
 *Coffee Vault Equipment Models - Batch 4*
-*Related: [[La-Marzocco-Linea-Mini]], [[Decent-Espresso-DE1PRO]], [[Niche-Zero-Grinder]], [[Espresso-Fundamentals]], [[Puck-Preparation]]*
+*Related: [[La-Marzocco-Linea-Mini]], [[Decent-Espresso-DE1PRO]], [[Niche-Zero-Grinder]], [[Espresso-Fundamentals]], [[Puck-Preparation-Science]]*

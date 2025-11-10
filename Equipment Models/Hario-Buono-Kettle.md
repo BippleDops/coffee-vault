@@ -893,33 +893,33 @@ community-rating: 4.4
 - [[Fellow-Stagg-EKG]] - Premium electric alternative
 - [[Bonavita-Connoisseur-Gooseneck]] - Budget electric alternative
 - [[Takahiro-Kettle]] - Premium stovetop alternative
-- [[Hario-V60]] - Natural brewing method pairing
+- [[Hario-V60-Plastic-Dripper]] - Natural brewing method pairing
 - [[Chemex-Classic-8-Cup]] - Compatible brewing method
 - [[Acaia-Lunar]] - Scale pairing (precision brewing)
-- [[Timemore-Black-Mirror]] - Budget scale pairing
+- [[Timemore-Black-Mirror-Basic]] - Budget scale pairing
 
 ### Related Brew Methods
-- [[Pour-Over]] - Primary use case
-- [[V60]] - Natural Hario pairing
-- [[Kalita-Wave]] - Compatible method
-- [[Chemex]] - Compatible method
+- [[V60-Pour-Over-Light-Roast-Floral]] - Primary use case
+- [[V60-Quick-3-Pour-Method]] - Natural Hario pairing
+- [[Kalita-Wave-Recipe]] - Compatible method
+- [[Chemex-Medium-Roast-Balanced]] - Compatible method
 - [[Clever-Coffee-Dripper]] - Works well
 
 ### Related Concepts
 - [[Gooseneck-Kettle-Design]] - Spout geometry importance
-- [[Pour-Over-Technique]] - Pouring technique fundamentals
+- [[Master-Pour-Over-Technique]] - Pouring technique fundamentals
 - [[Water-Temperature]] - Brew temperature impact
-- [[Bloom-Phase]] - Importance of controlled bloom pour
+- [[The-Bloom-Phase-CO2-Release]] - Importance of controlled bloom pour
 - [[Spiral-Pour]] - Pouring pattern technique
 
 ### Related Companies
-- [[Hario]] - Company background, product ecosystem
+- [[Hario-V60-Plastic-Dripper]] - Company background, product ecosystem
 - [[Japanese-Coffee-Equipment]] - Japanese design philosophy
 - [[Fellow-Products]] - Premium kettle competitor
 
 ### Coffee Science
 - [[Water-Temperature]] - Brew temperature impact on extraction
-- [[Flow-Rate]] - Pour rate impact on extraction
+- [[Flow-Rate-Control-Techniques]] - Pour rate impact on extraction
 
 ---
 

@@ -807,10 +807,10 @@ The AeroPress proves that innovation doesn't require complexity or premium mater
 
 **Cross-References**:
 - [[Brewing Methods/Aeropress]] - Brewing technique
-- [[Equipment Models/Fellow-Prismo]] - Pressure valve accessory
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Alternative manual brewer
-- [[Brewing Parameters/Grind Size]] - Medium-fine typical
+- [[Equipment Model]] - Pressure valve accessory
+- [[Equipment Model]] - Alternative manual brewer
+- [[Brewing Parameters]] - Medium-fine typical
 - [[Guides/Travel-Coffee-Setup]] - Perfect travel component
 - [[Recipes/Aeropress-Standard]] - Classic recipe
 - [[Recipes/Aeropress-Inverted]] - Inverted method
-- [[Bean Library/Ethiopia-Yirgacheffe-Natural]] - Example pairing
+- [[Ethiopia]] - Example pairing

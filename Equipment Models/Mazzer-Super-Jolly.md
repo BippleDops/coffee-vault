@@ -54,12 +54,12 @@ related_equipment:
   - "[[Pullman-BigStep-Tamper]]"
 related_concepts:
   - "[[Grind-Size]]"
-  - "[[Extraction]]"
+  - "[[DATA-EXTRACTION-GUIDE]]"
   - "[[Espresso-Fundamentals]]"
-  - "[[Burr-Geometry]]"
+  - "[[Grinder-Burr-Geometry-Analysis]]"
   - "[[Grind-Distribution]]"
-  - "[[Particle-Size-Distribution]]"
-  - "[[Retention]]"
+  - "[[Particle-Size-Distribution-Measurement]]"
+  - "[[Grinder Retention and Single-Dosing]]"
   - "[[Commercial-Coffee-Equipment]]"
 ---
 
@@ -1243,13 +1243,13 @@ Professional baristas and cafe owners share:
 
 **Grinder Fundamentals:**
 - [[Grind-Size]] note for understanding grind adjustment
-- [[Particle-Size-Distribution]] for extraction theory
-- [[Burr-Geometry]] for technical understanding
-- [[Retention]] concepts and management
+- [[Particle-Size-Distribution-Measurement]] for extraction theory
+- [[Grinder-Burr-Geometry-Analysis]] for technical understanding
+- [[Grinder Retention and Single-Dosing]] concepts and management
 
 **Espresso Preparation:**
 - [[Espresso-Fundamentals]] for proper utilization
-- [[Extraction]] theory for grind size impact
+- [[DATA-EXTRACTION-GUIDE]] theory for grind size impact
 - [[Dose-Consistency]] importance in workflow
 
 **Commercial Equipment:**

@@ -656,7 +656,7 @@ Tarrazú (Los Santos) encompasses several cantons in the Talamanca Mountains of 
 ## 🔗 Related Vault Entries
 
 ### Origins
-- [[Costa-Rica]] - National overview
+- [[Helsar-de-Zarcero-Micromill-Costa-Rica]] - National overview
 - [[Costa-Rica-West-Valley]] - Neighboring region
 - [[Costa-Rica-Central-Valley]] - Historic area
 - [[Guatemala-Antigua]] - Similar balance

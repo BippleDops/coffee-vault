@@ -643,7 +643,7 @@ if (errorFiles > 0) {
 ```yaml
 # ❌ Bad
 relationships:
-  requires: [[V60]], [[Grinder]]  # YAML parser fails on nested brackets
+  requires: [[V60-Quick-3-Pour-Method]], [[Timemore-Sculptor-Grinder]]  # YAML parser fails on nested brackets
 
 # ✓ Good
 relationships:

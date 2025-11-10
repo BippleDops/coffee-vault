@@ -748,10 +748,10 @@ The Lunar transforms espresso workflow through real-time weight measurement, ena
 ---
 
 **Cross-References:**
-- [[Equipment Models/Decent-Espresso-DE1PRO]] - Native Bluetooth integration
-- [[Equipment Models/La-Marzocco-Linea-Mini]] - Perfect pairing, fits drip tray
-- [[Equipment Models/Breville-Bambino-Plus]] - Compatible but may be overkill
+- [[Equipment Model]] - Native Bluetooth integration
+- [[Equipment Model]] - Perfect pairing, fits drip tray
+- [[Equipment Model]] - Compatible but may be overkill
 - [[Brewing Methods/Espresso]] - Primary use case
-- [[Brewing Parameters/Dose]] - Precision enables exact dosing
-- [[Brewing Parameters/Yield]] - Real-time yield monitoring
+- [[Brewing Parameters]] - Precision enables exact dosing
+- [[Brewing Parameters]] - Real-time yield monitoring
 - [[Guides/Dialing-In-Espresso]] - Essential tool for dialing in

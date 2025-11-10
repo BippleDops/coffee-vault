@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca La Esperanza
-country: [[Origins/Colombia]]
-region: [[Origins/Colombia-Huila]]
+country: [[Colombia]]
+region: [[Colombia]]
 producer-category: Family-Farm
 established: 1985
 varieties: Caturra-Castillo-Colombia-Pink-Bourbon
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Finca La Esperanza
 
 **Type**: Family Farm - Specialty Coffee Producer
-**Location**: [[Origins/Colombia-Huila|Huila Department, Colombia]]
+**Location**: [[Colombia|Huila Department, Colombia]]
 **Established**: 1985
 
 ---

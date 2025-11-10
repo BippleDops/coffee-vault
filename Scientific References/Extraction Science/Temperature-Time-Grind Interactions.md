@@ -347,7 +347,7 @@ Asymptotic approach to maximum (~28-30%).
 
 ### Extraction Science
 - [[Grind Size and Extraction Kinetics]]
-- [[Water Temperature and Solubility]]
+- [[Water Temperature]]
 - [[Brew Time and Extraction Kinetics]]
 - [[Coffee Brewing Control Chart]]
 - [[TDS and Extraction Yield Relationships]]
@@ -385,4 +385,4 @@ Asymptotic approach to maximum (~28-30%).
 ---
 
 **Last Updated**: 2025-10-25
-**See Also**: [[Coffee Brewing Control Chart]], [[Grind Size and Extraction Kinetics]], [[Water Temperature and Solubility]]
+**See Also**: [[Coffee Brewing Control Chart]], [[Grind Size and Extraction Kinetics]], [[Water Temperature]]

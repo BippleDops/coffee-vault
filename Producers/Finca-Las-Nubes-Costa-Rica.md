@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Finca Las Nubes
 country: [[Origins/Costa-Rica]]
-region: [[Origins/Costa-Rica-Tarrazu]]
+region: [[Costa-Rica-Tarrazu]]
 producer-category: Family-Estate-Micro-Mill
 established: 1950-micro-mill-2004
 varieties: Caturra-Catuai-Villa-Sarchi-SL28-Geisha
@@ -444,7 +444,7 @@ Beyond processing diversity, Las Nubes is recognized for environmental leadershi
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Costa-Rica]], [[Origins/Costa-Rica-Tarrazu]], [[Origins/Central-America-Coffee]]
+**Origins**: [[Origins/Costa-Rica]], [[Costa-Rica-Tarrazu]], [[Origins/Central-America-Coffee]]
 
 **Processing**: [[Processing/Honey-Processing]], [[Processing/White-Honey]], [[Processing/Yellow-Honey]], [[Processing/Red-Honey]], [[Processing/Black-Honey]], [[Processing/Natural-Process]], [[Processing/Washed-Process]], [[Processing/Anaerobic-Fermentation]], [[Processing/Experimental-Processing]]
 
@@ -454,7 +454,7 @@ Beyond processing diversity, Las Nubes is recognized for environmental leadershi
 
 **Markets**: [[Markets/Direct-Trade-Coffee]], [[Markets/Specialty-Coffee-Micro-Mills]], [[Markets/Costa-Rica-Micro-Mill-Revolution]]
 
-**Sustainability**: [[Sustainability/Carbon-Neutral-Coffee]], [[Sustainability/Rainforest-Alliance-Certification]], [[Sustainability/Shade-Grown-Coffee]], [[Sustainability/Forest-Conservation-Coffee]]
+**Sustainability**: [[Sustainability/Carbon-Neutral-Coffee]], [[Rainforest-Alliance-Certification]], [[Sustainability/Shade-Grown-Coffee]], [[Sustainability/Forest-Conservation-Coffee]]
 
 **Cultural Context**: [[Coffee-Culture/Costa-Rican-Coffee-Heritage]], [[Coffee-Culture/Family-Coffee-Estates]], [[Coffee-Culture/Micro-Mill-Movement]]
 

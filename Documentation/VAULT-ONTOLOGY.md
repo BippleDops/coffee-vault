@@ -355,7 +355,7 @@ tags: [recipe-profile, brew-method, coffee-type]
 **Optional Frontmatter**:
 ```yaml
 relationships:
-  requires: [[Equipment]], [[Equipment]]
+  requires: [[Equipment-Maintenance-Log]], [[Equipment-Maintenance-Log]]
   works-with: [[Bean Type]]
 difficulty: easy|intermediate|advanced
 target-profile: flavor description
@@ -658,8 +658,8 @@ url: link
 rating: X.X/5
 summary: brief description
 key-points: [array]
-related-gear: [[Equipment]]
-related-beans: [[Bean]]
+related-gear: [[Equipment-Maintenance-Log]]
+related-beans: [[Bean Profile]]
 ```
 
 **Relationships**:
@@ -752,12 +752,12 @@ Origin → Producer → Roaster → Bean → Coffee Log
 **produced-by**: Bean Profile → Producer Profile
 - Definition: Farm/cooperative that produced the coffee
 - Cardinality: Many-to-One
-- Example: [[Kayon-Mountain-Ethiopian-Gesha]] `produced-by` [[Kayon-Mountain-Farm-Ethiopia]]
+- Example: [[Ethiopia]] `produced-by` [[Kayon-Mountain-Farm-Ethiopia]]
 
 **roasted-by**: Bean Profile → Roaster Profile
 - Definition: Company that roasted the coffee
 - Cardinality: Many-to-One
-- Example: [[Panama-Geisha-Natural]] `roasted-by` [[Onyx-Coffee-Lab]]
+- Example: [[Panama]] `roasted-by` [[Onyx-Coffee-Lab]]
 
 **located-in**: Producer Profile → Origin Profile
 - Definition: Geographic location of producer
@@ -800,7 +800,7 @@ Origin → Producer → Roaster → Bean → Coffee Log
 **informs**: Scientific Reference → Brewing Guide
 - Definition: Research that shapes techniques
 - Cardinality: Many-to-Many
-- Example: [[Extraction-Science]] `informs` [[Pour-Over-V60-Guide]]
+- Example: [[Espresso-Extraction-Science]] `informs` [[Pour-Over-V60-Guide]]
 
 **requires-knowledge**: Coffee Goal → Brewing Guide
 - Definition: Educational resources needed for goal
@@ -819,12 +819,12 @@ Origin → Producer → Roaster → Bean → Coffee Log
 **evaluated-in**: Bean Profile → Cupping Session
 - Definition: Bean formally tasted in cupping
 - Cardinality: Many-to-Many
-- Example: [[Ethiopia-Yirgacheffe-Kochere]] `evaluated-in` [[2025-10-28-Ethiopian-Comparison-Cupping]]
+- Example: [[Ethiopia]] `evaluated-in` [[2025-10-28-Ethiopian-Comparison-Cupping]]
 
 **compared-to**: Bean Profile → Bean Profile
 - Definition: Direct comparison between coffees
 - Cardinality: Many-to-Many
-- Example: [[Ethiopia-Yirgacheffe-Washed]] `compared-to` [[Ethiopia-Guji-Natural]]
+- Example: [[Ethiopia]] `compared-to` [[Ethiopia]]
 
 **reviewed-in**: Multiple Entities → Reviews & Articles
 - Definition: External coverage/review
@@ -843,7 +843,7 @@ Origin → Producer → Roaster → Bean → Coffee Log
 **featured**: Coffee Event → Bean Profile
 - Definition: Coffee showcased at event
 - Cardinality: Many-to-Many
-- Example: [[Cup-of-Excellence-Ethiopia-2024]] `featured` [[Ethiopia-Gesha-Village-Washed]]
+- Example: [[Cup-of-Excellence-Ethiopia-2024]] `featured` [[Ethiopia]]
 
 ---
 
@@ -1382,10 +1382,10 @@ Each entity type MUST include specific frontmatter fields for data integrity and
 
 **Examples**:
 - ✅ `[[Ethiopia-Yirgacheffe]]`
-- ✅ `[[Origins/Ethiopia-Yirgacheffe|Yirgacheffe Region]]`
+- ✅ `[[Ethiopia|Yirgacheffe Region]]`
 - ✅ `[[Hario-V60-Plastic-Dripper]]`
-- ❌ `[[ethiopia yirgacheffe]]` (spaces not hyphens)
-- ❌ `[[Ethiopia Yirgacheffe.md]]` (don't include .md)
+- ❌ `[[Ethiopia]]` (spaces not hyphens)
+- ❌ `[[Ethiopia]]` (don't include .md)
 
 ---
 
@@ -1792,16 +1792,16 @@ tags: [coffee-log, 2025-08, ethiopia, aeropress, light-roast]
 ---
 type: bean-profile
 name: Ethiopia Yirgacheffe Gedeb Natural
-origin: [[Origins/Ethiopia-Yirgacheffe]]
+origin: [[Ethiopia]]
 region: Gedeb
 country: Ethiopia
 varietal: Ethiopian Heirloom
 processing: natural
-roaster: [[Roasters/Onyx-Coffee-Lab]]
+roaster: [[Onyx-Coffee-Lab]]
 roast-level: light
 altitude: 1900-2200
 harvest-year: 2024
-producer: [[Producers/Worka-Sakaro-Ethiopia]]
+producer: [[Ethiopia]]
 grade: Grade 1
 cupping-score: 89
 certification: [organic]
@@ -1839,7 +1839,7 @@ temperature: 94
 brew-time: 2:45
 tags: [recipe-profile, v60, ethiopia, light-roast]
 relationships:
-  requires: [[V60 Dripper]], [[Grinder]], [[Gooseneck Kettle]]
+  requires: [[V60 Dripper]], [[Timemore-Sculptor-Grinder]], [[Gooseneck Kettle]]
   optimal-for: [[Ethiopia-Yirgacheffe]], [[Kenya-AA]]
 ---
 ```

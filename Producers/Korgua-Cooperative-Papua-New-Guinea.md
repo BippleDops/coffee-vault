@@ -1,7 +1,7 @@
 ---
 type: producer-profile
 producer-name: Korgua Cooperative
-country: [[Origins/Papua-New-Guinea]]
+country: [[Papua-New-Guinea]]
 region: [[Origins/PNG-Eastern-Highlands]]
 producer-category: Smallholder-Cooperative
 established: 1997
@@ -886,7 +886,7 @@ Korgua was among the first PNG cooperatives to achieve Fair Trade certification.
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Papua-New-Guinea]], [[Origins/PNG-Eastern-Highlands]], [[Origins/Oceania-Coffee-Region]], [[Origins/Island-Coffee-Terroir]]
+**Origins**: [[Papua-New-Guinea]], [[Origins/PNG-Eastern-Highlands]], [[Origins/Oceania-Coffee-Region]], [[Origins/Island-Coffee-Terroir]]
 
 **Processing Methods**: [[Processing/Washed-Process]], [[Processing/Double-Fermentation]], [[Processing/PNG-Traditional-Processing]], [[Processing/Natural-Process]]
 

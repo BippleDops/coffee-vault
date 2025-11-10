@@ -472,22 +472,22 @@ The company's future likely involves continuing to navigate the tensions between
 - [[Tim-Wendelboe-Profile]] - Oslo, Nordic roasting approach
 
 ### Origins and Producers
-- [[Origins/Ethiopia]] - Key origin for Stumptown sourcing
-- [[Origins/Colombia]] - Major source of Direct Trade coffees
-- [[Origins/Kenya]] - Important for bright, complex coffees
-- [[Origins/Guatemala]] - Long-term producer relationships
+- [[Ethiopia]] - Key origin for Stumptown sourcing
+- [[Colombia]] - Major source of Direct Trade coffees
+- [[Kenya]] - Important for bright, complex coffees
+- [[Guatemala]] - Long-term producer relationships
 - [[Origins/Indonesia]] - Sumatra and Sulawesi sourcing
 
 ### Brewing Methods and Equipment
 - [[Brewing Methods/Espresso]] - Hair Bender primary application
 - [[Brewing Methods/Pour-Over]] - Single-origin cafe preparation
 - [[Brewing Methods/Cold-Brew]] - Signature product innovation
-- [[Equipment Models/La-Marzocco]] - Cafe espresso machines
-- [[Equipment Models/Mahlkonig-Grinders]] - Espresso grinding
+- [[Equipment Model]] - Cafe espresso machines
+- [[Equipment Model]] - Espresso grinding
 
 ### Coffee Topics and Concepts
-- [[Direct-Trade-Model]] - Stumptown's sourcing approach
-- [[Third-Wave-Coffee-Movement]] - Historical context
+- [[Direct-Trade-Model-Complete-Guide]] - Stumptown's sourcing approach
+- [[Third-Wave-Coffee-Movement-History]] - Historical context
 - [[Light-Roasting-Philosophy]] - Technical approach
 - [[Coffee-Transparency]] - Sourcing information disclosure
 - [[Specialty-Coffee-Scale]] - Quality assessment framework

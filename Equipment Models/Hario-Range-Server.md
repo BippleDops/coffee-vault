@@ -910,14 +910,14 @@ community-rating: 4.6
 ### Equipment Relationships
 
 **Essential Pairings**:
-- [[Hario-V60]] - Perfect pairing (designed together)
-- [[Kalita-Wave]] - Compatible alternative dripper
+- [[Hario-V60-Plastic-Dripper]] - Perfect pairing (designed together)
+- [[Kalita-Wave-Recipe]] - Compatible alternative dripper
 - [[Hario-Buono-Kettle]] - Gooseneck kettle for pour-over
 - [[Acaia-Pearl-Scale]] - Weigh coffee and water (precision brewing)
 - [[Hario-Paper-Filters]] - V60 filters for brewing
 
 **Alternative Servers**:
-- [[Chemex-Classic]] - Integrated brewer + server (iconic)
+- [[Chemex-Classic-Recipe]] - Integrated brewer + server (iconic)
 - [[Fellow-Clara-Carafe]] - Premium thermal carafe ($85)
 - [[Kalita-Wave-Server]] - Kalita-specific server ($30-40)
 
@@ -941,7 +941,7 @@ community-rating: 4.6
 
 **Serving Concepts**:
 - [[Coffee-Serving-Temperature]] - Optimal serving temps
-- [[Heat-Retention]] - Keeping coffee warm (thermal carafe comparison)
+- [[Brewing-Device-Heat-Retention]] - Keeping coffee warm (thermal carafe comparison)
 - [[Batch-Brewing]] - Multiple servings (server capacity)
 
 ### Related Notes
@@ -957,7 +957,7 @@ community-rating: 4.6
 
 **Brewing Methods**:
 - [[V60-Method]] - Hario V60 brewing guide
-- [[Japanese-Iced-Coffee]] - Brew-over-ice technique (server's thermal shock resistance)
+- [[Japanese-Iced-Coffee-Method]] - Brew-over-ice technique (server's thermal shock resistance)
 - [[Batch-Pour-Over]] - Large-batch brewing (server capacity utilization)
 
 ---

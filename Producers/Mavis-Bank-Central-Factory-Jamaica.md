@@ -2,7 +2,7 @@
 type: producer-profile
 producer-name: Mavis Bank Central Factory
 country: [[Origins/Jamaica]]
-region: [[Origins/Jamaica-Blue-Mountains]]
+region: [[Jamaica-Blue-Mountain]]
 producer-category: Cooperative-Processor
 established: 1923
 varieties: Typica-Blue-Mountain
@@ -267,7 +267,7 @@ Beyond exceptional quality, Mavis Bank supports 5,000 small-holder families acro
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Jamaica]], [[Origins/Jamaica-Blue-Mountains]], [[Origins/Caribbean-Coffee]]
+**Origins**: [[Origins/Jamaica]], [[Jamaica-Blue-Mountain]], [[Origins/Caribbean-Coffee]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/Traditional-Processing]]
 

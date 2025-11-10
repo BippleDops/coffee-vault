@@ -11,7 +11,7 @@ tags: [kanban, brewing, mastery, learning]
 
 - [ ] **V60 Pour-Over Fundamentals** #method:v60 #beginner
   - Goal: 10 successful brews with consistent technique
-  - Resources: [[Brewing Guides/Pour Over V60 Guide]]
+  - Resources: [[Brewing Guide]]
   - Target date: End of month
   - Success criteria: 3 consecutive 4.5+ rated brews
 
@@ -23,7 +23,7 @@ tags: [kanban, brewing, mastery, learning]
 
 - [ ] **Formal Cupping Practice** #skill:cupping #intermediate
   - Goal: Learn SCA cupping protocol
-  - Resources: [[Templates/Cupping Session]]
+  - Resources: [[Cupping Session]]
   - Practice: Weekly cupping sessions
   - Target: Confident cupping by Dec 2025
 
@@ -35,13 +35,13 @@ tags: [kanban, brewing, mastery, learning]
   - Best brew: 4.6⭐ with Colombian
   - Challenge: Consistency in plunge speed
   - Next: Try with Ethiopian natural
-  - Goal: [[Coffee Goals/Master-Aeropress-Inverted]]
+  - Goal: [[Coffee Goal]]
 
 - [ ] **Chemex Large Batch** #method:chemex #intermediate
   - Learning: 6-cup Chemex technique
   - Progress: Getting better bloom control
   - Challenge: Even extraction with larger dose
-  - Resources: [[Brewing Guides/Chemex-Guide]]
+  - Resources: [[Brewing Guide]]
 
 
 ## ✅ Mastered
@@ -50,7 +50,7 @@ tags: [kanban, brewing, mastery, learning]
   - Achieved: 10 consecutive 4.5+ brews
   - Mastery date: 2025-10-15
   - Success rate: 85%
-  - Recipe: [[Recipes/V60-Light-Ethiopian-Recipe]]
+  - Recipe: [[V60-Light-Ethiopian-Recipe]]
   - Notes: Consistent flat bed, reliable results
 
 - [ ] **French Press Basics** #method:french-press #mastered
@@ -67,7 +67,7 @@ tags: [kanban, brewing, mastery, learning]
   - Timeline: 12 months
   - Cost: $350 (course) + $200 (exam)
   - Prerequisites: 100+ logged brews, formal training
-  - Link: [[Coffee Goals/SCA-Certification]]
+  - Link: [[Coffee Goal]]
 
 - [ ] **Master 5 Methods** #achievement #medium-term
   - Target: V60, Chemex, Aeropress, Espresso, Clever
@@ -128,8 +128,8 @@ tags: [kanban, brewing, mastery, learning]
 
 ### Integration with Vault
 
-**Link to Goals**: `[[Coffee Goals/Goal-Name]]`  
-**Link to Guides**: `[[Brewing Guides/Method-Guide]]`  
+**Link to Goals**: `[[Coffee Goal]]`  
+**Link to Guides**: `[[Brewing Guide]]`  
 **Link to Logs**: Reference specific successful brews  
 **Track Progress**: Update cards with achievements
 

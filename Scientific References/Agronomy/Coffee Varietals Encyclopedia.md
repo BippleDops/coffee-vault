@@ -145,5 +145,5 @@ Varietals perform differently based on altitude, climate, and soil conditions. T
 ## Tags
 
 - [[Agronomy]]
-- [[Coffee Science]]
+- [[Coffee Science & Extraction]]
 - [[Origin Characteristics]]

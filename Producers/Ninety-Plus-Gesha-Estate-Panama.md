@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Ninety Plus Gesha Estate
-country: [[Origins/Panama]]
-region: [[Origins/Panama-Boquete]]
+country: [[Panama]]
+region: [[Panama]]
 producer-category: Estate
 established: 2006
 varieties: Geisha
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Ninety Plus Gesha Estate
 
 **Type**: Private Estate - Ultra-Premium Geisha Specialist
-**Location**: [[Origins/Panama-Boquete|Boquete, Panama]]
+**Location**: [[Panama|Boquete, Panama]]
 **Established**: 2006
 
 ---
@@ -279,11 +279,11 @@ At $40-100+/12oz retail, this is special-occasion coffee. Worth experiencing to 
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/Panama-Geisha]] (if you have beans from this producer)
+- [[Panama]] (if you have beans from this producer)
 
 **Related Origins**:
-- [[Origins/Panama]]
-- [[Origins/Panama-Boquete]]
+- [[Panama]]
+- [[Panama]]
 
 **Related Varieties**:
 - [[Scientific References/Geisha-Variety]]

@@ -220,8 +220,8 @@ Post-harvest QC:
 
 ## Tags
 
-- [[Processing]]
-- [[Quality Control]]
-- [[Post-Harvest]]
-- [[Standards]]
+- [[processing-playbook-template]]
+- [[Post-Harvest Quality Control]]
+- [[Post-Harvest Quality Control]]
+- [[Template-Framework-Standards]]
 

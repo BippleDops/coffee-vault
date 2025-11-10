@@ -392,6 +392,6 @@ Understanding equipment helps:
 
 - [[Roasting Science]]
 - [[Commercial Equipment]]
-- [[Business]]
-- [[Roasting Equipment]]
+- [[Coffee-Shop-Business-Planning-Guide]]
+- [[Roasting Equipment Types and Comparison]]
 

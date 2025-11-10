@@ -346,7 +346,7 @@ Following protocols ensures:
 
 - [[Sensory Science]]
 - [[Professional Standards]]
-- [[Cupping Protocol]]
-- [[Quality Control]]
+- [[SCA Cupping Protocol Step-by-Step]]
+- [[Post-Harvest Quality Control]]
 - [[SCA Standards]]
 

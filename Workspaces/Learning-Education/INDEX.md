@@ -11,26 +11,26 @@ status: active
 Resources curated for deliberate practice, sensory development, and theory study inside the **Learning & Education Layout**.
 
 ## Core Dashboards & Views
-- [[Analytics/Learning-Education-Layout/11-Learning-Development-Dashboard|Learning Development Dashboard]]
-- [[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|Palate Development Tracker]]
-- [[Views/Learning-Education-Layout/Enhanced-Bean-Library-Base|Enhanced Bean Library Base]]
-- [[Views/Learning-Education-Layout/Goals-Dashboard-View|Goals Dashboard]]
-- [[Views/Learning-Education-Layout/Interactive-Visualizations-Dashboard|Interactive Visualizations Dashboard]]
+- [[11-Learning-Development-Dashboard|Learning Development Dashboard]]
+- [[4-Palate-Development-Tracker|Palate Development Tracker]]
+- [[Enhanced-Bean-Library-Base|Enhanced Bean Library Base]]
+- [[Goals-Dashboard-View|Goals Dashboard]]
+- [[Interactive-Visualizations-Dashboard|Interactive Visualizations Dashboard]]
 
 ## Supporting References
-- [[Scientific References/00-Scientific Content Index|Scientific Content Index]]
-- [[Documentation/TAGGING-SYSTEM-5.0.md|Tagging System Guide]]
-- [[Documentation/FAQ|FAQ]]
+- [[00-Scientific Content Index|Scientific Content Index]]
+- [[TAGGING-SYSTEM-5.0|Tagging System Guide]]
+- [[FAQ|FAQ]]
 
 ## Goal Tracking
 - Templates: `Templates/Coffee Goal.md`, `Templates/Monthly-Review.md`
-- Kanban: [[Plugin Configurations/Kanban/Coffee-Goals-Board|Coffee Goals Board]]
+- Kanban: [[Coffee-Goals-Board|Coffee Goals Board]]
 - Automations: `Scripts/goal-manager.js`, `Scripts/learning-path-generator.js`
 
 ## Suggested Sequence
-1. Review current learning goals via [[Views/Learning-Education-Layout/Goals-Dashboard-View]].
+1. Review current learning goals via [[Goals-Dashboard-View]].
 2. Study targeted theory in [[Scientific References/]].
-3. Log tasting exercises and update [[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker]].
+3. Log tasting exercises and update [[4-Palate-Development-Tracker]].
 4. Capture reflections using `Templates/Monthly-Review.md`.
 
 ## Tips

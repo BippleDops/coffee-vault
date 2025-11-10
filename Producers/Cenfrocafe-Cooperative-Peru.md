@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: CENFROCAFE Cooperative
-country: [[Origins/Peru]]
-region: [[Origins/Peru-Cajamarca]]
+country: [[Peru]]
+region: [[Peru]]
 producer-category: Cooperative
 established: 1999
 varieties: Typica-Caturra-Bourbon-Catimor-Pache
@@ -19,7 +19,7 @@ date: 2025-10-31
 # 🌱 CENFROCAFE Cooperative
 
 **Type**: Multi-Community Smallholder Cooperative
-**Location**: [[Origins/Peru-Cajamarca|Cajamarca Region, Northern Peru]]
+**Location**: [[Peru|Cajamarca Region, Northern Peru]]
 **Established**: 1999
 
 ---

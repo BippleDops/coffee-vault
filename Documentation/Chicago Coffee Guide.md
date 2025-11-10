@@ -653,7 +653,7 @@ Chicago has evolved from a commodity coffee trading hub to one of America's prem
 **Top Picks**:
 1. **Dark Matter cold brew concentrate** - Industry-leading
 2. **Intelligentsia cold brew** - Clean, bright
-3. **Make your own** - Most economical, use [[Brewing Guides/Cold Brew Guide]]
+3. **Make your own** - Most economical, use [[Brewing Guide]]
 
 ### Best for Gifts
 

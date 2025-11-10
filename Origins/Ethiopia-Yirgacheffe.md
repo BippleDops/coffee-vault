@@ -1697,7 +1697,7 @@ While less common in Yirgacheffe, some improved varieties present:
 - [[Ethiopia-Guji]] - Related region
 - [[Kenya]] - Similar East African profile
 - [[Kenya-Nyeri]] - Comparable specialty region
-- [[Rwanda-Lake-Kivu]] - Similar processing traditions
+- [[Rwanda]] - Similar processing traditions
 
 ### Processing Methods
 - [[Washed-Process]] - Primary Yirgacheffe method
@@ -1706,7 +1706,7 @@ While less common in Yirgacheffe, some improved varieties present:
 - [[Fermentation-in-Coffee-Processing]] - Critical for quality
 
 ### Varieties
-- [[Heirloom-Ethiopian-Varieties]] - Genetic diversity
+- [[Ethiopia]] - Genetic diversity
 - [[Coffee-Arabica-Species]] - Species origin
 - [[Kurume-Variety]] - Local type
 - [[Wolisho-Variety]] - Local type
@@ -1730,16 +1730,16 @@ While less common in Yirgacheffe, some improved varieties present:
 - [[Competition-Coffee-Brewing]] - Championship techniques
 
 ### Market & Trade
-- [[Ethiopian-Commodity-Exchange]] - Trade system
+- [[Ethiopia]] - Trade system
 - [[Direct-Trade-Coffee]] - Alternative market access
 - [[Specialty-Coffee-Pricing]] - Premium positioning
-- [[Fair-Trade-Certification]] - Social standards
+- [[Fair-Trade-Certification-Complete-Guide]] - Social standards
 
 ### Sustainability
 - [[Climate-Change-and-Coffee]] - Future challenges
 - [[Coffee-Agroforestry]] - Sustainable farming
 - [[Water-Management-in-Processing]] - Environmental concerns
-- [[Genetic-Diversity-Conservation]] - Preserving heirlooms
+- [[Coffee-Genetic-Diversity-Conservation]] - Preserving heirlooms
 
 ---
 

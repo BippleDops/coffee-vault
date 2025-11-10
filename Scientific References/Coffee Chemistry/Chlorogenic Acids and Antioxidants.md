@@ -335,7 +335,7 @@ Understanding CGA helps appreciate:
 - [[Coffee Chemistry]]
 - [[Health Benefits]]
 - [[Roasting Science]]
-- [[Antioxidants]]
+- [[Phenolic Compounds and Antioxidants]]
 
 ---
 

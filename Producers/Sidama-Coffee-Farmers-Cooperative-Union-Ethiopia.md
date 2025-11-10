@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Sidama Coffee Farmers Cooperative Union (SCFCU)
-country: [[Origins/Ethiopia]]
-region: [[Origins/Ethiopia-Sidama]]
+country: [[Ethiopia]]
+region: [[Ethiopia]]
 producer-category: Cooperative-Union
 established: 2001
 varieties: Ethiopian-Heirloom-Landraces-74110-74112
@@ -518,25 +518,25 @@ Beyond coffee quality and market access, SCFCU's social impact is profound: Fair
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Ethiopia]], [[Origins/Ethiopia-Sidama]], [[Origins/Ethiopian-Coffee-Heritage]], [[Origins/Coffee-Birthplace]]
+**Origins**: [[Ethiopia]], [[Ethiopia]], [[Ethiopia]], [[Origins/Coffee-Birthplace]]
 
-**Varieties**: [[Varieties/Ethiopian-Heirloom]], [[Varieties/Ethiopian-Landraces]], [[Varieties/74110]], [[Varieties/74112]]
+**Varieties**: [[Ethiopia]], [[Ethiopia]], [[Varieties/74110]], [[Varieties/74112]]
 
-**Processing**: [[Processing/Washed-Process]], [[Processing/Natural-Process]], [[Processing/Ethiopian-Traditional-Processing]]
+**Processing**: [[Processing/Washed-Process]], [[Processing/Natural-Process]], [[Ethiopia]]
 
-**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Quality/Ethiopian-Coffee-Excellence]], [[Quality/Fair-Trade-Coffee]], [[Quality/Organic-Coffee]]
+**Quality**: [[Quality/Specialty-Grade-Coffee]], [[Ethiopia]], [[Quality/Fair-Trade-Coffee]], [[Quality/Organic-Coffee]]
 
 **Social Impact**: [[Social-Impact/Large-Scale-Cooperative-Unions]], [[Social-Impact/Fair-Trade-Community-Development]], [[Social-Impact/Organic-Smallholder-Certification]], [[Social-Impact/Poverty-Reduction-Coffee]]
 
 **Certifications**: [[Certifications/Fair-Trade-Certification]], [[Certifications/Organic-Certification]], [[Certifications/UTZ-Certification]]
 
-**Markets**: [[Markets/Fair-Trade-Markets]], [[Markets/Ethiopian-Coffee-Export]], [[Markets/Cooperative-Coffee-Models]]
+**Markets**: [[Markets/Fair-Trade-Markets]], [[Ethiopia]], [[Markets/Cooperative-Coffee-Models]]
 
-**Cultural Context**: [[Coffee-Culture/Ethiopian-Coffee-Heritage]], [[Coffee-Culture/Sidama-People]], [[Coffee-Culture/Coffee-Birthplace]], [[Coffee-Culture/Ethiopian-Coffee-Ceremony]]
+**Cultural Context**: [[Ethiopia]], [[Coffee-Culture/Sidama-People]], [[Coffee-Culture/Coffee-Birthplace]], [[Ethiopia]]
 
 **Sustainability**: [[Sustainability/Organic-Farming-Coffee]], [[Sustainability/Indigenous-Coffee-Forests]], [[Sustainability/Agroforestry-Systems]]
 
-**Historical Context**: [[History/Ethiopian-Coffee-Liberalization]], [[History/Cooperative-Movement-Ethiopia]]
+**Historical Context**: [[Ethiopia]], [[Ethiopia]]
 
 ---
 

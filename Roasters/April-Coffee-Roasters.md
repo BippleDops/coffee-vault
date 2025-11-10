@@ -31,7 +31,7 @@ tags: [copenhagen, denmark, nordic-roasting, data-driven, cropster-pioneer, tran
 
 ## Overview
 
-April Coffee Roasters represents Nordic coffee culture's contemporary evolution toward data-driven precision, exceptional transparency, and roast profiling innovation. Founded in Copenhagen in 2015, April has distinguished itself through industry-leading transparency reports publishing detailed sourcing and roasting data, sophisticated Cropster roast profile management, and commitment to ultra-light roasting that preserves origin characteristics while developing nuanced flavor profiles. The company embodies Scandinavian specialty coffee's ongoing refinement of techniques pioneered by [[Tim-Wendelboe]] and [[The-Coffee-Collective]] while adding contemporary emphasis on data, transparency, and systematic quality management.
+April Coffee Roasters represents Nordic coffee culture's contemporary evolution toward data-driven precision, exceptional transparency, and roast profiling innovation. Founded in Copenhagen in 2015, April has distinguished itself through industry-leading transparency reports publishing detailed sourcing and roasting data, sophisticated Cropster roast profile management, and commitment to ultra-light roasting that preserves origin characteristics while developing nuanced flavor profiles. The company embodies Scandinavian specialty coffee's ongoing refinement of techniques pioneered by [[Tim-Wendelboe]] and [[The-Coffee-Collective-Profile]] while adding contemporary emphasis on data, transparency, and systematic quality management.
 
 The company name "April" suggests renewal, spring growth, and fresh beginnings—associations aligning with coffee's agricultural cycles and the company's innovative approach to specialty coffee. The naming reflects both Nordic aesthetic simplicity and philosophical commitment to seasonal, agriculture-focused coffee sourcing and offerings.
 
@@ -55,7 +55,7 @@ Market positioning emphasizes quality leadership, innovation in roasting and tra
 
 ### Founding and Market Entry (2015-2017)
 
-April Coffee Roasters launched in 2015 into competitive Copenhagen specialty coffee market where established quality leaders like [[The-Coffee-Collective]] and international brands created sophisticated consumer base with high quality expectations. Market entry required clear differentiation beyond simply offering good coffee.
+April Coffee Roasters launched in 2015 into competitive Copenhagen specialty coffee market where established quality leaders like [[The-Coffee-Collective-Profile]] and international brands created sophisticated consumer base with high quality expectations. Market entry required clear differentiation beyond simply offering good coffee.
 
 Founder Patrik Rolf's vision centered on combining Nordic ultra-light roasting traditions with contemporary data-driven approaches and unprecedented transparency. This vision reflected both respect for Scandinavian coffee culture foundations and recognition that specialty coffee was evolving toward more systematic, documented quality management.
 
@@ -161,7 +161,7 @@ Experimental processing emphasis has become April signature with offerings inclu
 
 Transparency about sourcing includes publishing producer names, detailed processing descriptions, prices paid, import logistics, and complete supply chain information. This disclosure recognizes producer contributions while providing unprecedented customer visibility. Transparency holds April accountable while educating consumers.
 
-Origin diversity spans traditional specialty regions and emerging areas. April sources from [[Ethiopia]], [[Kenya]], [[Colombia]], [[Panama]], [[Costa-Rica]], and other origins, selecting exceptional lots regardless of origin prestige. Geographic diversity provides flavor variation while demonstrating quality potential across contexts.
+Origin diversity spans traditional specialty regions and emerging areas. April sources from [[Ethiopia]], [[Kenya]], [[Colombia]], [[Panama]], [[Helsar-de-Zarcero-Micromill-Costa-Rica]], and other origins, selecting exceptional lots regardless of origin prestige. Geographic diversity provides flavor variation while demonstrating quality potential across contexts.
 
 ## Products and Customer Engagement
 

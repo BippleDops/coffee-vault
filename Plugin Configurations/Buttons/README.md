@@ -50,7 +50,7 @@ action: [[HOME-DASHBOARD]]
 ```button
 name: 📊 Analytics
 type: link
-action: [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]]
+action: [[1-Monthly-Analytics-Dashboard]]
 ```
 
 ### Utility Buttons

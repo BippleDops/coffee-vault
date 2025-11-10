@@ -734,7 +734,7 @@ Overall: Exceptional balance, honey processing perfection
 ## 🔗 Related Content
 
 **Related Beans**:
-- [[Beans Library/El-Salvador-Pacamara-Honey]]
+- [[El-Salvador-Pacamara]]
 - [[Beans Library/Vista-Hermosa-Red-Honey]]
 - [[Beans Library/Bourbon-Black-Honey]]
 
@@ -753,12 +753,12 @@ Overall: Exceptional balance, honey processing perfection
 - [[Scientific References/Black-Honey-Process]]
 
 **Related Producers**:
-- [[Producers/Finca-Los-Pirineos-El-Salvador]] (El Salvador comparison)
-- [[Producers/Finca-Ideal-El-Salvador]] (El Salvador neighbor)
+- [[Finca-Los-Pirineos-El-Salvador]] (El Salvador comparison)
+- [[Finca-Ideal-El-Salvador]] (El Salvador neighbor)
 
 **Brewing Guides**:
-- [[Brewing Guides/Honey-Process-Coffee]]
-- [[Brewing Guides/Salvadoran-Coffee-Brewing]]
+- [[Brewing Guide]]
+- [[Brewing Guide]]
 
 ---
 

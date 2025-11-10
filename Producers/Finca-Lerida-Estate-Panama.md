@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Finca Lerida Estate
-country: [[Origins/Panama]]
-region: [[Origins/Panama-Boquete]]
+country: [[Panama]]
+region: [[Panama]]
 producer-category: Private-Estate
 established: 1922
 varieties: Geisha-Typica-Caturra-Catuai
@@ -772,9 +772,9 @@ Challenges are real—climate change, rust, labor, market saturation—but centu
 **Tags**: #Producer #Panama #Estate #Geisha #Private-Estate #Ultra-Premium #Processing-Innovation #Anaerobic-Fermentation #Natural-Process #Honey-Process #Cloud-Forest #Rainforest-Alliance #Bird-Friendly #Ecotourism #Conservation #High-Altitude #Volcan-Baru #Boquete #Best-of-Panama #Typica #Norwegian-Heritage #Indigenous-Labor #Ngabe-Bugle
 
 **Related Notes**:
-- [[Origins/Panama]]
-- [[Origins/Panama-Boquete]]
-- [[Origins/Panama-Volcan-Baru]]
+- [[Panama]]
+- [[Panama]]
+- [[Panama]]
 - [[Varieties/Geisha]]
 - [[Varieties/Typica]]
 - [[Varieties/Caturra]]
@@ -788,7 +788,7 @@ Challenges are real—climate change, rust, labor, market saturation—but centu
 - [[Certifications/Rainforest-Alliance]]
 - [[Certifications/Bird-Friendly]]
 - [[Quality/Ultra-Premium-Coffee]]
-- [[Quality/Best-of-Panama]]
+- [[Panama]]
 - [[Markets/Auction-Coffee]]
 - [[Markets/Direct-Trade]]
 - [[Conservation/Cloud-Forest]]

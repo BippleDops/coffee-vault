@@ -80,10 +80,10 @@ tags: [coffee-goal, master-technique, v60, learning]
 - Bed management (flat, even finish)
 
 **Learning Resources**:
-- [[Brewing Guides/Pour Over V60 Technique]]
+- [[Brewing Guide]]
 - [[Scientific References/Extraction Science/Flow Rate Dynamics]]
 - James Hoffmann V60 Ultimate Technique (YouTube)
-- [[Recipes/V60-Light-Ethiopian-Recipe]]
+- [[V60-Light-Ethiopian-Recipe]]
 - Scott Rao V60 articles
 - Barista Hustle flow rate research
 
@@ -113,9 +113,9 @@ LIMIT 10
 ```
 
 **Related Beans**:
-- [[Ethiopian Yirgacheffe]] (primary practice bean)
-- [[Kenya AA]] (advanced practice)
-- [[Colombian Supremo]] (versatility practice)
+- [[Ethiopia]] (primary practice bean)
+- [[Kenya]] (advanced practice)
+- [[Colombia]] (versatility practice)
 
 **Related Equipment**:
 - [[Hario V60 02]]
@@ -123,9 +123,9 @@ LIMIT 10
 - [[Fellow Stagg EKG Kettle]]
 
 **Related Resources**:
-- [[Brewing Guides/Pour Over V60 Technique]]
-- [[Recipes/V60-Light-Ethiopian-Recipe]]
-- [[Scientific References/Extraction Science/Coffee Brewing Control Chart]]
+- [[Brewing Guide]]
+- [[V60-Light-Ethiopian-Recipe]]
+- [[Coffee Brewing Control Chart]]
 
 ---
 
@@ -136,7 +136,7 @@ LIMIT 10
 - Scott Rao V60 articles
 - Barista Hustle Pour Over Course
 - [[Scientific References/Extraction Science/Flow Rate Dynamics]]
-- [[Brewing Guides/Advanced V60 Techniques]]
+- [[Brewing Guide]]
 
 **Study Materials**:
 - V60 brew logs (analyzing patterns)

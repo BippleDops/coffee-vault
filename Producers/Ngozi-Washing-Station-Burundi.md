@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Ngozi Washing Station
-country: [[Origins/Burundi]]
-region: [[Origins/Burundi-Ngozi-Province]]
+country: [[Burundi]]
+region: [[Burundi]]
 producer-category: Washing-Station-Cooperative
 established: 2008
 varieties: Bourbon-Jackson-Mibirizi
@@ -752,12 +752,12 @@ Ngozi Washing Station exemplifies what's possible—transforming 3,200 tiny-scal
 **Tags**: #Producer #Burundi #Washing-Station #Smallholder #Bourbon #Post-Conflict #Washed-Process #Double-Fermentation #High-Altitude #Extreme-Poverty #Land-Scarcity #East-Africa #Specialty-Coffee #Cup-of-Excellence #Red-Fruit #Syrupy-Body #Volcanic-Soils #Climate-Adaptation #Privatization
 
 **Related Notes**:
-- [[Origins/Burundi]]
-- [[Origins/Burundi-Ngozi-Province]]
+- [[Burundi]]
+- [[Burundi]]
 - [[Varieties/Bourbon]]
 - [[Processing/Washed-Process]]
 - [[Processing/Double-Fermentation]]
-- [[Processing/Burundian-Traditional-Processing]]
+- [[Burundi]]
 - [[Quality/East-African-Profiles]]
 - [[Quality/Cup-of-Excellence]]
 - [[Challenges/Extreme-Poverty]]

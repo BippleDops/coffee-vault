@@ -351,12 +351,12 @@ However, Counter Culture also acknowledges that individual company actions, even
 - [[Verve-Coffee-Roasters]] - California, similar values and sourcing
 
 ### Origins and Producers
-- [[Origins/Guatemala]] - Long-term partnerships and core sourcing
-- [[Origins/Ethiopia]] - Complex sourcing and cooperative relationships
-- [[Origins/Kenya]] - Exceptional quality and bright profiles
-- [[Origins/Colombia]] - Diverse sourcing and processing innovation
-- [[Origins/Peru]] - Cooperative focus and sustainability
-- [[Origins/Rwanda]] - Emerging origin and quality development
+- [[Guatemala]] - Long-term partnerships and core sourcing
+- [[Ethiopia]] - Complex sourcing and cooperative relationships
+- [[Kenya]] - Exceptional quality and bright profiles
+- [[Colombia]] - Diverse sourcing and processing innovation
+- [[Peru]] - Cooperative focus and sustainability
+- [[Rwanda]] - Emerging origin and quality development
 
 ### Brewing and Quality
 - [[Brewing Methods/Espresso]] - Hologram primary application
@@ -366,7 +366,7 @@ However, Counter Culture also acknowledges that individual company actions, even
 - [[Specialty-Coffee-Scoring]] - Quality evaluation framework
 
 ### Industry Topics
-- [[Direct-Trade-Model]] - Sourcing framework and ethics
+- [[Direct-Trade-Model-Complete-Guide]] - Sourcing framework and ethics
 - [[Employee-Ownership-Trust]] - Governance and values alignment
 - [[Climate-Positive-Coffee]] - Sustainability goals and carbon accounting
 - [[Coffee-Education-Programs]] - Professional development and training

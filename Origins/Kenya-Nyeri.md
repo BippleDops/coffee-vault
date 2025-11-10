@@ -1360,25 +1360,25 @@ Kenya's processing method is the most intensive washed process in the world, con
 
 ### Origins
 - [[Kenya]] - National overview
-- [[Kenya-Kiambu]] - Neighboring region
+- [[Kenya]] - Neighboring region
 - [[Ethiopia-Yirgacheffe]] - Similar bright, fruit-forward
-- [[Rwanda-Lake-Kivu]] - Similar processing
+- [[Rwanda]] - Similar processing
 
 ### Varieties
 - [[SL28-Variety]] - Icon variety
 - [[SL34-Variety]] - Quality variety
 - [[Batian-Variety]] - Future variety
-- [[Coffee-Variety-Development-Kenya]]
+- [[Kenya]]
 
 ### Processing
-- [[Washed-Process-Kenya-Double-Fermentation]] - Unique method
+- [[Kenya]] - Unique method
 - [[Raised-Bed-Drying]] - Kenyan standard
 - [[Fermentation-Chemistry]] - Science behind
 
 ### Market
 - [[Nairobi-Coffee-Auction]] - Marketing system
-- [[Kenya-Coffee-Grades]] - AA, AB, PB
-- [[Direct-Trade-Kenya]] - Alternative channel
+- [[Kenya]] - AA, AB, PB
+- [[Kenya]] - Alternative channel
 
 ### Flavor
 - [[Blackcurrant-in-Coffee]] - Signature note

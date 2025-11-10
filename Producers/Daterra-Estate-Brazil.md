@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Daterra Coffee Estates
-country: [[Origins/Brazil]]
-region: [[Origins/Brazil-Cerrado-Mineiro]]
+country: [[Brazil]]
+region: [[Brazil]]
 producer-category: Estate-Corporate
 established: 1980
 varieties: Yellow-Bourbon-Mundo-Novo-Catuai-Experimental
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Daterra Coffee Estates
 
 **Type**: Large Corporate Estate - Innovation Leader
-**Location**: [[Origins/Brazil-Cerrado-Mineiro|Cerrado Mineiro, Brazil]]
+**Location**: [[Brazil|Cerrado Mineiro, Brazil]]
 **Established**: 1980
 
 ---

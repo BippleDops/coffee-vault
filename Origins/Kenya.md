@@ -640,5 +640,5 @@ return <div className="stat-card">
 
 **Last Updated**: 2025-10-24  
 **Related Origins**: [[Ethiopia]] (neighbor, similar brightness), [[Rwanda]] (similar processing), [[Burundi]]  
-**Recommended Brew**: [[Brewing Guides/Pour Over V60 Guide|V60]] or [[Brewing Guides/Chemex Guide|Chemex]]
+**Recommended Brew**: [[Brewing Guide|V60]] or [[Brewing Guide|Chemex]]
 

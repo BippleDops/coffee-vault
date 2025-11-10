@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Karatu District Cooperative
-country: [[Origins/Tanzania]]
-region: [[Origins/Tanzania-Northern-Highlands]]
+country: [[Tanzania]]
+region: [[Tanzania]]
 producer-category: District-Cooperative
 established: 2005
 varieties: Bourbon-Kent-N39-Typica
@@ -446,9 +446,9 @@ Beyond conservation, Karatu Cooperative has transformed smallholder livelihoods 
 
 ## Related Vault Notes
 
-**Origins**: [[Origins/Tanzania]], [[Origins/Tanzania-Northern-Highlands]], [[Origins/East-African-Coffee]]
+**Origins**: [[Tanzania]], [[Tanzania]], [[Origins/East-African-Coffee]]
 
-**Varieties**: [[Varieties/Bourbon]], [[Varieties/Kent]], [[Varieties/Tanzanian-Selections]]
+**Varieties**: [[Varieties/Bourbon]], [[Varieties/Kent]], [[Tanzania]]
 
 **Processing**: [[Processing/Washed-Process]], [[Processing/Centralized-Wet-Mills]]
 
@@ -462,7 +462,7 @@ Beyond conservation, Karatu Cooperative has transformed smallholder livelihoods 
 
 **Markets**: [[Markets/Fair-Trade-Markets]], [[Markets/Specialty-Coffee-Europe]]
 
-**Cultural Context**: [[Coffee-Culture/Tanzanian-Coffee-Heritage]], [[Coffee-Culture/Iraqw-People]], [[Coffee-Culture/Wildlife-Tourism-Coffee]]
+**Cultural Context**: [[Tanzania]], [[Coffee-Culture/Iraqw-People]], [[Coffee-Culture/Wildlife-Tourism-Coffee]]
 
 ---
 

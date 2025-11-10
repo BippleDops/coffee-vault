@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: Gatomboya Factory (Farmers Cooperative Society)
-country: [[Origins/Kenya]]
-region: [[Origins/Kenya-Nyeri]]
+country: [[Kenya]]
+region: [[Kenya]]
 producer-category: Washing-Station
 established: 1964
 varieties: SL28-SL34-Ruiru-11-Batian
@@ -19,7 +19,7 @@ date: 2025-10-28
 # 🌱 Gatomboya Factory (Farmers Cooperative Society)
 
 **Type**: Washing Station (Factory) / Farmers Cooperative
-**Location**: [[Origins/Kenya-Nyeri|Nyeri County, Kenya]]
+**Location**: [[Kenya|Nyeri County, Kenya]]
 **Established**: 1964
 
 ---

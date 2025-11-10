@@ -1070,7 +1070,7 @@ dv.paragraph(`</div>`);
 
 ### Complete Collection
 
-**[[Views/Learning-Education-Layout/Interactive-Visualizations-Dashboard|📋 View all 23 interactive tools]]** organized by category with screenshots and usage guides
+**[[Interactive-Visualizations-Dashboard|📋 View all 23 interactive tools]]** organized by category with screenshots and usage guides
 
 </div>
 
@@ -1520,7 +1520,7 @@ npm run validate
 - `anomaly-detector.js` - Outlier identification
 - `quality-predictor.js` - ML-based quality forecasting
 
-**Learn More**: [[Scripts/AUTOMATION_MODULES_README|🤖 Complete automation documentation]]
+**Learn More**: [[README|🤖 Complete automation documentation]]
 
 </div>
 
@@ -1548,25 +1548,25 @@ npm run validate
 ### Configuration & Standards
 
 - **[[VAULT-SYNTAX-AND-STANDARDS|📖 Syntax & Standards]]** - Complete reference for formatting, naming, and best practices
-- **[[Configuration/Property-Schema|📋 Property Schema]]** - Comprehensive field definitions and data types
-- **[[Configuration/User-Configuration-Guide|⚙️ Configuration Guide]]** - Personalization and customization options
-- **[[Configuration/Template-Framework-Standards|📐 Template Standards]]** - Development guide for custom templates
+- **[[Property-Schema|📋 Property Schema]]** - Comprehensive field definitions and data types
+- **[[User-Configuration-Guide|⚙️ Configuration Guide]]** - Personalization and customization options
+- **[[Template-Framework-Standards|📐 Template Standards]]** - Development guide for custom templates
 
 ### Technical Documentation
 
-- **[[Documentation/VAULT-ARCHITECTURE-REFERENCE|🏗️ Architecture Reference]]** - Technical deep-dive into system design and data flow
-- **[[Documentation/Analytics-Overview|📊 Analytics Guide]]** - ML features, algorithms, and statistical methods
+- **[[VAULT-ARCHITECTURE-REFERENCE|🏗️ Architecture Reference]]** - Technical deep-dive into system design and data flow
+- **[[Analytics-Overview|📊 Analytics Guide]]** - ML features, algorithms, and statistical methods
 - **[[PLUGIN-INSTALLATION-GUIDE|🔌 Plugin Installation]]** - Required plugins and setup instructions
-- **[[Configuration/Manual-Operations-Guide|🛠️ Manual Operations]]** - Troubleshooting and maintenance procedures
+- **[[Manual-Operations-Guide|🛠️ Manual Operations]]** - Troubleshooting and maintenance procedures
 
 ### Workspace Bundles
 
 Organized collections optimized for specific workflows:
 
-- **[[Workspaces/Daily-Brewing/INDEX|☕ Daily Brewing Bundle]]** - Logging, quick stats, and brewing assistant
-- **[[Workspaces/Analytics-Analysis/INDEX|📊 Analytics & Analysis Bundle]]** - ML dashboards and optimization tools
-- **[[Workspaces/Learning-Education/INDEX|🎓 Learning & Education Bundle]]** - Palate development and knowledge resources
-- **[[Workspaces/Supply-Chain/INDEX|🌱 Supply Chain Bundle]]** - Transparency tracking and producer relationships
+- **[[INDEX|☕ Daily Brewing Bundle]]** - Logging, quick stats, and brewing assistant
+- **[[INDEX|📊 Analytics & Analysis Bundle]]** - ML dashboards and optimization tools
+- **[[INDEX|🎓 Learning & Education Bundle]]** - Palate development and knowledge resources
+- **[[INDEX|🌱 Supply Chain Bundle]]** - Transparency tracking and producer relationships
 
 </div>
 
@@ -1591,26 +1591,26 @@ let recommendations = [];
 if (logCount === 0) {
   recommendations = [
     { icon: "🚀", text: "Start by reading the [[START-HERE|5-minute quick start guide]]", priority: "high" },
-    { icon: "☕", text: "Log your first brew using [[Templates/Coffee-Log-v3|Coffee Log Template]]", priority: "high" },
-    { icon: "🫘", text: "Add your current beans to the [[Templates/Bean Profile|Bean Library]]", priority: "medium" }
+    { icon: "☕", text: "Log your first brew using [[Coffee-Log-v3|Coffee Log Template]]", priority: "high" },
+    { icon: "🫘", text: "Add your current beans to the [[Bean Profile|Bean Library]]", priority: "medium" }
   ];
 } else if (logCount < 10) {
   recommendations = [
     { icon: "📊", text: `Log ${10 - logCount} more brews to unlock analytics dashboards`, priority: "high" },
-    { icon: "🔬", text: "Learn extraction fundamentals: [[Scientific References/Extraction Science/Coffee Brewing Control Chart|Brewing Control Chart]]", priority: "medium" },
-    { icon: "☕", text: "Try a new brewing method from [[Brewing Guides/|Brewing Guides]]", priority: "low" }
+    { icon: "🔬", text: "Learn extraction fundamentals: [[Coffee Brewing Control Chart|Brewing Control Chart]]", priority: "medium" },
+    { icon: "☕", text: "Try a new brewing method from [[Brewing Guide|Brewing Guides]]", priority: "low" }
   ];
 } else if (logCount < 50) {
   recommendations = [
-    { icon: "🎯", text: "Explore [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine|Brewing Optimizer]] for personalized tips", priority: "high" },
-    { icon: "📈", text: "Review your trends in [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard|Monthly Analytics]]", priority: "high" },
+    { icon: "🎯", text: "Explore [[2-Brewing-Optimization-Engine|Brewing Optimizer]] for personalized tips", priority: "high" },
+    { icon: "📈", text: "Review your trends in [[1-Monthly-Analytics-Dashboard|Monthly Analytics]]", priority: "high" },
     { icon: "🏆", text: `${50 - logCount} more brews until ML predictions unlock!`, priority: "medium" }
   ];
 } else {
   recommendations = [
-    { icon: "🤖", text: "All features unlocked! Try [[Analytics/Analytics-Analysis-Layout/5-Quality-Predictor|Quality Predictor]]", priority: "high" },
-    { icon: "🔗", text: "Discover patterns in [[Analytics/Analytics-Analysis-Layout/6-Correlation-Discovery-Engine|Correlation Engine]]", priority: "high" },
-    { icon: "👅", text: "Advance your palate with [[Analytics/Learning-Education-Layout/4-Palate-Development-Tracker|Palate Tracker]]", priority: "medium" }
+    { icon: "🤖", text: "All features unlocked! Try [[5-Quality-Predictor|Quality Predictor]]", priority: "high" },
+    { icon: "🔗", text: "Discover patterns in [[6-Correlation-Discovery-Engine|Correlation Engine]]", priority: "high" },
+    { icon: "👅", text: "Advance your palate with [[4-Palate-Development-Tracker|Palate Tracker]]", priority: "medium" }
   ];
 }
 
@@ -1735,7 +1735,7 @@ if (recommendations.length > 0) {
 > **10 well-documented brews** with detailed notes and parameters are more valuable than 100 rushed entries. Focus on capturing what matters: beans, method, grind, water, and rating.
 
 > [!science] Learning Path
-> Start with the [[Scientific References/Extraction Science/Coffee Brewing Control Chart|Coffee Brewing Control Chart]]—it's the foundation for understanding every aspect of coffee brewing.
+> Start with the [[Coffee Brewing Control Chart|Coffee Brewing Control Chart]]—it's the foundation for understanding every aspect of coffee brewing.
 
 > [!accessibility] Keyboard Navigation
 > Press **Tab** to navigate between sections, **Enter** to expand/collapse, and **Cmd/Ctrl + K** for quick search (if Omnisearch plugin installed).

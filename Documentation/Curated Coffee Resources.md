@@ -49,7 +49,7 @@ This comprehensive resource collection provides direct links to the best coffee 
 - Equipment buying guides
 - Coffee science explanations
 
-**Clip With**: [[Web Clipper Templates#Brewing Tutorial]] template
+**Clip With**: [[Web Clipper Templates]] template
 
 ---
 
@@ -67,7 +67,7 @@ This comprehensive resource collection provides direct links to the best coffee 
 **Subscription**: $100/year (professional courses)  
 **Free Content**: Blog articles (extensive)
 
-**Clip With**: [[Web Clipper Templates#Brewing Tutorial]] or custom template
+**Clip With**: [[Web Clipper Templates]] or custom template
 
 ---
 
@@ -89,7 +89,7 @@ This comprehensive resource collection provides direct links to the best coffee 
 - Market analysis
 
 **Update Frequency**: Daily  
-**Clip With**: [[Web Clipper Templates#Coffee Review]] or general article template
+**Clip With**: [[Web Clipper Templates]] or general article template
 
 ---
 
@@ -107,7 +107,7 @@ This comprehensive resource collection provides direct links to the best coffee 
 **Complexity**: Advanced (physics/engineering background helpful)  
 **Value**: Highest scientific rigor
 
-**Clip With**: [[Web Clipper Templates#Brewing Tutorial]] template
+**Clip With**: [[Web Clipper Templates]] template
 
 ---
 
@@ -234,7 +234,7 @@ This comprehensive resource collection provides direct links to the best coffee 
 - Origin documentaries
 
 **Use**: YTranscript plugin to save transcripts  
-**Clip With**: [[Web Clipper Templates#YouTube Coffee Video]]
+**Clip With**: [[Web Clipper Templates]]
 
 ---
 

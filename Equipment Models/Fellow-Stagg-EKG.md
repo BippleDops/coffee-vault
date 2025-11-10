@@ -449,8 +449,8 @@ For budget-conscious users or those ambivalent about design, the Bonavita or Bre
 **Tags**: equipment-model, fellow, kettle, electric-kettle, gooseneck, temperature-control
 
 **Cross-References**:
-- [[Equipment Models/Hario-V60-Plastic-Dripper]] - Perfect pairing
-- [[Equipment Models/Fellow-Ode-Gen2]] - Complete Fellow setup
+- [[Equipment Model]] - Perfect pairing
+- [[Equipment Model]] - Complete Fellow setup
 - [[Brewing Methods/Pour Over]] - Primary use case
-- [[Brewing Parameters/Water Temperature]] - Precision control
+- [[Water Temperature]] - Precision control
 - [[Guides/Pour-Over-Setup]] - Complete brewing station

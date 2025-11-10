@@ -490,7 +490,7 @@ Understanding honey processing helps:
 
 ## Tags
 
-- [[Processing]]
+- [[processing-playbook-template]]
 - [[Coffee Production]]
 - [[Flavor Development]]
 - [[Sustainability]]

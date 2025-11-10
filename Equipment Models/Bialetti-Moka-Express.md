@@ -540,8 +540,8 @@ community-rating: 4.7
 
 **Recommended Setup** (Enthusiast):
 - Bialetti Moka Express 6-cup: $40
-- [[Equipment Models/1Zpresso-JX-Pro]] or similar grinder: $150-200
-- [[Equipment Models/Fellow-Stagg-EKG]] for precise temp water (optional): $195
+- [[Equipment Model]] or similar grinder: $150-200
+- [[Equipment Model]] for precise temp water (optional): $195
 - **Total: $190-235**
 
 **Accessories**:
@@ -944,11 +944,11 @@ Buy one, season it properly, use dark roasts, apply low heat, and remove before 
 **Cross-References**:
 - [[Brewing Methods/Moka Pot]] - Primary brewing method
 - [[Coffee Culture/Italian Coffee]] - Cultural context
-- [[Equipment Models/Aeropress-Original]] - Alternative strong coffee method
-- [[Equipment Models/Breville-Bambino-Plus]] - For real espresso
-- [[Grind Size]] - Medium-fine grind required
-- [[Extraction]] - Understanding over-extraction tendency
+- [[Equipment Model]] - Alternative strong coffee method
+- [[Equipment Model]] - For real espresso
+- [[Grind Size and Extraction Kinetics]] - Medium-fine grind required
+- [[DATA-EXTRACTION-GUIDE]] - Understanding over-extraction tendency
 - [[Roast Levels/Dark Roast]] - Ideal roast for Moka pot
-- [[Brewing Parameters/Water Temperature]] - High temp extraction
+- [[Water Temperature]] - High temp extraction
 - [[Coffee History/Italian Coffee Culture]] - Historical context
 - [[Design/Coffee Equipment Design]] - Design icon status

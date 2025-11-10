@@ -522,7 +522,7 @@ community-rating: 4.5
 **Camping/Travel Setup**:
 - Bellman CX-25: $150
 - Camping stove: $20-50
-- [[Equipment Models/Timemore-Chestnut-X]] grinder: $80
+- [[Equipment Model]] grinder: $80
 - Milk pitcher: $15
 - Thermometer: $8
 - **Total: $273-303 (portable cappuccino anywhere)**
@@ -531,7 +531,7 @@ community-rating: 4.5
 - Bellman CX-25: $150
 - Bialetti Moka Pot: $40
 - Milk pitcher: $15
-- [[Equipment Models/1Zpresso-JX-Pro]] grinder: $160
+- [[Equipment Model]] grinder: $160
 - **Total: $365 (off-grid home cappuccinos)**
 
 **Ideal Pairing**:
@@ -897,8 +897,8 @@ If you need to steam milk off-grid, the Bellman is essential. If you have electr
 **Cross-References**:
 - [[Brewing Methods/Stovetop Espresso]] - Bellman espresso brewing
 - [[Brewing Methods/Milk Steaming]] - Primary unique capability
-- [[Equipment Models/Bialetti-Moka-Express]] - Related stovetop brewing
-- [[Equipment Models/Flair-58-Espresso-Maker]] - Pair with Bellman for portable cappuccinos
+- [[Equipment Model]] - Related stovetop brewing
+- [[Equipment Model]] - Pair with Bellman for portable cappuccinos
 - [[Milk Science]] - Understanding milk steaming
 - [[Microfoam Technique]] - Milk steaming technique
 - [[Coffee Safety]] - Pressure vessel safety

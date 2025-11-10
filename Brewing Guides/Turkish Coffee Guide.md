@@ -426,5 +426,5 @@ return turkishLogs.length > 0 ? (
 
 **Last Updated**: 2025-10-24  
 **Cultural**: UNESCO Heritage  
-**Related**: [[Brewing Guides/Espresso Guide|Espresso]] (both concentrated), [[History of Coffee#Arab World]]
+**Related**: [[Brewing Guide|Espresso]] (both concentrated), [[History of Coffee]]
 

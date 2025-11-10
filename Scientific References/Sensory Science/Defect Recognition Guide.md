@@ -366,8 +366,8 @@ Training helps:
 ## Tags
 
 - [[Sensory Science]]
-- [[Quality Control]]
-- [[Defects]]
+- [[Post-Harvest Quality Control]]
+- [[Roast Defects and Troubleshooting]]
 - [[Professional Skills]]
-- [[Cupping]]
+- [[SCA-Cupping-Form]]
 

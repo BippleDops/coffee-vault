@@ -337,15 +337,15 @@ LIMIT 10
 
 **Quick Links:**
 - [[START-HERE]] - Quick start guide
-- [[Configuration/Property-Schema]] - All properties
-- [[Configuration/Bases-Definitions]] - Datacore queries
-- [[Documentation/VAULT-ARCHITECTURE-REFERENCE]] - Technical reference
+- [[Property-Schema]] - All properties
+- [[Bases-Definitions]] - Datacore queries
+- [[VAULT-ARCHITECTURE-REFERENCE]] - Technical reference
 
 **Analytics Dashboards:**
-- [[Analytics/Analytics-Analysis-Layout/1-Monthly-Analytics-Dashboard]] - Comprehensive stats
-- [[Analytics/Analytics-Analysis-Layout/2-Brewing-Optimization-Engine]] - ML recommendations
-- [[Views/Daily-Brewing-Layout/Live-Weekly-Summary]] - This week's performance
-- [[Views/Daily-Brewing-Layout/Live-Inventory-Status]] - Bean inventory
+- [[1-Monthly-Analytics-Dashboard]] - Comprehensive stats
+- [[2-Brewing-Optimization-Engine]] - ML recommendations
+- [[Live-Weekly-Summary]] - This week's performance
+- [[Live-Inventory-Status]] - Bean inventory
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 type: producer-profile
 producer-name: La Palma y El Tucan (LPET)
-country: [[Origins/Colombia]]
-region: [[Origins/Colombia-Cundinamarca]]
+country: [[Colombia]]
+region: [[Colombia]]
 producer-category: Experimental-Estate-Processing-Lab
 established: 2011
 varieties: Caturra-Castillo-Geisha-Sudan-Rume-Pink-Bourbon-Sidra-Wush-Wush
@@ -850,10 +850,10 @@ Whether LPET's model is replicable at scale remains uncertain, but its impact is
 **Tags**: #Producer #Colombia #Experimental-Processing #Processing-Innovation #Geisha #Rare-Varieties #Anaerobic-Fermentation #Carbonic-Maceration #Yeast-Inoculation #Koji #Ultra-Premium #Vertical-Integration #Fair-Labor #Cloud-Forest #Conservation #Direct-Trade #Specialty-Auctions #Quality-Laboratory #Cundinamarca #High-Altitude #Washed-Process #Natural-Process #Fermentation-Control #Terroir-Manipulation
 
 **Related Notes**:
-- [[Origins/Colombia]]
-- [[Origins/Colombia-Cundinamarca]]
+- [[Colombia]]
+- [[Colombia]]
 - [[Varieties/Geisha]]
-- [[Varieties/Sudan-Rume]]
+- [[Sudan-Rume]]
 - [[Varieties/Pink-Bourbon]]
 - [[Varieties/Sidra]]
 - [[Varieties/Wush-Wush]]
