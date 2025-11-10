@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievement Card Generator - Coffee Vault</title>
+  <style>
+    :root {
+      --bronze: #CD7F32;
+      --silver: #C0C0C0;
+      --gold: #FFD700;
+      --bg-dark: #1a1a1a;
+      --text-light: #ffffff;
+      --card-bg: #2a2a2a;
+      --border-radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #FF6F00, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .controls {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .control-group {
+      margin-bottom: 20px;
+    }
+
+    .control-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #FFD700;
+    }
+
+    .control-group input,
+    .control-group select,
+    .control-group textarea {
+      width: 100%;
+      padding: 12px;
+      background: #1a1a1a;
+      border: 2px solid #444;
+      border-radius: 8px;
+      color: var(--text-light);
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .control-group textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .control-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #FF6F00, #FFD700);
+      border: none;
+      padding: 14px 32px;
+      border-radius: 8px;
+      color: var(--text-light);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 111, 0, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .achievement-card {
+      background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+      border-radius: var(--border-radius);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(255, 111, 0, 0.3);
+    }
+
+    .achievement-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--tier-color), transparent);
+    }
+
+    .achievement-card.bronze {
+      --tier-color: var(--bronze);
+      border: 2px solid var(--bronze);
+    }
+
+    .achievement-card.silver {
+      --tier-color: var(--silver);
+      border: 2px solid var(--silver);
+    }
+
+    .achievement-card.gold {
+      --tier-color: var(--gold);
+      border: 2px solid var(--gold);
+    }
+
+    .card-icon {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+    }
+
+    .card-tier {
+      text-align: center;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--tier-color);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .card-name {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--text-light);
+    }
+
+    .card-description {
+      text-align: center;
+      font-size: 1rem;
+      color: #aaa;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .card-metadata {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid #444;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .card-category {
+      font-style: italic;
+    }
+
+    .card-date {
+      font-weight: 600;
+    }
+
+    .download-btn {
+      background: linear-gradient(135deg, #4CAF50, #45a049);
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .download-btn:hover {
+      box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    }
+
+    .preview-canvas {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .card-name {
+        font-size: 1.5rem;
+      }
+    }
+
+    .stats-display {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .stat-box {
+      text-align: center;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      border: 2px solid #444;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #FFD700;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏆 Achievement Card Generator</h1>
+
+    <div class="stats-display" id="statsDisplay">
+      <div class="stat-box">
+        <div class="stat-value" id="totalAchievements">0</div>
+        <div class="stat-label">Total Achievements</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="earnedCount">0</div>
+        <div class="stat-label">Earned</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-value" id="completionRate">0%</div>
+        <div class="stat-label">Completion</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <h2 style="margin-bottom: 20px; color: #FFD700;">Create Custom Achievement</h2>
+
+      <div class="control-row">
+        <div class="control-group">
+          <label for="achievementName">Achievement Name</label>
+          <input type="text" id="achievementName" placeholder="e.g., Master Brewer">
+        </div>
+
+        <div class="control-group">
+          <label for="achievementTier">Tier</label>
+          <select id="achievementTier">
+            <option value="bronze">Bronze</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label for="achievementDescription">Description</label>
+        <textarea id="achievementDescription" placeholder="Describe what this achievement represents..."></textarea>
+      </div>
+
+      <div class="control-row">
+        <div class="control-group">
+          <label for="achievementCategory">Category</label>
+          <input type="text" id="achievementCategory" placeholder="e.g., brewing_milestones">
+        </div>
+
+        <div class="control-group">
+          <label for="achievementIcon">Icon (Emoji)</label>
+          <input type="text" id="achievementIcon" placeholder="e.g., ☕">
+        </div>
+      </div>
+
+      <button onclick="generateCard()">Generate Card</button>
+      <button onclick="loadAllAchievements()">Load All Achievements</button>
+      <button onclick="downloadAll()">Download All Cards</button>
+    </div>
+
+    <div class="cards-grid" id="cardsContainer"></div>
+  </div>
+
+  <canvas id="cardCanvas" class="preview-canvas" width="800" height="600"></canvas>
+
+  <script>
+    let allAchievements = [];
+
+    // Achievement definitions (from achievement-detector.js)
+    const ACHIEVEMENTS = {
+      first_brew: { name: 'First Brew', description: 'Log your first coffee', category: 'brewing_milestones', tier: 'bronze', icon: '☕' },
+      ten_brews: { name: '10 Brew Club', description: 'Log 10 coffees', category: 'brewing_milestones', tier: 'bronze', icon: '📊' },
+      fifty_brews: { name: '50 Brew Milestone', description: 'Log 50 coffees', category: 'brewing_milestones', tier: 'silver', icon: '🎯' },
+      century: { name: 'Century', description: 'Log 100 coffees', category: 'brewing_milestones', tier: 'gold', icon: '💯' },
+      five_origins: { name: '5 Origins', description: 'Try coffee from 5 different origins', category: 'exploration', tier: 'bronze', icon: '🌍' },
+      ten_origins: { name: '10 Origins', description: 'Try coffee from 10 different origins', category: 'exploration', tier: 'silver', icon: '🗺️' },
+      twenty_origins: { name: '20 Origins', description: 'Try coffee from 20 different origins', category: 'exploration', tier: 'gold', icon: '✈️' },
+      five_methods: { name: '5 Methods', description: 'Brew with 5 different methods', category: 'exploration', tier: 'bronze', icon: '⚗️' },
+      ten_methods: { name: '10 Methods', description: 'Master 10 brewing methods', category: 'exploration', tier: 'gold', icon: '🔬' },
+      perfect_score: { name: 'Perfect Score', description: 'Achieve a 100/100 rating', category: 'excellence', tier: 'gold', icon: '⭐' },
+      excellence_streak_5: { name: '5-Day Excellence', description: '5 consecutive days with 90+ ratings', category: 'excellence', tier: 'silver', icon: '🔥' },
+      excellence_streak_30: { name: '30-Day Excellence', description: '30 consecutive days with 90+ ratings', category: 'excellence', tier: 'gold', icon: '🏅' },
+      master_brewer: { name: 'Master Brewer', description: 'Achieve 500 total brews', category: 'expertise', tier: 'gold', icon: '👨‍🔬' },
+      bean_expert: { name: 'Bean Expert', description: 'Try 50 different beans', category: 'expertise', tier: 'gold', icon: '🫘' }
+    };
+
+    function generateCard() {
+      const name = document.getElementById('achievementName').value || 'Achievement Name';
+      const tier = document.getElementById('achievementTier').value;
+      const description = document.getElementById('achievementDescription').value || 'Achievement description goes here';
+      const category = document.getElementById('achievementCategory').value || 'general';
+      const icon = document.getElementById('achievementIcon').value || '🏆';
+
+      const achievement = {
+        name,
+        tier,
+        description,
+        category,
+        icon,
+        unlockedAt: new Date().toISOString()
+      };
+
+      addAchievementCard(achievement);
+    }
+
+    function addAchievementCard(achievement) {
+      const container = document.getElementById('cardsContainer');
+      const card = document.createElement('div');
+      card.className = `achievement-card ${achievement.tier}`;
+
+      const unlockedDate = new Date(achievement.unlockedAt).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
+
+      card.innerHTML = `
+        <div class="card-icon">${achievement.icon}</div>
+        <div class="card-tier">${achievement.tier} Achievement</div>
+        <div class="card-name">${achievement.name}</div>
+        <div class="card-description">${achievement.description}</div>
+        <div class="card-metadata">
+          <span class="card-category">${achievement.category.replace(/_/g, ' ')}</span>
+          <span class="card-date">${unlockedDate}</span>
+        </div>
+        <button class="download-btn" onclick="downloadCard(this.parentElement)">
+          Download Card
+        </button>
+      `;
+
+      container.appendChild(card);
+      allAchievements.push(achievement);
+      updateStats();
+    }
+
+    function loadAllAchievements() {
+      document.getElementById('cardsContainer').innerHTML = '';
+      allAchievements = [];
+
+      // Load predefined achievements
+      for (const [key, achievement] of Object.entries(ACHIEVEMENTS)) {
+        addAchievementCard({
+          ...achievement,
+          unlockedAt: new Date().toISOString()
+        });
+      }
+    }
+
+    function updateStats() {
+      const total = Object.keys(ACHIEVEMENTS).length;
+      const earned = allAchievements.length;
+      const completion = total > 0 ? Math.round((earned / total) * 100) : 0;
+
+      document.getElementById('totalAchievements').textContent = total;
+      document.getElementById('earnedCount').textContent = earned;
+      document.getElementById('completionRate').textContent = `${completion}%`;
+    }
+
+    async function downloadCard(cardElement) {
+      // Create a canvas with the card content
+      const canvas = document.getElementById('cardCanvas');
+      const ctx = canvas.getContext('2d');
+
+      // Set canvas size
+      canvas.width = 800;
+      canvas.height = 600;
+
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Get card data
+      const tier = cardElement.classList.contains('gold') ? 'gold' :
+                   cardElement.classList.contains('silver') ? 'silver' : 'bronze';
+      const icon = cardElement.querySelector('.card-icon').textContent;
+      const name = cardElement.querySelector('.card-name').textContent;
+      const description = cardElement.querySelector('.card-description').textContent;
+      const category = cardElement.querySelector('.card-category').textContent;
+      const date = cardElement.querySelector('.card-date').textContent;
+
+      // Draw background
+      const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+      gradient.addColorStop(0, '#2a2a2a');
+      gradient.addColorStop(1, '#1a1a1a');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Draw border
+      const tierColors = { bronze: '#CD7F32', silver: '#C0C0C0', gold: '#FFD700' };
+      ctx.strokeStyle = tierColors[tier];
+      ctx.lineWidth = 4;
+      ctx.strokeRect(10, 10, canvas.width - 20, canvas.height - 20);
+
+      // Draw top accent line
+      const accentGradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+      accentGradient.addColorStop(0, tierColors[tier]);
+      accentGradient.addColorStop(1, 'transparent');
+      ctx.fillStyle = accentGradient;
+      ctx.fillRect(10, 10, canvas.width - 20, 10);
+
+      // Draw icon
+      ctx.font = '120px Arial';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText(icon, canvas.width / 2, 150);
+
+      // Draw tier
+      ctx.font = 'bold 20px Arial';
+      ctx.fillStyle = tierColors[tier];
+      ctx.fillText(`${tier.toUpperCase()} ACHIEVEMENT`, canvas.width / 2, 250);
+
+      // Draw name
+      ctx.font = 'bold 48px Arial';
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText(name, canvas.width / 2, 320);
+
+      // Draw description
+      ctx.font = '24px Arial';
+      ctx.fillStyle = '#aaaaaa';
+
+      // Word wrap description
+      const maxWidth = canvas.width - 100;
+      const words = description.split(' ');
+      let line = '';
+      let y = 380;
+
+      for (let word of words) {
+        const testLine = line + word + ' ';
+        const metrics = ctx.measureText(testLine);
+        if (metrics.width > maxWidth && line !== '') {
+          ctx.fillText(line, canvas.width / 2, y);
+          line = word + ' ';
+          y += 30;
+        } else {
+          line = testLine;
+        }
+      }
+      ctx.fillText(line, canvas.width / 2, y);
+
+      // Draw bottom metadata
+      ctx.font = 'italic 18px Arial';
+      ctx.fillStyle = '#888888';
+      ctx.textAlign = 'left';
+      ctx.fillText(category, 50, canvas.height - 50);
+
+      ctx.textAlign = 'right';
+      ctx.font = 'bold 18px Arial';
+      ctx.fillText(date, canvas.width - 50, canvas.height - 50);
+
+      // Draw Coffee Vault branding
+      ctx.textAlign = 'center';
+      ctx.font = 'italic 16px Arial';
+      ctx.fillStyle = '#666666';
+      ctx.fillText('Coffee Vault Achievement System', canvas.width / 2, canvas.height - 20);
+
+      // Download the canvas as PNG
+      const dataUrl = canvas.toDataURL('image/png');
+      const link = document.createElement('a');
+      link.download = `achievement-${name.replace(/\s+/g, '-').toLowerCase()}.png`;
+      link.href = dataUrl;
+      link.click();
+    }
+
+    function downloadAll() {
+      const cards = document.querySelectorAll('.achievement-card');
+      cards.forEach((card, index) => {
+        setTimeout(() => downloadCard(card), index * 500);
+      });
+    }
+
+    // Initialize stats
+    updateStats();
+  </script>
+</body>
+</html>
