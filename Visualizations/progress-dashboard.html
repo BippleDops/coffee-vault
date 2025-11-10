@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Dashboard - Coffee Vault</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
+  <style>
+    :root {
+      --primary: #FF6F00;
+      --secondary: #FFD700;
+      --success: #4CAF50;
+      --info: #2196F3;
+      --warning: #FFC107;
+      --danger: #F44336;
+      --dark-bg: #1a1a1a;
+      --card-bg: #2a2a2a;
+      --text-primary: #ffffff;
+      --text-secondary: #aaaaaa;
+      --border-color: #444444;
+      --bronze: #CD7F32;
+      --silver: #C0C0C0;
+      --gold: #FFD700;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--dark-bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 16px;
+      border: 2px solid var(--border-color);
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--card-color), transparent);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(255, 111, 0, 0.2);
+      border-color: var(--card-color);
+    }
+
+    .stat-card.primary { --card-color: var(--primary); }
+    .stat-card.secondary { --card-color: var(--secondary); }
+    .stat-card.success { --card-color: var(--success); }
+    .stat-card.info { --card-color: var(--info); }
+    .stat-card.bronze { --card-color: var(--bronze); }
+    .stat-card.silver { --card-color: var(--silver); }
+    .stat-card.gold { --card-color: var(--gold); }
+
+    .stat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--card-color);
+      margin-bottom: 10px;
+    }
+
+    .stat-detail {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .progress-section {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 16px;
+      border: 2px solid var(--border-color);
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: var(--secondary);
+    }
+
+    .progress-bar-container {
+      margin-bottom: 25px;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .progress-bar {
+      height: 30px;
+      background: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--fill-color-start), var(--fill-color-end));
+      transition: width 1s ease-out;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 12px;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    .chart-container {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 16px;
+      border: 2px solid var(--border-color);
+      margin-bottom: 30px;
+    }
+
+    .chart-title {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: var(--secondary);
+    }
+
+    canvas {
+      max-height: 400px;
+    }
+
+    .achievements-preview {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 15px;
+    }
+
+    .achievement-badge {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      border: 2px solid var(--badge-color);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .achievement-badge:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px var(--badge-color);
+    }
+
+    .achievement-badge.bronze { --badge-color: var(--bronze); }
+    .achievement-badge.silver { --badge-color: var(--silver); }
+    .achievement-badge.gold { --badge-color: var(--gold); }
+    .achievement-badge.locked { --badge-color: #333; opacity: 0.5; }
+
+    .badge-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .badge-name {
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .milestone-timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .milestone {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .milestone::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 40px;
+      bottom: -30px;
+      width: 2px;
+      background: var(--border-color);
+    }
+
+    .milestone:last-child::before {
+      display: none;
+    }
+
+    .milestone-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--milestone-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-right: 20px;
+      z-index: 1;
+      flex-shrink: 0;
+    }
+
+    .milestone-content {
+      flex: 1;
+    }
+
+    .milestone-title {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .milestone-detail {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .stat-value {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Coffee Journey Progress Dashboard</h1>
+
+    <!-- Key Statistics -->
+    <div class="dashboard-grid">
+      <div class="stat-card primary">
+        <div class="stat-icon">☕</div>
+        <div class="stat-label">Total Brews</div>
+        <div class="stat-value" id="totalBrews">0</div>
+        <div class="stat-detail">Brewing since <span id="startDate">—</span></div>
+      </div>
+
+      <div class="stat-card secondary">
+        <div class="stat-icon">🌍</div>
+        <div class="stat-label">Origins Explored</div>
+        <div class="stat-value" id="totalOrigins">0</div>
+        <div class="stat-detail"><span id="favoriteOrigin">—</span> is your favorite</div>
+      </div>
+
+      <div class="stat-card success">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-label">Average Rating</div>
+        <div class="stat-value" id="avgRating">0.0</div>
+        <div class="stat-detail">Out of 100</div>
+      </div>
+
+      <div class="stat-card info">
+        <div class="stat-icon">⚗️</div>
+        <div class="stat-label">Brew Methods</div>
+        <div class="stat-value" id="totalMethods">0</div>
+        <div class="stat-detail"><span id="favoriteMethod">—</span> most used</div>
+      </div>
+
+      <div class="stat-card bronze">
+        <div class="stat-icon">🥉</div>
+        <div class="stat-label">Bronze Achievements</div>
+        <div class="stat-value" id="bronzeCount">0</div>
+        <div class="stat-detail">Foundational milestones</div>
+      </div>
+
+      <div class="stat-card silver">
+        <div class="stat-icon">🥈</div>
+        <div class="stat-label">Silver Achievements</div>
+        <div class="stat-value" id="silverCount">0</div>
+        <div class="stat-detail">Intermediate mastery</div>
+      </div>
+
+      <div class="stat-card gold">
+        <div class="stat-icon">🥇</div>
+        <div class="stat-label">Gold Achievements</div>
+        <div class="stat-value" id="goldCount">0</div>
+        <div class="stat-detail">Expert accomplishments</div>
+      </div>
+
+      <div class="stat-card primary">
+        <div class="stat-icon">🏆</div>
+        <div class="stat-label">Completion</div>
+        <div class="stat-value" id="completionPercent">0%</div>
+        <div class="stat-detail"><span id="achievementsEarned">0</span> of <span id="achievementsTotal">50</span> earned</div>
+      </div>
+    </div>
+
+    <!-- Progress Bars -->
+    <div class="progress-section">
+      <h2 class="section-title">🎯 Progress Tracking</h2>
+
+      <div class="progress-bar-container">
+        <div class="progress-label">
+          <span>Brewing Milestones</span>
+          <span id="brewProgress">0 / 500</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="brewProgressBar" style="--fill-color-start: #FF6F00; --fill-color-end: #FFD700; width: 0%">0%</div>
+        </div>
+      </div>
+
+      <div class="progress-bar-container">
+        <div class="progress-label">
+          <span>World Explorer</span>
+          <span id="originProgress">0 / 30</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="originProgressBar" style="--fill-color-start: #4CAF50; --fill-color-end: #8BC34A; width: 0%">0%</div>
+        </div>
+      </div>
+
+      <div class="progress-bar-container">
+        <div class="progress-label">
+          <span>Method Mastery</span>
+          <span id="methodProgress">0 / 10</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="methodProgressBar" style="--fill-color-start: #2196F3; --fill-color-end: #03A9F4; width: 0%">0%</div>
+        </div>
+      </div>
+
+      <div class="progress-bar-container">
+        <div class="progress-label">
+          <span>Achievement Hunter</span>
+          <span id="achievementProgress">0 / 50</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="achievementProgressBar" style="--fill-color-start: #9C27B0; --fill-color-end: #E91E63; width: 0%">0%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="chart-container">
+      <h2 class="chart-title">📈 Brewing Activity Over Time</h2>
+      <canvas id="activityChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+      <h2 class="chart-title">🌍 Origins Distribution</h2>
+      <canvas id="originsChart"></canvas>
+    </div>
+
+    <!-- Recent Achievements -->
+    <div class="progress-section">
+      <h2 class="section-title">🏆 Recent Achievements</h2>
+      <div class="achievements-preview" id="achievementsPreview">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+
+    <!-- Milestones -->
+    <div class="progress-section">
+      <h2 class="section-title">🎯 Journey Milestones</h2>
+      <div class="milestone-timeline" id="milestoneTimeline">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <script src="../Data/shared/data-loader.js"></script>
+  <script>
+    let coffeeData = null;
+    let achievements = [];
+
+    async function loadData() {
+      try {
+        coffeeData = await loadCoffeeData();
+        updateDashboard();
+      } catch (error) {
+        console.error('Error loading data:', error);
+      }
+    }
+
+    function updateDashboard() {
+      if (!coffeeData || !coffeeData.logs) return;
+
+      const logs = coffeeData.logs;
+      const totalBrews = logs.length;
+
+      // Calculate origins
+      const origins = new Set(logs.map(log => log.origin).filter(Boolean));
+      const originCounts = {};
+      logs.forEach(log => {
+        if (log.origin) {
+          originCounts[log.origin] = (originCounts[log.origin] || 0) + 1;
+        }
+      });
+      const favoriteOrigin = Object.keys(originCounts).reduce((a, b) =>
+        originCounts[a] > originCounts[b] ? a : b, '—'
+      );
+
+      // Calculate methods
+      const methods = new Set(logs.map(log => log.method).filter(Boolean));
+      const methodCounts = {};
+      logs.forEach(log => {
+        if (log.method) {
+          methodCounts[log.method] = (methodCounts[log.method] || 0) + 1;
+        }
+      });
+      const favoriteMethod = Object.keys(methodCounts).reduce((a, b) =>
+        methodCounts[a] > methodCounts[b] ? a : b, '—'
+      );
+
+      // Calculate average rating
+      const ratingsWithValue = logs.filter(log => log.overallRating || log.rating);
+      const avgRating = ratingsWithValue.length > 0
+        ? ratingsWithValue.reduce((sum, log) => sum + (log.overallRating || log.rating), 0) / ratingsWithValue.length
+        : 0;
+
+      // Get start date
+      const sortedLogs = logs.sort((a, b) => new Date(a.date) - new Date(b.date));
+      const startDate = sortedLogs.length > 0
+        ? new Date(sortedLogs[0].date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })
+        : '—';
+
+      // Update statistics
+      document.getElementById('totalBrews').textContent = totalBrews;
+      document.getElementById('totalOrigins').textContent = origins.size;
+      document.getElementById('favoriteOrigin').textContent = favoriteOrigin;
+      document.getElementById('avgRating').textContent = avgRating.toFixed(1);
+      document.getElementById('totalMethods').textContent = methods.size;
+      document.getElementById('favoriteMethod').textContent = favoriteMethod;
+      document.getElementById('startDate').textContent = startDate;
+
+      // Calculate achievements
+      calculateAchievements(totalBrews, origins.size, methods.size, avgRating);
+
+      // Update progress bars
+      updateProgressBars(totalBrews, origins.size, methods.size);
+
+      // Create charts
+      createActivityChart(sortedLogs);
+      createOriginsChart(originCounts);
+
+      // Display recent achievements
+      displayRecentAchievements();
+
+      // Display milestones
+      displayMilestones(totalBrews, origins.size, methods.size);
+    }
+
+    function calculateAchievements(totalBrews, totalOrigins, totalMethods, avgRating) {
+      achievements = [];
+
+      // Brewing milestones
+      if (totalBrews >= 1) achievements.push({ name: 'First Brew', tier: 'bronze', icon: '☕', unlocked: true });
+      if (totalBrews >= 10) achievements.push({ name: '10 Brew Club', tier: 'bronze', icon: '📊', unlocked: true });
+      if (totalBrews >= 50) achievements.push({ name: '50 Brew Milestone', tier: 'silver', icon: '🎯', unlocked: true });
+      if (totalBrews >= 100) achievements.push({ name: 'Century', tier: 'gold', icon: '💯', unlocked: true });
+      if (totalBrews >= 500) achievements.push({ name: 'Master Brewer', tier: 'gold', icon: '👨‍🔬', unlocked: true });
+
+      // Exploration
+      if (totalOrigins >= 5) achievements.push({ name: '5 Origins', tier: 'bronze', icon: '🌍', unlocked: true });
+      if (totalOrigins >= 10) achievements.push({ name: '10 Origins', tier: 'silver', icon: '🗺️', unlocked: true });
+      if (totalOrigins >= 20) achievements.push({ name: '20 Origins', tier: 'gold', icon: '✈️', unlocked: true });
+
+      // Methods
+      if (totalMethods >= 5) achievements.push({ name: '5 Methods', tier: 'bronze', icon: '⚗️', unlocked: true });
+      if (totalMethods >= 10) achievements.push({ name: '10 Methods', tier: 'gold', icon: '🔬', unlocked: true });
+
+      // Excellence
+      if (avgRating >= 90) achievements.push({ name: 'Excellence', tier: 'silver', icon: '⭐', unlocked: true });
+
+      const bronze = achievements.filter(a => a.tier === 'bronze').length;
+      const silver = achievements.filter(a => a.tier === 'silver').length;
+      const gold = achievements.filter(a => a.tier === 'gold').length;
+      const total = 50; // Total possible achievements
+
+      document.getElementById('bronzeCount').textContent = bronze;
+      document.getElementById('silverCount').textContent = silver;
+      document.getElementById('goldCount').textContent = gold;
+      document.getElementById('achievementsEarned').textContent = achievements.length;
+      document.getElementById('achievementsTotal').textContent = total;
+      document.getElementById('completionPercent').textContent = Math.round((achievements.length / total) * 100) + '%';
+    }
+
+    function updateProgressBars(totalBrews, totalOrigins, totalMethods) {
+      // Brew progress
+      const brewGoal = 500;
+      const brewPercent = Math.min(100, (totalBrews / brewGoal) * 100);
+      document.getElementById('brewProgress').textContent = `${totalBrews} / ${brewGoal}`;
+      document.getElementById('brewProgressBar').style.width = brewPercent + '%';
+      document.getElementById('brewProgressBar').textContent = brewPercent.toFixed(0) + '%';
+
+      // Origin progress
+      const originGoal = 30;
+      const originPercent = Math.min(100, (totalOrigins / originGoal) * 100);
+      document.getElementById('originProgress').textContent = `${totalOrigins} / ${originGoal}`;
+      document.getElementById('originProgressBar').style.width = originPercent + '%';
+      document.getElementById('originProgressBar').textContent = originPercent.toFixed(0) + '%';
+
+      // Method progress
+      const methodGoal = 10;
+      const methodPercent = Math.min(100, (totalMethods / methodGoal) * 100);
+      document.getElementById('methodProgress').textContent = `${totalMethods} / ${methodGoal}`;
+      document.getElementById('methodProgressBar').style.width = methodPercent + '%';
+      document.getElementById('methodProgressBar').textContent = methodPercent.toFixed(0) + '%';
+
+      // Achievement progress
+      const achievementGoal = 50;
+      const achievementPercent = Math.min(100, (achievements.length / achievementGoal) * 100);
+      document.getElementById('achievementProgress').textContent = `${achievements.length} / ${achievementGoal}`;
+      document.getElementById('achievementProgressBar').style.width = achievementPercent + '%';
+      document.getElementById('achievementProgressBar').textContent = achievementPercent.toFixed(0) + '%';
+    }
+
+    function createActivityChart(logs) {
+      const ctx = document.getElementById('activityChart').getContext('2d');
+
+      // Group by month
+      const monthCounts = {};
+      logs.forEach(log => {
+        const month = new Date(log.date).toISOString().substring(0, 7); // YYYY-MM
+        monthCounts[month] = (monthCounts[month] || 0) + 1;
+      });
+
+      const labels = Object.keys(monthCounts).sort();
+      const data = labels.map(month => monthCounts[month]);
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Brews per Month',
+            data: data,
+            borderColor: '#FF6F00',
+            backgroundColor: 'rgba(255, 111, 0, 0.1)',
+            tension: 0.4,
+            fill: true,
+            pointRadius: 4,
+            pointHoverRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              labels: { color: '#ffffff' }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#aaaaaa' },
+              grid: { color: '#333333' }
+            },
+            y: {
+              ticks: { color: '#aaaaaa' },
+              grid: { color: '#333333' },
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+
+    function createOriginsChart(originCounts) {
+      const ctx = document.getElementById('originsChart').getContext('2d');
+
+      const sorted = Object.entries(originCounts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10);
+
+      const labels = sorted.map(([origin]) => origin);
+      const data = sorted.map(([, count]) => count);
+
+      const backgroundColors = labels.map((_, i) => {
+        const hue = (i * 360 / labels.length);
+        return `hsl(${hue}, 70%, 60%)`;
+      });
+
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: data,
+            backgroundColor: backgroundColors,
+            borderColor: '#1a1a1a',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: { color: '#ffffff' }
+            }
+          }
+        }
+      });
+    }
+
+    function displayRecentAchievements() {
+      const container = document.getElementById('achievementsPreview');
+      container.innerHTML = '';
+
+      // Show all unlocked achievements
+      achievements.forEach(achievement => {
+        const badge = document.createElement('div');
+        badge.className = `achievement-badge ${achievement.tier}`;
+        badge.innerHTML = `
+          <div class="badge-icon">${achievement.icon}</div>
+          <div class="badge-name">${achievement.name}</div>
+        `;
+        container.appendChild(badge);
+      });
+
+      // Show some locked achievements as placeholders
+      const lockedCount = Math.min(8, 50 - achievements.length);
+      for (let i = 0; i < lockedCount; i++) {
+        const badge = document.createElement('div');
+        badge.className = 'achievement-badge locked';
+        badge.innerHTML = `
+          <div class="badge-icon">🔒</div>
+          <div class="badge-name">Locked</div>
+        `;
+        container.appendChild(badge);
+      }
+    }
+
+    function displayMilestones(totalBrews, totalOrigins, totalMethods) {
+      const container = document.getElementById('milestoneTimeline');
+      container.innerHTML = '';
+
+      const milestones = [
+        { title: 'Coffee Journey Begins', detail: 'First coffee logged', icon: '🌱', color: '#4CAF50', achieved: totalBrews >= 1 },
+        { title: '10 Brew Club', detail: 'Logged 10 coffees', icon: '📊', color: '#2196F3', achieved: totalBrews >= 10 },
+        { title: 'World Explorer', detail: '5 origins explored', icon: '🌍', color: '#FF6F00', achieved: totalOrigins >= 5 },
+        { title: '50 Brew Milestone', detail: 'Half-century achievement', icon: '🎯', color: '#9C27B0', achieved: totalBrews >= 50 },
+        { title: 'Method Mastery', detail: '5 brewing methods learned', icon: '⚗️', color: '#FFD700', achieved: totalMethods >= 5 },
+        { title: 'Century Club', detail: '100 coffees logged', icon: '💯', color: '#F44336', achieved: totalBrews >= 100 },
+        { title: 'Global Palate', detail: '10 origins mastered', icon: '🗺️', color: '#00BCD4', achieved: totalOrigins >= 10 },
+        { title: 'Master Brewer', detail: '500 brews completed', icon: '👨‍🔬', color: '#FFD700', achieved: totalBrews >= 500 }
+      ];
+
+      milestones.forEach(milestone => {
+        const div = document.createElement('div');
+        div.className = 'milestone';
+        div.innerHTML = `
+          <div class="milestone-icon" style="--milestone-color: ${milestone.achieved ? milestone.color : '#333'}">
+            ${milestone.icon}
+          </div>
+          <div class="milestone-content">
+            <div class="milestone-title" style="color: ${milestone.achieved ? milestone.color : '#666'}">
+              ${milestone.achieved ? '✅ ' : ''}${milestone.title}
+            </div>
+            <div class="milestone-detail">${milestone.detail}</div>
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Load data on page load
+    loadData();
+  </script>
+</body>
+</html>
