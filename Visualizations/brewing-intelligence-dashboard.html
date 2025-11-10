@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Intelligence Dashboard - Coffee Vault 8.0</title>
+
+    <!-- Shared Infrastructure -->
+    <link rel="stylesheet" href="shared-styles.css">
+    <script src="shared-controls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <style>
+        :root {
+            --cv-primary: #5D4037;
+            --cv-accent: #FF6F00;
+            --cv-bg: #FFF8E1;
+            --cv-card: #FFFFFF;
+            --cv-text: #3E2723;
+            --cv-border: #D7CCC8;
+        }
+
+        [data-theme="dark"] {
+            --cv-bg: #1C1410;
+            --cv-card: #2C2420;
+            --cv-text: #FFF8E1;
+            --cv-border: #4E342E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--cv-bg);
+            color: var(--cv-text);
+            padding: 20px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .dashboard {
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-header h1 {
+            font-size: 2.5rem;
+            color: var(--cv-primary);
+            margin-bottom: 10px;
+        }
+
+        .dashboard-header .subtitle {
+            color: var(--cv-accent);
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--cv-card);
+            border: 2px solid var(--cv-border);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--cv-accent);
+            margin: 10px 0;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        .stat-trend {
+            font-size: 0.85rem;
+            margin-top: 8px;
+        }
+
+        .trend-up {
+            color: #4CAF50;
+        }
+
+        .trend-down {
+            color: #F44336;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .chart-card {
+            background: var(--cv-card);
+            border: 2px solid var(--cv-border);
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .chart-card h3 {
+            margin-bottom: 20px;
+            color: var(--cv-primary);
+            font-size: 1.3rem;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 350px;
+        }
+
+        .insights-section {
+            background: var(--cv-card);
+            border: 2px solid var(--cv-border);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .insights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .insight-card {
+            background: linear-gradient(135deg, var(--cv-accent), var(--cv-primary));
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .insight-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .insight-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        #loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div id="control-panel" aria-label="Dashboard controls"></div>
+
+        <div class="dashboard-header">
+            <h1>☕ Brewing Intelligence Dashboard</h1>
+            <p class="subtitle">Real-time insights from your coffee journey</p>
+        </div>
+
+        <div id="loading">Loading your brewing data...</div>
+
+        <div id="dashboard-content" class="hidden">
+            <!-- Key Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Brews</div>
+                    <div class="stat-value" id="stat-total-brews">0</div>
+                    <div class="stat-trend" id="stat-total-trend">--</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Average Rating</div>
+                    <div class="stat-value" id="stat-avg-rating">0</div>
+                    <div class="stat-trend" id="stat-rating-trend">--</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Favorite Method</div>
+                    <div class="stat-value" id="stat-fav-method">--</div>
+                    <div class="stat-trend" id="stat-method-count">--</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Origins Explored</div>
+                    <div class="stat-value" id="stat-origins">0</div>
+                    <div class="stat-trend" id="stat-origins-trend">--</div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-grid">
+                <div class="chart-card">
+                    <h3>📈 Quality Over Time</h3>
+                    <div class="chart-container">
+                        <canvas id="quality-timeline"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>🎯 Method Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="method-distribution"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>🌍 Origin Diversity</h3>
+                    <div class="chart-container">
+                        <canvas id="origin-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>⚙️ Parameter Optimization</h3>
+                    <div class="chart-container">
+                        <canvas id="parameter-scatter"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI-Powered Insights -->
+            <div class="insights-section">
+                <h2>💡 Intelligent Insights</h2>
+                <div class="insights-grid" id="insights-container">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </div>
+
+        <div id="status" role="status" aria-live="polite"></div>
+    </div>
+
+    <script>
+        // Initialize infrastructure
+        const dataLoader = new DataLoader();
+        const a11y = new AccessibilityHelper();
+        const themeManager = new ThemeManager();
+
+        let allLogs = [];
+        let charts = {};
+
+        // Create control panel
+        const controlPanel = new StandardControlPanel(
+            document.getElementById('control-panel'),
+            {
+                showTimeRange: true,
+                showMethodFilter: true,
+                showRatingFilter: true,
+                showExport: true,
+                showThemeToggle: true
+            }
+        );
+
+        // Initialize export manager
+        const exportManager = new ExportManager(
+            document.getElementById('dashboard-content'),
+            { filename: 'brewing-intelligence-dashboard' }
+        );
+
+        // Main initialization
+        async function init() {
+            try {
+                console.log('Loading brewing data...');
+                allLogs = await dataLoader.loadCoffeeLogs();
+
+                if (allLogs.length === 0) {
+                    document.getElementById('loading').textContent =
+                        'No brewing data found. Log your first coffee to see insights!';
+                    return;
+                }
+
+                console.log(`Loaded ${allLogs.length} coffee logs`);
+
+                // Show dashboard
+                document.getElementById('loading').classList.add('hidden');
+                document.getElementById('dashboard-content').classList.remove('hidden');
+
+                // Initial render
+                updateDashboard(controlPanel.getFilters());
+
+                a11y.announce(`Dashboard loaded with ${allLogs.length} brews`);
+
+            } catch (error) {
+                console.error('Failed to load data:', error);
+                document.getElementById('loading').textContent =
+                    'Error loading data. Please run: npm run extract-data';
+            }
+        }
+
+        // Update dashboard when filters change
+        controlPanel.onChange(filters => {
+            updateDashboard(filters);
+        });
+
+        // Main dashboard update function
+        function updateDashboard(filters) {
+            const filteredLogs = dataLoader.applyFilters(allLogs, filters);
+
+            if (filteredLogs.length === 0) {
+                document.getElementById('loading').textContent =
+                    'No brews match your filters. Try adjusting the filters above.';
+                document.getElementById('loading').classList.remove('hidden');
+                document.getElementById('dashboard-content').classList.add('hidden');
+                return;
+            }
+
+            // Update statistics
+            updateStatistics(filteredLogs);
+
+            // Update charts
+            updateQualityTimeline(filteredLogs);
+            updateMethodDistribution(filteredLogs);
+            updateOriginChart(filteredLogs);
+            updateParameterScatter(filteredLogs);
+
+            // Generate insights
+            generateInsights(filteredLogs);
+        }
+
+        // Update key statistics
+        function updateStatistics(logs) {
+            // Total brews
+            document.getElementById('stat-total-brews').textContent = logs.length;
+
+            // Average rating
+            const ratings = logs
+                .filter(log => log.overallRating || log.rating)
+                .map(log => parseFloat(log.overallRating || log.rating));
+
+            const avgRating = ratings.length > 0
+                ? (ratings.reduce((a, b) => a + b, 0) / ratings.length).toFixed(1)
+                : 'N/A';
+
+            document.getElementById('stat-avg-rating').textContent = avgRating;
+
+            // Favorite method
+            const methodCounts = {};
+            logs.forEach(log => {
+                const method = log.brewingMethod || log.method || 'Unknown';
+                methodCounts[method] = (methodCounts[method] || 0) + 1;
+            });
+
+            const favMethod = Object.entries(methodCounts)
+                .sort((a, b) => b[1] - a[1])[0];
+
+            if (favMethod) {
+                document.getElementById('stat-fav-method').textContent = favMethod[0];
+                document.getElementById('stat-method-count').textContent =
+                    `${favMethod[1]} brews`;
+            }
+
+            // Origins explored
+            const origins = new Set(logs.map(log => log.origin || log.bean).filter(Boolean));
+            document.getElementById('stat-origins').textContent = origins.size;
+        }
+
+        // Quality timeline chart
+        function updateQualityTimeline(logs) {
+            const sortedLogs = [...logs].sort((a, b) =>
+                new Date(a.date) - new Date(b.date)
+            );
+
+            const isDark = themeManager.isDark();
+
+            const data = {
+                labels: sortedLogs.map(log => log.date),
+                datasets: [{
+                    label: 'Overall Rating',
+                    data: sortedLogs.map(log => ({
+                        x: log.date,
+                        y: log.overallRating || log.rating
+                    })),
+                    borderColor: '#FF6F00',
+                    backgroundColor: 'rgba(255, 111, 0, 0.1)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            };
+
+            const config = {
+                type: 'line',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: isDark ? '#E0E0E0' : '#333' }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'time',
+                            grid: { color: isDark ? '#444' : '#ddd' },
+                            ticks: { color: isDark ? '#E0E0E0' : '#333' }
+                        },
+                        y: {
+                            min: 0,
+                            max: 100,
+                            grid: { color: isDark ? '#444' : '#ddd' },
+                            ticks: { color: isDark ? '#E0E0E0' : '#333' }
+                        }
+                    }
+                }
+            };
+
+            if (charts.qualityTimeline) {
+                charts.qualityTimeline.data = data;
+                charts.qualityTimeline.options = config.options;
+                charts.qualityTimeline.update();
+            } else {
+                charts.qualityTimeline = new Chart(
+                    document.getElementById('quality-timeline'),
+                    config
+                );
+            }
+        }
+
+        // Method distribution chart
+        function updateMethodDistribution(logs) {
+            const methodCounts = {};
+            logs.forEach(log => {
+                const method = log.brewingMethod || log.method || 'Unknown';
+                methodCounts[method] = (methodCounts[method] || 0) + 1;
+            });
+
+            const sortedMethods = Object.entries(methodCounts)
+                .sort((a, b) => b[1] - a[1]);
+
+            const isDark = themeManager.isDark();
+
+            const data = {
+                labels: sortedMethods.map(([method]) => method),
+                datasets: [{
+                    data: sortedMethods.map(([, count]) => count),
+                    backgroundColor: [
+                        '#FF6F00', '#5D4037', '#FFA726', '#8D6E63',
+                        '#FFB74D', '#A1887F', '#FFCC80', '#BCAAA4'
+                    ]
+                }]
+            };
+
+            const config = {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { color: isDark ? '#E0E0E0' : '#333' }
+                        }
+                    }
+                }
+            };
+
+            if (charts.methodDistribution) {
+                charts.methodDistribution.data = data;
+                charts.methodDistribution.options = config.options;
+                charts.methodDistribution.update();
+            } else {
+                charts.methodDistribution = new Chart(
+                    document.getElementById('method-distribution'),
+                    config
+                );
+            }
+        }
+
+        // Origin diversity chart
+        function updateOriginChart(logs) {
+            const originCounts = {};
+            logs.forEach(log => {
+                const origin = log.origin || log.bean || 'Unknown';
+                originCounts[origin] = (originCounts[origin] || 0) + 1;
+            });
+
+            const sortedOrigins = Object.entries(originCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10); // Top 10
+
+            const isDark = themeManager.isDark();
+
+            const data = {
+                labels: sortedOrigins.map(([origin]) => origin),
+                datasets: [{
+                    label: 'Brews',
+                    data: sortedOrigins.map(([, count]) => count),
+                    backgroundColor: '#FF6F00'
+                }]
+            };
+
+            const config = {
+                type: 'bar',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: isDark ? '#444' : '#ddd' },
+                            ticks: { color: isDark ? '#E0E0E0' : '#333' }
+                        },
+                        y: {
+                            grid: { display: false },
+                            ticks: { color: isDark ? '#E0E0E0' : '#333' }
+                        }
+                    }
+                }
+            };
+
+            if (charts.originChart) {
+                charts.originChart.data = data;
+                charts.originChart.options = config.options;
+                charts.originChart.update();
+            } else {
+                charts.originChart = new Chart(
+                    document.getElementById('origin-chart'),
+                    config
+                );
+            }
+        }
+
+        // Parameter optimization scatter
+        function updateParameterScatter(logs) {
+            const data = logs
+                .filter(log => log.temperature && log.ratio && log.overallRating)
+                .map(log => ({
+                    x: parseFloat(log.temperature),
+                    y: parseFloat(log.ratio),
+                    r: parseFloat(log.overallRating) / 10
+                }));
+
+            const isDark = themeManager.isDark();
+
+            const chartData = {
+                datasets: [{
+                    label: 'Temperature vs Ratio (size = rating)',
+                    data: data,
+                    backgroundColor: 'rgba(255, 111, 0, 0.6)'
+                }]
+            };
+
+            const config = {
+                type: 'bubble',
+                data: chartData,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            labels: { color: isDark ? '#E0E0E0' : '#333' }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Temperature (°C)',
+                                color: isDark ? '#E0E0E0' : '#333'
+                            },
+                            grid: { color: isDark ? '#444' : '#ddd' },
+                            ticks: { color: isDark ? '#E0E0E0' : '#333' }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Brew Ratio',
+                                color: isDark ? '#E0E0E0' : '#333'
+                            },
+                            grid: { color: isDark ? '#444' : '#ddd' },
+                            ticks: { color: isDark ? '#E0E0E0' : '#333' }
+                        }
+                    }
+                }
+            };
+
+            if (charts.parameterScatter) {
+                charts.parameterScatter.data = chartData;
+                charts.parameterScatter.options = config.options;
+                charts.parameterScatter.update();
+            } else {
+                charts.parameterScatter = new Chart(
+                    document.getElementById('parameter-scatter'),
+                    config
+                );
+            }
+        }
+
+        // Generate AI-powered insights
+        function generateInsights(logs) {
+            const insights = [];
+
+            // Insight 1: Quality trend
+            const sortedLogs = [...logs].sort((a, b) => new Date(a.date) - new Date(b.date));
+            const recentLogs = sortedLogs.slice(-10);
+            const olderLogs = sortedLogs.slice(0, Math.min(10, sortedLogs.length - 10));
+
+            const recentAvg = recentLogs.reduce((sum, log) =>
+                sum + (log.overallRating || log.rating || 0), 0) / recentLogs.length;
+            const olderAvg = olderLogs.length > 0
+                ? olderLogs.reduce((sum, log) => sum + (log.overallRating || log.rating || 0), 0) / olderLogs.length
+                : recentAvg;
+
+            if (recentAvg > olderAvg + 5) {
+                insights.push({
+                    title: '🎯 Improving Quality',
+                    text: `Your recent brews average ${recentAvg.toFixed(1)}/100, up from ${olderAvg.toFixed(1)}. Keep up the excellent work!`
+                });
+            } else if (recentAvg < olderAvg - 5) {
+                insights.push({
+                    title: '⚠️ Quality Dip',
+                    text: `Recent quality is lower (${recentAvg.toFixed(1)}) vs before (${olderAvg.toFixed(1)}). Try revisiting your best practices.`
+                });
+            }
+
+            // Insight 2: Method mastery
+            const methodStats = {};
+            logs.forEach(log => {
+                const method = log.brewingMethod || log.method;
+                if (!methodStats[method]) {
+                    methodStats[method] = { count: 0, avgRating: 0 };
+                }
+                methodStats[method].count++;
+                methodStats[method].avgRating += (log.overallRating || log.rating || 0);
+            });
+
+            Object.keys(methodStats).forEach(method => {
+                methodStats[method].avgRating /= methodStats[method].count;
+            });
+
+            const bestMethod = Object.entries(methodStats)
+                .sort((a, b) => b[1].avgRating - a[1].avgRating)[0];
+
+            if (bestMethod) {
+                insights.push({
+                    title: '⭐ Best Method',
+                    text: `Your ${bestMethod[0]} brews average ${bestMethod[1].avgRating.toFixed(1)}/100 across ${bestMethod[1].count} attempts.`
+                });
+            }
+
+            // Insight 3: Origin diversity
+            const origins = new Set(logs.map(log => log.origin || log.bean).filter(Boolean));
+            insights.push({
+                title: '🌍 World Explorer',
+                text: `You've tried coffee from ${origins.size} different origins. ${origins.size >= 10 ? 'Impressive diversity!' : 'Try exploring more origins!'}`
+            });
+
+            // Render insights
+            const container = document.getElementById('insights-container');
+            container.innerHTML = insights.map(insight => `
+                <div class="insight-card">
+                    <h4>${insight.title}</h4>
+                    <p>${insight.text}</p>
+                </div>
+            `).join('');
+        }
+
+        // Theme sync
+        themeManager.onChange(() => {
+            updateDashboard(controlPanel.getFilters());
+        });
+
+        // Initialize on page load
+        init();
+    </script>
+</body>
+</html>
